@@ -1,0 +1,9 @@
+{"voice": "am_puck", "speed": 1.24, "lead": 0.12, "tail": 1.3, "gap": 0.1,
+ "lines": [
+  {"id": "c01", "text": "Every bakery wants its own website. So you rent a server and put your logo on top.",
+   "keys": ["bakery", "website", "server", "logo"]},
+  {"id": "c02", "text": "Then the disk dies at two a.m., and every order dies with it.",
+   "keys": ["disk", "order"]},
+  {"id": "c03", "text": "So you add backups: three copies, one in another city. Now a dead disk is just a bad morning.",
+   "keys": ["backups", "three", "city", "morning"]}
+ ]}

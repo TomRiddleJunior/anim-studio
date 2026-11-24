@@ -1,0 +1,149 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .dwrap { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    #root .mbdef { position: absolute; left: 0; top: 0; }
+    #root .doc { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    #root .doc-in { position: absolute; inset: 0; transform-origin: 50% 50%;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.45)) drop-shadow(0 22px 26px rgba(0, 0, 0, 0.42)); }
+    #root .paper { position: absolute; inset: 0; background-color: var(--pc); background-image: url(assets/img/paper-grain.jpg);
+      background-size: 720px; background-blend-mode: multiply; overflow: hidden; }
+    #root .pin { position: absolute; width: 26px; height: 26px; border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #f08a7e 0 14%, #c4342a 34%, #7d1d16 100%);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45); }
+    #root .tape { position: absolute; height: 44px; background: rgba(233, 222, 192, 0.78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
+    #root .ev-head { position: absolute; left: 22px; top: 18px; right: 22px; height: 40px; border-bottom: 2px solid #23211e;
+      font: 600 25px/34px "Roboto Mono", monospace; letter-spacing: 0.06em; color: #23211e; white-space: nowrap; }
+    #root .ev-head b { font-weight: 800; }
+    #root .ev-img { position: absolute; left: 22px; top: 70px; }
+    #root .ev-img img { display: block; width: 100%; height: 100%; }
+    #root .ev-box { position: absolute; border: 6px solid #c14800; border-radius: 4px; }
+    #root .ev-box.under { border: none; border-bottom: 8px solid #c14800; border-radius: 0; }
+    #root .ev-note { position: absolute; padding: 6px 14px; background: #23211e; color: #f6f4ee;
+      font: 700 30px/40px "Roboto Mono", monospace; letter-spacing: 0.06em; white-space: nowrap; }
+    #root .stamp { position: absolute; transform-origin: 50% 50%; opacity: 0; mix-blend-mode: multiply; }
+    #root .stamp-in { position: relative; color: #c4342a; border: 8px solid #c4342a; border-radius: 12px; padding: 16px 30px 10px;
+      outline: 3px solid #c4342a; outline-offset: -18px; font-family: "Playfair Display", serif; font-weight: 900;
+      line-height: 0.98; letter-spacing: 0.06em; text-align: center; white-space: nowrap; display: flex; flex-direction: column; align-items: center;
+      -webkit-mask-image: url(assets/img/stamp-grunge.png); mask-image: url(assets/img/stamp-grunge.png);
+      -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+    #root .stamp-in.ghost { position: absolute; left: 0; top: 0; opacity: 0; }
+    #root .st-s { font: 700 0.22em/1.5 "Roboto Mono", monospace; letter-spacing: 0.16em; }
+    #root .st-w { display: block; padding: 0.04em 0 0.02em; }
+    #root .idx-margin { position: absolute; left: 96px; top: 0; bottom: 0; width: 3px; background: rgba(193, 58, 45, 0.6); }
+    #root .idx { background-image: url(assets/img/paper-grain.jpg),
+      repeating-linear-gradient(to bottom, transparent 0 90px, rgba(70, 110, 160, 0.32) 90px 92px); background-size: 720px, 100% 92px;
+      background-position: 0 0, 0 60px; }
+    #root .idx-head { position: absolute; left: 124px; top: 34px; font: 700 32px/40px "Roboto Mono", monospace; letter-spacing: 0.03em; color: #23211e; }
+    #root .idx-sub { position: absolute; left: 124px; top: 82px; font: italic 400 28px/36px "Libre Baskerville", serif; color: #6b665e; }
+    #root .idx-line { position: absolute; left: 124px; font: 600 46px/60px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #23211e; white-space: pre; }
+    #root .slip-q { position: absolute; font: 600 38px/50px "Roboto Mono", monospace; color: #23211e; white-space: pre; }
+    #root .slip-q.big { font-size: 52px; line-height: 64px; }
+    #root .slip-q.big2 { font-size: 44px; line-height: 54px; }
+    #root .slip-k { position: absolute; font: 700 28px/36px "Roboto Mono", monospace; letter-spacing: 0.04em; color: #6b665e; white-space: pre; }
+    #root .slip-att { position: absolute; font: 500 26px/34px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #6b665e; white-space: nowrap; }
+    #root .hl { position: absolute; height: 44px; background: rgba(255, 205, 60, 0.62); transform-origin: 0 50%; mix-blend-mode: multiply; }
+    #root .dcard { background-image: url(assets/img/paper-grain.jpg), linear-gradient(rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px); background-size: 720px, 64px 64px, 64px 64px; }
+    #root .dc-chrome { position: absolute; left: 44px; top: 40px; font: 600 24px/30px "Inter", sans-serif; letter-spacing: 0.3em; color: #76603a; }
+    #root .dc-tick { display: inline-block; width: 5px; height: 26px; margin-right: 16px; vertical-align: -5px; background: #c14800; }
+    #root .dc-chrome-r { position: absolute; right: 44px; top: 40px; font: 600 24px/30px "Roboto Mono", monospace; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-foot { position: absolute; left: 44px; right: 44px; bottom: 30px; font: 600 20px/26px "Inter", sans-serif; letter-spacing: 0.22em; color: #76603a; }
+    #root .dc-hair { position: relative; height: 2px; margin-top: 10px; background: #d6cab6; }
+    #root .dc-prog { position: absolute; left: 0; top: -1px; height: 4px; background: #c14800; }
+    #root .dc-label { position: absolute; font: 600 28px/34px "Inter", sans-serif; letter-spacing: 0.24em; color: #76603a; white-space: nowrap; }
+    #root .dc-rule { position: absolute; width: 7px; background: #c14800; }
+    #root .dc-mask { position: absolute; overflow: hidden; padding: 0 8px 4px 0; }
+    #root .dc-head { font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1.08; text-transform: uppercase; color: #111010;
+      -webkit-text-stroke: 2.6px #111010; letter-spacing: 0.01em; white-space: nowrap; }
+    #root .orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .dc-num { position: absolute; font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1; color: #c14800;
+      -webkit-text-stroke: 5px #c14800; white-space: nowrap; text-shadow: 3px 3px 0 rgba(90, 34, 6, 0.35); }
+    #root .dc-pre { position: absolute; font: 700 34px/40px "Oswald", sans-serif; letter-spacing: 0.04em; color: #5b5143; }
+    #root .dc-unit { position: absolute; font: 700 56px/60px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .dc-lead { position: absolute; font: 500 36px/44px "Inter", sans-serif; color: #5b5143; white-space: nowrap; }
+    #root .dc-div { position: absolute; height: 3px; background: #c8bead; transform-origin: 0 50%; }
+    #root .dc-div.v { width: 3px; height: auto; }
+    #root .dc-cap { position: absolute; font: 400 28px/36px "Inter", sans-serif; color: #5b5143; }
+    #root .dc-cap.c { text-align: center; font-weight: 600; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-type { position: absolute; font: 700 38px/48px "Roboto Mono", monospace; color: #111010; white-space: pre; }
+    #root .barrow, #root .vbar { position: absolute; }
+    #root .bar-name { font: 700 40px/48px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .bar-val { position: absolute; right: 0; top: -6px; font: 700 54px/60px "Oswald", sans-serif; color: #c14800; }
+    #root .bar-val.grey, #root .bar-fill.grey { color: #948a7b; }
+    #root .bar-track { position: relative; height: 26px; margin-top: 12px; background: #dcd0bc; }
+    #root .bar-track.tall { height: 40px; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c14800; transform-origin: 0 50%; }
+    #root .bar-fill.grey { background: #948a7b; }
+    #root .half { position: absolute; left: 50%; top: -10px; bottom: -10px; width: 3px; background: #111010; }
+    #root .half-l { position: absolute; left: 50%; top: 56px; transform: translateX(-50%); font: 600 22px/26px "Inter", sans-serif; letter-spacing: 0.2em; color: #5b5143; }
+    #root .age { position: absolute; font: 700 170px/1 "Oswald", sans-serif; color: #111010; -webkit-text-stroke: 4px #111010; }
+    #root .dc-mask .age { position: relative; }
+    #root .age.orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .strike { position: absolute; left: -8px; right: -8px; top: 50%; height: 12px; background: #c14800; transform-origin: 0 50%; }
+    #root .seat { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #d6cab6; }
+    #root .majority { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .majority line { stroke: #111010; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .maj-l { position: absolute; font: 700 44px/50px "Oswald", sans-serif; color: #111010; }
+    #root .mrow { position: absolute; left: 0; right: 0; height: 60px; }
+    #root .mcell { position: absolute; top: 0; width: 82px; height: 60px; background: #d6cab6; }
+    #root .gtag .doc-in { filter: none; }
+    #root .tag-in { display: flex; flex-direction: column; justify-content: center; padding: 0 22px; background: rgba(7, 24, 37, 0.9);
+      border: 1.5px solid rgba(234, 246, 255, 0.28); border-radius: 8px; }
+    #root .tag-a { font: 700 36px/44px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #eaf6ff; white-space: nowrap; }
+    #root .tag-b { font: 400 32px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .tag-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #ff6b1a; margin-right: 14px; vertical-align: 2px; }
+    #root .thread { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .thread line { stroke: #c4342a; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .arr { position: absolute; left: 0; top: 72px; width: 1920px; }
+    #root .arr-in { display: flex; align-items: center; gap: 22px; height: 64px; padding: 0 64px; background: rgba(5, 15, 25, 0.8);
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.14); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .arr-id { color: #9fb8cc; }
+    #root .arr-title { font: 800 34px/40px "Inter", sans-serif; letter-spacing: -0.01em; color: #eaf6ff; }
+    #root .arr-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 34px; color: #eaf6ff; }
+    #root .arr-status { margin-left: auto; display: flex; align-items: center; gap: 16px; letter-spacing: 0.06em; }
+    #root .chip { display: inline-block; height: 44px; overflow: hidden; border-radius: 6px; background: #ff6b1a; color: #140700; padding: 0 16px; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 44px; font: 700 30px/44px "IBM Plex Mono", monospace; letter-spacing: 0.04em; white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="stop-alaska" data-width="1920" data-height="1080">
+    <svg class="mbdef" width="0" height="0"><filter id="ak-mb" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur id="ak-mbg" stdDeviation="0 0" /></filter></svg>
+    <div class="dwrap" id="ak-drot" data-layout-allow-overflow><div class="dwrap" id="ak-dblur" data-layout-allow-overflow><div class="dwrap" id="ak-desk" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="doc gtag" id="ak-tag" data-layout-allow-overflow style="width:640px; height:112px;"><div class="doc-in tag-in tag-r" id="ak-tag-in"><div class="tag-a"><span class="tag-dot"></span>JUNEAU, ALASKA</div><div class="tag-b">58.3°N 134.4°W</div></div></div>
+    <div class="doc" id="ak-clip" data-layout-allow-overflow data-layout-allow-overlap style="width:864px; height:851px;"><div class="doc-in" id="ak-clip-in"><div class="paper clipdoc" style="--pc:#f6f4ee; clip-path: polygon(0.0px 0.0px, 26.2px 0.0px, 52.4px 0.0px, 78.5px 0.0px, 104.7px 0.0px, 130.9px 0.0px, 157.1px 0.0px, 183.3px 0.0px, 209.5px 0.0px, 235.6px 0.0px, 261.8px 0.0px, 288.0px 0.0px, 314.2px 0.0px, 340.4px 0.0px, 366.5px 0.0px, 392.7px 0.0px, 418.9px 0.0px, 445.1px 0.0px, 471.3px 0.0px, 497.5px 0.0px, 523.6px 0.0px, 549.8px 0.0px, 576.0px 0.0px, 602.2px 0.0px, 628.4px 0.0px, 654.5px 0.0px, 680.7px 0.0px, 706.9px 0.0px, 733.1px 0.0px, 759.3px 0.0px, 785.5px 0.0px, 811.6px 0.0px, 837.8px 0.0px, 864.0px 0.0px, 864.0px 26.6px, 864.0px 53.2px, 864.0px 79.8px, 864.0px 106.4px, 864.0px 133.0px, 864.0px 159.6px, 864.0px 186.2px, 864.0px 212.8px, 864.0px 239.3px, 864.0px 265.9px, 864.0px 292.5px, 864.0px 319.1px, 864.0px 345.7px, 864.0px 372.3px, 864.0px 398.9px, 864.0px 425.5px, 864.0px 452.1px, 864.0px 478.7px, 864.0px 505.3px, 864.0px 531.9px, 864.0px 558.5px, 864.0px 585.1px, 864.0px 611.7px, 864.0px 638.2px, 864.0px 664.8px, 864.0px 691.4px, 864.0px 718.0px, 864.0px 744.6px, 864.0px 771.2px, 864.0px 797.8px, 864.0px 824.4px, 864.0px 851.0px, 837.8px 844.1px, 811.6px 850.7px, 785.5px 850.0px, 759.3px 848.0px, 733.1px 844.7px, 706.9px 852.0px, 680.7px 852.2px, 654.5px 848.5px, 628.4px 848.4px, 602.2px 845.0px, 576.0px 842.0px, 549.8px 846.7px, 523.6px 849.4px, 497.5px 842.9px, 471.3px 852.0px, 445.1px 844.9px, 418.9px 844.9px, 392.7px 842.5px, 366.5px 854.6px, 340.4px 851.3px, 314.2px 853.0px, 288.0px 849.8px, 261.8px 842.4px, 235.6px 846.1px, 209.5px 848.3px, 183.3px 843.5px, 157.1px 854.0px, 130.9px 846.6px, 104.7px 844.0px, 78.5px 852.3px, 52.4px 843.6px, 26.2px 853.7px, 0.0px 851.0px, 0.0px 824.4px, 0.0px 797.8px, 0.0px 771.2px, 0.0px 744.6px, 0.0px 718.0px, 0.0px 691.4px, 0.0px 664.8px, 0.0px 638.2px, 0.0px 611.7px, 0.0px 585.1px, 0.0px 558.5px, 0.0px 531.9px, 0.0px 505.3px, 0.0px 478.7px, 0.0px 452.1px, 0.0px 425.5px, 0.0px 398.9px, 0.0px 372.3px, 0.0px 345.7px, 0.0px 319.1px, 0.0px 292.5px, 0.0px 265.9px, 0.0px 239.3px, 0.0px 212.8px, 0.0px 186.2px, 0.0px 159.6px, 0.0px 133.0px, 0.0px 106.4px, 0.0px 79.8px, 0.0px 53.2px, 0.0px 26.6px);"><div class="ev-head"><span>EVIDENCE</span> · <b>AP · WDBJ7</b> · <span>23 OCT 2026</span></div><div class="ev-img" style="width:820px; height:747px;"><img src="assets/evidence/alaska.png" alt="AP story via WDBJ7, 23 Oct 2026" /><div class="ev-box under" id="ak-box" style="left:-0.18%; top:13.52%; width:94.25%; height:7.60%;"></div></div></div><div class="pin" style="left:419.0px; top:9px;"></div><div class="tape" style="left:-28px; top:527.62px; width:130px; transform: rotate(-62deg);"></div></div></div>
+    <div class="doc" id="ak-names" data-layout-allow-overflow data-layout-allow-overlap style="width:1060px; height:680px;"><div class="doc-in" id="ak-names-in"><div class="paper dcard" style="--pc:#ebe2d3; clip-path: polygon(0.0px 0.0px, 26.5px 0.0px, 53.0px 0.0px, 79.5px 0.0px, 106.0px 0.0px, 132.5px 0.0px, 159.0px 0.0px, 185.5px 0.0px, 212.0px 0.0px, 238.5px 0.0px, 265.0px 0.0px, 291.5px 0.0px, 318.0px 0.0px, 344.5px 0.0px, 371.0px 0.0px, 397.5px 0.0px, 424.0px 0.0px, 450.5px 0.0px, 477.0px 0.0px, 503.5px 0.0px, 530.0px 0.0px, 556.5px 0.0px, 583.0px 0.0px, 609.5px 0.0px, 636.0px 0.0px, 662.5px 0.0px, 689.0px 0.0px, 715.5px 0.0px, 742.0px 0.0px, 768.5px 0.0px, 795.0px 0.0px, 821.5px 0.0px, 848.0px 0.0px, 874.5px 0.0px, 901.0px 0.0px, 927.5px 0.0px, 954.0px 0.0px, 980.5px 0.0px, 1007.0px 0.0px, 1033.5px 0.0px, 1060.0px 0.0px, 1060.0px 26.2px, 1060.0px 52.3px, 1060.0px 78.5px, 1060.0px 104.6px, 1060.0px 130.8px, 1060.0px 156.9px, 1060.0px 183.1px, 1060.0px 209.2px, 1060.0px 235.4px, 1060.0px 261.5px, 1060.0px 287.7px, 1060.0px 313.8px, 1060.0px 340.0px, 1060.0px 366.2px, 1060.0px 392.3px, 1060.0px 418.5px, 1060.0px 444.6px, 1060.0px 470.8px, 1060.0px 496.9px, 1060.0px 523.1px, 1060.0px 549.2px, 1060.0px 575.4px, 1060.0px 601.5px, 1060.0px 627.7px, 1060.0px 653.8px, 1060.0px 680.0px, 1033.5px 680.0px, 1007.0px 680.0px, 980.5px 680.0px, 954.0px 680.0px, 927.5px 680.0px, 901.0px 680.0px, 874.5px 680.0px, 848.0px 680.0px, 821.5px 680.0px, 795.0px 680.0px, 768.5px 680.0px, 742.0px 680.0px, 715.5px 680.0px, 689.0px 680.0px, 662.5px 680.0px, 636.0px 680.0px, 609.5px 680.0px, 583.0px 680.0px, 556.5px 680.0px, 530.0px 680.0px, 503.5px 680.0px, 477.0px 680.0px, 450.5px 680.0px, 424.0px 680.0px, 397.5px 680.0px, 371.0px 680.0px, 344.5px 680.0px, 318.0px 680.0px, 291.5px 680.0px, 265.0px 680.0px, 238.5px 680.0px, 212.0px 680.0px, 185.5px 680.0px, 159.0px 680.0px, 132.5px 680.0px, 106.0px 680.0px, 79.5px 680.0px, 53.0px 680.0px, 26.5px 680.0px, 0.0px 680.0px, 0.0px 653.8px, 0.0px 627.7px, 0.0px 601.5px, 0.0px 575.4px, 0.0px 549.2px, 0.0px 523.1px, 0.0px 496.9px, 0.0px 470.8px, 0.0px 444.6px, 0.0px 418.5px, 0.0px 392.3px, 0.0px 366.2px, 0.0px 340.0px, 0.0px 313.8px, 0.0px 287.7px, 0.0px 261.5px, 0.0px 235.4px, 0.0px 209.2px, 0.0px 183.1px, 0.0px 156.9px, 0.0px 130.8px, 0.0px 104.6px, 0.0px 78.5px, 0.0px 52.3px, 0.0px 26.2px);"><div class="dc-chrome"><span class="dc-tick"></span>IN-FLIGHT BRIEFING</div><div class="dc-chrome-r">STOP 02 / 06</div><div class="dc-foot" data-layout-ignore><span>SOURCE / AP · 23 OCT 2026</span><div class="dc-hair"><div class="dc-prog" style="width:33.3%"></div></div></div><div class="dc-label" style="left:64px; top:112px;">U.S. SENATE · ALASKA · ON THE BALLOT</div><div class="dc-mask" style="left:64px; top:160px;"><div class="dc-head" id="ak-n1" style="font-size:112px;">DAN SULLIVAN</div></div><div class="dc-lead" id="ak-l1" style="left:66px; top:300px;">Republican senator, running again</div><div class="dc-div" id="ak-div" style="left:64px; top:368px; width:930px;"></div><div class="dc-mask" style="left:64px; top:398px;"><div class="dc-head orange" id="ak-n2" style="font-size:112px;">DANIEL J. SULLIVAN</div></div><div class="dc-lead" id="ak-l2" style="left:66px; top:538px;">a second candidate</div><div class="ev-note" id="ak-note" data-n="20" style="right:44px; top:548px;">ELECTION DAY · 3 NOV</div><div class="stamp" id="ak-stamp" style="left:600px; top:170px;"><div class="stamp-in" style="font-size:92px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>STATUS · 23 OCT 2026</span><span class="st-w">IN<br>COURT</span><span class="st-s" data-layout-ignore>U.S. SENATE · ALASKA</span></div><div class="stamp-in ghost" style="font-size:92px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>STATUS · 23 OCT 2026</span><span class="st-w">IN<br>COURT</span><span class="st-s" data-layout-ignore>U.S. SENATE · ALASKA</span></div></div></div><div class="pin" style="left:517.0px; top:7px;"></div></div></div>
+    <div class="doc" id="ak-slip" data-layout-allow-overflow data-layout-allow-overlap style="width:1000px; height:268px;"><div class="doc-in" id="ak-slip-in"><div class="paper slipdoc" style="--pc:#e8dfcb; clip-path: polygon(0.0px 0.0px, 26.3px -2.7px, 52.6px -3.0px, 78.9px -2.2px, 105.3px 7.9px, 131.6px 1.5px, 157.9px 3.7px, 184.2px 2.3px, 210.5px 7.4px, 236.8px 6.6px, 263.2px 3.4px, 289.5px 6.2px, 315.8px 3.3px, 342.1px 8.7px, 368.4px 7.9px, 394.7px 0.1px, 421.1px 3.7px, 447.4px 2.5px, 473.7px -0.3px, 500.0px 4.5px, 526.3px 8.3px, 552.6px -0.9px, 578.9px 1.6px, 605.3px 0.7px, 631.6px 1.2px, 657.9px -3.2px, 684.2px 4.4px, 710.5px -0.6px, 736.8px 4.4px, 763.2px 1.8px, 789.5px 0.7px, 815.8px 5.0px, 842.1px 7.9px, 868.4px 3.0px, 894.7px -0.0px, 921.1px 1.6px, 947.4px 3.4px, 973.7px 0.9px, 1000.0px 0.0px, 1000.0px 26.8px, 1000.0px 53.6px, 1000.0px 80.4px, 1000.0px 107.2px, 1000.0px 134.0px, 1000.0px 160.8px, 1000.0px 187.6px, 1000.0px 214.4px, 1000.0px 241.2px, 1000.0px 268.0px, 973.7px 261.3px, 947.4px 261.2px, 921.1px 263.1px, 894.7px 269.3px, 868.4px 261.5px, 842.1px 260.4px, 815.8px 260.2px, 789.5px 259.5px, 763.2px 262.5px, 736.8px 266.2px, 710.5px 269.3px, 684.2px 263.2px, 657.9px 263.7px, 631.6px 262.6px, 605.3px 262.8px, 578.9px 268.8px, 552.6px 265.9px, 526.3px 262.3px, 500.0px 260.3px, 473.7px 268.9px, 447.4px 267.9px, 421.1px 269.4px, 394.7px 262.0px, 368.4px 265.9px, 342.1px 270.6px, 315.8px 266.5px, 289.5px 270.9px, 263.2px 261.1px, 236.8px 271.3px, 210.5px 259.7px, 184.2px 264.2px, 157.9px 259.3px, 131.6px 269.2px, 105.3px 267.7px, 78.9px 271.3px, 52.6px 269.1px, 26.3px 271.0px, 0.0px 268.0px, 0.0px 241.2px, 0.0px 214.4px, 0.0px 187.6px, 0.0px 160.8px, 0.0px 134.0px, 0.0px 107.2px, 0.0px 80.4px, 0.0px 53.6px, 0.0px 26.8px);"><div class="slip-k" id="ak-k" data-n="27" style="left:44px; top:34px;">ON WHO ORDERED THE LAWSUIT:</div><div class="slip-q big" id="ak-q" data-n="30" style="left:44px; top:96px;">“I’m the one that said do it.”</div><div class="slip-att" id="ak-att" style="left:44px; top:196px;">— PRESIDENT DONALD TRUMP, 23 OCT 2026 · VIA AP</div></div><div class="tape" style="left:880px; top:-16px; width:140px; transform: rotate(6deg);"></div><div class="tape" style="left:-20px; top:238px; width:120px; transform: rotate(-8deg);"></div></div></div>
+    <svg class="thread" id="ak-thread" width="1920" height="1080" viewBox="0 0 1920 1080" data-layout-allow-overflow><line x1="0" y1="0" x2="0" y2="0" pathLength="1" /></svg>
+    </div></div></div>
+    <div class="arr" id="ak-arr"><div class="arr-in" id="ak-arr-in"><span class="arr-id">STOP 02</span><span class="arr-title">Alaska Senate race</span><span class="arr-meta">58.3°N 134.4°W · Juneau</span><span class="arr-status"><span>STATUS</span><span class="chip" id="ak-chip" data-layout-allow-overflow><span class="chip-roll" id="ak-roll"><span>EN ROUTE</span><span>IN COURT</span></span></span></span></div></div>
+  </div>
+  <script>
+    (function () {
+      const D = window.DESK.mount({"comp": "ak", "start": 34.935, "dur": 25.655, "hot": {"lat": 58.3, "lon": -134.42}, "docs": [{"id": "ak-tag", "lat": 58.3, "lon": -131.096678, "w": 640, "h": 112, "rot": 0}, {"id": "ak-clip", "lat": 60.579906, "lon": -139.220354, "w": 864, "h": 851, "rot": -1.4}, {"id": "ak-names", "lat": 55.77755, "lon": -129.250388, "w": 1060, "h": 680, "rot": 1.6}, {"id": "ak-slip", "lat": 55.583516, "lon": -138.851096, "w": 1000, "h": 268, "rot": -1.2}], "thread": {"doc": "ak-clip", "x": 432.0, "y": 22}});
+      const tl = D.tl;
+      // the red thread from the ping to the first document's pin
+      tl.fromTo("#ak-thread line", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, D.L(37.535));
+      // arrival strip (screen space): blur in on landing, out at the pull-out
+      tl.fromTo("#ak-arr-in", { opacity: 0, filter: "blur(8px)", y: -16 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.3, ease: "expo.out" }, D.L(36.585));
+      tl.to("#ak-arr-in", { opacity: 0, filter: "blur(8px)", duration: 0.22, ease: "power2.in" }, D.L(60.140));
+      tl.to("#ak-thread line", { strokeDashoffset: -1, duration: 0.3, ease: "power2.in" }, D.L(59.690));
+      D.drop("ak-tag-in", 36.885, {from: 1.0, spin: 0});
+      D.drop("ak-clip-in", 37.155);
+      D.drop("ak-names-in", 37.275);
+      D.drop("ak-slip-in", 37.375);
+      D.box("ak-box", 39.537, 0.5);
+      D.rise("ak-n1", 45.845); D.fade("ak-l1", 46.045);
+      D.strike("ak-div", 47.907);
+      D.rise("ak-n2", 48.207); D.fade("ak-l2", 48.570);
+      D.type("ak-k", 51.330, 32);
+      D.type("ak-q", 53.310, 30);
+      D.fade("ak-att", 54.630, 0.2);
+      D.stamp("ak-stamp", 56.547);
+      D.chip("ak-chip", "ak-roll", 56.627, 1);
+      D.type("ak-note", 57.165, 26);
+      window.__timelines["stop-alaska"] = tl;
+    })();
+  </script>
+</template>

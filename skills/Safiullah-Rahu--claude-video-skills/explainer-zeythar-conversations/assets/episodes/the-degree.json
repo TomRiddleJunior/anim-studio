@@ -1,0 +1,25 @@
+{
+ "title": "The Degree",
+ "series": "Conversations Beyond Time",
+ "category": "STUDIES · CAREER HUMOR",
+ "clock": {"from": "12:31", "to": "12:33"},
+ "end_card": {"rows": ["DID YOUR DEGREE", "COME WITH EXPERIENCE?"], "sub": "COMMENT BELOW"},
+ "cover_hook": ["FOUR YEARS FOR A DEGREE.", "EVERY JOB WANTS THREE YEARS' EXPERIENCE."],
+ "accent_words": ["four", "three", "experience.", "university", "start.", "investment.", "wise!", "questionable"],
+ "lines": [
+  {"who": "L", "line": "I spent four years getting a degree. Now every job wants three years of experience.",
+   "delivery": "Fed up and sarcastic, fast.", "acting": ["brows_up", "eyes_up@experience."], "picture": "GIRL_OPEN"},
+  {"who": "Z", "line": "Did you ask your university for those three years?",
+   "delivery": "Dry deadpan, flat, an innocent question.", "acting": ["hood_tilt@university"], "picture": "HOOD_ORB_TAG"},
+  {"who": "L", "line": "Don't start.",
+   "delivery": "Flat warning, half laughing.", "acting": ["brow_one", "half_smile"], "picture": "GIRL_CU"},
+  {"who": "Z", "line": "I am merely calculating the return on your investment.",
+   "delivery": "Deadpan and precise, flat monotone, no sing-song.", "acting": ["orb_pulse@return"], "picture": "ORB_INSERT",
+   "orb": {"morph": "graph_down", "at": "return"}},
+  {"who": "L", "line": "You're supposed to be wise!",
+   "delivery": "Indignant and playful, rising.", "acting": ["head_drop", "eyes_up"], "picture": "GIRL_MCU"},
+  {"who": "Z", "line": "Wisdom includes recognizing a questionable business model.",
+   "delivery": "Bone-dry deadpan, final, flat monotone.", "acting": ["still"], "react": ["smile@business"], "picture": "WIDE",
+   "orb": {"morph": "coin", "at": "questionable"}, "pluck": "model."}
+ ]
+}

@@ -1,0 +1,316 @@
+<template>
+  <style>
+    @font-face { font-family: "Oswald"; src: url("assets/fonts/Oswald_wght_.ttf"); font-weight: 200 700; }
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .clip { position: absolute; }
+    #root .in { opacity: 0; will-change: transform, opacity; }
+    /* HUD (measured: source 720 px wide, x1.5): 6.5 % from the left, below the top 8 % */
+    #root #hudbox { left: 66px; top: 160px; }
+    #root .hud .day { font: 700 25px/1 Inter, sans-serif; color: #ff6a56; letter-spacing: 0.04em; display: flex; align-items: center; gap: 9px; text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9); }
+    #root .hud .dot { width: 11px; height: 11px; border-radius: 50%; background: #ff5a45; box-shadow: 0 0 10px #ff5a45; }
+    #root .hud .time { height: 72px; }
+    #root .hud .sub { font: 600 19px/1 Inter, sans-serif; color: #d2d8e6; letter-spacing: 0.08em; text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 0 2px rgba(0,0,0,0.9); }
+    #root .tmw { left: 62px; top: 190px; }
+    #root .tm { font: 600 64px/72px Oswald, sans-serif; color: #fff; letter-spacing: 0.01em; text-shadow: 0 2px 10px rgba(0,0,0,0.6); }
+    #root .tm.y { color: #f7b733; }
+    /* tags: dark glass box, 2 px border coloured by meaning, Oswald title + Inter subtitle */
+    #root .tagw { display: flex; justify-content: center; }
+    #root .tag { display: inline-block; padding: 14px 30px 15px; border-radius: 14px; border: 2.5px solid; background: rgba(9, 13, 26, 0.84);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.45); text-align: center; backdrop-filter: blur(4px); }
+    #root .tag .tt { font: 600 44px/1.05 Oswald, sans-serif; letter-spacing: 0.03em; }
+    #root .tag .ts { font: 700 21px/1.2 Inter, sans-serif; color: #e9edf6; letter-spacing: 0.08em; margin-top: 5px; }
+    #root .tag.y { border-color: #f7b733; } #root .tag.y .tt { color: #f7b733; }
+    #root .tag.g { border-color: #46d483; } #root .tag.g .tt { color: #46d483; }
+    #root .tag.r { border-color: #ff5a45; } #root .tag.r .tt { color: #ff5a45; }
+    #root .chiprow { display: flex; gap: 16px; justify-content: center; }
+    #root .chip { opacity: 0; padding: 10px 20px; border-radius: 12px; border: 2.5px solid #46d483; background: rgba(9, 13, 26, 0.84);
+      font: 600 34px/1 Oswald, sans-serif; color: #46d483; letter-spacing: 0.04em; }
+    #root .chip .ck { margin-right: 10px; }
+    #root .radio { width: 920px; padding: 22px 36px 26px; border-radius: 18px; border: 2.5px solid #ff5a45; background: rgba(26, 8, 10, 0.86); box-shadow: 0 14px 40px rgba(0,0,0,0.5); }
+    #root .radio .rh { font: 600 34px/1 Oswald, sans-serif; color: #ff5a45; letter-spacing: 0.06em; text-align: center; padding-bottom: 14px; border-bottom: 1.5px solid rgba(255,90,69,0.55); margin-bottom: 14px; }
+    #root .radio .rl { font: 700 42px/1.45 Inter, sans-serif; color: #f2f2f2; clip-path: inset(0 100% 0 0); white-space: nowrap; }
+    #root .radio .rl.r { color: #ff6a55; }
+    #root .rings .ring { position: absolute; left: -90px; top: -90px; width: 180px; height: 180px; border-radius: 50%; border: 5px solid rgba(255, 90, 69, 0.9); opacity: 0; }
+    #root .qm { font: 700 120px/1 Oswald, sans-serif; color: #f7b733; text-shadow: 0 4px 18px rgba(0,0,0,0.6); }
+    #root .dim { position: relative; width: 60px; height: 760px; }
+    #root .dim .dl { position: absolute; left: 28px; top: 0; width: 4px; height: 760px; background: #f7b733; transform-origin: 50% 100%; box-shadow: 0 0 10px rgba(247,183,51,0.6); }
+    #root .dim .dcap { position: absolute; left: 12px; width: 36px; height: 4px; background: #f7b733; }
+    #root .dim .dcap.t { top: 0; } #root .dim .dcap.b { top: 756px; }
+    #root .dim .dlab { position: absolute; left: -150px; top: 350px; font: 600 46px/1 Oswald, sans-serif; color: #f7b733; transform: rotate(-90deg); transform-origin: 100% 50%; white-space: nowrap; text-shadow: 0 2px 10px rgba(0,0,0,0.7); }
+    #root .card { width: 860px; padding: 28px 40px 22px; border-radius: 16px; background: #efe6d3; color: #1d1a16; box-shadow: 0 18px 50px rgba(0,0,0,0.55); }
+    #root .card .ch { font: 700 50px/1 Oswald, sans-serif; letter-spacing: 0.01em; margin-bottom: 18px; }
+    #root .card .row { display: flex; justify-content: space-between; font: 600 30px/1.2 Inter, sans-serif; margin-top: 12px; }
+    #root .card .row b { font-weight: 700; color: #4a4036; }
+    #root .card .bar { height: 14px; border-radius: 7px; background: #d8ceb9; margin-top: 8px; overflow: hidden; }
+    #root .card .bar i { display: block; height: 100%; border-radius: 7px; transform-origin: 0 50%; transform: scaleX(0); }
+    #root .card .bar i.o { background: #eba22d; } #root .card .bar i.bl { background: #2f74d8; } #root .card .bar i.gr { background: #2fa860; }
+    #root .card .fn { font: 500 21px/1 Inter, sans-serif; color: #6d6458; margin-top: 18px; }
+    #root .plan { width: 620px; padding: 22px 34px 24px; border-radius: 16px; border: 2.5px solid #f7b733; background: rgba(9, 13, 26, 0.86); box-shadow: 0 14px 40px rgba(0,0,0,0.5); }
+    #root .plan .ph { font: 600 32px/1 Oswald, sans-serif; color: #f7b733; letter-spacing: 0.08em; text-align: center; margin-bottom: 14px; }
+    #root .plan .pi { opacity: 0; display: flex; align-items: center; font: 700 38px/1.5 Inter, sans-serif; color: #fff; }
+    #root .plan .box { width: 38px; height: 38px; border: 3px solid #46d483; border-radius: 7px; margin-right: 18px; display: inline-flex; }
+    #root .plan svg { width: 100%; height: 100%; fill: none; stroke: #46d483; stroke-width: 3.6; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 30; }
+    #root .plan .pc { color: #46d483; }
+    #root .end1, #root .end2 { text-align: center; }
+    #root .e1a { font: 700 118px/1 Oswald, sans-serif; color: #fff; letter-spacing: 0.01em; text-shadow: 0 6px 30px rgba(0,0,0,0.7); }
+    #root .e1b { font: 700 138px/1.05 Oswald, sans-serif; color: #ff4a35; text-shadow: 0 0 40px rgba(255,74,53,0.45), 0 6px 30px rgba(0,0,0,0.7); }
+    #root .pill { display: inline-block; margin-top: 30px; padding: 14px 34px; border-radius: 40px; font: 700 30px/1 Inter, sans-serif; letter-spacing: 0.05em; }
+    #root .pill.w { border: 3px solid #fff; color: #fff; background: rgba(0,0,0,0.35); }
+    #root .pill.r { border: 3px solid #ff4a35; color: #ff4a35; background: rgba(40,6,4,0.4); }
+    #root .end2 { position: relative; }
+    #root .end2 .glow { position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; margin: -450px 0 0 -450px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,60,40,0.42) 0%, rgba(255,60,40,0.12) 38%, rgba(255,60,40,0) 66%); }
+    #root .e2a { position: relative; font: 600 58px/1 Oswald, sans-serif; color: #fff; letter-spacing: 0.22em; }
+    #root .e2b { position: relative; font: 700 260px/1 Oswald, sans-serif; color: #ff4a35; text-shadow: 0 0 50px rgba(255,74,53,0.6); margin-top: 6px; }
+    /* captions: one phrase at a time in the lower third (centre 74 % of the height, clear of the bottom 20 %) */
+    #root .capw { left: 64px; right: 64px; top: 1350px; height: 170px; display: flex; align-items: center; justify-content: center; }
+    #root .cap { font: 700 78px/1.06 Oswald, sans-serif; text-align: center; letter-spacing: 0.005em;
+      -webkit-text-stroke: 7px rgba(4, 6, 14, 0.9); paint-order: stroke fill; text-shadow: 0 5px 18px rgba(0,0,0,0.65); }
+
+    /* the AI odds ring (Survival Odds identity) */
+    #root .oddsw { height: 250px; }
+    #root .odds { position: relative; width: 210px; transform-origin: 100% 0; }
+    #root .odds .ringbox { position: relative; width: 210px; height: 210px; --oc: #f7b733; transform-origin: 50% 50%; }
+    #root .odds .face { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #root .odds .ring { position: absolute; inset: 0; overflow: visible; transform-origin: 50% 50%; }
+    #root .odds .trk { fill: rgba(6, 10, 20, 0.58); stroke: rgba(255, 255, 255, 0.16); stroke-width: 5; }
+    #root .odds .arc { fill: none; stroke: #f7b733; stroke-width: 12; stroke-linecap: round; filter: drop-shadow(0 0 8px var(--oc)); }
+    #root .odds .val { position: absolute; left: 0; right: 0; top: 50%; height: 80px; margin-top: -42px; display: flex; justify-content: center; align-items: baseline; }
+    #root .odds .digits { position: relative; width: 96px; height: 80px; }
+    #root .odds .ov { position: absolute; right: 0; top: 0; opacity: 0; font: 700 66px/80px Inter, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; color: #fff;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.7); }
+    #root .odds .ov.qq { color: #ff5a45; right: -8px; text-shadow: 0 0 18px rgba(255,90,69,0.8), 0 2px 12px rgba(0,0,0,0.7); }
+    #root .odds .pct { font: 700 30px/1 Inter, sans-serif; color: rgba(255,255,255,0.86); margin-left: 3px; text-shadow: 0 2px 10px rgba(0,0,0,0.7); }
+    #root .odds .ghost { position: absolute; inset: 0; opacity: 0; mix-blend-mode: screen; pointer-events: none; }
+    #root .odds .ghost.gr { filter: sepia(1) saturate(9) hue-rotate(-50deg); }
+    #root .odds .ghost.gc { filter: sepia(1) saturate(9) hue-rotate(150deg); }
+    #root .odds .lab { margin-top: 10px; text-align: center; font: 700 20px/1 Inter, sans-serif; letter-spacing: 0.32em; color: rgba(236, 241, 250, 0.92);
+      text-shadow: 0 1px 6px rgba(0,0,0,0.9); padding-left: 0.32em; }
+    #root .odcw { display: flex; justify-content: flex-end; }
+    #root .odc { padding: 8px 16px; border-radius: 10px; border: 2px solid; background: rgba(9, 13, 26, 0.84); font: 700 25px/1 Inter, sans-serif; letter-spacing: 0.04em; white-space: nowrap; }
+    #root .odc.r { border-color: #ff5a45; color: #ff5a45; } #root .odc.g { border-color: #46d483; color: #46d483; } #root .odc.y { border-color: #f7b733; color: #f7b733; }
+    #root .oddw { display: flex; justify-content: flex-end; }
+    #root .odd { padding: 10px 18px 11px; border-radius: 12px; border: 2.5px solid; background: rgba(9, 13, 26, 0.88); font: 600 32px/1 Oswald, sans-serif; letter-spacing: 0.03em; white-space: nowrap;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
+    #root .odd b { font: 700 34px/1 Inter, sans-serif; font-variant-numeric: tabular-nums; margin-right: 6px; }
+    #root .odd.g { border-color: #46d483; color: #46d483; } #root .odd.r { border-color: #ff5a45; color: #ff5a45; }
+
+    #root .e2s { position: relative; font: 700 30px/1 Inter, sans-serif; color: #f7b733; letter-spacing: 0.42em; padding-left: 0.42em; margin-bottom: 16px; }
+    #root .e2a { font-size: 64px; letter-spacing: 0.22em; padding-left: 0.22em; }
+    #root .e2h { position: relative; margin-top: 26px; font: 600 28px/1 Inter, sans-serif; color: rgba(230,236,246,0.8); letter-spacing: 0.04em; }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="clip oddsw" id="od" data-start="0.000" data-duration="9999.000" style="right:64px;top:168px;width:210px;"><div class="in odds" id="odin"><div class="ringbox" id="odrb"><div class="face"><svg class="ring" viewBox="0 0 210 210" width="210" height="210"><circle class="trk" cx="105.0" cy="105.0" r="95.00" /><circle class="arc" id="odarc" cx="105.0" cy="105.0" r="95.00" stroke-dasharray="596.90" stroke-dashoffset="173.10" transform="rotate(-90 105.0 105.0)" /></svg><div class="val"><div class="digits" id="oddg"><span class="ov" id="odv58">58</span><span class="ov" id="odv59">59</span><span class="ov" id="odv60">60</span><span class="ov" id="odv61">61</span><span class="ov" id="odv62">62</span><span class="ov" id="odv63">63</span><span class="ov" id="odv64">64</span><span class="ov" id="odv65">65</span><span class="ov" id="odv66">66</span><span class="ov" id="odv67">67</span><span class="ov" id="odv68">68</span><span class="ov" id="odv69">69</span><span class="ov" id="odv70">70</span><span class="ov" id="odv71">71</span><span class="ov" id="odv72">72</span><span class="ov" id="odv73">73</span><span class="ov sc" id="ods0">51</span><span class="ov sc" id="ods1">29</span><span class="ov sc" id="ods2">60</span><span class="ov sc" id="ods3">93</span><span class="ov sc" id="ods4">16</span><span class="ov sc" id="ods5">19</span><span class="ov sc" id="ods6">78</span><span class="ov sc" id="ods7">22</span><span class="ov sc" id="ods8">56</span><span class="ov sc" id="ods9">84</span><span class="ov sc" id="ods10">17</span><span class="ov sc" id="ods11">74</span><span class="ov qq" id="odqq">??</span></div><span class="pct" id="odpct">%</span></div></div><div class="ghost gr" id="odgr"><div class="face"><svg class="ring" viewBox="0 0 210 210" width="210" height="210"><circle class="trk" cx="105.0" cy="105.0" r="95.00" /><circle class="arc" id="odRarc" cx="105.0" cy="105.0" r="95.00" stroke-dasharray="596.90" stroke-dashoffset="173.10" transform="rotate(-90 105.0 105.0)" /></svg><div class="val"><div class="digits" id="odRdg"><span class="ov" id="odRv58">58</span><span class="ov" id="odRv59">59</span><span class="ov" id="odRv60">60</span><span class="ov" id="odRv61">61</span><span class="ov" id="odRv62">62</span><span class="ov" id="odRv63">63</span><span class="ov" id="odRv64">64</span><span class="ov" id="odRv65">65</span><span class="ov" id="odRv66">66</span><span class="ov" id="odRv67">67</span><span class="ov" id="odRv68">68</span><span class="ov" id="odRv69">69</span><span class="ov" id="odRv70">70</span><span class="ov" id="odRv71">71</span><span class="ov" id="odRv72">72</span><span class="ov" id="odRv73">73</span><span class="ov sc" id="odRs0">51</span><span class="ov sc" id="odRs1">29</span><span class="ov sc" id="odRs2">60</span><span class="ov sc" id="odRs3">93</span><span class="ov sc" id="odRs4">16</span><span class="ov sc" id="odRs5">19</span><span class="ov sc" id="odRs6">78</span><span class="ov sc" id="odRs7">22</span><span class="ov sc" id="odRs8">56</span><span class="ov sc" id="odRs9">84</span><span class="ov sc" id="odRs10">17</span><span class="ov sc" id="odRs11">74</span><span class="ov qq" id="odRqq">??</span></div><span class="pct" id="odRpct">%</span></div></div></div><div class="ghost gc" id="odgc"><div class="face"><svg class="ring" viewBox="0 0 210 210" width="210" height="210"><circle class="trk" cx="105.0" cy="105.0" r="95.00" /><circle class="arc" id="odCarc" cx="105.0" cy="105.0" r="95.00" stroke-dasharray="596.90" stroke-dashoffset="173.10" transform="rotate(-90 105.0 105.0)" /></svg><div class="val"><div class="digits" id="odCdg"><span class="ov" id="odCv58">58</span><span class="ov" id="odCv59">59</span><span class="ov" id="odCv60">60</span><span class="ov" id="odCv61">61</span><span class="ov" id="odCv62">62</span><span class="ov" id="odCv63">63</span><span class="ov" id="odCv64">64</span><span class="ov" id="odCv65">65</span><span class="ov" id="odCv66">66</span><span class="ov" id="odCv67">67</span><span class="ov" id="odCv68">68</span><span class="ov" id="odCv69">69</span><span class="ov" id="odCv70">70</span><span class="ov" id="odCv71">71</span><span class="ov" id="odCv72">72</span><span class="ov" id="odCv73">73</span><span class="ov sc" id="odCs0">51</span><span class="ov sc" id="odCs1">29</span><span class="ov sc" id="odCs2">60</span><span class="ov sc" id="odCs3">93</span><span class="ov sc" id="odCs4">16</span><span class="ov sc" id="odCs5">19</span><span class="ov sc" id="odCs6">78</span><span class="ov sc" id="odCs7">22</span><span class="ov sc" id="odCs8">56</span><span class="ov sc" id="odCs9">84</span><span class="ov sc" id="odCs10">17</span><span class="ov sc" id="odCs11">74</span><span class="ov qq" id="odCqq">??</span></div><span class="pct" id="odCpct">%</span></div></div></div></div><div class="lab" id="odlab">AI ODDS</div></div></div>
+    <div class="clip odcw" id="odcc0" data-start="0.000" data-duration="6.515" style="right:58px;top:422px;"><div class="in odc r">YOU, AT HOME: 4%</div></div>
+    <div class="clip oddw" id="odd820" data-start="8.153" data-duration="2.6" style="right:292px;top:243.0px;"><div class="in odd r"><b>−13%</b> OUTBREAK</div></div>
+    <div class="clip oddw" id="odd1185" data-start="11.800" data-duration="2.6" style="right:292px;top:243.0px;"><div class="in odd g"><b>+15%</b> THE DEAD SINK</div></div>
+    <div class="clip " id="hudbox" data-start="6.865" data-duration="6.220" style=""><div class="in hud"><div class="day"><span class="dot"></span>DAY 1</div><div class="time"></div><div class="sub">NIGHT · STORM</div></div></div>
+    <div class="clip tmw" id="tm0" data-start="6.865" data-duration="6.220" style=""><div class="in tm">9:40 PM</div></div>
+    <div class="clip " id="end1" data-start="15.860" data-duration="2.600" style="position:absolute;left:0;right:0;top:720px;"><div class="in end1"><div class="e1a">WHAT DID SHE</div><div class="e1b">FORGET?</div><div class="pill w">TELL ME IN THE COMMENTS <span>»</span></div></div></div>
+    <div class="clip " id="end2" data-start="18.460" data-duration="2.550" style="position:absolute;left:0;right:0;top:600px;"><div class="in end2"><div class="glow"></div><div class="e2s">SURVIVAL ODDS</div><div class="e2a">THE RIG</div><div class="e2b">DAY 2</div><div class="pill r">FOLLOW FOR DAY 2</div><div class="e2h">@whitelightai</div></div></div>
+    <div class="clip capw" id="cp0" data-start="0.120" data-duration="1.433" style=""><div class="in cap" style="color:#ff5a45">If the zombie apocalypse</div></div>
+    <div class="clip capw" id="cp1" data-start="1.533" data-duration="1.719" style=""><div class="in cap" style="color:#ffffff">catches you<br>on an oil rig</div></div>
+    <div class="clip capw" id="cp2" data-start="3.232" data-duration="1.246" style=""><div class="in cap" style="color:#ffffff">in the middle<br>of the sea...</div></div>
+    <div class="clip capw" id="cp3" data-start="4.458" data-duration="2.417" style=""><div class="in cap" style="color:#46d483">consider yourself lucky.</div></div>
+    <div class="clip capw" id="cp4" data-start="6.855" data-duration="1.308" style=""><div class="in cap" style="color:#ffffff">Then the radio crackled.</div></div>
+    <div class="clip capw" id="cp5" data-start="8.143" data-duration="2.142" style=""><div class="in cap" style="color:#ff5a45">Outbreak on the coast.</div></div>
+    <div class="clip capw" id="cp6" data-start="10.265" data-duration="1.345" style=""><div class="in cap" style="color:#46d483">But the dead can&#x27;t swim.</div></div>
+    <div class="clip capw" id="cp7" data-start="11.590" data-duration="1.685" style=""><div class="in cap" style="color:#46d483">They sink.</div></div>
+    <div class="clip capw" id="cp8" data-start="13.325" data-duration="2.835" style=""><div class="in cap" style="color:#ff5a45">But Mira forgot one thing...</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#odin", {opacity: 1}, 0.000);
+      tl.set("#odv71", {opacity: 1}, 0.000);
+      tl.set("#odarc", {stroke: "#f7b733"}, 0.000);
+      tl.set("#odrb", {"--oc": "#f7b733"}, 0.000);
+      tl.fromTo("#odrb", {scale: 1.07}, {scale: 1, duration: 0.45, ease: "back.out(2.6)"}, 0.000);
+      tl.fromTo("#odrb .face", {filter: "brightness(1.6)"}, {filter: "brightness(1)", duration: 0.6, ease: "power2.out"}, 0.000);
+      tl.set("#odcc0 > .in", {opacity: 1}, 0.000);
+      tl.to("#odcc0 > .in", {opacity: 0, duration: 0.25}, 6.265);
+      tl.set("#odv71", {opacity: 0}, 8.284);
+      tl.set("#odv70", {opacity: 1}, 8.284);
+      tl.set("#odv70", {opacity: 0}, 8.357);
+      tl.set("#odv69", {opacity: 1}, 8.357);
+      tl.set("#odv69", {opacity: 0}, 8.422);
+      tl.set("#odv68", {opacity: 1}, 8.422);
+      tl.set("#odv68", {opacity: 0}, 8.480);
+      tl.set("#odv67", {opacity: 1}, 8.480);
+      tl.set("#odv67", {opacity: 0}, 8.531);
+      tl.set("#odv66", {opacity: 1}, 8.531);
+      tl.set("#odv66", {opacity: 0}, 8.575);
+      tl.set("#odv65", {opacity: 1}, 8.575);
+      tl.set("#odv65", {opacity: 0}, 8.612);
+      tl.set("#odv64", {opacity: 1}, 8.612);
+      tl.set("#odv64", {opacity: 0}, 8.642);
+      tl.set("#odv63", {opacity: 1}, 8.642);
+      tl.set("#odv63", {opacity: 0}, 8.666);
+      tl.set("#odv62", {opacity: 1}, 8.666);
+      tl.set("#odv62", {opacity: 0}, 8.683);
+      tl.set("#odv61", {opacity: 1}, 8.683);
+      tl.set("#odv61", {opacity: 0}, 8.695);
+      tl.set("#odv60", {opacity: 1}, 8.695);
+      tl.set("#odv60", {opacity: 0}, 8.701);
+      tl.set("#odv59", {opacity: 1}, 8.701);
+      tl.set("#odv59", {opacity: 0}, 8.703);
+      tl.set("#odv58", {opacity: 1}, 8.703);
+      tl.to("#odarc", {attr: {"stroke-dashoffset": 250.70}, duration: 0.6, ease: "power3.out"}, 8.203);
+      tl.fromTo("#oddg", {y: 10}, {y: 0, duration: 0.60, ease: "power2.out"}, 8.203);
+      tl.fromTo("#odrb .face", {scale: 1}, {scale: 1.06, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false}, 8.703);
+      tl.fromTo("#odd820 > .in", {opacity: 0, x: 40, scale: 0.8}, {opacity: 1, x: 0, scale: 1, duration: 0.26, ease: "back.out(2.2)"}, 8.153);
+      tl.to("#odd820 > .in", {opacity: 0, x: 16, duration: 0.25, ease: "power1.in"}, 10.503);
+      tl.set("#odv58", {opacity: 0}, 11.920);
+      tl.set("#odv59", {opacity: 1}, 11.920);
+      tl.set("#odv59", {opacity: 0}, 11.985);
+      tl.set("#odv60", {opacity: 1}, 11.985);
+      tl.set("#odv60", {opacity: 0}, 12.044);
+      tl.set("#odv61", {opacity: 1}, 12.044);
+      tl.set("#odv61", {opacity: 0}, 12.097);
+      tl.set("#odv62", {opacity: 1}, 12.097);
+      tl.set("#odv62", {opacity: 0}, 12.145);
+      tl.set("#odv63", {opacity: 1}, 12.145);
+      tl.set("#odv63", {opacity: 0}, 12.187);
+      tl.set("#odv64", {opacity: 1}, 12.187);
+      tl.set("#odv64", {opacity: 0}, 12.225);
+      tl.set("#odv65", {opacity: 1}, 12.225);
+      tl.set("#odv65", {opacity: 0}, 12.257);
+      tl.set("#odv66", {opacity: 1}, 12.257);
+      tl.set("#odv66", {opacity: 0}, 12.283);
+      tl.set("#odv67", {opacity: 1}, 12.283);
+      tl.set("#odv67", {opacity: 0}, 12.305);
+      tl.set("#odv68", {opacity: 1}, 12.305);
+      tl.set("#odv68", {opacity: 0}, 12.323);
+      tl.set("#odv69", {opacity: 1}, 12.323);
+      tl.set("#odv69", {opacity: 0}, 12.336);
+      tl.set("#odv70", {opacity: 1}, 12.336);
+      tl.set("#odv70", {opacity: 0}, 12.344);
+      tl.set("#odv71", {opacity: 1}, 12.344);
+      tl.set("#odv71", {opacity: 0}, 12.349);
+      tl.set("#odv72", {opacity: 1}, 12.349);
+      tl.set("#odv72", {opacity: 0}, 12.350);
+      tl.set("#odv73", {opacity: 1}, 12.350);
+      tl.to("#odarc", {attr: {"stroke-dashoffset": 161.16}, duration: 0.6, ease: "power3.out"}, 11.850);
+      tl.fromTo("#oddg", {y: -10}, {y: 0, duration: 0.60, ease: "power2.out", immediateRender: false}, 11.850);
+      tl.fromTo("#odrb .face", {scale: 1}, {scale: 1.06, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false}, 12.350);
+      tl.fromTo("#odd1185 > .in", {opacity: 0, x: 40, scale: 0.8}, {opacity: 1, x: 0, scale: 1, duration: 0.26, ease: "back.out(2.2)"}, 11.800);
+      tl.to("#odd1185 > .in", {opacity: 0, x: 16, duration: 0.25, ease: "power1.in"}, 14.150);
+      tl.set("#odgr", {opacity: 0.85}, 13.948);
+      tl.set("#odgc", {opacity: 0.85}, 13.948);
+      tl.set("#odv73", {opacity: 0}, 13.948);
+      tl.set("#ods0", {opacity: 1}, 13.948);
+      tl.set("#odgr", {x: 10, y: -3}, 13.948);
+      tl.set("#odgc", {x: -11, y: -1}, 13.948);
+      tl.set("#odrb .face", {clipPath: "inset(48% 0 48% 0)", x: 3}, 13.948);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 537.21}}, 13.948);
+      tl.set("#ods0", {opacity: 0}, 13.998);
+      tl.set("#ods1", {opacity: 1}, 13.998);
+      tl.set("#odgr", {x: 4, y: 0}, 13.998);
+      tl.set("#odgc", {x: -9, y: 2}, 13.998);
+      tl.set("#odrb .face", {clipPath: "inset(10% 0 33% 0)", x: 3}, 13.998);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 382.02}}, 13.998);
+      tl.set("#ods1", {opacity: 0}, 14.048);
+      tl.set("#ods2", {opacity: 1}, 14.048);
+      tl.set("#odgr", {x: 12, y: 0}, 14.048);
+      tl.set("#odgc", {x: -5, y: 1}, 14.048);
+      tl.set("#odrb .face", {clipPath: "inset(14% 0 50% 0)", x: -8}, 14.048);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 280.54}}, 14.048);
+      tl.set("#ods2", {opacity: 0}, 14.098);
+      tl.set("#ods3", {opacity: 1}, 14.098);
+      tl.set("#odgr", {x: 10, y: -1}, 14.098);
+      tl.set("#odgc", {x: -13, y: -2}, 14.098);
+      tl.set("#odrb .face", {clipPath: "inset(43% 0 48% 0)", x: -5}, 14.098);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 167.13}}, 14.098);
+      tl.set("#ods3", {opacity: 0}, 14.148);
+      tl.set("#ods4", {opacity: 1}, 14.148);
+      tl.set("#odgr", {x: 6, y: 3}, 14.148);
+      tl.set("#odgc", {x: -7, y: -5}, 14.148);
+      tl.set("#odrb .face", {clipPath: "inset(43% 0 28% 0)", x: 6}, 14.148);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 196.98}}, 14.148);
+      tl.set("#ods4", {opacity: 0}, 14.198);
+      tl.set("#ods5", {opacity: 1}, 14.198);
+      tl.set("#odgr", {x: 4, y: -1}, 14.198);
+      tl.set("#odgc", {x: -13, y: 0}, 14.198);
+      tl.set("#odrb .face", {clipPath: "inset(52% 0 0% 0)", x: 5}, 14.198);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 453.65}}, 14.198);
+      tl.set("#ods5", {opacity: 0}, 14.248);
+      tl.set("#ods6", {opacity: 1}, 14.248);
+      tl.set("#odgr", {x: 4, y: 2}, 14.248);
+      tl.set("#odgc", {x: -5, y: 2}, 14.248);
+      tl.set("#odrb .face", {clipPath: "inset(4% 0 26% 0)", x: 8}, 14.248);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 71.63}}, 14.248);
+      tl.set("#ods6", {opacity: 0}, 14.298);
+      tl.set("#ods7", {opacity: 1}, 14.298);
+      tl.set("#odgr", {x: 14, y: 3}, 14.298);
+      tl.set("#odgc", {x: -14, y: -4}, 14.298);
+      tl.set("#odrb .face", {clipPath: "inset(59% 0 18% 0)", x: -2}, 14.298);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 53.72}}, 14.298);
+      tl.set("#ods7", {opacity: 0}, 14.348);
+      tl.set("#ods8", {opacity: 1}, 14.348);
+      tl.set("#odgr", {x: 4, y: 2}, 14.348);
+      tl.set("#odgc", {x: -7, y: -2}, 14.348);
+      tl.set("#odrb .face", {clipPath: "inset(4% 0 24% 0)", x: -6}, 14.348);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 256.67}}, 14.348);
+      tl.set("#ods8", {opacity: 0}, 14.398);
+      tl.set("#ods9", {opacity: 1}, 14.398);
+      tl.set("#odgr", {x: 11, y: -3}, 14.398);
+      tl.set("#odgc", {x: -12, y: 5}, 14.398);
+      tl.set("#odrb .face", {clipPath: "inset(35% 0 55% 0)", x: -8}, 14.398);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 489.46}}, 14.398);
+      tl.set("#ods9", {opacity: 0}, 14.448);
+      tl.set("#ods10", {opacity: 1}, 14.448);
+      tl.set("#odgr", {x: 11, y: -5}, 14.448);
+      tl.set("#odgc", {x: -5, y: -2}, 14.448);
+      tl.set("#odrb .face", {clipPath: "inset(3% 0 58% 0)", x: -5}, 14.448);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 244.73}}, 14.448);
+      tl.set("#ods10", {opacity: 0}, 14.498);
+      tl.set("#ods11", {opacity: 1}, 14.498);
+      tl.set("#odgr", {x: 10, y: 1}, 14.498);
+      tl.set("#odgc", {x: -7, y: 4}, 14.498);
+      tl.set("#odrb .face", {clipPath: "inset(25% 0 30% 0)", x: 0}, 14.498);
+      tl.set("#odarc", {attr: {"stroke-dashoffset": 537.21}}, 14.498);
+      tl.set("#ods11", {opacity: 0}, 14.548);
+      tl.set("#odqq", {opacity: 1}, 14.548);
+      tl.set("#odpct", {opacity: 0}, 14.548);
+      tl.set("#odrb .face", {clipPath: "inset(0% 0 0% 0)", x: 0}, 14.548);
+      tl.set("#odgr", {opacity: 0.4, x: 4, y: 0}, 14.548);
+      tl.set("#odgc", {opacity: 0.4, x: -4, y: 0}, 14.548);
+      tl.to("#odgr", {opacity: 0, x: 0, duration: 0.5}, 14.598);
+      tl.to("#odgc", {opacity: 0, x: 0, duration: 0.5}, 14.598);
+      tl.set("#odrb", {"--oc": "#ff5a45"}, 14.548);
+      tl.set("#odarc", {stroke: "#ff5a45", attr: {"stroke-dashoffset": 0, "stroke-dasharray": "16 11"}}, 14.548);
+      tl.fromTo("#odrb .ring", {rotation: 0}, {rotation: 360, duration: 9, ease: "none", immediateRender: false}, 14.548);
+      tl.fromTo("#odrb", {scale: 1.18}, {scale: 1, duration: 0.5, ease: "back.out(2.4)", immediateRender: false}, 14.548);
+      tl.fromTo("#hudbox > .in", {opacity: 0}, {opacity: 1, duration: 0.3}, 6.865);
+      tl.to("#hudbox > .in", {opacity: 0, duration: 0.25}, 12.835);
+      tl.fromTo("#tm0 > .in", {opacity: 0}, {opacity: 1, duration: 0.3}, 6.865);
+      tl.to("#tm0 > .in", {opacity: 0, duration: 0.25}, 12.835);
+      tl.set("#end1 > .in", {opacity: 1}, 15.860);
+      tl.fromTo("#end1 .e1a", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.3, ease: "power3.out"}, 15.860);
+      tl.fromTo("#end1 .e1b", {opacity: 0, scale: 1.25}, {opacity: 1, scale: 1, duration: 0.3, ease: "power3.out"}, 16.040);
+      tl.fromTo("#end1 .pill", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.3, ease: "power2.out"}, 16.460);
+      tl.to("#end1 > .in", {opacity: 0, duration: 0.3}, 18.160);
+      tl.fromTo("#end2 > .in", {opacity: 0, scale: 0.94}, {opacity: 1, scale: 1, duration: 0.5, ease: "power2.out"}, 18.460);
+      tl.fromTo("#cp0 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 0.120);
+      tl.to("#cp0 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 1.473);
+      tl.fromTo("#cp1 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 1.533);
+      tl.to("#cp1 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 3.172);
+      tl.fromTo("#cp2 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 3.232);
+      tl.to("#cp2 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 4.398);
+      tl.fromTo("#cp3 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 4.458);
+      tl.to("#cp3 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 6.795);
+      tl.fromTo("#cp4 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 6.855);
+      tl.to("#cp4 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 8.083);
+      tl.fromTo("#cp5 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 8.143);
+      tl.to("#cp5 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 10.205);
+      tl.fromTo("#cp6 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 10.265);
+      tl.to("#cp6 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 11.530);
+      tl.fromTo("#cp7 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 11.590);
+      tl.to("#cp7 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 13.195);
+      tl.fromTo("#cp8 > .in", {opacity: 0, y: 10}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 13.325);
+      tl.to("#cp8 > .in", {opacity: 0, duration: 0.08, ease: "none"}, 16.080);
+      window.__timelines["hud"] = tl;
+    })();
+  </script>
+</template>

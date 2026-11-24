@@ -1,0 +1,26 @@
+{
+ "dur": 15.66,
+ "words": 30,
+ "first_word": 0.21,
+ "countdown_start": 9.805,
+ "pills": [
+  [
+   "Room 305, every Friday",
+   0.12,
+   3.82,
+   "top"
+  ],
+  [
+   "Every single Friday",
+   5.945,
+   8.255,
+   "bottom"
+  ],
+  [
+   "Why?",
+   8.455,
+   8.692,
+   "bottom"
+  ]
+ ]
+}

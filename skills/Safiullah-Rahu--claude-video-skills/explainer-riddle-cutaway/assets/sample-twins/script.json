@@ -1,0 +1,28 @@
+{
+ "voice": "am_eric",
+ "speed": 1.12,
+ "lead": 0.15,
+ "tail": 1.4,
+ "gap": 0.28,
+ "lines": [
+  {"id": "r01", "text": "These twin sisters were born in Room 4 of the maternity ward, on one autumn night."},
+  {"id": "r02", "gap": 0.3, "text": "Ivy came first, at exactly 1:55 in the morning. Twenty-five minutes later, her sister June arrived."},
+  {"id": "r03", "gap": 0.3, "text": "Ivy is the big sister. Everybody agrees."},
+  {"id": "r04", "gap": 0.5, "text": "Nurse Hana writes the birth certificates at the nurses' station, and she checks every time twice."},
+  {"id": "r05", "gap": 0.5, "text": "Then she reads them back, and something strange happens."},
+  {"id": "r06", "gap": 0.3, "text": "Ivy, born 1:55 AM. June, born 1:20 AM."},
+  {"id": "r07", "gap": 0.35, "text": "On paper, the younger twin came first. So every birthday, the older twin blows out her candles second."},
+  {"id": "r08", "gap": 0.35, "text": "Hana checks again. No typo. Same room, same night, same clock on the wall."},
+  {"id": "r09", "gap": 0.3, "text": "So how was the younger twin born before her big sister?"},
+  {"id": "r10", "gap": 0.35, "text": "You have ten seconds. Comment your answer now."},
+  {"id": "r11", "gap": 10.6, "text": "Time's up."},
+  {"id": "r12", "gap": 0.6, "text": "The answer was hanging on the ward wall all night."},
+  {"id": "r13", "gap": 0.35, "text": "It was the first Sunday in November, and at 2 AM, the clocks went back one hour."},
+  {"id": "r14", "gap": 0.35, "text": "Ivy arrived at 1:55. Five minutes later, two o'clock turned back into one o'clock."},
+  {"id": "r15", "gap": 0.3, "text": "June arrived twenty minutes after that, at 1:20, the second time the clock showed it."},
+  {"id": "r16", "gap": 0.35, "text": "Twenty-five minutes younger, but thirty-five minutes older on paper."},
+  {"id": "r17", "gap": 0.55, "text": "Hana laughs so hard she drops her clipboard."},
+  {"id": "r18", "gap": 0.35, "text": "Ivy is older. June has the paperwork. They still argue about it every birthday."},
+  {"id": "r19", "gap": 0.5, "text": "So, did you get it right? Follow for more."}
+ ]
+}

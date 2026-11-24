@@ -1,0 +1,61 @@
+{
+  "name": "Engraved treatise",
+  "dark": true,
+  "description": "Plates from an illustrated treatise: warm ink black, bone paper, one hazard-orange signal. Hairlines, engraving hatch, Swiss grid, deadpan mono annotations. (The pdoom-video look.)",
+  "mood": [
+    "conceptual",
+    "witty",
+    "electronic",
+    "pop",
+    "indie",
+    "lyrics full of ideas"
+  ],
+  "palette": {
+    "bg": "#0A0A0B",
+    "bg2": "#151517",
+    "dim": "#5E5B57",
+    "mid": "#9C978F",
+    "fg": "#EEE9DF",
+    "accent": "#FF4D12",
+    "hot": "#FF8A3D",
+    "deep": "#C21D0B",
+    "rare": "#D8FF3C"
+  },
+  "fonts": {
+    "display": {
+      "family": "Archivo",
+      "bundled": true
+    },
+    "text": {
+      "family": "Cormorant Garamond",
+      "bundled": true
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "bundled": true
+    }
+  },
+  "post": {
+    "bloom": 0.55,
+    "bloomThreshold": 1.0,
+    "bloomKnee": 0.25,
+    "halation": 0.25,
+    "ca": 1.2,
+    "grain": 0.055,
+    "vignette": 0.35
+  },
+  "type": {
+    "case": "none",
+    "tracking": 0
+  },
+  "motif": "spark",
+  "scenes": {
+    "lines": {
+      "hatch": 0.0
+    },
+    "interlude": {
+      "variant": "rings"
+    }
+  },
+  "idiom": "Each plate borrows one technical idiom (engraving, oscilloscope, bureaucratic form, banknote guilloche, blueprint, UI) and stages the lyric inside it as a visual pun, never a literal illustration. Bone paper plates invert the rhythm. Only the signal colour glows; bone type stays crisp."
+}

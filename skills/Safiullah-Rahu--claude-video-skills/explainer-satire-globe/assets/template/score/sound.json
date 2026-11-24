@@ -1,0 +1,15 @@
+{
+  "preset": "tech-glow",
+  "bpm": 120,
+  "sections": [
+    {"t": 0, "energy": 1},
+    {"t": 2, "energy": 3},
+    {"t": 6, "energy": 2},
+    {"t": 12, "energy": 0}
+  ],
+  "end_hit": true,
+  "music_alone_db": -7,
+  "sfx_db": -2,
+  "lufs": -14,
+  "reverb": 0.3
+}

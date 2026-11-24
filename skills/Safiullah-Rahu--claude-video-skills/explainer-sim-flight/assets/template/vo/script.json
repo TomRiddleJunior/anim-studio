@@ -1,0 +1,11 @@
+{
+ "voice": "am_michael",
+ "speed": 1.24,
+ "lead": 0.12,
+ "tail": 0.7,
+ "lines": [
+  {"id": "l01", "text": "A jet built to break the sound barrier, without the big boom."},
+  {"id": "l02", "text": "It's NASA's X-59, built by Lockheed Martin for quiet supersonic flight.", "gap": 0.3},
+  {"id": "l03", "text": "Stretched out like that, the shock waves don't merge.", "gap": 0.3}
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "duration": 13.73,
+ "voice": "am_michael",
+ "words": 35,
+ "wpm_overall": 152.9,
+ "wpm_speech": 194.4,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "In December twenty twenty-three, a computer closed a sea gate on its own.",
+   "start": 0.18,
+   "end": 4.68,
+   "words": [
+    {
+     "w": "In",
+     "start": 0.18,
+     "end": 0.28
+    },
+    {
+     "w": "December",
+     "start": 0.28,
+     "end": 0.78
+    },
+    {
+     "w": "twenty",
+     "start": 0.78,
+     "end": 1.08
+    },
+    {
+     "w": "twenty-three,",
+     "start": 1.08,
+     "end": 1.905
+    },
+    {
+     "w": "a",
+     "start": 2.03,
+     "end": 2.13
+    },
+    {
+     "w": "computer",
+     "start": 2.13,
+     "end": 2.68
+    },
+    {
+     "w": "closed",
+     "start": 2.68,
+     "end": 3.042
+    },
+    {
+     "w": "a",
+     "start": 3.042,
+     "end": 3.155
+    },
+    {
+     "w": "sea",
+     "start": 3.155,
+     "end": 3.417
+    },
+    {
+     "w": "gate",
+     "start": 3.417,
+     "end": 3.718
+    },
+    {
+     "w": "on",
+     "start": 3.718,
+     "end": 3.843
+    },
+    {
+     "w": "its",
+     "start": 3.843,
+     "end": 4.03
+    },
+    {
+     "w": "own.",
+     "start": 4.03,
+     "end": 4.68
+    }
+   ]
+  },
+  {
+   "id": "storm",
+   "i": 1,
+   "text": "A storm was driving the North Sea at the coast.",
+   "start": 5.31,
+   "end": 7.785,
+   "words": [
+    {
+     "w": "A",
+     "start": 5.31,
+     "end": 5.398
+    },
+    {
+     "w": "storm",
+     "start": 5.398,
+     "end": 5.798
+    },
+    {
+     "w": "was",
+     "start": 5.798,
+     "end": 5.935
+    },
+    {
+     "w": "driving",
+     "start": 5.935,
+     "end": 6.323
+    },
+    {
+     "w": "the",
+     "start": 6.323,
+     "end": 6.41
+    },
+    {
+     "w": "North",
+     "start": 6.41,
+     "end": 6.698
+    },
+    {
+     "w": "Sea",
+     "start": 6.698,
+     "end": 6.923
+    },
+    {
+     "w": "at",
+     "start": 6.923,
+     "end": 6.998
+    },
+    {
+     "w": "the",
+     "start": 6.998,
+     "end": 7.098
+    },
+    {
+     "w": "coast.",
+     "start": 7.098,
+     "end": 7.785
+    }
+   ]
+  },
+  {
+   "id": "six",
+   "i": 2,
+   "text": "That night, all six of the country's big storm barriers were shut.",
+   "start": 8.355,
+   "end": 12.18,
+   "words": [
+    {
+     "w": "That",
+     "start": 8.355,
+     "end": 8.58
+    },
+    {
+     "w": "night,",
+     "start": 8.58,
+     "end": 8.855
+    },
+    {
+     "w": "all",
+     "start": 8.93,
+     "end": 9.155
+    },
+    {
+     "w": "six",
+     "start": 9.155,
+     "end": 9.418
+    },
+    {
+     "w": "of",
+     "start": 9.418,
+     "end": 9.493
+    },
+    {
+     "w": "the",
+     "start": 9.493,
+     "end": 9.58
+    },
+    {
+     "w": "country's",
+     "start": 9.58,
+     "end": 10.293
+    },
+    {
+     "w": "big",
+     "start": 10.293,
+     "end": 10.53
+    },
+    {
+     "w": "storm",
+     "start": 10.53,
+     "end": 10.905
+    },
+    {
+     "w": "barriers",
+     "start": 10.905,
+     "end": 11.418
+    },
+    {
+     "w": "were",
+     "start": 11.418,
+     "end": 11.58
+    },
+    {
+     "w": "shut.",
+     "start": 11.58,
+     "end": 12.18
+    }
+   ]
+  }
+ ]
+}

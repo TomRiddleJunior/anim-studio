@@ -1,0 +1,142 @@
+[
+ {
+  "id": "cold",
+  "kind": "title",
+  "kicker": "BRIEFING",
+  "title": "",
+  "lines": 4
+ },
+ {
+  "id": "bigpicture",
+  "kind": "context",
+  "kicker": "THE BIG PICTURE",
+  "title": "",
+  "lines": 4
+ },
+ {
+  "id": "gulf",
+  "kind": "story",
+  "kicker": "CONFLICT · THE GULF",
+  "title": "A war on pause, a strait under fire",
+  "lines": 5
+ },
+ {
+  "id": "ukraine",
+  "kind": "story",
+  "kicker": "CONFLICT · UKRAINE",
+  "title": "A winter war on the grid",
+  "lines": 1
+ },
+ {
+  "id": "gaza",
+  "kind": "story",
+  "kicker": "CONFLICT · GAZA",
+  "title": "One year after the ceasefire",
+  "lines": 3
+ },
+ {
+  "id": "sudan",
+  "kind": "story",
+  "kicker": "CONFLICT · SUDAN & THE HORN",
+  "title": "Famine risk and a new Tigray war",
+  "lines": 2
+ },
+ {
+  "id": "montage",
+  "kind": "context",
+  "kicker": "ALSO ON THE MAP",
+  "title": "",
+  "lines": 1
+ },
+ {
+  "id": "pre1",
+  "kind": "chorus",
+  "kicker": "UNDER STRAIN",
+  "title": "",
+  "lines": 2
+ },
+ {
+  "id": "chorus1",
+  "kind": "chorus",
+  "kicker": "UNDER STRAIN",
+  "title": "",
+  "lines": 6
+ },
+ {
+  "id": "aid",
+  "kind": "story",
+  "kicker": "HUMANITARIAN",
+  "title": "More need, less money",
+  "lines": 2
+ },
+ {
+  "id": "ballots",
+  "kind": "story",
+  "kicker": "POLITICS",
+  "title": "A year of ballots and upsets",
+  "lines": 2
+ },
+ {
+  "id": "economy",
+  "kind": "story",
+  "kicker": "ECONOMY",
+  "title": "The oil shock and inflation's return",
+  "lines": 1
+ },
+ {
+  "id": "ai",
+  "kind": "story",
+  "kicker": "TECHNOLOGY",
+  "title": "The build-out and the brake",
+  "lines": 2
+ },
+ {
+  "id": "climate",
+  "kind": "story",
+  "kicker": "CLIMATE",
+  "title": "El Niño, a Himalayan flood, COP31",
+  "lines": 3
+ },
+ {
+  "id": "pre2",
+  "kind": "chorus",
+  "kicker": "UNDER STRAIN",
+  "title": "",
+  "lines": 2
+ },
+ {
+  "id": "chorus2",
+  "kind": "chorus",
+  "kicker": "UNDER STRAIN",
+  "title": "",
+  "lines": 6
+ },
+ {
+  "id": "hope",
+  "kind": "story",
+  "kicker": "PROGRESS",
+  "title": "Clean power, a lap of the Moon, gene therapy",
+  "lines": 4
+ },
+ {
+  "id": "watch",
+  "kind": "watch",
+  "kicker": "WHAT TO WATCH",
+  "title": "",
+  "lines": 5
+ },
+ {
+  "id": "chorus3",
+  "kind": "chorus",
+  "kicker": "UNDER STRAIN",
+  "title": "",
+  "lines": 6
+ },
+ {
+  "id": "close",
+  "kind": "close",
+  "kicker": "BRIEFING",
+  "title": "",
+  "lines": 2
+ }
+]

@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = 61.34;
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+      const VOL = window.GOLD_VO.lines;
+      const V = {
+        dur: DUR,
+        line(id) { return VOL[id]; },
+        w(line, word, k) {
+          const hits = VOL[line].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + line + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][1];
+        },
+      };
+      const SCALE = window.GOLD_SCALE || 1;
+      const K = window.GOLD.create({ canvas: document.getElementById("world-canvas"), width: Math.round(1080 * SCALE), height: Math.round(1920 * SCALE), base: "assets/" });
+      const film = window.GOLD_FILM(K, V);
+      const SH = film.shots;
+      let ready = false, lastT = -1, curT = 0;
+      function idx(t) { let i = 0; while (i < SH.length - 1 && t >= SH[i + 1].t0) i++; return i; }
+      function run(i, t) {
+        const s = SH[i], t1 = i < SH.length - 1 ? SH[i + 1].t0 : DUR;
+        if (film.reset[s.set]) film.reset[s.set]();
+        const st = s.fn(t, Math.min(1, Math.max(0, (t - s.t0) / (t1 - s.t0))));
+        st.t = t;
+        return st;
+      }
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        const i = idx(t), s = SH[i], t1 = i < SH.length - 1 ? SH[i + 1].t0 : DUR;
+        const n = s.mb ? Math.max(1, Math.round(s.mb(t))) : 1;
+        const sh = s.shutter || 1 / 30;
+        let st;
+        for (let k = 0; k < n; k++) {
+          const tt = n > 1 ? Math.min(t1 - 1e-4, Math.max(s.t0, t + sh * (k / (n - 1) - 0.5))) : t;
+          st = run(i, tt);
+          st.t = t;
+          K.frame(st, { k, n });
+        }
+        K.post(st, n);
+      }
+      window.__goldDraw = draw;
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = K.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

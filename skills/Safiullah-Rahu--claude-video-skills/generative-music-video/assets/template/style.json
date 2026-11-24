@@ -1,0 +1,35 @@
+{
+  "name": "Engraved treatise",
+  "description": "Plates from an illustrated treatise: warm ink black, bone paper, one hazard-orange signal colour. Hairlines, engraving hatch, Swiss grid, deadpan mono annotations.",
+  "palette": {
+    "bg": "#0A0A0B",
+    "bg2": "#151517",
+    "dim": "#5E5B57",
+    "mid": "#9C978F",
+    "fg": "#EEE9DF",
+    "accent": "#FF4D12",
+    "hot": "#FF8A3D",
+    "deep": "#C21D0B",
+    "rare": "#D8FF3C"
+  },
+  "fonts": {
+    "display": "Archivo",
+    "text": "Cormorant Garamond",
+    "mono": "IBM Plex Mono",
+    "stroke": "script"
+  },
+  "post": {
+    "bloom": 0.55,
+    "bloomThreshold": 1.0,
+    "bloomKnee": 0.25,
+    "halation": 0.25,
+    "ca": 1.2,
+    "grain": 0.055,
+    "vignette": 0.35
+  },
+  "type": {
+    "case": "none",
+    "tracking": 0
+  },
+  "motif": "spark"
+}

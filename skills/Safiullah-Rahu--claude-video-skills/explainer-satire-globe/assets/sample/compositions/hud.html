@@ -1,0 +1,41 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .bar { position: absolute; left: 0; right: 0; top: 0; height: 72px; display: flex; align-items: center;
+      justify-content: space-between; padding: 0 64px; background: linear-gradient(rgba(5, 15, 25, 0.86), rgba(5, 15, 25, 0.62));
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.16); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.05em; color: #9fb8cc; }
+    #root .bar b { font-weight: 700; color: #eaf6ff; letter-spacing: 0.12em; }
+    #root .cnt { display: flex; align-items: center; gap: 12px; }
+    #root .dig { display: inline-block; height: 40px; overflow: hidden; color: #ffb020; font-weight: 700; }
+    #root .dig-roll { display: flex; flex-direction: column; }
+    #root .dig-roll span { display: block; height: 40px; }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1920" data-height="1080">
+    <div class="bar" id="hud-bar"><span><b>HOLDING PATTERN</b> · the week in world news · 28 Oct 2026</span>
+      <span class="cnt">STOP <span class="dig" data-layout-allow-overflow><span class="dig-roll" id="hud-roll"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></span></span> OF 6</span></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#hud-bar", { opacity: 0, y: -24 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 0.1);
+      tl.set("#hud-roll span:not(:first-child)", { opacity: 0 }, 0);
+      tl.to("#hud-roll", { y: -40, duration: 0.26, ease: "power3.out" }, 19.955);
+      tl.to("#hud-roll span:nth-child(1)", { opacity: 0, duration: 0.2 }, 19.955);
+      tl.to("#hud-roll span:nth-child(2)", { opacity: 1, duration: 0.2 }, 19.955);
+      tl.to("#hud-roll", { y: -80, duration: 0.26, ease: "power3.out" }, 45.560);
+      tl.to("#hud-roll span:nth-child(2)", { opacity: 0, duration: 0.2 }, 45.560);
+      tl.to("#hud-roll span:nth-child(3)", { opacity: 1, duration: 0.2 }, 45.560);
+      tl.to("#hud-roll", { y: -120, duration: 0.26, ease: "power3.out" }, 62.080);
+      tl.to("#hud-roll span:nth-child(3)", { opacity: 0, duration: 0.2 }, 62.080);
+      tl.to("#hud-roll span:nth-child(4)", { opacity: 1, duration: 0.2 }, 62.080);
+      tl.to("#hud-roll", { y: -160, duration: 0.26, ease: "power3.out" }, 76.490);
+      tl.to("#hud-roll span:nth-child(4)", { opacity: 0, duration: 0.2 }, 76.490);
+      tl.to("#hud-roll span:nth-child(5)", { opacity: 1, duration: 0.2 }, 76.490);
+      tl.to("#hud-roll", { y: -200, duration: 0.26, ease: "power3.out" }, 95.975);
+      tl.to("#hud-roll span:nth-child(5)", { opacity: 0, duration: 0.2 }, 95.975);
+      tl.to("#hud-roll span:nth-child(6)", { opacity: 1, duration: 0.2 }, 95.975);
+      tl.to("#hud-bar", { opacity: 0, y: -24, duration: 0.3, ease: "power2.in" }, 107.850);
+      window.__timelines["hud"] = tl;
+    })();
+  </script>
+</template>

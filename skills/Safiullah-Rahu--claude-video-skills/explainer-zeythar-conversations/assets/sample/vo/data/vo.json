@@ -1,0 +1,1111 @@
+{
+ "duration": 81.346,
+ "voice": "per-line wavs in vo/lines (see script.json voice for the placeholder)",
+ "aligner": "faster-whisper small, word timestamps",
+ "words": 178,
+ "wpm_overall": 131.3,
+ "wpm_speech": 169.1,
+ "match_rate": 0.9944,
+ "lines": [
+  {
+   "id": "l01",
+   "who": "L",
+   "text": "Zeythar. It's 2:30 AM. I said I'd sleep at ten.",
+   "start": 0.02,
+   "end": 4.74,
+   "words": [
+    {
+     "w": "Zeythar.",
+     "start": 0.02,
+     "end": 0.74
+    },
+    {
+     "w": "It's",
+     "start": 1.42,
+     "end": 1.86
+    },
+    {
+     "w": "2:30",
+     "start": 1.86,
+     "end": 2.38
+    },
+    {
+     "w": "AM.",
+     "start": 2.38,
+     "end": 2.96
+    },
+    {
+     "w": "I",
+     "start": 3.08,
+     "end": 3.62
+    },
+    {
+     "w": "said",
+     "start": 3.62,
+     "end": 3.82
+    },
+    {
+     "w": "I'd",
+     "start": 3.82,
+     "end": 4.02
+    },
+    {
+     "w": "sleep",
+     "start": 4.02,
+     "end": 4.2
+    },
+    {
+     "w": "at",
+     "start": 4.2,
+     "end": 4.42
+    },
+    {
+     "w": "ten.",
+     "start": 4.42,
+     "end": 4.74
+    }
+   ],
+   "matched": "10/10"
+  },
+  {
+   "id": "l02",
+   "who": "Z",
+   "text": "You said that yesterday. And on Tuesday. I keep records.",
+   "start": 5.26,
+   "end": 9.26,
+   "words": [
+    {
+     "w": "You",
+     "start": 5.26,
+     "end": 5.52
+    },
+    {
+     "w": "said",
+     "start": 5.52,
+     "end": 5.78
+    },
+    {
+     "w": "that",
+     "start": 5.78,
+     "end": 5.98
+    },
+    {
+     "w": "yesterday.",
+     "start": 5.98,
+     "end": 6.36
+    },
+    {
+     "w": "And",
+     "start": 6.88,
+     "end": 7.16
+    },
+    {
+     "w": "on",
+     "start": 7.16,
+     "end": 7.32
+    },
+    {
+     "w": "Tuesday.",
+     "start": 7.32,
+     "end": 7.7
+    },
+    {
+     "w": "I",
+     "start": 8.52,
+     "end": 8.72
+    },
+    {
+     "w": "keep",
+     "start": 8.72,
+     "end": 8.9
+    },
+    {
+     "w": "records.",
+     "start": 8.9,
+     "end": 9.26
+    }
+   ],
+   "matched": "10/10"
+  },
+  {
+   "id": "l03",
+   "who": "L",
+   "text": "I'm not even doing anything. I'm just replaying a conversation from 2019.",
+   "start": 9.808,
+   "end": 13.748,
+   "words": [
+    {
+     "w": "I'm",
+     "start": 9.808,
+     "end": 10.088
+    },
+    {
+     "w": "not",
+     "start": 10.088,
+     "end": 10.228
+    },
+    {
+     "w": "even",
+     "start": 10.228,
+     "end": 10.368
+    },
+    {
+     "w": "doing",
+     "start": 10.368,
+     "end": 10.668
+    },
+    {
+     "w": "anything.",
+     "start": 10.668,
+     "end": 11.068
+    },
+    {
+     "w": "I'm",
+     "start": 11.348,
+     "end": 11.448
+    },
+    {
+     "w": "just",
+     "start": 11.448,
+     "end": 11.608
+    },
+    {
+     "w": "replaying",
+     "start": 11.608,
+     "end": 12.228
+    },
+    {
+     "w": "a",
+     "start": 12.228,
+     "end": 12.308
+    },
+    {
+     "w": "conversation",
+     "start": 12.308,
+     "end": 12.948
+    },
+    {
+     "w": "from",
+     "start": 12.948,
+     "end": 13.288
+    },
+    {
+     "w": "2019.",
+     "start": 13.288,
+     "end": 13.748
+    }
+   ],
+   "matched": "12/12"
+  },
+  {
+   "id": "l04",
+   "who": "Z",
+   "text": "Ah. The committee is in session.",
+   "start": 14.668,
+   "end": 16.848,
+   "words": [
+    {
+     "w": "Ah.",
+     "start": 14.668,
+     "end": 15.448
+    },
+    {
+     "w": "The",
+     "start": 15.448,
+     "end": 15.588
+    },
+    {
+     "w": "committee",
+     "start": 15.588,
+     "end": 15.908
+    },
+    {
+     "w": "is",
+     "start": 15.908,
+     "end": 16.328
+    },
+    {
+     "w": "in",
+     "start": 16.328,
+     "end": 16.468
+    },
+    {
+     "w": "session.",
+     "start": 16.468,
+     "end": 16.848
+    }
+   ],
+   "matched": "5/6"
+  },
+  {
+   "id": "l05",
+   "who": "L",
+   "text": "The what?",
+   "start": 17.386,
+   "end": 17.786,
+   "words": [
+    {
+     "w": "The",
+     "start": 17.386,
+     "end": 17.586
+    },
+    {
+     "w": "what?",
+     "start": 17.586,
+     "end": 17.786
+    }
+   ],
+   "matched": "2/2"
+  },
+  {
+   "id": "l06",
+   "who": "Z",
+   "text": "Every awkward thing you have ever said, reviewed nightly. Attendance is mandatory.",
+   "start": 18.266,
+   "end": 23.426,
+   "words": [
+    {
+     "w": "Every",
+     "start": 18.266,
+     "end": 18.606
+    },
+    {
+     "w": "awkward",
+     "start": 18.606,
+     "end": 19.066
+    },
+    {
+     "w": "thing",
+     "start": 19.066,
+     "end": 19.486
+    },
+    {
+     "w": "you",
+     "start": 19.486,
+     "end": 19.726
+    },
+    {
+     "w": "have",
+     "start": 19.726,
+     "end": 19.926
+    },
+    {
+     "w": "ever",
+     "start": 19.926,
+     "end": 20.246
+    },
+    {
+     "w": "said,",
+     "start": 20.246,
+     "end": 20.686
+    },
+    {
+     "w": "reviewed",
+     "start": 20.686,
+     "end": 21.126
+    },
+    {
+     "w": "nightly.",
+     "start": 21.126,
+     "end": 21.826
+    },
+    {
+     "w": "Attendance",
+     "start": 22.146,
+     "end": 22.806
+    },
+    {
+     "w": "is",
+     "start": 22.806,
+     "end": 22.986
+    },
+    {
+     "w": "mandatory.",
+     "start": 22.986,
+     "end": 23.426
+    }
+   ],
+   "matched": "12/12"
+  },
+  {
+   "id": "l07",
+   "who": "L",
+   "text": "Why does it only meet at night?!",
+   "start": 24.014,
+   "end": 25.814,
+   "words": [
+    {
+     "w": "Why",
+     "start": 24.014,
+     "end": 24.434
+    },
+    {
+     "w": "does",
+     "start": 24.434,
+     "end": 24.654
+    },
+    {
+     "w": "it",
+     "start": 24.654,
+     "end": 24.794
+    },
+    {
+     "w": "only",
+     "start": 24.794,
+     "end": 25.034
+    },
+    {
+     "w": "meet",
+     "start": 25.034,
+     "end": 25.314
+    },
+    {
+     "w": "at",
+     "start": 25.314,
+     "end": 25.514
+    },
+    {
+     "w": "night?!",
+     "start": 25.514,
+     "end": 25.814
+    }
+   ],
+   "matched": "7/7"
+  },
+  {
+   "id": "l08",
+   "who": "Z",
+   "text": "Because during the day, you never give it an appointment.",
+   "start": 26.414,
+   "end": 29.154,
+   "words": [
+    {
+     "w": "Because",
+     "start": 26.414,
+     "end": 26.794
+    },
+    {
+     "w": "during",
+     "start": 26.794,
+     "end": 27.114
+    },
+    {
+     "w": "the",
+     "start": 27.114,
+     "end": 27.314
+    },
+    {
+     "w": "day,",
+     "start": 27.314,
+     "end": 27.694
+    },
+    {
+     "w": "you",
+     "start": 28.014,
+     "end": 28.154
+    },
+    {
+     "w": "never",
+     "start": 28.154,
+     "end": 28.354
+    },
+    {
+     "w": "give",
+     "start": 28.354,
+     "end": 28.614
+    },
+    {
+     "w": "it",
+     "start": 28.614,
+     "end": 28.754
+    },
+    {
+     "w": "an",
+     "start": 28.754,
+     "end": 28.894
+    },
+    {
+     "w": "appointment.",
+     "start": 28.894,
+     "end": 29.154
+    }
+   ],
+   "matched": "10/10"
+  },
+  {
+   "id": "l09",
+   "who": "L",
+   "text": "Okay, wise one. How do I make it stop?",
+   "start": 29.924,
+   "end": 33.424,
+   "words": [
+    {
+     "w": "Okay,",
+     "start": 29.924,
+     "end": 30.464
+    },
+    {
+     "w": "wise",
+     "start": 30.704,
+     "end": 30.984
+    },
+    {
+     "w": "one.",
+     "start": 30.984,
+     "end": 31.384
+    },
+    {
+     "w": "How",
+     "start": 32.024,
+     "end": 32.344
+    },
+    {
+     "w": "do",
+     "start": 32.344,
+     "end": 32.504
+    },
+    {
+     "w": "I",
+     "start": 32.504,
+     "end": 32.624
+    },
+    {
+     "w": "make",
+     "start": 32.624,
+     "end": 32.864
+    },
+    {
+     "w": "it",
+     "start": 32.864,
+     "end": 32.984
+    },
+    {
+     "w": "stop?",
+     "start": 32.984,
+     "end": 33.424
+    }
+   ],
+   "matched": "9/9"
+  },
+  {
+   "id": "l10",
+   "who": "Z",
+   "text": "Give it ten minutes before dinner. With a pen. Every worry, on paper.",
+   "start": 34.204,
+   "end": 39.364,
+   "words": [
+    {
+     "w": "Give",
+     "start": 34.204,
+     "end": 34.464
+    },
+    {
+     "w": "it",
+     "start": 34.464,
+     "end": 34.604
+    },
+    {
+     "w": "ten",
+     "start": 34.604,
+     "end": 34.924
+    },
+    {
+     "w": "minutes",
+     "start": 34.924,
+     "end": 35.264
+    },
+    {
+     "w": "before",
+     "start": 35.264,
+     "end": 35.664
+    },
+    {
+     "w": "dinner.",
+     "start": 35.664,
+     "end": 36.144
+    },
+    {
+     "w": "With",
+     "start": 36.144,
+     "end": 36.764
+    },
+    {
+     "w": "a",
+     "start": 36.764,
+     "end": 36.884
+    },
+    {
+     "w": "pen.",
+     "start": 36.884,
+     "end": 37.324
+    },
+    {
+     "w": "Every",
+     "start": 37.744,
+     "end": 38.024
+    },
+    {
+     "w": "worry,",
+     "start": 38.024,
+     "end": 38.404
+    },
+    {
+     "w": "on",
+     "start": 38.404,
+     "end": 39.044
+    },
+    {
+     "w": "paper.",
+     "start": 39.044,
+     "end": 39.364
+    }
+   ],
+   "matched": "13/13"
+  },
+  {
+   "id": "l11",
+   "who": "L",
+   "text": "That's it? That's the ancient wisdom?",
+   "start": 39.852,
+   "end": 42.712,
+   "words": [
+    {
+     "w": "That's",
+     "start": 39.852,
+     "end": 40.992
+    },
+    {
+     "w": "it?",
+     "start": 40.992,
+     "end": 41.112
+    },
+    {
+     "w": "That's",
+     "start": 41.672,
+     "end": 41.932
+    },
+    {
+     "w": "the",
+     "start": 41.932,
+     "end": 42.032
+    },
+    {
+     "w": "ancient",
+     "start": 42.032,
+     "end": 42.332
+    },
+    {
+     "w": "wisdom?",
+     "start": 42.332,
+     "end": 42.712
+    }
+   ],
+   "matched": "6/6"
+  },
+  {
+   "id": "l12",
+   "who": "Z",
+   "text": "The ancient wisdom was \"go to sleep.\" Your species declined.",
+   "start": 43.198,
+   "end": 47.598,
+   "words": [
+    {
+     "w": "The",
+     "start": 43.198,
+     "end": 43.478
+    },
+    {
+     "w": "ancient",
+     "start": 43.478,
+     "end": 43.778
+    },
+    {
+     "w": "wisdom",
+     "start": 43.778,
+     "end": 44.278
+    },
+    {
+     "w": "was",
+     "start": 44.278,
+     "end": 44.638
+    },
+    {
+     "w": "\"go",
+     "start": 45.078,
+     "end": 45.318
+    },
+    {
+     "w": "to",
+     "start": 45.318,
+     "end": 45.438
+    },
+    {
+     "w": "sleep.\"",
+     "start": 45.438,
+     "end": 45.818
+    },
+    {
+     "w": "Your",
+     "start": 46.638,
+     "end": 46.798
+    },
+    {
+     "w": "species",
+     "start": 46.798,
+     "end": 47.218
+    },
+    {
+     "w": "declined.",
+     "start": 47.218,
+     "end": 47.598
+    }
+   ],
+   "matched": "10/10"
+  },
+  {
+   "id": "l13",
+   "who": "L",
+   "text": "…Rude.",
+   "start": 49.376,
+   "end": 49.936,
+   "words": [
+    {
+     "w": "…Rude.",
+     "start": 49.376,
+     "end": 49.936
+    }
+   ],
+   "matched": "1/1"
+  },
+  {
+   "id": "l14",
+   "who": "L",
+   "text": "Can I tell you something weird? Night is the only time nobody needs anything from me.",
+   "start": 51.146,
+   "end": 56.326,
+   "words": [
+    {
+     "w": "Can",
+     "start": 51.146,
+     "end": 51.406
+    },
+    {
+     "w": "I",
+     "start": 51.406,
+     "end": 51.566
+    },
+    {
+     "w": "tell",
+     "start": 51.566,
+     "end": 51.886
+    },
+    {
+     "w": "you",
+     "start": 51.886,
+     "end": 52.066
+    },
+    {
+     "w": "something",
+     "start": 52.066,
+     "end": 52.286
+    },
+    {
+     "w": "weird?",
+     "start": 52.286,
+     "end": 52.686
+    },
+    {
+     "w": "Night",
+     "start": 53.346,
+     "end": 53.626
+    },
+    {
+     "w": "is",
+     "start": 53.626,
+     "end": 53.906
+    },
+    {
+     "w": "the",
+     "start": 53.906,
+     "end": 54.026
+    },
+    {
+     "w": "only",
+     "start": 54.026,
+     "end": 54.366
+    },
+    {
+     "w": "time",
+     "start": 54.366,
+     "end": 54.786
+    },
+    {
+     "w": "nobody",
+     "start": 54.786,
+     "end": 55.126
+    },
+    {
+     "w": "needs",
+     "start": 55.126,
+     "end": 55.546
+    },
+    {
+     "w": "anything",
+     "start": 55.546,
+     "end": 55.846
+    },
+    {
+     "w": "from",
+     "start": 55.846,
+     "end": 56.106
+    },
+    {
+     "w": "me.",
+     "start": 56.106,
+     "end": 56.326
+    }
+   ],
+   "matched": "16/16"
+  },
+  {
+   "id": "l15",
+   "who": "Z",
+   "text": "That is not weird. You are not avoiding sleep. You are taking back your day.",
+   "start": 57.444,
+   "end": 62.264,
+   "words": [
+    {
+     "w": "That",
+     "start": 57.444,
+     "end": 57.724
+    },
+    {
+     "w": "is",
+     "start": 57.724,
+     "end": 57.904
+    },
+    {
+     "w": "not",
+     "start": 57.904,
+     "end": 58.184
+    },
+    {
+     "w": "weird.",
+     "start": 58.184,
+     "end": 58.624
+    },
+    {
+     "w": "You",
+     "start": 59.104,
+     "end": 59.264
+    },
+    {
+     "w": "are",
+     "start": 59.264,
+     "end": 59.344
+    },
+    {
+     "w": "not",
+     "start": 59.344,
+     "end": 59.484
+    },
+    {
+     "w": "avoiding",
+     "start": 59.484,
+     "end": 59.824
+    },
+    {
+     "w": "sleep.",
+     "start": 59.824,
+     "end": 60.344
+    },
+    {
+     "w": "You",
+     "start": 60.844,
+     "end": 61.004
+    },
+    {
+     "w": "are",
+     "start": 61.004,
+     "end": 61.124
+    },
+    {
+     "w": "taking",
+     "start": 61.124,
+     "end": 61.404
+    },
+    {
+     "w": "back",
+     "start": 61.404,
+     "end": 61.784
+    },
+    {
+     "w": "your",
+     "start": 61.784,
+     "end": 61.964
+    },
+    {
+     "w": "day.",
+     "start": 61.964,
+     "end": 62.264
+    }
+   ],
+   "matched": "15/15"
+  },
+  {
+   "id": "l16",
+   "who": "L",
+   "text": "…Oh.",
+   "start": 62.66,
+   "end": 63.12,
+   "words": [
+    {
+     "w": "…Oh.",
+     "start": 62.66,
+     "end": 63.12
+    }
+   ],
+   "matched": "1/1"
+  },
+  {
+   "id": "l17",
+   "who": "Z",
+   "text": "So take some of it back while the sun is up. Then the night won't have to steal it for you.",
+   "start": 64.15,
+   "end": 68.71,
+   "words": [
+    {
+     "w": "So",
+     "start": 64.15,
+     "end": 64.51
+    },
+    {
+     "w": "take",
+     "start": 64.73,
+     "end": 64.89
+    },
+    {
+     "w": "some",
+     "start": 64.89,
+     "end": 65.11
+    },
+    {
+     "w": "of",
+     "start": 65.11,
+     "end": 65.25
+    },
+    {
+     "w": "it",
+     "start": 65.25,
+     "end": 65.33
+    },
+    {
+     "w": "back",
+     "start": 65.33,
+     "end": 65.57
+    },
+    {
+     "w": "while",
+     "start": 65.57,
+     "end": 65.81
+    },
+    {
+     "w": "the",
+     "start": 65.81,
+     "end": 65.97
+    },
+    {
+     "w": "sun",
+     "start": 65.97,
+     "end": 66.21
+    },
+    {
+     "w": "is",
+     "start": 66.21,
+     "end": 66.37
+    },
+    {
+     "w": "up.",
+     "start": 66.37,
+     "end": 66.61
+    },
+    {
+     "w": "Then",
+     "start": 66.91,
+     "end": 67.09
+    },
+    {
+     "w": "the",
+     "start": 67.09,
+     "end": 67.19
+    },
+    {
+     "w": "night",
+     "start": 67.19,
+     "end": 67.37
+    },
+    {
+     "w": "won't",
+     "start": 67.37,
+     "end": 67.69
+    },
+    {
+     "w": "have",
+     "start": 67.69,
+     "end": 67.79
+    },
+    {
+     "w": "to",
+     "start": 67.79,
+     "end": 67.93
+    },
+    {
+     "w": "steal",
+     "start": 67.93,
+     "end": 68.17
+    },
+    {
+     "w": "it",
+     "start": 68.17,
+     "end": 68.31
+    },
+    {
+     "w": "for",
+     "start": 68.31,
+     "end": 68.53
+    },
+    {
+     "w": "you.",
+     "start": 68.53,
+     "end": 68.71
+    }
+   ],
+   "matched": "21/21"
+  },
+  {
+   "id": "l18",
+   "who": "L",
+   "text": "Okay. Going to sleep. Right now.",
+   "start": 69.528,
+   "end": 71.708,
+   "words": [
+    {
+     "w": "Okay.",
+     "start": 69.528,
+     "end": 69.908
+    },
+    {
+     "w": "Going",
+     "start": 70.368,
+     "end": 70.508
+    },
+    {
+     "w": "to",
+     "start": 70.508,
+     "end": 70.688
+    },
+    {
+     "w": "sleep.",
+     "start": 70.688,
+     "end": 70.928
+    },
+    {
+     "w": "Right",
+     "start": 71.288,
+     "end": 71.488
+    },
+    {
+     "w": "now.",
+     "start": 71.488,
+     "end": 71.708
+    }
+   ],
+   "matched": "6/6"
+  },
+  {
+   "id": "l19",
+   "who": "Z",
+   "text": "You have said that four times.",
+   "start": 72.116,
+   "end": 73.916,
+   "words": [
+    {
+     "w": "You",
+     "start": 72.116,
+     "end": 72.336
+    },
+    {
+     "w": "have",
+     "start": 72.336,
+     "end": 72.496
+    },
+    {
+     "w": "said",
+     "start": 72.496,
+     "end": 72.736
+    },
+    {
+     "w": "that",
+     "start": 72.736,
+     "end": 73.056
+    },
+    {
+     "w": "four",
+     "start": 73.056,
+     "end": 73.456
+    },
+    {
+     "w": "times.",
+     "start": 73.456,
+     "end": 73.916
+    }
+   ],
+   "matched": "6/6"
+  },
+  {
+   "id": "l20",
+   "who": "L",
+   "text": "Goodnight, Zeythar.",
+   "start": 74.456,
+   "end": 75.576,
+   "words": [
+    {
+     "w": "Goodnight,",
+     "start": 74.456,
+     "end": 74.916
+    },
+    {
+     "w": "Zeythar.",
+     "start": 75.096,
+     "end": 75.576
+    }
+   ],
+   "matched": "2/2"
+  },
+  {
+   "id": "l21",
+   "who": "Z",
+   "text": "It is 2:47.",
+   "start": 75.876,
+   "end": 77.496,
+   "words": [
+    {
+     "w": "It",
+     "start": 75.876,
+     "end": 76.156
+    },
+    {
+     "w": "is",
+     "start": 76.156,
+     "end": 76.436
+    },
+    {
+     "w": "2:47.",
+     "start": 76.436,
+     "end": 77.496
+    }
+   ],
+   "matched": "3/3"
+  }
+ ]
+}

@@ -1,0 +1,2564 @@
+{
+ "duration": 155.425,
+ "voice": "am_michael",
+ "words": 430,
+ "wpm_overall": 166.0,
+ "wpm_speech": 212.1,
+ "lines": [
+  {
+   "id": "h1",
+   "i": 0,
+   "text": "Forty of the dead. One of you.",
+   "start": 0.16,
+   "end": 1.835,
+   "words": [
+    {
+     "w": "Forty",
+     "start": 0.16,
+     "end": 0.473
+    },
+    {
+     "w": "of",
+     "start": 0.473,
+     "end": 0.547
+    },
+    {
+     "w": "the",
+     "start": 0.547,
+     "end": 0.635
+    },
+    {
+     "w": "dead.",
+     "start": 0.635,
+     "end": 1.01
+    },
+    {
+     "w": "One",
+     "start": 1.11,
+     "end": 1.273
+    },
+    {
+     "w": "of",
+     "start": 1.273,
+     "end": 1.41
+    },
+    {
+     "w": "you.",
+     "start": 1.41,
+     "end": 1.835
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "i": 1,
+   "text": "The only way out is in, so you run into the mine.",
+   "start": 2.395,
+   "end": 5.195,
+   "words": [
+    {
+     "w": "The",
+     "start": 2.395,
+     "end": 2.52
+    },
+    {
+     "w": "only",
+     "start": 2.52,
+     "end": 2.82
+    },
+    {
+     "w": "way",
+     "start": 2.82,
+     "end": 2.995
+    },
+    {
+     "w": "out",
+     "start": 2.995,
+     "end": 3.158
+    },
+    {
+     "w": "is",
+     "start": 3.158,
+     "end": 3.295
+    },
+    {
+     "w": "in,",
+     "start": 3.295,
+     "end": 3.67
+    },
+    {
+     "w": "so",
+     "start": 3.77,
+     "end": 3.895
+    },
+    {
+     "w": "you",
+     "start": 3.895,
+     "end": 4.058
+    },
+    {
+     "w": "run",
+     "start": 4.058,
+     "end": 4.308
+    },
+    {
+     "w": "into",
+     "start": 4.308,
+     "end": 4.482
+    },
+    {
+     "w": "the",
+     "start": 4.482,
+     "end": 4.57
+    },
+    {
+     "w": "mine.",
+     "start": 4.57,
+     "end": 5.195
+    }
+   ]
+  },
+  {
+   "id": "h3",
+   "i": 2,
+   "text": "They follow you in.",
+   "start": 5.755,
+   "end": 6.88,
+   "words": [
+    {
+     "w": "They",
+     "start": 5.755,
+     "end": 5.917
+    },
+    {
+     "w": "follow",
+     "start": 5.917,
+     "end": 6.23
+    },
+    {
+     "w": "you",
+     "start": 6.23,
+     "end": 6.392
+    },
+    {
+     "w": "in.",
+     "start": 6.392,
+     "end": 6.88
+    }
+   ]
+  },
+  {
+   "id": "h4",
+   "i": 3,
+   "text": "Twenty metres in, the daylight's gone. And they stop.",
+   "start": 7.49,
+   "end": 10.34,
+   "words": [
+    {
+     "w": "Twenty",
+     "start": 7.49,
+     "end": 7.765
+    },
+    {
+     "w": "metres",
+     "start": 7.765,
+     "end": 8.115
+    },
+    {
+     "w": "in,",
+     "start": 8.115,
+     "end": 8.265
+    },
+    {
+     "w": "the",
+     "start": 8.302,
+     "end": 8.39
+    },
+    {
+     "w": "daylight's",
+     "start": 8.39,
+     "end": 8.84
+    },
+    {
+     "w": "gone.",
+     "start": 8.84,
+     "end": 9.365
+    },
+    {
+     "w": "And",
+     "start": 9.465,
+     "end": 9.602
+    },
+    {
+     "w": "they",
+     "start": 9.602,
+     "end": 9.752
+    },
+    {
+     "w": "stop.",
+     "start": 9.752,
+     "end": 10.34
+    }
+   ]
+  },
+  {
+   "id": "title",
+   "i": 4,
+   "text": "The dead can't see in the dark.",
+   "start": 11.15,
+   "end": 12.675,
+   "words": [
+    {
+     "w": "The",
+     "start": 11.15,
+     "end": 11.25
+    },
+    {
+     "w": "dead",
+     "start": 11.25,
+     "end": 11.525
+    },
+    {
+     "w": "can't",
+     "start": 11.525,
+     "end": 11.75
+    },
+    {
+     "w": "see",
+     "start": 11.75,
+     "end": 11.937
+    },
+    {
+     "w": "in",
+     "start": 11.937,
+     "end": 12.012
+    },
+    {
+     "w": "the",
+     "start": 12.012,
+     "end": 12.1
+    },
+    {
+     "w": "dark.",
+     "start": 12.1,
+     "end": 12.675
+    }
+   ]
+  },
+  {
+   "id": "sci1",
+   "i": 5,
+   "text": "When you die, your eyes dry out and go milky, like frosted glass.",
+   "start": 13.385,
+   "end": 16.96,
+   "words": [
+    {
+     "w": "When",
+     "start": 13.385,
+     "end": 13.497
+    },
+    {
+     "w": "you",
+     "start": 13.497,
+     "end": 13.61
+    },
+    {
+     "w": "die,",
+     "start": 13.61,
+     "end": 13.96
+    },
+    {
+     "w": "your",
+     "start": 14.035,
+     "end": 14.185
+    },
+    {
+     "w": "eyes",
+     "start": 14.185,
+     "end": 14.46
+    },
+    {
+     "w": "dry",
+     "start": 14.46,
+     "end": 14.71
+    },
+    {
+     "w": "out",
+     "start": 14.71,
+     "end": 14.872
+    },
+    {
+     "w": "and",
+     "start": 14.872,
+     "end": 14.972
+    },
+    {
+     "w": "go",
+     "start": 14.972,
+     "end": 15.135
+    },
+    {
+     "w": "milky,",
+     "start": 15.135,
+     "end": 15.585
+    },
+    {
+     "w": "like",
+     "start": 15.647,
+     "end": 15.847
+    },
+    {
+     "w": "frosted",
+     "start": 15.847,
+     "end": 16.285
+    },
+    {
+     "w": "glass.",
+     "start": 16.285,
+     "end": 16.96
+    }
+   ]
+  },
+  {
+   "id": "sci3",
+   "i": 6,
+   "text": "In daylight, they see shapes. In the dark, nothing.",
+   "start": 17.57,
+   "end": 20.32,
+   "words": [
+    {
+     "w": "In",
+     "start": 17.57,
+     "end": 17.695
+    },
+    {
+     "w": "daylight,",
+     "start": 17.695,
+     "end": 18.07
+    },
+    {
+     "w": "they",
+     "start": 18.107,
+     "end": 18.257
+    },
+    {
+     "w": "see",
+     "start": 18.257,
+     "end": 18.482
+    },
+    {
+     "w": "shapes.",
+     "start": 18.482,
+     "end": 19.02
+    },
+    {
+     "w": "In",
+     "start": 19.12,
+     "end": 19.232
+    },
+    {
+     "w": "the",
+     "start": 19.232,
+     "end": 19.32
+    },
+    {
+     "w": "dark,",
+     "start": 19.32,
+     "end": 19.62
+    },
+    {
+     "w": "nothing.",
+     "start": 19.67,
+     "end": 20.32
+    }
+   ]
+  },
+  {
+   "id": "lamp",
+   "i": 7,
+   "text": "So you switch off your lamp, one hand on the rail.",
+   "start": 21.03,
+   "end": 23.605,
+   "words": [
+    {
+     "w": "So",
+     "start": 21.03,
+     "end": 21.13
+    },
+    {
+     "w": "you",
+     "start": 21.13,
+     "end": 21.255
+    },
+    {
+     "w": "switch",
+     "start": 21.255,
+     "end": 21.492
+    },
+    {
+     "w": "off",
+     "start": 21.492,
+     "end": 21.667
+    },
+    {
+     "w": "your",
+     "start": 21.667,
+     "end": 21.78
+    },
+    {
+     "w": "lamp,",
+     "start": 21.78,
+     "end": 22.23
+    },
+    {
+     "w": "one",
+     "start": 22.33,
+     "end": 22.58
+    },
+    {
+     "w": "hand",
+     "start": 22.58,
+     "end": 22.817
+    },
+    {
+     "w": "on",
+     "start": 22.817,
+     "end": 22.917
+    },
+    {
+     "w": "the",
+     "start": 22.917,
+     "end": 23.005
+    },
+    {
+     "w": "rail.",
+     "start": 23.005,
+     "end": 23.605
+    }
+   ]
+  },
+  {
+   "id": "deep",
+   "i": 8,
+   "text": "A hundred metres down. Two hundred.",
+   "start": 24.215,
+   "end": 26.34,
+   "words": [
+    {
+     "w": "A",
+     "start": 24.215,
+     "end": 24.29
+    },
+    {
+     "w": "hundred",
+     "start": 24.29,
+     "end": 24.665
+    },
+    {
+     "w": "metres",
+     "start": 24.665,
+     "end": 25.04
+    },
+    {
+     "w": "down.",
+     "start": 25.04,
+     "end": 25.415
+    },
+    {
+     "w": "Two",
+     "start": 25.49,
+     "end": 25.69
+    },
+    {
+     "w": "hundred.",
+     "start": 25.69,
+     "end": 26.34
+    }
+   ]
+  },
+  {
+   "id": "glow",
+   "i": 9,
+   "text": "Then, far below, a green light.",
+   "start": 27.25,
+   "end": 29.025,
+   "words": [
+    {
+     "w": "Then,",
+     "start": 27.25,
+     "end": 27.35
+    },
+    {
+     "w": "far",
+     "start": 27.4,
+     "end": 27.625
+    },
+    {
+     "w": "below,",
+     "start": 27.625,
+     "end": 28.0
+    },
+    {
+     "w": "a",
+     "start": 28.075,
+     "end": 28.175
+    },
+    {
+     "w": "green",
+     "start": 28.175,
+     "end": 28.475
+    },
+    {
+     "w": "light.",
+     "start": 28.475,
+     "end": 29.025
+    }
+   ]
+  },
+  {
+   "id": "hide",
+   "i": 10,
+   "text": "Your hideout. A refuge chamber, built for trapped miners.",
+   "start": 29.635,
+   "end": 32.76,
+   "words": [
+    {
+     "w": "Your",
+     "start": 29.635,
+     "end": 29.76
+    },
+    {
+     "w": "hideout.",
+     "start": 29.76,
+     "end": 30.335
+    },
+    {
+     "w": "A",
+     "start": 30.435,
+     "end": 30.535
+    },
+    {
+     "w": "refuge",
+     "start": 30.535,
+     "end": 30.947
+    },
+    {
+     "w": "chamber,",
+     "start": 30.947,
+     "end": 31.335
+    },
+    {
+     "w": "built",
+     "start": 31.372,
+     "end": 31.585
+    },
+    {
+     "w": "for",
+     "start": 31.585,
+     "end": 31.71
+    },
+    {
+     "w": "trapped",
+     "start": 31.71,
+     "end": 32.06
+    },
+    {
+     "w": "miners.",
+     "start": 32.06,
+     "end": 32.76
+    }
+   ]
+  },
+  {
+   "id": "fixed",
+   "i": 11,
+   "text": "The mine shut twelve years ago. You fixed it up alone. Nobody knows it's here.",
+   "start": 33.32,
+   "end": 37.595,
+   "words": [
+    {
+     "w": "The",
+     "start": 33.32,
+     "end": 33.395
+    },
+    {
+     "w": "mine",
+     "start": 33.395,
+     "end": 33.732
+    },
+    {
+     "w": "shut",
+     "start": 33.732,
+     "end": 33.995
+    },
+    {
+     "w": "twelve",
+     "start": 33.995,
+     "end": 34.295
+    },
+    {
+     "w": "years",
+     "start": 34.295,
+     "end": 34.507
+    },
+    {
+     "w": "ago.",
+     "start": 34.507,
+     "end": 34.87
+    },
+    {
+     "w": "You",
+     "start": 34.97,
+     "end": 35.095
+    },
+    {
+     "w": "fixed",
+     "start": 35.095,
+     "end": 35.357
+    },
+    {
+     "w": "it",
+     "start": 35.357,
+     "end": 35.432
+    },
+    {
+     "w": "up",
+     "start": 35.432,
+     "end": 35.595
+    },
+    {
+     "w": "alone.",
+     "start": 35.595,
+     "end": 36.195
+    },
+    {
+     "w": "Nobody",
+     "start": 36.307,
+     "end": 36.67
+    },
+    {
+     "w": "knows",
+     "start": 36.67,
+     "end": 36.932
+    },
+    {
+     "w": "it's",
+     "start": 36.932,
+     "end": 37.095
+    },
+    {
+     "w": "here.",
+     "start": 37.095,
+     "end": 37.595
+    }
+   ]
+  },
+  {
+   "id": "airlock",
+   "i": 12,
+   "text": "You come in through an airlock. The air inside is pushed a little harder, so bad air stays out.",
+   "start": 38.305,
+   "end": 43.48,
+   "words": [
+    {
+     "w": "You",
+     "start": 38.305,
+     "end": 38.405
+    },
+    {
+     "w": "come",
+     "start": 38.405,
+     "end": 38.617
+    },
+    {
+     "w": "in",
+     "start": 38.617,
+     "end": 38.805
+    },
+    {
+     "w": "through",
+     "start": 38.805,
+     "end": 38.992
+    },
+    {
+     "w": "an",
+     "start": 38.992,
+     "end": 39.105
+    },
+    {
+     "w": "airlock.",
+     "start": 39.105,
+     "end": 39.78
+    },
+    {
+     "w": "The",
+     "start": 39.88,
+     "end": 40.042
+    },
+    {
+     "w": "air",
+     "start": 40.042,
+     "end": 40.28
+    },
+    {
+     "w": "inside",
+     "start": 40.28,
+     "end": 40.717
+    },
+    {
+     "w": "is",
+     "start": 40.717,
+     "end": 40.83
+    },
+    {
+     "w": "pushed",
+     "start": 40.83,
+     "end": 41.092
+    },
+    {
+     "w": "a",
+     "start": 41.092,
+     "end": 41.142
+    },
+    {
+     "w": "little",
+     "start": 41.142,
+     "end": 41.33
+    },
+    {
+     "w": "harder,",
+     "start": 41.33,
+     "end": 41.83
+    },
+    {
+     "w": "so",
+     "start": 41.93,
+     "end": 42.117
+    },
+    {
+     "w": "bad",
+     "start": 42.117,
+     "end": 42.43
+    },
+    {
+     "w": "air",
+     "start": 42.43,
+     "end": 42.63
+    },
+    {
+     "w": "stays",
+     "start": 42.63,
+     "end": 42.98
+    },
+    {
+     "w": "out.",
+     "start": 42.98,
+     "end": 43.48
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "i": 13,
+   "text": "Food. Six hundred ration packs. Two a day. Ten months.",
+   "start": 44.29,
+   "end": 47.44,
+   "words": [
+    {
+     "w": "Food.",
+     "start": 44.29,
+     "end": 44.565
+    },
+    {
+     "w": "Six",
+     "start": 44.615,
+     "end": 44.777
+    },
+    {
+     "w": "hundred",
+     "start": 44.777,
+     "end": 45.015
+    },
+    {
+     "w": "ration",
+     "start": 45.015,
+     "end": 45.365
+    },
+    {
+     "w": "packs.",
+     "start": 45.365,
+     "end": 45.74
+    },
+    {
+     "w": "Two",
+     "start": 45.827,
+     "end": 46.065
+    },
+    {
+     "w": "a",
+     "start": 46.065,
+     "end": 46.165
+    },
+    {
+     "w": "day.",
+     "start": 46.165,
+     "end": 46.515
+    },
+    {
+     "w": "Ten",
+     "start": 46.615,
+     "end": 46.865
+    },
+    {
+     "w": "months.",
+     "start": 46.865,
+     "end": 47.44
+    }
+   ]
+  },
+  {
+   "id": "water",
+   "i": 14,
+   "text": "Water. The rock drips forty litres a day.",
+   "start": 48.1,
+   "end": 50.45,
+   "words": [
+    {
+     "w": "Water.",
+     "start": 48.1,
+     "end": 48.475
+    },
+    {
+     "w": "The",
+     "start": 48.537,
+     "end": 48.625
+    },
+    {
+     "w": "rock",
+     "start": 48.625,
+     "end": 48.9
+    },
+    {
+     "w": "drips",
+     "start": 48.9,
+     "end": 49.175
+    },
+    {
+     "w": "forty",
+     "start": 49.175,
+     "end": 49.5
+    },
+    {
+     "w": "litres",
+     "start": 49.5,
+     "end": 49.837
+    },
+    {
+     "w": "a",
+     "start": 49.837,
+     "end": 49.9
+    },
+    {
+     "w": "day.",
+     "start": 49.9,
+     "end": 50.45
+    }
+   ]
+  },
+  {
+   "id": "power",
+   "i": 15,
+   "text": "Power. A turbine in the stream, and a wall of batteries.",
+   "start": 51.11,
+   "end": 53.985,
+   "words": [
+    {
+     "w": "Power.",
+     "start": 51.11,
+     "end": 51.485
+    },
+    {
+     "w": "A",
+     "start": 51.535,
+     "end": 51.61
+    },
+    {
+     "w": "turbine",
+     "start": 51.61,
+     "end": 52.047
+    },
+    {
+     "w": "in",
+     "start": 52.047,
+     "end": 52.122
+    },
+    {
+     "w": "the",
+     "start": 52.122,
+     "end": 52.21
+    },
+    {
+     "w": "stream,",
+     "start": 52.21,
+     "end": 52.66
+    },
+    {
+     "w": "and",
+     "start": 52.697,
+     "end": 52.797
+    },
+    {
+     "w": "a",
+     "start": 52.797,
+     "end": 52.885
+    },
+    {
+     "w": "wall",
+     "start": 52.885,
+     "end": 53.097
+    },
+    {
+     "w": "of",
+     "start": 53.097,
+     "end": 53.185
+    },
+    {
+     "w": "batteries.",
+     "start": 53.185,
+     "end": 53.985
+    }
+   ]
+  },
+  {
+   "id": "aid",
+   "i": 16,
+   "text": "A first aid kit. And a pickaxe by the door.",
+   "start": 54.595,
+   "end": 57.22,
+   "words": [
+    {
+     "w": "A",
+     "start": 54.595,
+     "end": 54.682
+    },
+    {
+     "w": "first",
+     "start": 54.682,
+     "end": 55.02
+    },
+    {
+     "w": "aid",
+     "start": 55.02,
+     "end": 55.27
+    },
+    {
+     "w": "kit.",
+     "start": 55.27,
+     "end": 55.695
+    },
+    {
+     "w": "And",
+     "start": 55.757,
+     "end": 55.882
+    },
+    {
+     "w": "a",
+     "start": 55.882,
+     "end": 55.945
+    },
+    {
+     "w": "pickaxe",
+     "start": 55.945,
+     "end": 56.395
+    },
+    {
+     "w": "by",
+     "start": 56.395,
+     "end": 56.532
+    },
+    {
+     "w": "the",
+     "start": 56.532,
+     "end": 56.62
+    },
+    {
+     "w": "door.",
+     "start": 56.62,
+     "end": 57.22
+    }
+   ]
+  },
+  {
+   "id": "shaft",
+   "i": 17,
+   "text": "Your air comes down one shaft, three hundred metres.",
+   "start": 58.03,
+   "end": 60.93,
+   "words": [
+    {
+     "w": "Your",
+     "start": 58.03,
+     "end": 58.18
+    },
+    {
+     "w": "air",
+     "start": 58.18,
+     "end": 58.38
+    },
+    {
+     "w": "comes",
+     "start": 58.38,
+     "end": 58.655
+    },
+    {
+     "w": "down",
+     "start": 58.655,
+     "end": 58.905
+    },
+    {
+     "w": "one",
+     "start": 58.905,
+     "end": 59.117
+    },
+    {
+     "w": "shaft,",
+     "start": 59.117,
+     "end": 59.58
+    },
+    {
+     "w": "three",
+     "start": 59.692,
+     "end": 59.93
+    },
+    {
+     "w": "hundred",
+     "start": 59.93,
+     "end": 60.28
+    },
+    {
+     "w": "metres.",
+     "start": 60.28,
+     "end": 60.93
+    }
+   ]
+  },
+  {
+   "id": "fan",
+   "i": 18,
+   "text": "A big fan at the top pushes it down.",
+   "start": 61.44,
+   "end": 63.465,
+   "words": [
+    {
+     "w": "A",
+     "start": 61.44,
+     "end": 61.515
+    },
+    {
+     "w": "big",
+     "start": 61.515,
+     "end": 61.752
+    },
+    {
+     "w": "fan",
+     "start": 61.752,
+     "end": 62.027
+    },
+    {
+     "w": "at",
+     "start": 62.027,
+     "end": 62.102
+    },
+    {
+     "w": "the",
+     "start": 62.102,
+     "end": 62.19
+    },
+    {
+     "w": "top",
+     "start": 62.19,
+     "end": 62.465
+    },
+    {
+     "w": "pushes",
+     "start": 62.465,
+     "end": 62.777
+    },
+    {
+     "w": "it",
+     "start": 62.777,
+     "end": 62.865
+    },
+    {
+     "w": "down.",
+     "start": 62.865,
+     "end": 63.465
+    }
+   ]
+  },
+  {
+   "id": "dam",
+   "i": 19,
+   "text": "Your turbine could never spin it. It runs on the line from the dam, three kilometres up the valley.",
+   "start": 64.025,
+   "end": 69.45,
+   "words": [
+    {
+     "w": "Your",
+     "start": 64.025,
+     "end": 64.175
+    },
+    {
+     "w": "turbine",
+     "start": 64.175,
+     "end": 64.65
+    },
+    {
+     "w": "could",
+     "start": 64.65,
+     "end": 64.825
+    },
+    {
+     "w": "never",
+     "start": 64.825,
+     "end": 65.1
+    },
+    {
+     "w": "spin",
+     "start": 65.1,
+     "end": 65.4
+    },
+    {
+     "w": "it.",
+     "start": 65.4,
+     "end": 65.75
+    },
+    {
+     "w": "It",
+     "start": 65.85,
+     "end": 66.012
+    },
+    {
+     "w": "runs",
+     "start": 66.012,
+     "end": 66.362
+    },
+    {
+     "w": "on",
+     "start": 66.362,
+     "end": 66.462
+    },
+    {
+     "w": "the",
+     "start": 66.462,
+     "end": 66.55
+    },
+    {
+     "w": "line",
+     "start": 66.55,
+     "end": 66.9
+    },
+    {
+     "w": "from",
+     "start": 66.9,
+     "end": 67.037
+    },
+    {
+     "w": "the",
+     "start": 67.037,
+     "end": 67.125
+    },
+    {
+     "w": "dam,",
+     "start": 67.125,
+     "end": 67.625
+    },
+    {
+     "w": "three",
+     "start": 67.737,
+     "end": 67.975
+    },
+    {
+     "w": "kilometres",
+     "start": 67.975,
+     "end": 68.562
+    },
+    {
+     "w": "up",
+     "start": 68.562,
+     "end": 68.712
+    },
+    {
+     "w": "the",
+     "start": 68.712,
+     "end": 68.8
+    },
+    {
+     "w": "valley.",
+     "start": 68.8,
+     "end": 69.45
+    }
+   ]
+  },
+  {
+   "id": "nobody",
+   "i": 20,
+   "text": "Nobody's there. It just keeps turning.",
+   "start": 70.06,
+   "end": 72.16,
+   "words": [
+    {
+     "w": "Nobody's",
+     "start": 70.06,
+     "end": 70.535
+    },
+    {
+     "w": "there.",
+     "start": 70.535,
+     "end": 70.86
+    },
+    {
+     "w": "It",
+     "start": 70.922,
+     "end": 71.035
+    },
+    {
+     "w": "just",
+     "start": 71.035,
+     "end": 71.21
+    },
+    {
+     "w": "keeps",
+     "start": 71.21,
+     "end": 71.485
+    },
+    {
+     "w": "turning.",
+     "start": 71.485,
+     "end": 72.16
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "i": 21,
+   "text": "One rule down here. Never go up by day.",
+   "start": 72.97,
+   "end": 75.345,
+   "words": [
+    {
+     "w": "One",
+     "start": 72.97,
+     "end": 73.195
+    },
+    {
+     "w": "rule",
+     "start": 73.195,
+     "end": 73.445
+    },
+    {
+     "w": "down",
+     "start": 73.445,
+     "end": 73.695
+    },
+    {
+     "w": "here.",
+     "start": 73.695,
+     "end": 74.045
+    },
+    {
+     "w": "Never",
+     "start": 74.157,
+     "end": 74.395
+    },
+    {
+     "w": "go",
+     "start": 74.395,
+     "end": 74.532
+    },
+    {
+     "w": "up",
+     "start": 74.532,
+     "end": 74.67
+    },
+    {
+     "w": "by",
+     "start": 74.67,
+     "end": 74.82
+    },
+    {
+     "w": "day.",
+     "start": 74.82,
+     "end": 75.345
+    }
+   ]
+  },
+  {
+   "id": "pupil",
+   "i": 22,
+   "text": "After weeks in the dark, your pupils open wide.",
+   "start": 76.005,
+   "end": 78.68,
+   "words": [
+    {
+     "w": "After",
+     "start": 76.005,
+     "end": 76.255
+    },
+    {
+     "w": "weeks",
+     "start": 76.255,
+     "end": 76.517
+    },
+    {
+     "w": "in",
+     "start": 76.517,
+     "end": 76.592
+    },
+    {
+     "w": "the",
+     "start": 76.592,
+     "end": 76.68
+    },
+    {
+     "w": "dark,",
+     "start": 76.68,
+     "end": 77.105
+    },
+    {
+     "w": "your",
+     "start": 77.205,
+     "end": 77.355
+    },
+    {
+     "w": "pupils",
+     "start": 77.355,
+     "end": 77.78
+    },
+    {
+     "w": "open",
+     "start": 77.78,
+     "end": 78.08
+    },
+    {
+     "w": "wide.",
+     "start": 78.08,
+     "end": 78.68
+    }
+   ]
+  },
+  {
+   "id": "blind",
+   "i": 23,
+   "text": "Step into sunlight, and you're almost blind for a minute.",
+   "start": 79.19,
+   "end": 81.99,
+   "words": [
+    {
+     "w": "Step",
+     "start": 79.19,
+     "end": 79.402
+    },
+    {
+     "w": "into",
+     "start": 79.402,
+     "end": 79.652
+    },
+    {
+     "w": "sunlight,",
+     "start": 79.652,
+     "end": 80.24
+    },
+    {
+     "w": "and",
+     "start": 80.315,
+     "end": 80.427
+    },
+    {
+     "w": "you're",
+     "start": 80.427,
+     "end": 80.565
+    },
+    {
+     "w": "almost",
+     "start": 80.565,
+     "end": 80.94
+    },
+    {
+     "w": "blind",
+     "start": 80.94,
+     "end": 81.29
+    },
+    {
+     "w": "for",
+     "start": 81.29,
+     "end": 81.402
+    },
+    {
+     "w": "a",
+     "start": 81.402,
+     "end": 81.465
+    },
+    {
+     "w": "minute.",
+     "start": 81.465,
+     "end": 81.99
+    }
+   ]
+  },
+  {
+   "id": "minute",
+   "i": 24,
+   "text": "A minute is all they need.",
+   "start": 82.55,
+   "end": 84.0,
+   "words": [
+    {
+     "w": "A",
+     "start": 82.55,
+     "end": 82.625
+    },
+    {
+     "w": "minute",
+     "start": 82.625,
+     "end": 82.9
+    },
+    {
+     "w": "is",
+     "start": 82.9,
+     "end": 83.062
+    },
+    {
+     "w": "all",
+     "start": 83.062,
+     "end": 83.275
+    },
+    {
+     "w": "they",
+     "start": 83.275,
+     "end": 83.425
+    },
+    {
+     "w": "need.",
+     "start": 83.425,
+     "end": 84.0
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "i": 25,
+   "text": "The only safe way up is at night. Three hundred metres of ladder. Two hours, in the dark.",
+   "start": 84.71,
+   "end": 89.66,
+   "words": [
+    {
+     "w": "The",
+     "start": 84.71,
+     "end": 84.835
+    },
+    {
+     "w": "only",
+     "start": 84.835,
+     "end": 85.147
+    },
+    {
+     "w": "safe",
+     "start": 85.147,
+     "end": 85.435
+    },
+    {
+     "w": "way",
+     "start": 85.435,
+     "end": 85.597
+    },
+    {
+     "w": "up",
+     "start": 85.597,
+     "end": 85.747
+    },
+    {
+     "w": "is",
+     "start": 85.747,
+     "end": 85.86
+    },
+    {
+     "w": "at",
+     "start": 85.86,
+     "end": 85.96
+    },
+    {
+     "w": "night.",
+     "start": 85.96,
+     "end": 86.46
+    },
+    {
+     "w": "Three",
+     "start": 86.572,
+     "end": 86.81
+    },
+    {
+     "w": "hundred",
+     "start": 86.81,
+     "end": 87.16
+    },
+    {
+     "w": "metres",
+     "start": 87.16,
+     "end": 87.497
+    },
+    {
+     "w": "of",
+     "start": 87.497,
+     "end": 87.61
+    },
+    {
+     "w": "ladder.",
+     "start": 87.61,
+     "end": 88.135
+    },
+    {
+     "w": "Two",
+     "start": 88.247,
+     "end": 88.497
+    },
+    {
+     "w": "hours,",
+     "start": 88.497,
+     "end": 88.86
+    },
+    {
+     "w": "in",
+     "start": 88.897,
+     "end": 88.972
+    },
+    {
+     "w": "the",
+     "start": 88.972,
+     "end": 89.06
+    },
+    {
+     "w": "dark.",
+     "start": 89.06,
+     "end": 89.66
+    }
+   ]
+  },
+  {
+   "id": "d1",
+   "i": 26,
+   "text": "Day one. The camera at the top shows the yard, full of them.",
+   "start": 90.57,
+   "end": 93.895,
+   "words": [
+    {
+     "w": "Day",
+     "start": 90.57,
+     "end": 90.77
+    },
+    {
+     "w": "one.",
+     "start": 90.77,
+     "end": 91.245
+    },
+    {
+     "w": "The",
+     "start": 91.37,
+     "end": 91.47
+    },
+    {
+     "w": "camera",
+     "start": 91.47,
+     "end": 91.857
+    },
+    {
+     "w": "at",
+     "start": 91.857,
+     "end": 91.932
+    },
+    {
+     "w": "the",
+     "start": 91.932,
+     "end": 92.02
+    },
+    {
+     "w": "top",
+     "start": 92.02,
+     "end": 92.295
+    },
+    {
+     "w": "shows",
+     "start": 92.295,
+     "end": 92.582
+    },
+    {
+     "w": "the",
+     "start": 92.582,
+     "end": 92.67
+    },
+    {
+     "w": "yard,",
+     "start": 92.67,
+     "end": 93.02
+    },
+    {
+     "w": "full",
+     "start": 93.07,
+     "end": 93.282
+    },
+    {
+     "w": "of",
+     "start": 93.282,
+     "end": 93.42
+    },
+    {
+     "w": "them.",
+     "start": 93.42,
+     "end": 93.895
+    }
+   ]
+  },
+  {
+   "id": "d5",
+   "i": 27,
+   "text": "Day five. They're still there.",
+   "start": 94.505,
+   "end": 96.005,
+   "words": [
+    {
+     "w": "Day",
+     "start": 94.505,
+     "end": 94.717
+    },
+    {
+     "w": "five.",
+     "start": 94.717,
+     "end": 95.03
+    },
+    {
+     "w": "They're",
+     "start": 95.067,
+     "end": 95.205
+    },
+    {
+     "w": "still",
+     "start": 95.205,
+     "end": 95.48
+    },
+    {
+     "w": "there.",
+     "start": 95.48,
+     "end": 96.005
+    }
+   ]
+  },
+  {
+   "id": "d10",
+   "i": 28,
+   "text": "Day ten. They haven't moved.",
+   "start": 96.615,
+   "end": 98.09,
+   "words": [
+    {
+     "w": "Day",
+     "start": 96.615,
+     "end": 96.79
+    },
+    {
+     "w": "ten.",
+     "start": 96.79,
+     "end": 97.04
+    },
+    {
+     "w": "They",
+     "start": 97.077,
+     "end": 97.19
+    },
+    {
+     "w": "haven't",
+     "start": 97.19,
+     "end": 97.49
+    },
+    {
+     "w": "moved.",
+     "start": 97.49,
+     "end": 98.09
+    }
+   ]
+  },
+  {
+   "id": "stare",
+   "i": 29,
+   "text": "At night they circle the shaft, staring down into the dark.",
+   "start": 98.7,
+   "end": 101.725,
+   "words": [
+    {
+     "w": "At",
+     "start": 98.7,
+     "end": 98.825
+    },
+    {
+     "w": "night",
+     "start": 98.825,
+     "end": 99.05
+    },
+    {
+     "w": "they",
+     "start": 99.05,
+     "end": 99.212
+    },
+    {
+     "w": "circle",
+     "start": 99.212,
+     "end": 99.487
+    },
+    {
+     "w": "the",
+     "start": 99.487,
+     "end": 99.612
+    },
+    {
+     "w": "shaft,",
+     "start": 99.612,
+     "end": 100.1
+    },
+    {
+     "w": "staring",
+     "start": 100.212,
+     "end": 100.625
+    },
+    {
+     "w": "down",
+     "start": 100.625,
+     "end": 100.887
+    },
+    {
+     "w": "into",
+     "start": 100.887,
+     "end": 101.062
+    },
+    {
+     "w": "the",
+     "start": 101.062,
+     "end": 101.15
+    },
+    {
+     "w": "dark.",
+     "start": 101.15,
+     "end": 101.725
+    }
+   ]
+  },
+  {
+   "id": "d14",
+   "i": 30,
+   "text": "Day fourteen. At noon, the fan stops.",
+   "start": 102.535,
+   "end": 104.935,
+   "words": [
+    {
+     "w": "Day",
+     "start": 102.535,
+     "end": 102.71
+    },
+    {
+     "w": "fourteen.",
+     "start": 102.71,
+     "end": 103.335
+    },
+    {
+     "w": "At",
+     "start": 103.435,
+     "end": 103.635
+    },
+    {
+     "w": "noon,",
+     "start": 103.635,
+     "end": 103.885
+    },
+    {
+     "w": "the",
+     "start": 103.922,
+     "end": 104.01
+    },
+    {
+     "w": "fan",
+     "start": 104.01,
+     "end": 104.285
+    },
+    {
+     "w": "stops.",
+     "start": 104.285,
+     "end": 104.935
+    }
+   ]
+  },
+  {
+   "id": "still",
+   "i": 31,
+   "text": "The air goes still.",
+   "start": 105.595,
+   "end": 106.72,
+   "words": [
+    {
+     "w": "The",
+     "start": 105.595,
+     "end": 105.72
+    },
+    {
+     "w": "air",
+     "start": 105.72,
+     "end": 105.92
+    },
+    {
+     "w": "goes",
+     "start": 105.92,
+     "end": 106.145
+    },
+    {
+     "w": "still.",
+     "start": 106.145,
+     "end": 106.72
+    }
+   ]
+  },
+  {
+   "id": "plan",
+   "i": 32,
+   "text": "You planned for everything. Food. Water. Power.",
+   "start": 107.53,
+   "end": 110.08,
+   "words": [
+    {
+     "w": "You",
+     "start": 107.53,
+     "end": 107.63
+    },
+    {
+     "w": "planned",
+     "start": 107.63,
+     "end": 107.917
+    },
+    {
+     "w": "for",
+     "start": 107.917,
+     "end": 108.03
+    },
+    {
+     "w": "everything.",
+     "start": 108.03,
+     "end": 108.48
+    },
+    {
+     "w": "Food.",
+     "start": 108.567,
+     "end": 108.98
+    },
+    {
+     "w": "Water.",
+     "start": 109.067,
+     "end": 109.405
+    },
+    {
+     "w": "Power.",
+     "start": 109.455,
+     "end": 110.08
+    }
+   ]
+  },
+  {
+   "id": "forgot",
+   "i": 33,
+   "text": "But you forgot one thing. Your air was never yours.",
+   "start": 110.69,
+   "end": 113.64,
+   "words": [
+    {
+     "w": "But",
+     "start": 110.69,
+     "end": 110.815
+    },
+    {
+     "w": "you",
+     "start": 110.815,
+     "end": 110.915
+    },
+    {
+     "w": "forgot",
+     "start": 110.915,
+     "end": 111.29
+    },
+    {
+     "w": "one",
+     "start": 111.29,
+     "end": 111.515
+    },
+    {
+     "w": "thing.",
+     "start": 111.515,
+     "end": 111.94
+    },
+    {
+     "w": "Your",
+     "start": 112.04,
+     "end": 112.227
+    },
+    {
+     "w": "air",
+     "start": 112.227,
+     "end": 112.49
+    },
+    {
+     "w": "was",
+     "start": 112.49,
+     "end": 112.665
+    },
+    {
+     "w": "never",
+     "start": 112.665,
+     "end": 112.965
+    },
+    {
+     "w": "yours.",
+     "start": 112.965,
+     "end": 113.64
+    }
+   ]
+  },
+  {
+   "id": "stale",
+   "i": 34,
+   "text": "Without the fan, the air goes stale. Six days. Maybe seven.",
+   "start": 114.25,
+   "end": 117.55,
+   "words": [
+    {
+     "w": "Without",
+     "start": 114.25,
+     "end": 114.512
+    },
+    {
+     "w": "the",
+     "start": 114.512,
+     "end": 114.6
+    },
+    {
+     "w": "fan,",
+     "start": 114.6,
+     "end": 114.85
+    },
+    {
+     "w": "the",
+     "start": 114.887,
+     "end": 115.0
+    },
+    {
+     "w": "air",
+     "start": 115.0,
+     "end": 115.2
+    },
+    {
+     "w": "goes",
+     "start": 115.2,
+     "end": 115.4
+    },
+    {
+     "w": "stale.",
+     "start": 115.4,
+     "end": 115.85
+    },
+    {
+     "w": "Six",
+     "start": 115.937,
+     "end": 116.2
+    },
+    {
+     "w": "days.",
+     "start": 116.2,
+     "end": 116.625
+    },
+    {
+     "w": "Maybe",
+     "start": 116.675,
+     "end": 116.962
+    },
+    {
+     "w": "seven.",
+     "start": 116.962,
+     "end": 117.55
+    }
+   ]
+  },
+  {
+   "id": "radio",
+   "i": 35,
+   "text": "That night, the radio crackles.",
+   "start": 118.36,
+   "end": 119.935,
+   "words": [
+    {
+     "w": "That",
+     "start": 118.36,
+     "end": 118.547
+    },
+    {
+     "w": "night,",
+     "start": 118.547,
+     "end": 118.71
+    },
+    {
+     "w": "the",
+     "start": 118.747,
+     "end": 118.835
+    },
+    {
+     "w": "radio",
+     "start": 118.835,
+     "end": 119.21
+    },
+    {
+     "w": "crackles.",
+     "start": 119.21,
+     "end": 119.935
+    }
+   ]
+  },
+  {
+   "id": "someone",
+   "i": 36,
+   "text": "Someone is at the dam. A family, switching off every line they think is dead.",
+   "start": 120.545,
+   "end": 124.77,
+   "words": [
+    {
+     "w": "Someone",
+     "start": 120.545,
+     "end": 120.87
+    },
+    {
+     "w": "is",
+     "start": 120.87,
+     "end": 120.995
+    },
+    {
+     "w": "at",
+     "start": 120.995,
+     "end": 121.082
+    },
+    {
+     "w": "the",
+     "start": 121.082,
+     "end": 121.17
+    },
+    {
+     "w": "dam.",
+     "start": 121.17,
+     "end": 121.77
+    },
+    {
+     "w": "A",
+     "start": 121.87,
+     "end": 121.982
+    },
+    {
+     "w": "family,",
+     "start": 121.982,
+     "end": 122.47
+    },
+    {
+     "w": "switching",
+     "start": 122.545,
+     "end": 122.87
+    },
+    {
+     "w": "off",
+     "start": 122.87,
+     "end": 123.107
+    },
+    {
+     "w": "every",
+     "start": 123.107,
+     "end": 123.445
+    },
+    {
+     "w": "line",
+     "start": 123.445,
+     "end": 123.732
+    },
+    {
+     "w": "they",
+     "start": 123.732,
+     "end": 123.87
+    },
+    {
+     "w": "think",
+     "start": 123.87,
+     "end": 124.057
+    },
+    {
+     "w": "is",
+     "start": 124.057,
+     "end": 124.195
+    },
+    {
+     "w": "dead.",
+     "start": 124.195,
+     "end": 124.77
+    }
+   ]
+  },
+  {
+   "id": "know",
+   "i": 37,
+   "text": "They don't know you exist.",
+   "start": 125.33,
+   "end": 126.655,
+   "words": [
+    {
+     "w": "They",
+     "start": 125.33,
+     "end": 125.417
+    },
+    {
+     "w": "don't",
+     "start": 125.417,
+     "end": 125.605
+    },
+    {
+     "w": "know",
+     "start": 125.605,
+     "end": 125.83
+    },
+    {
+     "w": "you",
+     "start": 125.83,
+     "end": 125.98
+    },
+    {
+     "w": "exist.",
+     "start": 125.98,
+     "end": 126.655
+    }
+   ]
+  },
+  {
+   "id": "call",
+   "i": 38,
+   "text": "One call, and they'd switch you back on.",
+   "start": 127.215,
+   "end": 129.215,
+   "words": [
+    {
+     "w": "One",
+     "start": 127.215,
+     "end": 127.44
+    },
+    {
+     "w": "call,",
+     "start": 127.44,
+     "end": 127.765
+    },
+    {
+     "w": "and",
+     "start": 127.802,
+     "end": 127.902
+    },
+    {
+     "w": "they'd",
+     "start": 127.902,
+     "end": 128.09
+    },
+    {
+     "w": "switch",
+     "start": 128.09,
+     "end": 128.34
+    },
+    {
+     "w": "you",
+     "start": 128.34,
+     "end": 128.44
+    },
+    {
+     "w": "back",
+     "start": 128.44,
+     "end": 128.715
+    },
+    {
+     "w": "on.",
+     "start": 128.715,
+     "end": 129.215
+    }
+   ]
+  },
+  {
+   "id": "alone",
+   "i": 39,
+   "text": "Or you go up alone. There's an old second shaft, capped with steel.",
+   "start": 129.925,
+   "end": 133.5,
+   "words": [
+    {
+     "w": "Or",
+     "start": 129.925,
+     "end": 130.05
+    },
+    {
+     "w": "you",
+     "start": 130.05,
+     "end": 130.175
+    },
+    {
+     "w": "go",
+     "start": 130.175,
+     "end": 130.312
+    },
+    {
+     "w": "up",
+     "start": 130.312,
+     "end": 130.45
+    },
+    {
+     "w": "alone.",
+     "start": 130.45,
+     "end": 131.05
+    },
+    {
+     "w": "There's",
+     "start": 131.15,
+     "end": 131.337
+    },
+    {
+     "w": "an",
+     "start": 131.337,
+     "end": 131.425
+    },
+    {
+     "w": "old",
+     "start": 131.425,
+     "end": 131.7
+    },
+    {
+     "w": "second",
+     "start": 131.7,
+     "end": 132.037
+    },
+    {
+     "w": "shaft,",
+     "start": 132.037,
+     "end": 132.375
+    },
+    {
+     "w": "capped",
+     "start": 132.425,
+     "end": 132.687
+    },
+    {
+     "w": "with",
+     "start": 132.687,
+     "end": 132.85
+    },
+    {
+     "w": "steel.",
+     "start": 132.85,
+     "end": 133.5
+    }
+   ]
+  },
+  {
+   "id": "breathe",
+   "i": 40,
+   "text": "Open it, and the mine breathes on its own. Cold air in, warm air out.",
+   "start": 134.11,
+   "end": 138.06,
+   "words": [
+    {
+     "w": "Open",
+     "start": 134.11,
+     "end": 134.335
+    },
+    {
+     "w": "it,",
+     "start": 134.335,
+     "end": 134.435
+    },
+    {
+     "w": "and",
+     "start": 134.472,
+     "end": 134.572
+    },
+    {
+     "w": "the",
+     "start": 134.572,
+     "end": 134.66
+    },
+    {
+     "w": "mine",
+     "start": 134.66,
+     "end": 134.985
+    },
+    {
+     "w": "breathes",
+     "start": 134.985,
+     "end": 135.272
+    },
+    {
+     "w": "on",
+     "start": 135.272,
+     "end": 135.372
+    },
+    {
+     "w": "its",
+     "start": 135.372,
+     "end": 135.51
+    },
+    {
+     "w": "own.",
+     "start": 135.51,
+     "end": 136.01
+    },
+    {
+     "w": "Cold",
+     "start": 136.147,
+     "end": 136.522
+    },
+    {
+     "w": "air",
+     "start": 136.522,
+     "end": 136.747
+    },
+    {
+     "w": "in,",
+     "start": 136.747,
+     "end": 136.96
+    },
+    {
+     "w": "warm",
+     "start": 137.035,
+     "end": 137.36
+    },
+    {
+     "w": "air",
+     "start": 137.36,
+     "end": 137.56
+    },
+    {
+     "w": "out.",
+     "start": 137.56,
+     "end": 138.06
+    }
+   ]
+  },
+  {
+   "id": "route",
+   "i": 41,
+   "text": "Two hours of ladder. Then six hundred metres across the yard.",
+   "start": 138.67,
+   "end": 142.22,
+   "words": [
+    {
+     "w": "Two",
+     "start": 138.67,
+     "end": 138.907
+    },
+    {
+     "w": "hours",
+     "start": 138.907,
+     "end": 139.232
+    },
+    {
+     "w": "of",
+     "start": 139.232,
+     "end": 139.345
+    },
+    {
+     "w": "ladder.",
+     "start": 139.345,
+     "end": 139.92
+    },
+    {
+     "w": "Then",
+     "start": 140.02,
+     "end": 140.232
+    },
+    {
+     "w": "six",
+     "start": 140.232,
+     "end": 140.47
+    },
+    {
+     "w": "hundred",
+     "start": 140.47,
+     "end": 140.82
+    },
+    {
+     "w": "metres",
+     "start": 140.82,
+     "end": 141.17
+    },
+    {
+     "w": "across",
+     "start": 141.17,
+     "end": 141.495
+    },
+    {
+     "w": "the",
+     "start": 141.495,
+     "end": 141.595
+    },
+    {
+     "w": "yard.",
+     "start": 141.595,
+     "end": 142.22
+    }
+   ]
+  },
+  {
+   "id": "through",
+   "i": 42,
+   "text": "Through them.",
+   "start": 142.73,
+   "end": 143.48,
+   "words": [
+    {
+     "w": "Through",
+     "start": 142.73,
+     "end": 142.955
+    },
+    {
+     "w": "them.",
+     "start": 142.955,
+     "end": 143.48
+    }
+   ]
+  },
+  {
+   "id": "ask1",
+   "i": 43,
+   "text": "Do you call the dam, and tell strangers where you hide?",
+   "start": 144.29,
+   "end": 147.065,
+   "words": [
+    {
+     "w": "Do",
+     "start": 144.29,
+     "end": 144.377
+    },
+    {
+     "w": "you",
+     "start": 144.377,
+     "end": 144.465
+    },
+    {
+     "w": "call",
+     "start": 144.465,
+     "end": 144.702
+    },
+    {
+     "w": "the",
+     "start": 144.702,
+     "end": 144.79
+    },
+    {
+     "w": "dam,",
+     "start": 144.79,
+     "end": 145.215
+    },
+    {
+     "w": "and",
+     "start": 145.29,
+     "end": 145.415
+    },
+    {
+     "w": "tell",
+     "start": 145.415,
+     "end": 145.665
+    },
+    {
+     "w": "strangers",
+     "start": 145.665,
+     "end": 146.177
+    },
+    {
+     "w": "where",
+     "start": 146.177,
+     "end": 146.315
+    },
+    {
+     "w": "you",
+     "start": 146.315,
+     "end": 146.465
+    },
+    {
+     "w": "hide?",
+     "start": 146.465,
+     "end": 147.065
+    }
+   ]
+  },
+  {
+   "id": "ask2",
+   "i": 44,
+   "text": "Or climb up alone, into the dead? Comment call, or alone.",
+   "start": 147.675,
+   "end": 150.875,
+   "words": [
+    {
+     "w": "Or",
+     "start": 147.675,
+     "end": 147.8
+    },
+    {
+     "w": "climb",
+     "start": 147.8,
+     "end": 148.037
+    },
+    {
+     "w": "up",
+     "start": 148.037,
+     "end": 148.175
+    },
+    {
+     "w": "alone,",
+     "start": 148.175,
+     "end": 148.475
+    },
+    {
+     "w": "into",
+     "start": 148.512,
+     "end": 148.712
+    },
+    {
+     "w": "the",
+     "start": 148.712,
+     "end": 148.8
+    },
+    {
+     "w": "dead?",
+     "start": 148.8,
+     "end": 149.275
+    },
+    {
+     "w": "Comment",
+     "start": 149.4,
+     "end": 149.75
+    },
+    {
+     "w": "call,",
+     "start": 149.75,
+     "end": 150.025
+    },
+    {
+     "w": "or",
+     "start": 150.075,
+     "end": 150.2
+    },
+    {
+     "w": "alone.",
+     "start": 150.2,
+     "end": 150.875
+    }
+   ]
+  }
+ ]
+}

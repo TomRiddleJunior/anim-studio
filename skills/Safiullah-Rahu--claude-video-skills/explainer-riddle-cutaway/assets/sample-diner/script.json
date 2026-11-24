@@ -1,0 +1,108 @@
+{
+ "voice": "am_eric",
+ "speed": 1.07,
+ "lead": 0.15,
+ "tail": 1.4,
+ "gap": 0.28,
+ "lines": [
+  {
+   "id": "r01",
+   "text": "Every evening at 6:05, this woman runs downstairs into the corner diner and asks for one thing: a glass of water."
+  },
+  {
+   "id": "r02",
+   "gap": 0.3,
+   "text": "Before the cook can pour it, he grabs two pans and slams them together right behind her."
+  },
+  {
+   "id": "r03",
+   "gap": 0.3,
+   "text": "She jumps, she smiles, she says thank you, and she walks out without drinking a drop."
+  },
+  {
+   "id": "r04",
+   "gap": 0.55,
+   "text": "Theo, the night cashier, watches it happen every single evening, and it's driving him crazy."
+  },
+  {
+   "id": "r05",
+   "gap": 0.55,
+   "text": "Then one evening, Marco the cook is off sick, and something strange happens."
+  },
+  {
+   "id": "r06",
+   "gap": 0.3,
+   "text": "The new cook just hands her the water, and she drinks the whole glass."
+  },
+  {
+   "id": "r07",
+   "gap": 0.3,
+   "text": "But this time, no smile. No thank you. She leaves looking worse."
+  },
+  {
+   "id": "r08",
+   "gap": 0.35,
+   "text": "Theo checks the water. It's fine, and no other customer does this."
+  },
+  {
+   "id": "r09",
+   "gap": 0.3,
+   "text": "So why does she thank the man who scares her, and not the one who gives her water?"
+  },
+  {
+   "id": "r10",
+   "gap": 0.35,
+   "text": "You have ten seconds. Comment your answer now."
+  },
+  {
+   "id": "r11",
+   "gap": 10.6,
+   "text": "Time's up."
+  },
+  {
+   "id": "r12",
+   "gap": 0.6,
+   "text": "The next evening, Theo replays the diner camera in slow motion, and there it is."
+  },
+  {
+   "id": "r13",
+   "gap": 0.4,
+   "text": "Every few seconds, her shoulders jump."
+  },
+  {
+   "id": "r14",
+   "gap": 0.3,
+   "text": "Hic. Hic. Hic. She has the hiccups."
+  },
+  {
+   "id": "r15",
+   "gap": 0.35,
+   "text": "She never wanted the water. She wanted a fright."
+  },
+  {
+   "id": "r16",
+   "gap": 0.3,
+   "text": "The pans go bang, she jumps, and the hiccups stop."
+  },
+  {
+   "id": "r17",
+   "gap": 0.35,
+   "text": "The water didn't work, so she left still hiccuping."
+  },
+  {
+   "id": "r18",
+   "gap": 0.55,
+   "text": "Theo laughs so hard he knocks over the straws."
+  },
+  {
+   "id": "r19",
+   "gap": 0.35,
+   "text": "The next morning, he hangs two spare pans by the register, just in case."
+  },
+  {
+   "id": "r20",
+   "gap": 0.5,
+   "text": "So, did you get it right? Follow for more."
+  }
+ ]
+}

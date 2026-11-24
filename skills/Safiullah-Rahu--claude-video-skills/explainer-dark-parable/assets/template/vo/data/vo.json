@@ -1,0 +1,166 @@
+{
+ "duration": 12.325,
+ "voice": "am_onyx,am_michael",
+ "words": 26,
+ "wpm_overall": 126.6,
+ "wpm_speech": 171.0,
+ "lines": [
+  {
+   "id": "t01",
+   "i": 0,
+   "text": "A trainer once tied a baby elephant to a stake with a thin rope.",
+   "start": 0.18,
+   "end": 4.205,
+   "words": [
+    {
+     "w": "A",
+     "start": 0.18,
+     "end": 0.255
+    },
+    {
+     "w": "trainer",
+     "start": 0.255,
+     "end": 0.68
+    },
+    {
+     "w": "once",
+     "start": 0.68,
+     "end": 0.955
+    },
+    {
+     "w": "tied",
+     "start": 0.955,
+     "end": 1.193
+    },
+    {
+     "w": "a",
+     "start": 1.193,
+     "end": 1.267
+    },
+    {
+     "w": "baby",
+     "start": 1.267,
+     "end": 1.68
+    },
+    {
+     "w": "elephant",
+     "start": 1.68,
+     "end": 2.13
+    },
+    {
+     "w": "to",
+     "start": 2.13,
+     "end": 2.218
+    },
+    {
+     "w": "a",
+     "start": 2.218,
+     "end": 2.318
+    },
+    {
+     "w": "stake",
+     "start": 2.318,
+     "end": 2.893
+    },
+    {
+     "w": "with",
+     "start": 2.893,
+     "end": 3.043
+    },
+    {
+     "w": "a",
+     "start": 3.043,
+     "end": 3.155
+    },
+    {
+     "w": "thin",
+     "start": 3.155,
+     "end": 3.48
+    },
+    {
+     "w": "rope.",
+     "start": 3.48,
+     "end": 4.205
+    }
+   ]
+  },
+  {
+   "id": "t02",
+   "i": 1,
+   "text": "She pulled until, one morning, she stopped.",
+   "start": 4.865,
+   "end": 7.34,
+   "words": [
+    {
+     "w": "She",
+     "start": 4.865,
+     "end": 5.003
+    },
+    {
+     "w": "pulled",
+     "start": 5.003,
+     "end": 5.303
+    },
+    {
+     "w": "until,",
+     "start": 5.303,
+     "end": 5.64
+    },
+    {
+     "w": "one",
+     "start": 5.69,
+     "end": 5.915
+    },
+    {
+     "w": "morning,",
+     "start": 5.915,
+     "end": 6.29
+    },
+    {
+     "w": "she",
+     "start": 6.34,
+     "end": 6.503
+    },
+    {
+     "w": "stopped.",
+     "start": 6.503,
+     "end": 7.34
+    }
+   ]
+  },
+  {
+   "id": "t03",
+   "i": 2,
+   "text": "Psychologists call it learned helplessness.",
+   "start": 8.15,
+   "end": 10.775,
+   "words": [
+    {
+     "w": "Psychologists",
+     "start": 8.15,
+     "end": 8.887
+    },
+    {
+     "w": "call",
+     "start": 8.887,
+     "end": 9.2
+    },
+    {
+     "w": "it",
+     "start": 9.2,
+     "end": 9.35
+    },
+    {
+     "w": "learned",
+     "start": 9.35,
+     "end": 9.65
+    },
+    {
+     "w": "helplessness.",
+     "start": 9.65,
+     "end": 10.775
+    }
+   ]
+  }
+ ]
+}

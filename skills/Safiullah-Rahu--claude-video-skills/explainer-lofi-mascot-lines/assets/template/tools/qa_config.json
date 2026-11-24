@@ -1,0 +1,55 @@
+{
+ "source": "",
+ "source_metrics": "",
+ "source_note": "optional reference video + its metrics.json for tools/qa.py (or pass --ref / --ref-metrics); no default",
+ "source_wpm_true": 118.0,
+ "planned_dips": [
+  3.429,
+  6.857,
+  10.286,
+  15.429,
+  18.857
+ ],
+ "beats": [
+  [
+   1.5,
+   1.5,
+   "caf\u00e9 window, line 1"
+  ],
+  [
+   5.0,
+   5.0,
+   "floating in the puddle"
+  ],
+  [
+   8.5,
+   8.5,
+   "in bed, from above"
+  ],
+  [
+   11.5,
+   12.0,
+   "still in the passing crowd"
+  ],
+  [
+   13.2,
+   13.8,
+   "the line's second half"
+  ],
+  [
+   16.5,
+   17.0,
+   "an early night"
+  ],
+  [
+   20.5,
+   20.5,
+   "the window seat"
+  ],
+  [
+   22.1,
+   22.2,
+   "the last frame (loops)"
+  ]
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "voice": "bm_george",
+ "speed": 1.18,
+ "lead": 0.9,
+ "tail": 3.4,
+ "lines": [
+  {"id": "o1", "text": "Good evening, ladies and gentlemen. This is your captain speaking.", "speed": 1.08},
+  {"id": "o2", "text": "We'll be making six stops this week. I'm afraid none of them are on time.", "gap": 0.5, "speed": 1.1},
+  {"id": "o3", "text": "Please keep your seatbelts fastened.", "gap": 0.5, "speed": 1.08},
+
+  {"id": "h1", "text": "On your left, the Strait of Hormuz.", "gap": 1.8},
+  {"id": "h2", "text": "Closed in February. Reopened in April. Closed again.", "gap": 0.42},
+  {"id": "h3", "text": "It remains closed.", "gap": 0.36},
+  {"id": "h4", "text": "In October, a ship was struck there nearly every day.", "gap": 0.6},
+  {"id": "h5", "text": "Diesel is six dollars twenty-eight a gallon. Please plan your onward travel accordingly.", "gap": 0.6},
+
+  {"id": "a1", "text": "Coming up on the right, Juneau, Alaska.", "gap": 0.85},
+  {"id": "a2", "text": "The Justice Department is suing to stop Alaska certifying its Senate race, unless Senator Dan Sullivan wins.", "gap": 0.42},
+  {"id": "a3", "text": "The reason given: possible confusion with a second candidate named Sullivan.", "gap": 0.36},
+  {"id": "a4", "text": "On who ordered it, the President said: I'm the one that said do it.", "gap": 0.6},
+  {"id": "a5", "text": "The matter is now in court. Election day is November the third.", "gap": 0.5},
+
+  {"id": "i1", "text": "Below us, Israel, which voted on Tuesday.", "gap": 0.85},
+  {"id": "i2", "text": "Forming a government takes sixty-one of a hundred and twenty seats.", "gap": 0.5},
+  {"id": "i3", "text": "One exit poll gave Netanyahu's bloc fifty-two. Two others, a tie.", "gap": 0.36},
+  {"id": "i4", "text": "Passengers should expect delays.", "gap": 0.42},
+
+  {"id": "b1", "text": "We are now crossing Brazil.", "gap": 0.85},
+  {"id": "b2", "text": "Lula has won a fourth term, with just over fifty-one percent.", "gap": 0.42},
+  {"id": "b3", "text": "He won at eighty. Two days later, he turned eighty-one.", "gap": 0.5},
+  {"id": "b4", "text": "The runner-up has lodged a complaint.", "gap": 0.5},
+
+  {"id": "s1", "text": "Approaching Belgrade.", "gap": 0.85},
+  {"id": "s2", "text": "A student-led list has won the parliamentary election. About two point two million votes to one point seven, by the President's own count.", "gap": 0.42},
+  {"id": "s3", "text": "His words: it is clear that we have lost these elections.", "gap": 0.5},
+  {"id": "s4", "text": "Ladies and gentlemen, the ruling party has conceded.", "gap": 0.5},
+
+  {"id": "v1", "text": "And finally, Caracas.", "gap": 0.85},
+  {"id": "v2", "text": "Opposition leader Maria Corina Machado is back, after about ten months abroad.", "gap": 0.42},
+  {"id": "v3", "text": "Welcome home. Her next request: an election date.", "gap": 0.5},
+
+  {"id": "r1", "text": "A quick recap before we land.", "gap": 1.0},
+  {"id": "r2", "text": "One strait, closed. One lawsuit, in court. One count, delayed. One result, disputed. One election, conceded. One leader, home.", "gap": 0.4},
+  {"id": "e1", "text": "Our next departure is scheduled for November the third.", "gap": 0.8},
+  {"id": "e2", "text": "Thank you for flying with us, and for your patience.", "gap": 0.45}
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "fps": 30,
+ "voice": false,
+ "loop": true,
+ "planned_dips": [10.0, 13.45],
+ "beats": [
+  [0.0, 0.0, "frame 0: figure, object, counter 0"],
+  [0.5, 0.5, "count 1 (singular label)"],
+  [2.6, 2.6, "the race: smear + caption 1"],
+  [5.6, 5.6, "slowing into 100"],
+  [7.0, 7.0, "rest + the scan line"],
+  [8.2, 8.2, "hidden progress revealed"],
+  [9.85, 9.85, "the 101st"],
+  [10.2, 10.2, "release: gold counter, light"],
+  [11.2, 11.2, "caption 3"],
+  [12.6, 12.6, "caption 4"],
+  [13.5, 13.5, "end (ours: the reset)"],
+  [13.98, 13.966, "last frame (ours = frame 0)"]
+ ]
+}

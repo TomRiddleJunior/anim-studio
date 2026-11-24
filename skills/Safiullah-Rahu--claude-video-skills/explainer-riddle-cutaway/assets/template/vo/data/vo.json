@@ -1,0 +1,195 @@
+{
+ "duration": 15.665,
+ "voice": "am_eric",
+ "words": 30,
+ "wpm_overall": 114.9,
+ "wpm_speech": 193.0,
+ "lines": [
+  {
+   "id": "r01",
+   "i": 0,
+   "text": "This man checks into Room 305 every Friday night.",
+   "start": 0.21,
+   "end": 3.51,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.21,
+     "end": 0.385
+    },
+    {
+     "w": "man",
+     "start": 0.385,
+     "end": 0.672
+    },
+    {
+     "w": "checks",
+     "start": 0.672,
+     "end": 0.947
+    },
+    {
+     "w": "into",
+     "start": 0.947,
+     "end": 1.185
+    },
+    {
+     "w": "Room",
+     "start": 1.185,
+     "end": 1.447
+    },
+    {
+     "w": "305",
+     "start": 1.447,
+     "end": 2.235
+    },
+    {
+     "w": "every",
+     "start": 2.235,
+     "end": 2.522
+    },
+    {
+     "w": "Friday",
+     "start": 2.522,
+     "end": 2.91
+    },
+    {
+     "w": "night.",
+     "start": 2.91,
+     "end": 3.51
+    }
+   ]
+  },
+  {
+   "id": "r04",
+   "i": 1,
+   "text": "Nadia, the night receptionist, sees his call light up, and it's driving her crazy.",
+   "start": 4.12,
+   "end": 7.995,
+   "words": [
+    {
+     "w": "Nadia,",
+     "start": 4.12,
+     "end": 4.445
+    },
+    {
+     "w": "the",
+     "start": 4.482,
+     "end": 4.57
+    },
+    {
+     "w": "night",
+     "start": 4.57,
+     "end": 4.757
+    },
+    {
+     "w": "receptionist,",
+     "start": 4.757,
+     "end": 5.395
+    },
+    {
+     "w": "sees",
+     "start": 5.445,
+     "end": 5.632
+    },
+    {
+     "w": "his",
+     "start": 5.632,
+     "end": 5.795
+    },
+    {
+     "w": "call",
+     "start": 5.795,
+     "end": 6.045
+    },
+    {
+     "w": "light",
+     "start": 6.045,
+     "end": 6.232
+    },
+    {
+     "w": "up,",
+     "start": 6.232,
+     "end": 6.42
+    },
+    {
+     "w": "and",
+     "start": 6.495,
+     "end": 6.607
+    },
+    {
+     "w": "it's",
+     "start": 6.607,
+     "end": 6.745
+    },
+    {
+     "w": "driving",
+     "start": 6.745,
+     "end": 7.132
+    },
+    {
+     "w": "her",
+     "start": 7.132,
+     "end": 7.245
+    },
+    {
+     "w": "crazy.",
+     "start": 7.245,
+     "end": 7.995
+    }
+   ]
+  },
+  {
+   "id": "r10",
+   "i": 2,
+   "text": "Why? You have three seconds.",
+   "start": 8.555,
+   "end": 10.055,
+   "words": [
+    {
+     "w": "Why?",
+     "start": 8.555,
+     "end": 8.755
+    },
+    {
+     "w": "You",
+     "start": 8.792,
+     "end": 8.892
+    },
+    {
+     "w": "have",
+     "start": 8.892,
+     "end": 9.08
+    },
+    {
+     "w": "three",
+     "start": 9.08,
+     "end": 9.305
+    },
+    {
+     "w": "seconds.",
+     "start": 9.305,
+     "end": 10.055
+    }
+   ]
+  },
+  {
+   "id": "r11",
+   "i": 3,
+   "text": "Time's up.",
+   "start": 13.665,
+   "end": 14.315,
+   "words": [
+    {
+     "w": "Time's",
+     "start": 13.665,
+     "end": 13.965
+    },
+    {
+     "w": "up.",
+     "start": 13.965,
+     "end": 14.315
+    }
+   ]
+  }
+ ]
+}

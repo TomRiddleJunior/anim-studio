@@ -1,0 +1,46 @@
+{
+  "name": "the-vault",
+  "note": "A surprise party, a suspicious wife, and an assistant that is a terrible liar. Original script. Handover before the last message.",
+  "title": "ChatGPT",
+  "day": "Today",
+  "time": "6:41 pm",
+  "clock": "6:41",
+  "seed": 4107,
+  "turns": [
+    {
+      "user": "I’m planning a surprise party for my wife on Saturday\n\nShe can NOT find out",
+      "cps": 12.5, "think": 0.8, "wps": 6.5, "hold": 2.0,
+      "reply": [
+        "Your secret is safe with me. 🔒",
+        "What party? I've never heard of a party."
+      ]
+    },
+    {
+      "user": "She just saw me typing and now she’s suspicious",
+      "cps": 14.5, "think": 0.75, "wps": 7.0, "hold": 2.3,
+      "reply": [
+        "Stay calm. Tell her you're comparing car insurance. 😌",
+        "Nobody asks follow-up questions about car insurance."
+      ]
+    },
+    {
+      "user": "She’s taking my phone, don’t say anything",
+      "cps": 18.0, "think": 0.7, "wps": 7.0, "hold": 1.9,
+      "reply": [
+        "🤐 Not a word.",
+        "I'm a vault."
+      ]
+    },
+    {
+      "user": "Hi, this is his wife. What is he hiding from me?",
+      "handover": true,
+      "cps": 9.5, "think": 1.4, "wps": 6.5, "hold": 3.6,
+      "reply": [
+        "Nothing at all.",
+        "There is absolutely **no party** on **Saturday at 7**.",
+        "Also, please don't look in the garage. 🎈",
+        "…I've said too much. 💀"
+      ]
+    }
+  ]
+}

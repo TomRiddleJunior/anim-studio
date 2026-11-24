@@ -1,0 +1,1293 @@
+{
+ "duration": 66.315,
+ "voice": "am_michael",
+ "words": 228,
+ "wpm_overall": 206.3,
+ "wpm_speech": 232.0,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "A man begged his country for eight years to change every clock, and the first country to do it was their enemy.",
+   "start": 0.26,
+   "end": 5.01,
+   "words": [
+    {
+     "w": "A",
+     "start": 0.26,
+     "end": 0.31
+    },
+    {
+     "w": "man",
+     "start": 0.31,
+     "end": 0.585
+    },
+    {
+     "w": "begged",
+     "start": 0.585,
+     "end": 0.772
+    },
+    {
+     "w": "his",
+     "start": 0.772,
+     "end": 0.885
+    },
+    {
+     "w": "country",
+     "start": 0.885,
+     "end": 1.197
+    },
+    {
+     "w": "for",
+     "start": 1.197,
+     "end": 1.335
+    },
+    {
+     "w": "eight",
+     "start": 1.335,
+     "end": 1.51
+    },
+    {
+     "w": "years",
+     "start": 1.51,
+     "end": 1.772
+    },
+    {
+     "w": "to",
+     "start": 1.772,
+     "end": 1.86
+    },
+    {
+     "w": "change",
+     "start": 1.86,
+     "end": 2.21
+    },
+    {
+     "w": "every",
+     "start": 2.21,
+     "end": 2.435
+    },
+    {
+     "w": "clock,",
+     "start": 2.435,
+     "end": 3.01
+    },
+    {
+     "w": "and",
+     "start": 3.11,
+     "end": 3.223
+    },
+    {
+     "w": "the",
+     "start": 3.223,
+     "end": 3.323
+    },
+    {
+     "w": "first",
+     "start": 3.323,
+     "end": 3.56
+    },
+    {
+     "w": "country",
+     "start": 3.56,
+     "end": 3.798
+    },
+    {
+     "w": "to",
+     "start": 3.798,
+     "end": 3.885
+    },
+    {
+     "w": "do",
+     "start": 3.885,
+     "end": 4.06
+    },
+    {
+     "w": "it",
+     "start": 4.06,
+     "end": 4.173
+    },
+    {
+     "w": "was",
+     "start": 4.173,
+     "end": 4.272
+    },
+    {
+     "w": "their",
+     "start": 4.272,
+     "end": 4.41
+    },
+    {
+     "w": "enemy.",
+     "start": 4.41,
+     "end": 5.01
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "You see, William Willett was a builder near London, and one summer morning he rode his horse past houses with the blinds still down.",
+   "start": 5.42,
+   "end": 12.095,
+   "words": [
+    {
+     "w": "You",
+     "start": 5.42,
+     "end": 5.558
+    },
+    {
+     "w": "see,",
+     "start": 5.558,
+     "end": 5.87
+    },
+    {
+     "w": "William",
+     "start": 5.945,
+     "end": 6.295
+    },
+    {
+     "w": "Willett",
+     "start": 6.295,
+     "end": 6.595
+    },
+    {
+     "w": "was",
+     "start": 6.595,
+     "end": 6.708
+    },
+    {
+     "w": "a",
+     "start": 6.708,
+     "end": 6.77
+    },
+    {
+     "w": "builder",
+     "start": 6.77,
+     "end": 7.12
+    },
+    {
+     "w": "near",
+     "start": 7.12,
+     "end": 7.345
+    },
+    {
+     "w": "London,",
+     "start": 7.345,
+     "end": 7.945
+    },
+    {
+     "w": "and",
+     "start": 8.045,
+     "end": 8.17
+    },
+    {
+     "w": "one",
+     "start": 8.17,
+     "end": 8.408
+    },
+    {
+     "w": "summer",
+     "start": 8.408,
+     "end": 8.745
+    },
+    {
+     "w": "morning",
+     "start": 8.745,
+     "end": 9.17
+    },
+    {
+     "w": "he",
+     "start": 9.17,
+     "end": 9.295
+    },
+    {
+     "w": "rode",
+     "start": 9.295,
+     "end": 9.483
+    },
+    {
+     "w": "his",
+     "start": 9.483,
+     "end": 9.645
+    },
+    {
+     "w": "horse",
+     "start": 9.645,
+     "end": 9.92
+    },
+    {
+     "w": "past",
+     "start": 9.92,
+     "end": 10.22
+    },
+    {
+     "w": "houses",
+     "start": 10.22,
+     "end": 10.608
+    },
+    {
+     "w": "with",
+     "start": 10.608,
+     "end": 10.707
+    },
+    {
+     "w": "the",
+     "start": 10.707,
+     "end": 10.795
+    },
+    {
+     "w": "blinds",
+     "start": 10.795,
+     "end": 11.195
+    },
+    {
+     "w": "still",
+     "start": 11.195,
+     "end": 11.47
+    },
+    {
+     "w": "down.",
+     "start": 11.47,
+     "end": 12.095
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "The sun was up, and everyone was sleeping through it.",
+   "start": 12.425,
+   "end": 14.5,
+   "words": [
+    {
+     "w": "The",
+     "start": 12.425,
+     "end": 12.5
+    },
+    {
+     "w": "sun",
+     "start": 12.5,
+     "end": 12.663
+    },
+    {
+     "w": "was",
+     "start": 12.663,
+     "end": 12.763
+    },
+    {
+     "w": "up,",
+     "start": 12.763,
+     "end": 13.05
+    },
+    {
+     "w": "and",
+     "start": 13.125,
+     "end": 13.25
+    },
+    {
+     "w": "everyone",
+     "start": 13.25,
+     "end": 13.538
+    },
+    {
+     "w": "was",
+     "start": 13.538,
+     "end": 13.65
+    },
+    {
+     "w": "sleeping",
+     "start": 13.65,
+     "end": 13.95
+    },
+    {
+     "w": "through",
+     "start": 13.95,
+     "end": 14.15
+    },
+    {
+     "w": "it.",
+     "start": 14.15,
+     "end": 14.5
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "So he paid to print a pamphlet called The Waste of Daylight.",
+   "start": 14.86,
+   "end": 17.36,
+   "words": [
+    {
+     "w": "So",
+     "start": 14.86,
+     "end": 14.948
+    },
+    {
+     "w": "he",
+     "start": 14.948,
+     "end": 15.035
+    },
+    {
+     "w": "paid",
+     "start": 15.035,
+     "end": 15.385
+    },
+    {
+     "w": "to",
+     "start": 15.385,
+     "end": 15.473
+    },
+    {
+     "w": "print",
+     "start": 15.473,
+     "end": 15.648
+    },
+    {
+     "w": "a",
+     "start": 15.648,
+     "end": 15.71
+    },
+    {
+     "w": "pamphlet",
+     "start": 15.71,
+     "end": 16.11
+    },
+    {
+     "w": "called",
+     "start": 16.11,
+     "end": 16.297
+    },
+    {
+     "w": "The",
+     "start": 16.297,
+     "end": 16.385
+    },
+    {
+     "w": "Waste",
+     "start": 16.385,
+     "end": 16.622
+    },
+    {
+     "w": "of",
+     "start": 16.622,
+     "end": 16.71
+    },
+    {
+     "w": "Daylight.",
+     "start": 16.71,
+     "end": 17.36
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "Every Sunday in April, push every clock forward twenty minutes. Then wind them back in September.",
+   "start": 17.69,
+   "end": 22.265,
+   "words": [
+    {
+     "w": "Every",
+     "start": 17.69,
+     "end": 17.928
+    },
+    {
+     "w": "Sunday",
+     "start": 17.928,
+     "end": 18.303
+    },
+    {
+     "w": "in",
+     "start": 18.303,
+     "end": 18.39
+    },
+    {
+     "w": "April,",
+     "start": 18.39,
+     "end": 18.84
+    },
+    {
+     "w": "push",
+     "start": 18.915,
+     "end": 19.14
+    },
+    {
+     "w": "every",
+     "start": 19.14,
+     "end": 19.34
+    },
+    {
+     "w": "clock",
+     "start": 19.34,
+     "end": 19.59
+    },
+    {
+     "w": "forward",
+     "start": 19.59,
+     "end": 19.915
+    },
+    {
+     "w": "twenty",
+     "start": 19.915,
+     "end": 20.152
+    },
+    {
+     "w": "minutes.",
+     "start": 20.152,
+     "end": 20.69
+    },
+    {
+     "w": "Then",
+     "start": 20.79,
+     "end": 20.94
+    },
+    {
+     "w": "wind",
+     "start": 20.94,
+     "end": 21.128
+    },
+    {
+     "w": "them",
+     "start": 21.128,
+     "end": 21.265
+    },
+    {
+     "w": "back",
+     "start": 21.265,
+     "end": 21.478
+    },
+    {
+     "w": "in",
+     "start": 21.478,
+     "end": 21.565
+    },
+    {
+     "w": "September.",
+     "start": 21.565,
+     "end": 22.265
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "He said it would save two and a half million pounds on lighting.",
+   "start": 22.595,
+   "end": 25.345,
+   "words": [
+    {
+     "w": "He",
+     "start": 22.595,
+     "end": 22.695
+    },
+    {
+     "w": "said",
+     "start": 22.695,
+     "end": 22.833
+    },
+    {
+     "w": "it",
+     "start": 22.833,
+     "end": 22.908
+    },
+    {
+     "w": "would",
+     "start": 22.908,
+     "end": 23.02
+    },
+    {
+     "w": "save",
+     "start": 23.02,
+     "end": 23.283
+    },
+    {
+     "w": "two",
+     "start": 23.283,
+     "end": 23.72
+    },
+    {
+     "w": "and",
+     "start": 23.72,
+     "end": 23.833
+    },
+    {
+     "w": "a",
+     "start": 23.833,
+     "end": 23.895
+    },
+    {
+     "w": "half",
+     "start": 23.895,
+     "end": 24.145
+    },
+    {
+     "w": "million",
+     "start": 24.145,
+     "end": 24.395
+    },
+    {
+     "w": "pounds",
+     "start": 24.395,
+     "end": 24.708
+    },
+    {
+     "w": "on",
+     "start": 24.708,
+     "end": 24.808
+    },
+    {
+     "w": "lighting.",
+     "start": 24.808,
+     "end": 25.345
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "An MP turned it into a bill, Winston Churchill backed it, and Parliament studied it.",
+   "start": 25.705,
+   "end": 29.48,
+   "words": [
+    {
+     "w": "An",
+     "start": 25.705,
+     "end": 25.78
+    },
+    {
+     "w": "MP",
+     "start": 25.78,
+     "end": 26.13
+    },
+    {
+     "w": "turned",
+     "start": 26.13,
+     "end": 26.318
+    },
+    {
+     "w": "it",
+     "start": 26.318,
+     "end": 26.393
+    },
+    {
+     "w": "into",
+     "start": 26.393,
+     "end": 26.568
+    },
+    {
+     "w": "a",
+     "start": 26.568,
+     "end": 26.63
+    },
+    {
+     "w": "bill,",
+     "start": 26.63,
+     "end": 27.055
+    },
+    {
+     "w": "Winston",
+     "start": 27.155,
+     "end": 27.48
+    },
+    {
+     "w": "Churchill",
+     "start": 27.48,
+     "end": 27.78
+    },
+    {
+     "w": "backed",
+     "start": 27.78,
+     "end": 28.068
+    },
+    {
+     "w": "it,",
+     "start": 28.068,
+     "end": 28.305
+    },
+    {
+     "w": "and",
+     "start": 28.368,
+     "end": 28.48
+    },
+    {
+     "w": "Parliament",
+     "start": 28.48,
+     "end": 28.855
+    },
+    {
+     "w": "studied",
+     "start": 28.855,
+     "end": 29.143
+    },
+    {
+     "w": "it.",
+     "start": 29.143,
+     "end": 29.48
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "And then, nothing happened.",
+   "start": 29.81,
+   "end": 31.01,
+   "words": [
+    {
+     "w": "And",
+     "start": 29.81,
+     "end": 29.923
+    },
+    {
+     "w": "then,",
+     "start": 29.923,
+     "end": 30.135
+    },
+    {
+     "w": "nothing",
+     "start": 30.185,
+     "end": 30.435
+    },
+    {
+     "w": "happened.",
+     "start": 30.435,
+     "end": 31.01
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "Year after year, the clocks stayed exactly where they were.",
+   "start": 31.37,
+   "end": 34.595,
+   "words": [
+    {
+     "w": "Year",
+     "start": 31.37,
+     "end": 31.595
+    },
+    {
+     "w": "after",
+     "start": 31.595,
+     "end": 31.895
+    },
+    {
+     "w": "year,",
+     "start": 31.895,
+     "end": 32.345
+    },
+    {
+     "w": "the",
+     "start": 32.445,
+     "end": 32.545
+    },
+    {
+     "w": "clocks",
+     "start": 32.545,
+     "end": 32.895
+    },
+    {
+     "w": "stayed",
+     "start": 32.895,
+     "end": 33.183
+    },
+    {
+     "w": "exactly",
+     "start": 33.183,
+     "end": 33.745
+    },
+    {
+     "w": "where",
+     "start": 33.745,
+     "end": 33.895
+    },
+    {
+     "w": "they",
+     "start": 33.895,
+     "end": 34.07
+    },
+    {
+     "w": "were.",
+     "start": 34.07,
+     "end": 34.595
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "In March 1915, he caught the flu and died, still waiting.",
+   "start": 34.955,
+   "end": 37.955,
+   "words": [
+    {
+     "w": "In",
+     "start": 34.955,
+     "end": 35.017
+    },
+    {
+     "w": "March",
+     "start": 35.017,
+     "end": 35.218
+    },
+    {
+     "w": "1915,",
+     "start": 35.218,
+     "end": 36.005
+    },
+    {
+     "w": "he",
+     "start": 36.068,
+     "end": 36.142
+    },
+    {
+     "w": "caught",
+     "start": 36.142,
+     "end": 36.292
+    },
+    {
+     "w": "the",
+     "start": 36.292,
+     "end": 36.392
+    },
+    {
+     "w": "flu",
+     "start": 36.392,
+     "end": 36.642
+    },
+    {
+     "w": "and",
+     "start": 36.642,
+     "end": 36.755
+    },
+    {
+     "w": "died,",
+     "start": 36.755,
+     "end": 37.105
+    },
+    {
+     "w": "still",
+     "start": 37.155,
+     "end": 37.405
+    },
+    {
+     "w": "waiting.",
+     "start": 37.405,
+     "end": 37.955
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "Just over a year later, Germany, at war with Britain, needed to save coal.",
+   "start": 38.465,
+   "end": 42.69,
+   "words": [
+    {
+     "w": "Just",
+     "start": 38.465,
+     "end": 38.652
+    },
+    {
+     "w": "over",
+     "start": 38.652,
+     "end": 38.852
+    },
+    {
+     "w": "a",
+     "start": 38.852,
+     "end": 38.915
+    },
+    {
+     "w": "year",
+     "start": 38.915,
+     "end": 39.14
+    },
+    {
+     "w": "later,",
+     "start": 39.14,
+     "end": 39.565
+    },
+    {
+     "w": "Germany,",
+     "start": 39.678,
+     "end": 40.14
+    },
+    {
+     "w": "at",
+     "start": 40.19,
+     "end": 40.34
+    },
+    {
+     "w": "war",
+     "start": 40.34,
+     "end": 40.553
+    },
+    {
+     "w": "with",
+     "start": 40.553,
+     "end": 40.715
+    },
+    {
+     "w": "Britain,",
+     "start": 40.715,
+     "end": 41.24
+    },
+    {
+     "w": "needed",
+     "start": 41.34,
+     "end": 41.64
+    },
+    {
+     "w": "to",
+     "start": 41.64,
+     "end": 41.765
+    },
+    {
+     "w": "save",
+     "start": 41.765,
+     "end": 42.04
+    },
+    {
+     "w": "coal.",
+     "start": 42.04,
+     "end": 42.69
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "i": 11,
+   "text": "So on the thirtieth of April 1916, it moved every clock in the empire forward an hour.",
+   "start": 43.0,
+   "end": 47.675,
+   "words": [
+    {
+     "w": "So",
+     "start": 43.0,
+     "end": 43.138
+    },
+    {
+     "w": "on",
+     "start": 43.138,
+     "end": 43.238
+    },
+    {
+     "w": "the",
+     "start": 43.238,
+     "end": 43.337
+    },
+    {
+     "w": "thirtieth",
+     "start": 43.337,
+     "end": 43.688
+    },
+    {
+     "w": "of",
+     "start": 43.688,
+     "end": 43.775
+    },
+    {
+     "w": "April",
+     "start": 43.775,
+     "end": 44.038
+    },
+    {
+     "w": "1916,",
+     "start": 44.038,
+     "end": 45.05
+    },
+    {
+     "w": "it",
+     "start": 45.15,
+     "end": 45.25
+    },
+    {
+     "w": "moved",
+     "start": 45.25,
+     "end": 45.587
+    },
+    {
+     "w": "every",
+     "start": 45.587,
+     "end": 45.825
+    },
+    {
+     "w": "clock",
+     "start": 45.825,
+     "end": 46.087
+    },
+    {
+     "w": "in",
+     "start": 46.087,
+     "end": 46.163
+    },
+    {
+     "w": "the",
+     "start": 46.163,
+     "end": 46.25
+    },
+    {
+     "w": "empire",
+     "start": 46.25,
+     "end": 46.638
+    },
+    {
+     "w": "forward",
+     "start": 46.638,
+     "end": 46.962
+    },
+    {
+     "w": "an",
+     "start": 46.962,
+     "end": 47.062
+    },
+    {
+     "w": "hour.",
+     "start": 47.062,
+     "end": 47.675
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 12,
+   "text": "Three weeks later, Britain copied its enemy.",
+   "start": 48.035,
+   "end": 50.035,
+   "words": [
+    {
+     "w": "Three",
+     "start": 48.035,
+     "end": 48.197
+    },
+    {
+     "w": "weeks",
+     "start": 48.197,
+     "end": 48.36
+    },
+    {
+     "w": "later,",
+     "start": 48.36,
+     "end": 48.76
+    },
+    {
+     "w": "Britain",
+     "start": 48.86,
+     "end": 49.085
+    },
+    {
+     "w": "copied",
+     "start": 49.085,
+     "end": 49.372
+    },
+    {
+     "w": "its",
+     "start": 49.372,
+     "end": 49.485
+    },
+    {
+     "w": "enemy.",
+     "start": 49.485,
+     "end": 50.035
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 13,
+   "text": "You see, it was never about more daylight. It's the same sun.",
+   "start": 50.495,
+   "end": 53.17,
+   "words": [
+    {
+     "w": "You",
+     "start": 50.495,
+     "end": 50.607
+    },
+    {
+     "w": "see,",
+     "start": 50.607,
+     "end": 50.77
+    },
+    {
+     "w": "it",
+     "start": 50.807,
+     "end": 50.882
+    },
+    {
+     "w": "was",
+     "start": 50.882,
+     "end": 50.995
+    },
+    {
+     "w": "never",
+     "start": 50.995,
+     "end": 51.182
+    },
+    {
+     "w": "about",
+     "start": 51.182,
+     "end": 51.357
+    },
+    {
+     "w": "more",
+     "start": 51.357,
+     "end": 51.495
+    },
+    {
+     "w": "daylight.",
+     "start": 51.495,
+     "end": 52.045
+    },
+    {
+     "w": "It's",
+     "start": 52.132,
+     "end": 52.257
+    },
+    {
+     "w": "the",
+     "start": 52.257,
+     "end": 52.345
+    },
+    {
+     "w": "same",
+     "start": 52.345,
+     "end": 52.607
+    },
+    {
+     "w": "sun.",
+     "start": 52.607,
+     "end": 53.17
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 14,
+   "text": "Moving the clock just moves your day to where the light already is, so evenings stay bright and less coal gets burned for lighting.",
+   "start": 53.48,
+   "end": 59.855,
+   "words": [
+    {
+     "w": "Moving",
+     "start": 53.48,
+     "end": 53.742
+    },
+    {
+     "w": "the",
+     "start": 53.742,
+     "end": 53.83
+    },
+    {
+     "w": "clock",
+     "start": 53.83,
+     "end": 54.13
+    },
+    {
+     "w": "just",
+     "start": 54.13,
+     "end": 54.33
+    },
+    {
+     "w": "moves",
+     "start": 54.33,
+     "end": 54.567
+    },
+    {
+     "w": "your",
+     "start": 54.567,
+     "end": 54.705
+    },
+    {
+     "w": "day",
+     "start": 54.705,
+     "end": 54.955
+    },
+    {
+     "w": "to",
+     "start": 54.955,
+     "end": 55.08
+    },
+    {
+     "w": "where",
+     "start": 55.08,
+     "end": 55.292
+    },
+    {
+     "w": "the",
+     "start": 55.292,
+     "end": 55.38
+    },
+    {
+     "w": "light",
+     "start": 55.38,
+     "end": 55.58
+    },
+    {
+     "w": "already",
+     "start": 55.58,
+     "end": 55.992
+    },
+    {
+     "w": "is,",
+     "start": 55.992,
+     "end": 56.505
+    },
+    {
+     "w": "so",
+     "start": 56.605,
+     "end": 56.842
+    },
+    {
+     "w": "evenings",
+     "start": 56.842,
+     "end": 57.23
+    },
+    {
+     "w": "stay",
+     "start": 57.23,
+     "end": 57.517
+    },
+    {
+     "w": "bright",
+     "start": 57.517,
+     "end": 57.88
+    },
+    {
+     "w": "and",
+     "start": 57.88,
+     "end": 58.005
+    },
+    {
+     "w": "less",
+     "start": 58.005,
+     "end": 58.23
+    },
+    {
+     "w": "coal",
+     "start": 58.23,
+     "end": 58.555
+    },
+    {
+     "w": "gets",
+     "start": 58.555,
+     "end": 58.805
+    },
+    {
+     "w": "burned",
+     "start": 58.805,
+     "end": 59.105
+    },
+    {
+     "w": "for",
+     "start": 59.105,
+     "end": 59.23
+    },
+    {
+     "w": "lighting.",
+     "start": 59.23,
+     "end": 59.855
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "i": 15,
+   "text": "And this Sunday, when Americans set their clocks back, they're putting his idea away for the winter.",
+   "start": 60.265,
+   "end": 64.765,
+   "words": [
+    {
+     "w": "And",
+     "start": 60.265,
+     "end": 60.402
+    },
+    {
+     "w": "this",
+     "start": 60.402,
+     "end": 60.527
+    },
+    {
+     "w": "Sunday,",
+     "start": 60.527,
+     "end": 61.09
+    },
+    {
+     "w": "when",
+     "start": 61.177,
+     "end": 61.302
+    },
+    {
+     "w": "Americans",
+     "start": 61.302,
+     "end": 61.765
+    },
+    {
+     "w": "set",
+     "start": 61.765,
+     "end": 61.902
+    },
+    {
+     "w": "their",
+     "start": 61.902,
+     "end": 62.015
+    },
+    {
+     "w": "clocks",
+     "start": 62.015,
+     "end": 62.365
+    },
+    {
+     "w": "back,",
+     "start": 62.365,
+     "end": 62.865
+    },
+    {
+     "w": "they're",
+     "start": 62.965,
+     "end": 63.09
+    },
+    {
+     "w": "putting",
+     "start": 63.09,
+     "end": 63.302
+    },
+    {
+     "w": "his",
+     "start": 63.302,
+     "end": 63.427
+    },
+    {
+     "w": "idea",
+     "start": 63.427,
+     "end": 63.74
+    },
+    {
+     "w": "away",
+     "start": 63.74,
+     "end": 63.99
+    },
+    {
+     "w": "for",
+     "start": 63.99,
+     "end": 64.102
+    },
+    {
+     "w": "the",
+     "start": 64.102,
+     "end": 64.19
+    },
+    {
+     "w": "winter.",
+     "start": 64.19,
+     "end": 64.765
+    }
+   ]
+  }
+ ]
+}

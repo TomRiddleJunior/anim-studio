@@ -1,0 +1,74 @@
+{
+ "voice": "af_heart",
+ "speed": 1.2,
+ "lead": 0.5,
+ "tail": 0.5,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Most of us treat forgetting as a failure. I think that's backwards."
+  },
+  {
+   "id": "thesis",
+   "text": "Forgetting is part of how memory works.",
+   "gap": 0.35
+  },
+  {
+   "id": "fade",
+   "text": "Your brain lets most things fade, and that's not a bug.",
+   "gap": 0.3
+  },
+  {
+   "id": "ebb",
+   "text": "In eighteen eighty-five, the German psychologist Hermann Ebbinghaus published an odd experiment on himself.",
+   "gap": 3.6
+  },
+  {
+   "id": "syll",
+   "text": "He memorized lists of nonsense syllables, like dax, bok and zif, then measured how long they took to relearn.",
+   "gap": 0.35
+  },
+  {
+   "id": "curve",
+   "text": "Memory dropped fastest in the first hours, then leveled off. That's the forgetting curve.",
+   "gap": 1.0
+  },
+  {
+   "id": "miss",
+   "text": "Here's the part people miss. Each time he relearned a list, it faded more slowly.",
+   "gap": 1.0
+  },
+  {
+   "id": "spread",
+   "text": "And spreading practice over several days took far fewer repetitions than cramming it into one.",
+   "gap": 0.35
+  },
+  {
+   "id": "cram",
+   "text": "Cramming feels productive. Spacing actually works.",
+   "gap": 0.4
+  },
+  {
+   "id": "recall",
+   "text": "The best review isn't rereading your notes. It's trying to recall them before you look.",
+   "gap": 1.0
+  },
+  {
+   "id": "struggle",
+   "text": "That struggle is the point. Psychologists call it a desirable difficulty.",
+   "gap": 0.35
+  },
+  {
+   "id": "close",
+   "text": "So when something starts slipping away, don't panic. That's the moment to practice.",
+   "gap": 0.4
+  },
+  {
+   "id": "cta",
+   "text": "For more conversations like this, follow Open Question.",
+   "gap": 1.3,
+   "voice": "bm_george",
+   "speed": 1.1
+  }
+ ]
+}

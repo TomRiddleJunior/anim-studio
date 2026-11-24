@@ -1,0 +1,31 @@
+{
+ "name": "my-reel",
+ "bpm": 120,
+ "wps": 3.75,
+ "min_hold": 2.5,
+ "lufs": -14,
+ "card_w": 980,
+ "card_maxh": 850,
+ "card_cy": 780,
+ "top_label": "TOPIC 2026",
+ "ticker_label": "RESULTS",
+ "ticker": [
+  "ONE SOURCED FACT PER ITEM, IN CAPS (every item is listed with its source in the project's notes file)",
+  "A SECOND SOURCED FACT"
+ ],
+ "sequence": [
+  {"type": "hook", "vo": "hook", "kicker": "WHAT HAPPENED · DATE", "kicker_y": 430, "title": ["TWO", "WORDS."], "fan": [1, 2, 3],
+   "layout": "words of | the hook line / split into | pages and lines", "highlight": ["keyword"], "page_y": 700},
+  {"type": "post", "n": 1, "tin": "slam", "energy": 3, "tag": "CHAPTER", "chips": [{"text": "612K LIKES", "kind": "likes"}]},
+  {"type": "vo", "vo": "context", "tin": "zoom", "kicker": "WHERE · WHAT", "source": "Sources: Outlet A · Outlet B",
+   "layout": "the context line | as it is spoken"},
+  {"type": "post", "n": 2, "tin": "push", "tag": "CHAPTER"},
+  {"type": "post", "n": 3, "tin": "whip", "tag": "CHAPTER", "chips": [{"text": "SATIRE", "kind": "note"}]},
+  {"type": "post", "n": 4, "tin": "flip", "tag": "CHAPTER 2", "move": "pull"},
+  {"type": "post", "n": 5, "tin": "glitch", "tag": "CHAPTER 2", "punch": true},
+  {"type": "vo", "vo": "close", "tin": "zoom", "layout": "the closing | connector"},
+  {"type": "post", "n": 6, "tin": "slam", "energy": 3, "tag": "THE LAST WORD"},
+  {"type": "end", "vo": "cta", "tin": "zoom", "kicker": "TOPIC 2026", "end_hold": 3.5, "layout": "a neutral | question?",
+   "footer": ["Posts shown as published on X, <dates>", "AI voice (text to speech) · music made in code"]}
+ ]
+}

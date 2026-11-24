@@ -1,0 +1,36 @@
+<template>
+  <style>
+    @font-face { font-family: "QCSans"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    @font-face { font-family: "QCSerif"; src: url("assets/fonts/LibreBaskerville_wght_.ttf"); font-weight: 400 700; }
+    @font-face { font-family: "QCSerifI"; src: url("assets/fonts/LibreBaskerville-Italic_wght_.ttf"); font-weight: 400 700; }
+    @font-face { font-family: "QCStencil"; src: url("assets/fonts/BebasNeue-Regular.ttf"); font-weight: 400; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #fff; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const CFG = window.FILM_CFG, DUR = CFG.dur;
+      const fonts = ["400 100px QCSans", "500 100px QCSans", "400 100px QCSerif", "400 100px QCSerifI", "400 100px QCStencil"];
+      const K = window.KW.create({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920, fonts });
+      let film = null, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!film || t === lastT) return;
+        lastT = t;
+        film.draw(t);
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = K.ready.then(() => { film = window.FILM(K, CFG); window.__film = film; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

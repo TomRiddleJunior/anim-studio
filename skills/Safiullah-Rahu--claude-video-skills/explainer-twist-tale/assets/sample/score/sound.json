@@ -1,0 +1,37 @@
+{
+ "preset": "curious-marimba",
+ "bpm": 112,
+ "key": 2,
+ "sections": [
+  {
+   "t": 0,
+   "energy": 2
+  },
+  {
+   "t": 36.46,
+   "energy": 1
+  },
+  {
+   "t": 38.47,
+   "energy": 2
+  },
+  {
+   "t": 50.49,
+   "energy": 3
+  },
+  {
+   "t": 60.27,
+   "energy": 2
+  },
+  {
+   "t": 65.11,
+   "energy": 0
+  }
+ ],
+ "end_hit": true,
+ "music_under_voice_db": -15,
+ "music_alone_db": -8,
+ "sfx_db": -6,
+ "lufs": -14,
+ "reverb": 0.25
+}

@@ -1,0 +1,432 @@
+<template>
+  <style>
+    @font-face { font-family: "Oswald"; src: url("assets/fonts/Oswald_wght_.ttf"); font-weight: 200 700; }
+    @font-face { font-family: "DM Serif Display"; src: url("assets/fonts/DMSerifDisplay-Regular.ttf"); }
+    @font-face { font-family: "Roboto Mono"; src: url("assets/fonts/RobotoMono_wght_.ttf"); font-weight: 100 700; }
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .scene { position: absolute; inset: 0; }
+    #root .panel { position: absolute; inset: 0; overflow: hidden; transform-origin: 50% 50%; }
+    #root .cream .panel { background: #ebe7dc; background-image:
+      radial-gradient(ellipse at 50% 38%, rgba(255,255,255,.55), rgba(255,255,255,0) 60%),
+      radial-gradient(ellipse at 50% 120%, rgba(120,104,80,.18), rgba(0,0,0,0) 60%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.3  0 0 0 0 0.27  0 0 0 0 0.2  0 0 0 .09 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>"); }
+    #root .dark .panel { background: radial-gradient(ellipse at 50% 30%, #182031 0%, #0c111b 55%, #06080d 100%); }
+    #root .lbl { position: absolute; left: 0; right: 0; text-align: center; font: 700 26px/1 "Inter", sans-serif; letter-spacing: .22em; color: #8a857a; }
+    #root .lbl.dk { color: #b9bfca; font-size: 30px; }
+    #root .wordmark { position: absolute; left: 0; right: 0; text-align: center; font: 800 150px/1.2 "Inter", sans-serif; letter-spacing: .03em; color: #23262d; }
+    #root .wordmark span { display: inline-block; }
+    #root .chip { position: absolute; left: 50%; width: 300px; margin-left: -150px; text-align: center; background: #111215; color: #fff; border-radius: 40px;
+      font: 700 28px/66px "Inter", sans-serif; letter-spacing: .12em; }
+    #root .flap { position: absolute; display: grid; gap: 16px; padding: 20px; background: #17181c; border-radius: 26px;
+      box-shadow: 0 30px 60px rgba(0,0,0,.35), inset 0 2px 0 rgba(255,255,255,.06); }
+    #root .flap .tile { position: relative; height: 210px; background: linear-gradient(#2a2b31 0 49.5%, #000 49.5% 50.5%, #24252a 50.5%); border-radius: 12px;
+      color: #f4f2ec; font: 700 150px/210px "Roboto Mono", monospace; text-align: center; overflow: hidden; }
+    #root .flap .tile b { position: absolute; left: 0; right: 0; top: 0; height: 50%; background: rgba(255,255,255,.05); transform-origin: 50% 100%; }
+    #root .flap.big { gap: 7px; padding: 22px; }
+    #root .flap.big .tile { height: 132px; font-size: 84px; line-height: 132px; border-radius: 9px; }
+    #root .board { position: absolute; left: 0; right: 0; display: flex; justify-content: center; }
+    #root .board .flap { position: relative; }
+    #root .tilewipe { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(6, 180px); grid-auto-rows: 192px; }
+    #root .tilewipe i { display: block; background: #ebe7dc; transform-origin: 50% 50%; }
+    #root .pillrow { position: absolute; left: 90px; display: flex; gap: 18px; align-items: center; }
+    #root .tpill { background: #222a3a; color: #fff; font: 800 26px/50px "Inter"; padding: 0 20px; border-radius: 12px; letter-spacing: .06em; }
+    #root .tname { color: #8f97a6; font: 700 24px/1 "Inter"; letter-spacing: .14em; }
+    #root .bigpct { position: absolute; left: 0; right: 0; text-align: center; font: 700 250px/1.1 "Oswald", sans-serif; color: #ff3b30;
+      text-shadow: 0 0 60px rgba(255,59,48,.35); transform-origin: 50% 50%; }
+    #root .bigpct .arr { font-size: 210px; margin-right: 12px; position: relative; top: -12px; }
+    #root .chartwrap { position: absolute; width: 960px; height: 600px; }
+    #root .chart .gl { stroke: rgba(255,255,255,.08); stroke-width: 2; }
+    #root .chart .ax { fill: #79818f; font: 500 22px "Roboto Mono"; }
+    #root .chart .lw { fill: none; stroke: #e9edf3; stroke-width: 5; stroke-linejoin: round; stroke-dasharray: 1; }
+    #root .chart .lr { fill: none; stroke: #ff3b30; stroke-width: 6; stroke-linejoin: round; stroke-dasharray: 1; filter: drop-shadow(0 0 10px rgba(255,59,48,.7)); }
+    #root .ptag { position: absolute; font: 600 24px/44px "Roboto Mono"; color: #c9ced8; padding: 0 14px; border-radius: 10px; background: rgba(255,255,255,.07); white-space: nowrap; }
+    #root .ptag.red { background: #ff3b30; color: #fff; font-weight: 700; font-size: 30px; line-height: 54px; }
+    #root .ptag.ghost { background: none; color: #ffc93c; font-weight: 700; }
+    #root .worst { position: absolute; left: 0; right: 0; text-align: center; font: 700 170px/1 "Oswald"; color: #ff3b30; transform-origin: 50% 50%; text-shadow: 0 0 50px rgba(255,59,48,.3); }
+    #root .bignum { position: absolute; left: 0; right: 0; text-align: center; font: 700 280px/1.05 "Oswald"; color: #fff; }
+    #root .bignum #wd-plus { color: #ffc93c; display: inline-block; }
+    #root .months { position: absolute; left: 0; right: 0; text-align: center; font: 600 86px/1 "Oswald"; color: #ffc93c; letter-spacing: .04em; }
+    #root .ruler { position: absolute; left: 0; right: 0; height: 120px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent); }
+    #root .ruler .strip { position: absolute; top: 0; left: 0; height: 120px; width: 2400px; border-top: 2px solid rgba(255,255,255,.18); }
+    #root .ruler .mk { position: absolute; top: 0; width: 120px; margin-left: -60px; text-align: center; }
+    #root .ruler .mk i { display: block; margin: 0 auto; width: 3px; height: 26px; background: rgba(255,255,255,.4); }
+    #root .ruler .mk span { display: block; margin-top: 14px; font: 500 22px "Roboto Mono"; color: #8c94a2; white-space: nowrap; }
+    #root .ruler .marker { position: absolute; left: 50%; top: -2px; margin-left: -14px; border: 14px solid transparent; border-top: 22px solid #ff3b30; }
+    #root .serif { position: absolute; left: 0; right: 0; text-align: center; font: 400 92px/1.1 "DM Serif Display", serif; color: #141414; letter-spacing: -.01em; }
+    #root .serif span { display: inline-block; }
+    #root .scard { position: absolute; left: 66px; width: 948px; height: 420px; background: linear-gradient(#fbfaf7, #f2f0ea); border-radius: 30px;
+      box-shadow: 0 30px 70px rgba(70,60,40,.18), 0 2px 0 rgba(255,255,255,.9) inset, 0 0 0 1px rgba(0,0,0,.04); padding: 40px 54px; }
+    #root .scard .sh { display: flex; align-items: center; gap: 22px; font: 800 34px/1 "Inter"; letter-spacing: .12em; color: #141414; height: 70px; }
+    #root .gchip { margin-left: auto; background: #1ea152; color: #fff; border-radius: 18px; font: 700 40px/1 "Oswald"; padding: 14px 22px 8px; text-align: center; letter-spacing: .04em; }
+    #root .gchip small { display: block; font: 800 14px/1.6 "Inter"; letter-spacing: .14em; }
+    #root .sl { font: 800 24px/1 "Inter"; letter-spacing: .14em; color: #8a857a; margin: 26px 0 14px; }
+    #root .barrow { display: flex; align-items: center; gap: 24px; height: 56px; }
+    #root .bar { height: 52px; border-radius: 26px; transform-origin: 0 50%; }
+    #root .bar.grey { background: linear-gradient(#cfcbc1, #b3aea2); }
+    #root .bar.blue { background: linear-gradient(90deg, #2a63d8, #5c9cf7); box-shadow: 0 8px 22px rgba(47,111,228,.35); }
+    #root .bv { font: 700 52px/1 "Oswald"; }
+    #root .bv.grey { color: #8e897d; } #root .bv.blue { color: #2a63d8; }
+    #root .ink76 { position: absolute; left: 0; right: 0; text-align: center; font: 700 80px/1 "Oswald"; color: #141414; }
+    #root .ink76 span, #root .grey60 span, #root .ink84 span { display: inline-block; }
+    #root .tape { position: absolute; left: 50%; width: 640px; margin-left: -320px; height: 250px; background: #f7c531; transform-origin: 50% 50%;
+      box-shadow: 0 16px 40px rgba(120,90,0,.25); }
+    #root .tape .tt, #root .tape .tg { position: absolute; inset: 0; text-align: center; font: 700 220px/250px "Oswald"; color: #111; }
+    #root .tape .tg { color: rgba(255,40,40,.75); mix-blend-mode: multiply; }
+    #root .tape .tg + .tg { color: rgba(40,120,255,.7); }
+    #root .grey60 { position: absolute; left: 0; right: 0; text-align: center; font: 600 66px/1.1 "Oswald"; color: #8a8577; }
+    #root .ink84 { position: absolute; left: 0; right: 0; text-align: center; font: 700 96px/1.05 "Oswald"; color: #141414; }
+    #root .ink84 .g { color: #1ea152; }
+    #root .lcard { position: absolute; left: 76px; width: 928px; height: 220px; background: linear-gradient(#fbfaf7, #f2f0ea); border-radius: 28px;
+      box-shadow: 0 26px 60px rgba(70,60,40,.18), 0 0 0 1px rgba(0,0,0,.04); display: flex; align-items: center; padding: 0 44px; gap: 30px; }
+    #root .lcard .ic { width: 96px; height: 96px; border-radius: 22px; background: #ecebe6; display: flex; align-items: center; justify-content: center; }
+    #root .lcard .tx b { display: block; font: 700 64px/1 "Oswald"; color: #141414; }
+    #root .lcard .tx small { display: block; margin-top: 12px; font: 800 22px/1 "Inter"; letter-spacing: .14em; color: #8a857a; }
+    #root .pchip { margin-left: auto; border-radius: 40px; font: 700 40px/1 "Oswald"; padding: 16px 30px 12px; letter-spacing: .05em; color: #fff; }
+    #root .pchip.grey { background: #a39e92; } #root .pchip.green { background: #1ea152; box-shadow: 0 10px 26px rgba(30,161,82,.35); }
+    #root .note { position: absolute; left: 640px; top: 1150px; filter: drop-shadow(0 18px 24px rgba(0,0,0,.25)); }
+    #root .slider { position: absolute; height: 200px; }
+    #root .slider .track { position: absolute; left: 0; right: 0; top: 40px; height: 12px; border-radius: 6px; background: linear-gradient(90deg, #3b7bf2, #9b5de5 55%, #ff3b30); box-shadow: 0 0 24px rgba(120,100,255,.35); }
+    #root .slider .tk { position: absolute; top: 70px; width: 80px; margin-left: -40px; text-align: center; }
+    #root .slider .tk i { display: block; margin: 0 auto; width: 3px; height: 18px; background: rgba(255,255,255,.45); }
+    #root .slider .tk span { display: block; margin-top: 10px; font: 700 40px/1 "Oswald"; color: #aab1be; }
+    #root .knob { position: absolute; left: -30px; top: 16px; width: 60px; height: 60px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 10px rgba(255,255,255,.15), 0 0 40px rgba(255,255,255,.6); }
+    #root .knob .kl { position: absolute; left: 50%; bottom: 80px; width: 220px; margin-left: -110px; text-align: center; font: 700 52px/1 "Oswald"; color: #ffc93c; }
+    #root .mini { position: absolute; width: 460px; height: 380px; border-radius: 28px; background: linear-gradient(#141b29, #0e131d); border: 2px solid rgba(255,255,255,.12); padding: 44px 40px; }
+    #root .mini.red { border-color: #ff3b30; box-shadow: 0 0 50px rgba(255,59,48,.25), inset 0 0 40px rgba(255,59,48,.08); }
+    #root .mini small { display: block; font: 800 22px/1 "Inter"; letter-spacing: .14em; color: #8f97a6; }
+    #root .mini b { display: block; margin-top: 50px; font: 700 54px/1 "Oswald"; color: #fff; }
+    #root .mini em { display: block; margin-top: 26px; font: normal 700 62px/1 "Oswald"; color: #e8ebf0; white-space: nowrap; }
+    #root .mini em.r { color: #ff3b30; }
+    #root .mini .strike { position: absolute; left: 30px; right: 30px; top: 224px; height: 10px; background: #ff3b30; transform-origin: 0 50%; border-radius: 5px; }
+    #root .glow { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 55%, rgba(110,80,255,.30), rgba(0,0,0,0) 55%), radial-gradient(ellipse at 50% 100%, #1c1440, #07060f 70%); }
+    #root .phone { position: absolute; left: 50%; top: 560px; width: 560px; height: 1150px; margin-left: -280px; border-radius: 86px; background: #0b0b0e;
+      box-shadow: 0 0 0 4px #2b2c33, 0 0 0 7px #0e0e12, 0 60px 120px rgba(0,0,0,.7), 0 0 120px rgba(110,80,255,.25); transform-style: preserve-3d; }
+    #root .phone .island { position: absolute; left: 50%; top: 26px; width: 150px; height: 42px; margin-left: -75px; border-radius: 22px; background: #000; }
+    #root .phone .scr { position: absolute; inset: 16px; border-radius: 72px; overflow: hidden; background: #ebe7dc; }
+    #root .reel { position: absolute; inset: 0; background: #ebe7dc; }
+    #root .reel .mhead { position: absolute; top: 250px; left: 0; right: 0; text-align: center; font: 700 44px/1 "Oswald"; color: #141414; }
+    #root .reel .mboard { position: absolute; top: 340px; left: 50%; width: 470px; margin-left: -235px; display: grid; grid-template-columns: repeat(9, 1fr); gap: 4px;
+      background: #17181c; padding: 12px; border-radius: 14px; box-shadow: 0 16px 30px rgba(0,0,0,.3); }
+    #root .reel .mt { height: 66px; background: linear-gradient(#2a2b31 0 49%, #000 49% 51%, #24252a 51%); border-radius: 5px; color: #f4f2ec; font: 700 40px/66px "Roboto Mono"; text-align: center; }
+    #root .reel .mt.y { color: #ffc93c; }
+    #root .reel .side { position: absolute; right: 24px; top: 640px; display: grid; gap: 34px; }
+    #root .reel .side i { display: block; width: 52px; height: 52px; border-radius: 50%; background: rgba(20,20,20,.18); }
+    #root .reel .handle { position: absolute; left: 30px; bottom: 120px; font: 700 28px/1 "Inter"; color: #141414; display: flex; align-items: center; gap: 14px; }
+    #root .av { display: inline-flex; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #6f5cff, #2fd1a0); color: #fff; font: 800 22px/52px "Inter"; justify-content: center; }
+    #root .sheet { position: absolute; left: 0; right: 0; bottom: 0; height: 620px; background: #fff; border-radius: 40px 40px 0 0; padding: 22px 34px; box-shadow: 0 -20px 40px rgba(0,0,0,.25); }
+    #root .sheet .grab { width: 80px; height: 8px; border-radius: 4px; background: #d5d5d5; margin: 0 auto 22px; }
+    #root .sheet .stitle { text-align: center; font: 800 30px/1 "Inter"; color: #141414; margin-bottom: 34px; }
+    #root .sheet .cmt { display: flex; gap: 18px; font: 500 28px/1.35 "Inter"; color: #222; }
+    #root .sheet .cmt b { font-weight: 800; margin-right: 8px; }
+    #root .sheet .opt { margin: 26px 0 0 70px; display: inline-block; border-radius: 30px; padding: 14px 26px; font: 700 30px/1 "Oswald"; letter-spacing: .04em; color: #fff; }
+    #root .sheet .opt.g { background: #1ea152; } #root .sheet .opt.r { background: #ff3b30; margin-left: 14px; }
+    #root .sheet .inp { position: absolute; left: 30px; right: 30px; bottom: 40px; border-radius: 34px; background: #f1f1f1; color: #8a8a8a; font: 500 26px/68px "Inter"; padding: 0 28px; }
+    #root .prof { position: absolute; inset: 0; background: #0f1016; padding: 120px 30px 0; }
+    #root .prof .ptop { display: flex; align-items: center; gap: 24px; }
+    #root .prof .avb { display: inline-flex; width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #6f5cff, #2fd1a0); color: #fff; font: 800 46px/120px "Inter"; justify-content: center; box-shadow: 0 0 0 5px #0f1016, 0 0 0 8px #6f5cff; }
+    #root .prof .pn b { display: block; font: 800 40px/1.1 "Inter"; color: #fff; }
+    #root .prof .pn small { display: block; margin-top: 8px; font: 500 24px/1 "Inter"; color: #9aa0ad; }
+    #root .fbtn { position: relative; margin-top: 40px; height: 80px; border-radius: 18px; background: #3a6df0; color: #fff; font: 800 30px/80px "Inter"; text-align: center; }
+    #root .fbtn span { position: absolute; inset: 0; } #root #ph-f2 { opacity: 0; }
+    #root .tap { position: absolute; left: 50%; top: 290px; width: 80px; height: 80px; margin-left: -40px; border-radius: 50%; background: rgba(255,255,255,.7); }
+    #root .prof .grid { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+    #root .prof .th { height: 230px; border-radius: 8px; display: flex; align-items: flex-end; padding: 14px; }
+    #root .prof .th b { font: 700 34px/1 "Oswald"; color: #fff; }
+    #root .disc { position: absolute; left: 0; right: 0; top: 1790px; text-align: center; font: 700 22px/1 "Inter"; letter-spacing: .24em; color: #6f7484; }
+</style>
+  <div id="root" data-composition-id="cards" data-width="1080" data-height="1920">
+    <div class="clip scene cream " id="sc-ticker" data-start="6.955" data-duration="1.640"><div class="panel" id="pn-ticker">
+      <div class="lbl" id="tk-l" style="top:640px">U.S. PLANEMAKER</div>
+      <div class="wordmark" id="tk-w" style="top:690px"><span id="bw0">B</span><span id="bw1">O</span><span id="bw2">E</span><span id="bw3">I</span><span id="bw4">N</span><span id="bw5">G</span></div>
+      <div class="lbl" id="tk-t" style="top:930px">TICKER</div>
+      <div class="flap" id="tk-f" style="top:985px;left:344px;grid-template-columns:repeat(2,168px)"><div class="tile" id="tkf0_0"><b></b><span id="tkf0_0t">&nbsp;</span></div><div class="tile" id="tkf0_1"><b></b><span id="tkf0_1t">&nbsp;</span></div></div>
+      <div class="chip" id="tk-c" style="top:1255px">ON THE NYSE</div></div></div>
+    <div class="clip scene dark " id="sc-chart" data-start="8.295" data-duration="2.515"><div class="panel" id="pn-chart">
+      <div class="pillrow" style="top:250px"><span class="tpill">BA</span><span class="tname">BOEING CO · NYSE</span></div>
+      <div class="lbl dk" id="ch-l" style="top:420px">FELL ALMOST</div>
+      <div class="bigpct" id="ch-p" style="top:470px"><span class="arr">&#8595;</span><span id="ch-n">0.0</span>%</div>
+      <div class="chartwrap" style="top:820px;left:60px"><svg width="960" height="600" viewBox="0 0 960 600" class="chart">
+        <defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b30" stop-opacity=".35"/><stop offset="1" stop-color="#ff3b30" stop-opacity="0"/></linearGradient></defs>
+        <line x1="40" x2="860" y1="430.0" y2="430.0" class="gl"/><text x="872" y="437.0" class="ax">$170</text><line x1="40" x2="860" y1="280.0" y2="280.0" class="gl"/><text x="872" y="287.0" class="ax">$180</text><line x1="40" x2="860" y1="130.0" y2="130.0" class="gl"/><text x="872" y="137.0" class="ax">$190</text>
+        <polygon id="ch-area" points="778.0,155.3 860.0,457.3 860.0,520 778.0,520" fill="url(#rg)" opacity="0"/>
+        <polyline id="ch-w" points="40.0,182.6 122.0,210.1 204.0,149.1 286.0,126.8 368.0,108.7 450.0,123.0 532.0,95.8 614.0,166.7 696.0,154.8 778.0,155.3" class="lw" pathLength="1"/>
+        <polyline id="ch-r" points="778.0,155.3 860.0,457.3" class="lr" pathLength="1"/>
+        <circle id="ch-dot" cx="860.0" cy="457.3" r="11" fill="#ff3b30"/>
+        <circle id="ch-ring" cx="860.0" cy="457.3" r="11" fill="none" stroke="#ff3b30" stroke-width="3"/>
+        <text x="40" y="566" class="ax">OCT 13</text><text x="860" y="566" class="ax" text-anchor="end">OCT 27</text>
+      </svg>
+        <div class="ptag" id="ch-c" style="left:568.0px;top:77.30000000000001px">OCT 26 CLOSE $188.31</div>
+        <div class="ptag red" id="ch-e" style="left:710.0px;top:487.3px">$168.18</div>
+        <div class="ptag ghost" id="ch-d" style="left:610.0px;top:337.3px">TUE · OCT 27</div>
+      </div></div></div>
+    <div class="clip scene dark " id="sc-worst" data-start="10.810" data-duration="2.995"><div class="panel" id="pn-worst">
+      <div class="worst" id="wd-a" style="top:520px">WORST DAY</div>
+      <div class="lbl dk" id="wd-b" style="top:760px">IN MORE THAN</div>
+      <div class="bignum" id="wd-c" style="top:800px"><span id="wd-n">0</span><span id="wd-plus">+</span></div>
+      <div class="months" id="wd-m" style="top:1090px">MONTHS</div>
+      <div class="ruler" style="top:1300px"><div class="strip" id="wd-r"><div class="mk" style="left:0px"><i></i><span>APR '25</span></div><div class="mk" style="left:120px"><i></i><span>MAY</span></div><div class="mk" style="left:240px"><i></i><span>JUN</span></div><div class="mk" style="left:360px"><i></i><span>JUL</span></div><div class="mk" style="left:480px"><i></i><span>AUG</span></div><div class="mk" style="left:600px"><i></i><span>SEP</span></div><div class="mk" style="left:720px"><i></i><span>OCT</span></div><div class="mk" style="left:840px"><i></i><span>NOV</span></div><div class="mk" style="left:960px"><i></i><span>DEC</span></div><div class="mk" style="left:1080px"><i></i><span>JAN '26</span></div><div class="mk" style="left:1200px"><i></i><span>FEB</span></div><div class="mk" style="left:1320px"><i></i><span>MAR</span></div><div class="mk" style="left:1440px"><i></i><span>APR</span></div><div class="mk" style="left:1560px"><i></i><span>MAY</span></div><div class="mk" style="left:1680px"><i></i><span>JUN</span></div><div class="mk" style="left:1800px"><i></i><span>JUL</span></div><div class="mk" style="left:1920px"><i></i><span>AUG</span></div><div class="mk" style="left:2040px"><i></i><span>SEP</span></div><div class="mk" style="left:2160px"><i></i><span>OCT '26</span></div></div><div class="marker"></div></div></div></div>
+    <div class="clip scene cream " id="sc-strange" data-start="13.505" data-duration="8.600"><div class="panel" id="pn-strange">
+      <div class="serif" style="top:280px"><span id="sp0">The</span> <span id="sp1">strange</span> <span id="sp2">part?</span> </div>
+      <div class="scard" id="sc1" style="top:500px">
+        <div class="sh"><svg width="44" height="44" viewBox="0 0 44 44"><rect x="4" y="22" width="16" height="16" rx="2" fill="#3b7bf2"/><rect x="24" y="22" width="16" height="16" rx="2" fill="#3b7bf2"/><rect x="14" y="5" width="16" height="16" rx="2" fill="#6aa0ff"/></svg>
+          <span>ORDER BACKLOG</span><div class="gchip" id="sc1c">RECORD<small>ALL-TIME HIGH</small></div></div>
+        <div class="sl">A YEAR AGO</div><div class="barrow"><div class="bar grey" id="sc1a" style="width:512px"></div><b class="bv grey" id="sc1av">$636B</b></div>
+        <div class="sl">NOW</div><div class="barrow"><div class="bar blue" id="sc1b" style="width:600px"></div><b class="bv blue" id="sc1bv">$<span id="sc1n">0</span>B</b></div>
+      </div>
+      <div class="scard" id="sc2" style="top:1010px">
+        <div class="sh"><svg width="44" height="44" viewBox="0 0 44 44"><path d="M22 3 L25 17 L41 25 L41 29 L25 25 L24 36 L29 40 L29 42 L22 40 L15 42 L15 40 L20 36 L19 25 L3 29 L3 25 L19 17 Z" fill="#3b7bf2"/></svg>
+          <span>JETS ON ORDER</span></div>
+        <div class="sl">A YEAR AGO</div><div class="barrow"><div class="bar grey" id="sc2a" style="width:561px"></div><b class="bv grey" id="sc2av">5,900+</b></div>
+        <div class="sl">NOW</div><div class="barrow"><div class="bar blue" id="sc2b" style="width:600px"></div><b class="bv blue" id="sc2bv"><span id="sc2n">0</span>+</b></div>
+      </div></div></div>
+    <div class="clip scene cream " id="sc-twist" data-start="39.710" data-duration="3.125"><div class="panel" id="pn-twist">
+      <div class="ink76" style="top:740px"><span id="tw0">BUT</span> <span id="tw1">HERE'S</span> <span id="tw2">THE</span></div>
+      <div class="tape" id="tw-t" style="top:850px"><div class="tt" id="tw-tt">TWIST</div><div class="tg" id="tw-g1">TWIST</div><div class="tg" id="tw-g2">TWIST</div></div>
+      <div class="grey60" style="top:1130px"><span id="tw4">ALMOST</span> <span id="tw5">NO</span> <span id="tw6">ONE</span><br><span id="tw7">IS</span> <span id="tw8">MENTIONING</span></div></div></div>
+    <div class="clip scene cream " id="sc-why" data-start="51.650" data-duration="8.170"><div class="panel" id="pn-why">
+      <div class="serif" style="top:280px"><span id="wy0">Why</span> <span id="wy1">does</span> <span id="wy2">that</span> <span id="wy3">matter?</span> </div>
+      <div class="ink84" id="wy-s" style="top:620px"><span id="wa0">AIRLINES</span> <span id="wa1">PAY</span> <span id="wa2">MOST</span> <br><span id="wa4">OF</span> <span id="wa5">THE</span> <span id="wa6">PRICE</span> <br><span id="wa8">ON</span> <span id="wa9" class=g>DELIVERY</span> </div>
+      <div class="lcard" id="wy-a" style="top:600px"><div class="ic"><svg width="60" height="60" viewBox="0 0 60 60"><rect x="12" y="8" width="36" height="46" rx="4" fill="none" stroke="#141414" stroke-width="4"/><rect x="22" y="4" width="16" height="9" rx="2" fill="#141414"/><path d="M19 26h22M19 34h22M19 42h14" stroke="#141414" stroke-width="3.5"/></svg></div>
+        <div class="tx"><b>THE ORDER</b><small>A PROMISE TO BUY</small></div><div class="pchip grey" id="wy-ac">PROMISE</div></div>
+      <div class="lcard" id="wy-b" style="top:880px"><div class="ic"><svg width="60" height="60" viewBox="0 0 44 44"><path d="M22 3 L25 17 L41 25 L41 29 L25 25 L24 36 L29 40 L29 42 L22 40 L15 42 L15 40 L20 36 L19 25 L3 29 L3 25 L19 17 Z" fill="#141414"/></svg></div>
+        <div class="tx"><b>THE DELIVERY</b><small>THE JET IS HANDED OVER</small></div><div class="pchip green" id="wy-bc">CASH</div></div>
+      <svg class="note" id="wy-note" width="300" height="140" viewBox="0 0 300 140"><rect x="2" y="2" width="296" height="136" rx="8" fill="#d6dcbf" stroke="#4d6b52" stroke-width="3"/>
+        <rect x="12" y="12" width="276" height="116" rx="4" fill="none" stroke="#6a8a6e" stroke-width="2"/><ellipse cx="150" cy="70" rx="40" ry="34" fill="#cbd3b0" stroke="#4d6b52" stroke-width="3"/>
+        <text x="24" y="44" font-family="Georgia" font-weight="700" font-size="30" fill="#3d5a44">100</text><text x="276" y="120" text-anchor="end" font-family="Georgia" font-weight="700" font-size="30" fill="#3d5a44">100</text>
+        <rect x="132" y="0" width="36" height="140" fill="#d9b13b" opacity=".9"/></svg></div></div>
+    <div class="clip scene dark " id="sc-slider" data-start="59.520" data-duration="5.095"><div class="panel" id="pn-slider">
+      <div class="lbl dk" style="top:640px">737 RATE · JETS PER MONTH</div>
+      <div class="slider" style="top:730px;left:110px;width:860px">
+        <div class="track"></div><div class="tk" style="left:95px"><i></i><span>38</span></div><div class="tk" style="left:286px"><i></i><span>42</span></div><div class="tk" style="left:525px"><i></i><span>47</span></div><div class="tk" style="left:764px"><i></i><span>52</span></div>
+        <div class="knob" id="sl-k"><div class="kl" id="sl-kl">47 / MO</div></div>
+      </div>
+      <div class="mini" id="sl-a" style="left:70px;top:1000px"><small>PLAN · MAY 2026</small><b>STABLE AT 47</b><em id="sl-ae">THIS SUMMER</em><div class="strike" id="sl-as"></div></div>
+      <div class="mini red" id="sl-b" style="left:550px;top:1000px"><small>NOW · OCT 27</small><b>STABLE AT 47</b><em class="r">EARLY 2027</em></div></div></div>
+    <div class="clip scene cream " id="sc-flap" data-start="64.255" data-duration="5.775"><div class="panel" id="pn-flap">
+      <div class="tilewipe" id="fl-wipe"><i id="fw0"></i><i id="fw1"></i><i id="fw2"></i><i id="fw3"></i><i id="fw4"></i><i id="fw5"></i><i id="fw6"></i><i id="fw7"></i><i id="fw8"></i><i id="fw9"></i><i id="fw10"></i><i id="fw11"></i><i id="fw12"></i><i id="fw13"></i><i id="fw14"></i><i id="fw15"></i><i id="fw16"></i><i id="fw17"></i><i id="fw18"></i><i id="fw19"></i><i id="fw20"></i><i id="fw21"></i><i id="fw22"></i><i id="fw23"></i><i id="fw24"></i><i id="fw25"></i><i id="fw26"></i><i id="fw27"></i><i id="fw28"></i><i id="fw29"></i><i id="fw30"></i><i id="fw31"></i><i id="fw32"></i><i id="fw33"></i><i id="fw34"></i><i id="fw35"></i><i id="fw36"></i><i id="fw37"></i><i id="fw38"></i><i id="fw39"></i><i id="fw40"></i><i id="fw41"></i><i id="fw42"></i><i id="fw43"></i><i id="fw44"></i><i id="fw45"></i><i id="fw46"></i><i id="fw47"></i><i id="fw48"></i><i id="fw49"></i><i id="fw50"></i><i id="fw51"></i><i id="fw52"></i><i id="fw53"></i><i id="fw54"></i><i id="fw55"></i><i id="fw56"></i><i id="fw57"></i><i id="fw58"></i><i id="fw59"></i></div>
+      <div class="board" id="fl-b" style="top:700px"><div class="flap big" style="grid-template-columns:repeat(9,96px)"><div class="tile" id="fl0_0"><b></b><span id="fl0_0t">&nbsp;</span></div><div class="tile" id="fl0_1"><b></b><span id="fl0_1t">&nbsp;</span></div><div class="tile" id="fl0_2"><b></b><span id="fl0_2t">&nbsp;</span></div><div class="tile" id="fl0_3"><b></b><span id="fl0_3t">&nbsp;</span></div><div class="tile" id="fl0_4"><b></b><span id="fl0_4t">&nbsp;</span></div><div class="tile" id="fl0_5"><b></b><span id="fl0_5t">&nbsp;</span></div><div class="tile" id="fl0_6"><b></b><span id="fl0_6t">&nbsp;</span></div><div class="tile" id="fl0_7"><b></b><span id="fl0_7t">&nbsp;</span></div><div class="tile" id="fl0_8"><b></b><span id="fl0_8t">&nbsp;</span></div><div class="tile" id="fl1_0"><b></b><span id="fl1_0t">&nbsp;</span></div><div class="tile" id="fl1_1"><b></b><span id="fl1_1t">&nbsp;</span></div><div class="tile" id="fl1_2"><b></b><span id="fl1_2t">&nbsp;</span></div><div class="tile" id="fl1_3"><b></b><span id="fl1_3t">&nbsp;</span></div><div class="tile" id="fl1_4"><b></b><span id="fl1_4t">&nbsp;</span></div><div class="tile" id="fl1_5"><b></b><span id="fl1_5t">&nbsp;</span></div><div class="tile" id="fl1_6"><b></b><span id="fl1_6t">&nbsp;</span></div><div class="tile" id="fl1_7"><b></b><span id="fl1_7t">&nbsp;</span></div><div class="tile" id="fl1_8"><b></b><span id="fl1_8t">&nbsp;</span></div><div class="tile" id="fl2_0"><b></b><span id="fl2_0t">&nbsp;</span></div><div class="tile" id="fl2_1"><b></b><span id="fl2_1t">&nbsp;</span></div><div class="tile" id="fl2_2"><b></b><span id="fl2_2t">&nbsp;</span></div><div class="tile" id="fl2_3"><b></b><span id="fl2_3t">&nbsp;</span></div><div class="tile" id="fl2_4"><b></b><span id="fl2_4t">&nbsp;</span></div><div class="tile" id="fl2_5"><b></b><span id="fl2_5t">&nbsp;</span></div><div class="tile" id="fl2_6"><b></b><span id="fl2_6t">&nbsp;</span></div><div class="tile" id="fl2_7"><b></b><span id="fl2_7t">&nbsp;</span></div><div class="tile" id="fl2_8"><b></b><span id="fl2_8t">&nbsp;</span></div></div></div></div></div>
+    <div class="clip scene dark " id="sc-phone" data-start="69.580" data-duration="6.830"><div class="panel" id="pn-phone">
+      <div class="glow"></div>
+      <div class="phone" id="ph">
+        <div class="scr">
+          <div class="reel" id="ph-reel"><div class="mhead">IT'S ASKING</div><div class="mboard"><div class="mt">I</div><div class="mt">F</div><div class="mt">&nbsp;</div><div class="mt">I</div><div class="mt">T</div><div class="mt">&nbsp;</div><div class="mt">C</div><div class="mt">A</div><div class="mt">N</div><div class="mt">B</div><div class="mt">U</div><div class="mt">I</div><div class="mt">L</div><div class="mt">D</div><div class="mt">&nbsp;</div><div class="mt">T</div><div class="mt">H</div><div class="mt">E</div><div class="mt y">&nbsp;</div><div class="mt y">&nbsp;</div><div class="mt y">W</div><div class="mt y">I</div><div class="mt y">N</div><div class="mt y">G</div><div class="mt y">S</div><div class="mt y">&nbsp;</div><div class="mt y">&nbsp;</div></div>
+            <div class="side"><i></i><i></i><i></i></div><div class="handle"><span class="av">LL</span>ledgerlane</div></div>
+          <div class="sheet" id="ph-sheet" data-layout-allow-overlap><div class="grab"></div><div class="stitle">Comments</div>
+            <div class="cmt"><span class="av">LL</span><div><b>ledgerlane</b> Buying chance or warning sign?</div></div>
+            <div class="opt g" id="ph-o1">BUYING CHANCE</div><div class="opt r" id="ph-o2">WARNING SIGN</div>
+            <div class="inp">Add a comment…</div></div>
+          <div class="prof" id="ph-prof"><div class="ptop"><span class="avb">LL</span><div class="pn"><b>Ledger Lane</b><small>The daily market story</small></div></div>
+            <div class="fbtn" id="ph-f"><span id="ph-f1">Follow</span><span id="ph-f2">Following</span></div><div class="tap" id="ph-tap"></div>
+            <div class="grid"><div class="th" style="background:#3a2a1c"><b>OIL</b></div><div class="th" style="background:#1c2a3a"><b>RATES</b></div><div class="th" style="background:#21331f"><b>CHIPS</b></div><div class="th" style="background:#3a331a"><b>GOLD</b></div><div class="th" style="background:#2b1f38"><b>JOBS</b></div><div class="th" style="background:#3a1c1c"><b>BA &#8595;</b></div></div></div>
+        </div>
+        <div class="island"></div>
+      </div>
+      <div class="disc">NOT FINANCIAL ADVICE</div></div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const CH = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+      // split-flap tiles and count-ups are pure functions of time, evaluated by one clock tween (seek-safe in any order)
+      const FLAPS = {}, COUNTS = [];
+      function flapTo(ids, txt, t, dur, stagger, col) {
+        ids.forEach((id, i) => {
+          const f = FLAPS[id] || (FLAPS[id] = { el: document.getElementById(id + "t"), tile: document.getElementById(id), segs: [] });
+          const last = f.segs[f.segs.length - 1];
+          const from = last ? last.to : " ", fromCol = last ? last.col : "", to = txt[i] || " ";
+          const same = from === to;
+          f.segs.push({ t: t + i * stagger, dur: same ? 0.001 : dur, from, fromCol, to, col: col === undefined ? fromCol : (col || ""), seed: (i * 13 + id.length * 7) % CH.length });
+          if (!same) tl.fromTo(f.tile.querySelector("b"), { scaleY: 1 }, { scaleY: -1, duration: 0.07, ease: "none", repeat: 3, yoyo: true }, t + i * stagger);
+        });
+      }
+      function flapAt(T) {
+        Object.values(FLAPS).forEach((f) => {
+          let ch = f.segs[0].from, col = f.segs[0].fromCol;
+          for (const s of f.segs) {
+            if (T < s.t) break;
+            if (T >= s.t + s.dur) { ch = s.to; col = s.col; continue; }
+            ch = CH[Math.floor(((T - s.t) / s.dur) * 9 + s.seed) % CH.length]; col = s.fromCol; break;
+          }
+          f.el.textContent = ch === " " ? "\u00a0" : ch; f.tile.style.color = col;
+        });
+      }
+      function countTo(id, a, b, dec, t, dur, comma) { COUNTS.push({ el: document.getElementById(id), a, b, dec, t, dur: Math.max(0.05, dur), comma }); }
+      function countAt(T) {
+        COUNTS.forEach((c) => {
+          const u = Math.min(1, Math.max(0, (T - c.t) / c.dur)), v = c.a + (c.b - c.a) * (1 - (1 - u) * (1 - u));
+          c.el.textContent = c.comma ? Math.round(v).toLocaleString("en-US") : v.toFixed(c.dec);
+        });
+      }
+      tl.fromTo("#pn-ticker", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 6.955);
+      tl.fromTo("#bw0", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.115);
+      tl.fromTo("#bw1", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.150);
+      tl.fromTo("#bw2", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.185);
+      tl.fromTo("#bw3", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.220);
+      tl.fromTo("#bw4", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.255);
+      tl.fromTo("#bw5", {opacity: 0, y: 30}, {opacity: 1, y: 0, duration: 0.12, ease: "power2.out"}, 7.290);
+      tl.fromTo("#tk-l", {opacity: 0}, {opacity: 1, duration: 0.2}, 7.005);
+      tl.fromTo("#tk-t", {opacity: 0}, {opacity: 1, duration: 0.2}, 7.378);
+      flapTo(["tkf0_0", "tkf0_1"], "BA", 7.478, 0.55, 0.08);
+      tl.fromTo("#tk-c", {opacity: 0, scale: 0.6}, {opacity: 1, scale: 1, duration: 0.22, ease: "back.out(2)"}, 7.835);
+      tl.fromTo("#pn-chart", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 8.295);
+      tl.fromTo("#ch-w", {strokeDashoffset: 1}, {strokeDashoffset: 0, duration: 0.55, ease: "power1.inOut"}, 8.445);
+      tl.fromTo("#ch-c", {opacity: 0}, {opacity: 1, duration: 0.2}, 8.845);
+      tl.fromTo("#ch-l", {opacity: 0, y: 16}, {opacity: 1, y: 0, duration: 0.15}, 8.415);
+      tl.fromTo("#ch-r", {strokeDashoffset: 1}, {strokeDashoffset: 0, duration: 0.42, ease: "power2.in"}, 8.640);
+      tl.fromTo("#ch-area", {opacity: 0}, {opacity: 1, duration: 0.3}, 8.940);
+      tl.fromTo("#ch-p", {opacity: 0, scale: 0.85}, {opacity: 1, scale: 1, duration: 0.16, ease: "back.out(2)"}, 8.640);
+      countTo("ch-n", 0, 10.7, 1, 8.640, 0.850);
+      tl.fromTo("#ch-e", {opacity: 0, x: -20}, {opacity: 1, x: 0, duration: 0.2}, 9.060);
+      tl.fromTo("#ch-ring", {attr: {r: 11}, opacity: 1}, {attr: {r: 46}, opacity: 0, duration: 0.9, ease: "power1.out", repeat: 2}, 9.060);
+      tl.fromTo("#ch-d", {opacity: 0}, {opacity: 1, duration: 0.2}, 9.915);
+      tl.fromTo("#wd-a", {opacity: 0, scale: 1.3}, {opacity: 1, scale: 1, duration: 0.16, ease: "power3.out"}, 11.045);
+      tl.fromTo("#wd-b", {opacity: 0}, {opacity: 1, duration: 0.15}, 11.760);
+      tl.fromTo("#wd-c", {opacity: 0}, {opacity: 1, duration: 0.1}, 11.860);
+      countTo("wd-n", 0, 18, 0, 11.860, 0.750);
+      tl.fromTo("#wd-plus", {opacity: 0, scale: 0.4}, {opacity: 1, scale: 1, duration: 0.18, ease: "back.out(3)"}, 12.610);
+      tl.fromTo("#wd-m", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 0.15}, 12.498);
+      tl.fromTo("#wd-r", {x: -1620}, {x: 480, duration: 1.050, ease: "power2.inOut"}, 11.860);
+      tl.fromTo("#pn-strange", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 13.505);
+      tl.to("#pn-strange", {opacity: 0, duration: 0.14, ease: "none"}, 21.965);
+      tl.fromTo("#sp0", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 13.625);
+      tl.fromTo("#sp1", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 13.700);
+      tl.fromTo("#sp2", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 14.125);
+      tl.fromTo("#sc1", {opacity: 0, y: 120}, {opacity: 1, y: 0, duration: 0.3, ease: "power3.out"}, 15.010);
+      tl.fromTo("#sc1a", {scaleX: 0}, {scaleX: 1, duration: 0.4, ease: "power2.out"}, 15.235);
+      tl.fromTo("#sc1b", {scaleX: 0}, {scaleX: 1, duration: 1.0, ease: "power2.out"}, 16.410);
+      countTo("sc1n", 0, 745, 0, 16.410, 1.787);
+      tl.fromTo("#sc1av", {opacity: 0}, {opacity: 1, duration: 0.2}, 15.485);
+      tl.fromTo("#sc1bv", {opacity: 0}, {opacity: 1, duration: 0.12}, 16.410);
+      tl.fromTo("#sc2av", {opacity: 0}, {opacity: 1, duration: 0.2}, 19.810);
+      tl.fromTo("#sc2bv", {opacity: 0}, {opacity: 1, duration: 0.12}, 20.097);
+      tl.fromTo("#sc1c", {opacity: 0, scale: 0.4, rotation: -8}, {opacity: 1, scale: 1, rotation: 0, duration: 0.25, ease: "back.out(2.5)"}, 16.410);
+      tl.fromTo("#sc2", {opacity: 0, y: 120}, {opacity: 1, y: 0, duration: 0.3, ease: "power3.out"}, 19.360);
+      tl.fromTo("#sc2a", {scaleX: 0}, {scaleX: 1, duration: 0.35, ease: "power2.out"}, 19.560);
+      tl.fromTo("#sc2b", {scaleX: 0}, {scaleX: 1, duration: 0.9, ease: "power2.out"}, 20.097);
+      countTo("sc2n", 0, 6300, 0, 20.097, 0.938, true);
+      tl.fromTo("#pn-twist", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 39.710);
+      tl.to("#pn-twist", {x: -1160, duration: 0.26, ease: "power3.in"}, 42.575);
+      tl.fromTo("#tw0", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.1}, 39.830);
+      tl.fromTo("#tw1", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.1}, 39.955);
+      tl.fromTo("#tw2", {opacity: 0, y: 18}, {opacity: 1, y: 0, duration: 0.1}, 40.217);
+      tl.fromTo("#tw-t", {opacity: 0, scale: 1.35, rotation: -1.5}, {opacity: 1, scale: 1, rotation: -1.5, duration: 0.14, ease: "power4.out"}, 40.305);
+      tl.fromTo("#tw-g1", {opacity: 0.9, x: -26}, {opacity: 0, x: 0, duration: 0.22, ease: "steps(5)"}, 40.305);
+      tl.fromTo("#tw-g2", {opacity: 0.9, x: 22}, {opacity: 0, x: 0, duration: 0.22, ease: "steps(4)"}, 40.305);
+      tl.fromTo("#tw4", {opacity: 0}, {opacity: 1, duration: 0.1}, 40.742);
+      tl.fromTo("#tw5", {opacity: 0}, {opacity: 1, duration: 0.1}, 41.130);
+      tl.fromTo("#tw6", {opacity: 0}, {opacity: 1, duration: 0.1}, 41.305);
+      tl.fromTo("#tw7", {opacity: 0}, {opacity: 1, duration: 0.1}, 41.442);
+      tl.fromTo("#tw8", {opacity: 0}, {opacity: 1, duration: 0.1}, 41.580);
+      tl.fromTo("#pn-why", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 51.650);
+      tl.fromTo("#wy0", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 51.770);
+      tl.fromTo("#wy1", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 51.907);
+      tl.fromTo("#wy2", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 52.082);
+      tl.fromTo("#wy3", {opacity: 0, y: 14}, {opacity: 1, y: 0, duration: 0.12}, 52.295);
+      tl.fromTo("#wa0", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 53.477);
+      tl.fromTo("#wa1", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 53.990);
+      tl.fromTo("#wa2", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 54.302);
+      tl.fromTo("#wa4", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 54.552);
+      tl.fromTo("#wa5", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 54.627);
+      tl.fromTo("#wa6", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 54.990);
+      tl.fromTo("#wa8", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 55.365);
+      tl.fromTo("#wa9", {opacity: 0, y: 22}, {opacity: 1, y: 0, duration: 0.09}, 55.515);
+      tl.to("#wy-s", {opacity: 0, y: -40, duration: 0.18, ease: "power2.in"}, 56.420);
+      tl.fromTo("#wy-a", {opacity: 0, y: 90}, {opacity: 1, y: 0, duration: 0.28, ease: "power3.out"}, 56.677);
+      tl.fromTo("#wy-ac", {opacity: 0, scale: 0.5}, {opacity: 1, scale: 1, duration: 0.22, ease: "back.out(2.5)"}, 57.295);
+      tl.fromTo("#wy-b", {opacity: 0, y: 90}, {opacity: 1, y: 0, duration: 0.28, ease: "power3.out"}, 57.940);
+      tl.fromTo("#wy-note", {x: 700, y: 520, rotation: 40, opacity: 0}, {x: 0, y: 0, rotation: -9, opacity: 1, duration: 0.42, ease: "power3.out"}, 58.395);
+      tl.fromTo("#wy-bc", {opacity: 0, scale: 0.5}, {opacity: 1, scale: 1, duration: 0.22, ease: "back.out(2.5)"}, 58.645);
+      tl.fromTo("#pn-slider", {y: 1920}, {y: 0, duration: 0.3, ease: "power3.out"}, 59.520);
+      tl.fromTo("#sl-k", {x: 95}, {x: 286, duration: 0.3, ease: "power2.out"}, 59.720);
+      tl.to("#sl-k", {x: 525, duration: 0.5, ease: "power2.inOut"}, 60.097);
+      tl.fromTo("#sl-kl", {opacity: 0}, {opacity: 1, duration: 0.15}, 60.447);
+      tl.fromTo("#sl-a", {opacity: 0, y: 60}, {opacity: 1, y: 0, duration: 0.25, ease: "power3.out"}, 60.810);
+      tl.fromTo("#sl-as", {scaleX: 0}, {scaleX: 1, duration: 0.22, ease: "power2.inOut"}, 61.960);
+      tl.to("#sl-a", {opacity: 0.45, duration: 0.2}, 62.160);
+      tl.fromTo("#sl-b", {opacity: 0, y: 60}, {opacity: 1, y: 0, duration: 0.25, ease: "power3.out"}, 62.310);
+      tl.fromTo("#fw0", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.255);
+      tl.fromTo("#fw1", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.267);
+      tl.fromTo("#fw2", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.279);
+      tl.fromTo("#fw3", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.291);
+      tl.fromTo("#fw4", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.303);
+      tl.fromTo("#fw5", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw6", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.267);
+      tl.fromTo("#fw7", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.279);
+      tl.fromTo("#fw8", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.291);
+      tl.fromTo("#fw9", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.303);
+      tl.fromTo("#fw10", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw11", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw12", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.279);
+      tl.fromTo("#fw13", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.291);
+      tl.fromTo("#fw14", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.303);
+      tl.fromTo("#fw15", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw16", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw17", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw18", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.291);
+      tl.fromTo("#fw19", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.303);
+      tl.fromTo("#fw20", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw21", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw22", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw23", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw24", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.303);
+      tl.fromTo("#fw25", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw26", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw27", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw28", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw29", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw30", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.315);
+      tl.fromTo("#fw31", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw32", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw33", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw34", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw35", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.375);
+      tl.fromTo("#fw36", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.327);
+      tl.fromTo("#fw37", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw38", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw39", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw40", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.375);
+      tl.fromTo("#fw41", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.387);
+      tl.fromTo("#fw42", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.339);
+      tl.fromTo("#fw43", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw44", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw45", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.375);
+      tl.fromTo("#fw46", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.387);
+      tl.fromTo("#fw47", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.399);
+      tl.fromTo("#fw48", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.351);
+      tl.fromTo("#fw49", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw50", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.375);
+      tl.fromTo("#fw51", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.387);
+      tl.fromTo("#fw52", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.399);
+      tl.fromTo("#fw53", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.411);
+      tl.fromTo("#fw54", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.363);
+      tl.fromTo("#fw55", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.375);
+      tl.fromTo("#fw56", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.387);
+      tl.fromTo("#fw57", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.399);
+      tl.fromTo("#fw58", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.411);
+      tl.fromTo("#fw59", {scale: 0}, {scale: 1.02, duration: 0.16, ease: "power2.out"}, 64.423);
+      tl.set("#fl-wipe", {opacity: 0}, 64.655);
+      tl.fromTo("#fl-b", {opacity: 0, y: 40}, {opacity: 1, y: 0, duration: 0.25, ease: "power3.out"}, 64.555);
+      flapTo(["fl0_0", "fl0_1", "fl0_2", "fl0_3", "fl0_4", "fl0_5", "fl0_6", "fl0_7", "fl0_8"], "IF IT CAN", 65.357, 0.36, 0.03);
+      flapTo(["fl1_0", "fl1_1", "fl1_2", "fl1_3", "fl1_4", "fl1_5", "fl1_6", "fl1_7", "fl1_8"], "   SELL  ", 65.795, 0.36, 0.03);
+      flapTo(["fl1_0", "fl1_1", "fl1_2", "fl1_3", "fl1_4", "fl1_5", "fl1_6", "fl1_7", "fl1_8"], "BUILD THE", 67.907, 0.36, 0.03, "");
+      flapTo(["fl2_0", "fl2_1", "fl2_2", "fl2_3", "fl2_4", "fl2_5", "fl2_6", "fl2_7", "fl2_8"], "  PLANES ", 65.970, 0.36, 0.03);
+      flapTo(["fl2_0", "fl2_1", "fl2_2", "fl2_3", "fl2_4", "fl2_5", "fl2_6", "fl2_7", "fl2_8"], "  WINGS  ", 68.145, 0.36, 0.03, "#ffc93c");
+      tl.fromTo("#ph", {rotationY: -18, rotationX: 8, y: 60, transformPerspective: 2400}, {rotationY: -9, rotationX: 4, y: 0, duration: 6.830, ease: "power1.out"}, 69.580);
+      tl.fromTo("#ph-sheet", {y: 900}, {y: 0, duration: 0.35, ease: "power3.out"}, 71.265);
+      tl.fromTo("#ph-o1", {opacity: 0, x: -30}, {opacity: 1, x: 0, duration: 0.2}, 71.627);
+      tl.fromTo("#ph-o2", {opacity: 0, x: 30}, {opacity: 1, x: 0, duration: 0.2}, 71.702);
+      tl.fromTo("#ph-prof", {x: 560}, {x: 0, duration: 0.35, ease: "power3.inOut"}, 72.720);
+      tl.fromTo("#ph-tap", {scale: 0, opacity: 0.7}, {scale: 3, opacity: 0, duration: 0.45, ease: "power2.out"}, 73.127);
+      tl.fromTo("#ph-f", {scale: 1}, {scale: 0.92, duration: 0.08, yoyo: true, repeat: 1}, 73.127);
+      tl.set("#ph-f", {backgroundColor: "#2b2f3a"}, 73.207);
+      tl.set("#ph-f1", {opacity: 0}, 73.207); tl.set("#ph-f2", {opacity: 1}, 73.207);
+      tl.to("#pn-flap", {scale: 0.49, y: 175, borderRadius: 150, duration: 0.45, ease: "power3.inOut"}, 69.580);
+      tl.fromTo("#pn-phone", {opacity: 0}, {opacity: 1, duration: 0.3}, 69.580);
+      const clk = { t: 0 };
+      tl.to(clk, { t: 76.41, duration: 76.41, ease: "none", onUpdate: () => { flapAt(clk.t); countAt(clk.t); } }, 0);
+      flapAt(0); countAt(0);
+      window.__timelines["cards"] = tl;
+    })();
+  </script>
+</template>

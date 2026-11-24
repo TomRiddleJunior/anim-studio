@@ -1,0 +1,94 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.06,
+ "lead": 0.12,
+ "tail": 5.4,
+ "gap": 0.3,
+ "series": "THE RIG",
+ "day": 1,
+ "start_odds": 71,
+ "home_chip": "YOU, AT HOME: 4%",
+ "clock": "9:40 PM",
+ "lines": [
+  {
+   "id": "l01",
+   "shot": "A1",
+   "text": "If the zombie apocalypse catches you on an oil rig in the middle of the sea… consider yourself lucky.",
+   "caps": [
+    [
+     "If the zombie apocalypse",
+     "r"
+    ],
+    [
+     "catches you|on an oil rig",
+     "w"
+    ],
+    [
+     "in the middle|of the sea...",
+     "w"
+    ],
+    [
+     "consider yourself lucky.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l02",
+   "shot": "H",
+   "gap": 0.5,
+   "text": "Then the radio crackled. Outbreak on the coast.",
+   "odds": {
+    "at": "Outbreak",
+    "delta": -13,
+    "label": "OUTBREAK"
+   },
+   "caps": [
+    [
+     "Then the radio crackled.",
+     "w"
+    ],
+    [
+     "Outbreak on the coast.",
+     "r"
+    ]
+   ]
+  },
+  {
+   "id": "l03",
+   "shot": "L2",
+   "gap": 0.4,
+   "text": "But the dead can't swim. They sink.",
+   "odds": {
+    "at": "sink",
+    "delta": 15,
+    "label": "THE DEAD SINK"
+   },
+   "caps": [
+    [
+     "But the dead can't swim.",
+     "g"
+    ],
+    [
+     "They sink.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l04",
+   "shot": "S",
+   "gap": 0.6,
+   "speed": 0.95,
+   "glitch": "forgot",
+   "text": "But Meera forgot one thing.",
+   "caps": [
+    [
+     "But Mira forgot one thing...",
+     "r"
+    ]
+   ]
+  }
+ ],
+ "note": "TTS-only respellings ('Meera', 'heli-deck'): Kokoro reads 'Mira' as MY-ra. The captions keep the real spelling."
+}

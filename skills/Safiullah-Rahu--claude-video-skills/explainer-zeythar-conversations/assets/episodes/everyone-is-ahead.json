@@ -1,0 +1,25 @@
+{
+ "title": "Everyone Is Ahead",
+ "series": "Conversations Beyond Time",
+ "category": "CAREER · EMOTIONAL",
+ "clock": {"from": "1:14", "to": "1:16"},
+ "end_card": {"rows": ["WHERE DO YOU FEEL", "BEHIND RIGHT NOW?"], "sub": "COMMENT BELOW"},
+ "cover_hook": ["EVERYONE MY AGE HAS", "THEIR LIFE FIGURED OUT."],
+ "accent_words": ["figured", "confused.", "observing", "instagram.", "unfinished", "edited", "behind?", "race"],
+ "lines": [
+  {"who": "L", "line": "Everyone my age seems to have their life figured out. I'm still confused.",
+   "delivery": "Quiet and a little sad, honest, late at night.", "acting": ["eyes_down@confused.", "head_tilt"], "picture": "GIRL_OPEN"},
+  {"who": "Z", "line": "Where are you observing this?",
+   "delivery": "Calm, curious, gently probing.", "acting": ["hood_tilt@observing"], "picture": "HOOD_ORB_TAG"},
+  {"who": "L", "line": "Instagram.",
+   "delivery": "Small and a bit embarrassed, one word.", "acting": ["half_smile", "eyes_down"], "picture": "GIRL_CU"},
+  {"who": "Z", "line": "Then you are comparing your unfinished life with everyone's edited presentation.",
+   "delivery": "Warm and sure, unhurried, a real point.", "acting": ["orb_bright", "hand_turn@edited"], "picture": "ORB_INSERT",
+   "orb": {"morph": "phone", "at": "edited"}},
+  {"who": "L", "line": "So I'm not actually behind?",
+   "delivery": "Hopeful, quiet, a real question.", "acting": ["eyes_widen", "brows_up"], "picture": "GIRL_CU2"},
+  {"who": "Z", "line": "You are behind only if you believe life is a race with a shared finish line.",
+   "delivery": "Gentle and certain, warm, unhurried.", "acting": ["hand_lift@race"], "react": ["smile@finish"], "picture": "WIDE",
+   "orb": {"morph": "graph_up", "at": "race"}}
+ ]
+}

@@ -1,0 +1,1286 @@
+{
+ "duration": 92.6,
+ "voice": "am_onyx,am_michael",
+ "words": 223,
+ "wpm_overall": 144.5,
+ "wpm_speech": 175.0,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "If the zombie apocalypse catches you on an oil rig in the middle of the sea… consider yourself lucky.",
+   "start": 0.18,
+   "end": 6.205,
+   "words": [
+    {
+     "w": "If",
+     "start": 0.18,
+     "end": 0.355
+    },
+    {
+     "w": "the",
+     "start": 0.355,
+     "end": 0.492
+    },
+    {
+     "w": "zombie",
+     "start": 0.492,
+     "end": 0.905
+    },
+    {
+     "w": "apocalypse",
+     "start": 0.905,
+     "end": 1.593
+    },
+    {
+     "w": "catches",
+     "start": 1.593,
+     "end": 2.005
+    },
+    {
+     "w": "you",
+     "start": 2.005,
+     "end": 2.155
+    },
+    {
+     "w": "on",
+     "start": 2.155,
+     "end": 2.292
+    },
+    {
+     "w": "an",
+     "start": 2.292,
+     "end": 2.417
+    },
+    {
+     "w": "oil",
+     "start": 2.417,
+     "end": 2.768
+    },
+    {
+     "w": "rig",
+     "start": 2.768,
+     "end": 3.292
+    },
+    {
+     "w": "in",
+     "start": 3.292,
+     "end": 3.393
+    },
+    {
+     "w": "the",
+     "start": 3.393,
+     "end": 3.48
+    },
+    {
+     "w": "middle",
+     "start": 3.48,
+     "end": 3.693
+    },
+    {
+     "w": "of",
+     "start": 3.693,
+     "end": 3.768
+    },
+    {
+     "w": "the",
+     "start": 3.768,
+     "end": 3.905
+    },
+    {
+     "w": "sea…",
+     "start": 3.905,
+     "end": 4.23
+    },
+    {
+     "w": "consider",
+     "start": 4.518,
+     "end": 4.98
+    },
+    {
+     "w": "yourself",
+     "start": 4.98,
+     "end": 5.405
+    },
+    {
+     "w": "lucky.",
+     "start": 5.405,
+     "end": 6.205
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "But only if you don't make one fatal mistake.",
+   "start": 6.815,
+   "end": 9.59,
+   "words": [
+    {
+     "w": "But",
+     "start": 6.815,
+     "end": 6.94
+    },
+    {
+     "w": "only",
+     "start": 6.94,
+     "end": 7.315
+    },
+    {
+     "w": "if",
+     "start": 7.315,
+     "end": 7.44
+    },
+    {
+     "w": "you",
+     "start": 7.44,
+     "end": 7.54
+    },
+    {
+     "w": "don't",
+     "start": 7.54,
+     "end": 7.728
+    },
+    {
+     "w": "make",
+     "start": 7.728,
+     "end": 7.94
+    },
+    {
+     "w": "one",
+     "start": 7.94,
+     "end": 8.24
+    },
+    {
+     "w": "fatal",
+     "start": 8.24,
+     "end": 8.64
+    },
+    {
+     "w": "mistake.",
+     "start": 8.64,
+     "end": 9.59
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Meet Meera. She's thirty-three. She keeps a small gas platform running, a hundred and forty kilometres out at sea.",
+   "start": 10.35,
+   "end": 17.175,
+   "words": [
+    {
+     "w": "Meet",
+     "start": 10.35,
+     "end": 10.575
+    },
+    {
+     "w": "Meera.",
+     "start": 10.575,
+     "end": 10.925
+    },
+    {
+     "w": "She's",
+     "start": 11.0,
+     "end": 11.238
+    },
+    {
+     "w": "thirty-three.",
+     "start": 11.238,
+     "end": 12.2
+    },
+    {
+     "w": "She",
+     "start": 12.363,
+     "end": 12.5
+    },
+    {
+     "w": "keeps",
+     "start": 12.5,
+     "end": 12.738
+    },
+    {
+     "w": "a",
+     "start": 12.738,
+     "end": 12.838
+    },
+    {
+     "w": "small",
+     "start": 12.838,
+     "end": 13.225
+    },
+    {
+     "w": "gas",
+     "start": 13.225,
+     "end": 13.525
+    },
+    {
+     "w": "platform",
+     "start": 13.525,
+     "end": 14.1
+    },
+    {
+     "w": "running,",
+     "start": 14.1,
+     "end": 14.525
+    },
+    {
+     "w": "a",
+     "start": 14.6,
+     "end": 14.713
+    },
+    {
+     "w": "hundred",
+     "start": 14.713,
+     "end": 15.113
+    },
+    {
+     "w": "and",
+     "start": 15.113,
+     "end": 15.238
+    },
+    {
+     "w": "forty",
+     "start": 15.238,
+     "end": 15.55
+    },
+    {
+     "w": "kilometres",
+     "start": 15.55,
+     "end": 16.175
+    },
+    {
+     "w": "out",
+     "start": 16.175,
+     "end": 16.338
+    },
+    {
+     "w": "at",
+     "start": 16.338,
+     "end": 16.488
+    },
+    {
+     "w": "sea.",
+     "start": 16.488,
+     "end": 17.175
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "Most nights, nobody lives here at all. Tonight, it's just Meera and the seagulls.",
+   "start": 17.685,
+   "end": 22.36,
+   "words": [
+    {
+     "w": "Most",
+     "start": 17.685,
+     "end": 17.91
+    },
+    {
+     "w": "nights,",
+     "start": 17.91,
+     "end": 18.21
+    },
+    {
+     "w": "nobody",
+     "start": 18.26,
+     "end": 18.61
+    },
+    {
+     "w": "lives",
+     "start": 18.61,
+     "end": 18.86
+    },
+    {
+     "w": "here",
+     "start": 18.86,
+     "end": 19.048
+    },
+    {
+     "w": "at",
+     "start": 19.048,
+     "end": 19.135
+    },
+    {
+     "w": "all.",
+     "start": 19.135,
+     "end": 19.635
+    },
+    {
+     "w": "Tonight,",
+     "start": 19.773,
+     "end": 20.185
+    },
+    {
+     "w": "it's",
+     "start": 20.235,
+     "end": 20.435
+    },
+    {
+     "w": "just",
+     "start": 20.435,
+     "end": 20.698
+    },
+    {
+     "w": "Meera",
+     "start": 20.698,
+     "end": 21.11
+    },
+    {
+     "w": "and",
+     "start": 21.11,
+     "end": 21.223
+    },
+    {
+     "w": "the",
+     "start": 21.223,
+     "end": 21.323
+    },
+    {
+     "w": "seagulls.",
+     "start": 21.323,
+     "end": 22.36
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "Check the pressures. Log the weather. Dinner for one.",
+   "start": 22.87,
+   "end": 25.92,
+   "words": [
+    {
+     "w": "Check",
+     "start": 22.87,
+     "end": 23.083
+    },
+    {
+     "w": "the",
+     "start": 23.083,
+     "end": 23.17
+    },
+    {
+     "w": "pressures.",
+     "start": 23.17,
+     "end": 23.745
+    },
+    {
+     "w": "Log",
+     "start": 23.833,
+     "end": 24.145
+    },
+    {
+     "w": "the",
+     "start": 24.145,
+     "end": 24.245
+    },
+    {
+     "w": "weather.",
+     "start": 24.245,
+     "end": 24.645
+    },
+    {
+     "w": "Dinner",
+     "start": 24.758,
+     "end": 25.07
+    },
+    {
+     "w": "for",
+     "start": 25.07,
+     "end": 25.22
+    },
+    {
+     "w": "one.",
+     "start": 25.22,
+     "end": 25.92
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "But tonight, her life changed forever.",
+   "start": 26.48,
+   "end": 28.83,
+   "words": [
+    {
+     "w": "But",
+     "start": 26.48,
+     "end": 26.605
+    },
+    {
+     "w": "tonight,",
+     "start": 26.605,
+     "end": 27.005
+    },
+    {
+     "w": "her",
+     "start": 27.043,
+     "end": 27.18
+    },
+    {
+     "w": "life",
+     "start": 27.18,
+     "end": 27.493
+    },
+    {
+     "w": "changed",
+     "start": 27.493,
+     "end": 27.943
+    },
+    {
+     "w": "forever.",
+     "start": 27.943,
+     "end": 28.83
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "At nine forty, the radio crackled. The shore base. Outbreak in Port Ness. All flights stop at midnight.",
+   "start": 29.44,
+   "end": 35.69,
+   "words": [
+    {
+     "w": "At",
+     "start": 29.44,
+     "end": 29.565
+    },
+    {
+     "w": "nine",
+     "start": 29.565,
+     "end": 29.853
+    },
+    {
+     "w": "forty,",
+     "start": 29.853,
+     "end": 30.165
+    },
+    {
+     "w": "the",
+     "start": 30.203,
+     "end": 30.29
+    },
+    {
+     "w": "radio",
+     "start": 30.29,
+     "end": 30.665
+    },
+    {
+     "w": "crackled.",
+     "start": 30.665,
+     "end": 31.215
+    },
+    {
+     "w": "The",
+     "start": 31.29,
+     "end": 31.428
+    },
+    {
+     "w": "shore",
+     "start": 31.428,
+     "end": 31.715
+    },
+    {
+     "w": "base.",
+     "start": 31.715,
+     "end": 32.14
+    },
+    {
+     "w": "Outbreak",
+     "start": 32.253,
+     "end": 32.753
+    },
+    {
+     "w": "in",
+     "start": 32.753,
+     "end": 32.89
+    },
+    {
+     "w": "Port",
+     "start": 32.89,
+     "end": 33.19
+    },
+    {
+     "w": "Ness.",
+     "start": 33.19,
+     "end": 33.715
+    },
+    {
+     "w": "All",
+     "start": 33.853,
+     "end": 34.103
+    },
+    {
+     "w": "flights",
+     "start": 34.103,
+     "end": 34.465
+    },
+    {
+     "w": "stop",
+     "start": 34.465,
+     "end": 34.753
+    },
+    {
+     "w": "at",
+     "start": 34.753,
+     "end": 34.84
+    },
+    {
+     "w": "midnight.",
+     "start": 34.84,
+     "end": 35.69
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "Then the helicopter called. One seat left. Ten minutes.",
+   "start": 36.2,
+   "end": 39.75,
+   "words": [
+    {
+     "w": "Then",
+     "start": 36.2,
+     "end": 36.312
+    },
+    {
+     "w": "the",
+     "start": 36.312,
+     "end": 36.4
+    },
+    {
+     "w": "helicopter",
+     "start": 36.4,
+     "end": 37.05
+    },
+    {
+     "w": "called.",
+     "start": 37.05,
+     "end": 37.525
+    },
+    {
+     "w": "One",
+     "start": 37.612,
+     "end": 37.887
+    },
+    {
+     "w": "seat",
+     "start": 37.887,
+     "end": 38.15
+    },
+    {
+     "w": "left.",
+     "start": 38.15,
+     "end": 38.55
+    },
+    {
+     "w": "Ten",
+     "start": 38.662,
+     "end": 38.925
+    },
+    {
+     "w": "minutes.",
+     "start": 38.925,
+     "end": 39.75
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "Meera looked at the heli-deck… and said no.",
+   "start": 40.31,
+   "end": 42.81,
+   "words": [
+    {
+     "w": "Meera",
+     "start": 40.31,
+     "end": 40.585
+    },
+    {
+     "w": "looked",
+     "start": 40.585,
+     "end": 40.797
+    },
+    {
+     "w": "at",
+     "start": 40.797,
+     "end": 40.872
+    },
+    {
+     "w": "the",
+     "start": 40.872,
+     "end": 40.96
+    },
+    {
+     "w": "heli-deck…",
+     "start": 40.96,
+     "end": 41.61
+    },
+    {
+     "w": "and",
+     "start": 41.685,
+     "end": 41.822
+    },
+    {
+     "w": "said",
+     "start": 41.822,
+     "end": 42.085
+    },
+    {
+     "w": "no.",
+     "start": 42.085,
+     "end": 42.81
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "What if the pilot was bitten? What if the heliport was already gone? A helicopter is just a very fast way to land in the middle of it.",
+   "start": 43.37,
+   "end": 51.12,
+   "words": [
+    {
+     "w": "What",
+     "start": 43.37,
+     "end": 43.508
+    },
+    {
+     "w": "if",
+     "start": 43.508,
+     "end": 43.645
+    },
+    {
+     "w": "the",
+     "start": 43.645,
+     "end": 43.758
+    },
+    {
+     "w": "pilot",
+     "start": 43.758,
+     "end": 44.145
+    },
+    {
+     "w": "was",
+     "start": 44.145,
+     "end": 44.332
+    },
+    {
+     "w": "bitten?",
+     "start": 44.332,
+     "end": 44.895
+    },
+    {
+     "w": "What",
+     "start": 44.995,
+     "end": 45.133
+    },
+    {
+     "w": "if",
+     "start": 45.133,
+     "end": 45.258
+    },
+    {
+     "w": "the",
+     "start": 45.258,
+     "end": 45.345
+    },
+    {
+     "w": "heliport",
+     "start": 45.345,
+     "end": 45.895
+    },
+    {
+     "w": "was",
+     "start": 45.895,
+     "end": 46.082
+    },
+    {
+     "w": "already",
+     "start": 46.082,
+     "end": 46.508
+    },
+    {
+     "w": "gone?",
+     "start": 46.508,
+     "end": 47.17
+    },
+    {
+     "w": "A",
+     "start": 47.307,
+     "end": 47.42
+    },
+    {
+     "w": "helicopter",
+     "start": 47.42,
+     "end": 48.145
+    },
+    {
+     "w": "is",
+     "start": 48.145,
+     "end": 48.295
+    },
+    {
+     "w": "just",
+     "start": 48.295,
+     "end": 48.508
+    },
+    {
+     "w": "a",
+     "start": 48.508,
+     "end": 48.595
+    },
+    {
+     "w": "very",
+     "start": 48.595,
+     "end": 48.895
+    },
+    {
+     "w": "fast",
+     "start": 48.895,
+     "end": 49.32
+    },
+    {
+     "w": "way",
+     "start": 49.32,
+     "end": 49.57
+    },
+    {
+     "w": "to",
+     "start": 49.57,
+     "end": 49.695
+    },
+    {
+     "w": "land",
+     "start": 49.695,
+     "end": 50.032
+    },
+    {
+     "w": "in",
+     "start": 50.032,
+     "end": 50.108
+    },
+    {
+     "w": "the",
+     "start": 50.108,
+     "end": 50.195
+    },
+    {
+     "w": "middle",
+     "start": 50.195,
+     "end": 50.445
+    },
+    {
+     "w": "of",
+     "start": 50.445,
+     "end": 50.57
+    },
+    {
+     "w": "it.",
+     "start": 50.57,
+     "end": 51.12
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "So Meera decided to stay. The dead can't swim. They sink.",
+   "start": 51.68,
+   "end": 55.33,
+   "words": [
+    {
+     "w": "So",
+     "start": 51.68,
+     "end": 51.83
+    },
+    {
+     "w": "Meera",
+     "start": 51.83,
+     "end": 52.105
+    },
+    {
+     "w": "decided",
+     "start": 52.105,
+     "end": 52.53
+    },
+    {
+     "w": "to",
+     "start": 52.53,
+     "end": 52.655
+    },
+    {
+     "w": "stay.",
+     "start": 52.655,
+     "end": 53.155
+    },
+    {
+     "w": "The",
+     "start": 53.28,
+     "end": 53.38
+    },
+    {
+     "w": "dead",
+     "start": 53.38,
+     "end": 53.63
+    },
+    {
+     "w": "can't",
+     "start": 53.63,
+     "end": 53.968
+    },
+    {
+     "w": "swim.",
+     "start": 53.968,
+     "end": 54.355
+    },
+    {
+     "w": "They",
+     "start": 54.405,
+     "end": 54.605
+    },
+    {
+     "w": "sink.",
+     "start": 54.605,
+     "end": 55.33
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "i": 11,
+   "text": "A hundred and forty kilometres of cold, black water. Better than any wall.",
+   "start": 55.84,
+   "end": 60.665,
+   "words": [
+    {
+     "w": "A",
+     "start": 55.84,
+     "end": 55.927
+    },
+    {
+     "w": "hundred",
+     "start": 55.927,
+     "end": 56.39
+    },
+    {
+     "w": "and",
+     "start": 56.39,
+     "end": 56.527
+    },
+    {
+     "w": "forty",
+     "start": 56.527,
+     "end": 56.865
+    },
+    {
+     "w": "kilometres",
+     "start": 56.865,
+     "end": 57.502
+    },
+    {
+     "w": "of",
+     "start": 57.502,
+     "end": 57.652
+    },
+    {
+     "w": "cold,",
+     "start": 57.652,
+     "end": 58.115
+    },
+    {
+     "w": "black",
+     "start": 58.165,
+     "end": 58.54
+    },
+    {
+     "w": "water.",
+     "start": 58.54,
+     "end": 59.115
+    },
+    {
+     "w": "Better",
+     "start": 59.252,
+     "end": 59.552
+    },
+    {
+     "w": "than",
+     "start": 59.552,
+     "end": 59.652
+    },
+    {
+     "w": "any",
+     "start": 59.652,
+     "end": 59.852
+    },
+    {
+     "w": "wall.",
+     "start": 59.852,
+     "end": 60.665
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 12,
+   "text": "Emergency food for twelve people for a month. For one person, that's almost a year.",
+   "start": 61.175,
+   "end": 66.45,
+   "words": [
+    {
+     "w": "Emergency",
+     "start": 61.175,
+     "end": 61.85
+    },
+    {
+     "w": "food",
+     "start": 61.85,
+     "end": 62.2
+    },
+    {
+     "w": "for",
+     "start": 62.2,
+     "end": 62.325
+    },
+    {
+     "w": "twelve",
+     "start": 62.325,
+     "end": 62.675
+    },
+    {
+     "w": "people",
+     "start": 62.675,
+     "end": 63.05
+    },
+    {
+     "w": "for",
+     "start": 63.05,
+     "end": 63.212
+    },
+    {
+     "w": "a",
+     "start": 63.212,
+     "end": 63.3
+    },
+    {
+     "w": "month.",
+     "start": 63.3,
+     "end": 63.9
+    },
+    {
+     "w": "For",
+     "start": 64.025,
+     "end": 64.175
+    },
+    {
+     "w": "one",
+     "start": 64.175,
+     "end": 64.4
+    },
+    {
+     "w": "person,",
+     "start": 64.4,
+     "end": 64.85
+    },
+    {
+     "w": "that's",
+     "start": 64.9,
+     "end": 65.2
+    },
+    {
+     "w": "almost",
+     "start": 65.2,
+     "end": 65.612
+    },
+    {
+     "w": "a",
+     "start": 65.612,
+     "end": 65.712
+    },
+    {
+     "w": "year.",
+     "start": 65.712,
+     "end": 66.45
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 13,
+   "text": "A machine that turns seawater into drinking water. And power? The platform burns its own gas. Forever.",
+   "start": 66.96,
+   "end": 73.51,
+   "words": [
+    {
+     "w": "A",
+     "start": 66.96,
+     "end": 67.035
+    },
+    {
+     "w": "machine",
+     "start": 67.035,
+     "end": 67.472
+    },
+    {
+     "w": "that",
+     "start": 67.472,
+     "end": 67.61
+    },
+    {
+     "w": "turns",
+     "start": 67.61,
+     "end": 67.922
+    },
+    {
+     "w": "seawater",
+     "start": 67.922,
+     "end": 68.397
+    },
+    {
+     "w": "into",
+     "start": 68.397,
+     "end": 68.61
+    },
+    {
+     "w": "drinking",
+     "start": 68.61,
+     "end": 68.985
+    },
+    {
+     "w": "water.",
+     "start": 68.985,
+     "end": 69.71
+    },
+    {
+     "w": "And",
+     "start": 69.835,
+     "end": 69.997
+    },
+    {
+     "w": "power?",
+     "start": 69.997,
+     "end": 70.51
+    },
+    {
+     "w": "The",
+     "start": 70.585,
+     "end": 70.685
+    },
+    {
+     "w": "platform",
+     "start": 70.685,
+     "end": 71.26
+    },
+    {
+     "w": "burns",
+     "start": 71.26,
+     "end": 71.547
+    },
+    {
+     "w": "its",
+     "start": 71.547,
+     "end": 71.735
+    },
+    {
+     "w": "own",
+     "start": 71.735,
+     "end": 71.985
+    },
+    {
+     "w": "gas.",
+     "start": 71.985,
+     "end": 72.51
+    },
+    {
+     "w": "Forever.",
+     "start": 72.622,
+     "end": 73.51
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 14,
+   "text": "She pulled up the boat ladder. She chained the gate to the heli-deck.",
+   "start": 74.02,
+   "end": 77.645,
+   "words": [
+    {
+     "w": "She",
+     "start": 74.02,
+     "end": 74.145
+    },
+    {
+     "w": "pulled",
+     "start": 74.145,
+     "end": 74.407
+    },
+    {
+     "w": "up",
+     "start": 74.407,
+     "end": 74.557
+    },
+    {
+     "w": "the",
+     "start": 74.557,
+     "end": 74.645
+    },
+    {
+     "w": "boat",
+     "start": 74.645,
+     "end": 74.92
+    },
+    {
+     "w": "ladder.",
+     "start": 74.92,
+     "end": 75.52
+    },
+    {
+     "w": "She",
+     "start": 75.657,
+     "end": 75.832
+    },
+    {
+     "w": "chained",
+     "start": 75.832,
+     "end": 76.132
+    },
+    {
+     "w": "the",
+     "start": 76.132,
+     "end": 76.22
+    },
+    {
+     "w": "gate",
+     "start": 76.22,
+     "end": 76.52
+    },
+    {
+     "w": "to",
+     "start": 76.52,
+     "end": 76.607
+    },
+    {
+     "w": "the",
+     "start": 76.607,
+     "end": 76.695
+    },
+    {
+     "w": "heli-deck.",
+     "start": 76.695,
+     "end": 77.645
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "i": 15,
+   "text": "Food? Check. Water? Check. Power? Check.",
+   "start": 78.205,
+   "end": 80.555,
+   "words": [
+    {
+     "w": "Food?",
+     "start": 78.205,
+     "end": 78.455
+    },
+    {
+     "w": "Check.",
+     "start": 78.505,
+     "end": 78.73
+    },
+    {
+     "w": "Water?",
+     "start": 78.78,
+     "end": 79.13
+    },
+    {
+     "w": "Check.",
+     "start": 79.18,
+     "end": 79.405
+    },
+    {
+     "w": "Power?",
+     "start": 79.455,
+     "end": 79.805
+    },
+    {
+     "w": "Check.",
+     "start": 79.867,
+     "end": 80.555
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "i": 16,
+   "text": "Ninety-seven percent. On paper.",
+   "start": 81.215,
+   "end": 83.565,
+   "words": [
+    {
+     "w": "Ninety-seven",
+     "start": 81.215,
+     "end": 81.89
+    },
+    {
+     "w": "percent.",
+     "start": 81.89,
+     "end": 82.44
+    },
+    {
+     "w": "On",
+     "start": 82.515,
+     "end": 82.727
+    },
+    {
+     "w": "paper.",
+     "start": 82.727,
+     "end": 83.565
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "i": 17,
+   "text": "But Meera forgot one thing.",
+   "start": 84.375,
+   "end": 86.45,
+   "words": [
+    {
+     "w": "But",
+     "start": 84.375,
+     "end": 84.537
+    },
+    {
+     "w": "Meera",
+     "start": 84.537,
+     "end": 84.937
+    },
+    {
+     "w": "forgot",
+     "start": 84.937,
+     "end": 85.375
+    },
+    {
+     "w": "one",
+     "start": 85.375,
+     "end": 85.662
+    },
+    {
+     "w": "thing.",
+     "start": 85.662,
+     "end": 86.45
+    }
+   ]
+  }
+ ]
+}

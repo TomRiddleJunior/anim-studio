@@ -1,0 +1,1837 @@
+{
+ "duration": 145.845,
+ "voice": "bm_george",
+ "words": 308,
+ "wpm_overall": 126.7,
+ "wpm_speech": 159.0,
+ "lines": [
+  {
+   "id": "o1",
+   "i": 0,
+   "text": "Good evening, ladies and gentlemen. This is your captain speaking.",
+   "start": 0.96,
+   "end": 5.435,
+   "words": [
+    {
+     "w": "Good",
+     "start": 0.96,
+     "end": 1.16
+    },
+    {
+     "w": "evening,",
+     "start": 1.16,
+     "end": 1.685
+    },
+    {
+     "w": "ladies",
+     "start": 1.797,
+     "end": 2.373
+    },
+    {
+     "w": "and",
+     "start": 2.373,
+     "end": 2.547
+    },
+    {
+     "w": "gentlemen.",
+     "start": 2.547,
+     "end": 3.36
+    },
+    {
+     "w": "This",
+     "start": 3.46,
+     "end": 3.735
+    },
+    {
+     "w": "is",
+     "start": 3.735,
+     "end": 3.86
+    },
+    {
+     "w": "your",
+     "start": 3.86,
+     "end": 4.073
+    },
+    {
+     "w": "captain",
+     "start": 4.073,
+     "end": 4.573
+    },
+    {
+     "w": "speaking.",
+     "start": 4.573,
+     "end": 5.435
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "i": 1,
+   "text": "We'll be making six stops this week. I'm afraid none of them are on time.",
+   "start": 6.145,
+   "end": 10.52,
+   "words": [
+    {
+     "w": "We'll",
+     "start": 6.145,
+     "end": 6.282
+    },
+    {
+     "w": "be",
+     "start": 6.282,
+     "end": 6.395
+    },
+    {
+     "w": "making",
+     "start": 6.395,
+     "end": 6.77
+    },
+    {
+     "w": "six",
+     "start": 6.77,
+     "end": 7.07
+    },
+    {
+     "w": "stops",
+     "start": 7.07,
+     "end": 7.495
+    },
+    {
+     "w": "this",
+     "start": 7.495,
+     "end": 7.72
+    },
+    {
+     "w": "week.",
+     "start": 7.72,
+     "end": 8.195
+    },
+    {
+     "w": "I'm",
+     "start": 8.295,
+     "end": 8.47
+    },
+    {
+     "w": "afraid",
+     "start": 8.47,
+     "end": 8.908
+    },
+    {
+     "w": "none",
+     "start": 8.908,
+     "end": 9.107
+    },
+    {
+     "w": "of",
+     "start": 9.107,
+     "end": 9.195
+    },
+    {
+     "w": "them",
+     "start": 9.195,
+     "end": 9.432
+    },
+    {
+     "w": "are",
+     "start": 9.432,
+     "end": 9.57
+    },
+    {
+     "w": "on",
+     "start": 9.57,
+     "end": 9.783
+    },
+    {
+     "w": "time.",
+     "start": 9.783,
+     "end": 10.52
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "i": 2,
+   "text": "Please keep your seatbelts fastened.",
+   "start": 11.23,
+   "end": 13.73,
+   "words": [
+    {
+     "w": "Please",
+     "start": 11.23,
+     "end": 11.617
+    },
+    {
+     "w": "keep",
+     "start": 11.617,
+     "end": 12.005
+    },
+    {
+     "w": "your",
+     "start": 12.005,
+     "end": 12.217
+    },
+    {
+     "w": "seatbelts",
+     "start": 12.217,
+     "end": 12.842
+    },
+    {
+     "w": "fastened.",
+     "start": 12.842,
+     "end": 13.73
+    }
+   ]
+  },
+  {
+   "id": "h1",
+   "i": 3,
+   "text": "On your left, the Strait of Hormuz.",
+   "start": 15.74,
+   "end": 17.84,
+   "words": [
+    {
+     "w": "On",
+     "start": 15.74,
+     "end": 15.89
+    },
+    {
+     "w": "your",
+     "start": 15.89,
+     "end": 16.09
+    },
+    {
+     "w": "left,",
+     "start": 16.09,
+     "end": 16.54
+    },
+    {
+     "w": "the",
+     "start": 16.615,
+     "end": 16.74
+    },
+    {
+     "w": "Strait",
+     "start": 16.74,
+     "end": 17.027
+    },
+    {
+     "w": "of",
+     "start": 17.027,
+     "end": 17.115
+    },
+    {
+     "w": "Hormuz.",
+     "start": 17.115,
+     "end": 17.84
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "i": 4,
+   "text": "Closed in February. Reopened in April. Closed again.",
+   "start": 18.47,
+   "end": 22.045,
+   "words": [
+    {
+     "w": "Closed",
+     "start": 18.47,
+     "end": 18.845
+    },
+    {
+     "w": "in",
+     "start": 18.845,
+     "end": 19.007
+    },
+    {
+     "w": "February.",
+     "start": 19.007,
+     "end": 19.595
+    },
+    {
+     "w": "Reopened",
+     "start": 19.695,
+     "end": 20.245
+    },
+    {
+     "w": "in",
+     "start": 20.245,
+     "end": 20.395
+    },
+    {
+     "w": "April.",
+     "start": 20.395,
+     "end": 20.92
+    },
+    {
+     "w": "Closed",
+     "start": 21.02,
+     "end": 21.42
+    },
+    {
+     "w": "again.",
+     "start": 21.42,
+     "end": 22.045
+    }
+   ]
+  },
+  {
+   "id": "h3",
+   "i": 5,
+   "text": "It remains closed.",
+   "start": 22.615,
+   "end": 24.065,
+   "words": [
+    {
+     "w": "It",
+     "start": 22.615,
+     "end": 22.74
+    },
+    {
+     "w": "remains",
+     "start": 22.74,
+     "end": 23.302
+    },
+    {
+     "w": "closed.",
+     "start": 23.302,
+     "end": 24.065
+    }
+   ]
+  },
+  {
+   "id": "h4",
+   "i": 6,
+   "text": "In October, a ship was struck there nearly every day.",
+   "start": 24.875,
+   "end": 28.025,
+   "words": [
+    {
+     "w": "In",
+     "start": 24.875,
+     "end": 24.975
+    },
+    {
+     "w": "October,",
+     "start": 24.975,
+     "end": 25.625
+    },
+    {
+     "w": "a",
+     "start": 25.725,
+     "end": 25.837
+    },
+    {
+     "w": "ship",
+     "start": 25.837,
+     "end": 26.087
+    },
+    {
+     "w": "was",
+     "start": 26.087,
+     "end": 26.2
+    },
+    {
+     "w": "struck",
+     "start": 26.2,
+     "end": 26.525
+    },
+    {
+     "w": "there",
+     "start": 26.525,
+     "end": 26.737
+    },
+    {
+     "w": "nearly",
+     "start": 26.737,
+     "end": 27.112
+    },
+    {
+     "w": "every",
+     "start": 27.112,
+     "end": 27.45
+    },
+    {
+     "w": "day.",
+     "start": 27.45,
+     "end": 28.025
+    }
+   ]
+  },
+  {
+   "id": "h5",
+   "i": 7,
+   "text": "Diesel is six dollars twenty-eight a gallon. Please plan your onward travel accordingly.",
+   "start": 28.835,
+   "end": 33.935,
+   "words": [
+    {
+     "w": "Diesel",
+     "start": 28.835,
+     "end": 29.272
+    },
+    {
+     "w": "is",
+     "start": 29.272,
+     "end": 29.422
+    },
+    {
+     "w": "six",
+     "start": 29.422,
+     "end": 29.735
+    },
+    {
+     "w": "dollars",
+     "start": 29.735,
+     "end": 30.197
+    },
+    {
+     "w": "twenty-eight",
+     "start": 30.197,
+     "end": 30.685
+    },
+    {
+     "w": "a",
+     "start": 30.685,
+     "end": 30.76
+    },
+    {
+     "w": "gallon.",
+     "start": 30.76,
+     "end": 31.36
+    },
+    {
+     "w": "Please",
+     "start": 31.46,
+     "end": 31.785
+    },
+    {
+     "w": "plan",
+     "start": 31.785,
+     "end": 32.085
+    },
+    {
+     "w": "your",
+     "start": 32.085,
+     "end": 32.297
+    },
+    {
+     "w": "onward",
+     "start": 32.297,
+     "end": 32.685
+    },
+    {
+     "w": "travel",
+     "start": 32.685,
+     "end": 33.06
+    },
+    {
+     "w": "accordingly.",
+     "start": 33.06,
+     "end": 33.935
+    }
+   ]
+  },
+  {
+   "id": "a1",
+   "i": 8,
+   "text": "Coming up on the right, Juneau, Alaska.",
+   "start": 34.995,
+   "end": 37.42,
+   "words": [
+    {
+     "w": "Coming",
+     "start": 34.995,
+     "end": 35.257
+    },
+    {
+     "w": "up",
+     "start": 35.257,
+     "end": 35.407
+    },
+    {
+     "w": "on",
+     "start": 35.407,
+     "end": 35.507
+    },
+    {
+     "w": "the",
+     "start": 35.507,
+     "end": 35.595
+    },
+    {
+     "w": "right,",
+     "start": 35.595,
+     "end": 35.995
+    },
+    {
+     "w": "Juneau,",
+     "start": 36.107,
+     "end": 36.545
+    },
+    {
+     "w": "Alaska.",
+     "start": 36.62,
+     "end": 37.42
+    }
+   ]
+  },
+  {
+   "id": "a2",
+   "i": 9,
+   "text": "The Justice Department is suing to stop Alaska certifying its Senate race, unless Senator Dan Sullivan wins.",
+   "start": 38.05,
+   "end": 45.175,
+   "words": [
+    {
+     "w": "The",
+     "start": 38.05,
+     "end": 38.15
+    },
+    {
+     "w": "Justice",
+     "start": 38.15,
+     "end": 38.55
+    },
+    {
+     "w": "Department",
+     "start": 38.55,
+     "end": 39.387
+    },
+    {
+     "w": "is",
+     "start": 39.387,
+     "end": 39.537
+    },
+    {
+     "w": "suing",
+     "start": 39.537,
+     "end": 39.875
+    },
+    {
+     "w": "to",
+     "start": 39.875,
+     "end": 40.0
+    },
+    {
+     "w": "stop",
+     "start": 40.0,
+     "end": 40.275
+    },
+    {
+     "w": "Alaska",
+     "start": 40.275,
+     "end": 40.8
+    },
+    {
+     "w": "certifying",
+     "start": 40.8,
+     "end": 41.475
+    },
+    {
+     "w": "its",
+     "start": 41.475,
+     "end": 41.662
+    },
+    {
+     "w": "Senate",
+     "start": 41.662,
+     "end": 42.0
+    },
+    {
+     "w": "race,",
+     "start": 42.0,
+     "end": 42.65
+    },
+    {
+     "w": "unless",
+     "start": 42.75,
+     "end": 43.062
+    },
+    {
+     "w": "Senator",
+     "start": 43.062,
+     "end": 43.512
+    },
+    {
+     "w": "Dan",
+     "start": 43.512,
+     "end": 43.962
+    },
+    {
+     "w": "Sullivan",
+     "start": 43.962,
+     "end": 44.462
+    },
+    {
+     "w": "wins.",
+     "start": 44.462,
+     "end": 45.175
+    }
+   ]
+  },
+  {
+   "id": "a3",
+   "i": 10,
+   "text": "The reason given: possible confusion with a second candidate named Sullivan.",
+   "start": 45.745,
+   "end": 50.47,
+   "words": [
+    {
+     "w": "The",
+     "start": 45.745,
+     "end": 45.845
+    },
+    {
+     "w": "reason",
+     "start": 45.845,
+     "end": 46.245
+    },
+    {
+     "w": "given:",
+     "start": 46.245,
+     "end": 46.77
+    },
+    {
+     "w": "possible",
+     "start": 46.87,
+     "end": 47.32
+    },
+    {
+     "w": "confusion",
+     "start": 47.32,
+     "end": 47.97
+    },
+    {
+     "w": "with",
+     "start": 47.97,
+     "end": 48.107
+    },
+    {
+     "w": "a",
+     "start": 48.107,
+     "end": 48.207
+    },
+    {
+     "w": "second",
+     "start": 48.207,
+     "end": 48.57
+    },
+    {
+     "w": "candidate",
+     "start": 48.57,
+     "end": 49.332
+    },
+    {
+     "w": "named",
+     "start": 49.332,
+     "end": 49.695
+    },
+    {
+     "w": "Sullivan.",
+     "start": 49.695,
+     "end": 50.47
+    }
+   ]
+  },
+  {
+   "id": "a4",
+   "i": 11,
+   "text": "On who ordered it, the President said: I'm the one that said do it.",
+   "start": 51.28,
+   "end": 54.78,
+   "words": [
+    {
+     "w": "On",
+     "start": 51.28,
+     "end": 51.417
+    },
+    {
+     "w": "who",
+     "start": 51.417,
+     "end": 51.592
+    },
+    {
+     "w": "ordered",
+     "start": 51.592,
+     "end": 51.905
+    },
+    {
+     "w": "it,",
+     "start": 51.905,
+     "end": 52.08
+    },
+    {
+     "w": "the",
+     "start": 52.155,
+     "end": 52.255
+    },
+    {
+     "w": "President",
+     "start": 52.255,
+     "end": 52.755
+    },
+    {
+     "w": "said:",
+     "start": 52.755,
+     "end": 53.23
+    },
+    {
+     "w": "I'm",
+     "start": 53.33,
+     "end": 53.492
+    },
+    {
+     "w": "the",
+     "start": 53.492,
+     "end": 53.58
+    },
+    {
+     "w": "one",
+     "start": 53.58,
+     "end": 53.805
+    },
+    {
+     "w": "that",
+     "start": 53.805,
+     "end": 53.955
+    },
+    {
+     "w": "said",
+     "start": 53.955,
+     "end": 54.205
+    },
+    {
+     "w": "do",
+     "start": 54.205,
+     "end": 54.38
+    },
+    {
+     "w": "it.",
+     "start": 54.38,
+     "end": 54.78
+    }
+   ]
+  },
+  {
+   "id": "a5",
+   "i": 12,
+   "text": "The matter is now in court. Election day is November the third.",
+   "start": 55.49,
+   "end": 59.54,
+   "words": [
+    {
+     "w": "The",
+     "start": 55.49,
+     "end": 55.565
+    },
+    {
+     "w": "matter",
+     "start": 55.565,
+     "end": 55.952
+    },
+    {
+     "w": "is",
+     "start": 55.952,
+     "end": 56.115
+    },
+    {
+     "w": "now",
+     "start": 56.115,
+     "end": 56.365
+    },
+    {
+     "w": "in",
+     "start": 56.365,
+     "end": 56.527
+    },
+    {
+     "w": "court.",
+     "start": 56.527,
+     "end": 57.065
+    },
+    {
+     "w": "Election",
+     "start": 57.165,
+     "end": 57.615
+    },
+    {
+     "w": "day",
+     "start": 57.615,
+     "end": 58.027
+    },
+    {
+     "w": "is",
+     "start": 58.027,
+     "end": 58.19
+    },
+    {
+     "w": "November",
+     "start": 58.19,
+     "end": 58.715
+    },
+    {
+     "w": "the",
+     "start": 58.715,
+     "end": 58.865
+    },
+    {
+     "w": "third.",
+     "start": 58.865,
+     "end": 59.54
+    }
+   ]
+  },
+  {
+   "id": "i1",
+   "i": 13,
+   "text": "Below us, Israel, which voted on Tuesday.",
+   "start": 60.6,
+   "end": 63.625,
+   "words": [
+    {
+     "w": "Below",
+     "start": 60.6,
+     "end": 60.9
+    },
+    {
+     "w": "us,",
+     "start": 60.9,
+     "end": 61.225
+    },
+    {
+     "w": "Israel,",
+     "start": 61.325,
+     "end": 61.95
+    },
+    {
+     "w": "which",
+     "start": 62.025,
+     "end": 62.237
+    },
+    {
+     "w": "voted",
+     "start": 62.237,
+     "end": 62.637
+    },
+    {
+     "w": "on",
+     "start": 62.637,
+     "end": 62.837
+    },
+    {
+     "w": "Tuesday.",
+     "start": 62.837,
+     "end": 63.625
+    }
+   ]
+  },
+  {
+   "id": "i2",
+   "i": 14,
+   "text": "Forming a government takes sixty-one of a hundred and twenty seats.",
+   "start": 64.335,
+   "end": 68.11,
+   "words": [
+    {
+     "w": "Forming",
+     "start": 64.335,
+     "end": 64.71
+    },
+    {
+     "w": "a",
+     "start": 64.71,
+     "end": 64.785
+    },
+    {
+     "w": "government",
+     "start": 64.785,
+     "end": 65.447
+    },
+    {
+     "w": "takes",
+     "start": 65.447,
+     "end": 65.747
+    },
+    {
+     "w": "sixty-one",
+     "start": 65.747,
+     "end": 66.335
+    },
+    {
+     "w": "of",
+     "start": 66.335,
+     "end": 66.422
+    },
+    {
+     "w": "a",
+     "start": 66.422,
+     "end": 66.485
+    },
+    {
+     "w": "hundred",
+     "start": 66.485,
+     "end": 67.047
+    },
+    {
+     "w": "and",
+     "start": 67.047,
+     "end": 67.185
+    },
+    {
+     "w": "twenty",
+     "start": 67.185,
+     "end": 67.497
+    },
+    {
+     "w": "seats.",
+     "start": 67.497,
+     "end": 68.11
+    }
+   ]
+  },
+  {
+   "id": "i3",
+   "i": 15,
+   "text": "One exit poll gave Netanyahu's bloc fifty-two. Two others, a tie.",
+   "start": 68.68,
+   "end": 73.255,
+   "words": [
+    {
+     "w": "One",
+     "start": 68.68,
+     "end": 68.905
+    },
+    {
+     "w": "exit",
+     "start": 68.905,
+     "end": 69.255
+    },
+    {
+     "w": "poll",
+     "start": 69.255,
+     "end": 69.655
+    },
+    {
+     "w": "gave",
+     "start": 69.655,
+     "end": 69.905
+    },
+    {
+     "w": "Netanyahu's",
+     "start": 69.905,
+     "end": 70.58
+    },
+    {
+     "w": "bloc",
+     "start": 70.58,
+     "end": 70.905
+    },
+    {
+     "w": "fifty-two.",
+     "start": 70.905,
+     "end": 71.63
+    },
+    {
+     "w": "Two",
+     "start": 71.73,
+     "end": 71.905
+    },
+    {
+     "w": "others,",
+     "start": 71.905,
+     "end": 72.405
+    },
+    {
+     "w": "a",
+     "start": 72.505,
+     "end": 72.617
+    },
+    {
+     "w": "tie.",
+     "start": 72.617,
+     "end": 73.255
+    }
+   ]
+  },
+  {
+   "id": "i4",
+   "i": 16,
+   "text": "Passengers should expect delays.",
+   "start": 73.885,
+   "end": 76.06,
+   "words": [
+    {
+     "w": "Passengers",
+     "start": 73.885,
+     "end": 74.672
+    },
+    {
+     "w": "should",
+     "start": 74.672,
+     "end": 74.822
+    },
+    {
+     "w": "expect",
+     "start": 74.822,
+     "end": 75.26
+    },
+    {
+     "w": "delays.",
+     "start": 75.26,
+     "end": 76.06
+    }
+   ]
+  },
+  {
+   "id": "b1",
+   "i": 17,
+   "text": "We are now crossing Brazil.",
+   "start": 77.12,
+   "end": 79.02,
+   "words": [
+    {
+     "w": "We",
+     "start": 77.12,
+     "end": 77.232
+    },
+    {
+     "w": "are",
+     "start": 77.232,
+     "end": 77.32
+    },
+    {
+     "w": "now",
+     "start": 77.32,
+     "end": 77.607
+    },
+    {
+     "w": "crossing",
+     "start": 77.607,
+     "end": 78.232
+    },
+    {
+     "w": "Brazil.",
+     "start": 78.232,
+     "end": 79.02
+    }
+   ]
+  },
+  {
+   "id": "b2",
+   "i": 18,
+   "text": "Lula has won a fourth term, with just over fifty-one percent.",
+   "start": 79.65,
+   "end": 83.375,
+   "words": [
+    {
+     "w": "Lula",
+     "start": 79.65,
+     "end": 79.95
+    },
+    {
+     "w": "has",
+     "start": 79.95,
+     "end": 80.15
+    },
+    {
+     "w": "won",
+     "start": 80.15,
+     "end": 80.325
+    },
+    {
+     "w": "a",
+     "start": 80.325,
+     "end": 80.45
+    },
+    {
+     "w": "fourth",
+     "start": 80.45,
+     "end": 80.8
+    },
+    {
+     "w": "term,",
+     "start": 80.8,
+     "end": 81.325
+    },
+    {
+     "w": "with",
+     "start": 81.4,
+     "end": 81.575
+    },
+    {
+     "w": "just",
+     "start": 81.575,
+     "end": 81.85
+    },
+    {
+     "w": "over",
+     "start": 81.85,
+     "end": 82.112
+    },
+    {
+     "w": "fifty-one",
+     "start": 82.112,
+     "end": 82.65
+    },
+    {
+     "w": "percent.",
+     "start": 82.65,
+     "end": 83.375
+    }
+   ]
+  },
+  {
+   "id": "b3",
+   "i": 19,
+   "text": "He won at eighty. Two days later, he turned eighty-one.",
+   "start": 84.085,
+   "end": 87.385,
+   "words": [
+    {
+     "w": "He",
+     "start": 84.085,
+     "end": 84.21
+    },
+    {
+     "w": "won",
+     "start": 84.21,
+     "end": 84.435
+    },
+    {
+     "w": "at",
+     "start": 84.435,
+     "end": 84.56
+    },
+    {
+     "w": "eighty.",
+     "start": 84.56,
+     "end": 85.11
+    },
+    {
+     "w": "Two",
+     "start": 85.21,
+     "end": 85.372
+    },
+    {
+     "w": "days",
+     "start": 85.372,
+     "end": 85.61
+    },
+    {
+     "w": "later,",
+     "start": 85.61,
+     "end": 85.985
+    },
+    {
+     "w": "he",
+     "start": 86.035,
+     "end": 86.16
+    },
+    {
+     "w": "turned",
+     "start": 86.16,
+     "end": 86.522
+    },
+    {
+     "w": "eighty-one.",
+     "start": 86.522,
+     "end": 87.385
+    }
+   ]
+  },
+  {
+   "id": "b4",
+   "i": 20,
+   "text": "The runner-up has lodged a complaint.",
+   "start": 88.095,
+   "end": 90.47,
+   "words": [
+    {
+     "w": "The",
+     "start": 88.095,
+     "end": 88.195
+    },
+    {
+     "w": "runner-up",
+     "start": 88.195,
+     "end": 88.882
+    },
+    {
+     "w": "has",
+     "start": 88.882,
+     "end": 89.107
+    },
+    {
+     "w": "lodged",
+     "start": 89.107,
+     "end": 89.57
+    },
+    {
+     "w": "a",
+     "start": 89.57,
+     "end": 89.645
+    },
+    {
+     "w": "complaint.",
+     "start": 89.645,
+     "end": 90.47
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "i": 21,
+   "text": "Approaching Belgrade.",
+   "start": 91.53,
+   "end": 92.955,
+   "words": [
+    {
+     "w": "Approaching",
+     "start": 91.53,
+     "end": 92.067
+    },
+    {
+     "w": "Belgrade.",
+     "start": 92.067,
+     "end": 92.955
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "i": 22,
+   "text": "A student-led list has won the parliamentary election. About two point two million votes to one point seven, by the President's own count.",
+   "start": 93.585,
+   "end": 101.76,
+   "words": [
+    {
+     "w": "A",
+     "start": 93.585,
+     "end": 93.672
+    },
+    {
+     "w": "student-led",
+     "start": 93.672,
+     "end": 94.31
+    },
+    {
+     "w": "list",
+     "start": 94.31,
+     "end": 94.822
+    },
+    {
+     "w": "has",
+     "start": 94.822,
+     "end": 95.035
+    },
+    {
+     "w": "won",
+     "start": 95.035,
+     "end": 95.222
+    },
+    {
+     "w": "the",
+     "start": 95.222,
+     "end": 95.31
+    },
+    {
+     "w": "parliamentary",
+     "start": 95.31,
+     "end": 95.985
+    },
+    {
+     "w": "election.",
+     "start": 95.985,
+     "end": 96.81
+    },
+    {
+     "w": "About",
+     "start": 96.91,
+     "end": 97.197
+    },
+    {
+     "w": "two",
+     "start": 97.197,
+     "end": 97.46
+    },
+    {
+     "w": "point",
+     "start": 97.46,
+     "end": 97.747
+    },
+    {
+     "w": "two",
+     "start": 97.747,
+     "end": 97.91
+    },
+    {
+     "w": "million",
+     "start": 97.91,
+     "end": 98.26
+    },
+    {
+     "w": "votes",
+     "start": 98.26,
+     "end": 98.722
+    },
+    {
+     "w": "to",
+     "start": 98.722,
+     "end": 98.86
+    },
+    {
+     "w": "one",
+     "start": 98.86,
+     "end": 99.085
+    },
+    {
+     "w": "point",
+     "start": 99.085,
+     "end": 99.372
+    },
+    {
+     "w": "seven,",
+     "start": 99.372,
+     "end": 99.935
+    },
+    {
+     "w": "by",
+     "start": 100.035,
+     "end": 100.172
+    },
+    {
+     "w": "the",
+     "start": 100.172,
+     "end": 100.26
+    },
+    {
+     "w": "President's",
+     "start": 100.26,
+     "end": 100.847
+    },
+    {
+     "w": "own",
+     "start": 100.847,
+     "end": 101.122
+    },
+    {
+     "w": "count.",
+     "start": 101.122,
+     "end": 101.76
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "i": 23,
+   "text": "His words: it is clear that we have lost these elections.",
+   "start": 102.47,
+   "end": 105.72,
+   "words": [
+    {
+     "w": "His",
+     "start": 102.47,
+     "end": 102.645
+    },
+    {
+     "w": "words:",
+     "start": 102.645,
+     "end": 103.22
+    },
+    {
+     "w": "it",
+     "start": 103.295,
+     "end": 103.395
+    },
+    {
+     "w": "is",
+     "start": 103.395,
+     "end": 103.557
+    },
+    {
+     "w": "clear",
+     "start": 103.557,
+     "end": 103.97
+    },
+    {
+     "w": "that",
+     "start": 103.97,
+     "end": 104.082
+    },
+    {
+     "w": "we",
+     "start": 104.082,
+     "end": 104.182
+    },
+    {
+     "w": "have",
+     "start": 104.182,
+     "end": 104.345
+    },
+    {
+     "w": "lost",
+     "start": 104.345,
+     "end": 104.595
+    },
+    {
+     "w": "these",
+     "start": 104.595,
+     "end": 104.82
+    },
+    {
+     "w": "elections.",
+     "start": 104.82,
+     "end": 105.72
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "i": 24,
+   "text": "Ladies and gentlemen, the ruling party has conceded.",
+   "start": 106.43,
+   "end": 109.955,
+   "words": [
+    {
+     "w": "Ladies",
+     "start": 106.43,
+     "end": 106.942
+    },
+    {
+     "w": "and",
+     "start": 106.942,
+     "end": 107.092
+    },
+    {
+     "w": "gentlemen,",
+     "start": 107.092,
+     "end": 107.83
+    },
+    {
+     "w": "the",
+     "start": 107.93,
+     "end": 108.055
+    },
+    {
+     "w": "ruling",
+     "start": 108.055,
+     "end": 108.405
+    },
+    {
+     "w": "party",
+     "start": 108.405,
+     "end": 108.855
+    },
+    {
+     "w": "has",
+     "start": 108.855,
+     "end": 109.055
+    },
+    {
+     "w": "conceded.",
+     "start": 109.055,
+     "end": 109.955
+    }
+   ]
+  },
+  {
+   "id": "v1",
+   "i": 25,
+   "text": "And finally, Caracas.",
+   "start": 111.015,
+   "end": 112.715,
+   "words": [
+    {
+     "w": "And",
+     "start": 111.015,
+     "end": 111.177
+    },
+    {
+     "w": "finally,",
+     "start": 111.177,
+     "end": 111.74
+    },
+    {
+     "w": "Caracas.",
+     "start": 111.84,
+     "end": 112.715
+    }
+   ]
+  },
+  {
+   "id": "v2",
+   "i": 26,
+   "text": "Opposition leader Maria Corina Machado is back, after about ten months abroad.",
+   "start": 113.345,
+   "end": 118.52,
+   "words": [
+    {
+     "w": "Opposition",
+     "start": 113.345,
+     "end": 114.032
+    },
+    {
+     "w": "leader",
+     "start": 114.032,
+     "end": 114.345
+    },
+    {
+     "w": "Maria",
+     "start": 114.345,
+     "end": 114.807
+    },
+    {
+     "w": "Corina",
+     "start": 114.807,
+     "end": 115.245
+    },
+    {
+     "w": "Machado",
+     "start": 115.245,
+     "end": 115.795
+    },
+    {
+     "w": "is",
+     "start": 115.795,
+     "end": 115.945
+    },
+    {
+     "w": "back,",
+     "start": 115.945,
+     "end": 116.445
+    },
+    {
+     "w": "after",
+     "start": 116.545,
+     "end": 116.845
+    },
+    {
+     "w": "about",
+     "start": 116.845,
+     "end": 117.182
+    },
+    {
+     "w": "ten",
+     "start": 117.182,
+     "end": 117.445
+    },
+    {
+     "w": "months",
+     "start": 117.445,
+     "end": 117.77
+    },
+    {
+     "w": "abroad.",
+     "start": 117.77,
+     "end": 118.52
+    }
+   ]
+  },
+  {
+   "id": "v3",
+   "i": 27,
+   "text": "Welcome home. Her next request: an election date.",
+   "start": 119.23,
+   "end": 122.48,
+   "words": [
+    {
+     "w": "Welcome",
+     "start": 119.23,
+     "end": 119.655
+    },
+    {
+     "w": "home.",
+     "start": 119.655,
+     "end": 120.13
+    },
+    {
+     "w": "Her",
+     "start": 120.205,
+     "end": 120.355
+    },
+    {
+     "w": "next",
+     "start": 120.355,
+     "end": 120.642
+    },
+    {
+     "w": "request:",
+     "start": 120.642,
+     "end": 121.255
+    },
+    {
+     "w": "an",
+     "start": 121.33,
+     "end": 121.43
+    },
+    {
+     "w": "election",
+     "start": 121.43,
+     "end": 121.905
+    },
+    {
+     "w": "date.",
+     "start": 121.905,
+     "end": 122.48
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "i": 28,
+   "text": "A quick recap before we land.",
+   "start": 123.69,
+   "end": 125.865,
+   "words": [
+    {
+     "w": "A",
+     "start": 123.69,
+     "end": 123.765
+    },
+    {
+     "w": "quick",
+     "start": 123.765,
+     "end": 124.052
+    },
+    {
+     "w": "recap",
+     "start": 124.052,
+     "end": 124.702
+    },
+    {
+     "w": "before",
+     "start": 124.702,
+     "end": 125.065
+    },
+    {
+     "w": "we",
+     "start": 125.065,
+     "end": 125.19
+    },
+    {
+     "w": "land.",
+     "start": 125.19,
+     "end": 125.865
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "i": 29,
+   "text": "One strait, closed. One lawsuit, in court. One count, delayed. One result, disputed. One election, conceded. One leader, home.",
+   "start": 126.475,
+   "end": 134.65,
+   "words": [
+    {
+     "w": "One",
+     "start": 126.475,
+     "end": 126.675
+    },
+    {
+     "w": "strait,",
+     "start": 126.675,
+     "end": 127.0
+    },
+    {
+     "w": "closed.",
+     "start": 127.05,
+     "end": 127.675
+    },
+    {
+     "w": "One",
+     "start": 127.775,
+     "end": 128.0
+    },
+    {
+     "w": "lawsuit,",
+     "start": 128.0,
+     "end": 128.375
+    },
+    {
+     "w": "in",
+     "start": 128.412,
+     "end": 128.562
+    },
+    {
+     "w": "court.",
+     "start": 128.562,
+     "end": 129.075
+    },
+    {
+     "w": "One",
+     "start": 129.175,
+     "end": 129.412
+    },
+    {
+     "w": "count,",
+     "start": 129.412,
+     "end": 129.7
+    },
+    {
+     "w": "delayed.",
+     "start": 129.75,
+     "end": 130.375
+    },
+    {
+     "w": "One",
+     "start": 130.475,
+     "end": 130.7
+    },
+    {
+     "w": "result,",
+     "start": 130.7,
+     "end": 131.05
+    },
+    {
+     "w": "disputed.",
+     "start": 131.087,
+     "end": 131.85
+    },
+    {
+     "w": "One",
+     "start": 131.95,
+     "end": 132.15
+    },
+    {
+     "w": "election,",
+     "start": 132.15,
+     "end": 132.6
+    },
+    {
+     "w": "conceded.",
+     "start": 132.65,
+     "end": 133.425
+    },
+    {
+     "w": "One",
+     "start": 133.525,
+     "end": 133.75
+    },
+    {
+     "w": "leader,",
+     "start": 133.75,
+     "end": 134.025
+    },
+    {
+     "w": "home.",
+     "start": 134.075,
+     "end": 134.65
+    }
+   ]
+  },
+  {
+   "id": "e1",
+   "i": 30,
+   "text": "Our next departure is scheduled for November the third.",
+   "start": 135.66,
+   "end": 138.91,
+   "words": [
+    {
+     "w": "Our",
+     "start": 135.66,
+     "end": 135.785
+    },
+    {
+     "w": "next",
+     "start": 135.785,
+     "end": 136.047
+    },
+    {
+     "w": "departure",
+     "start": 136.047,
+     "end": 136.81
+    },
+    {
+     "w": "is",
+     "start": 136.81,
+     "end": 136.972
+    },
+    {
+     "w": "scheduled",
+     "start": 136.972,
+     "end": 137.485
+    },
+    {
+     "w": "for",
+     "start": 137.485,
+     "end": 137.61
+    },
+    {
+     "w": "November",
+     "start": 137.61,
+     "end": 138.085
+    },
+    {
+     "w": "the",
+     "start": 138.085,
+     "end": 138.222
+    },
+    {
+     "w": "third.",
+     "start": 138.222,
+     "end": 138.91
+    }
+   ]
+  },
+  {
+   "id": "e2",
+   "i": 31,
+   "text": "Thank you for flying with us, and for your patience.",
+   "start": 139.57,
+   "end": 142.295,
+   "words": [
+    {
+     "w": "Thank",
+     "start": 139.57,
+     "end": 139.77
+    },
+    {
+     "w": "you",
+     "start": 139.77,
+     "end": 139.895
+    },
+    {
+     "w": "for",
+     "start": 139.895,
+     "end": 140.032
+    },
+    {
+     "w": "flying",
+     "start": 140.032,
+     "end": 140.407
+    },
+    {
+     "w": "with",
+     "start": 140.407,
+     "end": 140.532
+    },
+    {
+     "w": "us,",
+     "start": 140.532,
+     "end": 140.92
+    },
+    {
+     "w": "and",
+     "start": 140.995,
+     "end": 141.12
+    },
+    {
+     "w": "for",
+     "start": 141.12,
+     "end": 141.245
+    },
+    {
+     "w": "your",
+     "start": 141.245,
+     "end": 141.457
+    },
+    {
+     "w": "patience.",
+     "start": 141.457,
+     "end": 142.295
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+  "faces": [
+    {
+      "role": "display",
+      "file": "display/inter-tight-w100-500.ttf",
+      "width": 100.0,
+      "weight": 500,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/inter-tight-w100-700.ttf",
+      "width": 100.0,
+      "weight": 700,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/inter-tight-w100-800.ttf",
+      "width": 100.0,
+      "weight": 800,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/inter-tight-w100-900.ttf",
+      "width": 100.0,
+      "weight": 900,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/jetbrains-mono-w100-400.ttf",
+      "width": 100.0,
+      "weight": 400,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/jetbrains-mono-w100-600.ttf",
+      "width": 100.0,
+      "weight": 600,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/jetbrains-mono-w100-800.ttf",
+      "width": 100.0,
+      "weight": 800,
+      "italic": false
+    },
+    {
+      "role": "flap",
+      "file": "flap/barlow-condensed-w100-500.ttf",
+      "width": 100.0,
+      "weight": 500,
+      "italic": false
+    },
+    {
+      "role": "flap",
+      "file": "flap/barlow-condensed-w100-700.ttf",
+      "width": 100.0,
+      "weight": 700,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-400.ttf",
+      "width": 100.0,
+      "weight": 400,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-600.ttf",
+      "width": 100.0,
+      "weight": 600,
+      "italic": false
+    }
+  ],
+  "families": {
+    "display": "Inter Tight",
+    "mono": "JetBrains Mono",
+    "flap": "Barlow Condensed",
+    "text": "Inter Tight"
+  }
+}

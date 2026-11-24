@@ -1,0 +1,84 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    #world-canvas, #ovl { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    @font-face { font-family: "MontserratRH"; src: url("assets/fonts/Montserrat_wght_.ttf") format("truetype"); font-weight: 100 900; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+    <canvas id="ovl" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = 15.31, FPS = 30;
+      const VOD = window.FILM_VO;
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+      const V = {
+        L(id) { const l = VOD.lines[id]; if (!l) throw new Error("no line " + id); return l; },
+        /** onset of the k-th word in line id that starts with `word` */
+        w(id, word, k) {
+          const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + id + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][1];
+        },
+        we(id, word, k) {
+          const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + id + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][2];
+        },
+        dur: DUR,
+      };
+      const K = window.RH3D.create(Object.assign({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920 }, window.FILM_CREATE || {}));
+      const film = window.FILM(K, V);
+      const SH = film.shots;
+      const ovl = document.getElementById("ovl").getContext("2d");
+      const ease = (u) => -(Math.cos(Math.PI * u) - 1) / 2;
+      const lerp3 = (a, b, u) => [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u, a[2] + (b[2] - a[2]) * u];
+      const val = (x, u) => (Array.isArray(x) ? x[0] + (x[1] - x[0]) * u : x);
+      function shotAt(t) { let i = 0; while (i < SH.length - 1 && t >= SH[i + 1].t0) i++; return i; }
+      function camState(i, t) {
+        const s = SH[i], t1 = i < SH.length - 1 ? SH[i + 1].t0 : DUR;
+        const u = Math.min(1, Math.max(0, (t - s.t0) / (t1 - s.t0)));
+        const e = (s.ease || ease)(u);
+        const c = { cam: lerp3(s.cam[0], s.cam[1], e), look: lerp3(s.look[0], s.look[1], e), fov: val(s.fov || 30, e), roll: val(s.roll || 0, e), u, e };
+        if (s.path) Object.assign(c, s.path(t, u, e));
+        const hh = window.RH3D.handheld(t, s.hand == null ? 1 : s.hand, (s.seed || i) + 1);
+        c.cam = [c.cam[0] + hh.pos[0], c.cam[1] + hh.pos[1], c.cam[2] + hh.pos[2]];
+        c.rot = hh.rot;
+        if (s.shake) { const k = s.shake(t); c.rot = [c.rot[0] + k * Math.sin(t * 91), c.rot[1] + k * Math.sin(t * 77 + 1), c.rot[2] + k * 0.6 * Math.sin(t * 63 + 2)]; }
+        return c;
+      }
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        const i = shotAt(t), s = SH[i];
+        const t1 = i < SH.length - 1 ? SH[i + 1].t0 : DUR;
+        const u0 = Math.min(1, Math.max(0, (t - s.t0) / (t1 - s.t0)));
+        // order matters: frames render out of order, so the world and the cast are posed from t before any camera
+        // path or prop reads a bone position
+        film.reset(t, s, i);
+        const extra = s.fn ? s.fn(t, u0, (s.ease || ease)(u0)) || {} : {};
+        if (film.post) film.post(t, s, i);
+        const c = camState(i, t);
+        const st = Object.assign({ cam: c.cam, look: c.look, fov: c.fov, roll: c.roll, rot: c.rot, focus: val(s.focus, c.e), aperture: val(s.aperture, c.e),
+          maxBlur: s.maxBlur, exposure: val(s.exposure, c.e), t, mblur: s.mblur == null ? 0.5 : s.mblur }, film.look ? film.look(t, s, i) : {}, extra);
+        if (st.mblur > 0) { const p = camState(i, t - 1 / FPS); st.prev = { cam: p.cam, look: p.look, fov: p.fov, roll: p.roll, rot: p.rot }; }
+        K.render(st);
+        ovl.clearRect(0, 0, 1080, 1920);
+        if (film.overlay) film.overlay(ovl, t, s, i, K);
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      const fontP = (document.fonts && document.fonts.load) ? Promise.all([document.fonts.load('800 30px "MontserratRH"'), document.fonts.load('900 30px "MontserratRH"')]).catch(() => null) : Promise.resolve();
+      window.__hf.buildReady.world = Promise.all([K.ready, fontP]).then(() => { if (film.init) film.init(); ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

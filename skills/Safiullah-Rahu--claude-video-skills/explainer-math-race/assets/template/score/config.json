@@ -1,0 +1,12 @@
+{
+ "dur": 15.6,
+ "bpm": 103.0,
+ "beat0": -0.26,
+ "crossBeats": [
+  8,
+  16,
+  21
+ ],
+ "dropBeat": 8,
+ "revealBeat": 24
+}

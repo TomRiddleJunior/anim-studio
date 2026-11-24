@@ -1,0 +1,951 @@
+{
+ "duration": 60.625,
+ "voice": "bm_george",
+ "words": 156,
+ "wpm_overall": 154.4,
+ "wpm_speech": 194.5,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "A fox came to a hen house at dusk.",
+   "start": 0.18,
+   "end": 2.23,
+   "words": [
+    {
+     "w": "A",
+     "start": 0.18,
+     "end": 0.268
+    },
+    {
+     "w": "fox",
+     "start": 0.268,
+     "end": 0.58
+    },
+    {
+     "w": "came",
+     "start": 0.58,
+     "end": 0.805
+    },
+    {
+     "w": "to",
+     "start": 0.805,
+     "end": 0.905
+    },
+    {
+     "w": "a",
+     "start": 0.905,
+     "end": 0.98
+    },
+    {
+     "w": "hen",
+     "start": 0.98,
+     "end": 1.205
+    },
+    {
+     "w": "house",
+     "start": 1.205,
+     "end": 1.53
+    },
+    {
+     "w": "at",
+     "start": 1.53,
+     "end": 1.655
+    },
+    {
+     "w": "dusk.",
+     "start": 1.655,
+     "end": 2.23
+    }
+   ]
+  },
+  {
+   "id": "bolt",
+   "i": 1,
+   "text": "The hens bolted the door.",
+   "start": 2.84,
+   "end": 4.59,
+   "words": [
+    {
+     "w": "The",
+     "start": 2.84,
+     "end": 2.94
+    },
+    {
+     "w": "hens",
+     "start": 2.94,
+     "end": 3.44
+    },
+    {
+     "w": "bolted",
+     "start": 3.44,
+     "end": 3.902
+    },
+    {
+     "w": "the",
+     "start": 3.902,
+     "end": 4.015
+    },
+    {
+     "w": "door.",
+     "start": 4.015,
+     "end": 4.59
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "i": 2,
+   "text": "So the fox asked for something small: one paw by the door.",
+   "start": 5.15,
+   "end": 8.4,
+   "words": [
+    {
+     "w": "So",
+     "start": 5.15,
+     "end": 5.237
+    },
+    {
+     "w": "the",
+     "start": 5.237,
+     "end": 5.325
+    },
+    {
+     "w": "fox",
+     "start": 5.325,
+     "end": 5.662
+    },
+    {
+     "w": "asked",
+     "start": 5.662,
+     "end": 5.975
+    },
+    {
+     "w": "for",
+     "start": 5.975,
+     "end": 6.1
+    },
+    {
+     "w": "something",
+     "start": 6.1,
+     "end": 6.437
+    },
+    {
+     "w": "small:",
+     "start": 6.437,
+     "end": 7.0
+    },
+    {
+     "w": "one",
+     "start": 7.1,
+     "end": 7.325
+    },
+    {
+     "w": "paw",
+     "start": 7.325,
+     "end": 7.575
+    },
+    {
+     "w": "by",
+     "start": 7.575,
+     "end": 7.725
+    },
+    {
+     "w": "the",
+     "start": 7.725,
+     "end": 7.825
+    },
+    {
+     "w": "door.",
+     "start": 7.825,
+     "end": 8.4
+    }
+   ]
+  },
+  {
+   "id": "yes",
+   "i": 3,
+   "text": "It seemed harmless. They said yes.",
+   "start": 9.01,
+   "end": 11.16,
+   "words": [
+    {
+     "w": "It",
+     "start": 9.01,
+     "end": 9.135
+    },
+    {
+     "w": "seemed",
+     "start": 9.135,
+     "end": 9.472
+    },
+    {
+     "w": "harmless.",
+     "start": 9.472,
+     "end": 10.085
+    },
+    {
+     "w": "They",
+     "start": 10.16,
+     "end": 10.335
+    },
+    {
+     "w": "said",
+     "start": 10.335,
+     "end": 10.585
+    },
+    {
+     "w": "yes.",
+     "start": 10.585,
+     "end": 11.16
+    }
+   ]
+  },
+  {
+   "id": "more",
+   "i": 4,
+   "text": "Next night, one feather. Then one egg.",
+   "start": 11.72,
+   "end": 14.02,
+   "words": [
+    {
+     "w": "Next",
+     "start": 11.72,
+     "end": 11.957
+    },
+    {
+     "w": "night,",
+     "start": 11.957,
+     "end": 12.17
+    },
+    {
+     "w": "one",
+     "start": 12.22,
+     "end": 12.457
+    },
+    {
+     "w": "feather.",
+     "start": 12.457,
+     "end": 12.92
+    },
+    {
+     "w": "Then",
+     "start": 13.02,
+     "end": 13.245
+    },
+    {
+     "w": "one",
+     "start": 13.245,
+     "end": 13.482
+    },
+    {
+     "w": "egg.",
+     "start": 13.482,
+     "end": 14.02
+    }
+   ]
+  },
+  {
+   "id": "little",
+   "i": 5,
+   "text": "Each time, they whispered: it's only a little.",
+   "start": 14.53,
+   "end": 17.005,
+   "words": [
+    {
+     "w": "Each",
+     "start": 14.53,
+     "end": 14.755
+    },
+    {
+     "w": "time,",
+     "start": 14.755,
+     "end": 15.055
+    },
+    {
+     "w": "they",
+     "start": 15.092,
+     "end": 15.23
+    },
+    {
+     "w": "whispered:",
+     "start": 15.23,
+     "end": 15.78
+    },
+    {
+     "w": "it's",
+     "start": 15.88,
+     "end": 16.055
+    },
+    {
+     "w": "only",
+     "start": 16.055,
+     "end": 16.355
+    },
+    {
+     "w": "a",
+     "start": 16.355,
+     "end": 16.43
+    },
+    {
+     "w": "little.",
+     "start": 16.43,
+     "end": 17.005
+    }
+   ]
+  },
+  {
+   "id": "weeks",
+   "i": 6,
+   "text": "Weeks passed.",
+   "start": 17.615,
+   "end": 18.54,
+   "words": [
+    {
+     "w": "Weeks",
+     "start": 17.615,
+     "end": 17.915
+    },
+    {
+     "w": "passed.",
+     "start": 17.915,
+     "end": 18.54
+    }
+   ]
+  },
+  {
+   "id": "key",
+   "i": 7,
+   "text": "Then the fox asked for the key.",
+   "start": 19.2,
+   "end": 21.125,
+   "words": [
+    {
+     "w": "Then",
+     "start": 19.2,
+     "end": 19.387
+    },
+    {
+     "w": "the",
+     "start": 19.387,
+     "end": 19.487
+    },
+    {
+     "w": "fox",
+     "start": 19.487,
+     "end": 19.925
+    },
+    {
+     "w": "asked",
+     "start": 19.925,
+     "end": 20.325
+    },
+    {
+     "w": "for",
+     "start": 20.325,
+     "end": 20.437
+    },
+    {
+     "w": "the",
+     "start": 20.437,
+     "end": 20.55
+    },
+    {
+     "w": "key.",
+     "start": 20.55,
+     "end": 21.125
+    }
+   ]
+  },
+  {
+   "id": "nice",
+   "i": 8,
+   "text": "Some even thanked it for asking nicely.",
+   "start": 21.685,
+   "end": 24.11,
+   "words": [
+    {
+     "w": "Some",
+     "start": 21.685,
+     "end": 21.935
+    },
+    {
+     "w": "even",
+     "start": 21.935,
+     "end": 22.235
+    },
+    {
+     "w": "thanked",
+     "start": 22.235,
+     "end": 22.585
+    },
+    {
+     "w": "it",
+     "start": 22.585,
+     "end": 22.835
+    },
+    {
+     "w": "for",
+     "start": 22.835,
+     "end": 22.997
+    },
+    {
+     "w": "asking",
+     "start": 22.997,
+     "end": 23.41
+    },
+    {
+     "w": "nicely.",
+     "start": 23.41,
+     "end": 24.11
+    }
+   ]
+  },
+  {
+   "id": "habit",
+   "i": 9,
+   "text": "By then, saying yes was just what they did.",
+   "start": 24.67,
+   "end": 27.32,
+   "words": [
+    {
+     "w": "By",
+     "start": 24.67,
+     "end": 24.845
+    },
+    {
+     "w": "then,",
+     "start": 24.845,
+     "end": 25.12
+    },
+    {
+     "w": "saying",
+     "start": 25.195,
+     "end": 25.495
+    },
+    {
+     "w": "yes",
+     "start": 25.495,
+     "end": 25.982
+    },
+    {
+     "w": "was",
+     "start": 25.982,
+     "end": 26.207
+    },
+    {
+     "w": "just",
+     "start": 26.207,
+     "end": 26.482
+    },
+    {
+     "w": "what",
+     "start": 26.482,
+     "end": 26.62
+    },
+    {
+     "w": "they",
+     "start": 26.62,
+     "end": 26.77
+    },
+    {
+     "w": "did.",
+     "start": 26.77,
+     "end": 27.32
+    }
+   ]
+  },
+  {
+   "id": "fable",
+   "i": 10,
+   "text": "It's a fable. But the pattern has a name: foot in the door.",
+   "start": 28.08,
+   "end": 31.255,
+   "words": [
+    {
+     "w": "It's",
+     "start": 28.08,
+     "end": 28.192
+    },
+    {
+     "w": "a",
+     "start": 28.192,
+     "end": 28.292
+    },
+    {
+     "w": "fable.",
+     "start": 28.292,
+     "end": 28.855
+    },
+    {
+     "w": "But",
+     "start": 28.93,
+     "end": 29.067
+    },
+    {
+     "w": "the",
+     "start": 29.067,
+     "end": 29.155
+    },
+    {
+     "w": "pattern",
+     "start": 29.155,
+     "end": 29.505
+    },
+    {
+     "w": "has",
+     "start": 29.505,
+     "end": 29.667
+    },
+    {
+     "w": "a",
+     "start": 29.667,
+     "end": 29.73
+    },
+    {
+     "w": "name:",
+     "start": 29.73,
+     "end": 30.13
+    },
+    {
+     "w": "foot",
+     "start": 30.217,
+     "end": 30.455
+    },
+    {
+     "w": "in",
+     "start": 30.455,
+     "end": 30.567
+    },
+    {
+     "w": "the",
+     "start": 30.567,
+     "end": 30.655
+    },
+    {
+     "w": "door.",
+     "start": 30.655,
+     "end": 31.255
+    }
+   ]
+  },
+  {
+   "id": "study",
+   "i": 11,
+   "text": "In a 1966 study, homeowners were asked to show a tiny safe-driving sign.",
+   "start": 31.865,
+   "end": 36.59,
+   "words": [
+    {
+     "w": "In",
+     "start": 31.865,
+     "end": 31.927
+    },
+    {
+     "w": "a",
+     "start": 31.927,
+     "end": 31.99
+    },
+    {
+     "w": "1966",
+     "start": 31.99,
+     "end": 33.015
+    },
+    {
+     "w": "study,",
+     "start": 33.015,
+     "end": 33.54
+    },
+    {
+     "w": "homeowners",
+     "start": 33.64,
+     "end": 34.127
+    },
+    {
+     "w": "were",
+     "start": 34.127,
+     "end": 34.24
+    },
+    {
+     "w": "asked",
+     "start": 34.24,
+     "end": 34.527
+    },
+    {
+     "w": "to",
+     "start": 34.527,
+     "end": 34.64
+    },
+    {
+     "w": "show",
+     "start": 34.64,
+     "end": 34.865
+    },
+    {
+     "w": "a",
+     "start": 34.865,
+     "end": 34.965
+    },
+    {
+     "w": "tiny",
+     "start": 34.965,
+     "end": 35.302
+    },
+    {
+     "w": "safe-driving",
+     "start": 35.302,
+     "end": 35.952
+    },
+    {
+     "w": "sign.",
+     "start": 35.952,
+     "end": 36.59
+    }
+   ]
+  },
+  {
+   "id": "big",
+   "i": 12,
+   "text": "Two weeks later, someone else asked for a huge sign on their lawn.",
+   "start": 37.15,
+   "end": 40.575,
+   "words": [
+    {
+     "w": "Two",
+     "start": 37.15,
+     "end": 37.3
+    },
+    {
+     "w": "weeks",
+     "start": 37.3,
+     "end": 37.55
+    },
+    {
+     "w": "later,",
+     "start": 37.55,
+     "end": 38.0
+    },
+    {
+     "w": "someone",
+     "start": 38.1,
+     "end": 38.337
+    },
+    {
+     "w": "else",
+     "start": 38.337,
+     "end": 38.637
+    },
+    {
+     "w": "asked",
+     "start": 38.637,
+     "end": 38.925
+    },
+    {
+     "w": "for",
+     "start": 38.925,
+     "end": 39.037
+    },
+    {
+     "w": "a",
+     "start": 39.037,
+     "end": 39.1
+    },
+    {
+     "w": "huge",
+     "start": 39.1,
+     "end": 39.412
+    },
+    {
+     "w": "sign",
+     "start": 39.412,
+     "end": 39.687
+    },
+    {
+     "w": "on",
+     "start": 39.687,
+     "end": 39.787
+    },
+    {
+     "w": "their",
+     "start": 39.787,
+     "end": 39.95
+    },
+    {
+     "w": "lawn.",
+     "start": 39.95,
+     "end": 40.575
+    }
+   ]
+  },
+  {
+   "id": "res1",
+   "i": 13,
+   "text": "Of those asked for the tiny sign first, seventy-six percent agreed.",
+   "start": 41.185,
+   "end": 45.11,
+   "words": [
+    {
+     "w": "Of",
+     "start": 41.185,
+     "end": 41.31
+    },
+    {
+     "w": "those",
+     "start": 41.31,
+     "end": 41.597
+    },
+    {
+     "w": "asked",
+     "start": 41.597,
+     "end": 41.897
+    },
+    {
+     "w": "for",
+     "start": 41.897,
+     "end": 41.997
+    },
+    {
+     "w": "the",
+     "start": 41.997,
+     "end": 42.085
+    },
+    {
+     "w": "tiny",
+     "start": 42.085,
+     "end": 42.41
+    },
+    {
+     "w": "sign",
+     "start": 42.41,
+     "end": 42.697
+    },
+    {
+     "w": "first,",
+     "start": 42.697,
+     "end": 43.21
+    },
+    {
+     "w": "seventy-six",
+     "start": 43.322,
+     "end": 44.01
+    },
+    {
+     "w": "percent",
+     "start": 44.01,
+     "end": 44.41
+    },
+    {
+     "w": "agreed.",
+     "start": 44.41,
+     "end": 45.11
+    }
+   ]
+  },
+  {
+   "id": "res2",
+   "i": 14,
+   "text": "Of those asked cold, seventeen percent.",
+   "start": 45.62,
+   "end": 48.22,
+   "words": [
+    {
+     "w": "Of",
+     "start": 45.62,
+     "end": 45.732
+    },
+    {
+     "w": "those",
+     "start": 45.732,
+     "end": 45.982
+    },
+    {
+     "w": "asked",
+     "start": 45.982,
+     "end": 46.32
+    },
+    {
+     "w": "cold,",
+     "start": 46.32,
+     "end": 46.845
+    },
+    {
+     "w": "seventeen",
+     "start": 46.945,
+     "end": 47.52
+    },
+    {
+     "w": "percent.",
+     "start": 47.52,
+     "end": 48.22
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "i": 15,
+   "text": "The researchers' guess: a small yes changes how you see yourself.",
+   "start": 48.88,
+   "end": 52.28,
+   "words": [
+    {
+     "w": "The",
+     "start": 48.88,
+     "end": 48.955
+    },
+    {
+     "w": "researchers'",
+     "start": 48.955,
+     "end": 49.48
+    },
+    {
+     "w": "guess:",
+     "start": 49.48,
+     "end": 49.93
+    },
+    {
+     "w": "a",
+     "start": 50.03,
+     "end": 50.13
+    },
+    {
+     "w": "small",
+     "start": 50.13,
+     "end": 50.43
+    },
+    {
+     "w": "yes",
+     "start": 50.43,
+     "end": 50.667
+    },
+    {
+     "w": "changes",
+     "start": 50.667,
+     "end": 51.105
+    },
+    {
+     "w": "how",
+     "start": 51.105,
+     "end": 51.255
+    },
+    {
+     "w": "you",
+     "start": 51.255,
+     "end": 51.38
+    },
+    {
+     "w": "see",
+     "start": 51.38,
+     "end": 51.567
+    },
+    {
+     "w": "yourself.",
+     "start": 51.567,
+     "end": 52.28
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "i": 16,
+   "text": "So the next ask never feels like the big one.",
+   "start": 52.84,
+   "end": 55.69,
+   "words": [
+    {
+     "w": "So",
+     "start": 52.84,
+     "end": 52.977
+    },
+    {
+     "w": "the",
+     "start": 52.977,
+     "end": 53.065
+    },
+    {
+     "w": "next",
+     "start": 53.065,
+     "end": 53.39
+    },
+    {
+     "w": "ask",
+     "start": 53.39,
+     "end": 53.865
+    },
+    {
+     "w": "never",
+     "start": 53.865,
+     "end": 54.177
+    },
+    {
+     "w": "feels",
+     "start": 54.177,
+     "end": 54.615
+    },
+    {
+     "w": "like",
+     "start": 54.615,
+     "end": 54.84
+    },
+    {
+     "w": "the",
+     "start": 54.84,
+     "end": 54.965
+    },
+    {
+     "w": "big",
+     "start": 54.965,
+     "end": 55.215
+    },
+    {
+     "w": "one.",
+     "start": 55.215,
+     "end": 55.69
+    }
+   ]
+  },
+  {
+   "id": "q",
+   "i": 17,
+   "text": "Which yes should the hens have refused?",
+   "start": 56.45,
+   "end": 58.575,
+   "words": [
+    {
+     "w": "Which",
+     "start": 56.45,
+     "end": 56.637
+    },
+    {
+     "w": "yes",
+     "start": 56.637,
+     "end": 57.062
+    },
+    {
+     "w": "should",
+     "start": 57.062,
+     "end": 57.212
+    },
+    {
+     "w": "the",
+     "start": 57.212,
+     "end": 57.3
+    },
+    {
+     "w": "hens",
+     "start": 57.3,
+     "end": 57.662
+    },
+    {
+     "w": "have",
+     "start": 57.662,
+     "end": 57.775
+    },
+    {
+     "w": "refused?",
+     "start": 57.775,
+     "end": 58.575
+    }
+   ]
+  }
+ ]
+}

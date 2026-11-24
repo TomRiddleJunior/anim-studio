@@ -1,0 +1,21 @@
+{
+ "duration": 12.72,
+ "ambience": [
+  {
+   "t": 0.0,
+   "kind": "jet",
+   "gain": 1.0
+  },
+  {
+   "t": 3.66,
+   "kind": "jet",
+   "gain": 0.9
+  },
+  {
+   "t": 8.995,
+   "kind": "high",
+   "gain": 0.9
+  }
+ ],
+ "events": []
+}

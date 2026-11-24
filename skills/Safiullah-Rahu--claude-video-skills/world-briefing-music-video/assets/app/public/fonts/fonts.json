@@ -1,0 +1,88 @@
+{
+  "note": "Written by gmv.py fonts. One entry per STATIC face; roles: display (lyric voice), text (rare serif/italic register), mono (machine/UI voice).",
+  "families": {
+    "display": "Newsreader",
+    "text": "Inter Tight",
+    "mono": "IBM Plex Mono"
+  },
+  "license": "SIL Open Font License 1.1 (see OFL.txt)",
+  "faces": [
+    {
+      "role": "display",
+      "file": "display/newsreader-w100-500.ttf",
+      "width": 100.0,
+      "weight": 500,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/newsreader-w100-600.ttf",
+      "width": 100.0,
+      "weight": 600,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/newsreader-w100-700.ttf",
+      "width": 100.0,
+      "weight": 700,
+      "italic": false
+    },
+    {
+      "role": "display",
+      "file": "display/newsreader-w100-800.ttf",
+      "width": 100.0,
+      "weight": 800,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-400.ttf",
+      "width": 100.0,
+      "weight": 400,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-500.ttf",
+      "width": 100.0,
+      "weight": 500,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-600.ttf",
+      "width": 100.0,
+      "weight": 600,
+      "italic": false
+    },
+    {
+      "role": "text",
+      "file": "text/inter-tight-w100-700.ttf",
+      "width": 100.0,
+      "weight": 700,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/ibm-plex-mono-w100-400.ttf",
+      "width": 100.0,
+      "weight": 400,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/ibm-plex-mono-w100-500.ttf",
+      "width": 100.0,
+      "weight": 500,
+      "italic": false
+    },
+    {
+      "role": "mono",
+      "file": "mono/ibm-plex-mono-w100-600.ttf",
+      "width": 100.0,
+      "weight": 600,
+      "italic": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+ "preset": "tech-glow",
+ "bpm": 120,
+ "key": 0,
+ "sections": [
+  {
+   "t": 0,
+   "energy": 1
+  },
+  {
+   "t": 12.12,
+   "energy": 2
+  },
+  {
+   "t": 15.28,
+   "energy": 2
+  },
+  {
+   "t": 123.48,
+   "energy": 3
+  },
+  {
+   "t": 135.21,
+   "energy": 1
+  },
+  {
+   "t": 141.86,
+   "energy": 0
+  }
+ ],
+ "end_hit": true,
+ "music_under_voice_db": -16,
+ "music_alone_db": -8,
+ "sfx_db": -4,
+ "lufs": -14,
+ "reverb": 0.3
+}

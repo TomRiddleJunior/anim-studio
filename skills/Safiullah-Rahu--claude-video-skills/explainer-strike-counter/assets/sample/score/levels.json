@@ -1,0 +1,23 @@
+{
+ "full": {
+  "lufs": -14.1,
+  "tp_dbtp": -2.0,
+  "gain_db": 1.4
+ },
+ "nomusic": {
+  "lufs": -14.2,
+  "tp_dbtp": -2.0,
+  "gain_db": 2.2
+ },
+ "sfx_vs_music_db": {
+  "race 2-5.5": 4.5,
+  "reveal 7-9.5": -2.7,
+  "release 10-12": 6.0
+ },
+ "seam_db": {
+  "last_50ms": -41.5,
+  "first_50ms": -48.5
+ },
+ "counted_turns": 101,
+ "visible_turns_in_race": 19
+}

@@ -1,0 +1,1 @@
+The photo inset is not shipped (third-party). The sample used: 'Bij Maasdijk, de Maeslantkering foto1 2014-03-09 11.08.jpg' by Michielverbeek, CC BY-SA 3.0, Wikimedia Commons (1280 px thumbnail), cropped to x 0-930, y 170-870 (leaves out a ship's lettering) and saved as assets/photo/barrier_inset.jpg. Keep the credit line in compositions/hud.html.

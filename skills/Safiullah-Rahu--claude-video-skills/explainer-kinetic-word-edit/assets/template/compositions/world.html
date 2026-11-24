@@ -1,0 +1,40 @@
+<template>
+  <style>
+    @font-face { font-family: "KWSerif"; src: url("assets/fonts/PlayfairDisplay_wght_.ttf"); font-weight: 400 900; }
+    @font-face { font-family: "KWSans"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    @font-face { font-family: "KWBlack"; src: url("assets/fonts/ArchivoBlack-Regular.ttf"); font-weight: 400; }
+    @font-face { font-family: "KWGeo"; src: url("assets/fonts/Montserrat_wght_.ttf"); font-weight: 100 900; }
+    @font-face { font-family: "KWMono"; src: url("assets/fonts/RobotoMono_wght_.ttf"); font-weight: 100 700; }
+    @font-face { font-family: "KWMarker"; src: url("assets/fonts/PermanentMarker-Regular.ttf"); font-weight: 400; }
+    @font-face { font-family: "KWHand"; src: url("assets/fonts/Caveat_wght_.ttf"); font-weight: 400 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const VO = window.FILM_VO, DUR = VO.dur;
+      const fonts = ["900 100px KWSerif", "600 100px KWSans", "400 100px KWBlack", "700 100px KWGeo", "800 100px KWGeo", "500 100px KWMono",
+                     "400 100px KWMarker", "600 100px KWHand"];
+      const K = window.KW.create({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920, fonts });
+      let film = null, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!film || t === lastT) return;
+        lastT = t;
+        film.draw(t);
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = K.ready.then(() => { film = window.FILM(K, VO); window.__film = film; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,27 @@
+<template>
+  <style>
+    @font-face { font-family: "LFInter"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    /* measured on the source: one small white line per scene, centred at 31 % of the height, wrapped in a narrow column */
+    #root .cap { position: absolute; left: 0; right: 0; top: 600px; height: 0; display: flex; justify-content: center; align-items: center; }
+    #root .in { width: 440px; text-align: center; color: #f7f4ee; font: 500 30px/1.32 "LFInter", "Inter", sans-serif; letter-spacing: -0.1px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.45), 0 0 18px rgba(0,0,0,0.35); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip cap" id="cap0" data-start="0.120" data-duration="2.959"><div class="in" id="in0">There is a calm in the second cup.</div></div>
+    <div class="clip cap" id="cap1" data-start="3.540" data-duration="2.967"><div class="in" id="in1">There is a calm in drifting.</div></div>
+    <div class="clip cap" id="cap2" data-start="6.970" data-duration="2.966"><div class="in" id="in2">There is a calm in switching off.</div></div>
+    <div class="clip cap" id="cap3" data-start="10.390" data-duration="2.350"><div class="in" id="in3">There is a calm in standing still,</div></div>
+    <div class="clip cap" id="cap4" data-start="12.740" data-duration="2.339"><div class="in" id="in4">while everyone rushes by.</div></div>
+    <div class="clip cap" id="cap5" data-start="15.540" data-duration="2.967"><div class="in" id="in5">There is a calm in an early night.</div></div>
+    <div class="clip cap" id="cap6" data-start="18.970" data-duration="2.980"><div class="in" id="in6">There is a calm in being here.</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      
+tl.fromTo("#in0", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 0.120); tl.to("#in0", { opacity: 0, duration: 0.22, ease: "sine.in" }, 2.839);      tl.fromTo("#in1", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 3.540); tl.to("#in1", { opacity: 0, duration: 0.22, ease: "sine.in" }, 6.267);      tl.fromTo("#in2", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 6.970); tl.to("#in2", { opacity: 0, duration: 0.22, ease: "sine.in" }, 9.696);      tl.fromTo("#in3", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 10.390); tl.to("#in3", { opacity: 0, duration: 0.22, ease: "sine.in" }, 12.500);      tl.fromTo("#in4", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 12.740); tl.to("#in4", { opacity: 0, duration: 0.22, ease: "sine.in" }, 14.839);      tl.fromTo("#in5", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 15.540); tl.to("#in5", { opacity: 0, duration: 0.22, ease: "sine.in" }, 18.267);      tl.fromTo("#in6", { opacity: 0 }, { opacity: 1, duration: 0.28, ease: "sine.out" }, 18.970); tl.to("#in6", { opacity: 0, duration: 0.22, ease: "sine.in" }, 21.710);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

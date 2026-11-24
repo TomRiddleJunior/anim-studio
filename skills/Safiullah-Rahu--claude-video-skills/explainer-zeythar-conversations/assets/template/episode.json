@@ -1,0 +1,26 @@
+{
+ "title": "The Unanswered Message",
+ "series": "Conversations Beyond Time",
+ "category": "LOVE · SARCASM",
+ "clock": {"from": "11:58", "to": "12:00"},
+ "end_card": {"rows": ["HOW LONG DO YOU WAIT", "BEFORE YOU STOP CHECKING?"], "sub": "COMMENT BELOW"},
+ "cover_hook": ["HE HASN'T REPLIED", "IN TWO DAYS."],
+ "accent_words": ["two", "days.", "busy?", "twelve", "operational.", "exactly!", "priority"],
+ "lines": [
+  {"who": "L", "line": "Zeythar, he hasn't replied in two days.",
+   "delivery": "Annoyed and a little hurt, trying to sound casual.", "acting": ["brows_together", "head_tilt@days."], "picture": "GIRL_OPEN"},
+  {"who": "Z", "line": "Have you considered that he might be busy?",
+   "delivery": "Calm and reasonable, gently dry.", "acting": ["hood_tilt@busy?"], "picture": "HOOD_ORB_TAG"},
+  {"who": "L", "line": "He posted twelve Instagram stories.",
+   "delivery": "Flat and unimpressed, sarcastic.", "acting": ["brow_one", "eyes_up@stories."], "picture": "GIRL_CU",
+   "pluck": "stories."},
+  {"who": "Z", "line": "Ah. So his fingers are operational. Interesting.",
+   "delivery": "Bone-dry deadpan, flat monotone, a short beat before 'Interesting', no sing-song.", "acting": ["orb_pulse@fingers"], "picture": "ORB_INSERT",
+   "orb": {"morph": "phone", "at": "fingers"}},
+  {"who": "L", "line": "Exactly!",
+   "delivery": "Vindicated and quick, a little loud.", "acting": ["brows_up", "nod"], "picture": "GIRL_CU2"},
+  {"who": "Z", "line": "Perhaps the message is not lost. Perhaps the priority is.",
+   "delivery": "Gentle and quiet, kind but honest, unhurried.", "acting": ["orb_dim", "hood_nod@priority"], "react": ["eyes_down@lost.", "eyes_widen@priority"], "picture": "WIDE",
+   "orb": {"morph": "heart", "at": "priority"}}
+ ]
+}

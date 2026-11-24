@@ -1,0 +1,407 @@
+{
+ "title": "The 2:30 AM Committee",
+ "series": "Conversations Beyond Time",
+ "category": "SLEEP · OVERTHINKING",
+ "lead": 0.1,
+ "tail": 3.4,
+ "trim_db": -42,
+ "pad": 0.04,
+ "max_pause": 0.32,
+ "tempo": {
+  "Z": 1.0,
+  "L": 1.0
+ },
+ "level": {
+  "Z": -17.0,
+  "L": -17.0
+ },
+ "voices": {
+  "Z": {
+   "name": "Zeythar, the Sage AI",
+   "description": "An ancient, calm, deep male voice with precise, measured diction and dry, understated wit; unhurried and resonant, gentle authority, slightly otherworldly but never robotic.",
+   "anchor_text": "I have watched a great many nights pass from this tower. Sit down, and tell me what is on your mind."
+  },
+  "L": {
+   "name": "The girl (20)",
+   "description": "A natural young American woman about twenty, warm and expressive, casual modern speech, quick and playful with a little sarcasm, a bit tired late at night.",
+   "anchor_text": "Okay, so today was honestly a lot, and I really need to talk to someone about it."
+  }
+ },
+ "lines": [
+  {
+   "id": "l01",
+   "who": "L",
+   "gap": 0.0,
+   "text": "Zeythar. It's 2:30 AM. I said I'd sleep at ten.",
+   "delivery": "Tired and flat, a little dramatic, a sigh in the voice, very late at night.",
+   "shot": "GIRL_OPEN",
+   "acting": [
+    "blink_slow@AM.",
+    "head_tilt@sleep"
+   ],
+   "react": [],
+   "say": "Zeythar. It's two thirty A.M. I said I'd sleep at ten.",
+   "cuts": [
+    {
+     "at": "I",
+     "shot": "GIRL_CU"
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "You said that yesterday. And on Tuesday. I keep records.",
+   "delivery": "Deadpan and dry, unhurried, flat level pitch with no sing-song, matter-of-fact like reading from a ledger.",
+   "shot": "HOOD_ORB_TAG",
+   "acting": [
+    "orb_bright",
+    "hood_tilt@records."
+   ],
+   "react": [],
+   "orb": {
+    "morph": "log",
+    "rows": [
+     "MON 2:41",
+     "TUE 3:05",
+     "WED 2:30"
+    ],
+    "at": "yesterday."
+   },
+   "tag": true
+  },
+  {
+   "id": "l03",
+   "who": "L",
+   "gap": 0.26,
+   "text": "I'm not even doing anything. I'm just replaying a conversation from 2019.",
+   "delivery": "Exasperated and fast, casual, rolling her eyes.",
+   "shot": "GIRL_CU",
+   "acting": [
+    "brows_up",
+    "eyes_up@replaying"
+   ],
+   "react": [],
+   "say": "I'm not even doing anything. I'm just replaying a conversation from twenty nineteen."
+  },
+  {
+   "id": "l04",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "Ah. The committee is in session.",
+   "delivery": "Amused and knowing, quietly dry, a slight smile in the voice.",
+   "shot": "ORB_INSERT",
+   "acting": [
+    "orb_pulse@committee"
+   ],
+   "react": [],
+   "orb": {
+    "morph": "bubbles",
+    "at": "committee"
+   }
+  },
+  {
+   "id": "l05",
+   "who": "L",
+   "gap": 0.26,
+   "text": "The what?",
+   "delivery": "Confused and quick, a short genuine question.",
+   "shot": "GIRL_CU2",
+   "acting": [
+    "head_tilt",
+    "brows_together"
+   ],
+   "react": []
+  },
+  {
+   "id": "l06",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "Every awkward thing you have ever said, reviewed nightly. Attendance is mandatory.",
+   "delivery": "Completely deadpan, flat monotone like a dry official notice read aloud, measured, no sing-song.",
+   "shot": "WIDE",
+   "acting": [
+    "hand_turn@reviewed"
+   ],
+   "react": [
+    "eyes_orb",
+    "brows_up@mandatory."
+   ],
+   "orb": {
+    "morph": "bubbles_reviewed",
+    "at": "Every",
+    "stamp_at": "reviewed"
+   },
+   "pluck": "mandatory."
+  },
+  {
+   "id": "l07",
+   "who": "L",
+   "gap": 0.26,
+   "text": "Why does it only meet at night?!",
+   "delivery": "Dramatic and whiny, a playful complaint, rising at the end.",
+   "shot": "GIRL_MCU",
+   "acting": [
+    "head_drop",
+    "eyes_up"
+   ],
+   "react": []
+  },
+  {
+   "id": "l08",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "Because during the day, you never give it an appointment.",
+   "delivery": "Calm and plain, gently making the first real point, unhurried.",
+   "shot": "HOOD_MCU",
+   "acting": [
+    "hood_nod@appointment."
+   ],
+   "react": []
+  },
+  {
+   "id": "l09",
+   "who": "L",
+   "gap": 0.26,
+   "text": "Okay, wise one. How do I make it stop?",
+   "delivery": "Challenging and a bit sarcastic, teasing.",
+   "shot": "GIRL_MCU2",
+   "acting": [
+    "chin_lift",
+    "brow_one@stop?"
+   ],
+   "react": []
+  },
+  {
+   "id": "l10",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "Give it ten minutes before dinner. With a pen. Every worry, on paper.",
+   "delivery": "Practical and plain, simple calm instructions, even and unhurried.",
+   "shot": "ORB_INSERT",
+   "acting": [
+    "orb_pulse@ten"
+   ],
+   "react": [],
+   "orb": {
+    "morph": "notepad",
+    "at": "Give",
+    "timer": "10:00"
+   }
+  },
+  {
+   "id": "l11",
+   "who": "L",
+   "gap": 0.26,
+   "text": "That's it? That's the ancient wisdom?",
+   "delivery": "Skeptical and unimpressed, half amused.",
+   "shot": "GIRL_CU",
+   "acting": [
+    "brow_one",
+    "half_smile@wisdom?"
+   ],
+   "react": []
+  },
+  {
+   "id": "l12",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "The ancient wisdom was \"go to sleep.\" Your species declined.",
+   "delivery": "Bone-dry deadpan, flat, a short beat before 'Your species', no sing-song.",
+   "shot": "HOOD_CU_PUSH",
+   "acting": [
+    "still"
+   ],
+   "react": [],
+   "say": "The ancient wisdom was, go to sleep. ... Your species declined.",
+   "pluck": "declined.",
+   "max_pause": 0.6
+  },
+  {
+   "id": "l13",
+   "who": "L",
+   "gap": 0.26,
+   "text": "…Rude.",
+   "delivery": "Laughing despite herself, a short real laugh, then the word with a smile.",
+   "shot": "GIRL_CU2",
+   "acting": [
+    "smile_wide",
+    "laugh"
+   ],
+   "react": [],
+   "say": "(laughs) ...Rude.",
+   "alt_say": "Rude.",
+   "alt_delivery": "Amused despite herself, smiling while she says it, a breathy laugh in the voice."
+  },
+  {
+   "id": "l14",
+   "who": "L",
+   "gap": 1.14,
+   "text": "Can I tell you something weird? Night is the only time nobody needs anything from me.",
+   "delivery": "Quiet and honest, slower, soft and a little vulnerable, not dramatic.",
+   "shot": "GIRL_CU_PUSH",
+   "acting": [
+    "eyes_down@Night",
+    "eyes_to_him@nobody"
+   ],
+   "react": [],
+   "beat_before": {
+    "dur": 0.8,
+    "shot": "WIDE_QUIET"
+   },
+   "turn": true
+  },
+  {
+   "id": "l15",
+   "who": "Z",
+   "gap": 1.01,
+   "text": "That is not weird. You are not avoiding sleep. You are taking back your day.",
+   "delivery": "Gentle at first, then sure; warm and steady, unhurried.",
+   "shot": "HOOD_MCU",
+   "acting": [
+    "orb_dim"
+   ],
+   "react": [],
+   "orb": {
+    "morph": "sun_moon",
+    "at": "taking"
+   },
+   "pause_before": 0.75
+  },
+  {
+   "id": "l16",
+   "who": "L",
+   "gap": 0.26,
+   "text": "…Oh.",
+   "delivery": "A soft realization, quiet, almost a breath.",
+   "shot": "GIRL_CU2",
+   "acting": [
+    "eyes_widen"
+   ],
+   "react": [],
+   "say": "...Oh."
+  },
+  {
+   "id": "l17",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "So take some of it back while the sun is up. Then the night won't have to steal it for you.",
+   "delivery": "Warm and unhurried, kind, gentle authority.",
+   "shot": "WIDE",
+   "acting": [
+    "hand_lift@sun"
+   ],
+   "react": [
+    "smile@night",
+    "nod@steal"
+   ],
+   "tint": "dawn"
+  },
+  {
+   "id": "l18",
+   "who": "L",
+   "gap": 0.76,
+   "text": "Okay. Going to sleep. Right now.",
+   "delivery": "Resolved and brisk, decisive, a little playful.",
+   "shot": "GIRL_MCU",
+   "acting": [
+    "nod@Going"
+   ],
+   "react": [],
+   "beat_before": {
+    "dur": 0.5
+   }
+  },
+  {
+   "id": "l19",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "You have said that four times.",
+   "delivery": "Dry deadpan, flat monotone and matter-of-fact, no sing-song, no smile in the voice.",
+   "shot": "HOOD_ORB",
+   "acting": [
+    "still"
+   ],
+   "react": [],
+   "orb": {
+    "morph": "tally",
+    "at": "four",
+    "count": 4
+   },
+   "pluck": "times."
+  },
+  {
+   "id": "l20",
+   "who": "L",
+   "gap": 0.26,
+   "text": "Goodnight, Zeythar.",
+   "delivery": "Smiling and fond, warm and sleepy.",
+   "shot": "GIRL_CU",
+   "acting": [
+    "smile"
+   ],
+   "react": []
+  },
+  {
+   "id": "l21",
+   "who": "Z",
+   "gap": 0.26,
+   "text": "It is 2:47.",
+   "delivery": "Deadpan and final: completely flat monotone, very dry and slow, no rise, like stating a plain fact.",
+   "shot": "CLOCK_CU",
+   "acting": [
+    "still"
+   ],
+   "react": [],
+   "say": "It is two forty-seven.",
+   "final_tick_at": "2:47."
+  }
+ ],
+ "film": {
+  "accent_words": [
+   "2019.",
+   "2:30",
+   "2:47.",
+   "appointment.",
+   "committee",
+   "day.",
+   "declined.",
+   "four",
+   "goodnight,",
+   "mandatory.",
+   "night?!",
+   "nobody",
+   "now.",
+   "oh.",
+   "paper.",
+   "records.",
+   "rude.",
+   "steal",
+   "stop?",
+   "sun",
+   "ten",
+   "ten.",
+   "weird.",
+   "wisdom?"
+  ],
+  "clock": {
+   "from": "2:30",
+   "to": "2:47"
+  },
+  "cover_hook": [
+   "IT'S 2:30 AM.",
+   "I SAID I'D SLEEP AT TEN."
+  ],
+  "end_hold": 3.8,
+  "end_card": {
+   "rows": [
+    "WHAT TIME DID YOU ACTUALLY",
+    "FALL ASLEEP LAST NIGHT?"
+   ],
+   "sub": "COMMENT BELOW"
+  },
+  "series_label": "CONVERSATIONS BEYOND TIME",
+  "category": "SLEEP · OVERTHINKING"
+ }
+}

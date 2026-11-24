@@ -1,0 +1,10 @@
+{
+ "preset": "none",
+ "music_file": "audio/bed.wav",
+ "duck_db": 2,
+ "music_under_voice_db": -15,
+ "music_alone_db": -14,
+ "sfx_db": -10,
+ "lufs": -14.1,
+ "reverb": 0.1
+}

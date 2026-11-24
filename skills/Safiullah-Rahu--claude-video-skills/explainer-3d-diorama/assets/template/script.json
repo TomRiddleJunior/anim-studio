@@ -1,0 +1,5 @@
+{"voice": "bm_george", "speed": 0.95, "lead": 1.0, "tail": 2.2,
+ "lines": [
+  {"id": "a", "text": "One small world, on a quiet ground, with a slow camera."},
+  {"id": "b", "text": "Every claim becomes a physical event, like a slab that flips over.", "gap": 0.7}
+ ]}

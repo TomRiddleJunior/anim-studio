@@ -1,0 +1,51 @@
+<template>
+  <style>
+    @font-face { font-family: "GInter"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    @font-face { font-family: "GPoppins"; src: url("assets/fonts/Poppins-Medium.ttf"); font-weight: 500; }
+    @font-face { font-family: "GPoppins"; src: url("assets/fonts/Poppins-SemiBold.ttf"); font-weight: 600; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #05070b; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = 83.96;
+      const VOD = window.GLOW_VO;
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+      const V = {
+        env: VOD.env, duration: VOD.duration,
+        L(id) { const l = VOD.lines[id]; if (!l) throw new Error("no line " + id); return l; },
+        w(id, word, k) {
+          const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + id + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][1];
+        },
+        we(id, word, k) {
+          const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          return hits[Math.min(k || 0, hits.length - 1)][2];
+        },
+      };
+      const G = window.GLOW.create({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920 });
+      const film = window.GLOW_FILM(G, V);
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        G.render(film.update(t));
+      }
+      window.__glow = { G, film, draw: (t) => { lastT = -1; draw(t); } };
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = G.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

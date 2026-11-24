@@ -1,0 +1,502 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf") format("truetype"); font-weight: 100 900; }
+    @font-face { font-family: "Roboto Mono"; src: url("assets/fonts/RobotoMono_wght_.ttf") format("truetype"); font-weight: 100 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    #c3, #c2 { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="c3" width="1080" height="1920" data-layout-allow-overflow></canvas>
+    <canvas id="c2" width="1080" height="1920" data-layout-allow-overflow data-layout-allow-overlap></canvas>
+  </div>
+  <script>
+    (function () {
+      const F = window.FILM, G = window.NGEO;
+      const { lin, mix, clamp, E, W, T, SH, pulse } = F;
+      let ready = false, lastT = -1, curT = 0, render = null;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        render(t);
+      }
+      let seed = 7;
+      const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+      const loadImg = (src) => new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => rej(new Error("img " + src)); im.src = src; });
+
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = Promise.all([window.t3Ready, document.fonts.ready]).then(async ([T3]) => {
+        const X = T3.THREE;
+        await Promise.all([document.fonts.load("500 26px 'Roboto Mono'"), document.fonts.load("700 26px 'Roboto Mono'"), document.fonts.load("600 80px Inter"), document.fonts.load("300 200px Inter"), document.fonts.load("700 120px Inter")]);
+        const [imHook, imPortrait] = await Promise.all([loadImg("assets/photo/hook_speech_bw.jpg"), loadImg("assets/photo/portrait_bw.jpg")]);
+
+        // =============================================================== 2D layer helpers
+        const c2 = document.getElementById("c2"), g = c2.getContext("2d");
+        const MONO = (w, s) => `${w} ${s}px 'Roboto Mono'`;
+        function label(x, y, l1, l2, a, opt = {}) {           // boxed mono label (source: thin box, white line + grey line)
+          if (a <= 0.001) return;
+          g.save(); g.globalAlpha = a;
+          const s1 = opt.s1 || 25, s2 = opt.s2 || 21, pad = 12;
+          g.font = MONO(700, s1); const w1 = g.measureText(l1).width * 1.0 + l1.length * s1 * 0.12;
+          g.font = MONO(500, s2); const w2 = l2 ? g.measureText(l2).width + l2.length * s2 * 0.12 : 0;
+          const w = Math.max(w1, w2) + pad * 2, h = l2 ? s1 + s2 + pad * 2 + 8 : s1 + pad * 2;
+          let x0 = opt.align === "right" ? x - w : opt.align === "center" ? x - w / 2 : x;
+          if (opt.box !== false) {
+            g.fillStyle = opt.fill || "rgba(0,0,0,0.55)"; g.fillRect(x0, y, w, h);
+            g.strokeStyle = opt.stroke || "rgba(235,235,235,0.55)"; g.lineWidth = 1.5; g.strokeRect(x0 + 0.5, y + 0.5, w - 1, h - 1);
+          }
+          g.textBaseline = "top"; g.letterSpacing = (s1 * 0.12) + "px";
+          g.fillStyle = opt.c1 || "#f2f2f2"; g.font = MONO(700, s1); g.fillText(l1, x0 + pad, y + pad);
+          if (l2) { g.letterSpacing = (s2 * 0.12) + "px"; g.fillStyle = opt.c2 || "#9a9a9a"; g.font = MONO(500, s2); g.fillText(l2, x0 + pad, y + pad + s1 + 8); }
+          g.letterSpacing = "0px"; g.restore();
+          return { x0, y, w, h };
+        }
+        function ring(x, y, r, a, spin = 0) {                    // targeting ring with crosshair ticks
+          if (a <= 0.001) return;
+          g.save(); g.globalAlpha = a; g.strokeStyle = "rgba(245,245,245,0.92)"; g.lineWidth = 2;
+          g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.stroke();
+          g.globalAlpha = a * 0.55; g.setLineDash([3, 7]); g.beginPath(); g.arc(x, y, r * 1.32, spin, spin + Math.PI * 1.4); g.stroke(); g.setLineDash([]);
+          g.globalAlpha = a; g.lineWidth = 2;
+          for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { g.beginPath(); g.moveTo(x + dx * r * 0.82, y + dy * r * 0.82); g.lineTo(x + dx * r * 1.22, y + dy * r * 1.22); g.stroke(); }
+          g.restore();
+        }
+        function leader(x0, y0, x1, y1, a) {
+          if (a <= 0.001) return;
+          g.save(); g.globalAlpha = a; g.strokeStyle = "rgba(235,235,235,0.75)"; g.lineWidth = 1.6;
+          const u = E.out(clamp(a * 1.4)); g.beginPath(); g.moveTo(x0, y0); g.lineTo(mix(x0, x1, u), mix(y0, y1, u)); g.stroke();
+          g.fillStyle = "#f2f2f2"; g.beginPath(); g.arc(x0, y0, 3.5, 0, Math.PI * 2); g.fill(); g.restore();
+        }
+        function dashed(x0, y0, x1, y1, a, prog = 1, arrow = false) {
+          if (a <= 0.001 || prog <= 0) return;
+          g.save(); g.globalAlpha = a; g.strokeStyle = "rgba(235,235,235,0.85)"; g.lineWidth = 2; g.setLineDash([9, 9]);
+          const xe = mix(x0, x1, prog), ye = mix(y0, y1, prog);
+          g.beginPath(); g.moveTo(x0, y0); g.lineTo(xe, ye); g.stroke(); g.setLineDash([]);
+          if (arrow && prog > 0.98) { const an = Math.atan2(y1 - y0, x1 - x0); g.beginPath(); g.moveTo(xe, ye); g.lineTo(xe - 16 * Math.cos(an - 0.45), ye - 16 * Math.sin(an - 0.45)); g.moveTo(xe, ye); g.lineTo(xe - 16 * Math.cos(an + 0.45), ye - 16 * Math.sin(an + 0.45)); g.stroke(); }
+          g.restore();
+        }
+        function silhouette(x, y, r, a, shade = 0.55) {         // a faceless head-and-shoulders inside a circle
+          if (a <= 0.001) return;
+          g.save(); g.globalAlpha = a;
+          g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.clip();
+          const bg = g.createRadialGradient(x, y - r * 0.2, r * 0.1, x, y, r); bg.addColorStop(0, "#2a2a2a"); bg.addColorStop(1, "#080808");
+          g.fillStyle = bg; g.fillRect(x - r, y - r, 2 * r, 2 * r);
+          const v = Math.round(255 * shade), sk = `rgb(${v},${v},${v})`;
+          const gr = g.createLinearGradient(x, y - r, x, y + r); gr.addColorStop(0, sk); gr.addColorStop(1, "#1a1a1a");
+          g.fillStyle = gr;
+          g.beginPath(); g.ellipse(x, y - r * 0.18, r * 0.3, r * 0.36, 0, 0, Math.PI * 2); g.fill();
+          g.beginPath(); g.ellipse(x, y + r * 0.86, r * 0.78, r * 0.56, 0, Math.PI, 0); g.fill();
+          g.restore();
+          g.save(); g.globalAlpha = a; g.strokeStyle = "rgba(240,240,240,0.9)"; g.lineWidth = 2.2; g.beginPath(); g.arc(x, y, r, 0, Math.PI * 2); g.stroke();
+          g.globalAlpha = a * 0.35; g.beginPath(); g.arc(x, y, r + 9, 0, Math.PI * 2); g.stroke(); g.restore();
+        }
+        function spotImage(im, cx, cy, s, ox, oy, base, spots) {  // image at scale s with (cx,cy) of the image at (ox,oy); dimmed except soft spots
+          const dw = im.width * s, dh = im.height * s, x0 = ox - cx * s, y0 = oy - cy * s;
+          g.save(); g.globalAlpha = base; g.drawImage(im, x0, y0, dw, dh); g.restore();
+          for (const sp of spots) {
+            if (sp.a <= 0.001) continue;
+            off.clearRect(0, 0, 1080, 1920);
+            const o = off; o.save(); o.globalCompositeOperation = "source-over"; o.drawImage(im, x0, y0, dw, dh);
+            o.globalCompositeOperation = "destination-in";
+            const gr = o.createRadialGradient(sp.x, sp.y, sp.r * 0.45, sp.x, sp.y, sp.r);
+            gr.addColorStop(0, "rgba(0,0,0,1)"); gr.addColorStop(1, "rgba(0,0,0,0)");
+            o.fillStyle = gr; o.fillRect(0, 0, 1080, 1920); o.restore();
+            g.save(); g.globalAlpha = sp.a; g.drawImage(offC, 0, 0); g.restore();
+          }
+          return (px, py) => [x0 + px * s, y0 + py * s];
+        }
+        const offC = document.createElement("canvas"); offC.width = 1080; offC.height = 1920; const off = offC.getContext("2d");
+        function textC(txt, x, y, font, col, a, ls = 0) { if (a <= 0.001) return; g.save(); g.globalAlpha = a; g.font = font; g.fillStyle = col; g.textAlign = "center"; g.textBaseline = "alphabetic"; g.letterSpacing = ls + "px"; g.fillText(txt, x, y); g.restore(); }
+        function credit(txt, a) { if (a <= 0.001) return; g.save(); g.globalAlpha = a * 0.85; g.font = MONO(500, 21); g.letterSpacing = "1px"; g.fillStyle = "#bdbdbd"; g.textBaseline = "top"; g.fillText(txt, 60, 1352); g.restore(); }
+        const vig = (() => { const c = document.createElement("canvas"); c.width = 1080; c.height = 1920; const x = c.getContext("2d");
+          const gr = x.createRadialGradient(540, 900, 300, 540, 960, 1250); gr.addColorStop(0, "rgba(0,0,0,0)"); gr.addColorStop(1, "rgba(0,0,0,0.85)"); x.fillStyle = gr; x.fillRect(0, 0, 1080, 1920); return c; })();
+
+        // the registration card drawn once (paper, typed fields, redactions)
+        const cardC = (() => {
+          const c = document.createElement("canvas"); c.width = 1200; c.height = 760; const x = c.getContext("2d");
+          x.fillStyle = "#e4e2dc"; x.fillRect(0, 0, 1200, 760);
+          for (let k = 0; k < 2600; k++) { const v = 200 + rnd() * 40; x.fillStyle = `rgba(${v},${v},${v},0.25)`; x.fillRect(rnd() * 1200, rnd() * 760, 2, 2); }
+          x.strokeStyle = "#5c5c5c"; x.lineWidth = 3; x.strokeRect(24, 24, 1152, 712);
+          x.lineWidth = 4; x.strokeRect(48, 48, 120, 120); x.font = "700 96px 'Roboto Mono'"; x.fillStyle = "#2a2a2a"; x.textBaseline = "middle"; x.textAlign = "center"; x.fillText("6", 108, 112);
+          x.textAlign = "left"; x.font = "700 30px 'Roboto Mono'"; x.fillText("REGISTRATION CARD · NETWORK MEMBER", 200, 80);
+          x.font = "500 22px 'Roboto Mono'"; x.fillStyle = "#555"; x.fillText("STATE SECURITY · FORM 6", 200, 128);
+          const rows = [["NAME", 0.62], ["CODE NAME", 0.38], ["BORN", 0.48], ["OCCUPATION", 0.55], ["RECRUITED", 0.44], ["GROUNDS", 0.66]];
+          rows.forEach(([lab, wd], k) => {
+            const y = 230 + k * 82;
+            x.fillStyle = "#3a3a3a"; x.font = "700 26px 'Roboto Mono'"; x.fillText(lab, 60, y);
+            x.strokeStyle = "#9a9a9a"; x.lineWidth = 2; x.beginPath(); x.moveTo(330, y + 22); x.lineTo(1140, y + 22); x.stroke();
+            x.fillStyle = "#111"; x.fillRect(340, y - 16, 790 * wd, 32);
+          });
+          return c;
+        })();
+        const CARD_ROWS = { name: 230, job: 230 + 3 * 82, grounds: 230 + 5 * 82 };
+
+        // =============================================================== 3D sets
+        const c3 = document.getElementById("c3");
+        const renderer = new X.WebGLRenderer({ canvas: c3, antialias: true, preserveDrawingBuffer: true });
+        renderer.setPixelRatio(1); renderer.setSize(1080, 1920, false);
+        renderer.outputColorSpace = X.SRGBColorSpace; renderer.toneMapping = X.NeutralToneMapping; renderer.toneMappingExposure = 1.0;
+        renderer.shadowMap.enabled = true; renderer.shadowMap.type = X.PCFSoftShadowMap;
+        const scene = new X.Scene(); scene.background = new X.Color("#000000");
+        const cam = new X.PerspectiveCamera(30, 1080 / 1920, 0.05, 400);
+        const hemi = new X.HemisphereLight("#ffffff", "#202020", 0.25); scene.add(hemi);
+        const spot = new X.SpotLight("#ffffff", 120, 30, 0.42, 0.75, 1.6); spot.castShadow = true; spot.shadow.mapSize.set(1024, 1024); spot.shadow.bias = -0.0004;
+        scene.add(spot, spot.target);
+        const M = (c, o = {}) => new X.MeshStandardMaterial(Object.assign({ color: c, roughness: 0.75, metalness: 0.0 }, o));
+        const texC = (c) => { const t = new X.CanvasTexture(c); t.colorSpace = X.SRGBColorSpace; t.anisotropy = 8; return t; };
+        const sets = {};
+
+        // ---- desk: wood, a register sheet, the card, a print of the hook photo, a pen
+        {
+          const S = new X.Group(); scene.add(S); sets.desk = S;
+          const wood = document.createElement("canvas"); wood.width = 1024; wood.height = 1024; const w = wood.getContext("2d");
+          w.fillStyle = "#4a4a4a"; w.fillRect(0, 0, 1024, 1024);
+          for (let k = 0; k < 220; k++) { const y = rnd() * 1024, v = 50 + rnd() * 40; w.strokeStyle = `rgba(${v},${v},${v},0.5)`; w.lineWidth = 1 + rnd() * 3; w.beginPath(); w.moveTo(0, y); for (let x = 0; x <= 1024; x += 64) w.lineTo(x, y + Math.sin(x * 0.01 + k) * 6); w.stroke(); }
+          const desk = new X.Mesh(new X.PlaneGeometry(14, 14), M("#ffffff", { map: texC(wood), roughness: 0.55 })); desk.rotation.x = -Math.PI / 2; desk.receiveShadow = true; S.add(desk);
+          const sheet = document.createElement("canvas"); sheet.width = 900; sheet.height = 1270; const s = sheet.getContext("2d");
+          s.fillStyle = "#ecebe7"; s.fillRect(0, 0, 900, 1270);
+          s.fillStyle = "#222"; s.font = "700 46px 'Roboto Mono'"; s.fillText("RECRUITMENT REGISTER", 70, 120);
+          s.fillStyle = "#666"; s.font = "500 24px 'Roboto Mono'"; s.fillText("STATE SECURITY · 1957 – 1962", 70, 166);
+          s.strokeStyle = "#999"; s.lineWidth = 2; s.beginPath(); s.moveTo(70, 196); s.lineTo(830, 196); s.stroke();
+          for (let k = 0; k < 26; k++) { const y = 250 + k * 38; s.fillStyle = "#555"; s.font = "500 20px 'Roboto Mono'"; s.fillText(String(k + 1).padStart(3, "0"), 70, y + 16);
+            const red = rnd() < 0.55; s.fillStyle = red ? "#141414" : "#9a9a9a"; s.fillRect(140, y, 200 + rnd() * 330, red ? 22 : 8); if (!red) s.fillRect(140, y + 12, 120 + rnd() * 200, 6); }
+          const sh = new X.Mesh(new X.PlaneGeometry(2.7, 3.81), M("#ffffff", { map: texC(sheet), roughness: 0.9 })); sh.rotation.x = -Math.PI / 2; sh.rotation.z = 0.16; sh.position.set(-0.35, 0.012, -0.1); sh.receiveShadow = true; sh.castShadow = true; S.add(sh);
+          const cd = new X.Mesh(new X.BoxGeometry(2.0, 0.012, 1.27), [M("#ddd"), M("#ddd"), M("#ffffff", { map: texC(cardC), roughness: 0.85 }), M("#ddd"), M("#ddd"), M("#ddd")]);
+          cd.rotation.y = -0.22; cd.position.set(0.55, 0.03, 0.9); cd.castShadow = true; cd.receiveShadow = true; S.add(cd);
+          const pr = document.createElement("canvas"); pr.width = 540; pr.height = 700; const p = pr.getContext("2d");
+          p.fillStyle = "#f0f0ee"; p.fillRect(0, 0, 540, 700); p.drawImage(imHook, 120, 260, 840, 1090, 26, 26, 488, 632);
+          const prm = new X.Mesh(new X.BoxGeometry(1.0, 0.01, 1.3), [M("#eee"), M("#eee"), M("#ffffff", { map: texC(pr), roughness: 0.4 }), M("#eee"), M("#eee"), M("#eee")]);
+          prm.rotation.y = 0.32; prm.position.set(1.25, 0.04, -0.75); prm.castShadow = true; S.add(prm);
+          const pen = new X.Group(); const body = new X.Mesh(new X.CylinderGeometry(0.045, 0.045, 1.5, 20), M("#111", { roughness: 0.3, metalness: 0.3 })); body.rotation.z = Math.PI / 2; pen.add(body);
+          const tip = new X.Mesh(new X.ConeGeometry(0.045, 0.14, 20), M("#888", { metalness: 0.6, roughness: 0.3 })); tip.rotation.z = -Math.PI / 2; tip.position.x = 0.82; pen.add(tip);
+          pen.position.set(-1.2, 0.05, 1.35); pen.rotation.y = 0.6; pen.traverse((o) => (o.castShadow = true)); S.add(pen);
+        }
+        // ---- tape: a 1970s tape drive, two reels; the top reel lifts out (exploded view)
+        const tape = {};
+        {
+          const S = new X.Group(); scene.add(S); sets.tape = S;
+          const floor = new X.Mesh(new X.PlaneGeometry(30, 30), M("#1a1a1a", { roughness: 0.4 })); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; S.add(floor);
+          const grid = new X.GridHelper(30, 60, "#2c2c2c", "#202020"); grid.position.y = 0.002; S.add(grid);
+          const cab = new X.Mesh(new X.BoxGeometry(1.5, 2.3, 0.75), M("#bdbdbd", { roughness: 0.6 })); cab.position.set(0, 1.15, 0); cab.castShadow = true; cab.receiveShadow = true; S.add(cab);
+          const panel = new X.Mesh(new X.BoxGeometry(1.36, 1.5, 0.04), M("#2b2b2b", { roughness: 0.5 })); panel.position.set(0, 1.45, 0.39); S.add(panel);
+          const btn = new X.BoxGeometry(0.12, 0.07, 0.04);
+          for (let k = 0; k < 8; k++) { const b = new X.Mesh(btn, M(k % 3 === 0 ? "#f0f0f0" : "#7a7a7a")); b.position.set(-0.5 + k * 0.143, 0.42, 0.4); S.add(b); }
+          function reel() {
+            const r = new X.Group();
+            const fl = M("#d9d9d9", { roughness: 0.35, metalness: 0.5 }), hub = M("#555", { roughness: 0.4, metalness: 0.4 }), tp = M("#3a3a3a", { roughness: 0.45 });
+            const f1 = new X.Mesh(new X.CylinderGeometry(0.34, 0.34, 0.012, 48), fl); f1.position.y = 0.045; r.add(f1);
+            const f2 = f1.clone(); f2.position.y = -0.045; r.add(f2);
+            const pack = new X.Mesh(new X.CylinderGeometry(0.26, 0.26, 0.08, 48), tp); r.add(pack);
+            const h = new X.Mesh(new X.CylinderGeometry(0.07, 0.07, 0.11, 24), hub); r.add(h);
+            for (let k = 0; k < 3; k++) { const hole = new X.Mesh(new X.CylinderGeometry(0.075, 0.075, 0.014, 20), M("#111")); hole.position.set(Math.cos(k * 2.094) * 0.19, 0.047, Math.sin(k * 2.094) * 0.19); r.add(hole); const h2 = hole.clone(); h2.position.y = -0.047; r.add(h2); }
+            r.traverse((o) => (o.castShadow = true)); return r;
+          }
+          tape.r1 = reel(); tape.r1.rotation.x = Math.PI / 2; tape.r1.position.set(-0.32, 1.78, 0.46); S.add(tape.r1);
+          tape.r2 = reel(); tape.r2.rotation.x = Math.PI / 2; tape.r2.position.set(0.32, 1.78, 0.46); S.add(tape.r2);
+          const head = new X.Mesh(new X.BoxGeometry(0.34, 0.16, 0.08), M("#9a9a9a", { metalness: 0.4, roughness: 0.4 })); head.position.set(0, 1.18, 0.44); S.add(head);
+          const tpath = new X.Mesh(new X.BoxGeometry(0.62, 0.006, 0.03), M("#333")); tpath.position.set(0, 1.27, 0.47); S.add(tpath);
+          // a second cabinet behind (depth)
+          const cab2 = cab.clone(); cab2.position.set(-1.9, 1.15, -0.9); S.add(cab2);
+          const cab3 = cab.clone(); cab3.position.set(1.9, 1.15, -0.9); S.add(cab3);
+        }
+        // ---- corridor: archive shelves, light strips, a growing stack of boxes in the middle
+        const cor = {};
+        {
+          const S = new X.Group(); scene.add(S); sets.corridor = S;
+          const floor = new X.Mesh(new X.PlaneGeometry(8, 60), M("#151515", { roughness: 0.25, metalness: 0.2 })); floor.rotation.x = -Math.PI / 2; floor.position.z = -20; floor.receiveShadow = true; S.add(floor);
+          const ceil = new X.Mesh(new X.PlaneGeometry(8, 60), M("#0c0c0c")); ceil.rotation.x = Math.PI / 2; ceil.position.set(0, 4.2, -20); S.add(ceil);
+          for (const sx of [-1, 1]) {
+            const wall = new X.Mesh(new X.PlaneGeometry(60, 4.2), M("#121212")); wall.rotation.y = -sx * Math.PI / 2; wall.position.set(sx * 3.2, 2.1, -20); S.add(wall);
+            const strip = new X.Mesh(new X.BoxGeometry(0.08, 0.04, 60), new X.MeshBasicMaterial({ color: new X.Color(2.2, 2.2, 2.2), toneMapped: false })); strip.position.set(sx * 1.1, 4.15, -20); S.add(strip);
+          }
+          // shelving: instanced boxes in rows on both sides
+          const bx = new X.BoxGeometry(0.42, 0.3, 0.32); const boxes = [];
+          for (const sx of [-1, 1]) for (let z = 0; z > -48; z -= 0.46) for (let r = 0; r < 7; r++) if (rnd() < 0.86) boxes.push([sx * 2.95, 0.3 + r * 0.52, z, 0.6 + rnd() * 0.3]);
+          const im = new X.InstancedMesh(bx, M("#ffffff", { roughness: 0.8 }), boxes.length); const o = new X.Object3D(); const col = new X.Color();
+          boxes.forEach(([x, y, z, v], i) => { o.position.set(x, y, z); o.updateMatrix(); im.setMatrixAt(i, o.matrix); im.setColorAt(i, col.setScalar(v * 0.5)); }); S.add(im);
+          for (const sx of [-1, 1]) for (let r = 0; r <= 7; r++) { const sh = new X.Mesh(new X.BoxGeometry(0.5, 0.025, 48), M("#3a3a3a")); sh.position.set(sx * 2.95, 0.13 + r * 0.52, -24); S.add(sh); }
+          // the central stack: 15 document boxes in a pyramid (5-4-3-2-1)
+          cor.stack = []; const sb = new X.BoxGeometry(0.62, 0.42, 0.46);
+          let k = 0;
+          for (let lv = 0; lv < 5; lv++) for (let i = 0; i < 5 - lv; i++) {
+            const m = new X.Mesh(sb, M("#c9c9c7", { roughness: 0.85 })); m.position.set((i - (4 - lv) / 2) * 0.64, 0.21 + lv * 0.43, -13); m.castShadow = true; m.receiveShadow = true;
+            const lab = new X.Mesh(new X.PlaneGeometry(0.2, 0.08), M("#f4f4f4")); lab.position.set(0, 0.06, 0.231); m.add(lab);
+            S.add(m); cor.stack.push({ m, k: k++ });
+          }
+        }
+        // ---- cabinet: a white clay card-catalogue on a plinth; one drawer slides out
+        const cabT = {};
+        {
+          const S = new X.Group(); scene.add(S); sets.cabinet = S;
+          const floor = new X.Mesh(new X.PlaneGeometry(40, 40), M("#2a2a2a", { roughness: 0.9 })); floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; S.add(floor);
+          const clay = M("#f3f2ee", { roughness: 0.8 });
+          const body = new X.Mesh(new X.BoxGeometry(2.4, 1.6, 0.9), clay); body.position.set(0, 0.95, 0); body.castShadow = true; body.receiveShadow = true; S.add(body);
+          const top = new X.Mesh(new X.BoxGeometry(2.55, 0.08, 1.0), clay); top.position.set(0, 1.79, 0); top.castShadow = true; S.add(top);
+          const base = new X.Mesh(new X.BoxGeometry(2.5, 0.15, 0.95), clay); base.position.set(0, 0.075, 0); base.castShadow = true; S.add(base);
+          cabT.drawers = [];
+          for (let r = 0; r < 4; r++) for (let c = 0; c < 5; c++) {
+            const d = new X.Group(); d.position.set(-0.92 + c * 0.46, 0.43 + r * 0.36, 0.45);
+            const front = new X.Mesh(new X.BoxGeometry(0.42, 0.32, 0.04), clay); front.position.z = 0.02; front.castShadow = true; d.add(front);
+            const box = new X.Mesh(new X.BoxGeometry(0.38, 0.27, 0.86), M("#d8d7d2")); box.position.z = -0.42; d.add(box);
+            const handle = new X.Mesh(new X.TorusGeometry(0.035, 0.009, 8, 20, Math.PI), M("#bbb", { metalness: 0.6, roughness: 0.3 })); handle.position.set(0, -0.06, 0.05); handle.rotation.z = Math.PI; d.add(handle);
+            const frame = new X.Mesh(new X.BoxGeometry(0.15, 0.06, 0.01), M("#cfcfcb")); frame.position.set(0, 0.06, 0.045); d.add(frame);
+            S.add(d); cabT.drawers.push(d);
+          }
+          // index cards inside the open drawer
+          cabT.cards = new X.Group(); for (let k = 0; k < 18; k++) { const cc = new X.Mesh(new X.BoxGeometry(0.34, 0.24, 0.006), M("#f2f1ed")); cc.position.set(0, 0.0, -0.1 - k * 0.04); cc.rotation.x = -0.08; cabT.cards.add(cc); }
+        }
+        const rt = new X.WebGLRenderTarget(1080, 1920, { type: X.HalfFloatType, samples: 4 });
+        const composer = new T3.EffectComposer(renderer, rt); composer.setPixelRatio(1); composer.setSize(1080, 1920);
+        composer.addPass(new T3.RenderPass(scene, cam));
+        composer.addPass(new T3.UnrealBloomPass(new X.Vector2(540, 960), 0.28, 0.5, 0.92));
+        composer.addPass(new T3.OutputPass());
+        const tmp = new X.Vector3();
+        const P2 = (x, y, z) => { tmp.set(x, y, z).project(cam); return [(tmp.x + 1) * 540, (1 - tmp.y) * 960]; };
+        function camOrbit(tgt, dist, el, az, fov) { const e = el * Math.PI / 180, a = az * Math.PI / 180; cam.position.set(tgt[0] + dist * Math.cos(e) * Math.sin(a), tgt[1] + dist * Math.sin(e), tgt[2] + dist * Math.cos(e) * Math.cos(a)); cam.fov = fov; cam.updateProjectionMatrix(); cam.lookAt(tgt[0], tgt[1], tgt[2]); cam.updateMatrixWorld(); }
+
+        // =============================================================== 3D shot states
+        function render3(sh, t, u) {
+          for (const k in sets) sets[k].visible = k === sh.id;
+          if (sh.id === "desk") {
+            camOrbit([0.2, 0, 0.3], mix(8.6, 7.4, E.sine(u)), mix(54, 48, u), mix(-14, 4, E.sine(u)), 34);
+            spot.position.set(0.6, 6.5, 1.2); spot.target.position.set(0.2, 0, 0.2); spot.angle = 0.5; spot.intensity = 26; spot.distance = 20;
+            hemi.intensity = 0.18;
+          } else if (sh.id === "tape") {
+            const lift = E.io(lin(t, W.tape[7] - 0.1, W.tape[10] + 0.4));
+            tape.r1.position.set(-0.32, 1.78 + lift * 0.9, 0.46 + lift * 0.55); tape.r1.rotation.set(Math.PI / 2 - lift * 0.9, (t - sh.t0) * 2.2, 0);
+            tape.r2.rotation.set(Math.PI / 2, (t - sh.t0) * 2.6, 0);
+            camOrbit([0, 1.6, 0.2], mix(5.6, 4.8, E.sine(u)), mix(16, 22, u), mix(-34, -14, E.sine(u)), 32);
+            spot.position.set(-2.5, 6, 4); spot.target.position.set(0, 1.4, 0); spot.angle = 0.45; spot.intensity = 42; spot.distance = 30;
+            hemi.intensity = 0.25;
+          } else if (sh.id === "corridor") {
+            const grow = lin(t, sh.t0 + 0.2, W.scale[6]);
+            const third = lin(t, W.scale[7], W.scale[7] + 0.5);
+            cor.stack.forEach(({ m, k }) => {
+              const on = clamp(grow * 16 - k); m.visible = on > 0.01; m.scale.setScalar(0.6 + 0.4 * E.back(on));
+              m.material.color.setScalar(mix(0.79, k < 10 ? 0.22 : 0.85, third));
+            });
+            camOrbit([0, 1.6, -14], mix(10.5, 9.4, E.sine(u)), mix(7, 5, u), 0, 44);
+            spot.position.set(0, 4.1, -11); spot.target.position.set(0, 0, -13); spot.angle = 0.7; spot.intensity = 16; spot.distance = 12;
+            hemi.intensity = 0.3;
+          } else if (sh.id === "cabinet") {
+            const open = E.io(lin(t, W.next[1] - 0.1, W.next[2] + 0.4));
+            cabT.drawers.forEach((d, k) => { d.position.z = 0.45 + (k === 7 ? open * 0.5 : 0); });
+            if (cabT.cards.parent !== cabT.drawers[7]) { cabT.drawers[7].add(cabT.cards); cabT.cards.position.set(0, 0.04, 0); }
+            camOrbit([0, 0.25, 0], mix(12.5, 11.0, E.sine(u)), mix(19, 15, u), mix(-24, -10, E.sine(u)), 30);
+            spot.position.set(0.4, 7, 3.5); spot.target.position.set(0, 0.9, 0); spot.angle = 0.3; spot.intensity = 62; spot.distance = 25;
+            hemi.intensity = 0.16;
+          }
+          spot.target.updateMatrixWorld();
+          composer.render();
+        }
+
+        // =============================================================== frame
+        render = (t) => {
+          const sh = F.shotAt(t), u = clamp((t - sh.t0) / (sh.t1 - sh.t0));
+          const prev = sh.k > 0 ? SH[sh.k - 1] : null;
+          const xf = sh.xf && prev ? lin(t, sh.t0, sh.t0 + sh.xf) : 1;   // dissolve from the previous shot
+          g.clearRect(0, 0, 1080, 1920);
+          if (sh.kind === "3d") { c3.style.opacity = "1"; render3(sh, t, u); } else { c3.style.opacity = "0"; }
+          // draw the previous 2D shot under a dissolve into a 3D shot
+          if (xf < 1 && prev && prev.kind === "2d" && sh.kind === "3d") { g.save(); g.globalAlpha = 1 - E.sine(xf); draw2d(prev, t, 1); g.restore(); }
+          if (sh.kind === "2d") { g.fillStyle = sh.light ? "#f1f1ef" : "#000"; g.fillRect(0, 0, 1080, 1920); draw2d(sh, t, u); }
+          overlays(sh, t, u);
+          if (sh.light && xf < 1) { g.save(); g.globalAlpha = 1 - E.out(xf); g.fillStyle = "#000"; g.fillRect(0, 0, 1080, 1920); g.restore(); }
+          if (!sh.light) g.drawImage(vig, 0, 0);
+        };
+
+        function draw2d(sh, t, u) {
+          const id = sh.id;
+          if (id === "photo") {
+            const tA = W.hook[3] - 0.05, tC = W.open[4];
+            const kB = E.io(lin(t, tA, tA + 0.45)), kC = E.io(lin(t, tC - 0.1, tC + 0.6));
+            const s = mix(mix(1.0, 1.035, lin(t, 0, tA)), mix(1.62, 1.68, lin(t, tA, tC)), kB);
+            const sC = mix(s, mix(1.36, 1.42, lin(t, tC, sh.t1)), kC);
+            const cx = mix(mix(540, 300, kB), 600, kC), cy = mix(mix(960, 790, kB), 1120, kC);
+            const ox = mix(mix(540, 470, kB), 560, kC), oy = mix(mix(960, 860, kB), 880, kC);
+            const face = [270, 730], phone = [616, 1210];
+            const fx = ox + (face[0] - cx) * sC, fy = oy + (face[1] - cy) * sC, px = ox + (phone[0] - cx) * sC, py = oy + (phone[1] - cy) * sC;
+            const base = mix(1, 0.3, kB);
+            spotImage(imHook, cx, cy, sC, ox, oy, base, [{ x: fx, y: fy + 40, r: 330, a: kB * (1 - kC) }, { x: px, y: py, r: 300, a: kC }]);
+            ring(fx, fy - 8, 78, kB * (1 - kC) * E.out(lin(t, W.hook[5] - 0.25, W.hook[5] + 0.1)), t * 0.6);
+            const la = E.out(lin(t, W.hook[5] - 0.1, W.hook[5] + 0.25)) * (1 - kC);
+            leader(fx + 70, fy + 30, fx + 150, fy + 90, la); label(fx + 150, fy + 82, "NAME SURNAME", "ROLE · COUNTRY", la);
+            label(60, 452, "CITY", "PHOTO · DATE", 0.75 * kB * (1 - kC), { box: false, s1: 22, s2: 19 });
+            ring(px, py, 92, kC * E.out(lin(t, W.open[10] - 0.2, W.open[10] + 0.15)), t * 0.6);
+            const lb = E.out(lin(t, W.open[10] - 0.1, W.open[10] + 0.25));
+            leader(px - 80, py - 60, px - 150, py - 150, lb); label(px - 150, py - 230, "PUBLIC SEARCH", "ONLINE · 4 NOV 2026", lb, { align: "right" });
+            credit("PHOTO: AUTHOR / LICENCE (SOURCE)", 1);
+          } else if (id === "card") {
+            const s = mix(0.56, 0.6, E.sine(u)), x0 = 70, y0 = mix(640, 620, u), rot = -0.035;
+            g.save(); g.translate(x0 + 1200 * s / 2, y0 + 760 * s / 2); g.rotate(rot);
+            const sp = g.createRadialGradient(0, 0, 100, 0, 0, 640); sp.addColorStop(0, "rgba(255,255,255,0.10)"); sp.addColorStop(1, "rgba(255,255,255,0)");
+            g.fillStyle = sp; g.fillRect(-700, -700, 1400, 1400);
+            g.shadowColor = "rgba(0,0,0,0.8)"; g.shadowBlur = 40; g.shadowOffsetY = 18;
+            g.drawImage(cardC, -600 * s, -380 * s, 1200 * s, 760 * s); g.restore();
+            const rowY = (ry) => y0 + ry * s;
+            const L = (key, at, l1, l2) => {
+              const a = E.out(lin(t, at - 0.12, at + 0.18)); const y = rowY(CARD_ROWS[key]);
+              leader(x0 + 1150 * s, y, 790, y, a); label(790, y - 22, l1, l2, a);
+            };
+            const ta = E.out(lin(t, W.card[1] - 0.1, W.card[1] + 0.25));
+            leader(x0 + 600 * s, y0 - 10, x0 + 600 * s, y0 - 70, ta); label(x0 + 600 * s, y0 - 152, "FORM 6 · REGISTRATION CARD", "ONE PER NETWORK MEMBER", ta, { align: "center" });
+            L("name", W.card[5], "NAME", "+ CODE NAME");
+            L("job", W.card[7], "JOB", "WORKPLACE"); L("grounds", W.card[10], "GROUNDS", "FOR RECRUITMENT");
+          } else if (id === "map") {
+            const k = mix(24, 58, E.io(lin(t, sh.t0, sh.t1 - 0.3))), lon0 = 19.2, lat0 = mix(48.5, 47.4, u), cl = Math.cos(lat0 * Math.PI / 180);
+            const ox = 540, oy = 930;
+            const r = Math.max(1.4, 0.085 * k);
+            for (const [lon, lat, f] of G.eu) {
+              const x = ox + (lon - lon0) * cl * k, y = oy - (lat - lat0) * k;
+              if (x < -20 || x > 1100 || y < -20 || y > 1940) continue;
+              g.fillStyle = f ? "#0a0a0a" : "#6f6f6d"; g.beginPath(); g.arc(x, y, f ? r * 1.25 : r, 0, Math.PI * 2); g.fill();
+            }
+            const bx = ox + (G.budapest[0] - lon0) * cl * k, by = oy - (G.budapest[1] - lat0) * k;
+            const pa = E.out(lin(t, W.archive[4] - 0.2, W.archive[4] + 0.15));
+            g.save(); g.globalAlpha = pa; g.fillStyle = "#000"; g.beginPath(); g.arc(bx, by, 9, 0, Math.PI * 2); g.fill();
+            g.strokeStyle = "#000"; g.lineWidth = 2; g.beginPath(); g.arc(bx, by, 22 + 10 * Math.sin(t * 4), 0, Math.PI * 2); g.stroke(); g.restore();
+            leader(bx + 10, by + 10, bx + 90, by + 120, pa); label(bx + 60, by + 120, "BUDAPEST", null, pa, { fill: "rgba(255,255,255,0.88)", stroke: "rgba(0,0,0,0.55)", c1: "#111" });
+            const aa = E.out(lin(t, W.archive[7] - 0.15, W.archive[7] + 0.2));
+            label(bx + 60, by + 176, "STATE SECURITY ARCHIVE", "ÁBTL", aa, { fill: "rgba(255,255,255,0.88)", stroke: "rgba(0,0,0,0.55)", c1: "#111", c2: "#555", s1: 22, s2: 20, align: "center" });
+            label(540, 1560, "HISTORICAL ARCHIVES OF THE", "STATE SECURITY SERVICES", aa * 0.9, { box: false, align: "center", c1: "#333", c2: "#666", s1: 20, s2: 20 });
+          } else if (id === "network") {
+            const pan = E.io(u);
+            const oyy = mix(80, -120, pan), oxx = mix(40, -20, pan);
+            g.save(); g.translate(oxx, oyy);
+            // faint grid
+            g.strokeStyle = "rgba(255,255,255,0.04)"; g.lineWidth = 1; for (let x = -200; x < 1300; x += 90) { g.beginPath(); g.moveTo(x, -300); g.lineTo(x, 2200); g.stroke(); } for (let y = -300; y < 2200; y += 90) { g.beginPath(); g.moveTo(-200, y); g.lineTo(1300, y); g.stroke(); }
+            const A = [700, 560], B = [330, 1000], C = [800, 1300];
+            const aA = E.out(lin(t, W.network[4] - 0.2, W.network[4] + 0.2)), aL = E.out(lin(t, W.network[6] - 0.1, W.network[6] + 0.45)), aB = E.out(lin(t, W.network[7] - 0.15, W.network[7] + 0.2)), aC = E.out(lin(t, W.network[10] - 0.1, W.network[10] + 0.4));
+            ring(A[0], A[1], 70, aA, t * 0.5); g.save(); g.globalAlpha = aA; g.fillStyle = "#f2f2f2"; g.beginPath(); g.arc(A[0], A[1], 7, 0, Math.PI * 2); g.fill(); g.restore();
+            label(A[0] + 110, A[1] - 36, "SECRET POLICE", "OFFICER · HANDLER", aA, { box: false });
+            label(60, 300 - oyy, "1949 – 1989", "ONE-PARTY RULE", E.out(lin(t, W.network[1] - 0.1, W.network[1] + 0.2)), { box: false, s1: 24, s2: 20 });
+            dashed(A[0] - 50, A[1] + 50, B[0] + 70, B[1] - 70, aL, E.out(aL));
+            label(470, 760, "RECRUITED", null, aL, { box: false, s1: 22, c1: "#9a9a9a" });
+            silhouette(B[0], B[1], 96, aB, 0.62); label(B[0] - 96, B[1] + 120, "NETWORK MEMBER", "ORDINARY PEOPLE", aB, { box: false });
+            dashed(B[0] + 105, B[1] + 40, C[0] - 105, C[1] - 30, aC, E.out(aC), true);
+            label(560, 1100, "REPORTS ON", null, aC, { box: false, s1: 22, c1: "#9a9a9a" });
+            silhouette(C[0], C[1], 86, aC, 0.45); silhouette(C[0] + 150, C[1] + 70, 52, aC * 0.8, 0.4); silhouette(C[0] - 30, C[1] + 170, 46, aC * 0.6, 0.35);
+            label(C[0] + 70, C[1] - 150, "OTHERS", "REPORTED ON", aC, { box: false });
+            g.restore();
+          } else if (id === "portrait") {
+            const s = mix(0.86, 0.92, E.sine(u)), cx = 533, cy = 560, ox = 540, oy = 760;
+            spotImage(imPortrait, cx, cy, s, ox, oy, 0.0, [{ x: ox, y: oy + 120, r: 620, a: 1 }]);
+            const a1 = E.out(lin(t, sh.t0 + 0.1, sh.t0 + 0.4));
+            label(60, 1040, "NAME SURNAME", "ROLE", a1, { box: false });
+            const a2 = E.out(lin(t, W.promise[2] - 0.1, W.promise[2] + 0.2));
+            label(60, 1112, "PLEDGE · OPEN THE FILES", "KEPT · 4 NOV 2026", a2, { s1: 22, s2: 20 });
+            const a3 = E.out(lin(t, W.promise[4] - 0.1, W.promise[4] + 0.2));
+            label(1020, 1112, "1990 – 2026", "ACCESS DELAYED", a3, { s1: 22, s2: 20, align: "right" });
+            credit("PHOTO: AUTHOR / LICENCE (SOURCE)", 1);
+          } else if (id === "blueprint") {
+            const dr = E.out(lin(t, sh.t0, sh.t0 + 1.0));
+            g.save(); g.translate(540, 900); g.rotate(-0.02); g.strokeStyle = "rgba(235,235,235,0.75)"; g.lineWidth = 2;
+            const bw = 400, bh = 540;
+            g.setLineDash([2400 * dr, 4000]);
+            g.strokeRect(-bw - 10, -bh / 2, bw, bh); g.strokeRect(10, -bh / 2, bw, bh);
+            g.beginPath(); g.moveTo(0, -bh / 2 - 10); g.lineTo(0, bh / 2 + 10); g.stroke();
+            g.setLineDash([]);
+            g.globalAlpha = dr; g.lineWidth = 1;
+            for (let k = 0; k < 15; k++) { const y = -bh / 2 + 60 + k * 31; g.strokeStyle = "rgba(235,235,235,0.28)"; g.beginPath(); g.moveTo(-bw + 10, y); g.lineTo(-30, y); g.moveTo(30, y); g.lineTo(bw - 10, y); g.stroke();
+              g.fillStyle = "rgba(235,235,235,0.5)"; g.fillRect(-bw + 64, y - 18, 60 + ((k * 37) % 150), 9); g.fillRect(60, y - 18, 50 + ((k * 53) % 170), 9); }
+            g.strokeStyle = "rgba(235,235,235,0.4)"; g.beginPath(); g.moveTo(-bw + 50, -bh / 2 + 30); g.lineTo(-bw + 50, bh / 2 - 10); g.moveTo(50, -bh / 2 + 30); g.lineTo(50, bh / 2 - 10); g.stroke();
+            g.restore();
+            const a0 = E.out(lin(t, W.register[2] - 0.15, W.register[2] + 0.2));
+            label(60, 452, "B REGISTER · RECRUITMENT", "STATE SECURITY LEDGERS", a0, { box: false });
+            const a1 = E.out(lin(t, W.register[5] - 0.1, W.register[5] + 0.2)), a2 = E.out(lin(t, W.register[7] - 0.1, W.register[7] + 0.2));
+            leader(-bw + 540 + 70, 900 - bh / 2 + 60 - 20, 150, 600, a1); label(60, 560, "1957", "FIRST ENTRY", a1, { s1: 24, s2: 20 });
+            leader(540 + bw - 60, 900 + bh / 2 - 60, 900, 1250, a2); label(1020, 1224, "1962", "LAST ENTRY", a2, { s1: 24, s2: 20, align: "right" });
+            const a3 = E.out(lin(t, (W.register[5] + W.register[7]) / 2 - 0.1, (W.register[5] + W.register[7]) / 2 + 0.2));
+            label(1020, 452, "~25,000 NAMES", null, a3, { align: "right" });
+          } else if (id === "link") {
+            const L = [300, 900], R = [780, 900];
+            const a0 = E.out(lin(t, sh.t0, sh.t0 + 0.25));
+            g.save(); g.globalAlpha = a0; g.strokeStyle = "rgba(235,235,235,0.85)"; g.lineWidth = 2; g.strokeRect(L[0] - 80, L[1] - 100, 160, 200);
+            for (let k = 0; k < 6; k++) { g.fillStyle = k === 2 ? "#f2f2f2" : "rgba(235,235,235,0.35)"; g.fillRect(L[0] - 56, L[1] - 70 + k * 28, k === 2 ? 112 : 70 + (k * 23) % 40, k === 2 ? 12 : 7); }
+            g.restore();
+            label(L[0], L[1] + 130, "NAME ON A LIST", null, a0, { box: false, align: "center", s1: 22 });
+            silhouette(R[0], R[1], 88, a0, 0.6); label(R[0], R[1] + 130, "INFORMER?", null, a0, { box: false, align: "center", s1: 22 });
+            const dl = E.out(lin(t, W.proof[6] - 0.15, W.proof[6] + 0.35));
+            dashed(L[0] + 100, L[1], R[0] - 110, R[1], 1, dl);
+            const xa = E.out(lin(t, W.proof[8] - 0.12, W.proof[8] + 0.12));
+            g.save(); g.globalAlpha = xa; g.strokeStyle = "#f2f2f2"; g.lineWidth = 4; const mx = (L[0] + R[0]) / 2 - 5, my = L[1];
+            g.beginPath(); g.moveTo(mx - 16, my - 16); g.lineTo(mx + 16, my + 16); g.moveTo(mx + 16, my - 16); g.lineTo(mx - 16, my + 16); g.stroke(); g.restore();
+            label(mx, my - 76, "NOT PROOF", null, xa, { box: false, align: "center", s1: 22, c1: "#bdbdbd" });
+          } else if (id === "globe") {
+            const lam0 = mix(-25, 19, E.io(lin(t, sh.t0, sh.t0 + 3.2))) * Math.PI / 180, phi0 = mix(18, 42, E.io(lin(t, sh.t0, sh.t0 + 3.2))) * Math.PI / 180;
+            const R = mix(400, 450, u), cx = 540, cy = 930;
+            g.save(); g.strokeStyle = "rgba(0,0,0,0.22)"; g.lineWidth = 1.5; g.beginPath(); g.arc(cx, cy, R + 4, 0, Math.PI * 2); g.stroke(); g.restore();
+            const sp = Math.sin(phi0), cp = Math.cos(phi0);
+            const projG = (lon, lat) => { const l = lon * Math.PI / 180 - lam0, p = lat * Math.PI / 180; const cosc = sp * Math.sin(p) + cp * Math.cos(p) * Math.cos(l); return [cx + R * Math.cos(p) * Math.sin(l), cy - R * (cp * Math.sin(p) - sp * Math.cos(p) * Math.cos(l)), cosc]; };
+            for (const [lon, lat, f] of G.globe) {
+              const [x, y, c] = projG(lon, lat); if (c <= 0) continue;
+              const sh2 = 0.35 + 0.65 * c; g.fillStyle = f ? "#000" : `rgba(40,40,40,${(0.45 + 0.5 * sh2).toFixed(3)})`;
+              g.fillRect(x - 1.6 * sh2, y - 1.6 * sh2, 3.2 * sh2 + (f ? 2 : 0), 3.2 * sh2 + (f ? 2 : 0));
+            }
+            const [bx, by, bc] = projG(G.budapest[0], G.budapest[1]);
+            const pa = bc > 0 ? E.out(lin(t, sh.t0 + 1.6, sh.t0 + 2.0)) : 0;
+            g.save(); g.globalAlpha = pa; g.fillStyle = "#000"; g.beginPath(); g.arc(bx, by, 8, 0, Math.PI * 2); g.fill(); g.strokeStyle = "#000"; g.lineWidth = 2; g.beginPath(); g.arc(bx, by, 20, 0, Math.PI * 2); g.stroke(); g.restore();
+            const a1 = E.out(lin(t, W.lost[5] - 0.1, W.lost[5] + 0.2)), a2 = E.out(lin(t, W.lost[9] - 0.1, W.lost[9] + 0.2));
+            leader(bx - 12, by - 12, bx - 120, by - 160, a1); label(bx - 120, by - 238, "1956", "FILES LOST · UPRISING", a1, { align: "right", fill: "rgba(255,255,255,0.75)", stroke: "rgba(0,0,0,0.5)", c1: "#111", c2: "#555" });
+            leader(bx + 12, by + 12, bx + 120, by + 170, a2); label(bx + 60, by + 170, "1988 – 89", "FILES LOST · REGIME CHANGE", a2, { fill: "rgba(255,255,255,0.75)", stroke: "rgba(0,0,0,0.5)", c1: "#111", c2: "#555" });
+          } else if (id === "quotes") {
+            const two = t >= W.quotes[9] - F.K;
+            const t0 = two ? W.quotes[9] - F.K : sh.t0;
+            const hdr = two ? ["PRIME MINISTER", "ON THE NAMES"] : ["ARCHIVE DIRECTOR", "ON THE RECORDS"];
+            const q = two ? "“Dignity and humanity”" : "“Very incomplete”";
+            const qa = two ? E.out(lin(t, W.quotes[12] - 0.15, W.quotes[12] + 0.25)) : E.out(lin(t, W.quotes[7] - 0.15, W.quotes[7] + 0.25));
+            const la = E.out(lin(t, t0, t0 + 0.3));
+            g.save(); g.globalAlpha = la * 0.5; g.fillStyle = "#fff"; g.fillRect(220, 560, 640, 1.5); g.fillRect(220, 1150, 640, 1.5); g.restore();
+            textC(hdr[0], 540, 700, MONO(700, 28), "#d0d0d0", la, 5); textC(hdr[1], 540, 744, MONO(500, 20), "#7a7a7a", la, 3);
+            const qs = two ? 74 : 92;
+            textC(q, 540, 900, `600 ${qs}px Inter`, "#f0f0f0", qa, -1);
+            if (qa > 0) { g.save(); g.globalAlpha = qa * 0.25; g.filter = "blur(18px)"; g.font = `600 ${qs}px Inter`; g.textAlign = "center"; g.fillStyle = "#fff"; g.fillText(q, 540, 900); g.restore(); }
+          } else if (id === "zero") {
+            const la = E.out(lin(t, sh.t0, sh.t0 + 0.3)), na = E.out(lin(t, W.reports[2] - 0.15, W.reports[2] + 0.2)), sa = E.out(lin(t, W.reports[4] - 0.15, W.reports[4] + 0.2));
+            g.save(); g.globalAlpha = la * 0.5; g.fillStyle = "#fff"; g.fillRect(220, 600, 640, 1.5); g.fillRect(220, 1150, 640, 1.5); g.restore();
+            textC("INFORMER REPORTS PUBLISHED", 540, 740, MONO(700, 24), "#bdbdbd", la, 4);
+            textC("0", 540, 960, "300 210px Inter", "#f2f2f2", na, 0);
+            textC("OPEN ONLY TO THOSE AFFECTED", 540, 1060, MONO(500, 21), "#8a8a8a", sa, 3);
+          }
+        }
+
+        function overlays(sh, t, u) {     // labels drawn over the 3D shots
+          if (sh.id === "tape") {
+            const [rx, ry] = P2(-0.32, 1.78, 0.5);
+            const a1 = E.out(lin(t, W.tape[1] - 0.15, W.tape[1] + 0.2));
+            label(60, 452, "H DATABASE", "MAGNETIC TAPE · 1970s ON", a1, { box: false });
+            const a2 = E.out(lin(t, W.tape[4] - 0.12, W.tape[4] + 0.2));
+            leader(rx - 20, ry - 40, 300, 640, a2); label(130, 640, "~55,000 NAMES", "CODE NAMES · WORKPLACES", a2);
+            const a3 = E.out(lin(t, W.tape[9] - 0.1, W.tape[9] + 0.25));
+            const [hx, hy] = P2(0.32, 1.78, 0.5); leader(hx + 30, hy + 30, 800, 1120, a3); label(700, 1120, "NO REPORTS", "NO PHOTOS", a3);
+          } else if (sh.id === "corridor") {
+            const ca = E.out(lin(t, W.scale[5] - 0.15, W.scale[5] + 0.15));
+            const n = Math.round(150000 * E.out(lin(t, W.scale[5], W.scale[5] + 1.1)) / 1000) * 1000;
+            textC("~" + n.toLocaleString("en-US"), 540, 520, "700 132px Inter", "#f4f4f4", ca, -2);
+            if (ca > 0) { g.save(); g.globalAlpha = ca * 0.3; g.filter = "blur(22px)"; g.font = "700 132px Inter"; g.textAlign = "center"; g.fillStyle = "#fff"; g.fillText("~" + n.toLocaleString("en-US"), 540, 520); g.restore(); }
+            textC("AGENTS · OVER FOUR DECADES", 540, 576, MONO(700, 22), "#9a9a9a", ca, 4);
+            const ta = E.out(lin(t, W.scale[7] - 0.1, W.scale[7] + 0.3));
+            textC("≈ 1/3 KNOWN BY NAME", 540, 640, MONO(700, 30), "#e6e6e6", ta, 4);
+          } else if (sh.id === "cabinet") {
+            const ha = E.out(lin(t, sh.t0 + 0.1, sh.t0 + 0.5));
+            label(60, 300, "ÁBTL ARCHIVE · BUDAPEST", "OPEN FILES · NEXT PHASE", ha, { box: false, s1: 25, s2: 21, c1: "#e2e2e2", c2: "#8a8a8a" });
+            const a1 = E.out(lin(t, W.next[2] - 0.12, W.next[2] + 0.2)), a2 = E.out(lin(t, W.next[7] - 0.12, W.next[7] + 0.2));
+            label(60, 1090, "RECRUITMENT FILES › 9,000+", null, a1, { s1: 22 });
+            label(60, 1150, "DUE BY › 25 FEB 2027", null, a2, { s1: 22, c1: "#ffffff", stroke: "rgba(255,255,255,0.85)" });
+          } else if (sh.id === "desk") {
+            const a = E.out(lin(t, W.names[1] - 0.1, W.names[1] + 0.2)) * (1 - lin(t, sh.t1 - 0.2, sh.t1));
+            label(60, 452, "~60,000 NAMES", "ONLINE · 4 NOV 2026", a, { fill: "rgba(0,0,0,0.78)" });
+          }
+        }
+
+        ready = true; lastT = -1; draw(curT);
+      }).catch((e) => { window.__error = "world: " + (e && e.message ? e.message : e); throw e; });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: F.DUR, duration: F.DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

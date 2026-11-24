@@ -1,0 +1,963 @@
+{
+ "duration": 61.335,
+ "voice": "am_fenrir,am_onyx",
+ "words": 153,
+ "wpm_overall": 149.7,
+ "wpm_speech": 194.0,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "[Alaska](/æˈlæskə/) and Alberta both struck it rich selling oil.",
+   "start": 0.11,
+   "end": 2.76,
+   "words": [
+    {
+     "w": "Alaska",
+     "start": 0.11,
+     "end": 0.448
+    },
+    {
+     "w": "and",
+     "start": 0.448,
+     "end": 0.548
+    },
+    {
+     "w": "Alberta",
+     "start": 0.548,
+     "end": 0.985
+    },
+    {
+     "w": "both",
+     "start": 0.985,
+     "end": 1.21
+    },
+    {
+     "w": "struck",
+     "start": 1.21,
+     "end": 1.498
+    },
+    {
+     "w": "it",
+     "start": 1.498,
+     "end": 1.585
+    },
+    {
+     "w": "rich",
+     "start": 1.585,
+     "end": 1.823
+    },
+    {
+     "w": "selling",
+     "start": 1.823,
+     "end": 2.16
+    },
+    {
+     "w": "oil.",
+     "start": 2.16,
+     "end": 2.76
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "[Alaska](/æˈlæskə/) turned it into an eighty-eight-billion-dollar fund.",
+   "start": 3.27,
+   "end": 6.12,
+   "words": [
+    {
+     "w": "Alaska",
+     "start": 3.27,
+     "end": 3.645
+    },
+    {
+     "w": "turned",
+     "start": 3.645,
+     "end": 3.932
+    },
+    {
+     "w": "it",
+     "start": 3.932,
+     "end": 4.007
+    },
+    {
+     "w": "into",
+     "start": 4.007,
+     "end": 4.207
+    },
+    {
+     "w": "an",
+     "start": 4.207,
+     "end": 4.332
+    },
+    {
+     "w": "eighty-eight-billion-dollar",
+     "start": 4.332,
+     "end": 5.457
+    },
+    {
+     "w": "fund.",
+     "start": 5.457,
+     "end": 6.12
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Alberta's fund is about a quarter of that.",
+   "start": 7.08,
+   "end": 9.305,
+   "words": [
+    {
+     "w": "Alberta's",
+     "start": 7.08,
+     "end": 7.555
+    },
+    {
+     "w": "fund",
+     "start": 7.555,
+     "end": 7.905
+    },
+    {
+     "w": "is",
+     "start": 7.905,
+     "end": 8.018
+    },
+    {
+     "w": "about",
+     "start": 8.018,
+     "end": 8.242
+    },
+    {
+     "w": "a",
+     "start": 8.242,
+     "end": 8.305
+    },
+    {
+     "w": "quarter",
+     "start": 8.305,
+     "end": 8.643
+    },
+    {
+     "w": "of",
+     "start": 8.643,
+     "end": 8.73
+    },
+    {
+     "w": "that.",
+     "start": 8.73,
+     "end": 9.305
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "Here's why.",
+   "start": 9.915,
+   "end": 10.64,
+   "words": [
+    {
+     "w": "Here's",
+     "start": 9.915,
+     "end": 10.215
+    },
+    {
+     "w": "why.",
+     "start": 10.215,
+     "end": 10.64
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "In nineteen seventy-six, Alaskans voted to save part of their oil money.",
+   "start": 11.25,
+   "end": 15.125,
+   "words": [
+    {
+     "w": "In",
+     "start": 11.25,
+     "end": 11.337
+    },
+    {
+     "w": "nineteen",
+     "start": 11.337,
+     "end": 11.75
+    },
+    {
+     "w": "seventy-six,",
+     "start": 11.75,
+     "end": 12.475
+    },
+    {
+     "w": "Alaskans",
+     "start": 12.55,
+     "end": 13.075
+    },
+    {
+     "w": "voted",
+     "start": 13.075,
+     "end": 13.4
+    },
+    {
+     "w": "to",
+     "start": 13.4,
+     "end": 13.525
+    },
+    {
+     "w": "save",
+     "start": 13.525,
+     "end": 13.8
+    },
+    {
+     "w": "part",
+     "start": 13.8,
+     "end": 14.037
+    },
+    {
+     "w": "of",
+     "start": 14.037,
+     "end": 14.112
+    },
+    {
+     "w": "their",
+     "start": 14.112,
+     "end": 14.275
+    },
+    {
+     "w": "oil",
+     "start": 14.275,
+     "end": 14.5
+    },
+    {
+     "w": "money.",
+     "start": 14.5,
+     "end": 15.125
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "At least twenty-five percent of oil royalties goes in,",
+   "start": 15.685,
+   "end": 18.435,
+   "words": [
+    {
+     "w": "At",
+     "start": 15.685,
+     "end": 15.797
+    },
+    {
+     "w": "least",
+     "start": 15.797,
+     "end": 16.035
+    },
+    {
+     "w": "twenty-five",
+     "start": 16.035,
+     "end": 16.56
+    },
+    {
+     "w": "percent",
+     "start": 16.56,
+     "end": 16.872
+    },
+    {
+     "w": "of",
+     "start": 16.872,
+     "end": 16.96
+    },
+    {
+     "w": "oil",
+     "start": 16.96,
+     "end": 17.16
+    },
+    {
+     "w": "royalties",
+     "start": 17.16,
+     "end": 17.66
+    },
+    {
+     "w": "goes",
+     "start": 17.66,
+     "end": 17.947
+    },
+    {
+     "w": "in,",
+     "start": 17.947,
+     "end": 18.435
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "to one giant fund, and those savings can only be invested.",
+   "start": 18.895,
+   "end": 21.995,
+   "words": [
+    {
+     "w": "to",
+     "start": 18.895,
+     "end": 19.02
+    },
+    {
+     "w": "one",
+     "start": 19.02,
+     "end": 19.245
+    },
+    {
+     "w": "giant",
+     "start": 19.245,
+     "end": 19.545
+    },
+    {
+     "w": "fund,",
+     "start": 19.545,
+     "end": 19.92
+    },
+    {
+     "w": "and",
+     "start": 19.97,
+     "end": 20.082
+    },
+    {
+     "w": "those",
+     "start": 20.082,
+     "end": 20.245
+    },
+    {
+     "w": "savings",
+     "start": 20.245,
+     "end": 20.67
+    },
+    {
+     "w": "can",
+     "start": 20.67,
+     "end": 20.795
+    },
+    {
+     "w": "only",
+     "start": 20.795,
+     "end": 21.082
+    },
+    {
+     "w": "be",
+     "start": 21.082,
+     "end": 21.207
+    },
+    {
+     "w": "invested.",
+     "start": 21.207,
+     "end": 21.995
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "They invested it, and it just kept growing.",
+   "start": 22.705,
+   "end": 24.83,
+   "words": [
+    {
+     "w": "They",
+     "start": 22.705,
+     "end": 22.855
+    },
+    {
+     "w": "invested",
+     "start": 22.855,
+     "end": 23.33
+    },
+    {
+     "w": "it,",
+     "start": 23.33,
+     "end": 23.455
+    },
+    {
+     "w": "and",
+     "start": 23.492,
+     "end": 23.592
+    },
+    {
+     "w": "it",
+     "start": 23.592,
+     "end": 23.68
+    },
+    {
+     "w": "just",
+     "start": 23.68,
+     "end": 23.855
+    },
+    {
+     "w": "kept",
+     "start": 23.855,
+     "end": 24.13
+    },
+    {
+     "w": "growing.",
+     "start": 24.13,
+     "end": 24.83
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "Now it pays out about three point eight billion dollars a year, for dividends and public services,",
+   "start": 25.54,
+   "end": 30.365,
+   "words": [
+    {
+     "w": "Now",
+     "start": 25.54,
+     "end": 25.727
+    },
+    {
+     "w": "it",
+     "start": 25.727,
+     "end": 25.815
+    },
+    {
+     "w": "pays",
+     "start": 25.815,
+     "end": 26.052
+    },
+    {
+     "w": "out",
+     "start": 26.052,
+     "end": 26.177
+    },
+    {
+     "w": "about",
+     "start": 26.177,
+     "end": 26.477
+    },
+    {
+     "w": "three",
+     "start": 26.477,
+     "end": 26.715
+    },
+    {
+     "w": "point",
+     "start": 26.715,
+     "end": 26.965
+    },
+    {
+     "w": "eight",
+     "start": 26.965,
+     "end": 27.165
+    },
+    {
+     "w": "billion",
+     "start": 27.165,
+     "end": 27.515
+    },
+    {
+     "w": "dollars",
+     "start": 27.515,
+     "end": 27.852
+    },
+    {
+     "w": "a",
+     "start": 27.852,
+     "end": 27.915
+    },
+    {
+     "w": "year,",
+     "start": 27.915,
+     "end": 28.24
+    },
+    {
+     "w": "for",
+     "start": 28.315,
+     "end": 28.44
+    },
+    {
+     "w": "dividends",
+     "start": 28.44,
+     "end": 28.965
+    },
+    {
+     "w": "and",
+     "start": 28.965,
+     "end": 29.09
+    },
+    {
+     "w": "public",
+     "start": 29.09,
+     "end": 29.465
+    },
+    {
+     "w": "services,",
+     "start": 29.465,
+     "end": 30.365
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "and the fund is still growing.",
+   "start": 30.825,
+   "end": 32.325,
+   "words": [
+    {
+     "w": "and",
+     "start": 30.825,
+     "end": 30.912
+    },
+    {
+     "w": "the",
+     "start": 30.912,
+     "end": 31.0
+    },
+    {
+     "w": "fund",
+     "start": 31.0,
+     "end": 31.262
+    },
+    {
+     "w": "is",
+     "start": 31.262,
+     "end": 31.35
+    },
+    {
+     "w": "still",
+     "start": 31.35,
+     "end": 31.625
+    },
+    {
+     "w": "growing.",
+     "start": 31.625,
+     "end": 32.325
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "Alberta went the other way.",
+   "start": 33.035,
+   "end": 34.535,
+   "words": [
+    {
+     "w": "Alberta",
+     "start": 33.035,
+     "end": 33.46
+    },
+    {
+     "w": "went",
+     "start": 33.46,
+     "end": 33.622
+    },
+    {
+     "w": "the",
+     "start": 33.622,
+     "end": 33.697
+    },
+    {
+     "w": "other",
+     "start": 33.697,
+     "end": 33.985
+    },
+    {
+     "w": "way.",
+     "start": 33.985,
+     "end": 34.535
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "i": 11,
+   "text": "It took in about eighteen billion dollars of resource revenue last year alone.",
+   "start": 35.295,
+   "end": 39.17,
+   "words": [
+    {
+     "w": "It",
+     "start": 35.295,
+     "end": 35.395
+    },
+    {
+     "w": "took",
+     "start": 35.395,
+     "end": 35.557
+    },
+    {
+     "w": "in",
+     "start": 35.557,
+     "end": 35.682
+    },
+    {
+     "w": "about",
+     "start": 35.682,
+     "end": 35.97
+    },
+    {
+     "w": "eighteen",
+     "start": 35.97,
+     "end": 36.395
+    },
+    {
+     "w": "billion",
+     "start": 36.395,
+     "end": 36.745
+    },
+    {
+     "w": "dollars",
+     "start": 36.745,
+     "end": 37.107
+    },
+    {
+     "w": "of",
+     "start": 37.107,
+     "end": 37.195
+    },
+    {
+     "w": "resource",
+     "start": 37.195,
+     "end": 37.707
+    },
+    {
+     "w": "revenue",
+     "start": 37.707,
+     "end": 38.02
+    },
+    {
+     "w": "last",
+     "start": 38.02,
+     "end": 38.307
+    },
+    {
+     "w": "year",
+     "start": 38.307,
+     "end": 38.47
+    },
+    {
+     "w": "alone.",
+     "start": 38.47,
+     "end": 39.17
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 12,
+   "text": "The plan back in nineteen seventy-six?",
+   "start": 39.68,
+   "end": 41.755,
+   "words": [
+    {
+     "w": "The",
+     "start": 39.68,
+     "end": 39.755
+    },
+    {
+     "w": "plan",
+     "start": 39.755,
+     "end": 40.08
+    },
+    {
+     "w": "back",
+     "start": 40.08,
+     "end": 40.342
+    },
+    {
+     "w": "in",
+     "start": 40.342,
+     "end": 40.417
+    },
+    {
+     "w": "nineteen",
+     "start": 40.417,
+     "end": 40.83
+    },
+    {
+     "w": "seventy-six?",
+     "start": 40.83,
+     "end": 41.755
+    }
+   ]
+  },
+  {
+   "id": "l13b",
+   "i": 13,
+   "text": "To save thirty cents of every resource dollar.",
+   "start": 42.265,
+   "end": 44.79,
+   "words": [
+    {
+     "w": "To",
+     "start": 42.265,
+     "end": 42.365
+    },
+    {
+     "w": "save",
+     "start": 42.365,
+     "end": 42.64
+    },
+    {
+     "w": "thirty",
+     "start": 42.64,
+     "end": 42.915
+    },
+    {
+     "w": "cents",
+     "start": 42.915,
+     "end": 43.252
+    },
+    {
+     "w": "of",
+     "start": 43.252,
+     "end": 43.377
+    },
+    {
+     "w": "every",
+     "start": 43.377,
+     "end": 43.715
+    },
+    {
+     "w": "resource",
+     "start": 43.715,
+     "end": 44.14
+    },
+    {
+     "w": "dollar.",
+     "start": 44.14,
+     "end": 44.79
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 14,
+   "text": "And here's the twist.",
+   "start": 45.8,
+   "end": 46.9,
+   "words": [
+    {
+     "w": "And",
+     "start": 45.8,
+     "end": 45.925
+    },
+    {
+     "w": "here's",
+     "start": 45.925,
+     "end": 46.212
+    },
+    {
+     "w": "the",
+     "start": 46.212,
+     "end": 46.3
+    },
+    {
+     "w": "twist.",
+     "start": 46.3,
+     "end": 46.9
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 15,
+   "text": "In nineteen eighty-seven, the deposits stopped.",
+   "start": 47.71,
+   "end": 49.91,
+   "words": [
+    {
+     "w": "In",
+     "start": 47.71,
+     "end": 47.797
+    },
+    {
+     "w": "nineteen",
+     "start": 47.797,
+     "end": 48.172
+    },
+    {
+     "w": "eighty-seven,",
+     "start": 48.172,
+     "end": 48.735
+    },
+    {
+     "w": "the",
+     "start": 48.772,
+     "end": 48.847
+    },
+    {
+     "w": "deposits",
+     "start": 48.847,
+     "end": 49.285
+    },
+    {
+     "w": "stopped.",
+     "start": 49.285,
+     "end": 49.91
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "i": 16,
+   "text": "Not one new dollar went in until two thousand six.",
+   "start": 50.37,
+   "end": 53.045,
+   "words": [
+    {
+     "w": "Not",
+     "start": 50.37,
+     "end": 50.545
+    },
+    {
+     "w": "one",
+     "start": 50.545,
+     "end": 50.745
+    },
+    {
+     "w": "new",
+     "start": 50.745,
+     "end": 50.92
+    },
+    {
+     "w": "dollar",
+     "start": 50.92,
+     "end": 51.27
+    },
+    {
+     "w": "went",
+     "start": 51.27,
+     "end": 51.432
+    },
+    {
+     "w": "in",
+     "start": 51.432,
+     "end": 51.607
+    },
+    {
+     "w": "until",
+     "start": 51.607,
+     "end": 51.87
+    },
+    {
+     "w": "two",
+     "start": 51.87,
+     "end": 52.07
+    },
+    {
+     "w": "thousand",
+     "start": 52.07,
+     "end": 52.445
+    },
+    {
+     "w": "six.",
+     "start": 52.445,
+     "end": 53.045
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "i": 17,
+   "text": "Two places.",
+   "start": 53.655,
+   "end": 54.58,
+   "words": [
+    {
+     "w": "Two",
+     "start": 53.655,
+     "end": 53.83
+    },
+    {
+     "w": "places.",
+     "start": 53.83,
+     "end": 54.58
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "i": 18,
+   "text": "Same oil.",
+   "start": 55.04,
+   "end": 55.74,
+   "words": [
+    {
+     "w": "Same",
+     "start": 55.04,
+     "end": 55.29
+    },
+    {
+     "w": "oil.",
+     "start": 55.29,
+     "end": 55.74
+    }
+   ]
+  },
+  {
+   "id": "l19",
+   "i": 19,
+   "text": "[Alaska](/æˈlæskə/) kept saving.",
+   "start": 56.55,
+   "end": 57.875,
+   "words": [
+    {
+     "w": "Alaska",
+     "start": 56.55,
+     "end": 56.925
+    },
+    {
+     "w": "kept",
+     "start": 56.925,
+     "end": 57.2
+    },
+    {
+     "w": "saving.",
+     "start": 57.2,
+     "end": 57.875
+    }
+   ]
+  },
+  {
+   "id": "l20",
+   "i": 20,
+   "text": "Alberta stopped for nineteen years.",
+   "start": 58.485,
+   "end": 60.285,
+   "words": [
+    {
+     "w": "Alberta",
+     "start": 58.485,
+     "end": 58.835
+    },
+    {
+     "w": "stopped",
+     "start": 58.835,
+     "end": 59.135
+    },
+    {
+     "w": "for",
+     "start": 59.135,
+     "end": 59.26
+    },
+    {
+     "w": "nineteen",
+     "start": 59.26,
+     "end": 59.66
+    },
+    {
+     "w": "years.",
+     "start": 59.66,
+     "end": 60.285
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "Risograph zine",
+  "dark": false,
+  "description": "Two spot inks (fluorescent pink + riso blue) on cream stock, misregistration, heavy grain, chunky grotesk. Warm, handmade, playful.",
+  "mood": [
+    "indie pop",
+    "bedroom pop",
+    "lo-fi",
+    "dream pop",
+    "playful",
+    "youthful"
+  ],
+  "palette": {
+    "bg": "#F2E9DA",
+    "bg2": "#E8DCC6",
+    "dim": "#BCAB90",
+    "mid": "#7E705D",
+    "fg": "#1B3F8B",
+    "accent": "#FF4FA3",
+    "hot": "#FF8BC6",
+    "deep": "#C2185B",
+    "rare": "#FFC61A"
+  },
+  "fonts": {
+    "display": {
+      "family": "Bricolage Grotesque",
+      "widths": [
+        75,
+        87.5,
+        100
+      ],
+      "weights": [
+        300,
+        500,
+        700,
+        800
+      ]
+    },
+    "text": {
+      "family": "Fraunces",
+      "weights": [
+        400,
+        600
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "Space Mono",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.15,
+    "bloomThreshold": 1.3,
+    "bloomKnee": 0.2,
+    "halation": 0.0,
+    "ca": 2.4,
+    "grain": 0.085,
+    "vignette": 0.12
+  },
+  "type": {
+    "case": "lower",
+    "tracking": 0
+  },
+  "motif": "dot",
+  "scenes": {
+    "lines": {
+      "hatch": 0.35,
+      "weight": 800
+    },
+    "particles": {
+      "dot": 4
+    },
+    "interlude": {
+      "variant": "flow"
+    }
+  },
+  "idiom": "Only two inks exist: blue (fg) and pink (accent); overlaps read as a third colour. Halftone dots and hatch fields instead of gradients; slight offsets between the two inks (the CA knob is your misregistration). Hand-cut shapes, stickers, stamped words; nothing glows."
+}

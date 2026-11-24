@@ -1,0 +1,148 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .dwrap { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    #root .mbdef { position: absolute; left: 0; top: 0; }
+    #root .doc { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    #root .doc-in { position: absolute; inset: 0; transform-origin: 50% 50%;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.45)) drop-shadow(0 22px 26px rgba(0, 0, 0, 0.42)); }
+    #root .paper { position: absolute; inset: 0; background-color: var(--pc); background-image: url(assets/img/paper-grain.jpg);
+      background-size: 720px; background-blend-mode: multiply; overflow: hidden; }
+    #root .pin { position: absolute; width: 26px; height: 26px; border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #f08a7e 0 14%, #c4342a 34%, #7d1d16 100%);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45); }
+    #root .tape { position: absolute; height: 44px; background: rgba(233, 222, 192, 0.78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
+    #root .ev-head { position: absolute; left: 22px; top: 18px; right: 22px; height: 40px; border-bottom: 2px solid #23211e;
+      font: 600 25px/34px "Roboto Mono", monospace; letter-spacing: 0.06em; color: #23211e; white-space: nowrap; }
+    #root .ev-head b { font-weight: 800; }
+    #root .ev-img { position: absolute; left: 22px; top: 70px; }
+    #root .ev-img img { display: block; width: 100%; height: 100%; }
+    #root .ev-box { position: absolute; border: 6px solid #c14800; border-radius: 4px; }
+    #root .ev-box.under { border: none; border-bottom: 8px solid #c14800; border-radius: 0; }
+    #root .ev-note { position: absolute; padding: 6px 14px; background: #23211e; color: #f6f4ee;
+      font: 700 30px/40px "Roboto Mono", monospace; letter-spacing: 0.06em; white-space: nowrap; }
+    #root .stamp { position: absolute; transform-origin: 50% 50%; opacity: 0; mix-blend-mode: multiply; }
+    #root .stamp-in { position: relative; color: #c4342a; border: 8px solid #c4342a; border-radius: 12px; padding: 16px 30px 10px;
+      outline: 3px solid #c4342a; outline-offset: -18px; font-family: "Playfair Display", serif; font-weight: 900;
+      line-height: 0.98; letter-spacing: 0.06em; text-align: center; white-space: nowrap; display: flex; flex-direction: column; align-items: center;
+      -webkit-mask-image: url(assets/img/stamp-grunge.png); mask-image: url(assets/img/stamp-grunge.png);
+      -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+    #root .stamp-in.ghost { position: absolute; left: 0; top: 0; opacity: 0; }
+    #root .st-s { font: 700 0.22em/1.5 "Roboto Mono", monospace; letter-spacing: 0.16em; }
+    #root .st-w { display: block; padding: 0.04em 0 0.02em; }
+    #root .idx-margin { position: absolute; left: 96px; top: 0; bottom: 0; width: 3px; background: rgba(193, 58, 45, 0.6); }
+    #root .idx { background-image: url(assets/img/paper-grain.jpg),
+      repeating-linear-gradient(to bottom, transparent 0 90px, rgba(70, 110, 160, 0.32) 90px 92px); background-size: 720px, 100% 92px;
+      background-position: 0 0, 0 60px; }
+    #root .idx-head { position: absolute; left: 124px; top: 34px; font: 700 32px/40px "Roboto Mono", monospace; letter-spacing: 0.03em; color: #23211e; }
+    #root .idx-sub { position: absolute; left: 124px; top: 82px; font: italic 400 28px/36px "Libre Baskerville", serif; color: #6b665e; }
+    #root .idx-line { position: absolute; left: 124px; font: 600 46px/60px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #23211e; white-space: pre; }
+    #root .slip-q { position: absolute; font: 600 38px/50px "Roboto Mono", monospace; color: #23211e; white-space: pre; }
+    #root .slip-q.big { font-size: 52px; line-height: 64px; }
+    #root .slip-q.big2 { font-size: 44px; line-height: 54px; }
+    #root .slip-k { position: absolute; font: 700 28px/36px "Roboto Mono", monospace; letter-spacing: 0.04em; color: #6b665e; white-space: pre; }
+    #root .slip-att { position: absolute; font: 500 26px/34px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #6b665e; white-space: nowrap; }
+    #root .hl { position: absolute; height: 44px; background: rgba(255, 205, 60, 0.62); transform-origin: 0 50%; mix-blend-mode: multiply; }
+    #root .dcard { background-image: url(assets/img/paper-grain.jpg), linear-gradient(rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px); background-size: 720px, 64px 64px, 64px 64px; }
+    #root .dc-chrome { position: absolute; left: 44px; top: 40px; font: 600 24px/30px "Inter", sans-serif; letter-spacing: 0.3em; color: #76603a; }
+    #root .dc-tick { display: inline-block; width: 5px; height: 26px; margin-right: 16px; vertical-align: -5px; background: #c14800; }
+    #root .dc-chrome-r { position: absolute; right: 44px; top: 40px; font: 600 24px/30px "Roboto Mono", monospace; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-foot { position: absolute; left: 44px; right: 44px; bottom: 30px; font: 600 20px/26px "Inter", sans-serif; letter-spacing: 0.22em; color: #76603a; }
+    #root .dc-hair { position: relative; height: 2px; margin-top: 10px; background: #d6cab6; }
+    #root .dc-prog { position: absolute; left: 0; top: -1px; height: 4px; background: #c14800; }
+    #root .dc-label { position: absolute; font: 600 28px/34px "Inter", sans-serif; letter-spacing: 0.24em; color: #76603a; white-space: nowrap; }
+    #root .dc-rule { position: absolute; width: 7px; background: #c14800; }
+    #root .dc-mask { position: absolute; overflow: hidden; padding: 0 8px 4px 0; }
+    #root .dc-head { font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1.08; text-transform: uppercase; color: #111010;
+      -webkit-text-stroke: 2.6px #111010; letter-spacing: 0.01em; white-space: nowrap; }
+    #root .orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .dc-num { position: absolute; font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1; color: #c14800;
+      -webkit-text-stroke: 5px #c14800; white-space: nowrap; text-shadow: 3px 3px 0 rgba(90, 34, 6, 0.35); }
+    #root .dc-pre { position: absolute; font: 700 34px/40px "Oswald", sans-serif; letter-spacing: 0.04em; color: #5b5143; }
+    #root .dc-unit { position: absolute; font: 700 56px/60px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .dc-lead { position: absolute; font: 500 36px/44px "Inter", sans-serif; color: #5b5143; white-space: nowrap; }
+    #root .dc-div { position: absolute; height: 3px; background: #c8bead; transform-origin: 0 50%; }
+    #root .dc-div.v { width: 3px; height: auto; }
+    #root .dc-cap { position: absolute; font: 400 28px/36px "Inter", sans-serif; color: #5b5143; }
+    #root .dc-cap.c { text-align: center; font-weight: 600; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-type { position: absolute; font: 700 38px/48px "Roboto Mono", monospace; color: #111010; white-space: pre; }
+    #root .barrow, #root .vbar { position: absolute; }
+    #root .bar-name { font: 700 40px/48px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .bar-val { position: absolute; right: 0; top: -6px; font: 700 54px/60px "Oswald", sans-serif; color: #c14800; }
+    #root .bar-val.grey, #root .bar-fill.grey { color: #948a7b; }
+    #root .bar-track { position: relative; height: 26px; margin-top: 12px; background: #dcd0bc; }
+    #root .bar-track.tall { height: 40px; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c14800; transform-origin: 0 50%; }
+    #root .bar-fill.grey { background: #948a7b; }
+    #root .half { position: absolute; left: 50%; top: -10px; bottom: -10px; width: 3px; background: #111010; }
+    #root .half-l { position: absolute; left: 50%; top: 56px; transform: translateX(-50%); font: 600 22px/26px "Inter", sans-serif; letter-spacing: 0.2em; color: #5b5143; }
+    #root .age { position: absolute; font: 700 170px/1 "Oswald", sans-serif; color: #111010; -webkit-text-stroke: 4px #111010; }
+    #root .dc-mask .age { position: relative; }
+    #root .age.orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .strike { position: absolute; left: -8px; right: -8px; top: 50%; height: 12px; background: #c14800; transform-origin: 0 50%; }
+    #root .seat { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #d6cab6; }
+    #root .majority { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .majority line { stroke: #111010; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .maj-l { position: absolute; font: 700 44px/50px "Oswald", sans-serif; color: #111010; }
+    #root .mrow { position: absolute; left: 0; right: 0; height: 60px; }
+    #root .mcell { position: absolute; top: 0; width: 82px; height: 60px; background: #d6cab6; }
+    #root .gtag .doc-in { filter: none; }
+    #root .tag-in { display: flex; flex-direction: column; justify-content: center; padding: 0 22px; background: rgba(7, 24, 37, 0.9);
+      border: 1.5px solid rgba(234, 246, 255, 0.28); border-radius: 8px; }
+    #root .tag-a { font: 700 36px/44px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #eaf6ff; white-space: nowrap; }
+    #root .tag-b { font: 400 32px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .tag-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #ff6b1a; margin-right: 14px; vertical-align: 2px; }
+    #root .thread { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .thread line { stroke: #c4342a; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .arr { position: absolute; left: 0; top: 72px; width: 1920px; }
+    #root .arr-in { display: flex; align-items: center; gap: 22px; height: 64px; padding: 0 64px; background: rgba(5, 15, 25, 0.8);
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.14); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .arr-id { color: #9fb8cc; }
+    #root .arr-title { font: 800 34px/40px "Inter", sans-serif; letter-spacing: -0.01em; color: #eaf6ff; }
+    #root .arr-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 34px; color: #eaf6ff; }
+    #root .arr-status { margin-left: auto; display: flex; align-items: center; gap: 16px; letter-spacing: 0.06em; }
+    #root .chip { display: inline-block; height: 44px; overflow: hidden; border-radius: 6px; background: #ff6b1a; color: #140700; padding: 0 16px; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 44px; font: 700 30px/44px "IBM Plex Mono", monospace; letter-spacing: 0.04em; white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="stop-israel" data-width="1920" data-height="1080">
+    <svg class="mbdef" width="0" height="0"><filter id="il-mb" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur id="il-mbg" stdDeviation="0 0" /></filter></svg>
+    <div class="dwrap" id="il-drot" data-layout-allow-overflow><div class="dwrap" id="il-dblur" data-layout-allow-overflow><div class="dwrap" id="il-desk" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="doc gtag" id="il-tag" data-layout-allow-overflow style="width:640px; height:112px;"><div class="doc-in tag-in tag-r" id="il-tag-in"><div class="tag-a"><span class="tag-dot"></span>JERUSALEM</div><div class="tag-b">31.8°N 35.2°E</div></div></div>
+    <div class="doc" id="il-clip" data-layout-allow-overflow data-layout-allow-overlap style="width:1044px; height:675px;"><div class="doc-in" id="il-clip-in"><div class="paper clipdoc" style="--pc:#f6f4ee; clip-path: polygon(0.0px 0.0px, 26.1px 0.0px, 52.2px 0.0px, 78.3px 0.0px, 104.4px 0.0px, 130.5px 0.0px, 156.6px 0.0px, 182.7px 0.0px, 208.8px 0.0px, 234.9px 0.0px, 261.0px 0.0px, 287.1px 0.0px, 313.2px 0.0px, 339.3px 0.0px, 365.4px 0.0px, 391.5px 0.0px, 417.6px 0.0px, 443.7px 0.0px, 469.8px 0.0px, 495.9px 0.0px, 522.0px 0.0px, 548.1px 0.0px, 574.2px 0.0px, 600.3px 0.0px, 626.4px 0.0px, 652.5px 0.0px, 678.6px 0.0px, 704.7px 0.0px, 730.8px 0.0px, 756.9px 0.0px, 783.0px 0.0px, 809.1px 0.0px, 835.2px 0.0px, 861.3px 0.0px, 887.4px 0.0px, 913.5px 0.0px, 939.6px 0.0px, 965.7px 0.0px, 991.8px 0.0px, 1017.9px 0.0px, 1044.0px 0.0px, 1044.0px 27.0px, 1044.0px 54.0px, 1044.0px 81.0px, 1044.0px 108.0px, 1044.0px 135.0px, 1044.0px 162.0px, 1044.0px 189.0px, 1044.0px 216.0px, 1044.0px 243.0px, 1044.0px 270.0px, 1044.0px 297.0px, 1044.0px 324.0px, 1044.0px 351.0px, 1044.0px 378.0px, 1044.0px 405.0px, 1044.0px 432.0px, 1044.0px 459.0px, 1044.0px 486.0px, 1044.0px 513.0px, 1044.0px 540.0px, 1044.0px 567.0px, 1044.0px 594.0px, 1044.0px 621.0px, 1044.0px 648.0px, 1044.0px 675.0px, 1017.9px 666.2px, 991.8px 667.4px, 965.7px 670.9px, 939.6px 674.6px, 913.5px 667.7px, 887.4px 667.4px, 861.3px 668.9px, 835.2px 675.5px, 809.1px 667.9px, 783.0px 675.3px, 756.9px 674.3px, 730.8px 667.7px, 704.7px 672.7px, 678.6px 671.6px, 652.5px 671.2px, 626.4px 678.6px, 600.3px 667.2px, 574.2px 666.3px, 548.1px 677.8px, 522.0px 671.1px, 495.9px 668.5px, 469.8px 670.2px, 443.7px 670.6px, 417.6px 678.0px, 391.5px 668.7px, 365.4px 668.7px, 339.3px 673.4px, 313.2px 672.9px, 287.1px 678.0px, 261.0px 676.6px, 234.9px 670.5px, 208.8px 668.6px, 182.7px 676.5px, 156.6px 678.5px, 130.5px 666.4px, 104.4px 675.3px, 78.3px 676.9px, 52.2px 674.2px, 26.1px 668.8px, 0.0px 675.0px, 0.0px 648.0px, 0.0px 621.0px, 0.0px 594.0px, 0.0px 567.0px, 0.0px 540.0px, 0.0px 513.0px, 0.0px 486.0px, 0.0px 459.0px, 0.0px 432.0px, 0.0px 405.0px, 0.0px 378.0px, 0.0px 351.0px, 0.0px 324.0px, 0.0px 297.0px, 0.0px 270.0px, 0.0px 243.0px, 0.0px 216.0px, 0.0px 189.0px, 0.0px 162.0px, 0.0px 135.0px, 0.0px 108.0px, 0.0px 81.0px, 0.0px 54.0px, 0.0px 27.0px);"><div class="ev-head"><span>EVIDENCE</span> · <b>CNN</b> · <span>27 OCT 2026</span></div><div class="ev-img" style="width:1000px; height:571px;"><img src="assets/evidence/israel.png" alt="CNN analysis, 27 Oct 2026" /><div class="ev-box" id="il-box" style="left:2.82%; top:21.89%; width:97.07%; height:9.58%;"></div></div></div><div class="pin" style="left:509.0px; top:9px;"></div><div class="tape" style="left:-28px; top:418.5px; width:130px; transform: rotate(-62deg);"></div></div></div>
+    <div class="doc" id="il-data" data-layout-allow-overflow data-layout-allow-overlap style="width:1150px; height:830px;"><div class="doc-in" id="il-data-in"><div class="paper dcard" style="--pc:#ebe2d3; clip-path: polygon(0.0px 0.0px, 26.1px 0.0px, 52.3px 0.0px, 78.4px 0.0px, 104.5px 0.0px, 130.7px 0.0px, 156.8px 0.0px, 183.0px 0.0px, 209.1px 0.0px, 235.2px 0.0px, 261.4px 0.0px, 287.5px 0.0px, 313.6px 0.0px, 339.8px 0.0px, 365.9px 0.0px, 392.0px 0.0px, 418.2px 0.0px, 444.3px 0.0px, 470.5px 0.0px, 496.6px 0.0px, 522.7px 0.0px, 548.9px 0.0px, 575.0px 0.0px, 601.1px 0.0px, 627.3px 0.0px, 653.4px 0.0px, 679.5px 0.0px, 705.7px 0.0px, 731.8px 0.0px, 758.0px 0.0px, 784.1px 0.0px, 810.2px 0.0px, 836.4px 0.0px, 862.5px 0.0px, 888.6px 0.0px, 914.8px 0.0px, 940.9px 0.0px, 967.0px 0.0px, 993.2px 0.0px, 1019.3px 0.0px, 1045.5px 0.0px, 1071.6px 0.0px, 1097.7px 0.0px, 1123.9px 0.0px, 1150.0px 0.0px, 1150.0px 26.8px, 1150.0px 53.5px, 1150.0px 80.3px, 1150.0px 107.1px, 1150.0px 133.9px, 1150.0px 160.6px, 1150.0px 187.4px, 1150.0px 214.2px, 1150.0px 241.0px, 1150.0px 267.7px, 1150.0px 294.5px, 1150.0px 321.3px, 1150.0px 348.1px, 1150.0px 374.8px, 1150.0px 401.6px, 1150.0px 428.4px, 1150.0px 455.2px, 1150.0px 481.9px, 1150.0px 508.7px, 1150.0px 535.5px, 1150.0px 562.3px, 1150.0px 589.0px, 1150.0px 615.8px, 1150.0px 642.6px, 1150.0px 669.4px, 1150.0px 696.1px, 1150.0px 722.9px, 1150.0px 749.7px, 1150.0px 776.5px, 1150.0px 803.2px, 1150.0px 830.0px, 1123.9px 830.0px, 1097.7px 830.0px, 1071.6px 830.0px, 1045.5px 830.0px, 1019.3px 830.0px, 993.2px 830.0px, 967.0px 830.0px, 940.9px 830.0px, 914.8px 830.0px, 888.6px 830.0px, 862.5px 830.0px, 836.4px 830.0px, 810.2px 830.0px, 784.1px 830.0px, 758.0px 830.0px, 731.8px 830.0px, 705.7px 830.0px, 679.5px 830.0px, 653.4px 830.0px, 627.3px 830.0px, 601.1px 830.0px, 575.0px 830.0px, 548.9px 830.0px, 522.7px 830.0px, 496.6px 830.0px, 470.5px 830.0px, 444.3px 830.0px, 418.2px 830.0px, 392.0px 830.0px, 365.9px 830.0px, 339.8px 830.0px, 313.6px 830.0px, 287.5px 830.0px, 261.4px 830.0px, 235.2px 830.0px, 209.1px 830.0px, 183.0px 830.0px, 156.8px 830.0px, 130.7px 830.0px, 104.5px 830.0px, 78.4px 830.0px, 52.3px 830.0px, 26.1px 830.0px, 0.0px 830.0px, 0.0px 803.2px, 0.0px 776.5px, 0.0px 749.7px, 0.0px 722.9px, 0.0px 696.1px, 0.0px 669.4px, 0.0px 642.6px, 0.0px 615.8px, 0.0px 589.0px, 0.0px 562.3px, 0.0px 535.5px, 0.0px 508.7px, 0.0px 481.9px, 0.0px 455.2px, 0.0px 428.4px, 0.0px 401.6px, 0.0px 374.8px, 0.0px 348.1px, 0.0px 321.3px, 0.0px 294.5px, 0.0px 267.7px, 0.0px 241.0px, 0.0px 214.2px, 0.0px 187.4px, 0.0px 160.6px, 0.0px 133.9px, 0.0px 107.1px, 0.0px 80.3px, 0.0px 53.5px, 0.0px 26.8px);"><div class="dc-chrome"><span class="dc-tick"></span>IN-FLIGHT BRIEFING</div><div class="dc-chrome-r">STOP 03 / 06</div><div class="dc-foot" data-layout-ignore><span>SOURCE / CNN · NBC · 27 OCT 2026</span><div class="dc-hair"><div class="dc-prog" style="width:50.0%"></div></div></div><div class="dc-label" style="left:64px; top:112px;">KNESSET · 120 SEATS</div><div class="dc-mask" style="left:64px; top:150px;"><div class="dc-head" id="il-h1" style="font-size:76px;">TO GOVERN: <span class="orange">61</span></div></div><div class="seat s52" style="left:142.7px; top:653.5px;"></div><div class="seat s52" style="left:188.7px; top:653.5px;"></div><div class="seat s52" style="left:234.8px; top:653.6px;"></div><div class="seat s52" style="left:281.1px; top:652.4px;"></div><div class="seat s52" style="left:327.3px; top:652.3px;"></div><div class="seat s52" style="left:373.6px; top:652.2px;"></div><div class="seat s52" style="left:147.9px; top:606.6px;"></div><div class="seat s52" style="left:194.6px; top:606.9px;"></div><div class="seat s52" style="left:241.5px; top:607.3px;"></div><div class="seat s52" style="left:289.6px; top:604.0px;"></div><div class="seat s52" style="left:158.4px; top:560.7px;"></div><div class="seat s52" style="left:337.6px; top:604.1px;"></div><div class="seat s52" style="left:206.3px; top:561.4px;"></div><div class="seat s52" style="left:254.7px; top:562.4px;"></div><div class="seat s52" style="left:386.5px; top:604.3px;"></div><div class="seat s52" style="left:174.0px; top:516.3px;"></div><div class="seat s52" style="left:306.4px; top:557.8px;"></div><div class="seat s52" style="left:223.6px; top:517.8px;"></div><div class="seat s52" style="left:274.1px; top:519.8px;"></div><div class="seat s52" style="left:194.4px; top:473.8px;"></div><div class="seat s52" style="left:357.6px; top:559.0px;"></div><div class="seat s52" style="left:246.2px; top:476.6px;"></div><div class="seat s52" style="left:331.0px; top:515.3px;"></div><div class="seat s52" style="left:219.5px; top:434.0px;"></div><div class="seat s52" style="left:299.4px; top:480.4px;"></div><div class="seat s52" style="left:411.3px; top:561.3px;"></div><div class="seat s52" style="left:273.8px; top:438.6px;"></div><div class="seat s52" style="left:248.8px; top:397.1px;"></div><div class="seat s52" style="left:386.6px; top:519.1px;"></div><div class="seat s52" style="left:362.6px; top:477.6px;"></div><div class="seat s52" style="left:330.1px; top:445.1px;"></div><div class="seat s52" style="left:306.0px; top:404.4px;"></div><div class="seat s52" style="left:282.1px; top:363.8px;"></div><div class="seat s52" style="left:446.3px; top:526.3px;"></div><div class="seat s52" style="left:365.4px; top:414.4px;"></div><div class="seat s52" style="left:423.3px; top:486.1px;"></div><div class="seat s52" style="left:342.2px; top:374.4px;"></div><div class="seat s52" style="left:319.0px; top:334.5px;"></div><div class="seat s52" style="left:400.3px; top:446.0px;"></div><div class="seat s52" style="left:358.8px; top:309.4px;"></div><div class="seat s52" style="left:381.8px; top:349.3px;"></div><div class="seat s52" style="left:404.8px; top:389.1px;"></div><div class="seat s52" style="left:442.8px; top:421.4px;"></div><div class="seat s52" style="left:466.0px; top:461.4px;"></div><div class="seat s52" style="left:489.3px; top:501.5px;"></div><div class="seat s52" style="left:401.3px; top:289.0px;"></div><div class="seat s52" style="left:424.3px; top:329.3px;"></div><div class="seat s52" style="left:447.4px; top:369.7px;"></div><div class="seat s52" style="left:445.7px; top:273.4px;"></div><div class="seat s52" style="left:489.0px; top:404.6px;"></div><div class="seat s52" style="left:469.0px; top:314.7px;"></div><div class="seat s52" style="left:492.3px; top:356.5px;"></div><div class="seat" style="left:512.9px; top:446.2px;"></div><div class="seat" style="left:491.6px; top:262.9px;"></div><div class="seat" style="left:537.2px; top:488.6px;"></div><div class="seat" style="left:515.1px; top:305.9px;"></div><div class="seat" style="left:537.4px; top:396.1px;"></div><div class="seat" style="left:538.6px; top:349.8px;"></div><div class="seat" style="left:538.5px; top:257.7px;"></div><div class="seat" style="left:562.0px; top:441.0px;"></div><div class="seat" style="left:562.0px; top:303.0px;"></div><div class="seat" style="left:585.5px; top:257.7px;"></div><div class="seat" style="left:585.4px; top:349.8px;"></div><div class="seat" style="left:586.6px; top:396.1px;"></div><div class="seat" style="left:608.9px; top:305.9px;"></div><div class="seat" style="left:586.8px; top:488.6px;"></div><div class="seat" style="left:632.4px; top:262.9px;"></div><div class="seat" style="left:611.1px; top:446.2px;"></div><div class="seat" style="left:631.7px; top:356.5px;"></div><div class="seat" style="left:655.0px; top:314.7px;"></div><div class="seat" style="left:635.0px; top:404.6px;"></div><div class="seat" style="left:678.3px; top:273.4px;"></div><div class="seat" style="left:676.6px; top:369.7px;"></div><div class="seat" style="left:699.7px; top:329.3px;"></div><div class="seat" style="left:634.7px; top:501.5px;"></div><div class="seat" style="left:722.7px; top:289.0px;"></div><div class="seat" style="left:658.0px; top:461.4px;"></div><div class="seat" style="left:681.2px; top:421.4px;"></div><div class="seat" style="left:719.2px; top:389.1px;"></div><div class="seat" style="left:742.2px; top:349.3px;"></div><div class="seat" style="left:765.2px; top:309.4px;"></div><div class="seat" style="left:723.7px; top:446.0px;"></div><div class="seat" style="left:805.0px; top:334.5px;"></div><div class="seat" style="left:700.7px; top:486.1px;"></div><div class="seat" style="left:781.8px; top:374.4px;"></div><div class="seat" style="left:758.6px; top:414.4px;"></div><div class="seat" style="left:677.7px; top:526.3px;"></div><div class="seat" style="left:841.9px; top:363.8px;"></div><div class="seat" style="left:818.0px; top:404.4px;"></div><div class="seat" style="left:761.4px; top:477.6px;"></div><div class="seat" style="left:793.9px; top:445.1px;"></div><div class="seat" style="left:737.4px; top:519.1px;"></div><div class="seat" style="left:875.2px; top:397.1px;"></div><div class="seat" style="left:850.2px; top:438.6px;"></div><div class="seat" style="left:712.7px; top:561.3px;"></div><div class="seat" style="left:824.6px; top:480.4px;"></div><div class="seat" style="left:904.5px; top:434.0px;"></div><div class="seat" style="left:793.0px; top:515.3px;"></div><div class="seat" style="left:877.8px; top:476.6px;"></div><div class="seat" style="left:766.4px; top:559.0px;"></div><div class="seat" style="left:929.6px; top:473.8px;"></div><div class="seat" style="left:849.9px; top:519.8px;"></div><div class="seat" style="left:900.4px; top:517.8px;"></div><div class="seat" style="left:817.6px; top:557.8px;"></div><div class="seat" style="left:737.5px; top:604.3px;"></div><div class="seat" style="left:950.0px; top:516.3px;"></div><div class="seat" style="left:869.3px; top:562.4px;"></div><div class="seat" style="left:786.4px; top:604.1px;"></div><div class="seat" style="left:917.7px; top:561.4px;"></div><div class="seat" style="left:965.6px; top:560.7px;"></div><div class="seat" style="left:834.4px; top:604.0px;"></div><div class="seat" style="left:882.5px; top:607.3px;"></div><div class="seat" style="left:929.4px; top:606.9px;"></div><div class="seat" style="left:976.1px; top:606.6px;"></div><div class="seat" style="left:750.4px; top:652.2px;"></div><div class="seat" style="left:796.7px; top:652.3px;"></div><div class="seat" style="left:842.9px; top:652.4px;"></div><div class="seat" style="left:889.2px; top:653.6px;"></div><div class="seat" style="left:935.3px; top:653.5px;"></div><div class="seat" style="left:981.3px; top:653.5px;"></div><svg class="majority" id="il-maj" width="1150" height="830" viewBox="0 0 1150 830"><line x1="577.1" y1="530.0" x2="580.9" y2="238.0" pathLength="1"/></svg><div class="maj-l" id="il-majl" style="left:595px; top:202px;">61</div><div class="dc-num" id="il-num" style="left:440px; top:548px; font-size:150px; width:270px; text-align:center;">0</div><div class="dc-cap c" id="il-cap1" style="left:175px; top:716px; width:800px; white-space:nowrap;">NETANYAHU BLOC · CHANNEL 12 EXIT POLL</div><div class="dc-cap" id="il-cap2" style="left:810px; top:150px; width:300px;">Channels 11 and 13: a 51–51 tie between the blocs</div><div class="stamp" id="il-stamp" style="left:560px; top:400px;"><div class="stamp-in" style="font-size:84px; transform: rotate(-9deg);"><span class="st-s" data-layout-ignore>STATUS · 27 OCT 2026</span><span class="st-w">DELAYED</span><span class="st-s" data-layout-ignore>KNESSET</span></div><div class="stamp-in ghost" style="font-size:84px; transform: rotate(-9deg);"><span class="st-s" data-layout-ignore>STATUS · 27 OCT 2026</span><span class="st-w">DELAYED</span><span class="st-s" data-layout-ignore>KNESSET</span></div></div></div><div class="pin" style="left:562.0px; top:7px;"></div></div></div>
+    <svg class="thread" id="il-thread" width="1920" height="1080" viewBox="0 0 1920 1080" data-layout-allow-overflow><line x1="0" y1="0" x2="0" y2="0" pathLength="1" /></svg>
+    </div></div></div>
+    <div class="arr" id="il-arr"><div class="arr-in" id="il-arr-in"><span class="arr-id">STOP 03</span><span class="arr-title">Israel election</span><span class="arr-meta">31.8°N 35.2°E · Jerusalem</span><span class="arr-status"><span>STATUS</span><span class="chip" id="il-chip" data-layout-allow-overflow><span class="chip-roll" id="il-roll"><span>EN ROUTE</span><span>DELAYED</span></span></span></span></div></div>
+  </div>
+  <script>
+    (function () {
+      const D = window.DESK.mount({"comp": "il", "start": 60.54, "dur": 16.57, "hot": {"lat": 31.78, "lon": 35.22}, "docs": [{"id": "il-tag", "lat": 31.78, "lon": 37.274299, "w": 640, "h": 112, "rot": 0}, {"id": "il-clip", "lat": 34.108415, "lon": 32.823318, "w": 1044, "h": 675, "rot": -1.2}, {"id": "il-data", "lat": 28.578429, "lon": 36.247149, "w": 1150, "h": 830, "rot": 1.2}], "thread": {"doc": "il-clip", "x": 522.0, "y": 22}});
+      const tl = D.tl;
+      // the red thread from the ping to the first document's pin
+      tl.fromTo("#il-thread line", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, D.L(63.140));
+      // arrival strip (screen space): blur in on landing, out at the pull-out
+      tl.fromTo("#il-arr-in", { opacity: 0, filter: "blur(8px)", y: -16 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.3, ease: "expo.out" }, D.L(62.190));
+      tl.to("#il-arr-in", { opacity: 0, filter: "blur(8px)", duration: 0.22, ease: "power2.in" }, D.L(76.660));
+      tl.to("#il-thread line", { strokeDashoffset: -1, duration: 0.3, ease: "power2.in" }, D.L(76.210));
+      D.drop("il-tag-in", 62.490, {from: 1.0, spin: 0});
+      D.drop("il-clip-in", 62.760);
+      D.drop("il-data-in", 62.900);
+      D.box("il-box", 63.190, 0.5);
+      D.rise("il-h1", 65.597);
+      D.tl.fromTo("#il-maj line", {strokeDashoffset: 1}, {strokeDashoffset: 0, duration: 0.5, ease: "power2.out"}, D.L(65.947));
+      D.fade("il-majl", 66.247);
+      D.dots("#il-data .s52", 69.655, 1.400, "#c14800");
+      D.fade("il-num", 69.555);
+      D.count("il-num", 71.105, 0, 52, 1.25);
+      D.fade("il-cap1", 71.105, 0.2);
+      D.fade("il-cap2", 71.730, 0.25);
+      D.stamp("il-stamp", 75.300);
+      D.chip("il-chip", "il-roll", 75.380, 1);
+      window.__timelines["stop-israel"] = tl;
+    })();
+  </script>
+</template>

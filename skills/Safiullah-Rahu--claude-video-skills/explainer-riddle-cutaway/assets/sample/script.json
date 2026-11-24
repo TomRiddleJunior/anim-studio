@@ -1,0 +1,118 @@
+{
+ "voice": "am_eric",
+ "speed": 1.12,
+ "lead": 0.15,
+ "tail": 1.4,
+ "gap": 0.28,
+ "lines": [
+  {
+   "id": "r01",
+   "text": "This man checks into Room 305 every Friday night."
+  },
+  {
+   "id": "r02",
+   "gap": 0.3,
+   "text": "And every night, at exactly 1:12, he picks up the phone and calls the room next door."
+  },
+  {
+   "id": "r03",
+   "gap": 0.3,
+   "text": "He doesn't say a word. He hangs up, and two minutes later he's fast asleep."
+  },
+  {
+   "id": "r04",
+   "gap": 0.6,
+   "text": "Nadia, the night receptionist, sees it light up her switchboard every single Friday, and it's driving her crazy."
+  },
+  {
+   "id": "r05",
+   "gap": 0.6,
+   "text": "Then one Friday, Room 306 is empty, and something strange happens."
+  },
+  {
+   "id": "r06",
+   "gap": 0.3,
+   "text": "At 1:12, he's wide awake in the same bed."
+  },
+  {
+   "id": "r07",
+   "gap": 0.3,
+   "text": "But this time, no call. He just rolls over and sleeps."
+  },
+  {
+   "id": "r08",
+   "gap": 0.35,
+   "text": "Nadia checks the phone. It works fine, and no other guest does this."
+  },
+  {
+   "id": "r09",
+   "gap": 0.3,
+   "text": "So why does he only call when someone is in 306?"
+  },
+  {
+   "id": "r10",
+   "gap": 0.35,
+   "text": "You have ten seconds. Comment your answer now."
+  },
+  {
+   "id": "r11",
+   "text": "Time's up.",
+   "gap": 10.6
+  },
+  {
+   "id": "r12",
+   "gap": 0.6,
+   "text": "One Friday, Nadia takes a late tea up to the third floor, and she hears it right through the wall."
+  },
+  {
+   "id": "r13",
+   "gap": 0.45,
+   "text": "Room 306 snores."
+  },
+  {
+   "id": "r14",
+   "gap": 0.3,
+   "text": "Not a little. Like a chainsaw."
+  },
+  {
+   "id": "r15",
+   "gap": 0.35,
+   "text": "The man in 305 can't sleep through that, so at 1:12 he dials 306."
+  },
+  {
+   "id": "r16",
+   "gap": 0.3,
+   "text": "The phone rings. The snorer wakes up and says, hello?"
+  },
+  {
+   "id": "r17",
+   "gap": 0.4,
+   "text": "Silence. Click."
+  },
+  {
+   "id": "r18",
+   "gap": 0.4,
+   "text": "Now 306 lies awake, wondering who called, and for two quiet minutes, nobody snores."
+  },
+  {
+   "id": "r19",
+   "gap": 0.3,
+   "text": "That's all 305 needs."
+  },
+  {
+   "id": "r20",
+   "gap": 0.6,
+   "text": "Nadia laughs so hard she drops her pen."
+  },
+  {
+   "id": "r21",
+   "gap": 0.35,
+   "text": "Next Friday, she gives 305 a room on the top floor, and the switchboard stays dark."
+  },
+  {
+   "id": "r22",
+   "gap": 0.5,
+   "text": "So, did you get it right? Follow for more."
+  }
+ ]
+}

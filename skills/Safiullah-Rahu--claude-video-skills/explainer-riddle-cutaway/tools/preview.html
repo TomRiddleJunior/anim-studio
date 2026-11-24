@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#333;overflow:hidden} #v{position:fixed;left:0;top:0;height:100vh;width:133.33vh}</style>
+</head><body>
+<canvas id="v" width="1600" height="1200"></canvas>
+<script src="../assets/lib/kit.js"></script>
+<script src="../assets/lib/kit-ext.js"></script>
+<script src="../assets/lib/vo-data.js"></script>
+<script src="../assets/lib/film.js"></script>
+<script>
+const VOD = window.RC_VO;
+const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "").replace(/'/g, "");
+const V = { duration: VOD.duration,
+  L(id) { return VOD.lines[id]; },
+  w(id, word, k) { const h = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word))); if (!h.length) throw new Error("no word " + id + ":" + word); return h[Math.min(k || 0, h.length - 1)][1]; },
+  we(id, word, k) { const h = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word))); return h[Math.min(k || 0, h.length - 1)][2]; } };
+const fc = document.createElement('canvas'); fc.width = 1080; fc.height = 1920;
+const K = RC.create({ canvas: fc, width: 1080, height: 1920 });
+const film = RC_FILM(K, V); K.play(film.shots);
+const words = [];
+function capAt(t) { let c = null; for (const w of words) if (w[1] - 0.03 <= t) c = w; return c ? c[0] : ""; }
+function frame(t) { K.render(t); const c = fc.getContext('2d'); c.setTransform(1,0,0,1,0,0); c.font = '700 44px Arial'; c.textAlign = 'center'; c.fillStyle = '#f3f1ec'; c.shadowColor = 'rgba(0,0,0,.85)'; c.shadowBlur = 8;  c.shadowBlur = 0; return fc; }
+window.sheet = function (ts) { try { return sheet0(ts); } catch (e) { return "ERR " + e.message + " " + (e.stack || "").split(String.fromCharCode(10))[1].slice(-60); } };
+window.sheet0 = function (ts) { const v = document.getElementById('v').getContext('2d'); v.fillStyle = '#333'; v.fillRect(0, 0, 1600, 1200);
+  const n = ts.length, wd = Math.min(1600 / n, 1200 * 1080 / 1920) - 8, ht = wd * 1920 / 1080;
+  ts.forEach((t, i) => { frame(t); v.drawImage(fc, i * (wd + 8), 30, wd, ht); v.fillStyle = '#ffe070'; v.font = '24px Arial'; v.fillText(t.toFixed(2) + 's', i * (wd + 8) + 6, 24); });
+  return film.T; };
+window.zoomv = function (t, x, y, w) { frame(t); const v = document.getElementById('v').getContext('2d'); v.fillStyle = '#333'; v.fillRect(0, 0, 1600, 1200); const h = w * 1200 / 1600; v.drawImage(fc, x, y, w, h, 0, 0, 1600, 1200); };
+window.addEventListener('load', () => { const m = location.hash.match(/t=([0-9.,]+)/); if (m) setTimeout(() => sheet(m[1].split(',').map(Number)), 300); });
+</script></body></html>

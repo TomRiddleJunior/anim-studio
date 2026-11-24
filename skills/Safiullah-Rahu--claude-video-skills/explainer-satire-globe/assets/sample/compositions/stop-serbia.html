@@ -1,0 +1,153 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .dwrap { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    #root .mbdef { position: absolute; left: 0; top: 0; }
+    #root .doc { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    #root .doc-in { position: absolute; inset: 0; transform-origin: 50% 50%;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.45)) drop-shadow(0 22px 26px rgba(0, 0, 0, 0.42)); }
+    #root .paper { position: absolute; inset: 0; background-color: var(--pc); background-image: url(assets/img/paper-grain.jpg);
+      background-size: 720px; background-blend-mode: multiply; overflow: hidden; }
+    #root .pin { position: absolute; width: 26px; height: 26px; border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #f08a7e 0 14%, #c4342a 34%, #7d1d16 100%);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45); }
+    #root .tape { position: absolute; height: 44px; background: rgba(233, 222, 192, 0.78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
+    #root .ev-head { position: absolute; left: 22px; top: 18px; right: 22px; height: 40px; border-bottom: 2px solid #23211e;
+      font: 600 25px/34px "Roboto Mono", monospace; letter-spacing: 0.06em; color: #23211e; white-space: nowrap; }
+    #root .ev-head b { font-weight: 800; }
+    #root .ev-img { position: absolute; left: 22px; top: 70px; }
+    #root .ev-img img { display: block; width: 100%; height: 100%; }
+    #root .ev-box { position: absolute; border: 6px solid #c14800; border-radius: 4px; }
+    #root .ev-box.under { border: none; border-bottom: 8px solid #c14800; border-radius: 0; }
+    #root .ev-note { position: absolute; padding: 6px 14px; background: #23211e; color: #f6f4ee;
+      font: 700 30px/40px "Roboto Mono", monospace; letter-spacing: 0.06em; white-space: nowrap; }
+    #root .stamp { position: absolute; transform-origin: 50% 50%; opacity: 0; mix-blend-mode: multiply; }
+    #root .stamp-in { position: relative; color: #c4342a; border: 8px solid #c4342a; border-radius: 12px; padding: 16px 30px 10px;
+      outline: 3px solid #c4342a; outline-offset: -18px; font-family: "Playfair Display", serif; font-weight: 900;
+      line-height: 0.98; letter-spacing: 0.06em; text-align: center; white-space: nowrap; display: flex; flex-direction: column; align-items: center;
+      -webkit-mask-image: url(assets/img/stamp-grunge.png); mask-image: url(assets/img/stamp-grunge.png);
+      -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+    #root .stamp-in.ghost { position: absolute; left: 0; top: 0; opacity: 0; }
+    #root .st-s { font: 700 0.22em/1.5 "Roboto Mono", monospace; letter-spacing: 0.16em; }
+    #root .st-w { display: block; padding: 0.04em 0 0.02em; }
+    #root .idx-margin { position: absolute; left: 96px; top: 0; bottom: 0; width: 3px; background: rgba(193, 58, 45, 0.6); }
+    #root .idx { background-image: url(assets/img/paper-grain.jpg),
+      repeating-linear-gradient(to bottom, transparent 0 90px, rgba(70, 110, 160, 0.32) 90px 92px); background-size: 720px, 100% 92px;
+      background-position: 0 0, 0 60px; }
+    #root .idx-head { position: absolute; left: 124px; top: 34px; font: 700 32px/40px "Roboto Mono", monospace; letter-spacing: 0.03em; color: #23211e; }
+    #root .idx-sub { position: absolute; left: 124px; top: 82px; font: italic 400 28px/36px "Libre Baskerville", serif; color: #6b665e; }
+    #root .idx-line { position: absolute; left: 124px; font: 600 46px/60px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #23211e; white-space: pre; }
+    #root .slip-q { position: absolute; font: 600 38px/50px "Roboto Mono", monospace; color: #23211e; white-space: pre; }
+    #root .slip-q.big { font-size: 52px; line-height: 64px; }
+    #root .slip-q.big2 { font-size: 44px; line-height: 54px; }
+    #root .slip-k { position: absolute; font: 700 28px/36px "Roboto Mono", monospace; letter-spacing: 0.04em; color: #6b665e; white-space: pre; }
+    #root .slip-att { position: absolute; font: 500 26px/34px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #6b665e; white-space: nowrap; }
+    #root .hl { position: absolute; height: 44px; background: rgba(255, 205, 60, 0.62); transform-origin: 0 50%; mix-blend-mode: multiply; }
+    #root .dcard { background-image: url(assets/img/paper-grain.jpg), linear-gradient(rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px); background-size: 720px, 64px 64px, 64px 64px; }
+    #root .dc-chrome { position: absolute; left: 44px; top: 40px; font: 600 24px/30px "Inter", sans-serif; letter-spacing: 0.3em; color: #76603a; }
+    #root .dc-tick { display: inline-block; width: 5px; height: 26px; margin-right: 16px; vertical-align: -5px; background: #c14800; }
+    #root .dc-chrome-r { position: absolute; right: 44px; top: 40px; font: 600 24px/30px "Roboto Mono", monospace; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-foot { position: absolute; left: 44px; right: 44px; bottom: 30px; font: 600 20px/26px "Inter", sans-serif; letter-spacing: 0.22em; color: #76603a; }
+    #root .dc-hair { position: relative; height: 2px; margin-top: 10px; background: #d6cab6; }
+    #root .dc-prog { position: absolute; left: 0; top: -1px; height: 4px; background: #c14800; }
+    #root .dc-label { position: absolute; font: 600 28px/34px "Inter", sans-serif; letter-spacing: 0.24em; color: #76603a; white-space: nowrap; }
+    #root .dc-rule { position: absolute; width: 7px; background: #c14800; }
+    #root .dc-mask { position: absolute; overflow: hidden; padding: 0 8px 4px 0; }
+    #root .dc-head { font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1.08; text-transform: uppercase; color: #111010;
+      -webkit-text-stroke: 2.6px #111010; letter-spacing: 0.01em; white-space: nowrap; }
+    #root .orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .dc-num { position: absolute; font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1; color: #c14800;
+      -webkit-text-stroke: 5px #c14800; white-space: nowrap; text-shadow: 3px 3px 0 rgba(90, 34, 6, 0.35); }
+    #root .dc-pre { position: absolute; font: 700 34px/40px "Oswald", sans-serif; letter-spacing: 0.04em; color: #5b5143; }
+    #root .dc-unit { position: absolute; font: 700 56px/60px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .dc-lead { position: absolute; font: 500 36px/44px "Inter", sans-serif; color: #5b5143; white-space: nowrap; }
+    #root .dc-div { position: absolute; height: 3px; background: #c8bead; transform-origin: 0 50%; }
+    #root .dc-div.v { width: 3px; height: auto; }
+    #root .dc-cap { position: absolute; font: 400 28px/36px "Inter", sans-serif; color: #5b5143; }
+    #root .dc-cap.c { text-align: center; font-weight: 600; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-type { position: absolute; font: 700 38px/48px "Roboto Mono", monospace; color: #111010; white-space: pre; }
+    #root .barrow, #root .vbar { position: absolute; }
+    #root .bar-name { font: 700 40px/48px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .bar-val { position: absolute; right: 0; top: -6px; font: 700 54px/60px "Oswald", sans-serif; color: #c14800; }
+    #root .bar-val.grey, #root .bar-fill.grey { color: #948a7b; }
+    #root .bar-track { position: relative; height: 26px; margin-top: 12px; background: #dcd0bc; }
+    #root .bar-track.tall { height: 40px; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c14800; transform-origin: 0 50%; }
+    #root .bar-fill.grey { background: #948a7b; }
+    #root .half { position: absolute; left: 50%; top: -10px; bottom: -10px; width: 3px; background: #111010; }
+    #root .half-l { position: absolute; left: 50%; top: 56px; transform: translateX(-50%); font: 600 22px/26px "Inter", sans-serif; letter-spacing: 0.2em; color: #5b5143; }
+    #root .age { position: absolute; font: 700 170px/1 "Oswald", sans-serif; color: #111010; -webkit-text-stroke: 4px #111010; }
+    #root .dc-mask .age { position: relative; }
+    #root .age.orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .strike { position: absolute; left: -8px; right: -8px; top: 50%; height: 12px; background: #c14800; transform-origin: 0 50%; }
+    #root .seat { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #d6cab6; }
+    #root .majority { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .majority line { stroke: #111010; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .maj-l { position: absolute; font: 700 44px/50px "Oswald", sans-serif; color: #111010; }
+    #root .mrow { position: absolute; left: 0; right: 0; height: 60px; }
+    #root .mcell { position: absolute; top: 0; width: 82px; height: 60px; background: #d6cab6; }
+    #root .gtag .doc-in { filter: none; }
+    #root .tag-in { display: flex; flex-direction: column; justify-content: center; padding: 0 22px; background: rgba(7, 24, 37, 0.9);
+      border: 1.5px solid rgba(234, 246, 255, 0.28); border-radius: 8px; }
+    #root .tag-a { font: 700 36px/44px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #eaf6ff; white-space: nowrap; }
+    #root .tag-b { font: 400 32px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .tag-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #ff6b1a; margin-right: 14px; vertical-align: 2px; }
+    #root .thread { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .thread line { stroke: #c4342a; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .arr { position: absolute; left: 0; top: 72px; width: 1920px; }
+    #root .arr-in { display: flex; align-items: center; gap: 22px; height: 64px; padding: 0 64px; background: rgba(5, 15, 25, 0.8);
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.14); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .arr-id { color: #9fb8cc; }
+    #root .arr-title { font: 800 34px/40px "Inter", sans-serif; letter-spacing: -0.01em; color: #eaf6ff; }
+    #root .arr-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 34px; color: #eaf6ff; }
+    #root .arr-status { margin-left: auto; display: flex; align-items: center; gap: 16px; letter-spacing: 0.06em; }
+    #root .chip { display: inline-block; height: 44px; overflow: hidden; border-radius: 6px; background: #ff6b1a; color: #140700; padding: 0 16px; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 44px; font: 700 30px/44px "IBM Plex Mono", monospace; letter-spacing: 0.04em; white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="stop-serbia" data-width="1920" data-height="1080">
+    <svg class="mbdef" width="0" height="0"><filter id="rs-mb" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur id="rs-mbg" stdDeviation="0 0" /></filter></svg>
+    <div class="dwrap" id="rs-drot" data-layout-allow-overflow><div class="dwrap" id="rs-dblur" data-layout-allow-overflow><div class="dwrap" id="rs-desk" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="doc gtag" id="rs-tag" data-layout-allow-overflow style="width:640px; height:112px;"><div class="doc-in tag-in tag-r" id="rs-tag-in"><div class="tag-a"><span class="tag-dot"></span>BELGRADE</div><div class="tag-b">44.8°N 20.5°E</div></div></div>
+    <div class="doc" id="rs-clip" data-layout-allow-overflow data-layout-allow-overlap style="width:864px; height:873px;"><div class="doc-in" id="rs-clip-in"><div class="paper clipdoc" style="--pc:#f6f4ee; clip-path: polygon(0.0px 0.0px, 26.2px 0.0px, 52.4px 0.0px, 78.5px 0.0px, 104.7px 0.0px, 130.9px 0.0px, 157.1px 0.0px, 183.3px 0.0px, 209.5px 0.0px, 235.6px 0.0px, 261.8px 0.0px, 288.0px 0.0px, 314.2px 0.0px, 340.4px 0.0px, 366.5px 0.0px, 392.7px 0.0px, 418.9px 0.0px, 445.1px 0.0px, 471.3px 0.0px, 497.5px 0.0px, 523.6px 0.0px, 549.8px 0.0px, 576.0px 0.0px, 602.2px 0.0px, 628.4px 0.0px, 654.5px 0.0px, 680.7px 0.0px, 706.9px 0.0px, 733.1px 0.0px, 759.3px 0.0px, 785.5px 0.0px, 811.6px 0.0px, 837.8px 0.0px, 864.0px 0.0px, 864.0px 26.5px, 864.0px 52.9px, 864.0px 79.4px, 864.0px 105.8px, 864.0px 132.3px, 864.0px 158.7px, 864.0px 185.2px, 864.0px 211.6px, 864.0px 238.1px, 864.0px 264.5px, 864.0px 291.0px, 864.0px 317.5px, 864.0px 343.9px, 864.0px 370.4px, 864.0px 396.8px, 864.0px 423.3px, 864.0px 449.7px, 864.0px 476.2px, 864.0px 502.6px, 864.0px 529.1px, 864.0px 555.5px, 864.0px 582.0px, 864.0px 608.5px, 864.0px 634.9px, 864.0px 661.4px, 864.0px 687.8px, 864.0px 714.3px, 864.0px 740.7px, 864.0px 767.2px, 864.0px 793.6px, 864.0px 820.1px, 864.0px 846.5px, 864.0px 873.0px, 837.8px 867.1px, 811.6px 870.3px, 785.5px 866.0px, 759.3px 874.3px, 733.1px 866.9px, 706.9px 871.0px, 680.7px 875.7px, 654.5px 869.0px, 628.4px 876.2px, 602.2px 873.2px, 576.0px 870.9px, 549.8px 871.9px, 523.6px 871.4px, 497.5px 868.5px, 471.3px 876.6px, 445.1px 869.1px, 418.9px 876.4px, 392.7px 874.7px, 366.5px 864.4px, 340.4px 867.3px, 314.2px 870.0px, 288.0px 874.3px, 261.8px 866.2px, 235.6px 871.8px, 209.5px 868.6px, 183.3px 873.9px, 157.1px 875.7px, 130.9px 873.6px, 104.7px 866.4px, 78.5px 873.6px, 52.4px 869.5px, 26.2px 874.5px, 0.0px 873.0px, 0.0px 846.5px, 0.0px 820.1px, 0.0px 793.6px, 0.0px 767.2px, 0.0px 740.7px, 0.0px 714.3px, 0.0px 687.8px, 0.0px 661.4px, 0.0px 634.9px, 0.0px 608.5px, 0.0px 582.0px, 0.0px 555.5px, 0.0px 529.1px, 0.0px 502.6px, 0.0px 476.2px, 0.0px 449.7px, 0.0px 423.3px, 0.0px 396.8px, 0.0px 370.4px, 0.0px 343.9px, 0.0px 317.5px, 0.0px 291.0px, 0.0px 264.5px, 0.0px 238.1px, 0.0px 211.6px, 0.0px 185.2px, 0.0px 158.7px, 0.0px 132.3px, 0.0px 105.8px, 0.0px 79.4px, 0.0px 52.9px, 0.0px 26.5px);"><div class="ev-head"><span>EVIDENCE</span> · <b>EURONEWS</b> · <span>25 OCT 2026</span></div><div class="ev-img" style="width:820px; height:769px;"><img src="assets/evidence/serbia.png" alt="Euronews story, 25 Oct 2026" /><div class="ev-box" id="rs-box" style="left:31.70%; top:19.05%; width:52.23%; height:7.73%;"></div></div></div><div class="pin" style="left:419.0px; top:9px;"></div><div class="tape" style="left:-28px; top:541.26px; width:130px; transform: rotate(-62deg);"></div></div></div>
+    <div class="doc" id="rs-data" data-layout-allow-overflow data-layout-allow-overlap style="width:1150px; height:700px;"><div class="doc-in" id="rs-data-in"><div class="paper dcard" style="--pc:#ebe2d3; clip-path: polygon(0.0px 0.0px, 26.1px 0.0px, 52.3px 0.0px, 78.4px 0.0px, 104.5px 0.0px, 130.7px 0.0px, 156.8px 0.0px, 183.0px 0.0px, 209.1px 0.0px, 235.2px 0.0px, 261.4px 0.0px, 287.5px 0.0px, 313.6px 0.0px, 339.8px 0.0px, 365.9px 0.0px, 392.0px 0.0px, 418.2px 0.0px, 444.3px 0.0px, 470.5px 0.0px, 496.6px 0.0px, 522.7px 0.0px, 548.9px 0.0px, 575.0px 0.0px, 601.1px 0.0px, 627.3px 0.0px, 653.4px 0.0px, 679.5px 0.0px, 705.7px 0.0px, 731.8px 0.0px, 758.0px 0.0px, 784.1px 0.0px, 810.2px 0.0px, 836.4px 0.0px, 862.5px 0.0px, 888.6px 0.0px, 914.8px 0.0px, 940.9px 0.0px, 967.0px 0.0px, 993.2px 0.0px, 1019.3px 0.0px, 1045.5px 0.0px, 1071.6px 0.0px, 1097.7px 0.0px, 1123.9px 0.0px, 1150.0px 0.0px, 1150.0px 26.9px, 1150.0px 53.8px, 1150.0px 80.8px, 1150.0px 107.7px, 1150.0px 134.6px, 1150.0px 161.5px, 1150.0px 188.5px, 1150.0px 215.4px, 1150.0px 242.3px, 1150.0px 269.2px, 1150.0px 296.2px, 1150.0px 323.1px, 1150.0px 350.0px, 1150.0px 376.9px, 1150.0px 403.8px, 1150.0px 430.8px, 1150.0px 457.7px, 1150.0px 484.6px, 1150.0px 511.5px, 1150.0px 538.5px, 1150.0px 565.4px, 1150.0px 592.3px, 1150.0px 619.2px, 1150.0px 646.2px, 1150.0px 673.1px, 1150.0px 700.0px, 1123.9px 700.0px, 1097.7px 700.0px, 1071.6px 700.0px, 1045.5px 700.0px, 1019.3px 700.0px, 993.2px 700.0px, 967.0px 700.0px, 940.9px 700.0px, 914.8px 700.0px, 888.6px 700.0px, 862.5px 700.0px, 836.4px 700.0px, 810.2px 700.0px, 784.1px 700.0px, 758.0px 700.0px, 731.8px 700.0px, 705.7px 700.0px, 679.5px 700.0px, 653.4px 700.0px, 627.3px 700.0px, 601.1px 700.0px, 575.0px 700.0px, 548.9px 700.0px, 522.7px 700.0px, 496.6px 700.0px, 470.5px 700.0px, 444.3px 700.0px, 418.2px 700.0px, 392.0px 700.0px, 365.9px 700.0px, 339.8px 700.0px, 313.6px 700.0px, 287.5px 700.0px, 261.4px 700.0px, 235.2px 700.0px, 209.1px 700.0px, 183.0px 700.0px, 156.8px 700.0px, 130.7px 700.0px, 104.5px 700.0px, 78.4px 700.0px, 52.3px 700.0px, 26.1px 700.0px, 0.0px 700.0px, 0.0px 673.1px, 0.0px 646.2px, 0.0px 619.2px, 0.0px 592.3px, 0.0px 565.4px, 0.0px 538.5px, 0.0px 511.5px, 0.0px 484.6px, 0.0px 457.7px, 0.0px 430.8px, 0.0px 403.8px, 0.0px 376.9px, 0.0px 350.0px, 0.0px 323.1px, 0.0px 296.2px, 0.0px 269.2px, 0.0px 242.3px, 0.0px 215.4px, 0.0px 188.5px, 0.0px 161.5px, 0.0px 134.6px, 0.0px 107.7px, 0.0px 80.8px, 0.0px 53.8px, 0.0px 26.9px);"><div class="dc-chrome"><span class="dc-tick"></span>IN-FLIGHT BRIEFING</div><div class="dc-chrome-r">STOP 05 / 06</div><div class="dc-foot" data-layout-ignore><span>SOURCE / AL JAZEERA · EURONEWS · 25 OCT 2026</span><div class="dc-hair"><div class="dc-prog" style="width:83.3%"></div></div></div><div class="dc-label" style="left:64px; top:112px;">SERBIA · PARLIAMENT · 25 OCT</div><div class="dc-mask" style="left:64px; top:150px;"><div class="dc-head" id="rs-h1" style="font-size:78px;">VOTES, BY VUČIĆ’S OWN COUNT</div></div><div class="barrow wide" style="left:70px; top:290px; width:1010px;"><div class="bar-name">STUDENT LIST</div><div class="bar-val" id="rs-v0">≈0.0M</div><div class="bar-track tall"><div class="bar-fill" id="rs-b0" style="width:100%"></div></div></div><div class="barrow wide" style="left:70px; top:440px; width:1010px;"><div class="bar-name">VUČIĆ’S PARTY</div><div class="bar-val grey" id="rs-v1">≈0.0M</div><div class="bar-track tall"><div class="bar-fill grey" id="rs-b1" style="width:77.3%"></div></div></div><div class="dc-cap" id="rs-cap" style="left:72px; top:590px; width:980px;">Approximate figures, as given by Aleksandar Vučić · Al Jazeera</div><div class="stamp" id="rs-stamp" style="left:450px; top:286px;"><div class="stamp-in" style="font-size:82px; transform: rotate(-7deg);"><span class="st-s" data-layout-ignore>STATUS · 25 OCT 2026</span><span class="st-w">CONCEDED</span><span class="st-s" data-layout-ignore>BELGRADE</span></div><div class="stamp-in ghost" style="font-size:82px; transform: rotate(-7deg);"><span class="st-s" data-layout-ignore>STATUS · 25 OCT 2026</span><span class="st-w">CONCEDED</span><span class="st-s" data-layout-ignore>BELGRADE</span></div></div></div><div class="pin" style="left:562.0px; top:7px;"></div></div></div>
+    <div class="doc" id="rs-slip" data-layout-allow-overflow data-layout-allow-overlap style="width:1040px; height:284px;"><div class="doc-in" id="rs-slip-in"><div class="paper slipdoc" style="--pc:#e8dfcb; clip-path: polygon(0.0px 0.0px, 26.0px 1.2px, 52.0px -2.2px, 78.0px 3.2px, 104.0px 0.0px, 130.0px -2.8px, 156.0px 2.4px, 182.0px -0.2px, 208.0px -0.2px, 234.0px -1.8px, 260.0px 8.5px, 286.0px 6.9px, 312.0px -3.6px, 338.0px -0.4px, 364.0px 5.7px, 390.0px -0.4px, 416.0px 6.9px, 442.0px 4.5px, 468.0px 3.4px, 494.0px 6.1px, 520.0px 7.3px, 546.0px 2.6px, 572.0px 0.8px, 598.0px 5.0px, 624.0px 0.7px, 650.0px -3.4px, 676.0px 8.3px, 702.0px 5.5px, 728.0px 7.9px, 754.0px 0.5px, 780.0px 3.8px, 806.0px 3.5px, 832.0px 5.9px, 858.0px -0.8px, 884.0px -0.6px, 910.0px 3.4px, 936.0px -1.4px, 962.0px 6.1px, 988.0px 4.7px, 1014.0px -3.1px, 1040.0px 0.0px, 1040.0px 28.4px, 1040.0px 56.8px, 1040.0px 85.2px, 1040.0px 113.6px, 1040.0px 142.0px, 1040.0px 170.4px, 1040.0px 198.8px, 1040.0px 227.2px, 1040.0px 255.6px, 1040.0px 284.0px, 1014.0px 277.9px, 988.0px 276.8px, 962.0px 275.4px, 936.0px 283.5px, 910.0px 285.3px, 884.0px 275.7px, 858.0px 281.0px, 832.0px 280.0px, 806.0px 279.1px, 780.0px 278.0px, 754.0px 279.8px, 728.0px 276.8px, 702.0px 286.6px, 676.0px 277.5px, 650.0px 281.7px, 624.0px 283.1px, 598.0px 283.3px, 572.0px 281.0px, 546.0px 281.6px, 520.0px 286.8px, 494.0px 277.2px, 468.0px 277.5px, 442.0px 278.8px, 416.0px 284.3px, 390.0px 280.3px, 364.0px 279.9px, 338.0px 276.0px, 312.0px 276.6px, 286.0px 283.2px, 260.0px 277.9px, 234.0px 280.8px, 208.0px 278.0px, 182.0px 278.9px, 156.0px 277.4px, 130.0px 286.4px, 104.0px 282.9px, 78.0px 281.1px, 52.0px 277.9px, 26.0px 285.5px, 0.0px 284.0px, 0.0px 255.6px, 0.0px 227.2px, 0.0px 198.8px, 0.0px 170.4px, 0.0px 142.0px, 0.0px 113.6px, 0.0px 85.2px, 0.0px 56.8px, 0.0px 28.4px);"><div class="slip-k" id="rs-k" data-n="46" style="left:44px; top:34px;">ALEKSANDAR VUČIĆ, PRESIDENT OF SERBIA, 25 OCT:</div><div class="slip-q big2" id="rs-q-0" data-n="36" style="left:44px; top:96px;">“It is clear that we have lost these</div><div class="slip-q big2" id="rs-q-1" data-n="11" style="left:44px; top:150px;">elections.”</div><div class="slip-att" id="rs-att" style="left:44px; top:220px;">— AS REPORTED BY AL JAZEERA</div></div><div class="tape" style="left:920px; top:-16px; width:140px; transform: rotate(6deg);"></div><div class="tape" style="left:-20px; top:254px; width:120px; transform: rotate(-8deg);"></div></div></div>
+    <svg class="thread" id="rs-thread" width="1920" height="1080" viewBox="0 0 1920 1080" data-layout-allow-overflow><line x1="0" y1="0" x2="0" y2="0" pathLength="1" /></svg>
+    </div></div></div>
+    <div class="arr" id="rs-arr"><div class="arr-in" id="rs-arr-in"><span class="arr-id">STOP 05</span><span class="arr-title">Serbia parliament</span><span class="arr-meta">44.8°N 20.5°E · Belgrade</span><span class="arr-status"><span>STATUS</span><span class="chip" id="rs-chip" data-layout-allow-overflow><span class="chip-roll" id="rs-roll"><span>EN ROUTE</span><span>CONCEDED</span></span></span></span></div></div>
+  </div>
+  <script>
+    (function () {
+      const D = window.DESK.mount({"comp": "rs", "start": 91.47, "dur": 19.535, "hot": {"lat": 44.82, "lon": 20.46}, "docs": [{"id": "rs-tag", "lat": 44.82, "lon": 22.921935, "w": 640, "h": 112, "rot": 0}, {"id": "rs-clip", "lat": 46.954381, "lon": 16.767098, "w": 864, "h": 873, "rot": -1.4}, {"id": "rs-data", "lat": 42.103516, "lon": 23.469032, "w": 1150, "h": 700, "rot": 1.4}, {"id": "rs-slip", "lat": 41.909481, "lon": 15.809678, "w": 1040, "h": 284, "rot": -1.4}], "thread": {"doc": "rs-clip", "x": 432.0, "y": 22}});
+      const tl = D.tl;
+      // the red thread from the ping to the first document's pin
+      tl.fromTo("#rs-thread line", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, D.L(94.070));
+      // arrival strip (screen space): blur in on landing, out at the pull-out
+      tl.fromTo("#rs-arr-in", { opacity: 0, filter: "blur(8px)", y: -16 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.3, ease: "expo.out" }, D.L(93.120));
+      tl.to("#rs-arr-in", { opacity: 0, filter: "blur(8px)", duration: 0.22, ease: "power2.in" }, D.L(110.555));
+      tl.to("#rs-thread line", { strokeDashoffset: -1, duration: 0.3, ease: "power2.in" }, D.L(110.105));
+      D.drop("rs-tag-in", 93.420, {from: 1.0, spin: 0});
+      D.drop("rs-clip-in", 93.690);
+      D.drop("rs-data-in", 93.810);
+      D.drop("rs-slip-in", 93.910);
+      D.box("rs-box", 95.035, 0.5);
+      D.rise("rs-h1", 97.010);
+      D.fade("rs-v0", 97.126); D.fade("rs-v1", 98.620);
+      D.bar("rs-b0", 98.110, 1.2);
+      D.count("rs-v0", 98.110, 0, 2.2, 1.2, (v) => "≈" + v.toFixed(1) + "M");
+      D.bar("rs-b1", 99.522, 1.1);
+      D.count("rs-v1", 99.522, 0, 1.7, 1.1, (v) => "≈" + v.toFixed(1) + "M");
+      D.fade("rs-cap", 100.035, 0.25);
+      D.type("rs-k", 102.470, 36);
+      D.type("rs-q-0", 103.245, 30);
+      D.type("rs-q-1", 104.485, 30);
+      D.fade("rs-att", 105.870, 0.2);
+      D.stamp("rs-stamp", 109.075);
+      D.chip("rs-chip", "rs-roll", 109.155, 1);
+      window.__timelines["stop-serbia"] = tl;
+    })();
+  </script>
+</template>

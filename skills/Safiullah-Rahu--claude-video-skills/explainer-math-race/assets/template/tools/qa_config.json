@@ -1,0 +1,15 @@
+{
+ "source": "",
+ "source_note": "optional reference video for the compare sheet in tools/qa.py (or pass --ref); no default. source_metrics are the reference numbers the gates use",
+ "source_metrics": {"duration_s": 15.63, "cuts_per_min": 0, "scene_changes_per_min": 0, "wpm_overall": 0},
+ "narration": false,
+ "beats": [
+  [0.1, 0.1, "frame 0: zoomed in, two glowing heads"],
+  [2.0, 1.5, "the follow-cam on the heads"],
+  [4.75, 5.0, "the iris reveal of gradient + particles"],
+  [5.0, 7.3, "a lead change, split-colour dot"],
+  [9.0, 9.0, "zoomed out, still following"],
+  [12.0, 12.4, "wider again"],
+  [15.5, 15.5, "the last frame"]
+ ]
+}

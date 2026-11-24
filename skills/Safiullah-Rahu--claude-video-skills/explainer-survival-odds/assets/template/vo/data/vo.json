@@ -1,0 +1,240 @@
+{
+ "duration": 21.01,
+ "voice": "am_onyx,am_michael",
+ "words": 39,
+ "wpm_overall": 111.4,
+ "wpm_speech": 177.9,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "If the zombie apocalypse catches you on an oil rig in the middle of the sea… consider yourself lucky.",
+   "start": 0.18,
+   "end": 6.205,
+   "words": [
+    {
+     "w": "If",
+     "start": 0.18,
+     "end": 0.355
+    },
+    {
+     "w": "the",
+     "start": 0.355,
+     "end": 0.492
+    },
+    {
+     "w": "zombie",
+     "start": 0.492,
+     "end": 0.905
+    },
+    {
+     "w": "apocalypse",
+     "start": 0.905,
+     "end": 1.593
+    },
+    {
+     "w": "catches",
+     "start": 1.593,
+     "end": 2.005
+    },
+    {
+     "w": "you",
+     "start": 2.005,
+     "end": 2.155
+    },
+    {
+     "w": "on",
+     "start": 2.155,
+     "end": 2.292
+    },
+    {
+     "w": "an",
+     "start": 2.292,
+     "end": 2.417
+    },
+    {
+     "w": "oil",
+     "start": 2.417,
+     "end": 2.768
+    },
+    {
+     "w": "rig",
+     "start": 2.768,
+     "end": 3.292
+    },
+    {
+     "w": "in",
+     "start": 3.292,
+     "end": 3.393
+    },
+    {
+     "w": "the",
+     "start": 3.393,
+     "end": 3.48
+    },
+    {
+     "w": "middle",
+     "start": 3.48,
+     "end": 3.693
+    },
+    {
+     "w": "of",
+     "start": 3.693,
+     "end": 3.768
+    },
+    {
+     "w": "the",
+     "start": 3.768,
+     "end": 3.905
+    },
+    {
+     "w": "sea…",
+     "start": 3.905,
+     "end": 4.23
+    },
+    {
+     "w": "consider",
+     "start": 4.518,
+     "end": 4.98
+    },
+    {
+     "w": "yourself",
+     "start": 4.98,
+     "end": 5.405
+    },
+    {
+     "w": "lucky.",
+     "start": 5.405,
+     "end": 6.205
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "Then the radio crackled. Outbreak on the coast.",
+   "start": 6.915,
+   "end": 9.715,
+   "words": [
+    {
+     "w": "Then",
+     "start": 6.915,
+     "end": 7.028
+    },
+    {
+     "w": "the",
+     "start": 7.028,
+     "end": 7.115
+    },
+    {
+     "w": "radio",
+     "start": 7.115,
+     "end": 7.515
+    },
+    {
+     "w": "crackled.",
+     "start": 7.515,
+     "end": 8.09
+    },
+    {
+     "w": "Outbreak",
+     "start": 8.203,
+     "end": 8.678
+    },
+    {
+     "w": "on",
+     "start": 8.678,
+     "end": 8.777
+    },
+    {
+     "w": "the",
+     "start": 8.777,
+     "end": 8.878
+    },
+    {
+     "w": "coast.",
+     "start": 8.878,
+     "end": 9.715
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "But the dead can't swim. They sink.",
+   "start": 10.325,
+   "end": 12.575,
+   "words": [
+    {
+     "w": "But",
+     "start": 10.325,
+     "end": 10.438
+    },
+    {
+     "w": "the",
+     "start": 10.438,
+     "end": 10.525
+    },
+    {
+     "w": "dead",
+     "start": 10.525,
+     "end": 10.775
+    },
+    {
+     "w": "can't",
+     "start": 10.775,
+     "end": 11.113
+    },
+    {
+     "w": "swim.",
+     "start": 11.113,
+     "end": 11.55
+    },
+    {
+     "w": "They",
+     "start": 11.65,
+     "end": 11.85
+    },
+    {
+     "w": "sink.",
+     "start": 11.85,
+     "end": 12.575
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "But Meera forgot one thing.",
+   "start": 13.385,
+   "end": 15.46,
+   "words": [
+    {
+     "w": "But",
+     "start": 13.385,
+     "end": 13.548
+    },
+    {
+     "w": "Meera",
+     "start": 13.548,
+     "end": 13.948
+    },
+    {
+     "w": "forgot",
+     "start": 13.948,
+     "end": 14.385
+    },
+    {
+     "w": "one",
+     "start": 14.385,
+     "end": 14.673
+    },
+    {
+     "w": "thing.",
+     "start": 14.673,
+     "end": 15.46
+    }
+   ]
+  }
+ ]
+}

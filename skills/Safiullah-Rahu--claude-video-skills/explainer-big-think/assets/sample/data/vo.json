@@ -1,0 +1,926 @@
+{
+ "duration": 66.455,
+ "voice": "af_heart",
+ "words": 160,
+ "wpm_overall": 144.5,
+ "wpm_speech": 183.5,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "Most of us treat forgetting as a failure. I think that's backwards.",
+   "start": 0.56,
+   "end": 3.91,
+   "words": [
+    {
+     "w": "Most",
+     "start": 0.56,
+     "end": 0.798
+    },
+    {
+     "w": "of",
+     "start": 0.798,
+     "end": 0.873
+    },
+    {
+     "w": "us",
+     "start": 0.873,
+     "end": 1.048
+    },
+    {
+     "w": "treat",
+     "start": 1.048,
+     "end": 1.335
+    },
+    {
+     "w": "forgetting",
+     "start": 1.335,
+     "end": 1.785
+    },
+    {
+     "w": "as",
+     "start": 1.785,
+     "end": 1.897
+    },
+    {
+     "w": "a",
+     "start": 1.897,
+     "end": 1.96
+    },
+    {
+     "w": "failure.",
+     "start": 1.96,
+     "end": 2.535
+    },
+    {
+     "w": "I",
+     "start": 2.635,
+     "end": 2.785
+    },
+    {
+     "w": "think",
+     "start": 2.785,
+     "end": 2.948
+    },
+    {
+     "w": "that's",
+     "start": 2.948,
+     "end": 3.185
+    },
+    {
+     "w": "backwards.",
+     "start": 3.185,
+     "end": 3.91
+    }
+   ]
+  },
+  {
+   "id": "thesis",
+   "i": 1,
+   "text": "Forgetting is part of how memory works.",
+   "start": 4.47,
+   "end": 6.47,
+   "words": [
+    {
+     "w": "Forgetting",
+     "start": 4.47,
+     "end": 4.995
+    },
+    {
+     "w": "is",
+     "start": 4.995,
+     "end": 5.145
+    },
+    {
+     "w": "part",
+     "start": 5.145,
+     "end": 5.357
+    },
+    {
+     "w": "of",
+     "start": 5.357,
+     "end": 5.445
+    },
+    {
+     "w": "how",
+     "start": 5.445,
+     "end": 5.62
+    },
+    {
+     "w": "memory",
+     "start": 5.62,
+     "end": 5.945
+    },
+    {
+     "w": "works.",
+     "start": 5.945,
+     "end": 6.47
+    }
+   ]
+  },
+  {
+   "id": "fade",
+   "i": 2,
+   "text": "Your brain lets most things fade, and that's not a bug.",
+   "start": 6.98,
+   "end": 9.68,
+   "words": [
+    {
+     "w": "Your",
+     "start": 6.98,
+     "end": 7.105
+    },
+    {
+     "w": "brain",
+     "start": 7.105,
+     "end": 7.367
+    },
+    {
+     "w": "lets",
+     "start": 7.367,
+     "end": 7.58
+    },
+    {
+     "w": "most",
+     "start": 7.58,
+     "end": 7.792
+    },
+    {
+     "w": "things",
+     "start": 7.792,
+     "end": 8.03
+    },
+    {
+     "w": "fade,",
+     "start": 8.03,
+     "end": 8.505
+    },
+    {
+     "w": "and",
+     "start": 8.605,
+     "end": 8.718
+    },
+    {
+     "w": "that's",
+     "start": 8.718,
+     "end": 8.968
+    },
+    {
+     "w": "not",
+     "start": 8.968,
+     "end": 9.117
+    },
+    {
+     "w": "a",
+     "start": 9.117,
+     "end": 9.18
+    },
+    {
+     "w": "bug.",
+     "start": 9.18,
+     "end": 9.68
+    }
+   ]
+  },
+  {
+   "id": "ebb",
+   "i": 3,
+   "text": "In eighteen eighty-five, the German psychologist Hermann Ebbinghaus published an odd experiment on himself.",
+   "start": 13.49,
+   "end": 19.19,
+   "words": [
+    {
+     "w": "In",
+     "start": 13.49,
+     "end": 13.628
+    },
+    {
+     "w": "eighteen",
+     "start": 13.628,
+     "end": 14.09
+    },
+    {
+     "w": "eighty-five,",
+     "start": 14.09,
+     "end": 14.865
+    },
+    {
+     "w": "the",
+     "start": 14.965,
+     "end": 15.078
+    },
+    {
+     "w": "German",
+     "start": 15.078,
+     "end": 15.465
+    },
+    {
+     "w": "psychologist",
+     "start": 15.465,
+     "end": 16.115
+    },
+    {
+     "w": "Hermann",
+     "start": 16.115,
+     "end": 16.44
+    },
+    {
+     "w": "Ebbinghaus",
+     "start": 16.44,
+     "end": 17.152
+    },
+    {
+     "w": "published",
+     "start": 17.152,
+     "end": 17.578
+    },
+    {
+     "w": "an",
+     "start": 17.578,
+     "end": 17.703
+    },
+    {
+     "w": "odd",
+     "start": 17.703,
+     "end": 17.902
+    },
+    {
+     "w": "experiment",
+     "start": 17.902,
+     "end": 18.402
+    },
+    {
+     "w": "on",
+     "start": 18.402,
+     "end": 18.503
+    },
+    {
+     "w": "himself.",
+     "start": 18.503,
+     "end": 19.19
+    }
+   ]
+  },
+  {
+   "id": "syll",
+   "i": 4,
+   "text": "He memorized lists of nonsense syllables, like dax, bok and zif, then measured how long they took to relearn.",
+   "start": 19.75,
+   "end": 25.85,
+   "words": [
+    {
+     "w": "He",
+     "start": 19.75,
+     "end": 19.875
+    },
+    {
+     "w": "memorized",
+     "start": 19.875,
+     "end": 20.4
+    },
+    {
+     "w": "lists",
+     "start": 20.4,
+     "end": 20.688
+    },
+    {
+     "w": "of",
+     "start": 20.688,
+     "end": 20.775
+    },
+    {
+     "w": "nonsense",
+     "start": 20.775,
+     "end": 21.2
+    },
+    {
+     "w": "syllables,",
+     "start": 21.2,
+     "end": 21.825
+    },
+    {
+     "w": "like",
+     "start": 21.9,
+     "end": 22.125
+    },
+    {
+     "w": "dax,",
+     "start": 22.125,
+     "end": 22.575
+    },
+    {
+     "w": "bok",
+     "start": 22.675,
+     "end": 23.0
+    },
+    {
+     "w": "and",
+     "start": 23.0,
+     "end": 23.125
+    },
+    {
+     "w": "zif,",
+     "start": 23.125,
+     "end": 23.675
+    },
+    {
+     "w": "then",
+     "start": 23.775,
+     "end": 24.0
+    },
+    {
+     "w": "measured",
+     "start": 24.0,
+     "end": 24.375
+    },
+    {
+     "w": "how",
+     "start": 24.375,
+     "end": 24.55
+    },
+    {
+     "w": "long",
+     "start": 24.55,
+     "end": 24.763
+    },
+    {
+     "w": "they",
+     "start": 24.763,
+     "end": 24.9
+    },
+    {
+     "w": "took",
+     "start": 24.9,
+     "end": 25.125
+    },
+    {
+     "w": "to",
+     "start": 25.125,
+     "end": 25.225
+    },
+    {
+     "w": "relearn.",
+     "start": 25.225,
+     "end": 25.85
+    }
+   ]
+  },
+  {
+   "id": "curve",
+   "i": 5,
+   "text": "Memory dropped fastest in the first hours, then leveled off. That's the forgetting curve.",
+   "start": 27.06,
+   "end": 31.61,
+   "words": [
+    {
+     "w": "Memory",
+     "start": 27.06,
+     "end": 27.41
+    },
+    {
+     "w": "dropped",
+     "start": 27.41,
+     "end": 27.735
+    },
+    {
+     "w": "fastest",
+     "start": 27.735,
+     "end": 28.223
+    },
+    {
+     "w": "in",
+     "start": 28.223,
+     "end": 28.297
+    },
+    {
+     "w": "the",
+     "start": 28.297,
+     "end": 28.385
+    },
+    {
+     "w": "first",
+     "start": 28.385,
+     "end": 28.66
+    },
+    {
+     "w": "hours,",
+     "start": 28.66,
+     "end": 29.06
+    },
+    {
+     "w": "then",
+     "start": 29.135,
+     "end": 29.285
+    },
+    {
+     "w": "leveled",
+     "start": 29.285,
+     "end": 29.635
+    },
+    {
+     "w": "off.",
+     "start": 29.635,
+     "end": 30.135
+    },
+    {
+     "w": "That's",
+     "start": 30.247,
+     "end": 30.522
+    },
+    {
+     "w": "the",
+     "start": 30.522,
+     "end": 30.61
+    },
+    {
+     "w": "forgetting",
+     "start": 30.61,
+     "end": 31.035
+    },
+    {
+     "w": "curve.",
+     "start": 31.035,
+     "end": 31.61
+    }
+   ]
+  },
+  {
+   "id": "miss",
+   "i": 6,
+   "text": "Here's the part people miss. Each time he relearned a list, it faded more slowly.",
+   "start": 32.82,
+   "end": 36.97,
+   "words": [
+    {
+     "w": "Here's",
+     "start": 32.82,
+     "end": 33.082
+    },
+    {
+     "w": "the",
+     "start": 33.082,
+     "end": 33.17
+    },
+    {
+     "w": "part",
+     "start": 33.17,
+     "end": 33.445
+    },
+    {
+     "w": "people",
+     "start": 33.445,
+     "end": 33.72
+    },
+    {
+     "w": "miss.",
+     "start": 33.72,
+     "end": 34.245
+    },
+    {
+     "w": "Each",
+     "start": 34.37,
+     "end": 34.595
+    },
+    {
+     "w": "time",
+     "start": 34.595,
+     "end": 34.832
+    },
+    {
+     "w": "he",
+     "start": 34.832,
+     "end": 34.92
+    },
+    {
+     "w": "relearned",
+     "start": 34.92,
+     "end": 35.233
+    },
+    {
+     "w": "a",
+     "start": 35.233,
+     "end": 35.295
+    },
+    {
+     "w": "list,",
+     "start": 35.295,
+     "end": 35.62
+    },
+    {
+     "w": "it",
+     "start": 35.67,
+     "end": 35.795
+    },
+    {
+     "w": "faded",
+     "start": 35.795,
+     "end": 36.095
+    },
+    {
+     "w": "more",
+     "start": 36.095,
+     "end": 36.32
+    },
+    {
+     "w": "slowly.",
+     "start": 36.32,
+     "end": 36.97
+    }
+   ]
+  },
+  {
+   "id": "spread",
+   "i": 7,
+   "text": "And spreading practice over several days took far fewer repetitions than cramming it into one.",
+   "start": 37.53,
+   "end": 42.755,
+   "words": [
+    {
+     "w": "And",
+     "start": 37.53,
+     "end": 37.68
+    },
+    {
+     "w": "spreading",
+     "start": 37.68,
+     "end": 38.03
+    },
+    {
+     "w": "practice",
+     "start": 38.03,
+     "end": 38.53
+    },
+    {
+     "w": "over",
+     "start": 38.53,
+     "end": 38.78
+    },
+    {
+     "w": "several",
+     "start": 38.78,
+     "end": 39.105
+    },
+    {
+     "w": "days",
+     "start": 39.105,
+     "end": 39.718
+    },
+    {
+     "w": "took",
+     "start": 39.718,
+     "end": 39.942
+    },
+    {
+     "w": "far",
+     "start": 39.942,
+     "end": 40.218
+    },
+    {
+     "w": "fewer",
+     "start": 40.218,
+     "end": 40.505
+    },
+    {
+     "w": "repetitions",
+     "start": 40.505,
+     "end": 41.38
+    },
+    {
+     "w": "than",
+     "start": 41.38,
+     "end": 41.555
+    },
+    {
+     "w": "cramming",
+     "start": 41.555,
+     "end": 41.917
+    },
+    {
+     "w": "it",
+     "start": 41.917,
+     "end": 41.992
+    },
+    {
+     "w": "into",
+     "start": 41.992,
+     "end": 42.23
+    },
+    {
+     "w": "one.",
+     "start": 42.23,
+     "end": 42.755
+    }
+   ]
+  },
+  {
+   "id": "cram",
+   "i": 8,
+   "text": "Cramming feels productive. Spacing actually works.",
+   "start": 43.365,
+   "end": 46.165,
+   "words": [
+    {
+     "w": "Cramming",
+     "start": 43.365,
+     "end": 43.74
+    },
+    {
+     "w": "feels",
+     "start": 43.74,
+     "end": 44.015
+    },
+    {
+     "w": "productive.",
+     "start": 44.015,
+     "end": 44.69
+    },
+    {
+     "w": "Spacing",
+     "start": 44.803,
+     "end": 45.24
+    },
+    {
+     "w": "actually",
+     "start": 45.24,
+     "end": 45.64
+    },
+    {
+     "w": "works.",
+     "start": 45.64,
+     "end": 46.165
+    }
+   ]
+  },
+  {
+   "id": "recall",
+   "i": 9,
+   "text": "The best review isn't rereading your notes. It's trying to recall them before you look.",
+   "start": 47.375,
+   "end": 51.5,
+   "words": [
+    {
+     "w": "The",
+     "start": 47.375,
+     "end": 47.475
+    },
+    {
+     "w": "best",
+     "start": 47.475,
+     "end": 47.75
+    },
+    {
+     "w": "review",
+     "start": 47.75,
+     "end": 48.237
+    },
+    {
+     "w": "isn't",
+     "start": 48.237,
+     "end": 48.5
+    },
+    {
+     "w": "rereading",
+     "start": 48.5,
+     "end": 48.962
+    },
+    {
+     "w": "your",
+     "start": 48.962,
+     "end": 49.075
+    },
+    {
+     "w": "notes.",
+     "start": 49.075,
+     "end": 49.65
+    },
+    {
+     "w": "It's",
+     "start": 49.725,
+     "end": 49.875
+    },
+    {
+     "w": "trying",
+     "start": 49.875,
+     "end": 50.137
+    },
+    {
+     "w": "to",
+     "start": 50.137,
+     "end": 50.212
+    },
+    {
+     "w": "recall",
+     "start": 50.212,
+     "end": 50.537
+    },
+    {
+     "w": "them",
+     "start": 50.537,
+     "end": 50.662
+    },
+    {
+     "w": "before",
+     "start": 50.662,
+     "end": 50.925
+    },
+    {
+     "w": "you",
+     "start": 50.925,
+     "end": 51.05
+    },
+    {
+     "w": "look.",
+     "start": 51.05,
+     "end": 51.5
+    }
+   ]
+  },
+  {
+   "id": "struggle",
+   "i": 10,
+   "text": "That struggle is the point. Psychologists call it a desirable difficulty.",
+   "start": 52.06,
+   "end": 56.135,
+   "words": [
+    {
+     "w": "That",
+     "start": 52.06,
+     "end": 52.285
+    },
+    {
+     "w": "struggle",
+     "start": 52.285,
+     "end": 52.71
+    },
+    {
+     "w": "is",
+     "start": 52.71,
+     "end": 52.848
+    },
+    {
+     "w": "the",
+     "start": 52.848,
+     "end": 52.935
+    },
+    {
+     "w": "point.",
+     "start": 52.935,
+     "end": 53.535
+    },
+    {
+     "w": "Psychologists",
+     "start": 53.672,
+     "end": 54.385
+    },
+    {
+     "w": "call",
+     "start": 54.385,
+     "end": 54.598
+    },
+    {
+     "w": "it",
+     "start": 54.598,
+     "end": 54.685
+    },
+    {
+     "w": "a",
+     "start": 54.685,
+     "end": 54.76
+    },
+    {
+     "w": "desirable",
+     "start": 54.76,
+     "end": 55.335
+    },
+    {
+     "w": "difficulty.",
+     "start": 55.335,
+     "end": 56.135
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "i": 11,
+   "text": "So when something starts slipping away, don't panic. That's the moment to practice.",
+   "start": 56.745,
+   "end": 60.77,
+   "words": [
+    {
+     "w": "So",
+     "start": 56.745,
+     "end": 56.857
+    },
+    {
+     "w": "when",
+     "start": 56.857,
+     "end": 56.995
+    },
+    {
+     "w": "something",
+     "start": 56.995,
+     "end": 57.295
+    },
+    {
+     "w": "starts",
+     "start": 57.295,
+     "end": 57.595
+    },
+    {
+     "w": "slipping",
+     "start": 57.595,
+     "end": 57.92
+    },
+    {
+     "w": "away,",
+     "start": 57.92,
+     "end": 58.27
+    },
+    {
+     "w": "don't",
+     "start": 58.37,
+     "end": 58.595
+    },
+    {
+     "w": "panic.",
+     "start": 58.595,
+     "end": 59.22
+    },
+    {
+     "w": "That's",
+     "start": 59.32,
+     "end": 59.582
+    },
+    {
+     "w": "the",
+     "start": 59.582,
+     "end": 59.67
+    },
+    {
+     "w": "moment",
+     "start": 59.67,
+     "end": 59.957
+    },
+    {
+     "w": "to",
+     "start": 59.957,
+     "end": 60.045
+    },
+    {
+     "w": "practice.",
+     "start": 60.045,
+     "end": 60.77
+    }
+   ]
+  },
+  {
+   "id": "cta",
+   "i": 12,
+   "text": "For more conversations like this, follow Open Question.",
+   "start": 62.28,
+   "end": 65.805,
+   "words": [
+    {
+     "w": "For",
+     "start": 62.28,
+     "end": 62.405
+    },
+    {
+     "w": "more",
+     "start": 62.405,
+     "end": 62.63
+    },
+    {
+     "w": "conversations",
+     "start": 62.63,
+     "end": 63.455
+    },
+    {
+     "w": "like",
+     "start": 63.455,
+     "end": 63.68
+    },
+    {
+     "w": "this,",
+     "start": 63.68,
+     "end": 64.13
+    },
+    {
+     "w": "follow",
+     "start": 64.242,
+     "end": 64.667
+    },
+    {
+     "w": "Open",
+     "start": 64.667,
+     "end": 65.03
+    },
+    {
+     "w": "Question.",
+     "start": 65.03,
+     "end": 65.805
+    }
+   ]
+  }
+ ]
+}

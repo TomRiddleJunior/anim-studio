@@ -1,0 +1,1104 @@
+{
+ "duration": 59.305,
+ "voice": "am_michael",
+ "words": 192,
+ "wpm_overall": 194.3,
+ "wpm_speech": 219.5,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "Stores love Black Friday, but the name came from cops who dreaded it.",
+   "start": 0.26,
+   "end": 3.335,
+   "words": [
+    {
+     "w": "Stores",
+     "start": 0.26,
+     "end": 0.585
+    },
+    {
+     "w": "love",
+     "start": 0.585,
+     "end": 0.785
+    },
+    {
+     "w": "Black",
+     "start": 0.785,
+     "end": 0.985
+    },
+    {
+     "w": "Friday,",
+     "start": 0.985,
+     "end": 1.585
+    },
+    {
+     "w": "but",
+     "start": 1.673,
+     "end": 1.798
+    },
+    {
+     "w": "the",
+     "start": 1.798,
+     "end": 1.873
+    },
+    {
+     "w": "name",
+     "start": 1.873,
+     "end": 2.073
+    },
+    {
+     "w": "came",
+     "start": 2.073,
+     "end": 2.223
+    },
+    {
+     "w": "from",
+     "start": 2.223,
+     "end": 2.36
+    },
+    {
+     "w": "cops",
+     "start": 2.36,
+     "end": 2.648
+    },
+    {
+     "w": "who",
+     "start": 2.648,
+     "end": 2.76
+    },
+    {
+     "w": "dreaded",
+     "start": 2.76,
+     "end": 2.998
+    },
+    {
+     "w": "it.",
+     "start": 2.998,
+     "end": 3.335
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "You see, in Philadelphia, the day after Thanksgiving was the worst day of the year to be a traffic cop.",
+   "start": 3.705,
+   "end": 8.13,
+   "words": [
+    {
+     "w": "You",
+     "start": 3.705,
+     "end": 3.818
+    },
+    {
+     "w": "see,",
+     "start": 3.818,
+     "end": 4.055
+    },
+    {
+     "w": "in",
+     "start": 4.093,
+     "end": 4.18
+    },
+    {
+     "w": "Philadelphia,",
+     "start": 4.18,
+     "end": 4.93
+    },
+    {
+     "w": "the",
+     "start": 5.03,
+     "end": 5.13
+    },
+    {
+     "w": "day",
+     "start": 5.13,
+     "end": 5.33
+    },
+    {
+     "w": "after",
+     "start": 5.33,
+     "end": 5.53
+    },
+    {
+     "w": "Thanksgiving",
+     "start": 5.53,
+     "end": 6.18
+    },
+    {
+     "w": "was",
+     "start": 6.18,
+     "end": 6.292
+    },
+    {
+     "w": "the",
+     "start": 6.292,
+     "end": 6.38
+    },
+    {
+     "w": "worst",
+     "start": 6.38,
+     "end": 6.605
+    },
+    {
+     "w": "day",
+     "start": 6.605,
+     "end": 6.768
+    },
+    {
+     "w": "of",
+     "start": 6.768,
+     "end": 6.843
+    },
+    {
+     "w": "the",
+     "start": 6.843,
+     "end": 6.93
+    },
+    {
+     "w": "year",
+     "start": 6.93,
+     "end": 7.143
+    },
+    {
+     "w": "to",
+     "start": 7.143,
+     "end": 7.218
+    },
+    {
+     "w": "be",
+     "start": 7.218,
+     "end": 7.292
+    },
+    {
+     "w": "a",
+     "start": 7.292,
+     "end": 7.343
+    },
+    {
+     "w": "traffic",
+     "start": 7.343,
+     "end": 7.655
+    },
+    {
+     "w": "cop.",
+     "start": 7.655,
+     "end": 8.13
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Shoppers packed downtown, and fans poured in for the Army-Navy football game.",
+   "start": 8.44,
+   "end": 11.89,
+   "words": [
+    {
+     "w": "Shoppers",
+     "start": 8.44,
+     "end": 8.69
+    },
+    {
+     "w": "packed",
+     "start": 8.69,
+     "end": 8.903
+    },
+    {
+     "w": "downtown,",
+     "start": 8.903,
+     "end": 9.59
+    },
+    {
+     "w": "and",
+     "start": 9.665,
+     "end": 9.79
+    },
+    {
+     "w": "fans",
+     "start": 9.79,
+     "end": 10.09
+    },
+    {
+     "w": "poured",
+     "start": 10.09,
+     "end": 10.303
+    },
+    {
+     "w": "in",
+     "start": 10.303,
+     "end": 10.402
+    },
+    {
+     "w": "for",
+     "start": 10.402,
+     "end": 10.503
+    },
+    {
+     "w": "the",
+     "start": 10.503,
+     "end": 10.615
+    },
+    {
+     "w": "Army-Navy",
+     "start": 10.615,
+     "end": 11.065
+    },
+    {
+     "w": "football",
+     "start": 11.065,
+     "end": 11.378
+    },
+    {
+     "w": "game.",
+     "start": 11.378,
+     "end": 11.89
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "No traffic cop was allowed to take the day off. They even ordered the police band downtown.",
+   "start": 12.2,
+   "end": 16.125,
+   "words": [
+    {
+     "w": "No",
+     "start": 12.2,
+     "end": 12.35
+    },
+    {
+     "w": "traffic",
+     "start": 12.35,
+     "end": 12.638
+    },
+    {
+     "w": "cop",
+     "start": 12.638,
+     "end": 12.812
+    },
+    {
+     "w": "was",
+     "start": 12.812,
+     "end": 12.913
+    },
+    {
+     "w": "allowed",
+     "start": 12.913,
+     "end": 13.163
+    },
+    {
+     "w": "to",
+     "start": 13.163,
+     "end": 13.238
+    },
+    {
+     "w": "take",
+     "start": 13.238,
+     "end": 13.363
+    },
+    {
+     "w": "the",
+     "start": 13.363,
+     "end": 13.438
+    },
+    {
+     "w": "day",
+     "start": 13.438,
+     "end": 13.625
+    },
+    {
+     "w": "off.",
+     "start": 13.625,
+     "end": 14.1
+    },
+    {
+     "w": "They",
+     "start": 14.175,
+     "end": 14.325
+    },
+    {
+     "w": "even",
+     "start": 14.325,
+     "end": 14.538
+    },
+    {
+     "w": "ordered",
+     "start": 14.538,
+     "end": 14.788
+    },
+    {
+     "w": "the",
+     "start": 14.788,
+     "end": 14.863
+    },
+    {
+     "w": "police",
+     "start": 14.863,
+     "end": 15.138
+    },
+    {
+     "w": "band",
+     "start": 15.138,
+     "end": 15.35
+    },
+    {
+     "w": "downtown.",
+     "start": 15.35,
+     "end": 16.125
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "So the cops called it Black Friday.",
+   "start": 16.475,
+   "end": 17.85,
+   "words": [
+    {
+     "w": "So",
+     "start": 16.475,
+     "end": 16.562
+    },
+    {
+     "w": "the",
+     "start": 16.562,
+     "end": 16.637
+    },
+    {
+     "w": "cops",
+     "start": 16.637,
+     "end": 16.837
+    },
+    {
+     "w": "called",
+     "start": 16.837,
+     "end": 16.987
+    },
+    {
+     "w": "it",
+     "start": 16.987,
+     "end": 17.062
+    },
+    {
+     "w": "Black",
+     "start": 17.062,
+     "end": 17.25
+    },
+    {
+     "w": "Friday.",
+     "start": 17.25,
+     "end": 17.85
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "The city wanted a nicer name, so a PR expert suggested one.",
+   "start": 18.26,
+   "end": 21.31,
+   "words": [
+    {
+     "w": "The",
+     "start": 18.26,
+     "end": 18.348
+    },
+    {
+     "w": "city",
+     "start": 18.348,
+     "end": 18.573
+    },
+    {
+     "w": "wanted",
+     "start": 18.573,
+     "end": 18.773
+    },
+    {
+     "w": "a",
+     "start": 18.773,
+     "end": 18.823
+    },
+    {
+     "w": "nicer",
+     "start": 18.823,
+     "end": 19.073
+    },
+    {
+     "w": "name,",
+     "start": 19.073,
+     "end": 19.51
+    },
+    {
+     "w": "so",
+     "start": 19.61,
+     "end": 19.723
+    },
+    {
+     "w": "a",
+     "start": 19.723,
+     "end": 19.785
+    },
+    {
+     "w": "PR",
+     "start": 19.785,
+     "end": 20.11
+    },
+    {
+     "w": "expert",
+     "start": 20.11,
+     "end": 20.435
+    },
+    {
+     "w": "suggested",
+     "start": 20.435,
+     "end": 20.835
+    },
+    {
+     "w": "one.",
+     "start": 20.835,
+     "end": 21.31
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "Big Friday.",
+   "start": 21.62,
+   "end": 22.595,
+   "words": [
+    {
+     "w": "Big",
+     "start": 21.62,
+     "end": 21.858
+    },
+    {
+     "w": "Friday.",
+     "start": 21.858,
+     "end": 22.595
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "Nobody used it. The reporters kept writing Black Friday.",
+   "start": 23.005,
+   "end": 25.505,
+   "words": [
+    {
+     "w": "Nobody",
+     "start": 23.005,
+     "end": 23.305
+    },
+    {
+     "w": "used",
+     "start": 23.305,
+     "end": 23.567
+    },
+    {
+     "w": "it.",
+     "start": 23.567,
+     "end": 23.805
+    },
+    {
+     "w": "The",
+     "start": 23.88,
+     "end": 23.968
+    },
+    {
+     "w": "reporters",
+     "start": 23.968,
+     "end": 24.293
+    },
+    {
+     "w": "kept",
+     "start": 24.293,
+     "end": 24.455
+    },
+    {
+     "w": "writing",
+     "start": 24.455,
+     "end": 24.692
+    },
+    {
+     "w": "Black",
+     "start": 24.692,
+     "end": 24.88
+    },
+    {
+     "w": "Friday.",
+     "start": 24.88,
+     "end": 25.505
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "For twenty years, it stayed mostly a Philadelphia thing, about traffic.",
+   "start": 25.855,
+   "end": 29.755,
+   "words": [
+    {
+     "w": "For",
+     "start": 25.855,
+     "end": 25.98
+    },
+    {
+     "w": "twenty",
+     "start": 25.98,
+     "end": 26.28
+    },
+    {
+     "w": "years,",
+     "start": 26.28,
+     "end": 26.78
+    },
+    {
+     "w": "it",
+     "start": 26.855,
+     "end": 26.955
+    },
+    {
+     "w": "stayed",
+     "start": 26.955,
+     "end": 27.28
+    },
+    {
+     "w": "mostly",
+     "start": 27.28,
+     "end": 27.643
+    },
+    {
+     "w": "a",
+     "start": 27.643,
+     "end": 27.718
+    },
+    {
+     "w": "Philadelphia",
+     "start": 27.718,
+     "end": 28.343
+    },
+    {
+     "w": "thing,",
+     "start": 28.343,
+     "end": 28.705
+    },
+    {
+     "w": "about",
+     "start": 28.78,
+     "end": 29.055
+    },
+    {
+     "w": "traffic.",
+     "start": 29.055,
+     "end": 29.755
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "Then, in 1981, a better story showed up in print.",
+   "start": 30.165,
+   "end": 33.49,
+   "words": [
+    {
+     "w": "Then,",
+     "start": 30.165,
+     "end": 30.34
+    },
+    {
+     "w": "in",
+     "start": 30.378,
+     "end": 30.465
+    },
+    {
+     "w": "1981,",
+     "start": 30.465,
+     "end": 31.54
+    },
+    {
+     "w": "a",
+     "start": 31.64,
+     "end": 31.74
+    },
+    {
+     "w": "better",
+     "start": 31.74,
+     "end": 32.015
+    },
+    {
+     "w": "story",
+     "start": 32.015,
+     "end": 32.402
+    },
+    {
+     "w": "showed",
+     "start": 32.402,
+     "end": 32.627
+    },
+    {
+     "w": "up",
+     "start": 32.627,
+     "end": 32.777
+    },
+    {
+     "w": "in",
+     "start": 32.777,
+     "end": 32.915
+    },
+    {
+     "w": "print.",
+     "start": 32.915,
+     "end": 33.49
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "It said Black Friday is the day stores finally go from red ink to black, from losses to profit.",
+   "start": 33.8,
+   "end": 38.25,
+   "words": [
+    {
+     "w": "It",
+     "start": 33.8,
+     "end": 33.888
+    },
+    {
+     "w": "said",
+     "start": 33.888,
+     "end": 34.025
+    },
+    {
+     "w": "Black",
+     "start": 34.025,
+     "end": 34.225
+    },
+    {
+     "w": "Friday",
+     "start": 34.225,
+     "end": 34.625
+    },
+    {
+     "w": "is",
+     "start": 34.625,
+     "end": 34.713
+    },
+    {
+     "w": "the",
+     "start": 34.713,
+     "end": 34.8
+    },
+    {
+     "w": "day",
+     "start": 34.8,
+     "end": 35.0
+    },
+    {
+     "w": "stores",
+     "start": 35.0,
+     "end": 35.338
+    },
+    {
+     "w": "finally",
+     "start": 35.338,
+     "end": 35.613
+    },
+    {
+     "w": "go",
+     "start": 35.613,
+     "end": 35.763
+    },
+    {
+     "w": "from",
+     "start": 35.763,
+     "end": 35.9
+    },
+    {
+     "w": "red",
+     "start": 35.9,
+     "end": 36.1
+    },
+    {
+     "w": "ink",
+     "start": 36.1,
+     "end": 36.275
+    },
+    {
+     "w": "to",
+     "start": 36.275,
+     "end": 36.375
+    },
+    {
+     "w": "black,",
+     "start": 36.375,
+     "end": 36.875
+    },
+    {
+     "w": "from",
+     "start": 36.975,
+     "end": 37.125
+    },
+    {
+     "w": "losses",
+     "start": 37.125,
+     "end": 37.525
+    },
+    {
+     "w": "to",
+     "start": 37.525,
+     "end": 37.625
+    },
+    {
+     "w": "profit.",
+     "start": 37.625,
+     "end": 38.25
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "i": 11,
+   "text": "You see, that was the version stores loved, and it spread across the country.",
+   "start": 38.66,
+   "end": 41.885,
+   "words": [
+    {
+     "w": "You",
+     "start": 38.66,
+     "end": 38.773
+    },
+    {
+     "w": "see,",
+     "start": 38.773,
+     "end": 39.01
+    },
+    {
+     "w": "that",
+     "start": 39.048,
+     "end": 39.198
+    },
+    {
+     "w": "was",
+     "start": 39.198,
+     "end": 39.298
+    },
+    {
+     "w": "the",
+     "start": 39.298,
+     "end": 39.385
+    },
+    {
+     "w": "version",
+     "start": 39.385,
+     "end": 39.66
+    },
+    {
+     "w": "stores",
+     "start": 39.66,
+     "end": 39.985
+    },
+    {
+     "w": "loved,",
+     "start": 39.985,
+     "end": 40.51
+    },
+    {
+     "w": "and",
+     "start": 40.61,
+     "end": 40.723
+    },
+    {
+     "w": "it",
+     "start": 40.723,
+     "end": 40.798
+    },
+    {
+     "w": "spread",
+     "start": 40.798,
+     "end": 40.998
+    },
+    {
+     "w": "across",
+     "start": 40.998,
+     "end": 41.248
+    },
+    {
+     "w": "the",
+     "start": 41.248,
+     "end": 41.323
+    },
+    {
+     "w": "country.",
+     "start": 41.323,
+     "end": 41.885
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 12,
+   "text": "In 1985, store owners in [Los Angeles](/lɔs ˈænʤələs/) and Cincinnati still hadn't heard of it.",
+   "start": 42.235,
+   "end": 47.66,
+   "words": [
+    {
+     "w": "In",
+     "start": 42.235,
+     "end": 42.335
+    },
+    {
+     "w": "1985,",
+     "start": 42.335,
+     "end": 43.66
+    },
+    {
+     "w": "store",
+     "start": 43.798,
+     "end": 44.148
+    },
+    {
+     "w": "owners",
+     "start": 44.148,
+     "end": 44.523
+    },
+    {
+     "w": "in",
+     "start": 44.523,
+     "end": 44.598
+    },
+    {
+     "w": "Los Angeles",
+     "start": 44.598,
+     "end": 45.41
+    },
+    {
+     "w": "and",
+     "start": 45.41,
+     "end": 45.548
+    },
+    {
+     "w": "Cincinnati",
+     "start": 45.548,
+     "end": 46.273
+    },
+    {
+     "w": "still",
+     "start": 46.273,
+     "end": 46.56
+    },
+    {
+     "w": "hadn't",
+     "start": 46.56,
+     "end": 46.91
+    },
+    {
+     "w": "heard",
+     "start": 46.91,
+     "end": 47.148
+    },
+    {
+     "w": "of",
+     "start": 47.148,
+     "end": 47.235
+    },
+    {
+     "w": "it.",
+     "start": 47.235,
+     "end": 47.66
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 13,
+   "text": "So the profit story isn't where the name came from. It's the rebrand that finally worked.",
+   "start": 48.07,
+   "end": 51.82,
+   "words": [
+    {
+     "w": "So",
+     "start": 48.07,
+     "end": 48.158
+    },
+    {
+     "w": "the",
+     "start": 48.158,
+     "end": 48.245
+    },
+    {
+     "w": "profit",
+     "start": 48.245,
+     "end": 48.533
+    },
+    {
+     "w": "story",
+     "start": 48.533,
+     "end": 48.82
+    },
+    {
+     "w": "isn't",
+     "start": 48.82,
+     "end": 49.033
+    },
+    {
+     "w": "where",
+     "start": 49.033,
+     "end": 49.158
+    },
+    {
+     "w": "the",
+     "start": 49.158,
+     "end": 49.245
+    },
+    {
+     "w": "name",
+     "start": 49.245,
+     "end": 49.483
+    },
+    {
+     "w": "came",
+     "start": 49.483,
+     "end": 49.67
+    },
+    {
+     "w": "from.",
+     "start": 49.67,
+     "end": 50.095
+    },
+    {
+     "w": "It's",
+     "start": 50.183,
+     "end": 50.308
+    },
+    {
+     "w": "the",
+     "start": 50.308,
+     "end": 50.395
+    },
+    {
+     "w": "rebrand",
+     "start": 50.395,
+     "end": 50.833
+    },
+    {
+     "w": "that",
+     "start": 50.833,
+     "end": 50.958
+    },
+    {
+     "w": "finally",
+     "start": 50.958,
+     "end": 51.32
+    },
+    {
+     "w": "worked.",
+     "start": 51.32,
+     "end": 51.82
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 14,
+   "text": "And this November twenty-seventh, while you shop, remember. The name was invented by cops stuck in traffic.",
+   "start": 52.23,
+   "end": 57.855,
+   "words": [
+    {
+     "w": "And",
+     "start": 52.23,
+     "end": 52.343
+    },
+    {
+     "w": "this",
+     "start": 52.343,
+     "end": 52.505
+    },
+    {
+     "w": "November",
+     "start": 52.505,
+     "end": 52.93
+    },
+    {
+     "w": "twenty-seventh,",
+     "start": 52.93,
+     "end": 53.705
+    },
+    {
+     "w": "while",
+     "start": 53.768,
+     "end": 53.93
+    },
+    {
+     "w": "you",
+     "start": 53.93,
+     "end": 54.105
+    },
+    {
+     "w": "shop,",
+     "start": 54.105,
+     "end": 54.48
+    },
+    {
+     "w": "remember.",
+     "start": 54.555,
+     "end": 55.305
+    },
+    {
+     "w": "The",
+     "start": 55.43,
+     "end": 55.53
+    },
+    {
+     "w": "name",
+     "start": 55.53,
+     "end": 55.793
+    },
+    {
+     "w": "was",
+     "start": 55.793,
+     "end": 55.905
+    },
+    {
+     "w": "invented",
+     "start": 55.905,
+     "end": 56.38
+    },
+    {
+     "w": "by",
+     "start": 56.38,
+     "end": 56.53
+    },
+    {
+     "w": "cops",
+     "start": 56.53,
+     "end": 56.83
+    },
+    {
+     "w": "stuck",
+     "start": 56.83,
+     "end": 57.068
+    },
+    {
+     "w": "in",
+     "start": 57.068,
+     "end": 57.18
+    },
+    {
+     "w": "traffic.",
+     "start": 57.18,
+     "end": 57.855
+    }
+   ]
+  }
+ ]
+}

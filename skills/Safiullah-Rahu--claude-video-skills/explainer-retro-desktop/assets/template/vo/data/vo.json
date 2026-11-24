@@ -1,0 +1,135 @@
+{
+ "duration": 8.71,
+ "voice": "af_heart",
+ "words": 18,
+ "wpm_overall": 124.0,
+ "wpm_speech": 168.8,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "Hashing 101.",
+   "start": 0.18,
+   "end": 1.455,
+   "words": [
+    {
+     "w": "Hashing",
+     "start": 0.18,
+     "end": 0.53
+    },
+    {
+     "w": "101.",
+     "start": 0.53,
+     "end": 1.455
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "A hash turns any input into a fixed-length fingerprint.",
+   "start": 1.765,
+   "end": 4.365,
+   "words": [
+    {
+     "w": "A",
+     "start": 1.765,
+     "end": 1.84
+    },
+    {
+     "w": "hash",
+     "start": 1.84,
+     "end": 2.115
+    },
+    {
+     "w": "turns",
+     "start": 2.115,
+     "end": 2.39
+    },
+    {
+     "w": "any",
+     "start": 2.39,
+     "end": 2.578
+    },
+    {
+     "w": "input",
+     "start": 2.578,
+     "end": 2.927
+    },
+    {
+     "w": "into",
+     "start": 2.927,
+     "end": 3.127
+    },
+    {
+     "w": "a",
+     "start": 3.127,
+     "end": 3.203
+    },
+    {
+     "w": "fixed-length",
+     "start": 3.203,
+     "end": 3.665
+    },
+    {
+     "w": "fingerprint.",
+     "start": 3.665,
+     "end": 4.365
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Simple.",
+   "start": 4.675,
+   "end": 5.25,
+   "words": [
+    {
+     "w": "Simple.",
+     "start": 4.675,
+     "end": 5.25
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "Same input, same output, every time.",
+   "start": 5.61,
+   "end": 7.56,
+   "words": [
+    {
+     "w": "Same",
+     "start": 5.61,
+     "end": 5.797
+    },
+    {
+     "w": "input,",
+     "start": 5.797,
+     "end": 6.16
+    },
+    {
+     "w": "same",
+     "start": 6.235,
+     "end": 6.435
+    },
+    {
+     "w": "output,",
+     "start": 6.435,
+     "end": 6.785
+    },
+    {
+     "w": "every",
+     "start": 6.822,
+     "end": 7.06
+    },
+    {
+     "w": "time.",
+     "start": 7.06,
+     "end": 7.56
+    }
+   ]
+  }
+ ]
+}

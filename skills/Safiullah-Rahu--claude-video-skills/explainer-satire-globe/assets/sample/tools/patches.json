@@ -1,0 +1,86 @@
+[
+ {
+  "id": "hormuz",
+  "lat": 26.6,
+  "lon": 56.3,
+  "tile": "C1",
+  "src_px": [
+   4563,
+   4080
+  ],
+  "lonMin": 49.25417,
+  "lonMax": 68.26667,
+  "latMax": 35.1,
+  "latMin": 18.1
+ },
+ {
+  "id": "alaska",
+  "lat": 58.3,
+  "lon": -134.42,
+  "tile": "A1",
+  "src_px": [
+   7764,
+   4080
+  ],
+  "lonMin": -146.40833,
+  "lonMax": -114.05833,
+  "latMax": 66.8,
+  "latMin": 49.8
+ },
+ {
+  "id": "israel",
+  "lat": 31.78,
+  "lon": 35.22,
+  "tile": "C1",
+  "src_px": [
+   4800,
+   4080
+  ],
+  "lonMin": 27.80833,
+  "lonMax": 47.80833,
+  "latMax": 40.27917,
+  "latMin": 23.27917
+ },
+ {
+  "id": "brazil",
+  "lat": -15.79,
+  "lon": -47.88,
+  "tile": "B2",
+  "src_px": [
+   4240,
+   4080
+  ],
+  "lonMin": -54.425,
+  "lonMax": -36.75833,
+  "latMax": -7.29167,
+  "latMin": -24.29167
+ },
+ {
+  "id": "serbia",
+  "lat": 44.82,
+  "lon": 20.46,
+  "tile": "C1",
+  "src_px": [
+   5752,
+   4080
+  ],
+  "lonMin": 11.57917,
+  "lonMax": 35.54583,
+  "latMax": 53.32083,
+  "latMin": 36.32083
+ },
+ {
+  "id": "venezuela",
+  "lat": 10.49,
+  "lon": -66.88,
+  "tile": "B1",
+  "src_px": [
+   4149,
+   4080
+  ],
+  "lonMin": -73.2875,
+  "lonMax": -56.0,
+  "latMax": 18.99167,
+  "latMin": 1.99167
+ }
+]

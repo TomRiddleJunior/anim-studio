@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .cap { position: absolute; left: 70px; right: 70px; top: 254px; height: 60px; display: flex; align-items: center; justify-content: center; }
+    #root .cw { display: inline-block; font: 520 44px/1 "Inter", sans-serif; color: #efe7df; text-align: center; white-space: nowrap;
+      letter-spacing: -0.012em; text-shadow: 0 0 14px rgba(0, 0, 0, 0.75), 0 2px 5px rgba(0, 0, 0, 0.6); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip cap" id="cap0" data-start="0.08" data-duration="0.55"><span class="cw" id="cw0">Two places</span></div>
+    <div class="clip cap" id="cap1" data-start="0.63" data-duration="0.325"><span class="cw" id="cw1">found the</span></div>
+    <div class="clip cap" id="cap2" data-start="0.955" data-duration="1.61"><span class="cw" id="cw2">same resource.</span></div>
+    <div class="clip cap" id="cap3" data-start="2.565" data-duration="1.795"><span class="cw" id="cw3">One saved it.</span></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cw0", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "power1.out" }, 0.08); tl.to("#cw0", { opacity: 0, duration: 0.066, ease: "none" }, 0.564);
+      tl.fromTo("#cw1", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "power1.out" }, 0.63); tl.to("#cw1", { opacity: 0, duration: 0.066, ease: "none" }, 0.889);
+      tl.fromTo("#cw2", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "power1.out" }, 0.955); tl.to("#cw2", { opacity: 0, duration: 0.066, ease: "none" }, 2.499);
+      tl.fromTo("#cw3", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "power1.out" }, 2.565); tl.to("#cw3", { opacity: 0, duration: 0.066, ease: "none" }, 4.294);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

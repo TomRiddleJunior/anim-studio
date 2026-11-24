@@ -1,0 +1,87 @@
+{
+ "voice": "bm_george",
+ "speed": 0.95,
+ "lead": 1.0,
+ "tail": 4.0,
+ "lines": [
+  {
+   "id": "h1",
+   "text": "Rain falls on a city."
+  },
+  {
+   "id": "h2",
+   "text": "On roofs, on roads, on parking lots.",
+   "gap": 0.5
+  },
+  {
+   "id": "h3",
+   "text": "And almost none of it soaks in.",
+   "gap": 0.5
+  },
+  {
+   "id": "forest",
+   "text": "On a forest floor, about one drop in ten runs off.",
+   "gap": 0.85
+  },
+  {
+   "id": "city",
+   "text": "In a dense city, more than half does.",
+   "gap": 0.6
+  },
+  {
+   "id": "pick",
+   "text": "On the way, it picks up oil, tyre dust and fertiliser,",
+   "gap": 0.8
+  },
+  {
+   "id": "drain",
+   "text": "and storm drains carry it, often untreated, into the river.",
+   "gap": 0.2
+  },
+  {
+   "id": "turn",
+   "text": "But there is a gentle fix.",
+   "gap": 1.5
+  },
+  {
+   "id": "define",
+   "text": "A rain garden: a shallow, planted dip, where runoff already flows.",
+   "gap": 0.55
+  },
+  {
+   "id": "pool",
+   "text": "After a storm, water pools on top.",
+   "gap": 0.7
+  },
+  {
+   "id": "mulch",
+   "text": "Mulch traps the grit.",
+   "gap": 0.4
+  },
+  {
+   "id": "soil",
+   "text": "A sandy soil mix filters the rest. Microbes break down oil, and roots take up nutrients.",
+   "gap": 0.4
+  },
+  {
+   "id": "seep",
+   "text": "Cleaner water seeps down, to recharge the groundwater.",
+   "gap": 0.45
+  },
+  {
+   "id": "dry",
+   "text": "In a day or two it's dry again, too soon for mosquitoes to breed.",
+   "gap": 0.7
+  },
+  {
+   "id": "scale",
+   "text": "One garden is small. Street by street, they make a city a sponge again.",
+   "gap": 0.8
+  },
+  {
+   "id": "cta",
+   "text": "It can start with the rain on your own roof.",
+   "gap": 0.55
+  }
+ ]
+}

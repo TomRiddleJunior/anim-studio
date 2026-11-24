@@ -1,0 +1,27 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #04070f; }
+    #film-canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+  </style>
+  <div id="root" data-composition-id="film" data-width="1920" data-height="1080">
+    <canvas id="film-canvas" width="1920" height="1080" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const V = window.MAKE_V();
+      const DUR = V.dur;
+      const F = window.ONEYEAR(document.getElementById("film-canvas"), V);
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) { curT = t; t = Math.round(t * 10000) / 10000; if (!ready || t === lastT) return; lastT = t; F.draw(t); }
+      const fonts = ['500 20px "Poppins"', '600 20px "Poppins"', '700 20px "Poppins"', '800 20px "Poppins"', '500 20px "JetBrains Mono"', '700 20px "Caveat"'];
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.film = Promise.all(fonts.map((f) => document.fonts.load(f))).then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["film"] = tl;
+    })();
+  </script>
+</template>

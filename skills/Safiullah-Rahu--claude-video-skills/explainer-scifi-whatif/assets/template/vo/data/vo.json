@@ -1,0 +1,137 @@
+{
+ "duration": 10.72,
+ "voice": "am_onyx,am_michael",
+ "words": 22,
+ "wpm_overall": 123.1,
+ "wpm_speech": 201.5,
+ "lines": [
+  {
+   "id": "d1",
+   "i": 0,
+   "text": "What if a robot was your only company for a whole year?",
+   "start": 0.21,
+   "end": 3.485,
+   "words": [
+    {
+     "w": "What",
+     "start": 0.21,
+     "end": 0.36
+    },
+    {
+     "w": "if",
+     "start": 0.36,
+     "end": 0.497
+    },
+    {
+     "w": "a",
+     "start": 0.497,
+     "end": 0.597
+    },
+    {
+     "w": "robot",
+     "start": 0.597,
+     "end": 1.135
+    },
+    {
+     "w": "was",
+     "start": 1.135,
+     "end": 1.285
+    },
+    {
+     "w": "your",
+     "start": 1.285,
+     "end": 1.472
+    },
+    {
+     "w": "only",
+     "start": 1.472,
+     "end": 1.798
+    },
+    {
+     "w": "company",
+     "start": 1.798,
+     "end": 2.31
+    },
+    {
+     "w": "for",
+     "start": 2.31,
+     "end": 2.435
+    },
+    {
+     "w": "a",
+     "start": 2.435,
+     "end": 2.51
+    },
+    {
+     "w": "whole",
+     "start": 2.51,
+     "end": 2.76
+    },
+    {
+     "w": "year?",
+     "start": 2.76,
+     "end": 3.485
+    }
+   ]
+  },
+  {
+   "id": "d2",
+   "i": 1,
+   "text": "A company is paying five million dollars to find out.",
+   "start": 4.295,
+   "end": 7.57,
+   "words": [
+    {
+     "w": "A",
+     "start": 4.295,
+     "end": 4.37
+    },
+    {
+     "w": "company",
+     "start": 4.37,
+     "end": 4.77
+    },
+    {
+     "w": "is",
+     "start": 4.77,
+     "end": 4.92
+    },
+    {
+     "w": "paying",
+     "start": 4.92,
+     "end": 5.295
+    },
+    {
+     "w": "five",
+     "start": 5.295,
+     "end": 5.67
+    },
+    {
+     "w": "million",
+     "start": 5.67,
+     "end": 6.045
+    },
+    {
+     "w": "dollars",
+     "start": 6.045,
+     "end": 6.47
+    },
+    {
+     "w": "to",
+     "start": 6.47,
+     "end": 6.595
+    },
+    {
+     "w": "find",
+     "start": 6.595,
+     "end": 6.92
+    },
+    {
+     "w": "out.",
+     "start": 6.92,
+     "end": 7.57
+    }
+   ]
+  }
+ ]
+}

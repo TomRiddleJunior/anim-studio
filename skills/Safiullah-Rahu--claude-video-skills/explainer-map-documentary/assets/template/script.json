@@ -1,0 +1,6 @@
+{"voice": "am_michael", "speed": 1.02, "lead": 0.6, "tail": 2.6,
+ "lines": [
+  {"id": "h1", "text": "This is the Netherlands."},
+  {"id": "h2", "text": "This is the dam that sealed off its inland sea in 1932.", "gap": 0.7},
+  {"id": "h3", "text": "And every plan in this story is an object you can walk around.", "gap": 0.5}
+ ]}

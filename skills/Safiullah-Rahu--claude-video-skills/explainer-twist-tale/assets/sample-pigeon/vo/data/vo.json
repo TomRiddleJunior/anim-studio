@@ -1,0 +1,1269 @@
+{
+ "duration": 65.21,
+ "voice": "am_michael",
+ "words": 225,
+ "wpm_overall": 207.0,
+ "wpm_speech": 231.6,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "In World War Two, a scientist trained pigeons to steer a bomb, and in the tests, it actually worked.",
+   "start": 0.26,
+   "end": 4.685,
+   "words": [
+    {
+     "w": "In",
+     "start": 0.26,
+     "end": 0.322
+    },
+    {
+     "w": "World",
+     "start": 0.322,
+     "end": 0.522
+    },
+    {
+     "w": "War",
+     "start": 0.522,
+     "end": 0.698
+    },
+    {
+     "w": "Two,",
+     "start": 0.698,
+     "end": 1.035
+    },
+    {
+     "w": "a",
+     "start": 1.135,
+     "end": 1.222
+    },
+    {
+     "w": "scientist",
+     "start": 1.222,
+     "end": 1.623
+    },
+    {
+     "w": "trained",
+     "start": 1.623,
+     "end": 1.835
+    },
+    {
+     "w": "pigeons",
+     "start": 1.835,
+     "end": 2.098
+    },
+    {
+     "w": "to",
+     "start": 2.098,
+     "end": 2.173
+    },
+    {
+     "w": "steer",
+     "start": 2.173,
+     "end": 2.373
+    },
+    {
+     "w": "a",
+     "start": 2.373,
+     "end": 2.435
+    },
+    {
+     "w": "bomb,",
+     "start": 2.435,
+     "end": 2.96
+    },
+    {
+     "w": "and",
+     "start": 3.035,
+     "end": 3.148
+    },
+    {
+     "w": "in",
+     "start": 3.148,
+     "end": 3.223
+    },
+    {
+     "w": "the",
+     "start": 3.223,
+     "end": 3.31
+    },
+    {
+     "w": "tests,",
+     "start": 3.31,
+     "end": 3.735
+    },
+    {
+     "w": "it",
+     "start": 3.798,
+     "end": 3.885
+    },
+    {
+     "w": "actually",
+     "start": 3.885,
+     "end": 4.21
+    },
+    {
+     "w": "worked.",
+     "start": 4.21,
+     "end": 4.685
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "You see, in 1940, the psychologist B. F. Skinner was on a train, watching a flock of birds fly beside his window.",
+   "start": 5.055,
+   "end": 10.855,
+   "words": [
+    {
+     "w": "You",
+     "start": 5.055,
+     "end": 5.167
+    },
+    {
+     "w": "see,",
+     "start": 5.167,
+     "end": 5.405
+    },
+    {
+     "w": "in",
+     "start": 5.442,
+     "end": 5.518
+    },
+    {
+     "w": "1940,",
+     "start": 5.518,
+     "end": 6.405
+    },
+    {
+     "w": "the",
+     "start": 6.492,
+     "end": 6.58
+    },
+    {
+     "w": "psychologist",
+     "start": 6.58,
+     "end": 7.08
+    },
+    {
+     "w": "B.",
+     "start": 7.08,
+     "end": 7.267
+    },
+    {
+     "w": "F.",
+     "start": 7.267,
+     "end": 7.43
+    },
+    {
+     "w": "Skinner",
+     "start": 7.43,
+     "end": 7.667
+    },
+    {
+     "w": "was",
+     "start": 7.667,
+     "end": 7.767
+    },
+    {
+     "w": "on",
+     "start": 7.767,
+     "end": 7.868
+    },
+    {
+     "w": "a",
+     "start": 7.868,
+     "end": 7.93
+    },
+    {
+     "w": "train,",
+     "start": 7.93,
+     "end": 8.505
+    },
+    {
+     "w": "watching",
+     "start": 8.605,
+     "end": 8.868
+    },
+    {
+     "w": "a",
+     "start": 8.868,
+     "end": 8.943
+    },
+    {
+     "w": "flock",
+     "start": 8.943,
+     "end": 9.168
+    },
+    {
+     "w": "of",
+     "start": 9.168,
+     "end": 9.255
+    },
+    {
+     "w": "birds",
+     "start": 9.255,
+     "end": 9.568
+    },
+    {
+     "w": "fly",
+     "start": 9.568,
+     "end": 9.842
+    },
+    {
+     "w": "beside",
+     "start": 9.842,
+     "end": 10.143
+    },
+    {
+     "w": "his",
+     "start": 10.143,
+     "end": 10.255
+    },
+    {
+     "w": "window.",
+     "start": 10.255,
+     "end": 10.855
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Sharp eyes, quick turns. Could birds like that guide a missile?",
+   "start": 11.185,
+   "end": 13.86,
+   "words": [
+    {
+     "w": "Sharp",
+     "start": 11.185,
+     "end": 11.36
+    },
+    {
+     "w": "eyes,",
+     "start": 11.36,
+     "end": 11.61
+    },
+    {
+     "w": "quick",
+     "start": 11.647,
+     "end": 11.81
+    },
+    {
+     "w": "turns.",
+     "start": 11.81,
+     "end": 12.335
+    },
+    {
+     "w": "Could",
+     "start": 12.435,
+     "end": 12.585
+    },
+    {
+     "w": "birds",
+     "start": 12.585,
+     "end": 12.822
+    },
+    {
+     "w": "like",
+     "start": 12.822,
+     "end": 12.947
+    },
+    {
+     "w": "that",
+     "start": 12.947,
+     "end": 13.11
+    },
+    {
+     "w": "guide",
+     "start": 13.11,
+     "end": 13.322
+    },
+    {
+     "w": "a",
+     "start": 13.322,
+     "end": 13.372
+    },
+    {
+     "w": "missile?",
+     "start": 13.372,
+     "end": 13.86
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "So he taught pigeons to peck at a picture of a target, for a grain of food.",
+   "start": 14.23,
+   "end": 17.355,
+   "words": [
+    {
+     "w": "So",
+     "start": 14.23,
+     "end": 14.317
+    },
+    {
+     "w": "he",
+     "start": 14.317,
+     "end": 14.405
+    },
+    {
+     "w": "taught",
+     "start": 14.405,
+     "end": 14.63
+    },
+    {
+     "w": "pigeons",
+     "start": 14.63,
+     "end": 14.892
+    },
+    {
+     "w": "to",
+     "start": 14.892,
+     "end": 14.98
+    },
+    {
+     "w": "peck",
+     "start": 14.98,
+     "end": 15.192
+    },
+    {
+     "w": "at",
+     "start": 15.192,
+     "end": 15.267
+    },
+    {
+     "w": "a",
+     "start": 15.267,
+     "end": 15.33
+    },
+    {
+     "w": "picture",
+     "start": 15.33,
+     "end": 15.567
+    },
+    {
+     "w": "of",
+     "start": 15.567,
+     "end": 15.642
+    },
+    {
+     "w": "a",
+     "start": 15.642,
+     "end": 15.705
+    },
+    {
+     "w": "target,",
+     "start": 15.705,
+     "end": 16.205
+    },
+    {
+     "w": "for",
+     "start": 16.28,
+     "end": 16.392
+    },
+    {
+     "w": "a",
+     "start": 16.392,
+     "end": 16.455
+    },
+    {
+     "w": "grain",
+     "start": 16.455,
+     "end": 16.717
+    },
+    {
+     "w": "of",
+     "start": 16.717,
+     "end": 16.817
+    },
+    {
+     "w": "food.",
+     "start": 16.817,
+     "end": 17.355
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "One bird pecked over ten thousand times in forty-five minutes.",
+   "start": 17.665,
+   "end": 20.94,
+   "words": [
+    {
+     "w": "One",
+     "start": 17.665,
+     "end": 17.89
+    },
+    {
+     "w": "bird",
+     "start": 17.89,
+     "end": 18.165
+    },
+    {
+     "w": "pecked",
+     "start": 18.165,
+     "end": 18.428
+    },
+    {
+     "w": "over",
+     "start": 18.428,
+     "end": 18.615
+    },
+    {
+     "w": "ten",
+     "start": 18.615,
+     "end": 18.865
+    },
+    {
+     "w": "thousand",
+     "start": 18.865,
+     "end": 19.215
+    },
+    {
+     "w": "times",
+     "start": 19.215,
+     "end": 19.615
+    },
+    {
+     "w": "in",
+     "start": 19.615,
+     "end": 19.778
+    },
+    {
+     "w": "forty-five",
+     "start": 19.778,
+     "end": 20.39
+    },
+    {
+     "w": "minutes.",
+     "start": 20.39,
+     "end": 20.94
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "Then he put three of them in the nose of a glide bomb called the Pelican.",
+   "start": 21.31,
+   "end": 24.16,
+   "words": [
+    {
+     "w": "Then",
+     "start": 21.31,
+     "end": 21.422
+    },
+    {
+     "w": "he",
+     "start": 21.422,
+     "end": 21.498
+    },
+    {
+     "w": "put",
+     "start": 21.498,
+     "end": 21.648
+    },
+    {
+     "w": "three",
+     "start": 21.648,
+     "end": 21.848
+    },
+    {
+     "w": "of",
+     "start": 21.848,
+     "end": 21.922
+    },
+    {
+     "w": "them",
+     "start": 21.922,
+     "end": 22.098
+    },
+    {
+     "w": "in",
+     "start": 22.098,
+     "end": 22.172
+    },
+    {
+     "w": "the",
+     "start": 22.172,
+     "end": 22.26
+    },
+    {
+     "w": "nose",
+     "start": 22.26,
+     "end": 22.598
+    },
+    {
+     "w": "of",
+     "start": 22.598,
+     "end": 22.672
+    },
+    {
+     "w": "a",
+     "start": 22.672,
+     "end": 22.735
+    },
+    {
+     "w": "glide",
+     "start": 22.735,
+     "end": 23.035
+    },
+    {
+     "w": "bomb",
+     "start": 23.035,
+     "end": 23.335
+    },
+    {
+     "w": "called",
+     "start": 23.335,
+     "end": 23.498
+    },
+    {
+     "w": "the",
+     "start": 23.498,
+     "end": 23.585
+    },
+    {
+     "w": "Pelican.",
+     "start": 23.585,
+     "end": 24.16
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "A lens showed them the view ahead. When the target drifted off center, their pecking steered the bomb back.",
+   "start": 24.49,
+   "end": 28.79,
+   "words": [
+    {
+     "w": "A",
+     "start": 24.49,
+     "end": 24.565
+    },
+    {
+     "w": "lens",
+     "start": 24.565,
+     "end": 24.877
+    },
+    {
+     "w": "showed",
+     "start": 24.877,
+     "end": 25.077
+    },
+    {
+     "w": "them",
+     "start": 25.077,
+     "end": 25.202
+    },
+    {
+     "w": "the",
+     "start": 25.202,
+     "end": 25.29
+    },
+    {
+     "w": "view",
+     "start": 25.29,
+     "end": 25.477
+    },
+    {
+     "w": "ahead.",
+     "start": 25.477,
+     "end": 25.99
+    },
+    {
+     "w": "When",
+     "start": 26.09,
+     "end": 26.227
+    },
+    {
+     "w": "the",
+     "start": 26.227,
+     "end": 26.315
+    },
+    {
+     "w": "target",
+     "start": 26.315,
+     "end": 26.615
+    },
+    {
+     "w": "drifted",
+     "start": 26.615,
+     "end": 26.877
+    },
+    {
+     "w": "off",
+     "start": 26.877,
+     "end": 27.015
+    },
+    {
+     "w": "center,",
+     "start": 27.015,
+     "end": 27.39
+    },
+    {
+     "w": "their",
+     "start": 27.452,
+     "end": 27.565
+    },
+    {
+     "w": "pecking",
+     "start": 27.565,
+     "end": 27.84
+    },
+    {
+     "w": "steered",
+     "start": 27.84,
+     "end": 28.052
+    },
+    {
+     "w": "the",
+     "start": 28.052,
+     "end": 28.127
+    },
+    {
+     "w": "bomb",
+     "start": 28.127,
+     "end": 28.352
+    },
+    {
+     "w": "back.",
+     "start": 28.352,
+     "end": 28.79
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "Three birds meant a vote. If one got it wrong, the other two outvoted it.",
+   "start": 29.16,
+   "end": 32.235,
+   "words": [
+    {
+     "w": "Three",
+     "start": 29.16,
+     "end": 29.36
+    },
+    {
+     "w": "birds",
+     "start": 29.36,
+     "end": 29.597
+    },
+    {
+     "w": "meant",
+     "start": 29.597,
+     "end": 29.747
+    },
+    {
+     "w": "a",
+     "start": 29.747,
+     "end": 29.81
+    },
+    {
+     "w": "vote.",
+     "start": 29.81,
+     "end": 30.26
+    },
+    {
+     "w": "If",
+     "start": 30.347,
+     "end": 30.447
+    },
+    {
+     "w": "one",
+     "start": 30.447,
+     "end": 30.572
+    },
+    {
+     "w": "got",
+     "start": 30.572,
+     "end": 30.697
+    },
+    {
+     "w": "it",
+     "start": 30.697,
+     "end": 30.785
+    },
+    {
+     "w": "wrong,",
+     "start": 30.785,
+     "end": 31.06
+    },
+    {
+     "w": "the",
+     "start": 31.097,
+     "end": 31.172
+    },
+    {
+     "w": "other",
+     "start": 31.172,
+     "end": 31.335
+    },
+    {
+     "w": "two",
+     "start": 31.335,
+     "end": 31.51
+    },
+    {
+     "w": "outvoted",
+     "start": 31.51,
+     "end": 31.922
+    },
+    {
+     "w": "it.",
+     "start": 31.922,
+     "end": 32.235
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "The government thought it was eccentric and impractical, but still paid twenty-five thousand dollars.",
+   "start": 32.625,
+   "end": 36.95,
+   "words": [
+    {
+     "w": "The",
+     "start": 32.625,
+     "end": 32.7
+    },
+    {
+     "w": "government",
+     "start": 32.7,
+     "end": 33.025
+    },
+    {
+     "w": "thought",
+     "start": 33.025,
+     "end": 33.188
+    },
+    {
+     "w": "it",
+     "start": 33.188,
+     "end": 33.263
+    },
+    {
+     "w": "was",
+     "start": 33.263,
+     "end": 33.4
+    },
+    {
+     "w": "eccentric",
+     "start": 33.4,
+     "end": 33.888
+    },
+    {
+     "w": "and",
+     "start": 33.888,
+     "end": 33.987
+    },
+    {
+     "w": "impractical,",
+     "start": 33.987,
+     "end": 34.725
+    },
+    {
+     "w": "but",
+     "start": 34.788,
+     "end": 34.925
+    },
+    {
+     "w": "still",
+     "start": 34.925,
+     "end": 35.125
+    },
+    {
+     "w": "paid",
+     "start": 35.125,
+     "end": 35.425
+    },
+    {
+     "w": "twenty-five",
+     "start": 35.425,
+     "end": 35.975
+    },
+    {
+     "w": "thousand",
+     "start": 35.975,
+     "end": 36.3
+    },
+    {
+     "w": "dollars.",
+     "start": 36.3,
+     "end": 36.95
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "Then came the big demonstration. A live pigeon did its job perfectly, right in front of the committee.",
+   "start": 37.34,
+   "end": 41.715,
+   "words": [
+    {
+     "w": "Then",
+     "start": 37.34,
+     "end": 37.515
+    },
+    {
+     "w": "came",
+     "start": 37.515,
+     "end": 37.702
+    },
+    {
+     "w": "the",
+     "start": 37.702,
+     "end": 37.79
+    },
+    {
+     "w": "big",
+     "start": 37.79,
+     "end": 37.977
+    },
+    {
+     "w": "demonstration.",
+     "start": 37.977,
+     "end": 38.79
+    },
+    {
+     "w": "A",
+     "start": 38.89,
+     "end": 38.965
+    },
+    {
+     "w": "live",
+     "start": 38.965,
+     "end": 39.215
+    },
+    {
+     "w": "pigeon",
+     "start": 39.215,
+     "end": 39.427
+    },
+    {
+     "w": "did",
+     "start": 39.427,
+     "end": 39.552
+    },
+    {
+     "w": "its",
+     "start": 39.552,
+     "end": 39.665
+    },
+    {
+     "w": "job",
+     "start": 39.665,
+     "end": 39.915
+    },
+    {
+     "w": "perfectly,",
+     "start": 39.915,
+     "end": 40.44
+    },
+    {
+     "w": "right",
+     "start": 40.54,
+     "end": 40.727
+    },
+    {
+     "w": "in",
+     "start": 40.727,
+     "end": 40.815
+    },
+    {
+     "w": "front",
+     "start": 40.815,
+     "end": 41.002
+    },
+    {
+     "w": "of",
+     "start": 41.002,
+     "end": 41.077
+    },
+    {
+     "w": "the",
+     "start": 41.077,
+     "end": 41.152
+    },
+    {
+     "w": "committee.",
+     "start": 41.152,
+     "end": 41.715
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "And that's what sank it.",
+   "start": 42.065,
+   "end": 43.39,
+   "words": [
+    {
+     "w": "And",
+     "start": 42.065,
+     "end": 42.202
+    },
+    {
+     "w": "that's",
+     "start": 42.202,
+     "end": 42.515
+    },
+    {
+     "w": "what",
+     "start": 42.515,
+     "end": 42.702
+    },
+    {
+     "w": "sank",
+     "start": 42.702,
+     "end": 43.015
+    },
+    {
+     "w": "it.",
+     "start": 43.015,
+     "end": 43.39
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "i": 11,
+   "text": "Skinner wrote that seeing a real pigeon do it only reminded them how crazy the idea sounded.",
+   "start": 43.76,
+   "end": 47.71,
+   "words": [
+    {
+     "w": "Skinner",
+     "start": 43.76,
+     "end": 43.972
+    },
+    {
+     "w": "wrote",
+     "start": 43.972,
+     "end": 44.122
+    },
+    {
+     "w": "that",
+     "start": 44.122,
+     "end": 44.235
+    },
+    {
+     "w": "seeing",
+     "start": 44.235,
+     "end": 44.447
+    },
+    {
+     "w": "a",
+     "start": 44.447,
+     "end": 44.51
+    },
+    {
+     "w": "real",
+     "start": 44.51,
+     "end": 44.685
+    },
+    {
+     "w": "pigeon",
+     "start": 44.685,
+     "end": 44.91
+    },
+    {
+     "w": "do",
+     "start": 44.91,
+     "end": 45.385
+    },
+    {
+     "w": "it",
+     "start": 45.385,
+     "end": 45.51
+    },
+    {
+     "w": "only",
+     "start": 45.51,
+     "end": 45.722
+    },
+    {
+     "w": "reminded",
+     "start": 45.722,
+     "end": 46.022
+    },
+    {
+     "w": "them",
+     "start": 46.022,
+     "end": 46.172
+    },
+    {
+     "w": "how",
+     "start": 46.172,
+     "end": 46.347
+    },
+    {
+     "w": "crazy",
+     "start": 46.347,
+     "end": 46.722
+    },
+    {
+     "w": "the",
+     "start": 46.722,
+     "end": 46.822
+    },
+    {
+     "w": "idea",
+     "start": 46.822,
+     "end": 47.11
+    },
+    {
+     "w": "sounded.",
+     "start": 47.11,
+     "end": 47.71
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 12,
+   "text": "The project was dropped. The Navy revived it in 1948, and tested pigeons until 1953.",
+   "start": 48.12,
+   "end": 54.27,
+   "words": [
+    {
+     "w": "The",
+     "start": 48.12,
+     "end": 48.195
+    },
+    {
+     "w": "project",
+     "start": 48.195,
+     "end": 48.632
+    },
+    {
+     "w": "was",
+     "start": 48.632,
+     "end": 48.795
+    },
+    {
+     "w": "dropped.",
+     "start": 48.795,
+     "end": 49.445
+    },
+    {
+     "w": "The",
+     "start": 49.545,
+     "end": 49.645
+    },
+    {
+     "w": "Navy",
+     "start": 49.645,
+     "end": 49.945
+    },
+    {
+     "w": "revived",
+     "start": 49.945,
+     "end": 50.407
+    },
+    {
+     "w": "it",
+     "start": 50.407,
+     "end": 50.495
+    },
+    {
+     "w": "in",
+     "start": 50.495,
+     "end": 50.595
+    },
+    {
+     "w": "1948,",
+     "start": 50.595,
+     "end": 51.72
+    },
+    {
+     "w": "and",
+     "start": 51.795,
+     "end": 51.92
+    },
+    {
+     "w": "tested",
+     "start": 51.92,
+     "end": 52.32
+    },
+    {
+     "w": "pigeons",
+     "start": 52.32,
+     "end": 52.682
+    },
+    {
+     "w": "until",
+     "start": 52.682,
+     "end": 52.945
+    },
+    {
+     "w": "1953.",
+     "start": 52.945,
+     "end": 54.27
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 13,
+   "text": "Then, in 2024, the pigeon bomb finally won a prize. The Ig Nobel Peace Prize.",
+   "start": 54.68,
+   "end": 59.755,
+   "words": [
+    {
+     "w": "Then,",
+     "start": 54.68,
+     "end": 54.83
+    },
+    {
+     "w": "in",
+     "start": 54.867,
+     "end": 54.955
+    },
+    {
+     "w": "2024,",
+     "start": 54.955,
+     "end": 55.88
+    },
+    {
+     "w": "the",
+     "start": 55.917,
+     "end": 56.005
+    },
+    {
+     "w": "pigeon",
+     "start": 56.005,
+     "end": 56.33
+    },
+    {
+     "w": "bomb",
+     "start": 56.33,
+     "end": 56.667
+    },
+    {
+     "w": "finally",
+     "start": 56.667,
+     "end": 57.055
+    },
+    {
+     "w": "won",
+     "start": 57.055,
+     "end": 57.192
+    },
+    {
+     "w": "a",
+     "start": 57.192,
+     "end": 57.255
+    },
+    {
+     "w": "prize.",
+     "start": 57.255,
+     "end": 57.955
+    },
+    {
+     "w": "The",
+     "start": 58.055,
+     "end": 58.217
+    },
+    {
+     "w": "Ig",
+     "start": 58.217,
+     "end": 58.43
+    },
+    {
+     "w": "Nobel",
+     "start": 58.43,
+     "end": 58.83
+    },
+    {
+     "w": "Peace",
+     "start": 58.83,
+     "end": 59.08
+    },
+    {
+     "w": "Prize.",
+     "start": 59.08,
+     "end": 59.755
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 14,
+   "text": "So the pigeons were never the problem. Nobody could take them seriously.",
+   "start": 60.185,
+   "end": 63.76,
+   "words": [
+    {
+     "w": "So",
+     "start": 60.185,
+     "end": 60.272
+    },
+    {
+     "w": "the",
+     "start": 60.272,
+     "end": 60.36
+    },
+    {
+     "w": "pigeons",
+     "start": 60.36,
+     "end": 60.76
+    },
+    {
+     "w": "were",
+     "start": 60.76,
+     "end": 60.922
+    },
+    {
+     "w": "never",
+     "start": 60.922,
+     "end": 61.172
+    },
+    {
+     "w": "the",
+     "start": 61.172,
+     "end": 61.26
+    },
+    {
+     "w": "problem.",
+     "start": 61.26,
+     "end": 61.935
+    },
+    {
+     "w": "Nobody",
+     "start": 62.047,
+     "end": 62.41
+    },
+    {
+     "w": "could",
+     "start": 62.41,
+     "end": 62.535
+    },
+    {
+     "w": "take",
+     "start": 62.535,
+     "end": 62.747
+    },
+    {
+     "w": "them",
+     "start": 62.747,
+     "end": 62.922
+    },
+    {
+     "w": "seriously.",
+     "start": 62.922,
+     "end": 63.76
+    }
+   ]
+  }
+ ]
+}

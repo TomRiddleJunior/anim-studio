@@ -1,0 +1,1480 @@
+{
+ "duration": 95.84,
+ "voice": "af_heart",
+ "words": 269,
+ "wpm_overall": 168.4,
+ "wpm_speech": 189.1,
+ "lines": [
+  {
+   "id": "c01",
+   "i": 0,
+   "text": "Everyone thinks a microchip brings a lost dog home. It's a chip the size of a grain of rice, with one number on it. That's it.",
+   "start": 0.36,
+   "end": 8.035,
+   "words": [
+    {
+     "w": "Everyone",
+     "start": 0.36,
+     "end": 0.835
+    },
+    {
+     "w": "thinks",
+     "start": 0.835,
+     "end": 1.073
+    },
+    {
+     "w": "a",
+     "start": 1.073,
+     "end": 1.135
+    },
+    {
+     "w": "microchip",
+     "start": 1.135,
+     "end": 1.76
+    },
+    {
+     "w": "brings",
+     "start": 1.76,
+     "end": 2.01
+    },
+    {
+     "w": "a",
+     "start": 2.01,
+     "end": 2.123
+    },
+    {
+     "w": "lost",
+     "start": 2.123,
+     "end": 2.522
+    },
+    {
+     "w": "dog",
+     "start": 2.522,
+     "end": 2.86
+    },
+    {
+     "w": "home.",
+     "start": 2.86,
+     "end": 3.535
+    },
+    {
+     "w": "It's",
+     "start": 3.635,
+     "end": 3.798
+    },
+    {
+     "w": "a",
+     "start": 3.798,
+     "end": 3.897
+    },
+    {
+     "w": "chip",
+     "start": 3.897,
+     "end": 4.16
+    },
+    {
+     "w": "the",
+     "start": 4.16,
+     "end": 4.298
+    },
+    {
+     "w": "size",
+     "start": 4.298,
+     "end": 4.697
+    },
+    {
+     "w": "of",
+     "start": 4.697,
+     "end": 4.772
+    },
+    {
+     "w": "a",
+     "start": 4.772,
+     "end": 4.835
+    },
+    {
+     "w": "grain",
+     "start": 4.835,
+     "end": 5.173
+    },
+    {
+     "w": "of",
+     "start": 5.173,
+     "end": 5.285
+    },
+    {
+     "w": "rice,",
+     "start": 5.285,
+     "end": 5.71
+    },
+    {
+     "w": "with",
+     "start": 5.785,
+     "end": 5.973
+    },
+    {
+     "w": "one",
+     "start": 5.973,
+     "end": 6.185
+    },
+    {
+     "w": "number",
+     "start": 6.185,
+     "end": 6.485
+    },
+    {
+     "w": "on",
+     "start": 6.485,
+     "end": 6.635
+    },
+    {
+     "w": "it.",
+     "start": 6.635,
+     "end": 7.085
+    },
+    {
+     "w": "That's",
+     "start": 7.223,
+     "end": 7.572
+    },
+    {
+     "w": "it.",
+     "start": 7.572,
+     "end": 8.035
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "i": 1,
+   "text": "This is Maple. Her tag has your phone number, until she slips her collar under a fence, and the tag stays behind.",
+   "start": 8.545,
+   "end": 15.52,
+   "words": [
+    {
+     "w": "This",
+     "start": 8.545,
+     "end": 8.72
+    },
+    {
+     "w": "is",
+     "start": 8.72,
+     "end": 8.87
+    },
+    {
+     "w": "Maple.",
+     "start": 8.87,
+     "end": 9.595
+    },
+    {
+     "w": "Her",
+     "start": 9.72,
+     "end": 9.908
+    },
+    {
+     "w": "tag",
+     "start": 9.908,
+     "end": 10.32
+    },
+    {
+     "w": "has",
+     "start": 10.32,
+     "end": 10.483
+    },
+    {
+     "w": "your",
+     "start": 10.483,
+     "end": 10.633
+    },
+    {
+     "w": "phone",
+     "start": 10.633,
+     "end": 10.97
+    },
+    {
+     "w": "number,",
+     "start": 10.97,
+     "end": 11.52
+    },
+    {
+     "w": "until",
+     "start": 11.62,
+     "end": 11.895
+    },
+    {
+     "w": "she",
+     "start": 11.895,
+     "end": 12.058
+    },
+    {
+     "w": "slips",
+     "start": 12.058,
+     "end": 12.333
+    },
+    {
+     "w": "her",
+     "start": 12.333,
+     "end": 12.47
+    },
+    {
+     "w": "collar",
+     "start": 12.47,
+     "end": 12.833
+    },
+    {
+     "w": "under",
+     "start": 12.833,
+     "end": 13.008
+    },
+    {
+     "w": "a",
+     "start": 13.008,
+     "end": 13.095
+    },
+    {
+     "w": "fence,",
+     "start": 13.095,
+     "end": 13.67
+    },
+    {
+     "w": "and",
+     "start": 13.77,
+     "end": 13.883
+    },
+    {
+     "w": "the",
+     "start": 13.883,
+     "end": 13.97
+    },
+    {
+     "w": "tag",
+     "start": 13.97,
+     "end": 14.345
+    },
+    {
+     "w": "stays",
+     "start": 14.345,
+     "end": 14.695
+    },
+    {
+     "w": "behind.",
+     "start": 14.695,
+     "end": 15.52
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "i": 2,
+   "text": "So you add the chip. No battery, no GPS. A scanner wakes it up, and it answers with one number. Now she carries it everywhere.",
+   "start": 16.03,
+   "end": 23.98,
+   "words": [
+    {
+     "w": "So",
+     "start": 16.03,
+     "end": 16.13
+    },
+    {
+     "w": "you",
+     "start": 16.13,
+     "end": 16.318
+    },
+    {
+     "w": "add",
+     "start": 16.318,
+     "end": 16.568
+    },
+    {
+     "w": "the",
+     "start": 16.568,
+     "end": 16.668
+    },
+    {
+     "w": "chip.",
+     "start": 16.668,
+     "end": 17.18
+    },
+    {
+     "w": "No",
+     "start": 17.318,
+     "end": 17.505
+    },
+    {
+     "w": "battery,",
+     "start": 17.505,
+     "end": 17.955
+    },
+    {
+     "w": "no",
+     "start": 18.005,
+     "end": 18.193
+    },
+    {
+     "w": "GPS.",
+     "start": 18.193,
+     "end": 19.105
+    },
+    {
+     "w": "A",
+     "start": 19.243,
+     "end": 19.368
+    },
+    {
+     "w": "scanner",
+     "start": 19.368,
+     "end": 19.805
+    },
+    {
+     "w": "wakes",
+     "start": 19.805,
+     "end": 20.043
+    },
+    {
+     "w": "it",
+     "start": 20.043,
+     "end": 20.118
+    },
+    {
+     "w": "up,",
+     "start": 20.118,
+     "end": 20.38
+    },
+    {
+     "w": "and",
+     "start": 20.455,
+     "end": 20.568
+    },
+    {
+     "w": "it",
+     "start": 20.568,
+     "end": 20.668
+    },
+    {
+     "w": "answers",
+     "start": 20.668,
+     "end": 21.155
+    },
+    {
+     "w": "with",
+     "start": 21.155,
+     "end": 21.33
+    },
+    {
+     "w": "one",
+     "start": 21.33,
+     "end": 21.53
+    },
+    {
+     "w": "number.",
+     "start": 21.53,
+     "end": 22.105
+    },
+    {
+     "w": "Now",
+     "start": 22.243,
+     "end": 22.48
+    },
+    {
+     "w": "she",
+     "start": 22.48,
+     "end": 22.63
+    },
+    {
+     "w": "carries",
+     "start": 22.63,
+     "end": 23.03
+    },
+    {
+     "w": "it",
+     "start": 23.03,
+     "end": 23.155
+    },
+    {
+     "w": "everywhere.",
+     "start": 23.155,
+     "end": 23.98
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "i": 3,
+   "text": "Then she gets out again. A shelter scans her, reads the number, and it points to nobody. You never registered it.",
+   "start": 24.49,
+   "end": 31.09,
+   "words": [
+    {
+     "w": "Then",
+     "start": 24.49,
+     "end": 24.665
+    },
+    {
+     "w": "she",
+     "start": 24.665,
+     "end": 24.79
+    },
+    {
+     "w": "gets",
+     "start": 24.79,
+     "end": 25.015
+    },
+    {
+     "w": "out",
+     "start": 25.015,
+     "end": 25.203
+    },
+    {
+     "w": "again.",
+     "start": 25.203,
+     "end": 25.865
+    },
+    {
+     "w": "A",
+     "start": 26.003,
+     "end": 26.128
+    },
+    {
+     "w": "shelter",
+     "start": 26.128,
+     "end": 26.565
+    },
+    {
+     "w": "scans",
+     "start": 26.565,
+     "end": 26.953
+    },
+    {
+     "w": "her,",
+     "start": 26.953,
+     "end": 27.24
+    },
+    {
+     "w": "reads",
+     "start": 27.353,
+     "end": 27.715
+    },
+    {
+     "w": "the",
+     "start": 27.715,
+     "end": 27.815
+    },
+    {
+     "w": "number,",
+     "start": 27.815,
+     "end": 28.215
+    },
+    {
+     "w": "and",
+     "start": 28.29,
+     "end": 28.403
+    },
+    {
+     "w": "it",
+     "start": 28.403,
+     "end": 28.49
+    },
+    {
+     "w": "points",
+     "start": 28.49,
+     "end": 28.815
+    },
+    {
+     "w": "to",
+     "start": 28.815,
+     "end": 28.915
+    },
+    {
+     "w": "nobody.",
+     "start": 28.915,
+     "end": 29.64
+    },
+    {
+     "w": "You",
+     "start": 29.765,
+     "end": 29.89
+    },
+    {
+     "w": "never",
+     "start": 29.89,
+     "end": 30.19
+    },
+    {
+     "w": "registered",
+     "start": 30.19,
+     "end": 30.69
+    },
+    {
+     "w": "it.",
+     "start": 30.69,
+     "end": 31.09
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "i": 4,
+   "text": "In one study of 53 shelters, only 58 percent of the chips they looked up were registered.",
+   "start": 31.6,
+   "end": 37.15,
+   "words": [
+    {
+     "w": "In",
+     "start": 31.6,
+     "end": 31.738
+    },
+    {
+     "w": "one",
+     "start": 31.738,
+     "end": 31.975
+    },
+    {
+     "w": "study",
+     "start": 31.975,
+     "end": 32.35
+    },
+    {
+     "w": "of",
+     "start": 32.35,
+     "end": 32.488
+    },
+    {
+     "w": "53",
+     "start": 32.488,
+     "end": 33.038
+    },
+    {
+     "w": "shelters,",
+     "start": 33.038,
+     "end": 33.9
+    },
+    {
+     "w": "only",
+     "start": 34.0,
+     "end": 34.325
+    },
+    {
+     "w": "58",
+     "start": 34.325,
+     "end": 34.85
+    },
+    {
+     "w": "percent",
+     "start": 34.85,
+     "end": 35.188
+    },
+    {
+     "w": "of",
+     "start": 35.188,
+     "end": 35.263
+    },
+    {
+     "w": "the",
+     "start": 35.263,
+     "end": 35.363
+    },
+    {
+     "w": "chips",
+     "start": 35.363,
+     "end": 35.675
+    },
+    {
+     "w": "they",
+     "start": 35.675,
+     "end": 35.825
+    },
+    {
+     "w": "looked",
+     "start": 35.825,
+     "end": 36.038
+    },
+    {
+     "w": "up",
+     "start": 36.038,
+     "end": 36.225
+    },
+    {
+     "w": "were",
+     "start": 36.225,
+     "end": 36.35
+    },
+    {
+     "w": "registered.",
+     "start": 36.35,
+     "end": 37.15
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "i": 5,
+   "text": "So you add the registry: her number, your name, your phone. Now that number points home.",
+   "start": 37.66,
+   "end": 42.385,
+   "words": [
+    {
+     "w": "So",
+     "start": 37.66,
+     "end": 37.76
+    },
+    {
+     "w": "you",
+     "start": 37.76,
+     "end": 37.922
+    },
+    {
+     "w": "add",
+     "start": 37.922,
+     "end": 38.122
+    },
+    {
+     "w": "the",
+     "start": 38.122,
+     "end": 38.21
+    },
+    {
+     "w": "registry:",
+     "start": 38.21,
+     "end": 38.91
+    },
+    {
+     "w": "her",
+     "start": 39.01,
+     "end": 39.16
+    },
+    {
+     "w": "number,",
+     "start": 39.16,
+     "end": 39.435
+    },
+    {
+     "w": "your",
+     "start": 39.485,
+     "end": 39.66
+    },
+    {
+     "w": "name,",
+     "start": 39.66,
+     "end": 39.935
+    },
+    {
+     "w": "your",
+     "start": 39.972,
+     "end": 40.122
+    },
+    {
+     "w": "phone.",
+     "start": 40.122,
+     "end": 40.735
+    },
+    {
+     "w": "Now",
+     "start": 40.898,
+     "end": 41.122
+    },
+    {
+     "w": "that",
+     "start": 41.122,
+     "end": 41.273
+    },
+    {
+     "w": "number",
+     "start": 41.273,
+     "end": 41.485
+    },
+    {
+     "w": "points",
+     "start": 41.485,
+     "end": 41.785
+    },
+    {
+     "w": "home.",
+     "start": 41.785,
+     "end": 42.385
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "i": 6,
+   "text": "Then you move, and get a new phone. The shelter calls your old number. Disconnected. It's the most common reason owners aren't found.",
+   "start": 42.895,
+   "end": 50.545,
+   "words": [
+    {
+     "w": "Then",
+     "start": 42.895,
+     "end": 43.02
+    },
+    {
+     "w": "you",
+     "start": 43.02,
+     "end": 43.145
+    },
+    {
+     "w": "move,",
+     "start": 43.145,
+     "end": 43.57
+    },
+    {
+     "w": "and",
+     "start": 43.645,
+     "end": 43.77
+    },
+    {
+     "w": "get",
+     "start": 43.77,
+     "end": 43.932
+    },
+    {
+     "w": "a",
+     "start": 43.932,
+     "end": 43.995
+    },
+    {
+     "w": "new",
+     "start": 43.995,
+     "end": 44.182
+    },
+    {
+     "w": "phone.",
+     "start": 44.182,
+     "end": 44.82
+    },
+    {
+     "w": "The",
+     "start": 44.92,
+     "end": 45.057
+    },
+    {
+     "w": "shelter",
+     "start": 45.057,
+     "end": 45.495
+    },
+    {
+     "w": "calls",
+     "start": 45.495,
+     "end": 45.758
+    },
+    {
+     "w": "your",
+     "start": 45.758,
+     "end": 45.87
+    },
+    {
+     "w": "old",
+     "start": 45.87,
+     "end": 46.095
+    },
+    {
+     "w": "number.",
+     "start": 46.095,
+     "end": 46.67
+    },
+    {
+     "w": "Disconnected.",
+     "start": 46.807,
+     "end": 47.845
+    },
+    {
+     "w": "It's",
+     "start": 47.945,
+     "end": 48.107
+    },
+    {
+     "w": "the",
+     "start": 48.107,
+     "end": 48.182
+    },
+    {
+     "w": "most",
+     "start": 48.182,
+     "end": 48.457
+    },
+    {
+     "w": "common",
+     "start": 48.457,
+     "end": 48.87
+    },
+    {
+     "w": "reason",
+     "start": 48.87,
+     "end": 49.245
+    },
+    {
+     "w": "owners",
+     "start": 49.245,
+     "end": 49.645
+    },
+    {
+     "w": "aren't",
+     "start": 49.645,
+     "end": 49.845
+    },
+    {
+     "w": "found.",
+     "start": 49.845,
+     "end": 50.545
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "i": 7,
+   "text": "So you add updates. Change the record when you move, and check it once a year.",
+   "start": 51.055,
+   "end": 55.405,
+   "words": [
+    {
+     "w": "So",
+     "start": 51.055,
+     "end": 51.18
+    },
+    {
+     "w": "you",
+     "start": 51.18,
+     "end": 51.367
+    },
+    {
+     "w": "add",
+     "start": 51.367,
+     "end": 51.63
+    },
+    {
+     "w": "updates.",
+     "start": 51.63,
+     "end": 52.455
+    },
+    {
+     "w": "Change",
+     "start": 52.592,
+     "end": 52.917
+    },
+    {
+     "w": "the",
+     "start": 52.917,
+     "end": 53.005
+    },
+    {
+     "w": "record",
+     "start": 53.005,
+     "end": 53.367
+    },
+    {
+     "w": "when",
+     "start": 53.367,
+     "end": 53.492
+    },
+    {
+     "w": "you",
+     "start": 53.492,
+     "end": 53.605
+    },
+    {
+     "w": "move,",
+     "start": 53.605,
+     "end": 54.005
+    },
+    {
+     "w": "and",
+     "start": 54.08,
+     "end": 54.217
+    },
+    {
+     "w": "check",
+     "start": 54.217,
+     "end": 54.442
+    },
+    {
+     "w": "it",
+     "start": 54.442,
+     "end": 54.517
+    },
+    {
+     "w": "once",
+     "start": 54.517,
+     "end": 54.742
+    },
+    {
+     "w": "a",
+     "start": 54.742,
+     "end": 54.805
+    },
+    {
+     "w": "year.",
+     "start": 54.805,
+     "end": 55.405
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "i": 8,
+   "text": "Then a shelter's old scanner passes over her, and stays silent. Not every scanner reads every chip.",
+   "start": 55.915,
+   "end": 62.115,
+   "words": [
+    {
+     "w": "Then",
+     "start": 55.915,
+     "end": 56.09
+    },
+    {
+     "w": "a",
+     "start": 56.09,
+     "end": 56.215
+    },
+    {
+     "w": "shelter's",
+     "start": 56.215,
+     "end": 56.74
+    },
+    {
+     "w": "old",
+     "start": 56.74,
+     "end": 56.99
+    },
+    {
+     "w": "scanner",
+     "start": 56.99,
+     "end": 57.427
+    },
+    {
+     "w": "passes",
+     "start": 57.427,
+     "end": 57.802
+    },
+    {
+     "w": "over",
+     "start": 57.802,
+     "end": 58.04
+    },
+    {
+     "w": "her,",
+     "start": 58.04,
+     "end": 58.39
+    },
+    {
+     "w": "and",
+     "start": 58.49,
+     "end": 58.615
+    },
+    {
+     "w": "stays",
+     "start": 58.615,
+     "end": 58.977
+    },
+    {
+     "w": "silent.",
+     "start": 58.977,
+     "end": 59.815
+    },
+    {
+     "w": "Not",
+     "start": 59.952,
+     "end": 60.19
+    },
+    {
+     "w": "every",
+     "start": 60.19,
+     "end": 60.49
+    },
+    {
+     "w": "scanner",
+     "start": 60.49,
+     "end": 60.915
+    },
+    {
+     "w": "reads",
+     "start": 60.915,
+     "end": 61.24
+    },
+    {
+     "w": "every",
+     "start": 61.24,
+     "end": 61.552
+    },
+    {
+     "w": "chip.",
+     "start": 61.552,
+     "end": 62.115
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "i": 9,
+   "text": "So you add a universal scanner, the [ISO](/ˈaɪsoʊ/) chip standard, and a second pass, every time.",
+   "start": 62.625,
+   "end": 68.075,
+   "words": [
+    {
+     "w": "So",
+     "start": 62.625,
+     "end": 62.75
+    },
+    {
+     "w": "you",
+     "start": 62.75,
+     "end": 62.912
+    },
+    {
+     "w": "add",
+     "start": 62.912,
+     "end": 63.137
+    },
+    {
+     "w": "a",
+     "start": 63.137,
+     "end": 63.2
+    },
+    {
+     "w": "universal",
+     "start": 63.2,
+     "end": 63.725
+    },
+    {
+     "w": "scanner,",
+     "start": 63.725,
+     "end": 64.35
+    },
+    {
+     "w": "the",
+     "start": 64.45,
+     "end": 64.612
+    },
+    {
+     "w": "ISO",
+     "start": 64.612,
+     "end": 65.037
+    },
+    {
+     "w": "chip",
+     "start": 65.037,
+     "end": 65.3
+    },
+    {
+     "w": "standard,",
+     "start": 65.3,
+     "end": 66.05
+    },
+    {
+     "w": "and",
+     "start": 66.15,
+     "end": 66.262
+    },
+    {
+     "w": "a",
+     "start": 66.262,
+     "end": 66.337
+    },
+    {
+     "w": "second",
+     "start": 66.337,
+     "end": 66.675
+    },
+    {
+     "w": "pass,",
+     "start": 66.675,
+     "end": 67.05
+    },
+    {
+     "w": "every",
+     "start": 67.1,
+     "end": 67.4
+    },
+    {
+     "w": "time.",
+     "start": 67.4,
+     "end": 68.075
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "i": 10,
+   "text": "Now her number shows up. But which registry has it? There isn't just one.",
+   "start": 68.585,
+   "end": 72.685,
+   "words": [
+    {
+     "w": "Now",
+     "start": 68.585,
+     "end": 68.785
+    },
+    {
+     "w": "her",
+     "start": 68.785,
+     "end": 68.91
+    },
+    {
+     "w": "number",
+     "start": 68.91,
+     "end": 69.197
+    },
+    {
+     "w": "shows",
+     "start": 69.197,
+     "end": 69.51
+    },
+    {
+     "w": "up.",
+     "start": 69.51,
+     "end": 69.885
+    },
+    {
+     "w": "But",
+     "start": 69.96,
+     "end": 70.097
+    },
+    {
+     "w": "which",
+     "start": 70.097,
+     "end": 70.322
+    },
+    {
+     "w": "registry",
+     "start": 70.322,
+     "end": 70.835
+    },
+    {
+     "w": "has",
+     "start": 70.835,
+     "end": 71.097
+    },
+    {
+     "w": "it?",
+     "start": 71.097,
+     "end": 71.41
+    },
+    {
+     "w": "There",
+     "start": 71.485,
+     "end": 71.622
+    },
+    {
+     "w": "isn't",
+     "start": 71.622,
+     "end": 71.86
+    },
+    {
+     "w": "just",
+     "start": 71.86,
+     "end": 72.11
+    },
+    {
+     "w": "one.",
+     "start": 72.11,
+     "end": 72.685
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "i": 11,
+   "text": "So you add a universal lookup. Type the number once, and it points to the registry that knows her.",
+   "start": 73.195,
+   "end": 78.72,
+   "words": [
+    {
+     "w": "So",
+     "start": 73.195,
+     "end": 73.32
+    },
+    {
+     "w": "you",
+     "start": 73.32,
+     "end": 73.52
+    },
+    {
+     "w": "add",
+     "start": 73.52,
+     "end": 73.795
+    },
+    {
+     "w": "a",
+     "start": 73.795,
+     "end": 73.907
+    },
+    {
+     "w": "universal",
+     "start": 73.907,
+     "end": 74.595
+    },
+    {
+     "w": "lookup.",
+     "start": 74.595,
+     "end": 75.27
+    },
+    {
+     "w": "Type",
+     "start": 75.407,
+     "end": 75.657
+    },
+    {
+     "w": "the",
+     "start": 75.657,
+     "end": 75.745
+    },
+    {
+     "w": "number",
+     "start": 75.745,
+     "end": 76.02
+    },
+    {
+     "w": "once,",
+     "start": 76.02,
+     "end": 76.52
+    },
+    {
+     "w": "and",
+     "start": 76.595,
+     "end": 76.707
+    },
+    {
+     "w": "it",
+     "start": 76.707,
+     "end": 76.795
+    },
+    {
+     "w": "points",
+     "start": 76.795,
+     "end": 77.12
+    },
+    {
+     "w": "to",
+     "start": 77.12,
+     "end": 77.207
+    },
+    {
+     "w": "the",
+     "start": 77.207,
+     "end": 77.295
+    },
+    {
+     "w": "registry",
+     "start": 77.295,
+     "end": 77.82
+    },
+    {
+     "w": "that",
+     "start": 77.82,
+     "end": 77.995
+    },
+    {
+     "w": "knows",
+     "start": 77.995,
+     "end": 78.257
+    },
+    {
+     "w": "her.",
+     "start": 78.257,
+     "end": 78.72
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "i": 12,
+   "text": "Months later, Maple's chip is registered, current, readable, and findable.",
+   "start": 79.48,
+   "end": 83.83,
+   "words": [
+    {
+     "w": "Months",
+     "start": 79.48,
+     "end": 79.755
+    },
+    {
+     "w": "later,",
+     "start": 79.755,
+     "end": 80.08
+    },
+    {
+     "w": "Maple's",
+     "start": 80.155,
+     "end": 80.555
+    },
+    {
+     "w": "chip",
+     "start": 80.555,
+     "end": 80.805
+    },
+    {
+     "w": "is",
+     "start": 80.805,
+     "end": 80.955
+    },
+    {
+     "w": "registered,",
+     "start": 80.955,
+     "end": 81.73
+    },
+    {
+     "w": "current,",
+     "start": 81.867,
+     "end": 82.33
+    },
+    {
+     "w": "readable,",
+     "start": 82.417,
+     "end": 82.855
+    },
+    {
+     "w": "and",
+     "start": 82.892,
+     "end": 83.017
+    },
+    {
+     "w": "findable.",
+     "start": 83.017,
+     "end": 83.83
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "i": 13,
+   "text": "Then one Friday, two years later, a scanner beeps in a shelter forty miles away. Her old tag is still in the drawer. And your phone rings.",
+   "start": 84.64,
+   "end": 92.89,
+   "words": [
+    {
+     "w": "Then",
+     "start": 84.64,
+     "end": 84.79
+    },
+    {
+     "w": "one",
+     "start": 84.79,
+     "end": 85.027
+    },
+    {
+     "w": "Friday,",
+     "start": 85.027,
+     "end": 85.59
+    },
+    {
+     "w": "two",
+     "start": 85.702,
+     "end": 85.827
+    },
+    {
+     "w": "years",
+     "start": 85.827,
+     "end": 86.065
+    },
+    {
+     "w": "later,",
+     "start": 86.065,
+     "end": 86.415
+    },
+    {
+     "w": "a",
+     "start": 86.49,
+     "end": 86.602
+    },
+    {
+     "w": "scanner",
+     "start": 86.602,
+     "end": 87.04
+    },
+    {
+     "w": "beeps",
+     "start": 87.04,
+     "end": 87.327
+    },
+    {
+     "w": "in",
+     "start": 87.327,
+     "end": 87.402
+    },
+    {
+     "w": "a",
+     "start": 87.402,
+     "end": 87.502
+    },
+    {
+     "w": "shelter",
+     "start": 87.502,
+     "end": 87.965
+    },
+    {
+     "w": "forty",
+     "start": 87.965,
+     "end": 88.315
+    },
+    {
+     "w": "miles",
+     "start": 88.315,
+     "end": 88.615
+    },
+    {
+     "w": "away.",
+     "start": 88.615,
+     "end": 89.34
+    },
+    {
+     "w": "Her",
+     "start": 89.49,
+     "end": 89.665
+    },
+    {
+     "w": "old",
+     "start": 89.665,
+     "end": 89.952
+    },
+    {
+     "w": "tag",
+     "start": 89.952,
+     "end": 90.327
+    },
+    {
+     "w": "is",
+     "start": 90.327,
+     "end": 90.415
+    },
+    {
+     "w": "still",
+     "start": 90.415,
+     "end": 90.677
+    },
+    {
+     "w": "in",
+     "start": 90.677,
+     "end": 90.752
+    },
+    {
+     "w": "the",
+     "start": 90.752,
+     "end": 90.84
+    },
+    {
+     "w": "drawer.",
+     "start": 90.84,
+     "end": 91.465
+    },
+    {
+     "w": "And",
+     "start": 91.565,
+     "end": 91.702
+    },
+    {
+     "w": "your",
+     "start": 91.702,
+     "end": 91.852
+    },
+    {
+     "w": "phone",
+     "start": 91.852,
+     "end": 92.19
+    },
+    {
+     "w": "rings.",
+     "start": 92.19,
+     "end": 92.89
+    }
+   ]
+  }
+ ]
+}

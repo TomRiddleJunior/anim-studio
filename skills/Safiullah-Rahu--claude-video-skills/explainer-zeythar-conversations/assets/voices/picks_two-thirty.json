@@ -1,0 +1,973 @@
+{
+ "anchors": {
+  "Z": {
+   "file": "vo\\anchors\\Z_anchor.wav",
+   "kept": true
+  },
+  "L": {
+   "file": "vo\\anchors\\L_anchor.wav",
+   "kept": true
+  }
+ },
+ "lines": [
+  {
+   "id": "l01",
+   "who": "L",
+   "pick": "vo/takes/l01_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l01_s1.wav",
+     "seed": 1,
+     "heard": "Saethar, it's 2.30 a.m. I said I'd sleep at 10.",
+     "wer": 0.0,
+     "f0": 248.0,
+     "f0_range": 6.93,
+     "dur": 4.64,
+     "cos": 0.7556
+    },
+    {
+     "file": "vo/takes/l01_s2.wav",
+     "seed": 2,
+     "heard": "Zethar, it's 2.30 a.m.. I said I'd sleep at 10",
+     "wer": 0.0,
+     "f0": 218.3,
+     "f0_range": 11.35,
+     "dur": 5.2,
+     "cos": 0.7736
+    },
+    {
+     "file": "vo/takes/l01_s3.wav",
+     "seed": 3,
+     "heard": "Zathar, it's 2.30 a.m. I said I'd sleep at 10.",
+     "wer": 0.0,
+     "f0": 242.5,
+     "f0_range": 6.81,
+     "dur": 5.04,
+     "cos": 0.839
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "who": "Z",
+   "pick": "vo/takes/l02_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l02_s1.wav",
+     "seed": 1,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 84.1,
+     "f0_range": 8.17,
+     "dur": 3.68,
+     "cos": 0.7587
+    },
+    {
+     "file": "vo/takes/l02_s2.wav",
+     "seed": 2,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 97.1,
+     "f0_range": 7.65,
+     "dur": 5.28,
+     "cos": 0.7914
+    },
+    {
+     "file": "vo/takes/l02_s3.wav",
+     "seed": 3,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 84.2,
+     "f0_range": 6.16,
+     "dur": 4.72,
+     "cos": 0.8347
+    },
+    {
+     "file": "vo/takes/l02_s4.wav",
+     "seed": 4,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 100.8,
+     "f0_range": 8.99,
+     "dur": 4.96,
+     "cos": 0.803
+    },
+    {
+     "file": "vo/takes/l02_s5.wav",
+     "seed": 5,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 98.9,
+     "f0_range": 7.99,
+     "dur": 4.72,
+     "cos": 0.8199
+    },
+    {
+     "file": "vo/takes/l02_s6.wav",
+     "seed": 6,
+     "heard": "You said that yesterday, and on Tuesday, I keep records.",
+     "wer": 0.0,
+     "f0": 131.0,
+     "f0_range": 15.4,
+     "dur": 4.88,
+     "cos": 0.8196
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "who": "L",
+   "pick": "vo/takes/l03_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l03_s1.wav",
+     "seed": 1,
+     "heard": "I'm not even doing anything. I'm just replaying a conversation from 2019.",
+     "wer": 0.0,
+     "f0": 322.2,
+     "f0_range": 11.59,
+     "dur": 5.84,
+     "cos": 0.7899
+    },
+    {
+     "file": "vo/takes/l03_s2.wav",
+     "seed": 2,
+     "heard": "I'm not even doing anything, I'm just replaying a conversation from 2019!",
+     "wer": 0.0,
+     "f0": 400.4,
+     "f0_range": 5.6,
+     "dur": 4.56,
+     "cos": 0.8382
+    },
+    {
+     "file": "vo/takes/l03_s3.wav",
+     "seed": 3,
+     "heard": "I'm not even doing anything. I'm just replaying a conversation from 2019.",
+     "wer": 0.0,
+     "f0": 322.7,
+     "f0_range": 8.74,
+     "dur": 4.64,
+     "cos": 0.7942
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "who": "Z",
+   "pick": "vo/takes/l04_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l04_s1.wav",
+     "seed": 1,
+     "heard": "Ah. The committee is in session.",
+     "wer": 0.0,
+     "f0": 110.1,
+     "f0_range": 12.15,
+     "dur": 3.36,
+     "cos": 0.8356
+    },
+    {
+     "file": "vo/takes/l04_s2.wav",
+     "seed": 2,
+     "heard": "Ah, the committee is in session.",
+     "wer": 0.0,
+     "f0": 126.7,
+     "f0_range": 14.68,
+     "dur": 3.76,
+     "cos": 0.6486
+    },
+    {
+     "file": "vo/takes/l04_s3.wav",
+     "seed": 3,
+     "heard": "Ah, the committee is in session.",
+     "wer": 0.0,
+     "f0": 79.9,
+     "f0_range": 9.5,
+     "dur": 2.64,
+     "cos": 0.701
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "who": "L",
+   "pick": "vo/takes/l05_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l05_s1.wav",
+     "seed": 1,
+     "heard": "The what?",
+     "wer": 0.0,
+     "f0": 181.6,
+     "f0_range": 4.2,
+     "dur": 0.88,
+     "cos": 0.6211
+    },
+    {
+     "file": "vo/takes/l05_s2.wav",
+     "seed": 2,
+     "heard": "The what?",
+     "wer": 0.0,
+     "f0": 301.4,
+     "f0_range": 7.06,
+     "dur": 0.96,
+     "cos": 0.5998
+    },
+    {
+     "file": "vo/takes/l05_s3.wav",
+     "seed": 3,
+     "heard": "The what?",
+     "wer": 0.0,
+     "f0": 299.9,
+     "f0_range": 5.2,
+     "dur": 0.72,
+     "cos": 0.6507
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "who": "Z",
+   "pick": "vo/takes/l06_s6.wav",
+   "seed": 6,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l06_s1.wav",
+     "seed": 1,
+     "heard": "Every awkward thing you have ever said, reviewed nightly, attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 97.3,
+     "f0_range": 6.9,
+     "dur": 6.88,
+     "cos": 0.8246
+    },
+    {
+     "file": "vo/takes/l06_s2.wav",
+     "seed": 2,
+     "heard": "Every awkward thing you have ever said, reviewed nightly, attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 93.0,
+     "f0_range": 7.71,
+     "dur": 8.24,
+     "cos": 0.8593
+    },
+    {
+     "file": "vo/takes/l06_s3.wav",
+     "seed": 3,
+     "heard": "Every awkward thing you have ever said, reviewed nightly, attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 88.5,
+     "f0_range": 7.7,
+     "dur": 6.4,
+     "cos": 0.8383
+    },
+    {
+     "file": "vo/takes/l06_s4.wav",
+     "seed": 4,
+     "heard": "Every awkward thing you have ever said, reviewed nightly. Attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 79.9,
+     "f0_range": 5.51,
+     "dur": 7.68,
+     "cos": 0.8301
+    },
+    {
+     "file": "vo/takes/l06_s5.wav",
+     "seed": 5,
+     "heard": "Every awkward thing you have ever said, reviewed nightly, attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 95.4,
+     "f0_range": 7.76,
+     "dur": 8.08,
+     "cos": 0.8262
+    },
+    {
+     "file": "vo/takes/l06_s6.wav",
+     "seed": 6,
+     "heard": "Every awkward thing you have ever said reviewed nightly, attendance is mandatory.",
+     "wer": 0.0,
+     "f0": 82.5,
+     "f0_range": 3.8,
+     "dur": 6.16,
+     "cos": 0.8061
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "who": "L",
+   "pick": "vo/takes/l07_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l07_s1.wav",
+     "seed": 1,
+     "heard": "Why does it only meet at night?",
+     "wer": 0.0,
+     "f0": 413.8,
+     "f0_range": 10.85,
+     "dur": 2.24,
+     "cos": 0.813
+    },
+    {
+     "file": "vo/takes/l07_s2.wav",
+     "seed": 2,
+     "heard": "Why does it only meet at night?",
+     "wer": 0.0,
+     "f0": 352.6,
+     "f0_range": 3.87,
+     "dur": 1.84,
+     "cos": 0.7334
+    },
+    {
+     "file": "vo/takes/l07_s3.wav",
+     "seed": 3,
+     "heard": "Why does it only meet at night?",
+     "wer": 0.0,
+     "f0": 457.5,
+     "f0_range": 4.85,
+     "dur": 1.92,
+     "cos": 0.7317
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "who": "Z",
+   "pick": "vo/takes/l08_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l08_s1.wav",
+     "seed": 1,
+     "heard": "Because during the day, you never give it an appointment.",
+     "wer": 0.0,
+     "f0": 95.1,
+     "f0_range": 9.16,
+     "dur": 3.36,
+     "cos": 0.826
+    },
+    {
+     "file": "vo/takes/l08_s2.wav",
+     "seed": 2,
+     "heard": "Because during the day, you never give it an appointment.",
+     "wer": 0.0,
+     "f0": 112.0,
+     "f0_range": 12.4,
+     "dur": 4.88,
+     "cos": 0.7937
+    },
+    {
+     "file": "vo/takes/l08_s3.wav",
+     "seed": 3,
+     "heard": "Because during the day, you never give it an appointment.",
+     "wer": 0.0,
+     "f0": 99.1,
+     "f0_range": 6.5,
+     "dur": 3.28,
+     "cos": 0.6896
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "who": "L",
+   "pick": "vo/takes/l09_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l09_s1.wav",
+     "seed": 1,
+     "heard": "Okay, wise one. How do I make it stop?",
+     "wer": 0.0,
+     "f0": 303.6,
+     "f0_range": 18.42,
+     "dur": 3.04,
+     "cos": 0.7475
+    },
+    {
+     "file": "vo/takes/l09_s2.wav",
+     "seed": 2,
+     "heard": "Okay, wise one. How do I make it stop?",
+     "wer": 0.0,
+     "f0": 258.4,
+     "f0_range": 9.7,
+     "dur": 4.16,
+     "cos": 0.843
+    },
+    {
+     "file": "vo/takes/l09_s3.wav",
+     "seed": 3,
+     "heard": "Okay, wise one, how do I make it stop?",
+     "wer": 0.0,
+     "f0": 296.7,
+     "f0_range": 8.31,
+     "dur": 2.56,
+     "cos": 0.8182
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "who": "Z",
+   "pick": "vo/takes/l10_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l10_s1.wav",
+     "seed": 1,
+     "heard": "Give it 10 minutes before dinner, with a pen, every worry on paper.",
+     "wer": 0.0,
+     "f0": 86.0,
+     "f0_range": 8.5,
+     "dur": 5.68,
+     "cos": 0.8316
+    },
+    {
+     "file": "vo/takes/l10_s2.wav",
+     "seed": 2,
+     "heard": "Give it ten minutes before dinner, with a pen, every worry on paper.",
+     "wer": 0.0,
+     "f0": 93.7,
+     "f0_range": 9.2,
+     "dur": 6.0,
+     "cos": 0.8181
+    },
+    {
+     "file": "vo/takes/l10_s3.wav",
+     "seed": 3,
+     "heard": "Give it 10 minutes before dinner, with a pen, every worry on paper.",
+     "wer": 0.0,
+     "f0": 109.5,
+     "f0_range": 14.34,
+     "dur": 5.92,
+     "cos": 0.811
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "who": "L",
+   "pick": "vo/takes/l11_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l11_s1.wav",
+     "seed": 1,
+     "heard": "That's it? That's the ancient wisdom?",
+     "wer": 0.0,
+     "f0": 445.2,
+     "f0_range": 4.86,
+     "dur": 3.2,
+     "cos": 0.7538
+    },
+    {
+     "file": "vo/takes/l11_s2.wav",
+     "seed": 2,
+     "heard": "That's it? That's the ancient wisdom?",
+     "wer": 0.0,
+     "f0": 378.1,
+     "f0_range": 7.78,
+     "dur": 2.4,
+     "cos": 0.7936
+    },
+    {
+     "file": "vo/takes/l11_s3.wav",
+     "seed": 3,
+     "heard": "That's it? That's the ancient wisdom?",
+     "wer": 0.0,
+     "f0": 275.1,
+     "f0_range": 9.6,
+     "dur": 3.44,
+     "cos": 0.8031
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "who": "Z",
+   "pick": "vo/takes/l12_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l12_s1.wav",
+     "seed": 1,
+     "heard": "The ancient wisdom was, go to sleep. Your species declined.",
+     "wer": 0.0,
+     "f0": 78.6,
+     "f0_range": 8.2,
+     "dur": 5.28,
+     "cos": 0.8387
+    },
+    {
+     "file": "vo/takes/l12_s2.wav",
+     "seed": 2,
+     "heard": "The ancient wisdom was, go to sleep. Your species declined.",
+     "wer": 0.0,
+     "f0": 81.6,
+     "f0_range": 6.62,
+     "dur": 5.04,
+     "cos": 0.8528
+    },
+    {
+     "file": "vo/takes/l12_s3.wav",
+     "seed": 3,
+     "heard": "The ancient wisdom was, go to sleep, your species decline.",
+     "wer": 0.1,
+     "f0": 99.1,
+     "f0_range": 12.05,
+     "dur": 6.64,
+     "cos": 0.8116
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "who": "L",
+   "pick": "vo/takes/l13_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l13_s1.wav",
+     "seed": 1,
+     "heard": "Rude.",
+     "wer": 0.0,
+     "f0": 229.2,
+     "f0_range": 1.27,
+     "dur": 1.84,
+     "cos": 0.626
+    },
+    {
+     "file": "vo/takes/l13_s11.wav",
+     "seed": 11,
+     "heard": "Rude.",
+     "wer": 0.0,
+     "f0": 371.3,
+     "f0_range": 12.86,
+     "dur": 1.92,
+     "cos": 0.6477
+    },
+    {
+     "file": "vo/takes/l13_s12.wav",
+     "seed": 12,
+     "heard": "Huh! Rude!",
+     "wer": 1.0,
+     "f0": 388.1,
+     "f0_range": 15.84,
+     "dur": 1.68,
+     "cos": 0.6723
+    },
+    {
+     "file": "vo/takes/l13_s2.wav",
+     "seed": 2,
+     "heard": "Hah, rude.",
+     "wer": 0.0,
+     "f0": 224.3,
+     "f0_range": 8.75,
+     "dur": 1.76,
+     "cos": 0.6856
+    },
+    {
+     "file": "vo/takes/l13_s3.wav",
+     "seed": 3,
+     "heard": "Rude.",
+     "wer": 0.0,
+     "f0": 301.2,
+     "f0_range": 17.47,
+     "dur": 2.24,
+     "cos": 0.4367
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "who": "L",
+   "pick": "vo/takes/l14_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l14_s1.wav",
+     "seed": 1,
+     "heard": "Can I tell you something weird? Night is the only time nobody needs anything from me.",
+     "wer": 0.0,
+     "f0": 276.7,
+     "f0_range": 9.98,
+     "dur": 5.52,
+     "cos": 0.7942
+    },
+    {
+     "file": "vo/takes/l14_s2.wav",
+     "seed": 2,
+     "heard": "Can I tell you something weird? Night is the only time nobody needs anything from me.",
+     "wer": 0.0,
+     "f0": 241.2,
+     "f0_range": 11.54,
+     "dur": 5.28,
+     "cos": 0.7746
+    },
+    {
+     "file": "vo/takes/l14_s3.wav",
+     "seed": 3,
+     "heard": "Can I tell you something weird? Light is the only time nobody needs anything from me.",
+     "wer": 0.062,
+     "f0": 288.2,
+     "f0_range": 12.94,
+     "dur": 5.84,
+     "cos": 0.8448
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "who": "Z",
+   "pick": "vo/takes/l15_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l15_s1.wav",
+     "seed": 1,
+     "heard": "That is not weird. You are not avoiding sleep. You are taking back your day.",
+     "wer": 0.0,
+     "f0": 90.5,
+     "f0_range": 6.68,
+     "dur": 5.68,
+     "cos": 0.8152
+    },
+    {
+     "file": "vo/takes/l15_s2.wav",
+     "seed": 2,
+     "heard": "That is not weird. You are not avoiding sleep. You are taking back your day.",
+     "wer": 0.0,
+     "f0": 73.7,
+     "f0_range": 4.63,
+     "dur": 5.68,
+     "cos": 0.8691
+    },
+    {
+     "file": "vo/takes/l15_s3.wav",
+     "seed": 3,
+     "heard": "That is not weird. You are not avoiding sleep. You are taking back your day.",
+     "wer": 0.0,
+     "f0": 92.4,
+     "f0_range": 8.19,
+     "dur": 5.2,
+     "cos": 0.7279
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "who": "L",
+   "pick": "vo/takes/l16_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l16_s1.wav",
+     "seed": 1,
+     "heard": "Oh.",
+     "wer": 0.0,
+     "f0": 295.3,
+     "f0_range": 4.87,
+     "dur": 1.36,
+     "cos": 0.5765
+    },
+    {
+     "file": "vo/takes/l16_s2.wav",
+     "seed": 2,
+     "heard": "Oh!",
+     "wer": 0.0,
+     "f0": 251.5,
+     "f0_range": 17.08,
+     "dur": 0.64,
+     "cos": 0.5124
+    },
+    {
+     "file": "vo/takes/l16_s3.wav",
+     "seed": 3,
+     "heard": "Oh!",
+     "wer": 0.0,
+     "f0": 336.4,
+     "f0_range": 11.8,
+     "dur": 1.44,
+     "cos": 0.4724
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "who": "Z",
+   "pick": "vo/takes/l17_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l17_s1.wav",
+     "seed": 1,
+     "heard": "So, take some of it back while the sun is up, then the night won't have to steal it for you.",
+     "wer": 0.0,
+     "f0": 93.7,
+     "f0_range": 5.48,
+     "dur": 5.12,
+     "cos": 0.8073
+    },
+    {
+     "file": "vo/takes/l17_s2.wav",
+     "seed": 2,
+     "heard": "So, take some of it back while the sun is up, then the night won't have to steal it for you.",
+     "wer": 0.0,
+     "f0": 80.7,
+     "f0_range": 7.88,
+     "dur": 5.68,
+     "cos": 0.7808
+    },
+    {
+     "file": "vo/takes/l17_s3.wav",
+     "seed": 3,
+     "heard": "So take some of it back while the sun is up, then the night won't have to steal it for you.",
+     "wer": 0.0,
+     "f0": 103.5,
+     "f0_range": 14.5,
+     "dur": 6.08,
+     "cos": 0.7723
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "who": "L",
+   "pick": "vo/takes/l18_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l18_s1.wav",
+     "seed": 1,
+     "heard": "Okay, going to sleep, right now.",
+     "wer": 0.0,
+     "f0": 376.4,
+     "f0_range": 15.2,
+     "dur": 2.48,
+     "cos": 0.7985
+    },
+    {
+     "file": "vo/takes/l18_s2.wav",
+     "seed": 2,
+     "heard": "Okay, going to sleep, right now.",
+     "wer": 0.0,
+     "f0": 330.6,
+     "f0_range": 14.1,
+     "dur": 3.12,
+     "cos": 0.7738
+    },
+    {
+     "file": "vo/takes/l18_s3.wav",
+     "seed": 3,
+     "heard": "Okay, going to sleep right now.",
+     "wer": 0.0,
+     "f0": 332.9,
+     "f0_range": 11.53,
+     "dur": 2.64,
+     "cos": 0.7321
+    }
+   ]
+  },
+  {
+   "id": "l19",
+   "who": "Z",
+   "pick": "vo/takes/l19_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l19_s1.wav",
+     "seed": 1,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 79.3,
+     "f0_range": 5.93,
+     "dur": 2.24,
+     "cos": 0.8174
+    },
+    {
+     "file": "vo/takes/l19_s2.wav",
+     "seed": 2,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 88.7,
+     "f0_range": 6.2,
+     "dur": 2.72,
+     "cos": 0.8368
+    },
+    {
+     "file": "vo/takes/l19_s3.wav",
+     "seed": 3,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 100.6,
+     "f0_range": 8.3,
+     "dur": 2.48,
+     "cos": 0.8108
+    },
+    {
+     "file": "vo/takes/l19_s4.wav",
+     "seed": 4,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 104.4,
+     "f0_range": 6.72,
+     "dur": 1.76,
+     "cos": 0.7231
+    },
+    {
+     "file": "vo/takes/l19_s5.wav",
+     "seed": 5,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 87.1,
+     "f0_range": 6.76,
+     "dur": 2.56,
+     "cos": 0.7684
+    },
+    {
+     "file": "vo/takes/l19_s6.wav",
+     "seed": 6,
+     "heard": "You have said that four times.",
+     "wer": 0.0,
+     "f0": 123.1,
+     "f0_range": 10.5,
+     "dur": 2.24,
+     "cos": 0.8037
+    }
+   ]
+  },
+  {
+   "id": "l20",
+   "who": "L",
+   "pick": "vo/takes/l20_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l20_s1.wav",
+     "seed": 1,
+     "heard": "Goodnight, Zathar.",
+     "wer": 0.0,
+     "f0": 221.1,
+     "f0_range": 9.89,
+     "dur": 1.04,
+     "cos": 0.5991
+    },
+    {
+     "file": "vo/takes/l20_s2.wav",
+     "seed": 2,
+     "heard": "Goodnight, Zethar.",
+     "wer": 0.0,
+     "f0": 326.9,
+     "f0_range": 9.91,
+     "dur": 1.12,
+     "cos": 0.6684
+    },
+    {
+     "file": "vo/takes/l20_s3.wav",
+     "seed": 3,
+     "heard": "Goodnight, Zathar.",
+     "wer": 0.0,
+     "f0": 272.2,
+     "f0_range": 4.58,
+     "dur": 1.44,
+     "cos": 0.7632
+    }
+   ]
+  },
+  {
+   "id": "l21",
+   "who": "Z",
+   "pick": "vo/takes/l21_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l21_s1.wav",
+     "seed": 1,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 77.8,
+     "f0_range": 8.7,
+     "dur": 2.0,
+     "cos": 0.7353
+    },
+    {
+     "file": "vo/takes/l21_s2.wav",
+     "seed": 2,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 103.7,
+     "f0_range": 11.1,
+     "dur": 3.12,
+     "cos": 0.8025
+    },
+    {
+     "file": "vo/takes/l21_s3.wav",
+     "seed": 3,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 94.5,
+     "f0_range": 9.68,
+     "dur": 1.92,
+     "cos": 0.7439
+    },
+    {
+     "file": "vo/takes/l21_s4.wav",
+     "seed": 4,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 111.0,
+     "f0_range": 12.67,
+     "dur": 1.68,
+     "cos": 0.7077
+    },
+    {
+     "file": "vo/takes/l21_s5.wav",
+     "seed": 5,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 129.3,
+     "f0_range": 12.4,
+     "dur": 2.88,
+     "cos": 0.648
+    },
+    {
+     "file": "vo/takes/l21_s6.wav",
+     "seed": 6,
+     "heard": "It is 2.47.",
+     "wer": 0.0,
+     "f0": 95.7,
+     "f0_range": 9.82,
+     "dur": 1.84,
+     "cos": 0.6985
+    }
+   ]
+  }
+ ]
+}

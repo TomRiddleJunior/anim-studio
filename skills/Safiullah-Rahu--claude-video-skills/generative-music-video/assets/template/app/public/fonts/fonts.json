@@ -1,0 +1,281 @@
+{
+ "note": "Written by gmv.py fonts. One entry per STATIC face; roles: display (lyric voice), text (rare serif/italic register), mono (machine/UI voice).",
+ "families": {
+  "display": "Archivo",
+  "text": "Cormorant Garamond",
+  "mono": "IBM Plex Mono"
+ },
+ "license": "SIL Open Font License 1.1 (see OFL.txt)",
+ "faces": [
+  {
+   "role": "display",
+   "file": "display/Archivo-w1000-300.ttf",
+   "width": 100.0,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1000-500.ttf",
+   "width": 100.0,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1000-700.ttf",
+   "width": 100.0,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1000-900.ttf",
+   "width": 100.0,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1125-300.ttf",
+   "width": 112.5,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1125-500.ttf",
+   "width": 112.5,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1125-700.ttf",
+   "width": 112.5,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1125-900.ttf",
+   "width": 112.5,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1250-300.ttf",
+   "width": 125.0,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1250-500.ttf",
+   "width": 125.0,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1250-700.ttf",
+   "width": 125.0,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w1250-900.ttf",
+   "width": 125.0,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w620-300.ttf",
+   "width": 62.0,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w620-500.ttf",
+   "width": 62.0,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w620-700.ttf",
+   "width": 62.0,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w620-900.ttf",
+   "width": 62.0,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w750-300.ttf",
+   "width": 75.0,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w750-500.ttf",
+   "width": 75.0,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w750-700.ttf",
+   "width": 75.0,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w750-900.ttf",
+   "width": 75.0,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w875-300.ttf",
+   "width": 87.5,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w875-500.ttf",
+   "width": 87.5,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w875-700.ttf",
+   "width": 87.5,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/Archivo-w875-900.ttf",
+   "width": 87.5,
+   "weight": 900,
+   "italic": false
+  },
+  {
+   "role": "display",
+   "file": "display/ArchivoItalic-w1000-400.ttf",
+   "width": 100.0,
+   "weight": 400,
+   "italic": true
+  },
+  {
+   "role": "display",
+   "file": "display/ArchivoItalic-w1000-800.ttf",
+   "width": 100.0,
+   "weight": 800,
+   "italic": true
+  },
+  {
+   "role": "display",
+   "file": "display/ArchivoItalic-w750-400.ttf",
+   "width": 75.0,
+   "weight": 400,
+   "italic": true
+  },
+  {
+   "role": "display",
+   "file": "display/ArchivoItalic-w750-800.ttf",
+   "width": 75.0,
+   "weight": 800,
+   "italic": true
+  },
+  {
+   "role": "text",
+   "file": "text/Cormorant-400.ttf",
+   "width": 100,
+   "weight": 400,
+   "italic": false,
+   "features": "\"lnum\" 1"
+  },
+  {
+   "role": "text",
+   "file": "text/Cormorant-600.ttf",
+   "width": 100,
+   "weight": 600,
+   "italic": false,
+   "features": "\"lnum\" 1"
+  },
+  {
+   "role": "text",
+   "file": "text/CormorantItalic-400.ttf",
+   "width": 100,
+   "weight": 400,
+   "italic": true,
+   "features": "\"lnum\" 1"
+  },
+  {
+   "role": "text",
+   "file": "text/CormorantItalic-600.ttf",
+   "width": 100,
+   "weight": 600,
+   "italic": true,
+   "features": "\"lnum\" 1"
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-Bold.ttf",
+   "width": 100,
+   "weight": 700,
+   "italic": false
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-Italic.ttf",
+   "width": 100,
+   "weight": 400,
+   "italic": true
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-Light.ttf",
+   "width": 100,
+   "weight": 300,
+   "italic": false
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-Medium.ttf",
+   "width": 100,
+   "weight": 500,
+   "italic": false
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-Regular.ttf",
+   "width": 100,
+   "weight": 400,
+   "italic": false
+  },
+  {
+   "role": "mono",
+   "file": "mono/IBMPlexMono-SemiBold.ttf",
+   "width": 100,
+   "weight": 600,
+   "italic": false
+  }
+ ]
+}

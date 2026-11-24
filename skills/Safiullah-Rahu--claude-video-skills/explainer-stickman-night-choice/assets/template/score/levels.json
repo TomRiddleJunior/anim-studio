@@ -1,0 +1,15 @@
+{
+ "full": [
+  -14.0,
+  -2.8,
+  7.6
+ ],
+ "nomusic": [
+  -14.0,
+  -3.0,
+  7.6
+ ],
+ "voice_over_rest_db_full": 15.7,
+ "voice_over_rest_db_nomusic": 19.3,
+ "voice_over_music_db": 18.2
+}

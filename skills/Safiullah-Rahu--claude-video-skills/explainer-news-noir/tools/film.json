@@ -1,0 +1,57 @@
+{
+ "key": "newsnoir-openfiles",
+ "max_words": 2,
+ "max_chars": 16,
+ "lead": 0.04,
+ "hold": 0.5,
+ "extra_tail": 0.0,
+ "subs": [
+  [
+   "Peter Magyar",
+   "Péter Magyar"
+  ],
+  [
+   "November the fourth",
+   "4 November"
+  ],
+  [
+   "sixty thousand",
+   "60,000"
+  ],
+  [
+   "fifty-five thousand",
+   "55,000"
+  ],
+  [
+   "nineteen fifty-seven",
+   "1957"
+  ],
+  [
+   "sixty-two",
+   "1962"
+  ],
+  [
+   "nineteen fifty-six",
+   "1956"
+  ],
+  [
+   "a hundred and fifty thousand",
+   "150,000"
+  ],
+  [
+   "nine thousand",
+   "9,000"
+  ],
+  [
+   "twenty twenty-seven",
+   "2027"
+  ]
+ ],
+ "cover_t": 2.6,
+ "planned_dips": [],
+ "hand_cuts_per_min": 11.74,
+ "whisper_alias": {
+  "magyar": "magyar",
+  "euronews": "euronews"
+ }
+}

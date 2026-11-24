@@ -1,0 +1,78 @@
+{
+  "name": "Botanical engraving",
+  "dark": false,
+  "description": "Copperplate engraving on ivory: sepia ink hatching, specimen labels, Latin captions, one vermilion. Tender, old, precise.",
+  "mood": [
+    "folk",
+    "acoustic",
+    "ballad",
+    "chamber pop",
+    "nature",
+    "melancholy"
+  ],
+  "palette": {
+    "bg": "#EEE6D3",
+    "bg2": "#E3D8C0",
+    "dim": "#B5A487",
+    "mid": "#7A6A52",
+    "fg": "#2B1F16",
+    "accent": "#C8431E",
+    "hot": "#E8744A",
+    "deep": "#7F2410",
+    "rare": "#4E7A3A"
+  },
+  "fonts": {
+    "display": {
+      "family": "Fraunces",
+      "weights": [
+        300,
+        500,
+        700,
+        900
+      ],
+      "italic": true
+    },
+    "text": {
+      "family": "EB Garamond",
+      "weights": [
+        400,
+        500
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "Courier Prime",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.15,
+    "bloomThreshold": 1.3,
+    "bloomKnee": 0.2,
+    "halation": 0.04,
+    "ca": 0.35,
+    "grain": 0.05,
+    "vignette": 0.25
+  },
+  "type": {
+    "case": "none",
+    "tracking": 0
+  },
+  "motif": "dot",
+  "scenes": {
+    "lines": {
+      "hatch": 0.6,
+      "weight": 500
+    },
+    "writer": {
+      "font": "hscript"
+    },
+    "interlude": {
+      "variant": "flow"
+    }
+  },
+  "idiom": "Everything is engraved: hatch density is the only shading; things are specimens pinned and labelled (Fig. 3, Latin names, plate numbers). Words are written by a pen or appear as caption labels with leader lines. Vermilion is the rubric colour of old manuscripts: the sung word, a wax seal."
+}

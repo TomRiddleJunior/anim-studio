@@ -1,0 +1,2645 @@
+{
+ "duration": 176.12,
+ "voice": "am_onyx,am_michael",
+ "words": 448,
+ "wpm_overall": 152.6,
+ "wpm_speech": 185.6,
+ "lines": [
+  {
+   "id": "o1",
+   "i": 0,
+   "text": "You were gone for one year.",
+   "start": 0.21,
+   "end": 1.96,
+   "words": [
+    {
+     "w": "You",
+     "start": 0.21,
+     "end": 0.297
+    },
+    {
+     "w": "were",
+     "start": 0.297,
+     "end": 0.447
+    },
+    {
+     "w": "gone",
+     "start": 0.447,
+     "end": 0.835
+    },
+    {
+     "w": "for",
+     "start": 0.835,
+     "end": 1.022
+    },
+    {
+     "w": "one",
+     "start": 1.022,
+     "end": 1.285
+    },
+    {
+     "w": "year.",
+     "start": 1.285,
+     "end": 1.96
+    }
+   ]
+  },
+  {
+   "id": "o2",
+   "i": 1,
+   "text": "Earth was gone for seventy.",
+   "start": 2.53,
+   "end": 4.48,
+   "words": [
+    {
+     "w": "Earth",
+     "start": 2.53,
+     "end": 2.78
+    },
+    {
+     "w": "was",
+     "start": 2.78,
+     "end": 2.992
+    },
+    {
+     "w": "gone",
+     "start": 2.992,
+     "end": 3.38
+    },
+    {
+     "w": "for",
+     "start": 3.38,
+     "end": 3.555
+    },
+    {
+     "w": "seventy.",
+     "start": 3.555,
+     "end": 4.48
+    }
+   ]
+  },
+  {
+   "id": "o3",
+   "i": 2,
+   "text": "And around month seven, the robot flying with you started talking like your little sister.",
+   "start": 5.17,
+   "end": 10.145,
+   "words": [
+    {
+     "w": "And",
+     "start": 5.17,
+     "end": 5.282
+    },
+    {
+     "w": "around",
+     "start": 5.282,
+     "end": 5.595
+    },
+    {
+     "w": "month",
+     "start": 5.595,
+     "end": 5.92
+    },
+    {
+     "w": "seven,",
+     "start": 5.92,
+     "end": 6.52
+    },
+    {
+     "w": "the",
+     "start": 6.62,
+     "end": 6.757
+    },
+    {
+     "w": "robot",
+     "start": 6.757,
+     "end": 7.257
+    },
+    {
+     "w": "flying",
+     "start": 7.257,
+     "end": 7.632
+    },
+    {
+     "w": "with",
+     "start": 7.632,
+     "end": 7.795
+    },
+    {
+     "w": "you",
+     "start": 7.795,
+     "end": 7.945
+    },
+    {
+     "w": "started",
+     "start": 7.945,
+     "end": 8.332
+    },
+    {
+     "w": "talking",
+     "start": 8.332,
+     "end": 8.77
+    },
+    {
+     "w": "like",
+     "start": 8.77,
+     "end": 8.957
+    },
+    {
+     "w": "your",
+     "start": 8.957,
+     "end": 9.07
+    },
+    {
+     "w": "little",
+     "start": 9.07,
+     "end": 9.307
+    },
+    {
+     "w": "sister.",
+     "start": 9.307,
+     "end": 10.145
+    }
+   ]
+  },
+  {
+   "id": "o4",
+   "i": 3,
+   "text": "She was eight when you left.",
+   "start": 10.635,
+   "end": 12.185,
+   "words": [
+    {
+     "w": "She",
+     "start": 10.635,
+     "end": 10.747
+    },
+    {
+     "w": "was",
+     "start": 10.747,
+     "end": 10.922
+    },
+    {
+     "w": "eight",
+     "start": 10.922,
+     "end": 11.197
+    },
+    {
+     "w": "when",
+     "start": 11.197,
+     "end": 11.335
+    },
+    {
+     "w": "you",
+     "start": 11.335,
+     "end": 11.485
+    },
+    {
+     "w": "left.",
+     "start": 11.485,
+     "end": 12.185
+    }
+   ]
+  },
+  {
+   "id": "o5",
+   "i": 4,
+   "text": "The docking light turns green. The robot turns to face you.",
+   "start": 12.955,
+   "end": 16.78,
+   "words": [
+    {
+     "w": "The",
+     "start": 12.955,
+     "end": 13.055
+    },
+    {
+     "w": "docking",
+     "start": 13.055,
+     "end": 13.48
+    },
+    {
+     "w": "light",
+     "start": 13.48,
+     "end": 13.73
+    },
+    {
+     "w": "turns",
+     "start": 13.73,
+     "end": 14.067
+    },
+    {
+     "w": "green.",
+     "start": 14.067,
+     "end": 14.655
+    },
+    {
+     "w": "The",
+     "start": 14.78,
+     "end": 14.905
+    },
+    {
+     "w": "robot",
+     "start": 14.905,
+     "end": 15.38
+    },
+    {
+     "w": "turns",
+     "start": 15.38,
+     "end": 15.73
+    },
+    {
+     "w": "to",
+     "start": 15.73,
+     "end": 15.867
+    },
+    {
+     "w": "face",
+     "start": 15.867,
+     "end": 16.217
+    },
+    {
+     "w": "you.",
+     "start": 16.217,
+     "end": 16.78
+    }
+   ]
+  },
+  {
+   "id": "o6",
+   "i": 5,
+   "text": "Someone's waiting at the gate, it says.",
+   "start": 17.23,
+   "end": 19.455,
+   "words": [
+    {
+     "w": "Someone's",
+     "start": 17.23,
+     "end": 17.667
+    },
+    {
+     "w": "waiting",
+     "start": 17.667,
+     "end": 18.017
+    },
+    {
+     "w": "at",
+     "start": 18.017,
+     "end": 18.092
+    },
+    {
+     "w": "the",
+     "start": 18.092,
+     "end": 18.217
+    },
+    {
+     "w": "gate,",
+     "start": 18.217,
+     "end": 18.53
+    },
+    {
+     "w": "it",
+     "start": 18.58,
+     "end": 18.73
+    },
+    {
+     "w": "says.",
+     "start": 18.73,
+     "end": 19.455
+    }
+   ]
+  },
+  {
+   "id": "o7",
+   "i": 6,
+   "text": "But let's go back.",
+   "start": 20.025,
+   "end": 21.225,
+   "words": [
+    {
+     "w": "But",
+     "start": 20.025,
+     "end": 20.15
+    },
+    {
+     "w": "let's",
+     "start": 20.15,
+     "end": 20.425
+    },
+    {
+     "w": "go",
+     "start": 20.425,
+     "end": 20.6
+    },
+    {
+     "w": "back.",
+     "start": 20.6,
+     "end": 21.225
+    }
+   ]
+  },
+  {
+   "id": "n1",
+   "i": 7,
+   "text": "In twenty thirty-one, a company was paying five million dollars for one year in space.",
+   "start": 22.315,
+   "end": 27.415,
+   "words": [
+    {
+     "w": "In",
+     "start": 22.315,
+     "end": 22.415
+    },
+    {
+     "w": "twenty",
+     "start": 22.415,
+     "end": 22.727
+    },
+    {
+     "w": "thirty-one,",
+     "start": 22.727,
+     "end": 23.49
+    },
+    {
+     "w": "a",
+     "start": 23.565,
+     "end": 23.64
+    },
+    {
+     "w": "company",
+     "start": 23.64,
+     "end": 24.027
+    },
+    {
+     "w": "was",
+     "start": 24.027,
+     "end": 24.165
+    },
+    {
+     "w": "paying",
+     "start": 24.165,
+     "end": 24.54
+    },
+    {
+     "w": "five",
+     "start": 24.54,
+     "end": 24.915
+    },
+    {
+     "w": "million",
+     "start": 24.915,
+     "end": 25.29
+    },
+    {
+     "w": "dollars",
+     "start": 25.29,
+     "end": 25.765
+    },
+    {
+     "w": "for",
+     "start": 25.765,
+     "end": 25.915
+    },
+    {
+     "w": "one",
+     "start": 25.915,
+     "end": 26.165
+    },
+    {
+     "w": "year",
+     "start": 26.165,
+     "end": 26.377
+    },
+    {
+     "w": "in",
+     "start": 26.377,
+     "end": 26.527
+    },
+    {
+     "w": "space.",
+     "start": 26.527,
+     "end": 27.415
+    }
+   ]
+  },
+  {
+   "id": "n2",
+   "i": 8,
+   "text": "One pilot. One robot. One trip out into deep space, and back.",
+   "start": 27.905,
+   "end": 32.08,
+   "words": [
+    {
+     "w": "One",
+     "start": 27.905,
+     "end": 28.142
+    },
+    {
+     "w": "pilot.",
+     "start": 28.142,
+     "end": 28.555
+    },
+    {
+     "w": "One",
+     "start": 28.605,
+     "end": 28.855
+    },
+    {
+     "w": "robot.",
+     "start": 28.855,
+     "end": 29.555
+    },
+    {
+     "w": "One",
+     "start": 29.655,
+     "end": 29.88
+    },
+    {
+     "w": "trip",
+     "start": 29.88,
+     "end": 30.092
+    },
+    {
+     "w": "out",
+     "start": 30.092,
+     "end": 30.267
+    },
+    {
+     "w": "into",
+     "start": 30.267,
+     "end": 30.517
+    },
+    {
+     "w": "deep",
+     "start": 30.517,
+     "end": 30.78
+    },
+    {
+     "w": "space,",
+     "start": 30.78,
+     "end": 31.205
+    },
+    {
+     "w": "and",
+     "start": 31.242,
+     "end": 31.355
+    },
+    {
+     "w": "back.",
+     "start": 31.355,
+     "end": 32.08
+    }
+   ]
+  },
+  {
+   "id": "n3",
+   "i": 9,
+   "text": "The catch was in the fine print.",
+   "start": 32.65,
+   "end": 34.725,
+   "words": [
+    {
+     "w": "The",
+     "start": 32.65,
+     "end": 32.762
+    },
+    {
+     "w": "catch",
+     "start": 32.762,
+     "end": 33.1
+    },
+    {
+     "w": "was",
+     "start": 33.1,
+     "end": 33.3
+    },
+    {
+     "w": "in",
+     "start": 33.3,
+     "end": 33.412
+    },
+    {
+     "w": "the",
+     "start": 33.412,
+     "end": 33.55
+    },
+    {
+     "w": "fine",
+     "start": 33.55,
+     "end": 33.962
+    },
+    {
+     "w": "print.",
+     "start": 33.962,
+     "end": 34.725
+    }
+   ]
+  },
+  {
+   "id": "n4",
+   "i": 10,
+   "text": "Earth time: about seventy years.",
+   "start": 35.135,
+   "end": 37.21,
+   "words": [
+    {
+     "w": "Earth",
+     "start": 35.135,
+     "end": 35.385
+    },
+    {
+     "w": "time:",
+     "start": 35.385,
+     "end": 35.71
+    },
+    {
+     "w": "about",
+     "start": 35.747,
+     "end": 36.047
+    },
+    {
+     "w": "seventy",
+     "start": 36.047,
+     "end": 36.46
+    },
+    {
+     "w": "years.",
+     "start": 36.46,
+     "end": 37.21
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "i": 11,
+   "text": "That's not a trick. It's Einstein.",
+   "start": 37.9,
+   "end": 39.95,
+   "words": [
+    {
+     "w": "That's",
+     "start": 37.9,
+     "end": 38.162
+    },
+    {
+     "w": "not",
+     "start": 38.162,
+     "end": 38.312
+    },
+    {
+     "w": "a",
+     "start": 38.312,
+     "end": 38.387
+    },
+    {
+     "w": "trick.",
+     "start": 38.387,
+     "end": 38.75
+    },
+    {
+     "w": "It's",
+     "start": 38.787,
+     "end": 38.975
+    },
+    {
+     "w": "Einstein.",
+     "start": 38.975,
+     "end": 39.95
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "i": 12,
+   "text": "The faster you move, the slower your clock ticks.",
+   "start": 40.4,
+   "end": 43.2,
+   "words": [
+    {
+     "w": "The",
+     "start": 40.4,
+     "end": 40.5
+    },
+    {
+     "w": "faster",
+     "start": 40.5,
+     "end": 40.875
+    },
+    {
+     "w": "you",
+     "start": 40.875,
+     "end": 41.0
+    },
+    {
+     "w": "move,",
+     "start": 41.0,
+     "end": 41.35
+    },
+    {
+     "w": "the",
+     "start": 41.387,
+     "end": 41.512
+    },
+    {
+     "w": "slower",
+     "start": 41.512,
+     "end": 41.9
+    },
+    {
+     "w": "your",
+     "start": 41.9,
+     "end": 42.05
+    },
+    {
+     "w": "clock",
+     "start": 42.05,
+     "end": 42.412
+    },
+    {
+     "w": "ticks.",
+     "start": 42.412,
+     "end": 43.2
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "i": 13,
+   "text": "GPS satellites have to correct for it every single day, or your map would drift by about ten kilometers.",
+   "start": 43.77,
+   "end": 50.27,
+   "words": [
+    {
+     "w": "GPS",
+     "start": 43.77,
+     "end": 44.332
+    },
+    {
+     "w": "satellites",
+     "start": 44.332,
+     "end": 44.895
+    },
+    {
+     "w": "have",
+     "start": 44.895,
+     "end": 45.095
+    },
+    {
+     "w": "to",
+     "start": 45.095,
+     "end": 45.195
+    },
+    {
+     "w": "correct",
+     "start": 45.195,
+     "end": 45.57
+    },
+    {
+     "w": "for",
+     "start": 45.57,
+     "end": 45.745
+    },
+    {
+     "w": "it",
+     "start": 45.745,
+     "end": 45.895
+    },
+    {
+     "w": "every",
+     "start": 45.895,
+     "end": 46.232
+    },
+    {
+     "w": "single",
+     "start": 46.232,
+     "end": 46.62
+    },
+    {
+     "w": "day,",
+     "start": 46.62,
+     "end": 47.195
+    },
+    {
+     "w": "or",
+     "start": 47.32,
+     "end": 47.445
+    },
+    {
+     "w": "your",
+     "start": 47.445,
+     "end": 47.62
+    },
+    {
+     "w": "map",
+     "start": 47.62,
+     "end": 47.92
+    },
+    {
+     "w": "would",
+     "start": 47.92,
+     "end": 48.082
+    },
+    {
+     "w": "drift",
+     "start": 48.082,
+     "end": 48.42
+    },
+    {
+     "w": "by",
+     "start": 48.42,
+     "end": 48.595
+    },
+    {
+     "w": "about",
+     "start": 48.595,
+     "end": 48.907
+    },
+    {
+     "w": "ten",
+     "start": 48.907,
+     "end": 49.17
+    },
+    {
+     "w": "kilometers.",
+     "start": 49.17,
+     "end": 50.27
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "i": 14,
+   "text": "NASA even measured it on twins. After almost a year in orbit, one came home younger than his brother, by less than a hundredth of a second.",
+   "start": 50.84,
+   "end": 59.19,
+   "words": [
+    {
+     "w": "NASA",
+     "start": 50.84,
+     "end": 51.215
+    },
+    {
+     "w": "even",
+     "start": 51.215,
+     "end": 51.527
+    },
+    {
+     "w": "measured",
+     "start": 51.527,
+     "end": 51.952
+    },
+    {
+     "w": "it",
+     "start": 51.952,
+     "end": 52.04
+    },
+    {
+     "w": "on",
+     "start": 52.04,
+     "end": 52.252
+    },
+    {
+     "w": "twins.",
+     "start": 52.252,
+     "end": 53.165
+    },
+    {
+     "w": "After",
+     "start": 53.327,
+     "end": 53.64
+    },
+    {
+     "w": "almost",
+     "start": 53.64,
+     "end": 54.027
+    },
+    {
+     "w": "a",
+     "start": 54.027,
+     "end": 54.09
+    },
+    {
+     "w": "year",
+     "start": 54.09,
+     "end": 54.302
+    },
+    {
+     "w": "in",
+     "start": 54.302,
+     "end": 54.39
+    },
+    {
+     "w": "orbit,",
+     "start": 54.39,
+     "end": 54.865
+    },
+    {
+     "w": "one",
+     "start": 54.94,
+     "end": 55.165
+    },
+    {
+     "w": "came",
+     "start": 55.165,
+     "end": 55.44
+    },
+    {
+     "w": "home",
+     "start": 55.44,
+     "end": 55.802
+    },
+    {
+     "w": "younger",
+     "start": 55.802,
+     "end": 56.215
+    },
+    {
+     "w": "than",
+     "start": 56.215,
+     "end": 56.327
+    },
+    {
+     "w": "his",
+     "start": 56.327,
+     "end": 56.49
+    },
+    {
+     "w": "brother,",
+     "start": 56.49,
+     "end": 56.99
+    },
+    {
+     "w": "by",
+     "start": 57.09,
+     "end": 57.265
+    },
+    {
+     "w": "less",
+     "start": 57.265,
+     "end": 57.515
+    },
+    {
+     "w": "than",
+     "start": 57.515,
+     "end": 57.64
+    },
+    {
+     "w": "a",
+     "start": 57.64,
+     "end": 57.715
+    },
+    {
+     "w": "hundredth",
+     "start": 57.715,
+     "end": 58.152
+    },
+    {
+     "w": "of",
+     "start": 58.152,
+     "end": 58.227
+    },
+    {
+     "w": "a",
+     "start": 58.227,
+     "end": 58.327
+    },
+    {
+     "w": "second.",
+     "start": 58.327,
+     "end": 59.19
+    }
+   ]
+  },
+  {
+   "id": "p5",
+   "i": 15,
+   "text": "The fastest thing we've ever built reached six hundredths of one percent of light speed.",
+   "start": 59.76,
+   "end": 64.385,
+   "words": [
+    {
+     "w": "The",
+     "start": 59.76,
+     "end": 59.872
+    },
+    {
+     "w": "fastest",
+     "start": 59.872,
+     "end": 60.335
+    },
+    {
+     "w": "thing",
+     "start": 60.335,
+     "end": 60.56
+    },
+    {
+     "w": "we've",
+     "start": 60.56,
+     "end": 60.735
+    },
+    {
+     "w": "ever",
+     "start": 60.735,
+     "end": 60.985
+    },
+    {
+     "w": "built",
+     "start": 60.985,
+     "end": 61.26
+    },
+    {
+     "w": "reached",
+     "start": 61.26,
+     "end": 61.635
+    },
+    {
+     "w": "six",
+     "start": 61.635,
+     "end": 61.935
+    },
+    {
+     "w": "hundredths",
+     "start": 61.935,
+     "end": 62.46
+    },
+    {
+     "w": "of",
+     "start": 62.46,
+     "end": 62.61
+    },
+    {
+     "w": "one",
+     "start": 62.61,
+     "end": 62.835
+    },
+    {
+     "w": "percent",
+     "start": 62.835,
+     "end": 63.172
+    },
+    {
+     "w": "of",
+     "start": 63.172,
+     "end": 63.285
+    },
+    {
+     "w": "light",
+     "start": 63.285,
+     "end": 63.56
+    },
+    {
+     "w": "speed.",
+     "start": 63.56,
+     "end": 64.385
+    }
+   ]
+  },
+  {
+   "id": "p6",
+   "i": 16,
+   "text": "Your ship does ninety-nine point nine nine percent.",
+   "start": 64.835,
+   "end": 67.96,
+   "words": [
+    {
+     "w": "Your",
+     "start": 64.835,
+     "end": 64.997
+    },
+    {
+     "w": "ship",
+     "start": 64.997,
+     "end": 65.26
+    },
+    {
+     "w": "does",
+     "start": 65.26,
+     "end": 65.497
+    },
+    {
+     "w": "ninety-nine",
+     "start": 65.497,
+     "end": 66.185
+    },
+    {
+     "w": "point",
+     "start": 66.185,
+     "end": 66.46
+    },
+    {
+     "w": "nine",
+     "start": 66.46,
+     "end": 66.785
+    },
+    {
+     "w": "nine",
+     "start": 66.785,
+     "end": 67.11
+    },
+    {
+     "w": "percent.",
+     "start": 67.11,
+     "end": 67.96
+    }
+   ]
+  },
+  {
+   "id": "p7",
+   "i": 17,
+   "text": "At that speed, one year for you is about seventy for everyone else.",
+   "start": 68.45,
+   "end": 72.375,
+   "words": [
+    {
+     "w": "At",
+     "start": 68.45,
+     "end": 68.575
+    },
+    {
+     "w": "that",
+     "start": 68.575,
+     "end": 68.825
+    },
+    {
+     "w": "speed,",
+     "start": 68.825,
+     "end": 69.3
+    },
+    {
+     "w": "one",
+     "start": 69.375,
+     "end": 69.6
+    },
+    {
+     "w": "year",
+     "start": 69.6,
+     "end": 69.825
+    },
+    {
+     "w": "for",
+     "start": 69.825,
+     "end": 69.95
+    },
+    {
+     "w": "you",
+     "start": 69.95,
+     "end": 70.15
+    },
+    {
+     "w": "is",
+     "start": 70.15,
+     "end": 70.262
+    },
+    {
+     "w": "about",
+     "start": 70.262,
+     "end": 70.575
+    },
+    {
+     "w": "seventy",
+     "start": 70.575,
+     "end": 71.025
+    },
+    {
+     "w": "for",
+     "start": 71.025,
+     "end": 71.175
+    },
+    {
+     "w": "everyone",
+     "start": 71.175,
+     "end": 71.6
+    },
+    {
+     "w": "else.",
+     "start": 71.6,
+     "end": 72.375
+    }
+   ]
+  },
+  {
+   "id": "m1",
+   "i": 18,
+   "text": "You took the job for your little sister, Mia.",
+   "start": 73.145,
+   "end": 75.62,
+   "words": [
+    {
+     "w": "You",
+     "start": 73.145,
+     "end": 73.245
+    },
+    {
+     "w": "took",
+     "start": 73.245,
+     "end": 73.445
+    },
+    {
+     "w": "the",
+     "start": 73.445,
+     "end": 73.582
+    },
+    {
+     "w": "job",
+     "start": 73.582,
+     "end": 74.02
+    },
+    {
+     "w": "for",
+     "start": 74.02,
+     "end": 74.132
+    },
+    {
+     "w": "your",
+     "start": 74.132,
+     "end": 74.245
+    },
+    {
+     "w": "little",
+     "start": 74.245,
+     "end": 74.482
+    },
+    {
+     "w": "sister,",
+     "start": 74.482,
+     "end": 74.895
+    },
+    {
+     "w": "Mia.",
+     "start": 74.945,
+     "end": 75.62
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "i": 19,
+   "text": "Eight years old. The money would cover everything she'd ever need.",
+   "start": 76.07,
+   "end": 79.92,
+   "words": [
+    {
+     "w": "Eight",
+     "start": 76.07,
+     "end": 76.295
+    },
+    {
+     "w": "years",
+     "start": 76.295,
+     "end": 76.595
+    },
+    {
+     "w": "old.",
+     "start": 76.595,
+     "end": 77.095
+    },
+    {
+     "w": "The",
+     "start": 77.195,
+     "end": 77.295
+    },
+    {
+     "w": "money",
+     "start": 77.295,
+     "end": 77.595
+    },
+    {
+     "w": "would",
+     "start": 77.595,
+     "end": 77.745
+    },
+    {
+     "w": "cover",
+     "start": 77.745,
+     "end": 78.107
+    },
+    {
+     "w": "everything",
+     "start": 78.107,
+     "end": 78.657
+    },
+    {
+     "w": "she'd",
+     "start": 78.657,
+     "end": 78.882
+    },
+    {
+     "w": "ever",
+     "start": 78.882,
+     "end": 79.17
+    },
+    {
+     "w": "need.",
+     "start": 79.17,
+     "end": 79.92
+    }
+   ]
+  },
+  {
+   "id": "m3",
+   "i": 20,
+   "text": "She made you promise to come back. One year, you told her.",
+   "start": 80.41,
+   "end": 83.76,
+   "words": [
+    {
+     "w": "She",
+     "start": 80.41,
+     "end": 80.497
+    },
+    {
+     "w": "made",
+     "start": 80.497,
+     "end": 80.685
+    },
+    {
+     "w": "you",
+     "start": 80.685,
+     "end": 80.822
+    },
+    {
+     "w": "promise",
+     "start": 80.822,
+     "end": 81.235
+    },
+    {
+     "w": "to",
+     "start": 81.235,
+     "end": 81.335
+    },
+    {
+     "w": "come",
+     "start": 81.335,
+     "end": 81.56
+    },
+    {
+     "w": "back.",
+     "start": 81.56,
+     "end": 82.06
+    },
+    {
+     "w": "One",
+     "start": 82.197,
+     "end": 82.46
+    },
+    {
+     "w": "year,",
+     "start": 82.46,
+     "end": 82.685
+    },
+    {
+     "w": "you",
+     "start": 82.735,
+     "end": 82.897
+    },
+    {
+     "w": "told",
+     "start": 82.897,
+     "end": 83.222
+    },
+    {
+     "w": "her.",
+     "start": 83.222,
+     "end": 83.76
+    }
+   ]
+  },
+  {
+   "id": "m4",
+   "i": 21,
+   "text": "She gave you a drawing for the trip. A robot, holding a flower.",
+   "start": 84.25,
+   "end": 87.925,
+   "words": [
+    {
+     "w": "She",
+     "start": 84.25,
+     "end": 84.35
+    },
+    {
+     "w": "gave",
+     "start": 84.35,
+     "end": 84.55
+    },
+    {
+     "w": "you",
+     "start": 84.55,
+     "end": 84.675
+    },
+    {
+     "w": "a",
+     "start": 84.675,
+     "end": 84.75
+    },
+    {
+     "w": "drawing",
+     "start": 84.75,
+     "end": 85.125
+    },
+    {
+     "w": "for",
+     "start": 85.125,
+     "end": 85.237
+    },
+    {
+     "w": "the",
+     "start": 85.237,
+     "end": 85.337
+    },
+    {
+     "w": "trip.",
+     "start": 85.337,
+     "end": 85.85
+    },
+    {
+     "w": "A",
+     "start": 85.987,
+     "end": 86.1
+    },
+    {
+     "w": "robot,",
+     "start": 86.1,
+     "end": 86.575
+    },
+    {
+     "w": "holding",
+     "start": 86.625,
+     "end": 86.962
+    },
+    {
+     "w": "a",
+     "start": 86.962,
+     "end": 87.062
+    },
+    {
+     "w": "flower.",
+     "start": 87.062,
+     "end": 87.925
+    }
+   ]
+  },
+  {
+   "id": "r1",
+   "i": 22,
+   "text": "Your only company is Otto, a maintenance robot with a screen for a face and zero sense of humor.",
+   "start": 88.695,
+   "end": 94.47,
+   "words": [
+    {
+     "w": "Your",
+     "start": 88.695,
+     "end": 88.82
+    },
+    {
+     "w": "only",
+     "start": 88.82,
+     "end": 89.12
+    },
+    {
+     "w": "company",
+     "start": 89.12,
+     "end": 89.52
+    },
+    {
+     "w": "is",
+     "start": 89.52,
+     "end": 89.682
+    },
+    {
+     "w": "Otto,",
+     "start": 89.682,
+     "end": 90.27
+    },
+    {
+     "w": "a",
+     "start": 90.42,
+     "end": 90.52
+    },
+    {
+     "w": "maintenance",
+     "start": 90.52,
+     "end": 90.995
+    },
+    {
+     "w": "robot",
+     "start": 90.995,
+     "end": 91.457
+    },
+    {
+     "w": "with",
+     "start": 91.457,
+     "end": 91.582
+    },
+    {
+     "w": "a",
+     "start": 91.582,
+     "end": 91.657
+    },
+    {
+     "w": "screen",
+     "start": 91.657,
+     "end": 92.095
+    },
+    {
+     "w": "for",
+     "start": 92.095,
+     "end": 92.207
+    },
+    {
+     "w": "a",
+     "start": 92.207,
+     "end": 92.32
+    },
+    {
+     "w": "face",
+     "start": 92.32,
+     "end": 92.72
+    },
+    {
+     "w": "and",
+     "start": 92.72,
+     "end": 92.857
+    },
+    {
+     "w": "zero",
+     "start": 92.857,
+     "end": 93.257
+    },
+    {
+     "w": "sense",
+     "start": 93.257,
+     "end": 93.557
+    },
+    {
+     "w": "of",
+     "start": 93.557,
+     "end": 93.645
+    },
+    {
+     "w": "humor.",
+     "start": 93.645,
+     "end": 94.47
+    }
+   ]
+  },
+  {
+   "id": "r2",
+   "i": 23,
+   "text": "For six months, it says exactly three things.",
+   "start": 94.92,
+   "end": 97.82,
+   "words": [
+    {
+     "w": "For",
+     "start": 94.92,
+     "end": 95.057
+    },
+    {
+     "w": "six",
+     "start": 95.057,
+     "end": 95.37
+    },
+    {
+     "w": "months,",
+     "start": 95.37,
+     "end": 95.72
+    },
+    {
+     "w": "it",
+     "start": 95.757,
+     "end": 95.87
+    },
+    {
+     "w": "says",
+     "start": 95.87,
+     "end": 96.12
+    },
+    {
+     "w": "exactly",
+     "start": 96.12,
+     "end": 96.707
+    },
+    {
+     "w": "three",
+     "start": 96.707,
+     "end": 97.007
+    },
+    {
+     "w": "things.",
+     "start": 97.007,
+     "end": 97.82
+    }
+   ]
+  },
+  {
+   "id": "r3",
+   "i": 24,
+   "text": "And Earth goes quiet. You're racing away from your own messages at nearly the speed of light.",
+   "start": 98.51,
+   "end": 103.81,
+   "words": [
+    {
+     "w": "And",
+     "start": 98.51,
+     "end": 98.66
+    },
+    {
+     "w": "Earth",
+     "start": 98.66,
+     "end": 98.935
+    },
+    {
+     "w": "goes",
+     "start": 98.935,
+     "end": 99.247
+    },
+    {
+     "w": "quiet.",
+     "start": 99.247,
+     "end": 100.01
+    },
+    {
+     "w": "You're",
+     "start": 100.11,
+     "end": 100.26
+    },
+    {
+     "w": "racing",
+     "start": 100.26,
+     "end": 100.66
+    },
+    {
+     "w": "away",
+     "start": 100.66,
+     "end": 100.935
+    },
+    {
+     "w": "from",
+     "start": 100.935,
+     "end": 101.072
+    },
+    {
+     "w": "your",
+     "start": 101.072,
+     "end": 101.185
+    },
+    {
+     "w": "own",
+     "start": 101.185,
+     "end": 101.435
+    },
+    {
+     "w": "messages",
+     "start": 101.435,
+     "end": 102.022
+    },
+    {
+     "w": "at",
+     "start": 102.022,
+     "end": 102.197
+    },
+    {
+     "w": "nearly",
+     "start": 102.197,
+     "end": 102.585
+    },
+    {
+     "w": "the",
+     "start": 102.585,
+     "end": 102.685
+    },
+    {
+     "w": "speed",
+     "start": 102.685,
+     "end": 102.972
+    },
+    {
+     "w": "of",
+     "start": 102.972,
+     "end": 103.085
+    },
+    {
+     "w": "light.",
+     "start": 103.085,
+     "end": 103.81
+    }
+   ]
+  },
+  {
+   "id": "r4",
+   "i": 25,
+   "text": "In six months, barely one day of news catches up with you.",
+   "start": 104.3,
+   "end": 107.725,
+   "words": [
+    {
+     "w": "In",
+     "start": 104.3,
+     "end": 104.437
+    },
+    {
+     "w": "six",
+     "start": 104.437,
+     "end": 104.725
+    },
+    {
+     "w": "months,",
+     "start": 104.725,
+     "end": 105.125
+    },
+    {
+     "w": "barely",
+     "start": 105.175,
+     "end": 105.55
+    },
+    {
+     "w": "one",
+     "start": 105.55,
+     "end": 105.775
+    },
+    {
+     "w": "day",
+     "start": 105.775,
+     "end": 105.962
+    },
+    {
+     "w": "of",
+     "start": 105.962,
+     "end": 106.087
+    },
+    {
+     "w": "news",
+     "start": 106.087,
+     "end": 106.5
+    },
+    {
+     "w": "catches",
+     "start": 106.5,
+     "end": 106.837
+    },
+    {
+     "w": "up",
+     "start": 106.837,
+     "end": 107.012
+    },
+    {
+     "w": "with",
+     "start": 107.012,
+     "end": 107.175
+    },
+    {
+     "w": "you.",
+     "start": 107.175,
+     "end": 107.725
+    }
+   ]
+  },
+  {
+   "id": "u1",
+   "i": 26,
+   "text": "Then you turn around.",
+   "start": 108.415,
+   "end": 109.99,
+   "words": [
+    {
+     "w": "Then",
+     "start": 108.415,
+     "end": 108.64
+    },
+    {
+     "w": "you",
+     "start": 108.64,
+     "end": 108.802
+    },
+    {
+     "w": "turn",
+     "start": 108.802,
+     "end": 109.09
+    },
+    {
+     "w": "around.",
+     "start": 109.09,
+     "end": 109.99
+    }
+   ]
+  },
+  {
+   "id": "u2",
+   "i": 27,
+   "text": "And seventy years of Earth come at you in six months.",
+   "start": 110.48,
+   "end": 113.455,
+   "words": [
+    {
+     "w": "And",
+     "start": 110.48,
+     "end": 110.617
+    },
+    {
+     "w": "seventy",
+     "start": 110.617,
+     "end": 111.005
+    },
+    {
+     "w": "years",
+     "start": 111.005,
+     "end": 111.242
+    },
+    {
+     "w": "of",
+     "start": 111.242,
+     "end": 111.33
+    },
+    {
+     "w": "Earth",
+     "start": 111.33,
+     "end": 111.63
+    },
+    {
+     "w": "come",
+     "start": 111.63,
+     "end": 111.88
+    },
+    {
+     "w": "at",
+     "start": 111.88,
+     "end": 112.005
+    },
+    {
+     "w": "you",
+     "start": 112.005,
+     "end": 112.18
+    },
+    {
+     "w": "in",
+     "start": 112.18,
+     "end": 112.342
+    },
+    {
+     "w": "six",
+     "start": 112.342,
+     "end": 112.655
+    },
+    {
+     "w": "months.",
+     "start": 112.655,
+     "end": 113.455
+    }
+   ]
+  },
+  {
+   "id": "u3",
+   "i": 28,
+   "text": "Every day on board, almost five months of her life arrive.",
+   "start": 113.945,
+   "end": 117.52,
+   "words": [
+    {
+     "w": "Every",
+     "start": 113.945,
+     "end": 114.22
+    },
+    {
+     "w": "day",
+     "start": 114.22,
+     "end": 114.432
+    },
+    {
+     "w": "on",
+     "start": 114.432,
+     "end": 114.62
+    },
+    {
+     "w": "board,",
+     "start": 114.62,
+     "end": 115.07
+    },
+    {
+     "w": "almost",
+     "start": 115.145,
+     "end": 115.582
+    },
+    {
+     "w": "five",
+     "start": 115.582,
+     "end": 115.945
+    },
+    {
+     "w": "months",
+     "start": 115.945,
+     "end": 116.207
+    },
+    {
+     "w": "of",
+     "start": 116.207,
+     "end": 116.282
+    },
+    {
+     "w": "her",
+     "start": 116.282,
+     "end": 116.395
+    },
+    {
+     "w": "life",
+     "start": 116.395,
+     "end": 116.695
+    },
+    {
+     "w": "arrive.",
+     "start": 116.695,
+     "end": 117.52
+    }
+   ]
+  },
+  {
+   "id": "u4",
+   "i": 29,
+   "text": "Mia at twelve, with braces. At eighteen, graduating. At twenty-five, with a company badge.",
+   "start": 118.05,
+   "end": 123.65,
+   "words": [
+    {
+     "w": "Mia",
+     "start": 118.05,
+     "end": 118.275
+    },
+    {
+     "w": "at",
+     "start": 118.275,
+     "end": 118.375
+    },
+    {
+     "w": "twelve,",
+     "start": 118.375,
+     "end": 118.775
+    },
+    {
+     "w": "with",
+     "start": 118.812,
+     "end": 118.975
+    },
+    {
+     "w": "braces.",
+     "start": 118.975,
+     "end": 119.775
+    },
+    {
+     "w": "At",
+     "start": 119.875,
+     "end": 120.025
+    },
+    {
+     "w": "eighteen,",
+     "start": 120.025,
+     "end": 120.575
+    },
+    {
+     "w": "graduating.",
+     "start": 120.625,
+     "end": 121.45
+    },
+    {
+     "w": "At",
+     "start": 121.525,
+     "end": 121.675
+    },
+    {
+     "w": "twenty-five,",
+     "start": 121.675,
+     "end": 122.3
+    },
+    {
+     "w": "with",
+     "start": 122.337,
+     "end": 122.437
+    },
+    {
+     "w": "a",
+     "start": 122.437,
+     "end": 122.5
+    },
+    {
+     "w": "company",
+     "start": 122.5,
+     "end": 122.85
+    },
+    {
+     "w": "badge.",
+     "start": 122.85,
+     "end": 123.65
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "i": 30,
+   "text": "And Otto starts to change.",
+   "start": 124.42,
+   "end": 126.32,
+   "words": [
+    {
+     "w": "And",
+     "start": 124.42,
+     "end": 124.582
+    },
+    {
+     "w": "Otto",
+     "start": 124.582,
+     "end": 124.945
+    },
+    {
+     "w": "starts",
+     "start": 124.945,
+     "end": 125.295
+    },
+    {
+     "w": "to",
+     "start": 125.295,
+     "end": 125.432
+    },
+    {
+     "w": "change.",
+     "start": 125.432,
+     "end": 126.32
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "i": 31,
+   "text": "It hums the song you used to sing her.",
+   "start": 126.81,
+   "end": 129.235,
+   "words": [
+    {
+     "w": "It",
+     "start": 126.81,
+     "end": 126.935
+    },
+    {
+     "w": "hums",
+     "start": 126.935,
+     "end": 127.285
+    },
+    {
+     "w": "the",
+     "start": 127.285,
+     "end": 127.435
+    },
+    {
+     "w": "song",
+     "start": 127.435,
+     "end": 127.86
+    },
+    {
+     "w": "you",
+     "start": 127.86,
+     "end": 128.01
+    },
+    {
+     "w": "used",
+     "start": 128.01,
+     "end": 128.222
+    },
+    {
+     "w": "to",
+     "start": 128.222,
+     "end": 128.36
+    },
+    {
+     "w": "sing",
+     "start": 128.36,
+     "end": 128.635
+    },
+    {
+     "w": "her.",
+     "start": 128.635,
+     "end": 129.235
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "i": 32,
+   "text": "It tells her terrible jokes.",
+   "start": 129.685,
+   "end": 131.61,
+   "words": [
+    {
+     "w": "It",
+     "start": 129.685,
+     "end": 129.81
+    },
+    {
+     "w": "tells",
+     "start": 129.81,
+     "end": 130.147
+    },
+    {
+     "w": "her",
+     "start": 130.147,
+     "end": 130.322
+    },
+    {
+     "w": "terrible",
+     "start": 130.322,
+     "end": 130.822
+    },
+    {
+     "w": "jokes.",
+     "start": 130.822,
+     "end": 131.61
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "i": 33,
+   "text": "It draws flowers on its own face.",
+   "start": 132.06,
+   "end": 134.335,
+   "words": [
+    {
+     "w": "It",
+     "start": 132.06,
+     "end": 132.185
+    },
+    {
+     "w": "draws",
+     "start": 132.185,
+     "end": 132.572
+    },
+    {
+     "w": "flowers",
+     "start": 132.572,
+     "end": 133.072
+    },
+    {
+     "w": "on",
+     "start": 133.072,
+     "end": 133.172
+    },
+    {
+     "w": "its",
+     "start": 133.172,
+     "end": 133.31
+    },
+    {
+     "w": "own",
+     "start": 133.31,
+     "end": 133.572
+    },
+    {
+     "w": "face.",
+     "start": 133.572,
+     "end": 134.335
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "i": 34,
+   "text": "You think deep space is frying its circuits.",
+   "start": 134.825,
+   "end": 137.375,
+   "words": [
+    {
+     "w": "You",
+     "start": 134.825,
+     "end": 134.925
+    },
+    {
+     "w": "think",
+     "start": 134.925,
+     "end": 135.125
+    },
+    {
+     "w": "deep",
+     "start": 135.125,
+     "end": 135.35
+    },
+    {
+     "w": "space",
+     "start": 135.35,
+     "end": 135.75
+    },
+    {
+     "w": "is",
+     "start": 135.75,
+     "end": 135.912
+    },
+    {
+     "w": "frying",
+     "start": 135.912,
+     "end": 136.287
+    },
+    {
+     "w": "its",
+     "start": 136.287,
+     "end": 136.437
+    },
+    {
+     "w": "circuits.",
+     "start": 136.437,
+     "end": 137.375
+    }
+   ]
+  },
+  {
+   "id": "x1",
+   "i": 35,
+   "text": "Then you open its update log.",
+   "start": 138.145,
+   "end": 140.195,
+   "words": [
+    {
+     "w": "Then",
+     "start": 138.145,
+     "end": 138.32
+    },
+    {
+     "w": "you",
+     "start": 138.32,
+     "end": 138.47
+    },
+    {
+     "w": "open",
+     "start": 138.47,
+     "end": 138.77
+    },
+    {
+     "w": "its",
+     "start": 138.77,
+     "end": 138.982
+    },
+    {
+     "w": "update",
+     "start": 138.982,
+     "end": 139.445
+    },
+    {
+     "w": "log.",
+     "start": 139.445,
+     "end": 140.195
+    }
+   ]
+  },
+  {
+   "id": "x2",
+   "i": 36,
+   "text": "Four thousand patches, every one signed by the same engineer.",
+   "start": 140.725,
+   "end": 144.475,
+   "words": [
+    {
+     "w": "Four",
+     "start": 140.725,
+     "end": 140.975
+    },
+    {
+     "w": "thousand",
+     "start": 140.975,
+     "end": 141.375
+    },
+    {
+     "w": "patches,",
+     "start": 141.375,
+     "end": 142.025
+    },
+    {
+     "w": "every",
+     "start": 142.125,
+     "end": 142.412
+    },
+    {
+     "w": "one",
+     "start": 142.412,
+     "end": 142.612
+    },
+    {
+     "w": "signed",
+     "start": 142.612,
+     "end": 142.925
+    },
+    {
+     "w": "by",
+     "start": 142.925,
+     "end": 143.062
+    },
+    {
+     "w": "the",
+     "start": 143.062,
+     "end": 143.187
+    },
+    {
+     "w": "same",
+     "start": 143.187,
+     "end": 143.525
+    },
+    {
+     "w": "engineer.",
+     "start": 143.525,
+     "end": 144.475
+    }
+   ]
+  },
+  {
+   "id": "x3",
+   "i": 37,
+   "text": "Mia joined the company at twenty-two. She couldn't fly out to you.",
+   "start": 145.325,
+   "end": 149.075,
+   "words": [
+    {
+     "w": "Mia",
+     "start": 145.325,
+     "end": 145.587
+    },
+    {
+     "w": "joined",
+     "start": 145.587,
+     "end": 145.887
+    },
+    {
+     "w": "the",
+     "start": 145.887,
+     "end": 145.975
+    },
+    {
+     "w": "company",
+     "start": 145.975,
+     "end": 146.45
+    },
+    {
+     "w": "at",
+     "start": 146.45,
+     "end": 146.575
+    },
+    {
+     "w": "twenty-two.",
+     "start": 146.575,
+     "end": 147.325
+    },
+    {
+     "w": "She",
+     "start": 147.462,
+     "end": 147.6
+    },
+    {
+     "w": "couldn't",
+     "start": 147.6,
+     "end": 147.837
+    },
+    {
+     "w": "fly",
+     "start": 147.837,
+     "end": 148.125
+    },
+    {
+     "w": "out",
+     "start": 148.125,
+     "end": 148.35
+    },
+    {
+     "w": "to",
+     "start": 148.35,
+     "end": 148.475
+    },
+    {
+     "w": "you.",
+     "start": 148.475,
+     "end": 149.075
+    }
+   ]
+  },
+  {
+   "id": "x4",
+   "i": 38,
+   "text": "So for fifty years, she sent herself instead. One line of code at a time.",
+   "start": 149.565,
+   "end": 154.19,
+   "words": [
+    {
+     "w": "So",
+     "start": 149.565,
+     "end": 149.715
+    },
+    {
+     "w": "for",
+     "start": 149.715,
+     "end": 149.852
+    },
+    {
+     "w": "fifty",
+     "start": 149.852,
+     "end": 150.19
+    },
+    {
+     "w": "years,",
+     "start": 150.19,
+     "end": 150.49
+    },
+    {
+     "w": "she",
+     "start": 150.54,
+     "end": 150.702
+    },
+    {
+     "w": "sent",
+     "start": 150.702,
+     "end": 150.927
+    },
+    {
+     "w": "herself",
+     "start": 150.927,
+     "end": 151.302
+    },
+    {
+     "w": "instead.",
+     "start": 151.302,
+     "end": 152.09
+    },
+    {
+     "w": "One",
+     "start": 152.265,
+     "end": 152.54
+    },
+    {
+     "w": "line",
+     "start": 152.54,
+     "end": 152.802
+    },
+    {
+     "w": "of",
+     "start": 152.802,
+     "end": 152.927
+    },
+    {
+     "w": "code",
+     "start": 152.927,
+     "end": 153.252
+    },
+    {
+     "w": "at",
+     "start": 153.252,
+     "end": 153.327
+    },
+    {
+     "w": "a",
+     "start": 153.327,
+     "end": 153.39
+    },
+    {
+     "w": "time.",
+     "start": 153.39,
+     "end": 154.19
+    }
+   ]
+  },
+  {
+   "id": "x5",
+   "i": 39,
+   "text": "Every joke, every song, every flower was her.",
+   "start": 154.8,
+   "end": 157.95,
+   "words": [
+    {
+     "w": "Every",
+     "start": 154.8,
+     "end": 155.112
+    },
+    {
+     "w": "joke,",
+     "start": 155.112,
+     "end": 155.475
+    },
+    {
+     "w": "every",
+     "start": 155.512,
+     "end": 155.812
+    },
+    {
+     "w": "song,",
+     "start": 155.812,
+     "end": 156.225
+    },
+    {
+     "w": "every",
+     "start": 156.3,
+     "end": 156.637
+    },
+    {
+     "w": "flower",
+     "start": 156.637,
+     "end": 157.075
+    },
+    {
+     "w": "was",
+     "start": 157.075,
+     "end": 157.275
+    },
+    {
+     "w": "her.",
+     "start": 157.275,
+     "end": 157.95
+    }
+   ]
+  },
+  {
+   "id": "e1",
+   "i": 40,
+   "text": "Now the gate opens.",
+   "start": 158.8,
+   "end": 160.35,
+   "words": [
+    {
+     "w": "Now",
+     "start": 158.8,
+     "end": 159.05
+    },
+    {
+     "w": "the",
+     "start": 159.05,
+     "end": 159.187
+    },
+    {
+     "w": "gate",
+     "start": 159.187,
+     "end": 159.5
+    },
+    {
+     "w": "opens.",
+     "start": 159.5,
+     "end": 160.35
+    }
+   ]
+  },
+  {
+   "id": "e2",
+   "i": 41,
+   "text": "She's seventy-eight. And she's holding a flower.",
+   "start": 160.92,
+   "end": 163.645,
+   "words": [
+    {
+     "w": "She's",
+     "start": 160.92,
+     "end": 161.107
+    },
+    {
+     "w": "seventy-eight.",
+     "start": 161.107,
+     "end": 161.92
+    },
+    {
+     "w": "And",
+     "start": 161.957,
+     "end": 162.095
+    },
+    {
+     "w": "she's",
+     "start": 162.095,
+     "end": 162.32
+    },
+    {
+     "w": "holding",
+     "start": 162.32,
+     "end": 162.657
+    },
+    {
+     "w": "a",
+     "start": 162.657,
+     "end": 162.757
+    },
+    {
+     "w": "flower.",
+     "start": 162.757,
+     "end": 163.645
+    }
+   ]
+  },
+  {
+   "id": "e3",
+   "i": 42,
+   "text": "You promised her one year. You kept it. So did she.",
+   "start": 164.335,
+   "end": 167.135,
+   "words": [
+    {
+     "w": "You",
+     "start": 164.335,
+     "end": 164.435
+    },
+    {
+     "w": "promised",
+     "start": 164.435,
+     "end": 164.822
+    },
+    {
+     "w": "her",
+     "start": 164.822,
+     "end": 164.96
+    },
+    {
+     "w": "one",
+     "start": 164.96,
+     "end": 165.185
+    },
+    {
+     "w": "year.",
+     "start": 165.185,
+     "end": 165.51
+    },
+    {
+     "w": "You",
+     "start": 165.585,
+     "end": 165.735
+    },
+    {
+     "w": "kept",
+     "start": 165.735,
+     "end": 166.035
+    },
+    {
+     "w": "it.",
+     "start": 166.035,
+     "end": 166.16
+    },
+    {
+     "w": "So",
+     "start": 166.235,
+     "end": 166.435
+    },
+    {
+     "w": "did",
+     "start": 166.435,
+     "end": 166.647
+    },
+    {
+     "w": "she.",
+     "start": 166.647,
+     "end": 167.135
+    }
+   ]
+  },
+  {
+   "id": "e4",
+   "i": 43,
+   "text": "Would you take the job? Tell me in the comments.",
+   "start": 168.145,
+   "end": 170.77,
+   "words": [
+    {
+     "w": "Would",
+     "start": 168.145,
+     "end": 168.27
+    },
+    {
+     "w": "you",
+     "start": 168.27,
+     "end": 168.395
+    },
+    {
+     "w": "take",
+     "start": 168.395,
+     "end": 168.645
+    },
+    {
+     "w": "the",
+     "start": 168.645,
+     "end": 168.782
+    },
+    {
+     "w": "job?",
+     "start": 168.782,
+     "end": 169.245
+    },
+    {
+     "w": "Tell",
+     "start": 169.345,
+     "end": 169.557
+    },
+    {
+     "w": "me",
+     "start": 169.557,
+     "end": 169.657
+    },
+    {
+     "w": "in",
+     "start": 169.657,
+     "end": 169.732
+    },
+    {
+     "w": "the",
+     "start": 169.732,
+     "end": 169.82
+    },
+    {
+     "w": "comments.",
+     "start": 169.82,
+     "end": 170.77
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "duration": 87.831,
+ "lines": [
+  {
+   "id": "l01",
+   "who": "L",
+   "text": "What's your advice… for the next ten years?",
+   "start": 0.12,
+   "end": 3.358,
+   "file": "vo/lines/l01.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l02",
+   "who": "G",
+   "text": "I've watched ten thousand decades pass through this clock.",
+   "start": 3.858,
+   "end": 7.275,
+   "file": "vo/lines/l02.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l03",
+   "who": "G",
+   "text": "Most people lose theirs the same way.",
+   "start": 7.675,
+   "end": 9.742,
+   "file": "vo/lines/l03.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l04",
+   "who": "G",
+   "text": "So… ten rules. And the last one? Almost nobody follows it.",
+   "start": 10.162,
+   "end": 14.846,
+   "file": "vo/lines/l04.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l05",
+   "who": "G",
+   "text": "Ten. Learn one hard thing every year. In ten years, you'll be ten new people.",
+   "start": 15.346,
+   "end": 20.863,
+   "file": "vo/lines/l05.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l06",
+   "who": "G",
+   "text": "Nine. Stay close to the people who make you braver.",
+   "start": 21.283,
+   "end": 24.251,
+   "file": "vo/lines/l06.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l07",
+   "who": "G",
+   "text": "Eight. When you're angry, wait one night before you speak.",
+   "start": 24.671,
+   "end": 29.074,
+   "file": "vo/lines/l07.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l08",
+   "who": "G",
+   "text": "Seven. Ask why until it gets uncomfortable. The answer lives just past that.",
+   "start": 29.494,
+   "end": 35.028,
+   "file": "vo/lines/l08.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l09",
+   "who": "G",
+   "text": "Six. Do the scary thing while your hands still shake. They never stop first.",
+   "start": 35.448,
+   "end": 42.127,
+   "file": "vo/lines/l09.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l10",
+   "who": "L",
+   "text": "Is number one the secret?",
+   "start": 42.527,
+   "end": 44.887,
+   "file": "vo/lines/l10.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l11",
+   "who": "G",
+   "text": "Patience. You'll want to hear it.",
+   "start": 45.247,
+   "end": 47.656,
+   "file": "vo/lines/l11.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l12",
+   "who": "G",
+   "text": "Five. Be the first to say sorry. It costs nothing, and buys almost everything.",
+   "start": 48.156,
+   "end": 53.711,
+   "file": "vo/lines/l12.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l13",
+   "who": "G",
+   "text": "Four. Finish small things. One finished thing beats a perfect dream.",
+   "start": 54.131,
+   "end": 59.239,
+   "file": "vo/lines/l13.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l14",
+   "who": "G",
+   "text": "Three. Stay a beginner at something. Pride ages you faster than time.",
+   "start": 59.659,
+   "end": 65.583,
+   "file": "vo/lines/l14.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l15",
+   "who": "G",
+   "text": "Two. Who you are when no one is watching… is who you're becoming.",
+   "start": 66.003,
+   "end": 70.629,
+   "file": "vo/lines/l15.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l16",
+   "who": "G",
+   "text": "One. Stop waiting for the right time. I've watched every clock in the world. The right time has never arrived.",
+   "start": 72.129,
+   "end": 78.731,
+   "file": "vo/lines/l16.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l17",
+   "who": "G",
+   "text": "It only ever comes as… now.",
+   "start": 79.281,
+   "end": 82.455,
+   "file": "vo/lines/l17.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l18",
+   "who": "L",
+   "text": "Now?",
+   "start": 82.955,
+   "end": 83.495,
+   "file": "vo/lines/l18.wav",
+   "sr": 24000
+  },
+  {
+   "id": "l19",
+   "who": "G",
+   "text": "Now.",
+   "start": 84.095,
+   "end": 84.731,
+   "file": "vo/lines/l19.wav",
+   "sr": 24000
+  }
+ ]
+}

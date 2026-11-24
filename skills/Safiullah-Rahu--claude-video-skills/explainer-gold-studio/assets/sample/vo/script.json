@@ -1,0 +1,112 @@
+{
+ "voice": "am_fenrir,am_onyx",
+ "speed": 1.26,
+ "lead": 0.05,
+ "tail": 0.9,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "[Alaska](/æˈlæskə/) and Alberta both struck it rich selling oil."
+  },
+  {
+   "id": "l02",
+   "text": "[Alaska](/æˈlæskə/) turned it into an eighty-eight-billion-dollar fund.",
+   "gap": 0.3
+  },
+  {
+   "id": "l03",
+   "text": "Alberta's fund is about a quarter of that.",
+   "gap": 0.75
+  },
+  {
+   "id": "l04",
+   "text": "Here's why.",
+   "gap": 0.4
+  },
+  {
+   "id": "l05",
+   "text": "In nineteen seventy-six, Alaskans voted to save part of their oil money.",
+   "gap": 0.4
+  },
+  {
+   "id": "l06",
+   "text": "At least twenty-five percent of oil royalties goes in,",
+   "gap": 0.35
+  },
+  {
+   "id": "l07",
+   "text": "to one giant fund, and those savings can only be invested.",
+   "gap": 0.25
+  },
+  {
+   "id": "l08",
+   "text": "They invested it, and it just kept growing.",
+   "gap": 0.5
+  },
+  {
+   "id": "l09",
+   "text": "Now it pays out about three point eight billion dollars a year, for dividends and public services,",
+   "gap": 0.5
+  },
+  {
+   "id": "l10",
+   "text": "and the fund is still growing.",
+   "gap": 0.25
+  },
+  {
+   "id": "l11",
+   "text": "Alberta went the other way.",
+   "gap": 0.5
+  },
+  {
+   "id": "l12",
+   "text": "It took in about eighteen billion dollars of resource revenue last year alone.",
+   "gap": 0.55
+  },
+  {
+   "id": "l13",
+   "text": "The plan back in nineteen seventy-six?",
+   "gap": 0.3
+  },
+  {
+   "id": "l13b",
+   "text": "To save thirty cents of every resource dollar.",
+   "gap": 0.3
+  },
+  {
+   "id": "l14",
+   "text": "And here's the twist.",
+   "gap": 0.8
+  },
+  {
+   "id": "l15",
+   "text": "In nineteen eighty-seven, the deposits stopped.",
+   "gap": 0.6
+  },
+  {
+   "id": "l16",
+   "text": "Not one new dollar went in until two thousand six.",
+   "gap": 0.25
+  },
+  {
+   "id": "l17",
+   "text": "Two places.",
+   "gap": 0.4
+  },
+  {
+   "id": "l18",
+   "text": "Same oil.",
+   "gap": 0.25
+  },
+  {
+   "id": "l19",
+   "text": "[Alaska](/æˈlæskə/) kept saving.",
+   "gap": 0.6
+  },
+  {
+   "id": "l20",
+   "text": "Alberta stopped for nineteen years.",
+   "gap": 0.4
+  }
+ ]
+}

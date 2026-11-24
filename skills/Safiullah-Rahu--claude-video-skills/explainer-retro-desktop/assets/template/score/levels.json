@@ -1,0 +1,19 @@
+{
+ "voice_db": -20.1,
+ "sfx_under_voice_db": 13.0,
+ "bed_under_voice_db": 26.9,
+ "voice_over_bed_plus_sfx_db": 18.3,
+ "bpm": 100.0,
+ "full": {
+  "lufs": -13.8,
+  "tp": -2.65,
+  "type": "linear",
+  "limiter_gr_db": 3.9
+ },
+ "nomusic": {
+  "lufs": -13.82,
+  "tp": -2.7,
+  "type": "linear",
+  "limiter_gr_db": 3.8
+ }
+}

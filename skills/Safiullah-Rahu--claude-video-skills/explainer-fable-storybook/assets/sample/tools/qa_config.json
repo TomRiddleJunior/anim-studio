@@ -1,0 +1,25 @@
+{
+ "fps": 60,
+ "voice": true,
+ "loop": false,
+ "source_wpm_true": 160.9,
+ "planned_dips": [],
+ "beats": [
+  [0.0, 0.0, "hook: dusk exterior, label, grey caption"],
+  [2.2, 4.0, "the crowd panics, label 2"],
+  [9.0, 7.6, "the predator's offer (bubble)"],
+  [11.5, 9.8, "bubble becomes the hanging sign"],
+  [13.0, 12.4, "DAY counter + tally, night dip"],
+  [16.9, 16.2, "the chorus bubbles"],
+  [18.5, 18.3, "time-lapse (... LATER)"],
+  [21.5, 21.0, "sign crossed out, big tally"],
+  [23.75, 23.0, "irony banner in a beam"],
+  [26.5, 26.6, "the turn (one by one / yes yes yes)"],
+  [30.0, 29.2, "A FABLE photo card"],
+  [32.5, 31.2, "lesson title on navy"],
+  [35.5, 40.2, "dark card + yellow stamp"],
+  [38.5, 47.6, "the abstraction (pegs / grids)"],
+  [48.25, 55.2, "YOU tag + red target"],
+  [55.4, 60.5, "end: question over the dusk"]
+ ]
+}

@@ -1,0 +1,113 @@
+{
+ "voice": "am_michael",
+ "speed": 1.28,
+ "lead": 0.12,
+ "tail": 1.4,
+ "gap": 0.16,
+ "lines": [
+  {
+   "id": "h1",
+   "text": "Boeing just lost about sixteen billion dollars in a single day."
+  },
+  {
+   "id": "h2",
+   "gap": 0.12,
+   "text": "And the reason is sitting right outside your window seat."
+  },
+  {
+   "id": "f1",
+   "gap": 0.22,
+   "text": "Boeing, ticker [B-A](/bˈi ˈA/), fell almost eleven percent on Tuesday,"
+  },
+  {
+   "id": "f2",
+   "gap": 0.06,
+   "text": "its worst day in more than a year and a half."
+  },
+  {
+   "id": "s1",
+   "gap": 0.3,
+   "text": "The strange part?"
+  },
+  {
+   "id": "s2",
+   "gap": 0.18,
+   "text": "Its order book just hit a record seven hundred forty-five billion dollars. That's more than sixty-three hundred jets."
+  },
+  {
+   "id": "q1",
+   "gap": 0.26,
+   "text": "So what spooked investors?"
+  },
+  {
+   "id": "q2",
+   "gap": 0.14,
+   "text": "The wait."
+  },
+  {
+   "id": "q3",
+   "gap": 0.22,
+   "text": "Boeing wanted to deliver around five hundred of its seven-thirty-seven jets this year. Nine months in, it has delivered three hundred sixty-seven, and it now says it won't get there."
+  },
+  {
+   "id": "q4",
+   "gap": 0.22,
+   "text": "Next year's free cash? Three billion dollars. Wall Street wanted five and a half."
+  },
+  {
+   "id": "t1",
+   "gap": 0.3,
+   "text": "But here's the twist almost no one is mentioning."
+  },
+  {
+   "id": "t2",
+   "gap": 0.16,
+   "text": "It isn't demand, and it isn't engines."
+  },
+  {
+   "id": "t3",
+   "gap": 0.14,
+   "text": "It's the wings. Boeing builds every seven-thirty-seven wing itself, and says that's still its biggest bottleneck."
+  },
+  {
+   "id": "w1",
+   "gap": 0.26,
+   "text": "Why does that matter?"
+  },
+  {
+   "id": "w2",
+   "gap": 0.12,
+   "text": "Because airlines pay most of a jet's price on delivery."
+  },
+  {
+   "id": "w3",
+   "gap": 0.14,
+   "text": "An order is a promise. A delivery is cash."
+  },
+  {
+   "id": "w4",
+   "gap": 0.18,
+   "text": "And a steady forty-seven jets a month now slips to early twenty twenty-seven."
+  },
+  {
+   "id": "c1",
+   "gap": 0.3,
+   "text": "The market isn't asking if Boeing can sell planes."
+  },
+  {
+   "id": "c2",
+   "gap": 0.14,
+   "text": "It's asking if it can build the wings."
+  },
+  {
+   "id": "e1",
+   "gap": 0.36,
+   "text": "Buying chance, or warning sign? Tell me in the comments."
+  },
+  {
+   "id": "e2",
+   "gap": 0.12,
+   "text": "And follow for the daily market story."
+  }
+ ]
+}

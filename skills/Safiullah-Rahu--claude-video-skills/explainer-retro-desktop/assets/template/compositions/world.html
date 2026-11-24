@@ -1,0 +1,29 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #cac1a4; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = 8.71;
+      const film = window.FILM_CREATE(document.getElementById("world-canvas"));
+      let lastT = -1;
+      function draw(t) {
+        t = Math.round(t * 10000) / 10000;
+        if (t === lastT) return;
+        lastT = t;
+        film.draw(t);
+      }
+      window.__film = { film, draw: (t) => { lastT = -1; draw(t); } };
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+      draw(0);
+    })();
+  </script>
+</template>

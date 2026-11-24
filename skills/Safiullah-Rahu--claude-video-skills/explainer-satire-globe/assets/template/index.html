@@ -1,0 +1,92 @@
+<!doctype html>
+<html
+  lang="en"
+  data-composition-variables='[
+    {"id":"color-ground","type":"color","label":"Background","default":"#061521"},
+    {"id":"color-ink","type":"color","label":"Text (ice white)","default":"#EAF6FF"},
+    {"id":"color-accent","type":"color","label":"Accent (status chips, pings)","default":"#FF6B1A"},
+    {"id":"font-display","type":"string","label":"Display font","default":"Inter"},
+    {"id":"font-mono","type":"string","label":"Console font","default":"IBM Plex Mono"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <!-- three.js r170, vendored: the CommonJS build wrapped so it sets window.THREE (no network at render time) -->
+    <script src="assets/lib/three.global.js"></script>
+    <script src="assets/data/land-dots.js"></script>
+    <script src="assets/lib/earth-os-globe.js"></script>
+    <script src="assets/lib/earth-os-director.js"></script>
+    <style>
+      :root {
+        --color-ground: #061521;
+        --color-ink: #eaf6ff;
+        --color-accent: #ff6b1a;
+        --font-display: "Inter";
+        --font-mono: "IBM Plex Mono";
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--color-ground);
+      }
+      /* Name the bundled families in a font-family declaration outside any <template>: the compiler only scans
+         these to embed fonts, so families used only inside scene templates (via var(--font-*)) would fall back. */
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-mono {
+        font-family: "IBM Plex Mono", monospace;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-family: var(--font-display), sans-serif;
+        color: var(--color-ink);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="14" data-width="1920" data-height="1080">
+      <div
+        id="globe"
+        data-composition-id="globe"
+        data-composition-src="compositions/globe.html"
+        data-start="0"
+        data-duration="14"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+        style="z-index: 1"
+      ></div>
+      <div
+        id="t-hormuz"
+        data-composition-id="t-hormuz"
+        data-composition-src="compositions/t-hormuz.html"
+        data-start="2"
+        data-duration="10"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1920"
+        data-height="1080"
+        style="z-index: 4"
+      ></div>
+      <audio id="score" class="clip" src="assets/audio/score.m4a" data-start="0" data-duration="14" data-track-index="20" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

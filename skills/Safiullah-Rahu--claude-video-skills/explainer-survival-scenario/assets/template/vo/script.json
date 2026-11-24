@@ -1,0 +1,20 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.02,
+ "lead": 0.12,
+ "tail": 5.4,
+ "gap": 0.36,
+ "day": 1,
+ "end": {"q1": "WHAT DID SHE", "q2": "MISS?", "pill": "TELL ME IN THE COMMENTS", "series": "THE FIRE TOWER", "next": "DAY 2", "r": 2.6},
+ "lines": [
+  {"id": "l01", "shot": "A1", "text": "When the dead start to walk, a fire tower is the place to be. Consider the high ground yours.",
+   "caps": [["When the dead|start to walk,", "r"], ["a fire tower|is the place to be.", "w"], ["Consider the high|ground yours.", "g"]]},
+  {"id": "l02", "shot": "B", "gap": 0.6, "text": "As long as nothing gets overlooked.",
+   "caps": [["As long as", "w"], ["nothing gets|overlooked.", "r"]]},
+  {"id": "l03", "shot": "C", "gap": 0.7, "hud": "9:47 PM", "text": "Meet Hazel. She's thirty-four. She watches the forest for fires.",
+   "tags": [{"at": "Hazel", "title": "HAZEL · 34", "sub": "FIRE LOOKOUT", "col": "y"}],
+   "caps": [["Meet Hazel.", "y"], ["She's thirty-four.", "y"], ["She watches the forest|for fires.", "w"]]},
+  {"id": "l04", "shot": "Q", "gap": 0.7, "speed": 0.95, "text": "But Hazel overlooked something.",
+   "caps": [["But Hazel overlooked|something...", "r"]]}
+ ]
+}

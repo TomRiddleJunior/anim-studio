@@ -1,0 +1,40 @@
+{
+ "preset": "playful-bounce",
+ "key": 2,
+ "sections": [
+  {
+   "t": 0,
+   "energy": 2
+  },
+  {
+   "t": 22.9,
+   "energy": 1
+  },
+  {
+   "t": 30.16,
+   "energy": 2
+  },
+  {
+   "t": 38.66,
+   "energy": 3
+  },
+  {
+   "t": 42.23,
+   "energy": 2
+  },
+  {
+   "t": 52.23,
+   "energy": 3
+  },
+  {
+   "t": 58.3,
+   "energy": 0
+  }
+ ],
+ "end_hit": true,
+ "music_under_voice_db": -15,
+ "music_alone_db": -8,
+ "sfx_db": -6,
+ "lufs": -14,
+ "reverb": 0.22
+}

@@ -1,0 +1,17 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .cr { position: absolute; right: 40px; bottom: 26px; font: 400 22px/28px "IBM Plex Mono", monospace; color: rgba(234, 246, 255, 0.7);
+      letter-spacing: 0.03em; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); }
+  </style>
+  <div id="root" data-composition-id="credit" data-width="1920" data-height="1080">
+    <div class="cr" id="cr-t" data-layout-ignore>Earth imagery: NASA Earth Observatory (Blue Marble)</div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#cr-t", { opacity: 0 }, { opacity: 1, duration: 0.6 }, 12.717);
+      window.__timelines["credit"] = tl;
+    })();
+  </script>
+</template>

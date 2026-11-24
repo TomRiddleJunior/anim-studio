@@ -1,0 +1,12 @@
+{
+ "voice": "am_michael",
+ "speed": 1.12,
+ "lead": 0.12,
+ "tail": 1.4,
+ "gap": 0.24,
+ "lines": [
+  {"id": "hook", "text": "In December twenty twenty-three, a computer closed a sea gate on its own.", "gap": 0.0},
+  {"id": "storm", "text": "A storm was driving the North Sea at the coast.", "gap": 0.42},
+  {"id": "six", "text": "That night, all six of the country's big storm barriers were shut.", "gap": 0.36}
+ ]
+}

@@ -1,0 +1,72 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    #globe-ground {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 62% 50%, #0c2436 0%, #08192a 38%, #061521 70%);
+    }
+    #globe-canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1920px;
+      height: 1080px;
+    }
+  </style>
+  <div id="root" data-composition-id="globe" data-width="1920" data-height="1080">
+    <div id="globe-ground"></div>
+    <canvas id="globe-canvas" width="1920" height="1080" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      // Hotspots: lat/lon + the dive patch made by tools/make_patches.py (paste its printed bounds here).
+      const HOT = [
+        { id: "hormuz", lat: 26.6, lon: 56.3, patch: { src: "assets/img/patch-hormuz.jpg", lonMin: 49.25417, lonMax: 68.26667, latMax: 35.1, latMin: 18.1 } },
+      ];
+      // Ticket scenes in root seconds: must match the hosts in index.html.
+      const TICKETS = [{ id: "hormuz", s: 2, d: 10 }];
+      const DUR = 14;
+      const D = window.EarthOSDirector.create({
+        hotspots: HOT,
+        tickets: TICKETS,
+        boot: { from: { lat: 14, lon: 18, alt: 3.2, ox: 0 }, to: { lat: 22, lon: 40, alt: 2.6, ox: 0 }, t: 2, pings: { hormuz: 1.2 } },
+        board: { t: 12, view: { lat: 24, lon: 52, alt: 2.7, ox: 0 } },
+        end: { drift: { lon: -4, alt: 0.08 } },
+        dur: DUR,
+        hold: { dive: 0.17, push: 0.145, ox: -440, oy: -230 },
+      });
+      const g = window.EarthOSGlobe.create({
+        canvas: document.getElementById("globe-canvas"),
+        width: 1920,
+        height: 1080,
+        earth: "assets/img/earth-bluemarble-5400.jpg",
+        dots: window.LAND_DOTS,
+        hotspots: HOT,
+        // one arc per consecutive pair of tickets: [[t0, t1], [t1, t2], ...]
+        arcs: TICKETS.slice(1).map((tk, i) => [TICKETS[i].id, tk.id]),
+        colors: { dot: "#EAF6FF", core: "#0A1E2E", rim: "#96CDFF", accent: "#FF6B1A", arc: "#EAF6FF" },
+      });
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        g.render(D.stateAt(t));
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.globe = g.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["globe"] = tl;
+    })();
+  </script>
+</template>

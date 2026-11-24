@@ -1,0 +1,7 @@
+{"voice": "am_michael", "speed": 1.45, "lead": 0.25, "tail": 1.2,
+ "lines": [
+  {"id": "hook",  "text": "Elm Street is getting every pothole fixed at once, and Mayor Pemberton picked the week himself: right before his election.", "gap": 0},
+  {"id": "why",   "text": "So why right before his election?", "gap": 0.1},
+  {"id": "cost",  "text": "Because the other eleven months, you hit the same pothole every day.", "gap": 0.08},
+  {"id": "punch", "text": "And the pothole outside your door? Re-elected as well.", "gap": 0.08}
+ ]}

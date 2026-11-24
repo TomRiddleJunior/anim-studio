@@ -1,0 +1,20 @@
+{
+ "brand": "Vectorwing",
+ "cut_lead": 0.28,
+ "chunks": {
+  "l01": ["A jet built", "to break the sound barrier,", "without the big boom."],
+  "l02": ["It's NASA's X-59,", "built by Lockheed Martin", "for quiet supersonic flight."],
+  "l03": ["Stretched out like that,", "the shock waves don't merge."]
+ },
+ "chrome": [
+  {"kind": "note", "at": ["l02", "it's", -0.21], "until": "l03", "text": "Illustration based on NASA imagery"},
+  {"kind": "card", "at": ["l02", "it's", 1.22], "until": "l03", "title": "X-59", "sub": "NASA Quesst X-plane · 99.7 ft long · built by Lockheed Martin", "bar": "#e8892b"}
+ ],
+ "ambience": [
+  {"at": 0, "kind": "jet"},
+  {"at": "l02", "kind": "jet", "gain": 0.9},
+  {"at": "l03", "kind": "high", "gain": 0.9}
+ ],
+ "events": [],
+ "cues": [{"at": "l03", "type": "woosh_low", "gain": 0.3}]
+}

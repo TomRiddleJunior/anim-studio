@@ -1,0 +1,34 @@
+{
+ "preset": "doc-pulse",
+ "bpm": 100,
+ "key": -2,
+ "sections": [
+  {
+   "t": 0,
+   "energy": 2
+  },
+  {
+   "t": 13.505,
+   "energy": 1
+  },
+  {
+   "t": 38.81,
+   "energy": 3
+  },
+  {
+   "t": 51.65,
+   "energy": 2
+  },
+  {
+   "t": 69.58,
+   "energy": 1
+  }
+ ],
+ "end_hit": true,
+ "music_under_voice_db": -19,
+ "duck_db": 5,
+ "music_alone_db": -9,
+ "sfx_db": -7,
+ "lufs": -14,
+ "reverb": 0.15
+}

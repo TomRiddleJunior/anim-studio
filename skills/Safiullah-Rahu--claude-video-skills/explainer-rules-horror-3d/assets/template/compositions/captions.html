@@ -1,0 +1,56 @@
+<template>
+  <style>
+    @font-face { font-family: "MontserratRH"; src: url("assets/fonts/Montserrat_wght_.ttf") format("truetype"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    /* source: heavy geometric sans caps, white, soft dark drop shadow, no box; 1-3 words; centred low (~69 % height) */
+    #root .cap { position: absolute; left: 65px; right: 65px; top: 1268px; height: 0; display: flex; justify-content: center; align-items: center; }
+    #root .t { display: inline-block; font: 800 84px/1.0 "MontserratRH", "Montserrat", "Arial Black", sans-serif; color: #ffffff; text-align: center;
+      white-space: nowrap; letter-spacing: -0.012em; text-transform: uppercase;
+      text-shadow: 0 4px 14px rgba(0,0,0,0.62), 0 1px 3px rgba(0,0,0,0.75), 0 0 1px rgba(0,0,0,0.9); transform-origin: 50% 50%; }
+    #root .acc { color: #ff3b30; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip cap" id="cap0" data-start="0.18" data-duration="0.638"><div class="t" id="ct0">IMAGINE YOU'RE</div></div>
+    <div class="clip cap" id="cap1" data-start="0.818" data-duration="0.587"><div class="t" id="ct1">THE LAST ONE</div></div>
+    <div class="clip cap" id="cap2" data-start="1.405" data-duration="0.463"><div class="t" id="ct2">LEFT IN</div></div>
+    <div class="clip cap" id="cap3" data-start="1.868" data-duration="0.787"><div class="t" id="ct3">AN UNDERGROUND</div></div>
+    <div class="clip cap" id="cap4" data-start="2.655" data-duration="1.335"><div class="t" id="ct4">GARAGE.</div></div>
+    <div class="clip cap" id="cap5" data-start="3.99" data-duration="0.675"><div class="t" id="ct5">AT EXACTLY</div></div>
+    <div class="clip cap" id="cap6" data-start="4.665" data-duration="0.725"><div class="t" id="ct6">MIDNIGHT,</div></div>
+    <div class="clip cap" id="cap7" data-start="5.39" data-duration="0.463"><div class="t" id="ct7">THE LIGHTS</div></div>
+    <div class="clip cap" id="cap8" data-start="5.853" data-duration="0.462"><div class="t" id="ct8">AT THE FAR</div></div>
+    <div class="clip cap" id="cap9" data-start="6.315" data-duration="1.835"><div class="t" id="ct9">END TURN <span class="acc">RED.</span></div></div>
+    <div class="clip cap" id="cap10" data-start="8.15" data-duration="0.525"><div class="t" id="ct10">THEN THE NEXT</div></div>
+    <div class="clip cap" id="cap11" data-start="8.675" data-duration="0.45"><div class="t" id="ct11">ROW.</div></div>
+    <div class="clip cap" id="cap12" data-start="9.125" data-duration="1.535"><div class="t" id="ct12">AND THE NEXT.</div></div>
+    <div class="clip cap" id="cap13" data-start="10.66" data-duration="0.513"><div class="t" id="ct13">YOU HAVE TWO</div></div>
+    <div class="clip cap" id="cap14" data-start="11.173" data-duration="0.55"><div class="t" id="ct14">CHOICES.</div></div>
+    <div class="clip cap" id="cap15" data-start="11.723" data-duration="0.562"><div class="t" id="ct15">SO...</div></div>
+    <div class="clip cap" id="cap16" data-start="12.285" data-duration="0.325"><div class="t" id="ct16">WHAT WOULD</div></div>
+    <div class="clip cap" id="cap17" data-start="12.61" data-duration="1.205"><div class="t" id="ct17">YOU DO?</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#ct0", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 0.18);
+      tl.fromTo("#ct1", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 0.818);
+      tl.fromTo("#ct2", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 1.405);
+      tl.fromTo("#ct3", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 1.868);
+      tl.fromTo("#ct4", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 2.655);
+      tl.fromTo("#ct5", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 3.99);
+      tl.fromTo("#ct6", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 4.665);
+      tl.fromTo("#ct7", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 5.39);
+      tl.fromTo("#ct8", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 5.853);
+      tl.fromTo("#ct9", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 6.315);
+      tl.fromTo("#ct10", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 8.15);
+      tl.fromTo("#ct11", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 8.675);
+      tl.fromTo("#ct12", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 9.125);
+      tl.fromTo("#ct13", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 10.66);
+      tl.fromTo("#ct14", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 11.173);
+      tl.fromTo("#ct15", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 11.723);
+      tl.fromTo("#ct16", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 12.285);
+      tl.fromTo("#ct17", { opacity: 0, scale: 1.06 }, { opacity: 1, scale: 1, duration: 0.09, ease: "power2.out" }, 12.61);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

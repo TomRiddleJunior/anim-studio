@@ -1,0 +1,12 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.05,
+ "lead": 0.12,
+ "tail": 1.4,
+ "gap": 0.35,
+ "lines": [
+  {"id": "t01", "text": "A trainer once tied a baby elephant to a stake with a thin rope."},
+  {"id": "t02", "gap": 0.45, "text": "She pulled until, one morning, she stopped."},
+  {"id": "t03", "gap": 0.6, "text": "Psychologists call it learned helplessness."}
+ ]
+}

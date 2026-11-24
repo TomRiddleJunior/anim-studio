@@ -1,0 +1,43 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #8b7a66; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = 12.72;
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+      const V = {
+        w(line, word, k) {
+          const hits = window.SIM_VO.lines[line].filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + line + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][1];
+        },
+        l(line) { return window.SIM_VO.starts[line]; },
+      };
+      const K = window.SIM.create({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920, scale: window.SIM_SCALE || 1 });
+      window.SIM_ENVS(K);
+      const C = window.SIM_CRAFT(K);
+      const film = window.SIM_FILM(K, C, V);
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        film.render(Math.min(t, DUR - 1 / 60));
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = K.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

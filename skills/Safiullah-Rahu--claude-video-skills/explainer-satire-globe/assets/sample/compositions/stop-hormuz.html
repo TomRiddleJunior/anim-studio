@@ -1,0 +1,159 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .dwrap { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    #root .mbdef { position: absolute; left: 0; top: 0; }
+    #root .doc { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    #root .doc-in { position: absolute; inset: 0; transform-origin: 50% 50%;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.45)) drop-shadow(0 22px 26px rgba(0, 0, 0, 0.42)); }
+    #root .paper { position: absolute; inset: 0; background-color: var(--pc); background-image: url(assets/img/paper-grain.jpg);
+      background-size: 720px; background-blend-mode: multiply; overflow: hidden; }
+    #root .pin { position: absolute; width: 26px; height: 26px; border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #f08a7e 0 14%, #c4342a 34%, #7d1d16 100%);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45); }
+    #root .tape { position: absolute; height: 44px; background: rgba(233, 222, 192, 0.78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
+    #root .ev-head { position: absolute; left: 22px; top: 18px; right: 22px; height: 40px; border-bottom: 2px solid #23211e;
+      font: 600 25px/34px "Roboto Mono", monospace; letter-spacing: 0.06em; color: #23211e; white-space: nowrap; }
+    #root .ev-head b { font-weight: 800; }
+    #root .ev-img { position: absolute; left: 22px; top: 70px; }
+    #root .ev-img img { display: block; width: 100%; height: 100%; }
+    #root .ev-box { position: absolute; border: 6px solid #c14800; border-radius: 4px; }
+    #root .ev-box.under { border: none; border-bottom: 8px solid #c14800; border-radius: 0; }
+    #root .ev-note { position: absolute; padding: 6px 14px; background: #23211e; color: #f6f4ee;
+      font: 700 30px/40px "Roboto Mono", monospace; letter-spacing: 0.06em; white-space: nowrap; }
+    #root .stamp { position: absolute; transform-origin: 50% 50%; opacity: 0; mix-blend-mode: multiply; }
+    #root .stamp-in { position: relative; color: #c4342a; border: 8px solid #c4342a; border-radius: 12px; padding: 16px 30px 10px;
+      outline: 3px solid #c4342a; outline-offset: -18px; font-family: "Playfair Display", serif; font-weight: 900;
+      line-height: 0.98; letter-spacing: 0.06em; text-align: center; white-space: nowrap; display: flex; flex-direction: column; align-items: center;
+      -webkit-mask-image: url(assets/img/stamp-grunge.png); mask-image: url(assets/img/stamp-grunge.png);
+      -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+    #root .stamp-in.ghost { position: absolute; left: 0; top: 0; opacity: 0; }
+    #root .st-s { font: 700 0.22em/1.5 "Roboto Mono", monospace; letter-spacing: 0.16em; }
+    #root .st-w { display: block; padding: 0.04em 0 0.02em; }
+    #root .idx-margin { position: absolute; left: 96px; top: 0; bottom: 0; width: 3px; background: rgba(193, 58, 45, 0.6); }
+    #root .idx { background-image: url(assets/img/paper-grain.jpg),
+      repeating-linear-gradient(to bottom, transparent 0 90px, rgba(70, 110, 160, 0.32) 90px 92px); background-size: 720px, 100% 92px;
+      background-position: 0 0, 0 60px; }
+    #root .idx-head { position: absolute; left: 124px; top: 34px; font: 700 32px/40px "Roboto Mono", monospace; letter-spacing: 0.03em; color: #23211e; }
+    #root .idx-sub { position: absolute; left: 124px; top: 82px; font: italic 400 28px/36px "Libre Baskerville", serif; color: #6b665e; }
+    #root .idx-line { position: absolute; left: 124px; font: 600 46px/60px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #23211e; white-space: pre; }
+    #root .slip-q { position: absolute; font: 600 38px/50px "Roboto Mono", monospace; color: #23211e; white-space: pre; }
+    #root .slip-q.big { font-size: 52px; line-height: 64px; }
+    #root .slip-q.big2 { font-size: 44px; line-height: 54px; }
+    #root .slip-k { position: absolute; font: 700 28px/36px "Roboto Mono", monospace; letter-spacing: 0.04em; color: #6b665e; white-space: pre; }
+    #root .slip-att { position: absolute; font: 500 26px/34px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #6b665e; white-space: nowrap; }
+    #root .hl { position: absolute; height: 44px; background: rgba(255, 205, 60, 0.62); transform-origin: 0 50%; mix-blend-mode: multiply; }
+    #root .dcard { background-image: url(assets/img/paper-grain.jpg), linear-gradient(rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px); background-size: 720px, 64px 64px, 64px 64px; }
+    #root .dc-chrome { position: absolute; left: 44px; top: 40px; font: 600 24px/30px "Inter", sans-serif; letter-spacing: 0.3em; color: #76603a; }
+    #root .dc-tick { display: inline-block; width: 5px; height: 26px; margin-right: 16px; vertical-align: -5px; background: #c14800; }
+    #root .dc-chrome-r { position: absolute; right: 44px; top: 40px; font: 600 24px/30px "Roboto Mono", monospace; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-foot { position: absolute; left: 44px; right: 44px; bottom: 30px; font: 600 20px/26px "Inter", sans-serif; letter-spacing: 0.22em; color: #76603a; }
+    #root .dc-hair { position: relative; height: 2px; margin-top: 10px; background: #d6cab6; }
+    #root .dc-prog { position: absolute; left: 0; top: -1px; height: 4px; background: #c14800; }
+    #root .dc-label { position: absolute; font: 600 28px/34px "Inter", sans-serif; letter-spacing: 0.24em; color: #76603a; white-space: nowrap; }
+    #root .dc-rule { position: absolute; width: 7px; background: #c14800; }
+    #root .dc-mask { position: absolute; overflow: hidden; padding: 0 8px 4px 0; }
+    #root .dc-head { font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1.08; text-transform: uppercase; color: #111010;
+      -webkit-text-stroke: 2.6px #111010; letter-spacing: 0.01em; white-space: nowrap; }
+    #root .orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .dc-num { position: absolute; font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1; color: #c14800;
+      -webkit-text-stroke: 5px #c14800; white-space: nowrap; text-shadow: 3px 3px 0 rgba(90, 34, 6, 0.35); }
+    #root .dc-pre { position: absolute; font: 700 34px/40px "Oswald", sans-serif; letter-spacing: 0.04em; color: #5b5143; }
+    #root .dc-unit { position: absolute; font: 700 56px/60px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .dc-lead { position: absolute; font: 500 36px/44px "Inter", sans-serif; color: #5b5143; white-space: nowrap; }
+    #root .dc-div { position: absolute; height: 3px; background: #c8bead; transform-origin: 0 50%; }
+    #root .dc-div.v { width: 3px; height: auto; }
+    #root .dc-cap { position: absolute; font: 400 28px/36px "Inter", sans-serif; color: #5b5143; }
+    #root .dc-cap.c { text-align: center; font-weight: 600; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-type { position: absolute; font: 700 38px/48px "Roboto Mono", monospace; color: #111010; white-space: pre; }
+    #root .barrow, #root .vbar { position: absolute; }
+    #root .bar-name { font: 700 40px/48px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .bar-val { position: absolute; right: 0; top: -6px; font: 700 54px/60px "Oswald", sans-serif; color: #c14800; }
+    #root .bar-val.grey, #root .bar-fill.grey { color: #948a7b; }
+    #root .bar-track { position: relative; height: 26px; margin-top: 12px; background: #dcd0bc; }
+    #root .bar-track.tall { height: 40px; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c14800; transform-origin: 0 50%; }
+    #root .bar-fill.grey { background: #948a7b; }
+    #root .half { position: absolute; left: 50%; top: -10px; bottom: -10px; width: 3px; background: #111010; }
+    #root .half-l { position: absolute; left: 50%; top: 56px; transform: translateX(-50%); font: 600 22px/26px "Inter", sans-serif; letter-spacing: 0.2em; color: #5b5143; }
+    #root .age { position: absolute; font: 700 170px/1 "Oswald", sans-serif; color: #111010; -webkit-text-stroke: 4px #111010; }
+    #root .dc-mask .age { position: relative; }
+    #root .age.orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .strike { position: absolute; left: -8px; right: -8px; top: 50%; height: 12px; background: #c14800; transform-origin: 0 50%; }
+    #root .seat { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #d6cab6; }
+    #root .majority { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .majority line { stroke: #111010; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .maj-l { position: absolute; font: 700 44px/50px "Oswald", sans-serif; color: #111010; }
+    #root .mrow { position: absolute; left: 0; right: 0; height: 60px; }
+    #root .mcell { position: absolute; top: 0; width: 82px; height: 60px; background: #d6cab6; }
+    #root .gtag .doc-in { filter: none; }
+    #root .tag-in { display: flex; flex-direction: column; justify-content: center; padding: 0 22px; background: rgba(7, 24, 37, 0.9);
+      border: 1.5px solid rgba(234, 246, 255, 0.28); border-radius: 8px; }
+    #root .tag-a { font: 700 36px/44px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #eaf6ff; white-space: nowrap; }
+    #root .tag-b { font: 400 32px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .tag-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #ff6b1a; margin-right: 14px; vertical-align: 2px; }
+    #root .thread { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .thread line { stroke: #c4342a; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .arr { position: absolute; left: 0; top: 72px; width: 1920px; }
+    #root .arr-in { display: flex; align-items: center; gap: 22px; height: 64px; padding: 0 64px; background: rgba(5, 15, 25, 0.8);
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.14); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .arr-id { color: #9fb8cc; }
+    #root .arr-title { font: 800 34px/40px "Inter", sans-serif; letter-spacing: -0.01em; color: #eaf6ff; }
+    #root .arr-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 34px; color: #eaf6ff; }
+    #root .arr-status { margin-left: auto; display: flex; align-items: center; gap: 16px; letter-spacing: 0.06em; }
+    #root .chip { display: inline-block; height: 44px; overflow: hidden; border-radius: 6px; background: #ff6b1a; color: #140700; padding: 0 16px; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 44px; font: 700 30px/44px "IBM Plex Mono", monospace; letter-spacing: 0.04em; white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="stop-hormuz" data-width="1920" data-height="1080">
+    <svg class="mbdef" width="0" height="0"><filter id="hz-mb" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur id="hz-mbg" stdDeviation="0 0" /></filter></svg>
+    <div class="dwrap" id="hz-drot" data-layout-allow-overflow><div class="dwrap" id="hz-dblur" data-layout-allow-overflow><div class="dwrap" id="hz-desk" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="doc gtag" id="hz-tag" data-layout-allow-overflow style="width:640px; height:112px;"><div class="doc-in tag-in tag-l" id="hz-tag-in"><div class="tag-a"><span class="tag-dot"></span>STRAIT OF HORMUZ</div><div class="tag-b">26.6°N 56.3°E</div></div></div>
+    <div class="doc" id="hz-idx" data-layout-allow-overflow data-layout-allow-overlap style="width:980px; height:660px;"><div class="doc-in" id="hz-idx-in"><div class="paper idx" style="--pc:#f2ede1; clip-path: polygon(0.0px 0.0px, 26.5px 0.0px, 53.0px 0.0px, 79.5px 0.0px, 105.9px 0.0px, 132.4px 0.0px, 158.9px 0.0px, 185.4px 0.0px, 211.9px 0.0px, 238.4px 0.0px, 264.9px 0.0px, 291.4px 0.0px, 317.8px 0.0px, 344.3px 0.0px, 370.8px 0.0px, 397.3px 0.0px, 423.8px 0.0px, 450.3px 0.0px, 476.8px 0.0px, 503.2px 0.0px, 529.7px 0.0px, 556.2px 0.0px, 582.7px 0.0px, 609.2px 0.0px, 635.7px 0.0px, 662.2px 0.0px, 688.6px 0.0px, 715.1px 0.0px, 741.6px 0.0px, 768.1px 0.0px, 794.6px 0.0px, 821.1px 0.0px, 847.6px 0.0px, 874.1px 0.0px, 900.5px 0.0px, 927.0px 0.0px, 953.5px 0.0px, 980.0px 0.0px, 980.0px 26.4px, 980.0px 52.8px, 980.0px 79.2px, 980.0px 105.6px, 980.0px 132.0px, 980.0px 158.4px, 980.0px 184.8px, 980.0px 211.2px, 980.0px 237.6px, 980.0px 264.0px, 980.0px 290.4px, 980.0px 316.8px, 980.0px 343.2px, 980.0px 369.6px, 980.0px 396.0px, 980.0px 422.4px, 980.0px 448.8px, 980.0px 475.2px, 980.0px 501.6px, 980.0px 528.0px, 980.0px 554.4px, 980.0px 580.8px, 980.0px 607.2px, 980.0px 633.6px, 980.0px 660.0px, 953.5px 660.0px, 927.0px 660.0px, 900.5px 660.0px, 874.1px 660.0px, 847.6px 660.0px, 821.1px 660.0px, 794.6px 660.0px, 768.1px 660.0px, 741.6px 660.0px, 715.1px 660.0px, 688.6px 660.0px, 662.2px 660.0px, 635.7px 660.0px, 609.2px 660.0px, 582.7px 660.0px, 556.2px 660.0px, 529.7px 660.0px, 503.2px 660.0px, 476.8px 660.0px, 450.3px 660.0px, 423.8px 660.0px, 397.3px 660.0px, 370.8px 660.0px, 344.3px 660.0px, 317.8px 660.0px, 291.4px 660.0px, 264.9px 660.0px, 238.4px 660.0px, 211.9px 660.0px, 185.4px 660.0px, 158.9px 660.0px, 132.4px 660.0px, 105.9px 660.0px, 79.5px 660.0px, 53.0px 660.0px, 26.5px 660.0px, 0.0px 660.0px, 0.0px 633.6px, 0.0px 607.2px, 0.0px 580.8px, 0.0px 554.4px, 0.0px 528.0px, 0.0px 501.6px, 0.0px 475.2px, 0.0px 448.8px, 0.0px 422.4px, 0.0px 396.0px, 0.0px 369.6px, 0.0px 343.2px, 0.0px 316.8px, 0.0px 290.4px, 0.0px 264.0px, 0.0px 237.6px, 0.0px 211.2px, 0.0px 184.8px, 0.0px 158.4px, 0.0px 132.0px, 0.0px 105.6px, 0.0px 79.2px, 0.0px 52.8px, 0.0px 26.4px);"><div class="idx-margin"></div><div class="idx-head">PASSAGE LOG · STRAIT OF HORMUZ</div><div class="idx-sub">status history as reported, since 28 Feb 2026</div><div class="idx-line" id="hz-r0" data-n="15" style="top:164px;">28 FEB   CLOSED</div><div class="idx-line" id="hz-r1" data-n="17" style="top:254px;">08 APR   REOPENED</div><div class="idx-line" id="hz-r2" data-n="21" style="top:344px;">LATE JUN CLOSED AGAIN</div><div class="idx-line" id="hz-r3" data-n="5" style="top:434px;">TODAY</div><div class="stamp" id="hz-stamp" style="left:330px; top:410px;"><div class="stamp-in" style="font-size:96px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>STATUS · 28 OCT 2026</span><span class="st-w">CLOSED</span><span class="st-s" data-layout-ignore>STRAIT OF HORMUZ</span></div><div class="stamp-in ghost" style="font-size:96px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>STATUS · 28 OCT 2026</span><span class="st-w">CLOSED</span><span class="st-s" data-layout-ignore>STRAIT OF HORMUZ</span></div></div></div><div class="pin" style="left:477.0px; top:7px;"></div><div class="tape" style="left:870px; top:-14px; width:150px; transform: rotate(7deg);"></div></div></div>
+    <div class="doc" id="hz-clip" data-layout-allow-overflow data-layout-allow-overlap style="width:844px; height:855px;"><div class="doc-in" id="hz-clip-in"><div class="paper clipdoc" style="--pc:#f6f4ee; clip-path: polygon(0.0px 0.0px, 26.4px 0.0px, 52.8px 0.0px, 79.1px 0.0px, 105.5px 0.0px, 131.9px 0.0px, 158.2px 0.0px, 184.6px 0.0px, 211.0px 0.0px, 237.4px 0.0px, 263.8px 0.0px, 290.1px 0.0px, 316.5px 0.0px, 342.9px 0.0px, 369.2px 0.0px, 395.6px 0.0px, 422.0px 0.0px, 448.4px 0.0px, 474.8px 0.0px, 501.1px 0.0px, 527.5px 0.0px, 553.9px 0.0px, 580.2px 0.0px, 606.6px 0.0px, 633.0px 0.0px, 659.4px 0.0px, 685.8px 0.0px, 712.1px 0.0px, 738.5px 0.0px, 764.9px 0.0px, 791.2px 0.0px, 817.6px 0.0px, 844.0px 0.0px, 844.0px 26.7px, 844.0px 53.4px, 844.0px 80.2px, 844.0px 106.9px, 844.0px 133.6px, 844.0px 160.3px, 844.0px 187.0px, 844.0px 213.8px, 844.0px 240.5px, 844.0px 267.2px, 844.0px 293.9px, 844.0px 320.6px, 844.0px 347.3px, 844.0px 374.1px, 844.0px 400.8px, 844.0px 427.5px, 844.0px 454.2px, 844.0px 480.9px, 844.0px 507.7px, 844.0px 534.4px, 844.0px 561.1px, 844.0px 587.8px, 844.0px 614.5px, 844.0px 641.2px, 844.0px 668.0px, 844.0px 694.7px, 844.0px 721.4px, 844.0px 748.1px, 844.0px 774.8px, 844.0px 801.6px, 844.0px 828.3px, 844.0px 855.0px, 817.6px 852.0px, 791.2px 854.3px, 764.9px 854.4px, 738.5px 847.8px, 712.1px 846.1px, 685.8px 850.7px, 659.4px 849.5px, 633.0px 856.2px, 606.6px 854.7px, 580.2px 853.6px, 553.9px 853.0px, 527.5px 854.3px, 501.1px 847.8px, 474.8px 851.5px, 448.4px 848.0px, 422.0px 857.4px, 395.6px 846.7px, 369.2px 856.3px, 342.9px 846.9px, 316.5px 854.7px, 290.1px 850.2px, 263.8px 851.1px, 237.4px 856.6px, 211.0px 846.2px, 184.6px 846.8px, 158.2px 857.5px, 131.9px 852.4px, 105.5px 847.1px, 79.1px 858.4px, 52.8px 857.9px, 26.4px 847.4px, 0.0px 855.0px, 0.0px 828.3px, 0.0px 801.6px, 0.0px 774.8px, 0.0px 748.1px, 0.0px 721.4px, 0.0px 694.7px, 0.0px 668.0px, 0.0px 641.2px, 0.0px 614.5px, 0.0px 587.8px, 0.0px 561.1px, 0.0px 534.4px, 0.0px 507.7px, 0.0px 480.9px, 0.0px 454.2px, 0.0px 427.5px, 0.0px 400.8px, 0.0px 374.1px, 0.0px 347.3px, 0.0px 320.6px, 0.0px 293.9px, 0.0px 267.2px, 0.0px 240.5px, 0.0px 213.8px, 0.0px 187.0px, 0.0px 160.3px, 0.0px 133.6px, 0.0px 106.9px, 0.0px 80.2px, 0.0px 53.4px, 0.0px 26.7px);"><div class="ev-head"><span>EVIDENCE</span> · <b>USNI NEWS</b> · <span>9 OCT 2026</span></div><div class="ev-img" style="width:800px; height:751px;"><img src="assets/evidence/hormuz.png" alt="USNI News article, 9 Oct 2026" /><div class="ev-box" id="hz-box" style="left:0.13%; top:91.96%; width:91.14%; height:8.06%;"></div></div></div><div class="pin" style="left:409.0px; top:9px;"></div><div class="tape" style="left:-28px; top:530.1px; width:130px; transform: rotate(-62deg);"></div></div></div>
+    <div class="doc" id="hz-slip" data-layout-allow-overflow data-layout-allow-overlap style="width:1000px; height:254px;"><div class="doc-in" id="hz-slip-in"><div class="paper slipdoc" style="--pc:#e8dfcb; clip-path: polygon(0.0px 0.0px, 26.3px 5.7px, 52.6px 0.4px, 78.9px 0.4px, 105.3px -1.7px, 131.6px 6.7px, 157.9px 6.1px, 184.2px 7.1px, 210.5px 6.2px, 236.8px -0.2px, 263.2px 7.4px, 289.5px 2.3px, 315.8px 6.3px, 342.1px 5.3px, 368.4px 3.6px, 394.7px -1.6px, 421.1px 1.3px, 447.4px 8.8px, 473.7px 5.5px, 500.0px 7.2px, 526.3px -2.0px, 552.6px -1.2px, 578.9px -1.2px, 605.3px -1.4px, 631.6px -0.4px, 657.9px -3.0px, 684.2px -1.0px, 710.5px 5.8px, 736.8px -1.7px, 763.2px 2.9px, 789.5px -0.5px, 815.8px 1.9px, 842.1px 3.6px, 868.4px 4.4px, 894.7px 3.6px, 921.1px 5.0px, 947.4px 7.5px, 973.7px -1.3px, 1000.0px 0.0px, 1000.0px 28.2px, 1000.0px 56.4px, 1000.0px 84.7px, 1000.0px 112.9px, 1000.0px 141.1px, 1000.0px 169.3px, 1000.0px 197.6px, 1000.0px 225.8px, 1000.0px 254.0px, 973.7px 255.1px, 947.4px 257.4px, 921.1px 253.7px, 894.7px 252.0px, 868.4px 254.4px, 842.1px 246.7px, 815.8px 253.5px, 789.5px 250.6px, 763.2px 247.2px, 736.8px 247.6px, 710.5px 251.6px, 684.2px 248.2px, 657.9px 250.8px, 631.6px 252.6px, 605.3px 250.0px, 578.9px 246.6px, 552.6px 251.2px, 526.3px 248.0px, 500.0px 248.0px, 473.7px 247.5px, 447.4px 249.6px, 421.1px 245.9px, 394.7px 253.2px, 368.4px 257.0px, 342.1px 249.9px, 315.8px 254.1px, 289.5px 256.8px, 263.2px 245.5px, 236.8px 246.8px, 210.5px 255.2px, 184.2px 255.6px, 157.9px 253.1px, 131.6px 247.0px, 105.3px 250.2px, 78.9px 255.9px, 52.6px 256.2px, 26.3px 255.1px, 0.0px 254.0px, 0.0px 225.8px, 0.0px 197.6px, 0.0px 169.3px, 0.0px 141.1px, 0.0px 112.9px, 0.0px 84.7px, 0.0px 56.4px, 0.0px 28.2px);"><div class="slip-q" id="hz-q-0" data-n="37" style="left:44px; top:34px;">“A ship has been struck in the Strait</div><div class="slip-q" id="hz-q-1" data-n="31" style="left:44px; top:84px;">of Hormuz nearly every day this</div><div class="slip-q" id="hz-q-2" data-n="7" style="left:44px; top:134px;">month.”</div><div class="hl" id="hz-hl" style="left:268.0px; top:88px; width:372.8px;"></div><div class="slip-att" id="hz-att" style="left:44px; top:198px;">— INT’L MARITIME ORGANIZATION · USNI NEWS, 9 OCT</div></div><div class="tape" style="left:880px; top:-16px; width:140px; transform: rotate(6deg);"></div><div class="tape" style="left:-20px; top:224px; width:120px; transform: rotate(-8deg);"></div></div></div>
+    <div class="doc" id="hz-data" data-layout-allow-overflow data-layout-allow-overlap style="width:1100px; height:720px;"><div class="doc-in" id="hz-data-in"><div class="paper dcard" style="--pc:#ebe2d3; clip-path: polygon(0.0px 0.0px, 26.2px 0.0px, 52.4px 0.0px, 78.6px 0.0px, 104.8px 0.0px, 131.0px 0.0px, 157.1px 0.0px, 183.3px 0.0px, 209.5px 0.0px, 235.7px 0.0px, 261.9px 0.0px, 288.1px 0.0px, 314.3px 0.0px, 340.5px 0.0px, 366.7px 0.0px, 392.9px 0.0px, 419.0px 0.0px, 445.2px 0.0px, 471.4px 0.0px, 497.6px 0.0px, 523.8px 0.0px, 550.0px 0.0px, 576.2px 0.0px, 602.4px 0.0px, 628.6px 0.0px, 654.8px 0.0px, 681.0px 0.0px, 707.1px 0.0px, 733.3px 0.0px, 759.5px 0.0px, 785.7px 0.0px, 811.9px 0.0px, 838.1px 0.0px, 864.3px 0.0px, 890.5px 0.0px, 916.7px 0.0px, 942.9px 0.0px, 969.0px 0.0px, 995.2px 0.0px, 1021.4px 0.0px, 1047.6px 0.0px, 1073.8px 0.0px, 1100.0px 0.0px, 1100.0px 26.7px, 1100.0px 53.3px, 1100.0px 80.0px, 1100.0px 106.7px, 1100.0px 133.3px, 1100.0px 160.0px, 1100.0px 186.7px, 1100.0px 213.3px, 1100.0px 240.0px, 1100.0px 266.7px, 1100.0px 293.3px, 1100.0px 320.0px, 1100.0px 346.7px, 1100.0px 373.3px, 1100.0px 400.0px, 1100.0px 426.7px, 1100.0px 453.3px, 1100.0px 480.0px, 1100.0px 506.7px, 1100.0px 533.3px, 1100.0px 560.0px, 1100.0px 586.7px, 1100.0px 613.3px, 1100.0px 640.0px, 1100.0px 666.7px, 1100.0px 693.3px, 1100.0px 720.0px, 1073.8px 720.0px, 1047.6px 720.0px, 1021.4px 720.0px, 995.2px 720.0px, 969.0px 720.0px, 942.9px 720.0px, 916.7px 720.0px, 890.5px 720.0px, 864.3px 720.0px, 838.1px 720.0px, 811.9px 720.0px, 785.7px 720.0px, 759.5px 720.0px, 733.3px 720.0px, 707.1px 720.0px, 681.0px 720.0px, 654.8px 720.0px, 628.6px 720.0px, 602.4px 720.0px, 576.2px 720.0px, 550.0px 720.0px, 523.8px 720.0px, 497.6px 720.0px, 471.4px 720.0px, 445.2px 720.0px, 419.0px 720.0px, 392.9px 720.0px, 366.7px 720.0px, 340.5px 720.0px, 314.3px 720.0px, 288.1px 720.0px, 261.9px 720.0px, 235.7px 720.0px, 209.5px 720.0px, 183.3px 720.0px, 157.1px 720.0px, 131.0px 720.0px, 104.8px 720.0px, 78.6px 720.0px, 52.4px 720.0px, 26.2px 720.0px, 0.0px 720.0px, 0.0px 693.3px, 0.0px 666.7px, 0.0px 640.0px, 0.0px 613.3px, 0.0px 586.7px, 0.0px 560.0px, 0.0px 533.3px, 0.0px 506.7px, 0.0px 480.0px, 0.0px 453.3px, 0.0px 426.7px, 0.0px 400.0px, 0.0px 373.3px, 0.0px 346.7px, 0.0px 320.0px, 0.0px 293.3px, 0.0px 266.7px, 0.0px 240.0px, 0.0px 213.3px, 0.0px 186.7px, 0.0px 160.0px, 0.0px 133.3px, 0.0px 106.7px, 0.0px 80.0px, 0.0px 53.3px, 0.0px 26.7px);"><div class="dc-chrome"><span class="dc-tick"></span>IN-FLIGHT BRIEFING</div><div class="dc-chrome-r">STOP 01 / 06</div><div class="dc-foot" data-layout-ignore><span>SOURCE / U.S. EIA · 20 OCT 2026</span><div class="dc-hair"><div class="dc-prog" style="width:16.7%"></div></div></div><div class="dc-label" style="left:64px; top:118px;">U.S. DIESEL · AVERAGE PER GALLON</div><div class="dc-rule" style="left:64px; top:170px; height:92px;"></div><div class="dc-mask" style="left:90px; top:166px;"><div class="dc-head" id="hz-h1" style="font-size:84px;">AT THE PUMP</div></div><div class="dc-num" id="hz-num" style="left:84px; top:280px; font-size:210px;">$3.62</div><div class="barrow" style="left:600px; top:290px; width:450px;"><div class="bar-name">A YEAR EARLIER</div><div class="bar-val grey" id="hz-v0">$3.62</div><div class="bar-track"><div class="bar-fill grey" id="hz-b0" style="width:57.7%"></div></div></div><div class="barrow" style="left:600px; top:430px; width:450px;"><div class="bar-name">WEEK OF 19 OCT</div><div class="bar-val" id="hz-v1">$6.28</div><div class="bar-track"><div class="bar-fill" id="hz-b1" style="width:100%"></div></div></div><div class="dc-cap" id="hz-cap" style="left:84px; top:540px; width:900px;">Up $2.66 on a year earlier. National average, all on-highway diesel.</div></div><div class="pin" style="left:537.0px; top:7px;"></div></div></div>
+    <svg class="thread" id="hz-thread" width="1920" height="1080" viewBox="0 0 1920 1080" data-layout-allow-overflow><line x1="0" y1="0" x2="0" y2="0" pathLength="1" /></svg>
+    </div></div></div>
+    <div class="arr" id="hz-arr"><div class="arr-in" id="hz-arr-in"><span class="arr-id">STOP 01</span><span class="arr-title">Strait of Hormuz</span><span class="arr-meta">26.6°N 56.3°E · Iran / Oman</span><span class="arr-status"><span>STATUS</span><span class="chip" id="hz-chip" data-layout-allow-overflow><span class="chip-roll" id="hz-roll"><span>EN ROUTE</span><span>CLOSED</span></span></span></span></div></div>
+  </div>
+  <script>
+    (function () {
+      const D = window.DESK.mount({"comp": "hz", "start": 15.28, "dur": 19.705, "hot": {"lat": 26.6, "lon": 56.3}, "docs": [{"id": "hz-tag", "lat": 26.6, "lon": 54.346969, "w": 640, "h": 112, "rot": 0}, {"id": "hz-idx", "lat": 24.659654, "lon": 53.261951, "w": 980, "h": 660, "rot": -2.2}, {"id": "hz-clip", "lat": 29.12245, "lon": 59.338049, "w": 844, "h": 855, "rot": 1.6}, {"id": "hz-slip", "lat": 26.648509, "lon": 59.826307, "w": 1000, "h": 254, "rot": -1.3}, {"id": "hz-data", "lat": 21.361066, "lon": 55.64899, "w": 1100, "h": 720, "rot": 1.4}], "thread": {"doc": "hz-idx", "x": 490.0, "y": 20}});
+      const tl = D.tl;
+      // the red thread from the ping to the first document's pin
+      tl.fromTo("#hz-thread line", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, D.L(17.880));
+      // arrival strip (screen space): blur in on landing, out at the pull-out
+      tl.fromTo("#hz-arr-in", { opacity: 0, filter: "blur(8px)", y: -16 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.3, ease: "expo.out" }, D.L(16.930));
+      tl.to("#hz-arr-in", { opacity: 0, filter: "blur(8px)", duration: 0.22, ease: "power2.in" }, D.L(34.535));
+      tl.to("#hz-thread line", { strokeDashoffset: -1, duration: 0.3, ease: "power2.in" }, D.L(34.085));
+      D.drop("hz-tag-in", 17.230, {from: 1.0, spin: 0});
+      D.drop("hz-idx-in", 17.500);
+      D.drop("hz-clip-in", 17.600);
+      D.drop("hz-slip-in", 17.680);
+      D.drop("hz-data-in", 17.760);
+      D.type("hz-r0", 18.887, 30);
+      D.type("hz-r1", 20.275, 30);
+      D.type("hz-r2", 21.300, 30);
+      D.type("hz-r3", 22.495, 30);
+      D.stamp("hz-stamp", 23.322);
+      D.chip("hz-chip", "hz-roll", 23.402, 1);
+      D.box("hz-box", 26.200);
+      D.type("hz-q-0", 25.125, 34);
+      D.type("hz-q-1", 26.253, 34);
+      D.type("hz-q-2", 27.205, 34);
+      D.fade("hz-att", 27.650, 0.2);
+      D.highlight("hz-hl", 26.737, 0.5);
+      D.rise("hz-h1", 28.885);
+      D.bar("hz-b0", 28.835, 0.9); D.fade("hz-v0", 28.435);
+      D.bar("hz-b1", 30.347, 1.3); D.fade("hz-v1", 29.322);
+      D.fade("hz-num", 28.735);
+      D.count("hz-num", 30.377, 3.62, 6.28, 1.4, (v) => "$" + v.toFixed(2));
+      D.fade("hz-cap", 30.960, 0.25);
+      window.__timelines["stop-hormuz"] = tl;
+    })();
+  </script>
+</template>

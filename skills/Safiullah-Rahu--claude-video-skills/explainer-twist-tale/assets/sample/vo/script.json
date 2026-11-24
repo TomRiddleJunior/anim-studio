@@ -1,0 +1,91 @@
+{
+ "voice": "am_michael",
+ "speed": 1.36,
+ "lead": 0.2,
+ "tail": 1.4,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "A man begged his country for eight years to change every clock, and the first country to do it was their enemy."
+  },
+  {
+   "id": "l02",
+   "text": "You see, William Willett was a builder near London, and one summer morning he rode his horse past houses with the blinds still down.",
+   "gap": 0.2,
+   "speed": 1.28
+  },
+  {
+   "id": "l03",
+   "text": "The sun was up, and everyone was sleeping through it.",
+   "gap": 0.12
+  },
+  {
+   "id": "l04",
+   "text": "So he paid to print a pamphlet called The Waste of Daylight.",
+   "gap": 0.15
+  },
+  {
+   "id": "l05",
+   "text": "Every Sunday in April, push every clock forward twenty minutes. Then wind them back in September.",
+   "gap": 0.12
+  },
+  {
+   "id": "l06",
+   "text": "He said it would save two and a half million pounds on lighting.",
+   "gap": 0.12
+  },
+  {
+   "id": "l07",
+   "text": "An MP turned it into a bill, Winston Churchill backed it, and Parliament studied it.",
+   "gap": 0.15
+  },
+  {
+   "id": "l08",
+   "text": "And then, nothing happened.",
+   "gap": 0.12
+  },
+  {
+   "id": "l09",
+   "text": "Year after year, the clocks stayed exactly where they were.",
+   "gap": 0.15,
+   "speed": 1.2
+  },
+  {
+   "id": "l10",
+   "text": "In March 1915, he caught the flu and died, still waiting.",
+   "gap": 0.15
+  },
+  {
+   "id": "l11",
+   "text": "Just over a year later, Germany, at war with Britain, needed to save coal.",
+   "gap": 0.3,
+   "speed": 1.22
+  },
+  {
+   "id": "l12",
+   "text": "So on the thirtieth of April 1916, it moved every clock in the empire forward an hour.",
+   "gap": 0.1
+  },
+  {
+   "id": "l13",
+   "text": "Three weeks later, Britain copied its enemy.",
+   "gap": 0.15
+  },
+  {
+   "id": "l14",
+   "text": "You see, it was never about more daylight. It's the same sun.",
+   "gap": 0.25
+  },
+  {
+   "id": "l15",
+   "text": "Moving the clock just moves your day to where the light already is, so evenings stay bright and less coal gets burned for lighting.",
+   "gap": 0.1,
+   "speed": 1.26
+  },
+  {
+   "id": "l16",
+   "text": "And this Sunday, when Americans set their clocks back, they're putting his idea away for the winter.",
+   "gap": 0.2
+  }
+ ]
+}

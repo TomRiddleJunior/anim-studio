@@ -1,0 +1,18 @@
+{"voice": "am_michael", "speed": 1.05, "lead": 0.7, "tail": 3.1,
+ "lines": [
+  {"id": "h1", "text": "This is the Netherlands."},
+  {"id": "h2", "text": "This is the North Sea, higher than about a quarter of it.", "gap": 0.8},
+  {"id": "h3", "text": "And this is how the Dutch keep them apart.", "gap": 0.6},
+  {"id": "q", "text": "So why build a country below the sea? Nobody did. It sank.", "gap": 0.5},
+  {"id": "peat", "text": "A thousand years ago, the west was soggy peat. Farmers drained it, and drained peat shrinks.", "gap": 0.4},
+  {"id": "cycle", "text": "So the land dropped, needed more draining, and dropped again.", "gap": 0.3},
+  {"id": "polder", "text": "Dikes ringed the fields, and windmills pumped them dry.", "gap": 0.3},
+  {"id": "low", "text": "Today, the lowest point is almost seven metres below sea level.", "gap": 0.4},
+  {"id": "dam", "text": "In 1932, a thirty-two kilometre dam sealed off an entire inland sea.", "gap": 0.45},
+  {"id": "flevo", "text": "Behind it, they pumped the seabed dry, and built a province on it.", "gap": 0.3},
+  {"id": "flood", "text": "Then in 1953, a storm surge broke the dikes in the southwest. Over eighteen hundred people died.", "gap": 0.5},
+  {"id": "delta", "text": "The answer was the Delta Works: dams and barriers across the estuaries.", "gap": 0.5},
+  {"id": "oster", "text": "The largest stays open for the tides, and drops sixty-two steel gates in a storm.", "gap": 0.3},
+  {"id": "epi", "text": "None of it is finished. The land is still sinking, and the sea is rising.", "gap": 0.55},
+  {"id": "end", "text": "Holding the line is a job that never ends.", "gap": 0.35}
+ ]}

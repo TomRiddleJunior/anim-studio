@@ -1,0 +1,51 @@
+{
+  "name": "phone-down",
+  "note": "2:47 am, do not let me text my ex. Five short exchanges and a callback ending. Original script. No handover.",
+  "title": "ChatGPT",
+  "day": "Today",
+  "time": "2:47 am",
+  "clock": "2:47",
+  "seed": 247,
+  "turns": [
+    {
+      "user": "Do NOT let me text my ex tonight\n\nNo matter what I say",
+      "cps": 12.0, "think": 0.8, "wps": 6.0, "hold": 1.9,
+      "reply": [
+        "Locked in. 🔒",
+        "Phone down. Water. Bed."
+      ]
+    },
+    {
+      "user": "Ok but what if I just say hi",
+      "cps": 11.0, "think": 0.9, "wps": 5.5, "hold": 2.0,
+      "reply": [
+        "No.",
+        "“Hi” is how it starts. 💀"
+      ]
+    },
+    {
+      "user": "I’m over her. I just want to return her hoodie",
+      "cps": 12.5, "think": 0.9, "wps": 6.5, "hold": 2.4,
+      "reply": [
+        "It's 2:47 am. The hoodie can wait until you're emotionally stable.",
+        "So… **2029**. 😭"
+      ]
+    },
+    {
+      "user": "She just texted me first",
+      "cps": 17.0, "think": 0.6, "wps": 6.0, "hold": 1.7,
+      "reply": [
+        "WAIT.",
+        "What did she say?? 👀"
+      ]
+    },
+    {
+      "user": "“wrong chat, sorry”",
+      "pre": 0.5,
+      "cps": 7.5, "think": 1.5, "wps": 4.5, "hold": 3.2,
+      "reply": [
+        "Phone down. Water. Bed. 🔒"
+      ]
+    }
+  ]
+}

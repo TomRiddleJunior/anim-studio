@@ -1,0 +1,59 @@
+{
+"duration": 6.21,
+"sfx": [
+{
+"t": 0.0,
+"type": "whoosh",
+"gain": 0.25,
+"pitch": 1.2
+},
+{
+"t": 0.2,
+"type": "thud",
+"gain": 0.45,
+"pitch": 0.8
+},
+{
+"t": 0.285,
+"type": "whoosh",
+"gain": 0.22,
+"pitch": 1.25
+},
+{
+"t": 0.66,
+"type": "thud",
+"gain": 0.42,
+"pitch": 0.85
+},
+{
+"t": 2.515,
+"type": "whoosh",
+"gain": 0.35,
+"pitch": 0.8
+},
+{
+"t": 2.832,
+"type": "coin",
+"gain": 0.2,
+"pitch": 1.0
+},
+{
+"t": 2.982,
+"type": "coin",
+"gain": 0.16,
+"pitch": 1.1
+},
+{
+"t": 4.36,
+"type": "impact",
+"gain": 0.38,
+"pitch": 0.8
+},
+{
+"t": 4.74,
+"type": "sparkle",
+"gain": 0.22,
+"pitch": 1.0
+}
+]
+}

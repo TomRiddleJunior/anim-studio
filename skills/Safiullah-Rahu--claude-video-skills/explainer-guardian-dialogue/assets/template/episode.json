@@ -1,0 +1,21 @@
+{
+ "title": "Five Steps to Brave",
+ "lines": [
+  {"who": "L", "role": "question", "text": "How do I become brave?", "delivery": "Curious and a little shy."},
+  {"who": "G", "role": "intro", "text": "I've watched every brave person who ever walked past this clock."},
+  {"who": "G", "role": "intro", "text": "Not one of them felt brave first.", "delivery": "Quieter, almost a secret."},
+  {"who": "G", "role": "openloop", "text": "So… five steps. And the last one sounds backwards. It isn't.", "counter_at": "five", "cut_at": "And"},
+  {"who": "G", "role": "rule", "n": 5, "text": "Five. Name the fear out loud. Fear hates being called by its name.", "card": {"title": "Name the fear out loud", "icon": "bulb"}},
+  {"who": "G", "role": "rule", "n": 4, "text": "Four. Shrink the step until it's almost silly. Then take it.", "card": {"title": "Shrink the step", "icon": "steps"}},
+  {"who": "G", "role": "rule", "n": 3, "text": "Three. Borrow courage from someone who believes in you.", "card": {"title": "Borrow courage", "icon": "flames"}},
+  {"who": "L", "role": "rehook", "text": "What if I still shake?", "delivery": "A soft, worried whisper."},
+  {"who": "G", "role": "aside", "text": "Good. That means it matters."},
+  {"who": "G", "role": "rule", "n": 2, "text": "Two. Count to five, then move before your mind argues.", "card": {"title": "Count five, then move", "icon": "hourglass"}},
+  {"who": "G", "role": "rule", "n": 1, "text": "One. Stop waiting to feel ready. Courage isn't a feeling. It's what you do while you're scared.", "card": {"title": "Stop waiting to feel ready", "icon": "clock_stop"}, "delivery": "Quiet at first, rising to conviction."},
+  {"who": "G", "role": "payoff", "text": "Bravery only ever comes… after the first step.", "now_at": "after"},
+  {"who": "L", "role": "echo", "text": "After?"},
+  {"who": "G", "role": "final", "text": "After."}
+ ],
+ "end_card": {"rows": ["WHICH STEP ARE YOU", "TAKING TODAY?"], "sub": "COMMENT THE NUMBER"},
+ "question_rows": [[0, 1, 2], [3, 4]]
+}

@@ -1,0 +1,116 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .loc { position: absolute; left: 604px; top: 286px; height: 48px; }
+    #root .loc-in { display: inline-block; padding: 0 14px; height: 48px; line-height: 48px; border-radius: 6px;
+      background: rgba(7, 24, 37, 0.9); font: 700 28px/48px var(--font-mono), monospace; letter-spacing: 0.08em;
+      color: var(--color-ink); white-space: nowrap; }
+    #root .ticket { position: absolute; left: 96px; top: 374px; width: 808px; }
+    #root .tk-in { padding: 24px 32px 28px; background: rgba(7, 24, 37, 0.92); border: 1.5px solid rgba(234, 246, 255, 0.22);
+      border-radius: 10px; }
+    #root .tk-row1 { display: flex; justify-content: space-between; align-items: center;
+      font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.04em; color: #9fb8cc; }
+    #root .tk-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 36px;
+      color: var(--color-ink); }
+    #root .tk-title { font: 900 60px/1.05 var(--font-display), sans-serif; letter-spacing: -0.02em; margin-top: 8px; }
+    #root .tk-meta { font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.04em; color: #9fb8cc; margin-top: 6px; }
+    #root .tk-row { font: 400 32px/1.25 var(--font-display), sans-serif; margin-top: 14px; }
+    #root .tk-row b { font: 700 28px/1 var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; margin-right: 14px; }
+    #root .tk-status { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
+    #root .tk-status > span:first-child { font: 400 28px/44px var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; }
+    #root .chip { display: inline-block; height: 48px; overflow: hidden; border-radius: 6px; background: var(--color-accent);
+      color: #140700; padding: 0 16px; vertical-align: middle; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 48px; font: 700 30px/48px var(--font-mono), monospace;
+      letter-spacing: 0.04em; white-space: nowrap; }
+    #root .chip-note { font: 400 28px/44px var(--font-mono), monospace; color: #9fb8cc; }
+    #root .bar { margin-top: 16px; }
+    #root .bar-top { display: flex; justify-content: space-between; font: 400 30px/40px var(--font-display), sans-serif; }
+    #root .bar-top b { font: 700 32px/40px var(--font-mono), monospace; }
+    #root .bar-track { position: relative; height: 16px; margin-top: 10px; border-radius: 8px; background: rgba(234, 246, 255, 0.16); overflow: hidden; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; border-radius: 8px; background: var(--color-ink);
+      transform-origin: 0 50%; }
+    #root .bar-src { font: 400 28px/40px var(--font-mono), monospace; color: #9fb8cc; margin-top: 8px; }
+    #root .line { position: absolute; left: 96px; bottom: 84px; width: 808px; }
+    #root .line-in { padding: 20px 32px 24px; background: rgba(7, 24, 37, 0.92); border-radius: 10px; }
+    #root .line-k { font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; }
+    #root .line-t { font: 700 48px/1.12 var(--font-display), sans-serif; letter-spacing: -0.01em; margin-top: 4px; }
+    #root .line-t span { display: inline-block; }
+    #root .line-s { font: 400 28px/38px var(--font-mono), monospace; color: #9fb8cc; margin-top: 10px; }
+    #root .ev { position: absolute; left: 984px; width: 840px; }
+    #root .ev-in { border-radius: 10px; overflow: hidden; background: #071825; border: 1.5px solid rgba(234, 246, 255, 0.22); }
+    #root .ev-head { height: 60px; padding: 0 20px; display: flex; align-items: center; gap: 14px;
+      font: 400 28px/60px var(--font-mono), monospace; letter-spacing: 0.04em; color: var(--color-ink); white-space: nowrap; }
+    #root .ev-head b { font-weight: 700; }
+    #root .ev-frame { position: relative; overflow: hidden; }
+    #root .ev-zoom { position: relative; width: 840px; }
+    #root .ev-zoom img { display: block; width: 840px; height: auto; }
+    #root .ev-box { position: absolute; border: 5px solid var(--color-accent); border-radius: 6px; }
+    #root .ev-box.under { border: none; border-bottom: 7px solid var(--color-accent); border-radius: 0; }
+    #root .quote { position: absolute; left: 1024px; width: 760px; bottom: 96px; }
+    #root .quote-in { padding: 28px 34px 30px; background: rgba(7, 24, 37, 0.96); border: 1.5px solid rgba(234, 246, 255, 0.3);
+      border-radius: 10px; }
+    #root .quote-t { font: 700 54px/1.12 var(--font-display), sans-serif; letter-spacing: -0.01em; }
+    #root .quote-w { font: 400 28px/40px var(--font-mono), monospace; color: #9fb8cc; margin-top: 16px; }
+
+    #hz-ev { top: 240px; }
+    #hz-frame { height: 560px; }
+    #hz-zoom { transform-origin: 1.58% 86.97%; }
+    #hz-box { left: 1.58%; top: 83.03%; width: 82.55%; height: 7.87%; }
+  </style>
+  <div id="root" data-composition-id="t-hormuz" data-width="1920" data-height="1080">
+    <div id="hz-loc" class="clip loc" data-start="2.0" data-duration="7.5" data-track-index="1"><span class="loc-in" id="hz-loc-in">STRAIT OF HORMUZ</span></div>
+    <div id="hz-ticket" class="clip ticket" data-start="2.2" data-duration="7.3" data-track-index="2">
+      <div class="tk-in" id="hz-tk-in">
+        <div class="tk-row1" id="hz-r1"><span>TICKET #2610-001</span><span class="tk-sev">SEV-1</span></div>
+        <div class="tk-title" id="hz-title">Strait of Hormuz</div>
+        <div class="tk-meta" id="hz-meta">26.6°N 56.3°E · Iran / Oman</div>
+        
+        <div class="tk-status" id="hz-status"><span>STATUS</span><span class="chip" id="hz-chip" data-layout-allow-overflow><span class="chip-roll" id="hz-roll"><span>CLOSED 28 FEB</span><span>REOPENED 8 APR</span><span>CLOSED AGAIN</span><span>STILL CLOSED</span></span></span></div>
+      </div>
+    </div>
+    <div id="hz-ev" class="clip ev" data-start="2.8" data-duration="6.7" data-track-index="3">
+      <div class="ev-in" id="hz-ev-in">
+        <div class="ev-head"><span>EVIDENCE</span><span>·</span><b>OUTLET</b><span>·</span><span>DD Mon YYYY</span></div>
+        <div class="ev-frame" id="hz-frame" data-layout-allow-overflow><div class="ev-zoom" id="hz-zoom"><img id="hz-img" src="assets/evidence/placeholder.png" alt="OUTLET headline, DD Mon YYYY" /><div class="ev-box" id="hz-box"></div></div></div>
+      </div>
+    </div>
+    <div id="hz-line" class="clip line" data-start="5.95" data-duration="3.55" data-track-index="4">
+      <div class="line-in" id="hz-line-in"><div class="line-k">RELEASE NOTE</div><div class="line-t" id="hz-words"><span>Known</span> <span>issue.</span> <span>Workaround:</span> <span>diesel</span> <span>at</span> <span>$6.28</span> <span>a</span> <span>gallon.</span></div><div class="line-s">US average diesel price, week of 19 Oct · EIA</div></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const P = "hz", D = 10, XOUT = 9.1;
+      const tl = gsap.timeline({ paused: true });
+      const $ = (s) => document.getElementById(P + "-" + s);
+      // location tag: whole line blurs in
+      tl.fromTo($("loc-in"), { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 2.0);
+      // ticket card: clip reveal from the top, rows stagger in
+      tl.fromTo($("tk-in"), { clipPath: "inset(0% 0% 100% 0% round 10px)", y: 36 }, { clipPath: "inset(0% 0% 0% 0% round 10px)", y: 0, duration: 0.55, ease: "expo.out" }, 2.2);
+      const rowsIn = [$("r1"), $("title"), $("meta")].concat([...document.querySelectorAll("#hz-tk-in .tk-row, #hz-bar")]).concat([$("status")]);
+      rowsIn.forEach((el, i) => tl.fromTo(el, { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.4, ease: "expo.out" }, 2.2 + 0.08 + i * 0.07));
+      // chip: slot roll between states, a short flash on each landing
+      const CH = [2.4, 3.55, 4.7, 5.85];
+      tl.fromTo($("chip"), { scale: 0.7, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3, ease: "power3.out" }, CH[0]);
+      CH.forEach((t, k) => {
+        if (k > 0) tl.to($("roll"), { y: -48 * k, duration: 0.24, ease: "power3.out" }, t);
+        tl.fromTo($("chip"), { backgroundColor: "#FFE1CC" }, { backgroundColor: "#FF6B1A", duration: 0.25, ease: "power2.out" }, t);
+      });
+      if ($("note")) tl.fromTo($("note"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, CH[0] + 0.2);
+      // evidence: slides in from the right, slow push toward the key line, the box draws on
+      tl.fromTo($("ev-in"), { x: 48, opacity: 0, filter: "blur(8px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 2.8);
+      tl.fromTo($("zoom"), { scale: 1 }, { scale: 1.04, duration: XOUT - 2.8, ease: "none" }, 2.8);
+      tl.fromTo($("box"), { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.4, ease: "power2.out" }, 4.0);
+      // deadpan release note: word by word, blur to sharp
+      tl.fromTo($("line-in"), { opacity: 0 }, { opacity: 1, duration: 0.15 }, 5.95);
+      const words = [...document.querySelectorAll("#hz-words span")];
+      words.forEach((w, i) => tl.fromTo(w, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, ease: "power2.out" }, 5.95 + 0.1 + i * 0.067));
+
+      // exits: blur out, staggered
+      const outs = [$("loc-in"), $("tk-in"), $("ev-in"), $("line-in")].concat($("quote-in") ? [$("quote-in")] : []);
+      outs.forEach((el, i) => tl.to(el, { opacity: 0, filter: "blur(8px)", duration: 0.25, ease: "power2.in" }, XOUT + i * 0.05));
+      window.__timelines["t-hormuz"] = tl;
+    })();
+  </script>
+</template>

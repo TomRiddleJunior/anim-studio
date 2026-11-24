@@ -1,0 +1,87 @@
+{
+ "voice": "am_michael",
+ "speed": 1.4,
+ "lead": 0.2,
+ "tail": 1.3,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "Stores love Black Friday, but the name came from cops who dreaded it."
+  },
+  {
+   "id": "l02",
+   "text": "You see, in Philadelphia, the day after Thanksgiving was the worst day of the year to be a traffic cop.",
+   "gap": 0.16
+  },
+  {
+   "id": "l03",
+   "text": "Shoppers packed downtown, and fans poured in for the Army-Navy football game.",
+   "gap": 0.1
+  },
+  {
+   "id": "l04",
+   "text": "No traffic cop was allowed to take the day off. They even ordered the police band downtown.",
+   "gap": 0.1
+  },
+  {
+   "id": "l05",
+   "text": "So the cops called it Black Friday.",
+   "gap": 0.14
+  },
+  {
+   "id": "l06",
+   "text": "The city wanted a nicer name, so a PR expert suggested one.",
+   "gap": 0.2
+  },
+  {
+   "id": "l07",
+   "text": "Big Friday.",
+   "gap": 0.1,
+   "speed": 1.12
+  },
+  {
+   "id": "l08",
+   "text": "Nobody used it. The reporters kept writing Black Friday.",
+   "gap": 0.2
+  },
+  {
+   "id": "l09",
+   "text": "For twenty years, it stayed mostly a Philadelphia thing, about traffic.",
+   "gap": 0.14,
+   "speed": 1.3
+  },
+  {
+   "id": "l10",
+   "text": "Then, in 1981, a better story showed up in print.",
+   "gap": 0.2,
+   "speed": 1.28
+  },
+  {
+   "id": "l11",
+   "text": "It said Black Friday is the day stores finally go from red ink to black, from losses to profit.",
+   "gap": 0.1
+  },
+  {
+   "id": "l12",
+   "text": "You see, that was the version stores loved, and it spread across the country.",
+   "gap": 0.2
+  },
+  {
+   "id": "l13",
+   "text": "In 1985, store owners in [Los Angeles](/lɔs ˈænʤələs/) and Cincinnati still hadn't heard of it.",
+   "gap": 0.14,
+   "speed": 1.2
+  },
+  {
+   "id": "l14",
+   "text": "So the profit story isn't where the name came from. It's the rebrand that finally worked.",
+   "gap": 0.2
+  },
+  {
+   "id": "l15",
+   "text": "And this November twenty-seventh, while you shop, remember. The name was invented by cops stuck in traffic.",
+   "gap": 0.2,
+   "speed": 1.3
+  }
+ ]
+}

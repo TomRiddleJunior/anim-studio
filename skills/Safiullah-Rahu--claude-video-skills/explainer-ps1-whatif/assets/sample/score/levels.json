@@ -1,0 +1,12 @@
+{
+ "pre_lufs": -19.9,
+ "gain_db": 5.9,
+ "full_lufs": -14.2,
+ "full_tp_dbtp": -2.0,
+ "nomusic_lufs": -14.1,
+ "nomusic_tp_dbtp": -2.0,
+ "final_gain_db": 6.9,
+ "voice_over_bed_db": 14.93,
+ "voice_over_music_db": 17.0,
+ "music_bed": "original, synthesized in code (D minor pad + FM bell, 72 BPM grid, no pulse)"
+}

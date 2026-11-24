@@ -1,0 +1,698 @@
+{
+ "anchors": {
+  "G": {
+   "file": "vo\\anchors\\G_anchor.wav",
+   "kept": true
+  },
+  "L": {
+   "file": "vo\\anchors\\L_anchor.wav",
+   "kept": true
+  }
+ },
+ "lines": [
+  {
+   "id": "l01",
+   "who": "L",
+   "pick": "vo/takes/l01_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l01_s1.wav",
+     "seed": 1,
+     "heard": "What's your advice for the next 10 years?",
+     "wer": 0.0,
+     "f0": 458.5,
+     "dur": 3.2,
+     "cos": 0.7551
+    },
+    {
+     "file": "vo/takes/l01_s2.wav",
+     "seed": 2,
+     "heard": "What's your advice? For the next ten years?",
+     "wer": 0.0,
+     "f0": 407.4,
+     "dur": 4.08,
+     "cos": 0.7949
+    },
+    {
+     "file": "vo/takes/l01_s3.wav",
+     "seed": 3,
+     "heard": "What's your advice? For the next ten years?",
+     "wer": 0.0,
+     "f0": 363.0,
+     "dur": 4.32,
+     "cos": 0.7235
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "who": "G",
+   "pick": "vo/takes/l02_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l02_s1.wav",
+     "seed": 1,
+     "heard": "I've watched 10,000 decades pass through this clock.",
+     "wer": 0.0,
+     "f0": 78.1,
+     "dur": 3.92,
+     "cos": 0.7676
+    },
+    {
+     "file": "vo/takes/l02_s2.wav",
+     "seed": 2,
+     "heard": "I've watched 10,000 decades pass through this clock.",
+     "wer": 0.0,
+     "f0": 91.3,
+     "dur": 3.28,
+     "cos": 0.7714
+    },
+    {
+     "file": "vo/takes/l02_s3.wav",
+     "seed": 3,
+     "heard": "I've watched ten thousand decades pass through this clock.",
+     "wer": 0.0,
+     "f0": 88.3,
+     "dur": 3.76,
+     "cos": 0.7967
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "who": "G",
+   "pick": "vo/takes/l03_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l03_s1.wav",
+     "seed": 1,
+     "heard": "Most people lose theirs the same way.",
+     "wer": 0.0,
+     "f0": 90.4,
+     "dur": 2.32,
+     "cos": 0.8479
+    },
+    {
+     "file": "vo/takes/l03_s2.wav",
+     "seed": 2,
+     "heard": "Most people lose theirs the same way.",
+     "wer": 0.0,
+     "f0": 93.6,
+     "dur": 3.68,
+     "cos": 0.7534
+    },
+    {
+     "file": "vo/takes/l03_s3.wav",
+     "seed": 3,
+     "heard": "Most people lose theirs the same way.",
+     "wer": 0.0,
+     "f0": 110.7,
+     "dur": 2.56,
+     "cos": 0.8088
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "who": "G",
+   "pick": "vo/takes/l04_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l04_s1.wav",
+     "seed": 1,
+     "heard": "So, ten rules. And the last one? Almost nobody follows it.",
+     "wer": 0.0,
+     "f0": 91.2,
+     "dur": 6.48,
+     "cos": 0.674
+    },
+    {
+     "file": "vo/takes/l04_s2.wav",
+     "seed": 2,
+     "heard": "So, ten rules, and the last one, almost nobody follows it.",
+     "wer": 0.0,
+     "f0": 85.0,
+     "dur": 7.12,
+     "cos": 0.742
+    },
+    {
+     "file": "vo/takes/l04_s3.wav",
+     "seed": 3,
+     "heard": "So, ten rules, and the last one, almost nobody follows it.",
+     "wer": 0.0,
+     "f0": 87.8,
+     "dur": 6.96,
+     "cos": 0.7698
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "who": "G",
+   "pick": "vo/takes/l05_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l05_s1.wav",
+     "seed": 1,
+     "heard": "10. Learn one hard thing every year. In 10 years, you'll be 10 new people.",
+     "wer": 0.0,
+     "f0": 98.9,
+     "dur": 9.28,
+     "cos": 0.8049
+    },
+    {
+     "file": "vo/takes/l05_s2.wav",
+     "seed": 2,
+     "heard": "10. Learn one hard thing every year. In 10 years, you'll be 10 new people.",
+     "wer": 0.0,
+     "f0": 90.3,
+     "dur": 6.96,
+     "cos": 0.8466
+    },
+    {
+     "file": "vo/takes/l05_s3.wav",
+     "seed": 3,
+     "heard": "10. Learn one hard thing every year. In 10 years, you'll be 10 new people.",
+     "wer": 0.0,
+     "f0": 85.8,
+     "dur": 8.08,
+     "cos": 0.8298
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "who": "G",
+   "pick": "vo/takes/l06_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l06_s1.wav",
+     "seed": 1,
+     "heard": "9. Stay close to the people who make you braver.",
+     "wer": 0.0,
+     "f0": 85.7,
+     "dur": 4.0,
+     "cos": 0.8078
+    },
+    {
+     "file": "vo/takes/l06_s2.wav",
+     "seed": 2,
+     "heard": "9. Stay close to the people who make you braver.",
+     "wer": 0.0,
+     "f0": 87.3,
+     "dur": 3.36,
+     "cos": 0.7755
+    },
+    {
+     "file": "vo/takes/l06_s3.wav",
+     "seed": 3,
+     "heard": "9. Stay close to the people who make you braver.",
+     "wer": 0.0,
+     "f0": 84.7,
+     "dur": 4.16,
+     "cos": 0.8005
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "who": "G",
+   "pick": "vo/takes/l07_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l07_s1.wav",
+     "seed": 1,
+     "heard": "8. When you're angry, wait one night before you speak.",
+     "wer": 0.0,
+     "f0": 90.6,
+     "dur": 4.56,
+     "cos": 0.7985
+    },
+    {
+     "file": "vo/takes/l07_s2.wav",
+     "seed": 2,
+     "heard": "8. When you're angry, wait one night before you speak.",
+     "wer": 0.0,
+     "f0": 86.6,
+     "dur": 4.88,
+     "cos": 0.7988
+    },
+    {
+     "file": "vo/takes/l07_s3.wav",
+     "seed": 3,
+     "heard": "8. When you're angry, wait one night before you speak.",
+     "wer": 0.0,
+     "f0": 84.9,
+     "dur": 5.28,
+     "cos": 0.7374
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "who": "G",
+   "pick": "vo/takes/l08_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l08_s1.wav",
+     "seed": 1,
+     "heard": "Seven. Ask why until it gets uncomfortable. The answer lives just past that.",
+     "wer": 0.0,
+     "f0": 98.8,
+     "dur": 8.24,
+     "cos": 0.738
+    },
+    {
+     "file": "vo/takes/l08_s2.wav",
+     "seed": 2,
+     "heard": "7. Ask why until it gets uncomfortable. The answer lives just past that.",
+     "wer": 0.0,
+     "f0": 81.9,
+     "dur": 6.48,
+     "cos": 0.787
+    },
+    {
+     "file": "vo/takes/l08_s3.wav",
+     "seed": 3,
+     "heard": "7. Ask why until it gets uncomfortable. The answer lives just past that.",
+     "wer": 0.0,
+     "f0": 83.3,
+     "dur": 6.72,
+     "cos": 0.7517
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "who": "G",
+   "pick": "vo/takes/l09_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l09_s1.wav",
+     "seed": 1,
+     "heard": "6. Do the scary thing while your hands still shake. They never stop first.",
+     "wer": 0.0,
+     "f0": 90.4,
+     "dur": 6.88,
+     "cos": 0.8025
+    },
+    {
+     "file": "vo/takes/l09_s2.wav",
+     "seed": 2,
+     "heard": "6. Do the scary thing while your hands still shake. They never stop first.",
+     "wer": 0.0,
+     "f0": 92.0,
+     "dur": 7.52,
+     "cos": 0.828
+    },
+    {
+     "file": "vo/takes/l09_s3.wav",
+     "seed": 3,
+     "heard": "6. Do the scary thing while your hands still shake. They never stop first.",
+     "wer": 0.0,
+     "f0": 99.2,
+     "dur": 7.28,
+     "cos": 0.8065
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "who": "L",
+   "pick": "vo/takes/l10_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l10_s1.wav",
+     "seed": 1,
+     "heard": "Is number one the secret?",
+     "wer": 0.0,
+     "f0": 425.2,
+     "dur": 1.92,
+     "cos": 0.7424
+    },
+    {
+     "file": "vo/takes/l10_s2.wav",
+     "seed": 2,
+     "heard": "Is number one the secret?",
+     "wer": 0.0,
+     "f0": 331.5,
+     "dur": 2.48,
+     "cos": 0.7693
+    },
+    {
+     "file": "vo/takes/l10_s3.wav",
+     "seed": 3,
+     "heard": "Is number one the secret?",
+     "wer": 0.0,
+     "f0": 425.0,
+     "dur": 2.24,
+     "cos": 0.6115
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "who": "G",
+   "pick": "vo/takes/l11_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l11_s1.wav",
+     "seed": 1,
+     "heard": "Patience, you'll want to hear it.",
+     "wer": 0.0,
+     "f0": 97.3,
+     "dur": 3.36,
+     "cos": 0.7865
+    },
+    {
+     "file": "vo/takes/l11_s2.wav",
+     "seed": 2,
+     "heard": "Patience. You'll want to hear it.",
+     "wer": 0.0,
+     "f0": 81.5,
+     "dur": 2.72,
+     "cos": 0.8293
+    },
+    {
+     "file": "vo/takes/l11_s3.wav",
+     "seed": 3,
+     "heard": "Patience you'll want to hear it",
+     "wer": 0.0,
+     "f0": 94.6,
+     "dur": 3.28,
+     "cos": 0.7642
+    }
+   ]
+  },
+  {
+   "id": "l12",
+   "who": "G",
+   "pick": "vo/takes/l12_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l12_s1.wav",
+     "seed": 1,
+     "heard": "Five. Be the first to say sorry. It costs nothing and buys almost everything.",
+     "wer": 0.0,
+     "f0": 93.1,
+     "dur": 7.36,
+     "cos": 0.8605
+    },
+    {
+     "file": "vo/takes/l12_s2.wav",
+     "seed": 2,
+     "heard": "5. Be the first to say sorry. It costs nothing and buys almost everything.",
+     "wer": 0.0,
+     "f0": 83.4,
+     "dur": 7.76,
+     "cos": 0.8169
+    },
+    {
+     "file": "vo/takes/l12_s3.wav",
+     "seed": 3,
+     "heard": "Five. Be the first to say sorry. It costs nothing, and buys almost everything.",
+     "wer": 0.0,
+     "f0": 92.1,
+     "dur": 7.12,
+     "cos": 0.8455
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "who": "G",
+   "pick": "vo/takes/l13_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l13_s1.wav",
+     "seed": 1,
+     "heard": "Four. Finish small things. One finished thing beats a perfect dream.",
+     "wer": 0.0,
+     "f0": 93.0,
+     "dur": 7.2,
+     "cos": 0.8006
+    },
+    {
+     "file": "vo/takes/l13_s2.wav",
+     "seed": 2,
+     "heard": "4. Finish small things. One finished thing beats a perfect dream.",
+     "wer": 0.0,
+     "f0": 97.2,
+     "dur": 6.32,
+     "cos": 0.8039
+    },
+    {
+     "file": "vo/takes/l13_s3.wav",
+     "seed": 3,
+     "heard": "Four. Finish small things. One finished thing beats a perfect dream.",
+     "wer": 0.0,
+     "f0": 102.6,
+     "dur": 6.4,
+     "cos": 0.8183
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "who": "G",
+   "pick": "vo/takes/l14_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l14_s1.wav",
+     "seed": 1,
+     "heard": "3. Stay a beginner at something. Pride ages you faster than time.",
+     "wer": 0.0,
+     "f0": 92.6,
+     "dur": 5.92,
+     "cos": 0.7719
+    },
+    {
+     "file": "vo/takes/l14_s2.wav",
+     "seed": 2,
+     "heard": "3. Stay a beginner at something. Pride ages you faster than time.",
+     "wer": 0.0,
+     "f0": 96.1,
+     "dur": 7.36,
+     "cos": 0.8655
+    },
+    {
+     "file": "vo/takes/l14_s3.wav",
+     "seed": 3,
+     "heard": "3. Stay a beginner at something. Pride ages you faster than time.",
+     "wer": 0.0,
+     "f0": 87.7,
+     "dur": 6.72,
+     "cos": 0.7896
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "who": "G",
+   "pick": "vo/takes/l15_s2.wav",
+   "seed": 2,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l15_s1.wav",
+     "seed": 1,
+     "heard": "to who you are when no one is watching is who you're becoming.",
+     "wer": 0.077,
+     "f0": 72.6,
+     "dur": 5.84,
+     "cos": 0.8247
+    },
+    {
+     "file": "vo/takes/l15_s2.wav",
+     "seed": 2,
+     "heard": "2. Who you are when no one is watching is who you're becoming.",
+     "wer": 0.0,
+     "f0": 101.6,
+     "dur": 6.24,
+     "cos": 0.8449
+    },
+    {
+     "file": "vo/takes/l15_s3.wav",
+     "seed": 3,
+     "heard": "2. Who you are when no one is watching is who you're becoming.",
+     "wer": 0.0,
+     "f0": 75.8,
+     "dur": 7.12,
+     "cos": 0.7528
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "who": "G",
+   "pick": "vo/takes/l16_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l16_s1.wav",
+     "seed": 1,
+     "heard": "1. Stop waiting for the right time. I've watched every clock in the world. The right time has never arrived.",
+     "wer": 0.0,
+     "f0": 89.9,
+     "dur": 8.0,
+     "cos": 0.8372
+    },
+    {
+     "file": "vo/takes/l16_s2.wav",
+     "seed": 2,
+     "heard": "One. Stop waiting for the right time. I've watched every clock in the world. The right time has never arrived.",
+     "wer": 0.0,
+     "f0": 87.1,
+     "dur": 9.28,
+     "cos": 0.8137
+    },
+    {
+     "file": "vo/takes/l16_s3.wav",
+     "seed": 3,
+     "heard": "One, stop waiting for the right time. I've watched every clock in the world. The right time has never arrived.",
+     "wer": 0.0,
+     "f0": 106.5,
+     "dur": 9.28,
+     "cos": 0.7998
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "who": "G",
+   "pick": "vo/takes/l17_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l17_s1.wav",
+     "seed": 1,
+     "heard": "It only ever comes as now.",
+     "wer": 0.0,
+     "f0": 92.0,
+     "dur": 3.44,
+     "cos": 0.7801
+    },
+    {
+     "file": "vo/takes/l17_s2.wav",
+     "seed": 2,
+     "heard": "It only ever comes as now.",
+     "wer": 0.0,
+     "f0": 66.5,
+     "dur": 3.68,
+     "cos": 0.7709
+    },
+    {
+     "file": "vo/takes/l17_s3.wav",
+     "seed": 3,
+     "heard": "It only ever comes as now.",
+     "wer": 0.0,
+     "f0": 99.5,
+     "dur": 3.68,
+     "cos": 0.8048
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "who": "L",
+   "pick": "vo/takes/l18_s1.wav",
+   "seed": 1,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l18_s1.wav",
+     "seed": 1,
+     "heard": "Now?",
+     "wer": 0.0,
+     "f0": 317.7,
+     "dur": 0.56,
+     "cos": 0.6017
+    },
+    {
+     "file": "vo/takes/l18_s2.wav",
+     "seed": 2,
+     "heard": "Now!",
+     "wer": 0.0,
+     "f0": 292.7,
+     "dur": 0.64,
+     "cos": 0.5858
+    },
+    {
+     "file": "vo/takes/l18_s3.wav",
+     "seed": 3,
+     "heard": "No?",
+     "wer": 1.0,
+     "f0": 412.3,
+     "dur": 0.72,
+     "cos": 0.5854
+    }
+   ]
+  },
+  {
+   "id": "l19",
+   "who": "G",
+   "pick": "vo/takes/l19_s3.wav",
+   "seed": 3,
+   "flag": null,
+   "takes": [
+    {
+     "file": "vo/takes/l19_s1.wav",
+     "seed": 1,
+     "heard": "No.",
+     "wer": 1.0,
+     "f0": 75.2,
+     "dur": 0.64,
+     "cos": 0.6754
+    },
+    {
+     "file": "vo/takes/l19_s2.wav",
+     "seed": 2,
+     "heard": "now",
+     "wer": 0.0,
+     "f0": 73.5,
+     "dur": 0.48,
+     "cos": 0.6552
+    },
+    {
+     "file": "vo/takes/l19_s3.wav",
+     "seed": 3,
+     "heard": "Now.",
+     "wer": 0.0,
+     "f0": 90.9,
+     "dur": 0.8,
+     "cos": 0.6799
+    }
+   ]
+  }
+ ]
+}

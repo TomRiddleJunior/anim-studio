@@ -1,0 +1,24 @@
+<template>
+  <style>
+    @font-face { font-family: "RSlab"; src: url("assets/fonts/RobotoSlab_wght_.ttf"); font-weight: 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    /* measured on the source (720x1280 -> x1.5): a navy rounded pill (#1f2633, radius ~22 % of the height), white slab
+       serif ~33 px (-> 50 px), padding ~0.55 em; one pill at a time; top pill under the floor counter, bottom pill low */
+    #root .pw { position: absolute; left: 0; right: 0; height: 0; display: flex; justify-content: center; align-items: center; }
+    #root .pill { display: inline-block; white-space: nowrap; font-family: "RSlab", serif; font-weight: 700; line-height: 1.0;
+      padding: 0.26em 0.55em 0.3em; border-radius: 0.34em; background: #1f2633; box-shadow: 0 3px 0 rgba(0,0,0,0.18); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip pw" id="p0" data-start="0.120" data-duration="3.700" style="top: 369px"><div class="pill" id="pi0" style="font-size: 50px; color: #fbf8f1">Room 305, every Friday</div></div>
+    <div class="clip pw" id="p1" data-start="5.945" data-duration="2.310" style="top: 1500px"><div class="pill" id="pi1" style="font-size: 50px; color: #fbf8f1">Every single Friday</div></div>
+    <div class="clip pw" id="p2" data-start="8.455" data-duration="0.237" style="top: 1500px"><div class="pill" id="pi2" style="font-size: 50px; color: #fbf8f1">Why?</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      
+tl.fromTo("#pi1", { scale: 0.82, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2.2)" }, 5.945);      tl.fromTo("#pi2", { scale: 0.82, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.18, ease: "back.out(2.2)" }, 8.455);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

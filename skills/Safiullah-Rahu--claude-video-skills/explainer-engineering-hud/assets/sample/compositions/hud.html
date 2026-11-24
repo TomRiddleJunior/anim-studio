@@ -1,0 +1,188 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf") format("truetype"); font-weight: 100 900; }
+    @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/SpaceGrotesk_wght_.ttf") format("truetype"); font-weight: 300 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Inter", sans-serif; color: #eef2f6; }
+    .hud { position: absolute; left: 62px; top: 197px; width: 956px; height: 137px; border-radius: 20px;
+      background: rgba(14, 19, 26, 0.86); border: 1.5px solid rgba(160, 180, 200, 0.16); box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45); }
+    .hud .lab { position: absolute; top: 18px; font: 700 31px "Space Grotesk"; letter-spacing: 0.16em; color: #9aa6b2; }
+    .hud .val { position: absolute; top: 50px; font: 700 64px "Space Grotesk"; letter-spacing: 0.01em; line-height: 1; color: #f3f6f9; white-space: nowrap; }
+    .hud .unit { font: 700 34px "Space Grotesk"; color: #e7ecf1; margin-left: 10px; letter-spacing: 0; }
+    .hud .div { position: absolute; left: 378px; top: 24px; width: 2px; height: 90px; background: rgba(160, 180, 200, 0.18); }
+    #dot { position: absolute; left: 38px; top: 72px; width: 30px; height: 30px; border-radius: 50%; }
+    #chev { position: absolute; left: 862px; top: 36px; width: 56px; height: 64px; opacity: 0; }
+    #pill { position: absolute; left: 62px; top: 357px; height: 57px; padding: 0 26px; border-radius: 30px; display: flex; align-items: center;
+      background: rgba(14, 19, 26, 0.72); border: 1.5px solid rgba(160, 180, 200, 0.16); font: 700 32px "Space Grotesk"; letter-spacing: 0.14em; color: #e3e9ef; white-space: nowrap; }
+    #cap { position: absolute; left: 540px; top: 1236px; transform: translate(-50%, -50%); padding: 16px 30px 20px; border-radius: 18px;
+      background: rgba(12, 16, 22, 0.86); border: 1.5px solid rgba(160, 180, 200, 0.12); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      font: 800 52px "Inter"; letter-spacing: -0.005em; white-space: nowrap; opacity: 0; }
+    #cap .w { color: #7c8791; }
+    #cap .w.on { color: #f6f8fa; }
+    #photo { position: absolute; left: 404px; top: 650px; width: 614px; height: 462px; border-radius: 16px; overflow: hidden; opacity: 0;
+      border: 3px solid rgba(235, 240, 245, 0.9); box-shadow: 0 18px 50px rgba(0, 0, 0, 0.6); }
+    #photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #credit { position: absolute; left: 404px; top: 1124px; width: 614px; text-align: center; font: 600 26px "Inter"; color: #b3bcc6; opacity: 0;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9); }
+    #card { position: absolute; left: 540px; top: 900px; width: 520px; height: 300px; margin-left: -260px; margin-top: -150px; border-radius: 26px;
+      background: #f5f7f9; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6); opacity: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    #card .nm { font: 800 50px "Inter"; color: #12202c; letter-spacing: 0.01em; }
+    #card .bar { width: 120px; height: 7px; border-radius: 4px; background: #1fb6e0; margin: 22px 0 18px; }
+    #card .sub { font: 700 30px "Space Grotesk"; color: #4b5967; letter-spacing: 0.12em; }
+    .panel { position: absolute; left: 62px; width: 956px; border-radius: 22px; background: rgba(14, 19, 26, 0.88);
+      border: 1.5px solid rgba(160, 180, 200, 0.16); box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5); opacity: 0; }
+    #tpan { top: 448px; height: 520px; }
+    .row { position: absolute; left: 52px; right: 52px; }
+    .row .rl { font: 700 34px "Space Grotesk"; letter-spacing: 0.08em; color: #e9eef3; display: flex; align-items: center; gap: 14px; }
+    .row .rl i { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+    .row .track { position: relative; margin-top: 16px; height: 36px; border-radius: 18px; background: rgba(160, 180, 200, 0.12); overflow: hidden; }
+    .row .fill { position: absolute; left: 0; top: 0; height: 100%; border-radius: 18px; width: 0; }
+    .row .hatch { position: absolute; left: 0; top: -10px; height: 56px; width: 0;
+      background: repeating-linear-gradient(135deg, rgba(255, 178, 63, 0.55) 0 8px, rgba(255, 178, 63, 0) 8px 18px); border-right: 3px solid rgba(255, 178, 63, 0.8); }
+    #big { position: absolute; left: 0; width: 956px; top: 300px; text-align: center; font: 700 190px "Space Grotesk"; color: #ffb23f; line-height: 1;
+      text-shadow: 0 0 40px rgba(255, 160, 40, 0.35); }
+    #big small { font-size: 96px; margin-left: 14px; }
+    #gpan { top: 448px; height: 432px; }
+    #gpan .ttl { position: absolute; left: 0; width: 956px; top: 28px; text-align: center; font: 700 30px "Space Grotesk"; letter-spacing: 0.16em; color: #d8e0e8; }
+    .tile { position: absolute; width: 270px; height: 150px; border-radius: 16px; border: 3px solid rgba(160, 180, 200, 0.22); background: rgba(160, 180, 200, 0.06);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+    .tile svg { width: 120px; height: 52px; }
+    .tile .tn { font: 700 21px "Space Grotesk"; letter-spacing: 0.1em; color: #9aa6b2; }
+    #cpan { top: 900px; height: 270px; }
+    .cell { position: absolute; top: 0; width: 478px; height: 270px; text-align: center; }
+    .cell .n { margin-top: 26px; font: 700 132px "Space Grotesk"; line-height: 1; color: #5f6a76; }
+    .cell .l { margin-top: 14px; font: 700 27px "Space Grotesk"; letter-spacing: 0.14em; color: #8d98a4; line-height: 1.3; }
+    #cdiv { position: absolute; left: 477px; top: 30px; width: 2px; height: 210px; background: rgba(160, 180, 200, 0.18); }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
+    <div class="hud" id="hudbox">
+      <div class="lab" style="left: 38px">BARRIER</div>
+      <div id="dot"></div>
+      <div class="val" id="st" style="left: 84px">OPEN</div>
+      <div class="div"></div>
+      <div class="lab" style="left: 416px">GAP</div>
+      <div class="val" id="gap" style="left: 414px">~360<span class="unit">m</span></div>
+      <svg id="chev" viewBox="0 0 56 64"><path d="M6 8 L28 26 L50 8" fill="none" stroke="#ffb23f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/><path d="M6 32 L28 50 L50 32" fill="none" stroke="#ffb23f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div id="pill">NIEUWE WATERWEG · 2023</div>
+    <div id="photo"><img src="assets/photo/barrier_inset.jpg" alt="" /></div>
+    <div id="credit">Photo: Michielverbeek / CC BY-SA 3.0</div>
+    <div id="card"><div class="nm">RIJKSWATERSTAAT</div><div class="bar"></div><div class="sub">DUTCH WATER AGENCY</div></div>
+    <div class="panel" id="tpan">
+      <div class="row" style="top: 52px"><div class="rl"><i style="background:#39d7ff"></i>SHIPS STOPPED</div><div class="track"><div class="fill" id="f1" style="background:#39d7ff"></div></div></div>
+      <div class="row" style="top: 170px"><div class="rl"><i style="background:#ff4d5e"></i>GATES CLOSING</div><div class="track"><div class="hatch" id="h2"></div><div class="fill" id="f2" style="background:#ff4d5e"></div></div></div>
+      <div id="big">~2<small>h</small></div>
+    </div>
+    <div class="panel" id="gpan">
+      <div class="ttl">THE COUNTRY'S BIG STORM BARRIERS</div>
+      <div class="tile" id="g0" style="left: 34px; top: 92px"></div>
+      <div class="tile" id="g1" style="left: 343px; top: 92px"></div>
+      <div class="tile" id="g2" style="left: 652px; top: 92px"></div>
+      <div class="tile" id="g3" style="left: 34px; top: 260px"></div>
+      <div class="tile" id="g4" style="left: 343px; top: 260px"></div>
+      <div class="tile" id="g5" style="left: 652px; top: 260px"></div>
+    </div>
+    <div class="panel" id="cpan">
+      <div class="cell" style="left: 0"><div class="n" id="n1">0</div><div class="l" id="l1">PEOPLE<br />BEHIND IT</div></div>
+      <div id="cdiv"></div>
+      <div class="cell" style="left: 478px"><div class="n" id="n2">0</div><div class="l" id="l2">HUMAN COMMANDS<br />NEEDED</div></div>
+    </div>
+    <div id="cap"></div>
+  </div>
+  <script>
+    (function () {
+      const F = window.FILM, V = F.V, W = F.W, T = F.T;
+      const { lin, mix, clamp, E } = F;
+      const $ = (id) => document.getElementById(id);
+      const NAMES = ["MAESLANT", "HARTEL", "OOSTERSCHELDE", "HARINGVLIET", "HOLL. IJSSEL", "RAMSPOL"];
+      const ICON = '<svg viewBox="0 0 120 52"><path d="M8 44 Q60 4 112 44" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/><path d="M8 48 L112 48" stroke="currentColor" stroke-width="3" opacity="0.5"/></svg>';
+      NAMES.forEach((n, k) => ($("g" + k).innerHTML = ICON + '<div class="tn">' + n + "</div>"));
+      let capKey = "";
+      function caption(t) {
+        const P = V.phrases;
+        let p = null;
+        for (let k = 0; k < P.length; k++) if (t >= P[k].on && t < P[k].off) { p = P[k]; break; }
+        const el = $("cap");
+        if (!p) { el.style.opacity = "0"; capKey = ""; return; }
+        const nOn = p.w.filter((w) => t >= w[1] - 0.02).length;
+        const key = p.on + ":" + nOn;
+        if (key !== capKey) {
+          el.innerHTML = p.w.map((w, k) => '<span class="w' + (k < nOn ? " on" : "") + '">' + w[0] + "</span>").join(" ");
+          capKey = key;
+        }
+        const a = E.out(lin(t, p.on, p.on + 0.14)) * (1 - lin(t, p.off - 0.06, p.off));
+        el.style.opacity = String(a);
+        el.style.transform = `translate(-50%, -50%) translateY(${(1 - E.out(lin(t, p.on, p.on + 0.18))) * 10}px)`;
+      }
+      function draw(t) {
+        const sh = F.shotAt(t);
+        // HUD panel
+        const st = F.status(t), amb = F.amber(t);
+        $("st").textContent = st;
+        const dot = $("dot");
+        if (st === "OPEN") { dot.style.background = "#39d7ff"; dot.style.border = "0"; dot.style.boxShadow = "0 0 16px rgba(57,215,255,0.9)"; }
+        else if (st === "CLOSING") { const k = 0.55 + 0.45 * Math.abs(Math.sin(t * 4)); dot.style.background = `rgba(255,178,63,${k})`; dot.style.border = "0"; dot.style.boxShadow = `0 0 ${10 + 10 * k}px rgba(255,178,63,0.8)`; }
+        else { dot.style.background = "transparent"; dot.style.border = "3px solid #5c6773"; dot.style.boxShadow = "none"; }
+        $("st").style.fontSize = st === "CLOSING" ? "56px" : "64px";
+        const g = F.gap(t);
+        $("gap").innerHTML = "~" + g + '<span class="unit">m</span>';
+        $("gap").style.color = amb ? "#ffb23f" : "#f3f6f9";
+        $("chev").style.opacity = amb && st !== "CLOSED" ? "1" : (amb && t < F.SH[1].t0 ? "1" : "0");
+        if (amb) $("chev").style.transform = `translateY(${(Math.sin(t * 5) * 3).toFixed(1)}px)`;
+        // location pill
+        const pill = $("pill");
+        if (sh.loc) { pill.style.opacity = "1"; if (pill.textContent !== sh.loc) pill.textContent = sh.loc; } else pill.style.opacity = "0";
+        if (sh.id === "map" && t >= W.channel[0] - 0.05) pill.textContent = "NIEUWE WATERWEG · 2023";
+        // photo inset (map shot)
+        const pin = sh.id === "map" ? E.out(lin(t, W.channel[3] - 0.1, W.channel[3] + 0.3)) * (1 - lin(t, sh.t1 - 0.2, sh.t1)) : 0;
+        $("photo").style.opacity = String(pin); $("credit").style.opacity = String(pin);
+        $("photo").style.transform = `translateY(${(1 - pin) * 30}px) scale(${0.94 + 0.06 * pin})`;
+        // agency card
+        const cin = sh.id === "agency" ? E.back(clamp(lin(t, W.agency[2] - 0.1, W.agency[2] + 0.25))) * (1 - lin(t, sh.t1 - 0.25, sh.t1 - 0.02)) : 0;
+        $("card").style.opacity = String(clamp(cin)); $("card").style.transform = `scale(${0.86 + 0.14 * cin})`;
+        // time panel
+        const tin = sh.id === "panel" ? E.out(lin(t, sh.t0 + 0.05, sh.t0 + 0.35)) : 0;
+        $("tpan").style.opacity = String(tin); $("tpan").style.transform = `translateY(${(1 - tin) * 24}px)`;
+        if (tin > 0) {
+          $("f1").style.width = "100%";
+          const k2 = E.io(lin(t, sh.t0 + 0.2, W.time[5] + 0.3));
+          $("f2").style.width = (6 + 74 * k2).toFixed(1) + "%"; $("h2").style.width = (80 * k2).toFixed(1) + "%";
+          const bk = E.back(clamp(lin(t, W.time[5] - 0.05, W.time[5] + 0.3)));
+          $("big").style.opacity = String(clamp(bk)); $("big").style.transform = `scale(${0.7 + 0.3 * bk})`;
+        }
+        // barrier grid + counters (last shot)
+        const gin = sh.id === "six" ? E.out(lin(t, sh.t0 + 0.1, sh.t0 + 0.4)) : 0;
+        $("gpan").style.opacity = String(gin); $("gpan").style.transform = `translateY(${(1 - gin) * 24}px)`;
+        if (gin > 0) {
+          const t0 = W.six[2], t1 = W.six[10];
+          for (let k = 0; k < 6; k++) {
+            const tile = $("g" + k), on = t >= mix(t0, t1, k / 5), green = t >= W.six[11] - 0.05;
+            const col = green ? "#36e0a0" : on ? "#ffb23f" : "#5c6773";
+            tile.style.color = col; tile.style.borderColor = green ? "rgba(54,224,160,0.85)" : on ? "rgba(255,178,63,0.85)" : "rgba(160,180,200,0.22)";
+            tile.style.background = green ? "rgba(54,224,160,0.1)" : on ? "rgba(255,178,63,0.1)" : "rgba(160,180,200,0.06)";
+            tile.querySelector(".tn").style.color = green || on ? "#eef2f6" : "#7c8791";
+            const pop = Math.exp(-Math.pow((t - mix(t0, t1, k / 5) - 0.08) / 0.09, 2));
+            tile.style.transform = `scale(${1 + 0.06 * pop})`;
+          }
+        }
+        const cpin = sh.id === "six" ? E.out(lin(t, T.end - 0.12, T.end + 0.2)) : 0;
+        $("cpan").style.opacity = String(cpin); $("cpan").style.transform = `translateY(${(1 - cpin) * 24}px)`;
+        if (cpin > 0) {
+          const k1 = E.out(lin(t, W.end[1], W.end[1] + 0.9));
+          $("n1").textContent = (1.5 * k1).toFixed(1) + "M";
+          const g1 = t >= W.end[3];
+          $("n1").style.color = g1 ? "#36e0a0" : "#d9e0e7"; $("l1").style.color = g1 ? "#eef2f6" : "#8d98a4";
+          const g2 = t >= W.end[14];
+          $("n2").style.color = g2 ? "#36e0a0" : "#5f6a76"; $("l2").style.color = g2 ? "#eef2f6" : "#8d98a4";
+          const pp = Math.exp(-Math.pow((t - W.end[14] - 0.1) / 0.1, 2)); $("n2").style.transform = `scale(${1 + 0.12 * pp})`;
+        }
+        caption(t);
+      }
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: F.DUR, duration: F.DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["hud"] = tl;
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      draw(0);
+    })();
+  </script>
+</template>

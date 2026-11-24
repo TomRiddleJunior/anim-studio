@@ -1,0 +1,343 @@
+{
+ "T": {
+  "A1": 0.0,
+  "H": 6.615,
+  "L2": 10.025,
+  "S": 13.085,
+  "Z1": 15.86,
+  "Z2": 18.46
+ },
+ "caps": [
+  {
+   "lid": "l01",
+   "text": "If the zombie apocalypse",
+   "col": "r",
+   "t0": 0.18,
+   "t1": 1.593,
+   "on": 0.12,
+   "off": 1.553
+  },
+  {
+   "lid": "l01",
+   "text": "catches you|on an oil rig",
+   "col": "w",
+   "t0": 1.593,
+   "t1": 3.292,
+   "on": 1.533,
+   "off": 3.252
+  },
+  {
+   "lid": "l01",
+   "text": "in the middle|of the sea...",
+   "col": "w",
+   "t0": 3.292,
+   "t1": 4.23,
+   "on": 3.232,
+   "off": 4.478
+  },
+  {
+   "lid": "l01",
+   "text": "consider yourself lucky.",
+   "col": "g",
+   "t0": 4.518,
+   "t1": 6.205,
+   "on": 4.458,
+   "off": 6.875
+  },
+  {
+   "lid": "l02",
+   "text": "Then the radio crackled.",
+   "col": "w",
+   "t0": 6.915,
+   "t1": 8.09,
+   "on": 6.855,
+   "off": 8.163
+  },
+  {
+   "lid": "l02",
+   "text": "Outbreak on the coast.",
+   "col": "r",
+   "t0": 8.203,
+   "t1": 9.715,
+   "on": 8.143,
+   "off": 10.285
+  },
+  {
+   "lid": "l03",
+   "text": "But the dead can't swim.",
+   "col": "g",
+   "t0": 10.325,
+   "t1": 11.55,
+   "on": 10.265,
+   "off": 11.61
+  },
+  {
+   "lid": "l03",
+   "text": "They sink.",
+   "col": "g",
+   "t0": 11.65,
+   "t1": 12.575,
+   "on": 11.59,
+   "off": 13.275
+  },
+  {
+   "lid": "l04",
+   "text": "But Mira forgot one thing...",
+   "col": "r",
+   "t0": 13.385,
+   "t1": 15.46,
+   "on": 13.325,
+   "off": 16.16
+  }
+ ],
+ "dur": 21.01,
+ "odds": [
+  [
+   0.0,
+   71
+  ],
+  [
+   8.203,
+   58
+  ],
+  [
+   11.85,
+   73
+  ],
+  [
+   13.948,
+   null
+  ]
+ ],
+ "cues": [
+  {
+   "t": 0.0,
+   "type": "sting"
+  },
+  {
+   "t": 8.153,
+   "type": "odds_down"
+  },
+  {
+   "t": 8.284,
+   "type": "odds_tick",
+   "up": false,
+   "i": 0,
+   "n": 13
+  },
+  {
+   "t": 8.357,
+   "type": "odds_tick",
+   "up": false,
+   "i": 1,
+   "n": 13
+  },
+  {
+   "t": 8.422,
+   "type": "odds_tick",
+   "up": false,
+   "i": 2,
+   "n": 13
+  },
+  {
+   "t": 8.48,
+   "type": "odds_tick",
+   "up": false,
+   "i": 3,
+   "n": 13
+  },
+  {
+   "t": 8.531,
+   "type": "odds_tick",
+   "up": false,
+   "i": 4,
+   "n": 13
+  },
+  {
+   "t": 8.575,
+   "type": "odds_tick",
+   "up": false,
+   "i": 5,
+   "n": 13
+  },
+  {
+   "t": 8.612,
+   "type": "odds_tick",
+   "up": false,
+   "i": 6,
+   "n": 13
+  },
+  {
+   "t": 8.642,
+   "type": "odds_tick",
+   "up": false,
+   "i": 7,
+   "n": 13
+  },
+  {
+   "t": 8.666,
+   "type": "odds_tick",
+   "up": false,
+   "i": 8,
+   "n": 13
+  },
+  {
+   "t": 8.683,
+   "type": "odds_tick",
+   "up": false,
+   "i": 9,
+   "n": 13
+  },
+  {
+   "t": 8.695,
+   "type": "odds_tick",
+   "up": false,
+   "i": 10,
+   "n": 13
+  },
+  {
+   "t": 8.701,
+   "type": "odds_tick",
+   "up": false,
+   "i": 11,
+   "n": 13
+  },
+  {
+   "t": 8.703,
+   "type": "odds_tick",
+   "up": false,
+   "i": 12,
+   "n": 13
+  },
+  {
+   "t": 11.8,
+   "type": "odds_up"
+  },
+  {
+   "t": 11.92,
+   "type": "odds_tick",
+   "up": true,
+   "i": 0,
+   "n": 15
+  },
+  {
+   "t": 11.985,
+   "type": "odds_tick",
+   "up": true,
+   "i": 1,
+   "n": 15
+  },
+  {
+   "t": 12.044,
+   "type": "odds_tick",
+   "up": true,
+   "i": 2,
+   "n": 15
+  },
+  {
+   "t": 12.097,
+   "type": "odds_tick",
+   "up": true,
+   "i": 3,
+   "n": 15
+  },
+  {
+   "t": 12.145,
+   "type": "odds_tick",
+   "up": true,
+   "i": 4,
+   "n": 15
+  },
+  {
+   "t": 12.187,
+   "type": "odds_tick",
+   "up": true,
+   "i": 5,
+   "n": 15
+  },
+  {
+   "t": 12.225,
+   "type": "odds_tick",
+   "up": true,
+   "i": 6,
+   "n": 15
+  },
+  {
+   "t": 12.257,
+   "type": "odds_tick",
+   "up": true,
+   "i": 7,
+   "n": 15
+  },
+  {
+   "t": 12.283,
+   "type": "odds_tick",
+   "up": true,
+   "i": 8,
+   "n": 15
+  },
+  {
+   "t": 12.305,
+   "type": "odds_tick",
+   "up": true,
+   "i": 9,
+   "n": 15
+  },
+  {
+   "t": 12.323,
+   "type": "odds_tick",
+   "up": true,
+   "i": 10,
+   "n": 15
+  },
+  {
+   "t": 12.336,
+   "type": "odds_tick",
+   "up": true,
+   "i": 11,
+   "n": 15
+  },
+  {
+   "t": 12.344,
+   "type": "odds_tick",
+   "up": true,
+   "i": 12,
+   "n": 15
+  },
+  {
+   "t": 12.349,
+   "type": "odds_tick",
+   "up": true,
+   "i": 13,
+   "n": 15
+  },
+  {
+   "t": 12.35,
+   "type": "odds_tick",
+   "up": true,
+   "i": 14,
+   "n": 15
+  },
+  {
+   "t": 13.948,
+   "type": "odds_glitch",
+   "dur": 0.6
+  },
+  {
+   "t": 14.548,
+   "type": "odds_land"
+  },
+  {
+   "t": 15.86,
+   "type": "endcard"
+  },
+  {
+   "t": 15.96,
+   "type": "sting_end"
+  },
+  {
+   "t": 18.46,
+   "type": "endcard2"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "source": "DfViPqtSRxY",
+ "source_wpm_true": 137.0,
+ "note": "the analyzer's WPM on the source (130 Whisper words / 57.0 s)",
+ "planned_dips": [0.133, 56.1],
+ "beats": [
+  [0.1, 0.05, "hook: lit room, HUD, the lamp dies"],
+  [2.0, 2.0, "the figure in the phone glow"],
+  [3.4, 9.6, "phone close (thread / battery)"],
+  [13.4, 17.0, "RULE tag over the city"],
+  [16.4, 13.6, "the phone thread"],
+  [21.4, 32.6, "the night turn (midnight / floor 7)"],
+  [29.6, 30.0, "building section, floor numbers"],
+  [35.4, 35.2, "the threat at your floor"],
+  [38.4, 37.6, "the light in the dark"],
+  [42.4, 42.2, "the second thread"],
+  [47.2, 47.2, "A pill"],
+  [53.4, 54.6, "A/B + comment + part"],
+  [56.4, 58.5, "follow for the next part"]
+ ]
+}

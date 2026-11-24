@@ -1,0 +1,79 @@
+{
+  "name": "Strobe",
+  "dark": true,
+  "description": "Club lighting: pure black, hard white, one laser red, extreme width-axis type that condenses and explodes on the kick. Loud and precise, not neon.",
+  "mood": [
+    "EDM",
+    "techno",
+    "drum & bass",
+    "hyperpop",
+    "hard",
+    "high energy"
+  ],
+  "palette": {
+    "bg": "#000000",
+    "bg2": "#0C0C0C",
+    "dim": "#3A3A3A",
+    "mid": "#808080",
+    "fg": "#FFFFFF",
+    "accent": "#FF2200",
+    "hot": "#FF7A45",
+    "deep": "#8F1200",
+    "rare": "#FFE600"
+  },
+  "fonts": {
+    "display": {
+      "family": "Anybody",
+      "widths": [
+        50,
+        62.5,
+        75,
+        100,
+        125,
+        150
+      ],
+      "weights": [
+        300,
+        600,
+        900
+      ]
+    },
+    "text": {
+      "family": "Instrument Serif",
+      "weights": [
+        400
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "Space Mono",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.7,
+    "bloomThreshold": 1.0,
+    "bloomKnee": 0.25,
+    "halation": 0.3,
+    "ca": 1.8,
+    "grain": 0.06,
+    "vignette": 0.45
+  },
+  "type": {
+    "case": "upper",
+    "tracking": 0
+  },
+  "motif": "spark",
+  "scenes": {
+    "slam": {
+      "weight": 900
+    },
+    "interlude": {
+      "variant": "bars"
+    }
+  },
+  "idiom": "Cuts on every kick in the drops, holds in the breakdowns. White strobes (post.flash) on snares, frame punches on downbeats, type width jumping between 50 and 150. Darkness is the default; light arrives in hits."
+}

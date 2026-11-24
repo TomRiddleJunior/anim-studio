@@ -1,0 +1,19 @@
+{
+ "voice": "am_michael",
+ "speed": 1.08,
+ "lead": 0.1,
+ "tail": 1.8,
+ "film": { "accent_words": ["red", "run", "rule", "one."] },
+ "sound_cues": {
+  "rows": { "12": ["l02", "red"], "11": ["l03", "row"], "10": ["l03", "next", 1] },
+  "steps": [], "slam": null, "phone": null, "button": null, "rise": null, "drag_from": null, "drag_stop": null,
+  "heart_from": ["l03", "then"], "reveal": null, "drip": null,
+  "midnight": ["l02", "midnight"], "final": ["l04", "do"]
+ },
+ "lines": [
+  { "id": "l01", "text": "Imagine you're the last one left in an underground garage.", "gap": 0.0 },
+  { "id": "l02", "text": "At exactly midnight, the lights at the far end turn red.", "gap": 0.2 },
+  { "id": "l03", "text": "Then the next row. And the next.", "gap": 0.45 },
+  { "id": "l04", "text": "You have two choices. So... what would you do?", "gap": 0.4, "speed": 1.0 }
+ ]
+}

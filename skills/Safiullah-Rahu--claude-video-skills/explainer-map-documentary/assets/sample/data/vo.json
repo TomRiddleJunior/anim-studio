@@ -1,0 +1,1024 @@
+{
+ "duration": 74.95,
+ "voice": "am_michael",
+ "words": 176,
+ "wpm_overall": 140.9,
+ "wpm_speech": 171.0,
+ "lines": [
+  {
+   "id": "h1",
+   "i": 0,
+   "text": "This is the Netherlands.",
+   "start": 0.76,
+   "end": 2.41,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.76,
+     "end": 1.098
+    },
+    {
+     "w": "is",
+     "start": 1.098,
+     "end": 1.31
+    },
+    {
+     "w": "the",
+     "start": 1.31,
+     "end": 1.448
+    },
+    {
+     "w": "Netherlands.",
+     "start": 1.448,
+     "end": 2.41
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "i": 1,
+   "text": "This is the North Sea, higher than about a quarter of it.",
+   "start": 3.42,
+   "end": 6.77,
+   "words": [
+    {
+     "w": "This",
+     "start": 3.42,
+     "end": 3.707
+    },
+    {
+     "w": "is",
+     "start": 3.707,
+     "end": 3.87
+    },
+    {
+     "w": "the",
+     "start": 3.87,
+     "end": 3.995
+    },
+    {
+     "w": "North",
+     "start": 3.995,
+     "end": 4.282
+    },
+    {
+     "w": "Sea,",
+     "start": 4.282,
+     "end": 4.77
+    },
+    {
+     "w": "higher",
+     "start": 4.932,
+     "end": 5.32
+    },
+    {
+     "w": "than",
+     "start": 5.32,
+     "end": 5.432
+    },
+    {
+     "w": "about",
+     "start": 5.432,
+     "end": 5.657
+    },
+    {
+     "w": "a",
+     "start": 5.657,
+     "end": 5.732
+    },
+    {
+     "w": "quarter",
+     "start": 5.732,
+     "end": 6.195
+    },
+    {
+     "w": "of",
+     "start": 6.195,
+     "end": 6.32
+    },
+    {
+     "w": "it.",
+     "start": 6.32,
+     "end": 6.77
+    }
+   ]
+  },
+  {
+   "id": "h3",
+   "i": 2,
+   "text": "And this is how the Dutch keep them apart.",
+   "start": 7.58,
+   "end": 9.98,
+   "words": [
+    {
+     "w": "And",
+     "start": 7.58,
+     "end": 7.717
+    },
+    {
+     "w": "this",
+     "start": 7.717,
+     "end": 8.017
+    },
+    {
+     "w": "is",
+     "start": 8.017,
+     "end": 8.18
+    },
+    {
+     "w": "how",
+     "start": 8.18,
+     "end": 8.405
+    },
+    {
+     "w": "the",
+     "start": 8.405,
+     "end": 8.542
+    },
+    {
+     "w": "Dutch",
+     "start": 8.542,
+     "end": 8.88
+    },
+    {
+     "w": "keep",
+     "start": 8.88,
+     "end": 9.092
+    },
+    {
+     "w": "them",
+     "start": 9.092,
+     "end": 9.23
+    },
+    {
+     "w": "apart.",
+     "start": 9.23,
+     "end": 9.98
+    }
+   ]
+  },
+  {
+   "id": "q",
+   "i": 3,
+   "text": "So why build a country below the sea? Nobody did. It sank.",
+   "start": 10.69,
+   "end": 14.64,
+   "words": [
+    {
+     "w": "So",
+     "start": 10.69,
+     "end": 10.865
+    },
+    {
+     "w": "why",
+     "start": 10.865,
+     "end": 11.04
+    },
+    {
+     "w": "build",
+     "start": 11.04,
+     "end": 11.277
+    },
+    {
+     "w": "a",
+     "start": 11.277,
+     "end": 11.34
+    },
+    {
+     "w": "country",
+     "start": 11.34,
+     "end": 11.715
+    },
+    {
+     "w": "below",
+     "start": 11.715,
+     "end": 12.015
+    },
+    {
+     "w": "the",
+     "start": 12.015,
+     "end": 12.165
+    },
+    {
+     "w": "sea?",
+     "start": 12.165,
+     "end": 12.665
+    },
+    {
+     "w": "Nobody",
+     "start": 12.827,
+     "end": 13.227
+    },
+    {
+     "w": "did.",
+     "start": 13.227,
+     "end": 13.64
+    },
+    {
+     "w": "It",
+     "start": 13.715,
+     "end": 13.94
+    },
+    {
+     "w": "sank.",
+     "start": 13.94,
+     "end": 14.64
+    }
+   ]
+  },
+  {
+   "id": "peat",
+   "i": 4,
+   "text": "A thousand years ago, the west was soggy peat. Farmers drained it, and drained peat shrinks.",
+   "start": 15.25,
+   "end": 21.05,
+   "words": [
+    {
+     "w": "A",
+     "start": 15.25,
+     "end": 15.338
+    },
+    {
+     "w": "thousand",
+     "start": 15.338,
+     "end": 15.75
+    },
+    {
+     "w": "years",
+     "start": 15.75,
+     "end": 16.05
+    },
+    {
+     "w": "ago,",
+     "start": 16.05,
+     "end": 16.325
+    },
+    {
+     "w": "the",
+     "start": 16.375,
+     "end": 16.512
+    },
+    {
+     "w": "west",
+     "start": 16.512,
+     "end": 16.875
+    },
+    {
+     "w": "was",
+     "start": 16.875,
+     "end": 17.012
+    },
+    {
+     "w": "soggy",
+     "start": 17.012,
+     "end": 17.438
+    },
+    {
+     "w": "peat.",
+     "start": 17.438,
+     "end": 18.1
+    },
+    {
+     "w": "Farmers",
+     "start": 18.25,
+     "end": 18.762
+    },
+    {
+     "w": "drained",
+     "start": 18.762,
+     "end": 19.2
+    },
+    {
+     "w": "it,",
+     "start": 19.2,
+     "end": 19.3
+    },
+    {
+     "w": "and",
+     "start": 19.337,
+     "end": 19.462
+    },
+    {
+     "w": "drained",
+     "start": 19.462,
+     "end": 19.938
+    },
+    {
+     "w": "peat",
+     "start": 19.938,
+     "end": 20.262
+    },
+    {
+     "w": "shrinks.",
+     "start": 20.262,
+     "end": 21.05
+    }
+   ]
+  },
+  {
+   "id": "cycle",
+   "i": 5,
+   "text": "So the land dropped, needed more draining, and dropped again.",
+   "start": 21.56,
+   "end": 25.16,
+   "words": [
+    {
+     "w": "So",
+     "start": 21.56,
+     "end": 21.673
+    },
+    {
+     "w": "the",
+     "start": 21.673,
+     "end": 21.76
+    },
+    {
+     "w": "land",
+     "start": 21.76,
+     "end": 22.098
+    },
+    {
+     "w": "dropped,",
+     "start": 22.098,
+     "end": 22.76
+    },
+    {
+     "w": "needed",
+     "start": 22.898,
+     "end": 23.235
+    },
+    {
+     "w": "more",
+     "start": 23.235,
+     "end": 23.473
+    },
+    {
+     "w": "draining,",
+     "start": 23.473,
+     "end": 23.96
+    },
+    {
+     "w": "and",
+     "start": 23.998,
+     "end": 24.11
+    },
+    {
+     "w": "dropped",
+     "start": 24.11,
+     "end": 24.46
+    },
+    {
+     "w": "again.",
+     "start": 24.46,
+     "end": 25.16
+    }
+   ]
+  },
+  {
+   "id": "polder",
+   "i": 6,
+   "text": "Dikes ringed the fields, and windmills pumped them dry.",
+   "start": 25.67,
+   "end": 29.045,
+   "words": [
+    {
+     "w": "Dikes",
+     "start": 25.67,
+     "end": 26.033
+    },
+    {
+     "w": "ringed",
+     "start": 26.033,
+     "end": 26.283
+    },
+    {
+     "w": "the",
+     "start": 26.283,
+     "end": 26.383
+    },
+    {
+     "w": "fields,",
+     "start": 26.383,
+     "end": 27.07
+    },
+    {
+     "w": "and",
+     "start": 27.17,
+     "end": 27.308
+    },
+    {
+     "w": "windmills",
+     "start": 27.308,
+     "end": 27.858
+    },
+    {
+     "w": "pumped",
+     "start": 27.858,
+     "end": 28.158
+    },
+    {
+     "w": "them",
+     "start": 28.158,
+     "end": 28.345
+    },
+    {
+     "w": "dry.",
+     "start": 28.345,
+     "end": 29.045
+    }
+   ]
+  },
+  {
+   "id": "low",
+   "i": 7,
+   "text": "Today, the lowest point is almost seven metres below sea level.",
+   "start": 29.655,
+   "end": 33.53,
+   "words": [
+    {
+     "w": "Today,",
+     "start": 29.655,
+     "end": 30.105
+    },
+    {
+     "w": "the",
+     "start": 30.18,
+     "end": 30.305
+    },
+    {
+     "w": "lowest",
+     "start": 30.305,
+     "end": 30.68
+    },
+    {
+     "w": "point",
+     "start": 30.68,
+     "end": 30.943
+    },
+    {
+     "w": "is",
+     "start": 30.943,
+     "end": 31.093
+    },
+    {
+     "w": "almost",
+     "start": 31.093,
+     "end": 31.53
+    },
+    {
+     "w": "seven",
+     "start": 31.53,
+     "end": 31.905
+    },
+    {
+     "w": "metres",
+     "start": 31.905,
+     "end": 32.28
+    },
+    {
+     "w": "below",
+     "start": 32.28,
+     "end": 32.655
+    },
+    {
+     "w": "sea",
+     "start": 32.655,
+     "end": 32.88
+    },
+    {
+     "w": "level.",
+     "start": 32.88,
+     "end": 33.53
+    }
+   ]
+  },
+  {
+   "id": "dam",
+   "i": 8,
+   "text": "In 1932, a thirty-two kilometre dam sealed off an entire inland sea.",
+   "start": 34.19,
+   "end": 39.74,
+   "words": [
+    {
+     "w": "In",
+     "start": 34.19,
+     "end": 34.29
+    },
+    {
+     "w": "1932,",
+     "start": 34.29,
+     "end": 35.59
+    },
+    {
+     "w": "a",
+     "start": 35.778,
+     "end": 35.915
+    },
+    {
+     "w": "thirty-two",
+     "start": 35.915,
+     "end": 36.44
+    },
+    {
+     "w": "kilometre",
+     "start": 36.44,
+     "end": 37.04
+    },
+    {
+     "w": "dam",
+     "start": 37.04,
+     "end": 37.415
+    },
+    {
+     "w": "sealed",
+     "start": 37.415,
+     "end": 37.765
+    },
+    {
+     "w": "off",
+     "start": 37.765,
+     "end": 37.978
+    },
+    {
+     "w": "an",
+     "start": 37.978,
+     "end": 38.065
+    },
+    {
+     "w": "entire",
+     "start": 38.065,
+     "end": 38.615
+    },
+    {
+     "w": "inland",
+     "start": 38.615,
+     "end": 39.09
+    },
+    {
+     "w": "sea.",
+     "start": 39.09,
+     "end": 39.74
+    }
+   ]
+  },
+  {
+   "id": "flevo",
+   "i": 9,
+   "text": "Behind it, they pumped the seabed dry, and built a province on it.",
+   "start": 40.25,
+   "end": 44.15,
+   "words": [
+    {
+     "w": "Behind",
+     "start": 40.25,
+     "end": 40.7
+    },
+    {
+     "w": "it,",
+     "start": 40.7,
+     "end": 40.825
+    },
+    {
+     "w": "they",
+     "start": 40.875,
+     "end": 41.038
+    },
+    {
+     "w": "pumped",
+     "start": 41.038,
+     "end": 41.338
+    },
+    {
+     "w": "the",
+     "start": 41.338,
+     "end": 41.438
+    },
+    {
+     "w": "seabed",
+     "start": 41.438,
+     "end": 41.888
+    },
+    {
+     "w": "dry,",
+     "start": 41.888,
+     "end": 42.475
+    },
+    {
+     "w": "and",
+     "start": 42.6,
+     "end": 42.725
+    },
+    {
+     "w": "built",
+     "start": 42.725,
+     "end": 42.963
+    },
+    {
+     "w": "a",
+     "start": 42.963,
+     "end": 43.025
+    },
+    {
+     "w": "province",
+     "start": 43.025,
+     "end": 43.5
+    },
+    {
+     "w": "on",
+     "start": 43.5,
+     "end": 43.7
+    },
+    {
+     "w": "it.",
+     "start": 43.7,
+     "end": 44.15
+    }
+   ]
+  },
+  {
+   "id": "flood",
+   "i": 10,
+   "text": "Then in 1953, a storm surge broke the dikes in the southwest. Over eighteen hundred people died.",
+   "start": 44.86,
+   "end": 52.035,
+   "words": [
+    {
+     "w": "Then",
+     "start": 44.86,
+     "end": 45.06
+    },
+    {
+     "w": "in",
+     "start": 45.06,
+     "end": 45.185
+    },
+    {
+     "w": "1953,",
+     "start": 45.185,
+     "end": 46.435
+    },
+    {
+     "w": "a",
+     "start": 46.56,
+     "end": 46.673
+    },
+    {
+     "w": "storm",
+     "start": 46.673,
+     "end": 47.185
+    },
+    {
+     "w": "surge",
+     "start": 47.185,
+     "end": 47.635
+    },
+    {
+     "w": "broke",
+     "start": 47.635,
+     "end": 47.91
+    },
+    {
+     "w": "the",
+     "start": 47.91,
+     "end": 48.048
+    },
+    {
+     "w": "dikes",
+     "start": 48.048,
+     "end": 48.398
+    },
+    {
+     "w": "in",
+     "start": 48.398,
+     "end": 48.473
+    },
+    {
+     "w": "the",
+     "start": 48.473,
+     "end": 48.573
+    },
+    {
+     "w": "southwest.",
+     "start": 48.573,
+     "end": 49.585
+    },
+    {
+     "w": "Over",
+     "start": 49.723,
+     "end": 50.023
+    },
+    {
+     "w": "eighteen",
+     "start": 50.023,
+     "end": 50.535
+    },
+    {
+     "w": "hundred",
+     "start": 50.535,
+     "end": 50.96
+    },
+    {
+     "w": "people",
+     "start": 50.96,
+     "end": 51.335
+    },
+    {
+     "w": "died.",
+     "start": 51.335,
+     "end": 52.035
+    }
+   ]
+  },
+  {
+   "id": "delta",
+   "i": 11,
+   "text": "The answer was the Delta Works: dams and barriers across the estuaries.",
+   "start": 52.745,
+   "end": 57.62,
+   "words": [
+    {
+     "w": "The",
+     "start": 52.745,
+     "end": 52.895
+    },
+    {
+     "w": "answer",
+     "start": 52.895,
+     "end": 53.37
+    },
+    {
+     "w": "was",
+     "start": 53.37,
+     "end": 53.57
+    },
+    {
+     "w": "the",
+     "start": 53.57,
+     "end": 53.708
+    },
+    {
+     "w": "Delta",
+     "start": 53.708,
+     "end": 54.095
+    },
+    {
+     "w": "Works:",
+     "start": 54.095,
+     "end": 54.72
+    },
+    {
+     "w": "dams",
+     "start": 54.858,
+     "end": 55.345
+    },
+    {
+     "w": "and",
+     "start": 55.345,
+     "end": 55.483
+    },
+    {
+     "w": "barriers",
+     "start": 55.483,
+     "end": 56.045
+    },
+    {
+     "w": "across",
+     "start": 56.045,
+     "end": 56.408
+    },
+    {
+     "w": "the",
+     "start": 56.408,
+     "end": 56.558
+    },
+    {
+     "w": "estuaries.",
+     "start": 56.558,
+     "end": 57.62
+    }
+   ]
+  },
+  {
+   "id": "oster",
+   "i": 12,
+   "text": "The largest stays open for the tides, and drops sixty-two steel gates in a storm.",
+   "start": 58.13,
+   "end": 63.23,
+   "words": [
+    {
+     "w": "The",
+     "start": 58.13,
+     "end": 58.23
+    },
+    {
+     "w": "largest",
+     "start": 58.23,
+     "end": 58.63
+    },
+    {
+     "w": "stays",
+     "start": 58.63,
+     "end": 59.005
+    },
+    {
+     "w": "open",
+     "start": 59.005,
+     "end": 59.33
+    },
+    {
+     "w": "for",
+     "start": 59.33,
+     "end": 59.443
+    },
+    {
+     "w": "the",
+     "start": 59.443,
+     "end": 59.53
+    },
+    {
+     "w": "tides,",
+     "start": 59.53,
+     "end": 60.305
+    },
+    {
+     "w": "and",
+     "start": 60.405,
+     "end": 60.53
+    },
+    {
+     "w": "drops",
+     "start": 60.53,
+     "end": 60.893
+    },
+    {
+     "w": "sixty-two",
+     "start": 60.893,
+     "end": 61.443
+    },
+    {
+     "w": "steel",
+     "start": 61.443,
+     "end": 61.843
+    },
+    {
+     "w": "gates",
+     "start": 61.843,
+     "end": 62.193
+    },
+    {
+     "w": "in",
+     "start": 62.193,
+     "end": 62.268
+    },
+    {
+     "w": "a",
+     "start": 62.268,
+     "end": 62.343
+    },
+    {
+     "w": "storm.",
+     "start": 62.343,
+     "end": 63.23
+    }
+   ]
+  },
+  {
+   "id": "epi",
+   "i": 13,
+   "text": "None of it is finished. The land is still sinking, and the sea is rising.",
+   "start": 63.99,
+   "end": 68.365,
+   "words": [
+    {
+     "w": "None",
+     "start": 63.99,
+     "end": 64.178
+    },
+    {
+     "w": "of",
+     "start": 64.178,
+     "end": 64.265
+    },
+    {
+     "w": "it",
+     "start": 64.265,
+     "end": 64.39
+    },
+    {
+     "w": "is",
+     "start": 64.39,
+     "end": 64.553
+    },
+    {
+     "w": "finished.",
+     "start": 64.553,
+     "end": 65.265
+    },
+    {
+     "w": "The",
+     "start": 65.39,
+     "end": 65.515
+    },
+    {
+     "w": "land",
+     "start": 65.515,
+     "end": 65.803
+    },
+    {
+     "w": "is",
+     "start": 65.803,
+     "end": 65.89
+    },
+    {
+     "w": "still",
+     "start": 65.89,
+     "end": 66.19
+    },
+    {
+     "w": "sinking,",
+     "start": 66.19,
+     "end": 66.69
+    },
+    {
+     "w": "and",
+     "start": 66.74,
+     "end": 66.853
+    },
+    {
+     "w": "the",
+     "start": 66.853,
+     "end": 67.003
+    },
+    {
+     "w": "sea",
+     "start": 67.003,
+     "end": 67.315
+    },
+    {
+     "w": "is",
+     "start": 67.315,
+     "end": 67.478
+    },
+    {
+     "w": "rising.",
+     "start": 67.478,
+     "end": 68.365
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "i": 14,
+   "text": "Holding the line is a job that never ends.",
+   "start": 68.925,
+   "end": 71.7,
+   "words": [
+    {
+     "w": "Holding",
+     "start": 68.925,
+     "end": 69.238
+    },
+    {
+     "w": "the",
+     "start": 69.238,
+     "end": 69.35
+    },
+    {
+     "w": "line",
+     "start": 69.35,
+     "end": 69.725
+    },
+    {
+     "w": "is",
+     "start": 69.725,
+     "end": 69.838
+    },
+    {
+     "w": "a",
+     "start": 69.838,
+     "end": 69.938
+    },
+    {
+     "w": "job",
+     "start": 69.938,
+     "end": 70.375
+    },
+    {
+     "w": "that",
+     "start": 70.375,
+     "end": 70.588
+    },
+    {
+     "w": "never",
+     "start": 70.588,
+     "end": 70.938
+    },
+    {
+     "w": "ends.",
+     "start": 70.938,
+     "end": 71.7
+    }
+   ]
+  }
+ ]
+}

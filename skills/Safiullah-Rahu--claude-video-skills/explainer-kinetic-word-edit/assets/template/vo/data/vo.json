@@ -1,0 +1,287 @@
+{
+ "duration": 34.835,
+ "voice": "af_heart",
+ "words": 34,
+ "wpm_overall": 58.6,
+ "wpm_speech": 150.0,
+ "lines": [
+  {
+   "id": "l1a",
+   "i": 0,
+   "text": "Some nights,",
+   "start": 0.56,
+   "end": 1.585,
+   "words": [
+    {
+     "w": "Some",
+     "start": 0.56,
+     "end": 0.76
+    },
+    {
+     "w": "nights,",
+     "start": 0.76,
+     "end": 1.585
+    }
+   ]
+  },
+  {
+   "id": "l1b",
+   "i": 1,
+   "text": "I go under.",
+   "start": 1.86,
+   "end": 2.935,
+   "words": [
+    {
+     "w": "I",
+     "start": 1.86,
+     "end": 2.035
+    },
+    {
+     "w": "go",
+     "start": 2.035,
+     "end": 2.235
+    },
+    {
+     "w": "under.",
+     "start": 2.235,
+     "end": 2.935
+    }
+   ]
+  },
+  {
+   "id": "l2a",
+   "i": 2,
+   "text": "Every wave",
+   "start": 3.68,
+   "end": 4.73,
+   "words": [
+    {
+     "w": "Every",
+     "start": 3.68,
+     "end": 3.98
+    },
+    {
+     "w": "wave",
+     "start": 3.98,
+     "end": 4.73
+    }
+   ]
+  },
+  {
+   "id": "l2b",
+   "i": 3,
+   "text": "says your name,",
+   "start": 4.94,
+   "end": 6.015,
+   "words": [
+    {
+     "w": "says",
+     "start": 4.94,
+     "end": 5.152
+    },
+    {
+     "w": "your",
+     "start": 5.152,
+     "end": 5.265
+    },
+    {
+     "w": "name,",
+     "start": 5.265,
+     "end": 6.015
+    }
+   ]
+  },
+  {
+   "id": "l3a",
+   "i": 4,
+   "text": "and I sink",
+   "start": 7.31,
+   "end": 8.385,
+   "words": [
+    {
+     "w": "and",
+     "start": 7.31,
+     "end": 7.435
+    },
+    {
+     "w": "I",
+     "start": 7.435,
+     "end": 7.622
+    },
+    {
+     "w": "sink",
+     "start": 7.622,
+     "end": 8.385
+    }
+   ]
+  },
+  {
+   "id": "l3b",
+   "i": 5,
+   "text": "so slow.",
+   "start": 8.595,
+   "end": 9.595,
+   "words": [
+    {
+     "w": "so",
+     "start": 8.595,
+     "end": 8.795
+    },
+    {
+     "w": "slow.",
+     "start": 8.795,
+     "end": 9.595
+    }
+   ]
+  },
+  {
+   "id": "l4",
+   "i": 6,
+   "text": "I kept what I never said.",
+   "start": 12.77,
+   "end": 14.52,
+   "words": [
+    {
+     "w": "I",
+     "start": 12.77,
+     "end": 12.933
+    },
+    {
+     "w": "kept",
+     "start": 12.933,
+     "end": 13.208
+    },
+    {
+     "w": "what",
+     "start": 13.208,
+     "end": 13.333
+    },
+    {
+     "w": "I",
+     "start": 13.333,
+     "end": 13.47
+    },
+    {
+     "w": "never",
+     "start": 13.47,
+     "end": 13.845
+    },
+    {
+     "w": "said.",
+     "start": 13.845,
+     "end": 14.52
+    }
+   ]
+  },
+  {
+   "id": "l5a",
+   "i": 7,
+   "text": "Still",
+   "start": 17.01,
+   "end": 17.785,
+   "words": [
+    {
+     "w": "Still",
+     "start": 17.01,
+     "end": 17.785
+    }
+   ]
+  },
+  {
+   "id": "l5b",
+   "i": 8,
+   "text": "on fire,",
+   "start": 17.995,
+   "end": 19.095,
+   "words": [
+    {
+     "w": "on",
+     "start": 17.995,
+     "end": 18.245
+    },
+    {
+     "w": "fire,",
+     "start": 18.245,
+     "end": 19.095
+    }
+   ]
+  },
+  {
+   "id": "l5c",
+   "i": 9,
+   "text": "underwater.",
+   "start": 19.305,
+   "end": 20.38,
+   "words": [
+    {
+     "w": "underwater.",
+     "start": 19.305,
+     "end": 20.38
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "i": 10,
+   "text": "Come up for air.",
+   "start": 22.46,
+   "end": 23.685,
+   "words": [
+    {
+     "w": "Come",
+     "start": 22.46,
+     "end": 22.622
+    },
+    {
+     "w": "up",
+     "start": 22.622,
+     "end": 22.785
+    },
+    {
+     "w": "for",
+     "start": 22.785,
+     "end": 22.96
+    },
+    {
+     "w": "air.",
+     "start": 22.96,
+     "end": 23.685
+    }
+   ]
+  },
+  {
+   "id": "l7",
+   "i": 11,
+   "text": "Did I ever let go?",
+   "start": 27.31,
+   "end": 28.685,
+   "words": [
+    {
+     "w": "Did",
+     "start": 27.31,
+     "end": 27.422
+    },
+    {
+     "w": "I",
+     "start": 27.422,
+     "end": 27.61
+    },
+    {
+     "w": "ever",
+     "start": 27.61,
+     "end": 27.885
+    },
+    {
+     "w": "let",
+     "start": 27.885,
+     "end": 28.085
+    },
+    {
+     "w": "go?",
+     "start": 28.085,
+     "end": 28.685
+    }
+   ]
+  }
+ ]
+}

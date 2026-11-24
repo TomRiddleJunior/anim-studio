@@ -1,0 +1,103 @@
+{
+ "voice": "bm_george",
+ "speed": 1.25,
+ "lead": 0.12,
+ "tail": 1.9,
+ "gap": 0.3,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "A fox came to a hen house at dusk.",
+   "kw": [
+    "fox",
+    "hen",
+    "house"
+   ]
+  },
+  {
+   "id": "bolt",
+   "text": "The hens bolted the door.",
+   "gap": 0.4
+  },
+  {
+   "id": "ask",
+   "text": "So the fox asked for something small: one paw by the door.",
+   "gap": 0.35
+  },
+  {
+   "id": "yes",
+   "text": "It seemed harmless. They said yes.",
+   "gap": 0.4
+  },
+  {
+   "id": "more",
+   "text": "Next night, one feather. Then one egg.",
+   "gap": 0.35
+  },
+  {
+   "id": "little",
+   "text": "Each time, they whispered: it's only a little.",
+   "gap": 0.3
+  },
+  {
+   "id": "weeks",
+   "text": "Weeks passed.",
+   "gap": 0.4
+  },
+  {
+   "id": "key",
+   "text": "Then the fox asked for the key.",
+   "gap": 0.45
+  },
+  {
+   "id": "nice",
+   "text": "Some even thanked it for asking nicely.",
+   "gap": 0.35
+  },
+  {
+   "id": "habit",
+   "text": "By then, saying yes was just what they did.",
+   "gap": 0.35
+  },
+  {
+   "id": "fable",
+   "text": "It's a fable. But the pattern has a name: foot in the door.",
+   "gap": 0.55
+  },
+  {
+   "id": "study",
+   "text": "In a 1966 study, homeowners were asked to show a tiny safe-driving sign.",
+   "gap": 0.4
+  },
+  {
+   "id": "big",
+   "text": "Two weeks later, someone else asked for a huge sign on their lawn.",
+   "gap": 0.35
+  },
+  {
+   "id": "res1",
+   "text": "Of those asked for the tiny sign first, seventy-six percent agreed.",
+   "gap": 0.4
+  },
+  {
+   "id": "res2",
+   "text": "Of those asked cold, seventeen percent.",
+   "gap": 0.3
+  },
+  {
+   "id": "why",
+   "text": "The researchers' guess: a small yes changes how you see yourself.",
+   "gap": 0.45
+  },
+  {
+   "id": "next",
+   "text": "So the next ask never feels like the big one.",
+   "gap": 0.35
+  },
+  {
+   "id": "q",
+   "text": "Which yes should the hens have refused?",
+   "gap": 0.55
+  }
+ ]
+}

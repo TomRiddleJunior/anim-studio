@@ -1,0 +1,1268 @@
+{
+ "duration": 76.395,
+ "voice": "am_michael",
+ "words": 214,
+ "wpm_overall": 168.1,
+ "wpm_speech": 193.0,
+ "lines": [
+  {
+   "id": "h1",
+   "i": 0,
+   "text": "Boeing just lost about sixteen billion dollars in a single day.",
+   "start": 0.18,
+   "end": 3.58,
+   "words": [
+    {
+     "w": "Boeing",
+     "start": 0.18,
+     "end": 0.455
+    },
+    {
+     "w": "just",
+     "start": 0.455,
+     "end": 0.63
+    },
+    {
+     "w": "lost",
+     "start": 0.63,
+     "end": 0.918
+    },
+    {
+     "w": "about",
+     "start": 0.918,
+     "end": 1.193
+    },
+    {
+     "w": "sixteen",
+     "start": 1.193,
+     "end": 1.655
+    },
+    {
+     "w": "billion",
+     "start": 1.655,
+     "end": 2.005
+    },
+    {
+     "w": "dollars",
+     "start": 2.005,
+     "end": 2.48
+    },
+    {
+     "w": "in",
+     "start": 2.48,
+     "end": 2.567
+    },
+    {
+     "w": "a",
+     "start": 2.567,
+     "end": 2.643
+    },
+    {
+     "w": "single",
+     "start": 2.643,
+     "end": 3.03
+    },
+    {
+     "w": "day.",
+     "start": 3.03,
+     "end": 3.58
+    }
+   ]
+  },
+  {
+   "id": "h2",
+   "i": 1,
+   "text": "And the reason is sitting right outside your window seat.",
+   "start": 3.91,
+   "end": 6.685,
+   "words": [
+    {
+     "w": "And",
+     "start": 3.91,
+     "end": 4.022
+    },
+    {
+     "w": "the",
+     "start": 4.022,
+     "end": 4.11
+    },
+    {
+     "w": "reason",
+     "start": 4.11,
+     "end": 4.435
+    },
+    {
+     "w": "is",
+     "start": 4.435,
+     "end": 4.547
+    },
+    {
+     "w": "sitting",
+     "start": 4.547,
+     "end": 5.072
+    },
+    {
+     "w": "right",
+     "start": 5.072,
+     "end": 5.31
+    },
+    {
+     "w": "outside",
+     "start": 5.31,
+     "end": 5.747
+    },
+    {
+     "w": "your",
+     "start": 5.747,
+     "end": 5.86
+    },
+    {
+     "w": "window",
+     "start": 5.86,
+     "end": 6.197
+    },
+    {
+     "w": "seat.",
+     "start": 6.197,
+     "end": 6.685
+    }
+   ]
+  },
+  {
+   "id": "f1",
+   "i": 2,
+   "text": "Boeing, ticker [B-A](/bˈi ˈA/), fell almost eleven percent on Tuesday,",
+   "start": 7.115,
+   "end": 10.64,
+   "words": [
+    {
+     "w": "Boeing,",
+     "start": 7.115,
+     "end": 7.44
+    },
+    {
+     "w": "ticker",
+     "start": 7.478,
+     "end": 7.715
+    },
+    {
+     "w": "B-A,",
+     "start": 7.715,
+     "end": 8.29
+    },
+    {
+     "w": "fell",
+     "start": 8.415,
+     "end": 8.64
+    },
+    {
+     "w": "almost",
+     "start": 8.64,
+     "end": 9.015
+    },
+    {
+     "w": "eleven",
+     "start": 9.015,
+     "end": 9.39
+    },
+    {
+     "w": "percent",
+     "start": 9.39,
+     "end": 9.727
+    },
+    {
+     "w": "on",
+     "start": 9.727,
+     "end": 9.915
+    },
+    {
+     "w": "Tuesday,",
+     "start": 9.915,
+     "end": 10.64
+    }
+   ]
+  },
+  {
+   "id": "f2",
+   "i": 3,
+   "text": "its worst day in more than a year and a half.",
+   "start": 10.91,
+   "end": 13.135,
+   "words": [
+    {
+     "w": "its",
+     "start": 10.91,
+     "end": 11.085
+    },
+    {
+     "w": "worst",
+     "start": 11.085,
+     "end": 11.36
+    },
+    {
+     "w": "day",
+     "start": 11.36,
+     "end": 11.76
+    },
+    {
+     "w": "in",
+     "start": 11.76,
+     "end": 11.86
+    },
+    {
+     "w": "more",
+     "start": 11.86,
+     "end": 12.047
+    },
+    {
+     "w": "than",
+     "start": 12.047,
+     "end": 12.147
+    },
+    {
+     "w": "a",
+     "start": 12.147,
+     "end": 12.21
+    },
+    {
+     "w": "year",
+     "start": 12.21,
+     "end": 12.397
+    },
+    {
+     "w": "and",
+     "start": 12.397,
+     "end": 12.498
+    },
+    {
+     "w": "a",
+     "start": 12.498,
+     "end": 12.56
+    },
+    {
+     "w": "half.",
+     "start": 12.56,
+     "end": 13.135
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "i": 4,
+   "text": "The strange part?",
+   "start": 13.645,
+   "end": 14.67,
+   "words": [
+    {
+     "w": "The",
+     "start": 13.645,
+     "end": 13.72
+    },
+    {
+     "w": "strange",
+     "start": 13.72,
+     "end": 14.145
+    },
+    {
+     "w": "part?",
+     "start": 14.145,
+     "end": 14.67
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "i": 5,
+   "text": "Its order book just hit a record seven hundred forty-five billion dollars. That's more than sixty-three hundred jets.",
+   "start": 15.06,
+   "end": 21.635,
+   "words": [
+    {
+     "w": "Its",
+     "start": 15.06,
+     "end": 15.235
+    },
+    {
+     "w": "order",
+     "start": 15.235,
+     "end": 15.535
+    },
+    {
+     "w": "book",
+     "start": 15.535,
+     "end": 15.76
+    },
+    {
+     "w": "just",
+     "start": 15.76,
+     "end": 15.985
+    },
+    {
+     "w": "hit",
+     "start": 15.985,
+     "end": 16.297
+    },
+    {
+     "w": "a",
+     "start": 16.297,
+     "end": 16.41
+    },
+    {
+     "w": "record",
+     "start": 16.41,
+     "end": 16.797
+    },
+    {
+     "w": "seven",
+     "start": 16.797,
+     "end": 17.16
+    },
+    {
+     "w": "hundred",
+     "start": 17.16,
+     "end": 17.522
+    },
+    {
+     "w": "forty-five",
+     "start": 17.522,
+     "end": 18.197
+    },
+    {
+     "w": "billion",
+     "start": 18.197,
+     "end": 18.585
+    },
+    {
+     "w": "dollars.",
+     "start": 18.585,
+     "end": 19.31
+    },
+    {
+     "w": "That's",
+     "start": 19.41,
+     "end": 19.685
+    },
+    {
+     "w": "more",
+     "start": 19.685,
+     "end": 19.91
+    },
+    {
+     "w": "than",
+     "start": 19.91,
+     "end": 20.097
+    },
+    {
+     "w": "sixty-three",
+     "start": 20.097,
+     "end": 20.66
+    },
+    {
+     "w": "hundred",
+     "start": 20.66,
+     "end": 21.035
+    },
+    {
+     "w": "jets.",
+     "start": 21.035,
+     "end": 21.635
+    }
+   ]
+  },
+  {
+   "id": "q1",
+   "i": 6,
+   "text": "So what spooked investors?",
+   "start": 22.105,
+   "end": 23.48,
+   "words": [
+    {
+     "w": "So",
+     "start": 22.105,
+     "end": 22.23
+    },
+    {
+     "w": "what",
+     "start": 22.23,
+     "end": 22.38
+    },
+    {
+     "w": "spooked",
+     "start": 22.38,
+     "end": 22.692
+    },
+    {
+     "w": "investors?",
+     "start": 22.692,
+     "end": 23.48
+    }
+   ]
+  },
+  {
+   "id": "q2",
+   "i": 7,
+   "text": "The wait.",
+   "start": 23.83,
+   "end": 24.455,
+   "words": [
+    {
+     "w": "The",
+     "start": 23.83,
+     "end": 23.955
+    },
+    {
+     "w": "wait.",
+     "start": 23.955,
+     "end": 24.455
+    }
+   ]
+  },
+  {
+   "id": "q3",
+   "i": 8,
+   "text": "Boeing wanted to deliver around five hundred of its seven-thirty-seven jets this year. Nine months in, it has delivered three hundred sixty-seven, and it now says it won't get there.",
+   "start": 24.885,
+   "end": 34.51,
+   "words": [
+    {
+     "w": "Boeing",
+     "start": 24.885,
+     "end": 25.16
+    },
+    {
+     "w": "wanted",
+     "start": 25.16,
+     "end": 25.41
+    },
+    {
+     "w": "to",
+     "start": 25.41,
+     "end": 25.535
+    },
+    {
+     "w": "deliver",
+     "start": 25.535,
+     "end": 26.01
+    },
+    {
+     "w": "around",
+     "start": 26.01,
+     "end": 26.347
+    },
+    {
+     "w": "five",
+     "start": 26.347,
+     "end": 26.635
+    },
+    {
+     "w": "hundred",
+     "start": 26.635,
+     "end": 26.922
+    },
+    {
+     "w": "of",
+     "start": 26.922,
+     "end": 26.997
+    },
+    {
+     "w": "its",
+     "start": 26.997,
+     "end": 27.147
+    },
+    {
+     "w": "seven-thirty-seven",
+     "start": 27.147,
+     "end": 28.185
+    },
+    {
+     "w": "jets",
+     "start": 28.185,
+     "end": 28.46
+    },
+    {
+     "w": "this",
+     "start": 28.46,
+     "end": 28.66
+    },
+    {
+     "w": "year.",
+     "start": 28.66,
+     "end": 29.235
+    },
+    {
+     "w": "Nine",
+     "start": 29.372,
+     "end": 29.66
+    },
+    {
+     "w": "months",
+     "start": 29.66,
+     "end": 29.96
+    },
+    {
+     "w": "in,",
+     "start": 29.96,
+     "end": 30.385
+    },
+    {
+     "w": "it",
+     "start": 30.485,
+     "end": 30.572
+    },
+    {
+     "w": "has",
+     "start": 30.572,
+     "end": 30.76
+    },
+    {
+     "w": "delivered",
+     "start": 30.76,
+     "end": 31.222
+    },
+    {
+     "w": "three",
+     "start": 31.222,
+     "end": 31.46
+    },
+    {
+     "w": "hundred",
+     "start": 31.46,
+     "end": 31.822
+    },
+    {
+     "w": "sixty-seven,",
+     "start": 31.822,
+     "end": 32.71
+    },
+    {
+     "w": "and",
+     "start": 32.81,
+     "end": 32.922
+    },
+    {
+     "w": "it",
+     "start": 32.922,
+     "end": 33.01
+    },
+    {
+     "w": "now",
+     "start": 33.01,
+     "end": 33.222
+    },
+    {
+     "w": "says",
+     "start": 33.222,
+     "end": 33.485
+    },
+    {
+     "w": "it",
+     "start": 33.485,
+     "end": 33.585
+    },
+    {
+     "w": "won't",
+     "start": 33.585,
+     "end": 33.785
+    },
+    {
+     "w": "get",
+     "start": 33.785,
+     "end": 33.985
+    },
+    {
+     "w": "there.",
+     "start": 33.985,
+     "end": 34.51
+    }
+   ]
+  },
+  {
+   "id": "q4",
+   "i": 9,
+   "text": "Next year's free cash? Three billion dollars. Wall Street wanted five and a half.",
+   "start": 34.94,
+   "end": 39.34,
+   "words": [
+    {
+     "w": "Next",
+     "start": 34.94,
+     "end": 35.102
+    },
+    {
+     "w": "year's",
+     "start": 35.102,
+     "end": 35.34
+    },
+    {
+     "w": "free",
+     "start": 35.34,
+     "end": 35.54
+    },
+    {
+     "w": "cash?",
+     "start": 35.54,
+     "end": 35.99
+    },
+    {
+     "w": "Three",
+     "start": 36.102,
+     "end": 36.377
+    },
+    {
+     "w": "billion",
+     "start": 36.377,
+     "end": 36.74
+    },
+    {
+     "w": "dollars.",
+     "start": 36.74,
+     "end": 37.365
+    },
+    {
+     "w": "Wall",
+     "start": 37.477,
+     "end": 37.715
+    },
+    {
+     "w": "Street",
+     "start": 37.715,
+     "end": 38.015
+    },
+    {
+     "w": "wanted",
+     "start": 38.015,
+     "end": 38.34
+    },
+    {
+     "w": "five",
+     "start": 38.34,
+     "end": 38.602
+    },
+    {
+     "w": "and",
+     "start": 38.602,
+     "end": 38.702
+    },
+    {
+     "w": "a",
+     "start": 38.702,
+     "end": 38.765
+    },
+    {
+     "w": "half.",
+     "start": 38.765,
+     "end": 39.34
+    }
+   ]
+  },
+  {
+   "id": "t1",
+   "i": 10,
+   "text": "But here's the twist almost no one is mentioning.",
+   "start": 39.85,
+   "end": 42.325,
+   "words": [
+    {
+     "w": "But",
+     "start": 39.85,
+     "end": 39.975
+    },
+    {
+     "w": "here's",
+     "start": 39.975,
+     "end": 40.237
+    },
+    {
+     "w": "the",
+     "start": 40.237,
+     "end": 40.325
+    },
+    {
+     "w": "twist",
+     "start": 40.325,
+     "end": 40.762
+    },
+    {
+     "w": "almost",
+     "start": 40.762,
+     "end": 41.15
+    },
+    {
+     "w": "no",
+     "start": 41.15,
+     "end": 41.325
+    },
+    {
+     "w": "one",
+     "start": 41.325,
+     "end": 41.462
+    },
+    {
+     "w": "is",
+     "start": 41.462,
+     "end": 41.6
+    },
+    {
+     "w": "mentioning.",
+     "start": 41.6,
+     "end": 42.325
+    }
+   ]
+  },
+  {
+   "id": "t2",
+   "i": 11,
+   "text": "It isn't demand, and it isn't engines.",
+   "start": 42.695,
+   "end": 44.745,
+   "words": [
+    {
+     "w": "It",
+     "start": 42.695,
+     "end": 42.807
+    },
+    {
+     "w": "isn't",
+     "start": 42.807,
+     "end": 43.045
+    },
+    {
+     "w": "demand,",
+     "start": 43.045,
+     "end": 43.52
+    },
+    {
+     "w": "and",
+     "start": 43.595,
+     "end": 43.707
+    },
+    {
+     "w": "it",
+     "start": 43.707,
+     "end": 43.782
+    },
+    {
+     "w": "isn't",
+     "start": 43.782,
+     "end": 44.02
+    },
+    {
+     "w": "engines.",
+     "start": 44.02,
+     "end": 44.745
+    }
+   ]
+  },
+  {
+   "id": "t3",
+   "i": 12,
+   "text": "It's the wings. Boeing builds every seven-thirty-seven wing itself, and says that's still its biggest bottleneck.",
+   "start": 45.095,
+   "end": 51.32,
+   "words": [
+    {
+     "w": "It's",
+     "start": 45.095,
+     "end": 45.282
+    },
+    {
+     "w": "the",
+     "start": 45.282,
+     "end": 45.395
+    },
+    {
+     "w": "wings.",
+     "start": 45.395,
+     "end": 46.07
+    },
+    {
+     "w": "Boeing",
+     "start": 46.207,
+     "end": 46.545
+    },
+    {
+     "w": "builds",
+     "start": 46.545,
+     "end": 46.857
+    },
+    {
+     "w": "every",
+     "start": 46.857,
+     "end": 47.22
+    },
+    {
+     "w": "seven-thirty-seven",
+     "start": 47.22,
+     "end": 48.22
+    },
+    {
+     "w": "wing",
+     "start": 48.22,
+     "end": 48.42
+    },
+    {
+     "w": "itself,",
+     "start": 48.42,
+     "end": 49.02
+    },
+    {
+     "w": "and",
+     "start": 49.095,
+     "end": 49.22
+    },
+    {
+     "w": "says",
+     "start": 49.22,
+     "end": 49.47
+    },
+    {
+     "w": "that's",
+     "start": 49.47,
+     "end": 49.72
+    },
+    {
+     "w": "still",
+     "start": 49.72,
+     "end": 49.982
+    },
+    {
+     "w": "its",
+     "start": 49.982,
+     "end": 50.132
+    },
+    {
+     "w": "biggest",
+     "start": 50.132,
+     "end": 50.495
+    },
+    {
+     "w": "bottleneck.",
+     "start": 50.495,
+     "end": 51.32
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "i": 13,
+   "text": "Why does that matter?",
+   "start": 51.79,
+   "end": 52.89,
+   "words": [
+    {
+     "w": "Why",
+     "start": 51.79,
+     "end": 51.927
+    },
+    {
+     "w": "does",
+     "start": 51.927,
+     "end": 52.102
+    },
+    {
+     "w": "that",
+     "start": 52.102,
+     "end": 52.315
+    },
+    {
+     "w": "matter?",
+     "start": 52.315,
+     "end": 52.89
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "i": 14,
+   "text": "Because airlines pay most of a jet's price on delivery.",
+   "start": 53.22,
+   "end": 56.27,
+   "words": [
+    {
+     "w": "Because",
+     "start": 53.22,
+     "end": 53.507
+    },
+    {
+     "w": "airlines",
+     "start": 53.507,
+     "end": 54.02
+    },
+    {
+     "w": "pay",
+     "start": 54.02,
+     "end": 54.332
+    },
+    {
+     "w": "most",
+     "start": 54.332,
+     "end": 54.582
+    },
+    {
+     "w": "of",
+     "start": 54.582,
+     "end": 54.657
+    },
+    {
+     "w": "a",
+     "start": 54.657,
+     "end": 54.72
+    },
+    {
+     "w": "jet's",
+     "start": 54.72,
+     "end": 55.02
+    },
+    {
+     "w": "price",
+     "start": 55.02,
+     "end": 55.395
+    },
+    {
+     "w": "on",
+     "start": 55.395,
+     "end": 55.545
+    },
+    {
+     "w": "delivery.",
+     "start": 55.545,
+     "end": 56.27
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "i": 15,
+   "text": "An order is a promise. A delivery is cash.",
+   "start": 56.62,
+   "end": 59.27,
+   "words": [
+    {
+     "w": "An",
+     "start": 56.62,
+     "end": 56.757
+    },
+    {
+     "w": "order",
+     "start": 56.757,
+     "end": 57.12
+    },
+    {
+     "w": "is",
+     "start": 57.12,
+     "end": 57.232
+    },
+    {
+     "w": "a",
+     "start": 57.232,
+     "end": 57.295
+    },
+    {
+     "w": "promise.",
+     "start": 57.295,
+     "end": 57.845
+    },
+    {
+     "w": "A",
+     "start": 57.945,
+     "end": 58.02
+    },
+    {
+     "w": "delivery",
+     "start": 58.02,
+     "end": 58.495
+    },
+    {
+     "w": "is",
+     "start": 58.495,
+     "end": 58.645
+    },
+    {
+     "w": "cash.",
+     "start": 58.645,
+     "end": 59.27
+    }
+   ]
+  },
+  {
+   "id": "w4",
+   "i": 16,
+   "text": "And a steady forty-seven jets a month now slips to early twenty twenty-seven.",
+   "start": 59.66,
+   "end": 63.885,
+   "words": [
+    {
+     "w": "And",
+     "start": 59.66,
+     "end": 59.772
+    },
+    {
+     "w": "a",
+     "start": 59.772,
+     "end": 59.835
+    },
+    {
+     "w": "steady",
+     "start": 59.835,
+     "end": 60.147
+    },
+    {
+     "w": "forty-seven",
+     "start": 60.147,
+     "end": 60.81
+    },
+    {
+     "w": "jets",
+     "start": 60.81,
+     "end": 61.21
+    },
+    {
+     "w": "a",
+     "start": 61.21,
+     "end": 61.31
+    },
+    {
+     "w": "month",
+     "start": 61.31,
+     "end": 61.56
+    },
+    {
+     "w": "now",
+     "start": 61.56,
+     "end": 61.96
+    },
+    {
+     "w": "slips",
+     "start": 61.96,
+     "end": 62.285
+    },
+    {
+     "w": "to",
+     "start": 62.285,
+     "end": 62.41
+    },
+    {
+     "w": "early",
+     "start": 62.41,
+     "end": 62.71
+    },
+    {
+     "w": "twenty",
+     "start": 62.71,
+     "end": 63.01
+    },
+    {
+     "w": "twenty-seven.",
+     "start": 63.01,
+     "end": 63.885
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "i": 17,
+   "text": "The market isn't asking if Boeing can sell planes.",
+   "start": 64.395,
+   "end": 66.97,
+   "words": [
+    {
+     "w": "The",
+     "start": 64.395,
+     "end": 64.47
+    },
+    {
+     "w": "market",
+     "start": 64.47,
+     "end": 64.795
+    },
+    {
+     "w": "isn't",
+     "start": 64.795,
+     "end": 65.057
+    },
+    {
+     "w": "asking",
+     "start": 65.057,
+     "end": 65.407
+    },
+    {
+     "w": "if",
+     "start": 65.407,
+     "end": 65.545
+    },
+    {
+     "w": "Boeing",
+     "start": 65.545,
+     "end": 65.845
+    },
+    {
+     "w": "can",
+     "start": 65.845,
+     "end": 66.02
+    },
+    {
+     "w": "sell",
+     "start": 66.02,
+     "end": 66.27
+    },
+    {
+     "w": "planes.",
+     "start": 66.27,
+     "end": 66.97
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "i": 18,
+   "text": "It's asking if it can build the wings.",
+   "start": 67.32,
+   "end": 69.17,
+   "words": [
+    {
+     "w": "It's",
+     "start": 67.32,
+     "end": 67.482
+    },
+    {
+     "w": "asking",
+     "start": 67.482,
+     "end": 67.845
+    },
+    {
+     "w": "if",
+     "start": 67.845,
+     "end": 67.957
+    },
+    {
+     "w": "it",
+     "start": 67.957,
+     "end": 68.032
+    },
+    {
+     "w": "can",
+     "start": 68.032,
+     "end": 68.195
+    },
+    {
+     "w": "build",
+     "start": 68.195,
+     "end": 68.432
+    },
+    {
+     "w": "the",
+     "start": 68.432,
+     "end": 68.52
+    },
+    {
+     "w": "wings.",
+     "start": 68.52,
+     "end": 69.17
+    }
+   ]
+  },
+  {
+   "id": "e1",
+   "i": 19,
+   "text": "Buying chance, or warning sign? Tell me in the comments.",
+   "start": 69.74,
+   "end": 72.54,
+   "words": [
+    {
+     "w": "Buying",
+     "start": 69.74,
+     "end": 70.027
+    },
+    {
+     "w": "chance,",
+     "start": 70.027,
+     "end": 70.34
+    },
+    {
+     "w": "or",
+     "start": 70.377,
+     "end": 70.465
+    },
+    {
+     "w": "warning",
+     "start": 70.465,
+     "end": 70.79
+    },
+    {
+     "w": "sign?",
+     "start": 70.79,
+     "end": 71.215
+    },
+    {
+     "w": "Tell",
+     "start": 71.315,
+     "end": 71.527
+    },
+    {
+     "w": "me",
+     "start": 71.527,
+     "end": 71.627
+    },
+    {
+     "w": "in",
+     "start": 71.627,
+     "end": 71.702
+    },
+    {
+     "w": "the",
+     "start": 71.702,
+     "end": 71.79
+    },
+    {
+     "w": "comments.",
+     "start": 71.79,
+     "end": 72.54
+    }
+   ]
+  },
+  {
+   "id": "e2",
+   "i": 20,
+   "text": "And follow for the daily market story.",
+   "start": 72.87,
+   "end": 74.845,
+   "words": [
+    {
+     "w": "And",
+     "start": 72.87,
+     "end": 73.007
+    },
+    {
+     "w": "follow",
+     "start": 73.007,
+     "end": 73.345
+    },
+    {
+     "w": "for",
+     "start": 73.345,
+     "end": 73.457
+    },
+    {
+     "w": "the",
+     "start": 73.457,
+     "end": 73.57
+    },
+    {
+     "w": "daily",
+     "start": 73.57,
+     "end": 73.895
+    },
+    {
+     "w": "market",
+     "start": 73.895,
+     "end": 74.22
+    },
+    {
+     "w": "story.",
+     "start": 74.22,
+     "end": 74.845
+    }
+   ]
+  }
+ ]
+}

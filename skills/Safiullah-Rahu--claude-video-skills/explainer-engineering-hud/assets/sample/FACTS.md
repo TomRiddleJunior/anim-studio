@@ -1,0 +1,28 @@
+# FACTS — "The sea gate that closes itself" (Maeslantkering, Storm Pia, 21 Dec 2023)
+
+Every number and claim in the narration and on screen, with two independent sources each. Checked 9 Nov 2026.
+
+| # | claim (VO or on screen) | source 1 | source 2 |
+|---|---|---|---|
+| 1 | On 21 Dec 2023, during Storm Pia, the Maeslantkering closed automatically ("no human gave the order", "closes the barrier itself", "not one of them had to press a button") | Schuttevaer, 21 Dec 2023: "volledig automatisch gesloten", first time since 1997 (schuttevaer.nl/nieuws/actueel/2023/12/21/hoogwater-en-storm-maeslantkering-inderdaad-spontaan-dicht) | Wikipedia "Maeslantkering": 21 Dec 2023, first automatic closure at the 3.0 m threshold; the decision is made by the BOS computer (en.wikipedia.org/wiki/Maeslantkering) |
+| 2 | Storm Pia, 21–22 Dec 2023, North Sea surge on the Dutch coast | Water News Europe, "World's largest storm surge barrier closes for first time during storm" | H2O Waternetwerk, 21 Dec 2023 (Tim Koorn), "Stormvloedkeringen dicht door storm Pia en hoge waterstanden" |
+| 3 | The shipping channel (Nieuwe Waterweg) is 360 m wide at the barrier ("360 metres wide", GAP ~360 m) | Wikipedia: closed, it spans the full 360 m width | Structurae "Maeslant Barrier": opening 360 m × 12 m |
+| 4 | A storm flood = the astronomical tide + a wind-driven surge on top | NOAA National Hurricane Center: storm surge is "an abnormal water level rise ... over and above the predicted astronomical tide"; storm tide = surge + tide (nhc.noaa.gov/surge) | Water News Europe (Pia): "storm surge ... up to three metres above the normal high tide mark" |
+| 5 | The Dutch tide rises twice a day (semi-diurnal) | Tides Atlas, Hoek van Holland: a ~12-hour cycle, two high and two low tides each day (tidesatlas.com/en/netherlands/south-holland/hoek-van-holland) | Journal of Coastal and Hydraulic Structures (TU Delft, 2023): semidiurnal lunar and solar tides dominate at Dutch North Sea stations; tide tables (Windfinder, Hoek van Holland) list two high waters a day |
+| 6 | The decision is handed to a computer called BOS | Wikipedia: centralized computer system called BOS (200,000 lines of C++) | Rijkswaterstaat "Maeslant Barrier" page: the barrier responds to water level predictions by the BOS computer system |
+| 7 | Trigger: forecast of 3 m above NAP (≈ sea level) at Rotterdam ("+3.0 m NAP · CLOSE") | Rijkswaterstaat: closes fully automatically when the level is predicted above 3 m NAP near Rotterdam (or 2.9 m near Dordrecht) | Schuttevaer + Maassluis.nu (21 Dec 2023): the critical limit of 3.00 m threatened to be exceeded |
+| 8 | That evening the forecast crossed the line; ships were halted | Maassluis.nu: closing started 20:15 because 3.00 m threatened to be exceeded | Schuttevaer: shipping on the Nieuwe Waterweg halted before the closure; Wikipedia: traffic stopped about 18:00 |
+| 9 | Dry docks flooded; hollow gates floated out, filled with water and sank to the bottom | Wikipedia: closing procedure (docks flooded, gates float, water admitted to the hollows, they sink) | Schuttevaer: the gates fill with water and sink to the bottom of the Nieuwe Waterweg; Watersnoodmuseum: floating pontoons filled with water |
+| 10 | Two gates, each 210 m long, 22 m high ("210 m · EACH GATE · 22 m HIGH") | Rijkswaterstaat: 2 gates, each 210 m wide, 22 m high, 15 m deep | Watersnoodmuseum + Schuttevaer: 210 m long, 22 m high |
+| 11 | Ball joints 10 m wide, 680 t ("BALL JOINT · Ø 10 m · 680 t") | Rijkswaterstaat: ball-and-socket joints, 10 m diameter, 680 tonnes | Wikipedia + Watersnoodmuseum: 10 m, 680 tonnes |
+| 12 | The closing takes about 2 hours ("~2 h") | Wikipedia: 2023 closing started 20:15 and took about 2 hours; Watersnoodmuseum: closes within 2 hours | Maassluis.nu: "Dit proces neemt twee uur in beslag"; RWS: sink within 2 hours |
+| 13 | That night all six of the country's big storm barriers were shut (tiles: Maeslant, Hartel, Oosterschelde, Haringvliet, Hollandsche IJssel, Ramspol) | Water News Europe: all 6 major barriers closed; Maeslant and Hartel last, just after 22:00 | H2O Waternetwerk: Ramspol, Hollandsche IJsselkering, Haringvliet, Oosterschelde, Maeslant closed; Schuttevaer: Hartelkering also closed |
+| 14 | About 1.5 million people live behind it ("1.5M PEOPLE BEHIND IT") | Euronews (18 Sep 2023), "How are the Dutch facing the threat of rising sea levels?": protects one and a half million people | HZ University of Applied Sciences blog: "protects 1.5 million people" (the Watersnoodmuseum gives "over 2 million"; we use the lower figure) |
+
+## Notes and deliberate omissions
+- **"A first"** was cut from the script: H2O Waternetwerk says all five big barriers had already closed together in January 2018, so "the first time all closed at once" is contested. The film says only that all six were shut that night.
+- **2007 and 2018 closures** happened with the trigger lowered for tests (H2O, Wikipedia); the film never claims 2023 was the first closure ever, only that the computer closed it on its own.
+- **Reopening time** (04:45 per Wikipedia, "around 06:00" expected per Schuttevaer) is not stated in the film.
+- **Map** coastlines: Natural Earth 1:10m (public domain). The channel line is hand-placed along the Nieuwe Waterweg. The 3D barrier is a stylised model (layout and proportions, not a survey); the docks, BOS building and gauges are placed for composition.
+- **Photo inset**: "Bij Maasdijk, de Maeslantkering foto1 2014-03-09" by Michielverbeek, CC BY-SA 3.0, Wikimedia Commons (cropped to leave out a ship's lettering). Credit shown on screen.
+- **No logos**: the agency card is plain text (RIJKSWATERSTAAT / DUTCH WATER AGENCY).

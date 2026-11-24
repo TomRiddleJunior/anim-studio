@@ -1,0 +1,28 @@
+{
+ "vo_rms_db_speech": -22.51,
+ "amb_re_vo_db": -23.5,
+ "music_re_vo_db": -20.5,
+ "voice_over_rest_db_full": 11.11,
+ "voice_over_rest_db_nomusic": 11.67,
+ "voice_over_music_db": 20.5,
+ "bpm": 76.0,
+ "ring_duck": [
+  {
+   "word": "l11:sink",
+   "acoustic_end_s": 55.005,
+   "ring_gain_db": -10.0,
+   "window_s": [
+    54.725,
+    55.055
+   ]
+  }
+ ],
+ "final": {
+  "lufs": -14.3,
+  "true_peak_dbtp": -1.9
+ },
+ "final_nomusic": {
+  "lufs": -14.3,
+  "true_peak_dbtp": -2.0
+ }
+}

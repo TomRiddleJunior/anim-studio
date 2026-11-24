@@ -1,0 +1,18 @@
+{
+ "G": {
+  "name": "Wise Guardian",
+  "description": "An ancient, calm male voice, deep and warm, slow and deliberate, gentle authority, like a kind mentor speaking softly inside a vast clock tower.",
+  "anchor_text": "Time moves through this clock like a river. Sit with me a while, and listen closely.",
+  "anchor_seed": 1,
+  "anchor_file": "G_anchor.wav (assets/voices; copied to vo/anchors by new_episode.sh)",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign (instruct = description + the line's delivery; torch.manual_seed(seed))"
+ },
+ "L": {
+  "name": "Little girl",
+  "description": "A bright, curious little girl about eight years old, American, soft and sincere, a little breathy with wonder.",
+  "anchor_text": "I always wonder what the stars are doing when nobody is looking up at them.",
+  "anchor_seed": 1,
+  "anchor_file": "L_anchor.wav (assets/voices; copied to vo/anchors by new_episode.sh)",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign (instruct = description + the line's delivery; torch.manual_seed(seed))"
+ }
+}

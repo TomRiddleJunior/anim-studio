@@ -1,0 +1,74 @@
+{
+  "name": "Xerox zine",
+  "dark": false,
+  "description": "Photocopied punk/hip-hop zine: toner black on grey-white, one fluorescent red, torn edges, stamped condensed caps, typewriter captions, heavy grain.",
+  "mood": [
+    "punk",
+    "hip-hop",
+    "garage",
+    "protest",
+    "raw",
+    "DIY"
+  ],
+  "palette": {
+    "bg": "#ECEAE4",
+    "bg2": "#DEDBD3",
+    "dim": "#A8A49C",
+    "mid": "#5E5B55",
+    "fg": "#0B0B0B",
+    "accent": "#FF3B1F",
+    "hot": "#FF7A5C",
+    "deep": "#B3200B",
+    "rare": "#2E5BFF"
+  },
+  "fonts": {
+    "display": {
+      "family": "Big Shoulders Display",
+      "weights": [
+        500,
+        700,
+        900
+      ]
+    },
+    "text": {
+      "family": "Special Elite",
+      "weights": [
+        400
+      ]
+    },
+    "mono": {
+      "family": "Courier Prime",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.12,
+    "bloomThreshold": 1.4,
+    "bloomKnee": 0.2,
+    "halation": 0.0,
+    "ca": 1.0,
+    "grain": 0.1,
+    "vignette": 0.22
+  },
+  "type": {
+    "case": "upper",
+    "tracking": 0
+  },
+  "motif": "dot",
+  "scenes": {
+    "lines": {
+      "hatch": 0.2,
+      "weight": 900
+    },
+    "slam": {
+      "weight": 900
+    },
+    "interlude": {
+      "variant": "bars"
+    }
+  },
+  "idiom": "Cut-and-paste: words as ransom-note strips, stamps, tape, photocopy smears (high-contrast threshold noise), hand-drawn arrows. Things jitter by a frame (frameIdx), slam, and get crossed out. Red only for stamps and circles."
+}

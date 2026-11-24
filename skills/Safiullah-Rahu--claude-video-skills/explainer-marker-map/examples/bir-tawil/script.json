@@ -1,0 +1,74 @@
+{
+  "slug": "bir-tawil",
+  "title": "Bir Tawil: Nobody's Land",
+  "status": "approved by the user 2026-10-31 (\"Approve all three\"), no edits",
+  "voice": "am_michael",
+  "speed": 1.18,
+  "lead": 0.6,
+  "hold": 1.5,
+  "maxPause": 0.28,
+  "pauseTo": 0.2,
+  "respell": {
+    "Bir": "[Bir](/bˈɪɹ/)",
+    "Tawil": "[Tawil](/təwˈil/)",
+    "Halaib": "[Halaib](/hˌɑlɑjˈib/)"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "text": "From this desert, you're standing on land no country claims."
+    },
+    {
+      "id": "name",
+      "text": "This is Bir Tawil."
+    },
+    {
+      "id": "sides",
+      "text": "Egypt to the north. Sudan to the south."
+    },
+    {
+      "id": "size",
+      "text": "Two thousand and sixty square kilometres, and neither country will take it."
+    },
+    {
+      "id": "zoom",
+      "text": "Zoom out, and there are two borders."
+    },
+    {
+      "id": "y1899",
+      "text": "In 1899, it was a straight line: the twenty-second parallel."
+    },
+    {
+      "id": "y1902",
+      "text": "In 1902, Britain drew a second one, around who actually used the land."
+    },
+    {
+      "id": "halaib",
+      "text": "Each country picks the line that gives it Halaib. Ten times bigger, and on the sea."
+    },
+    {
+      "id": "nobody",
+      "text": "Bir Tawil gets nobody."
+    },
+    {
+      "id": "twist",
+      "text": "No towns. No coast. Just herders and gold miners passing through."
+    },
+    {
+      "id": "y2000",
+      "text": "In 2000, Sudan pulled its forces out of Halaib."
+    },
+    {
+      "id": "since",
+      "text": "Egypt has run it ever since."
+    },
+    {
+      "id": "end",
+      "text": "Two lines. Two countries. And one desert with zero owners."
+    }
+  ],
+  "respellNotes": {
+    "Bir Tawil": "misaki default bˈɜɹ tˈæwɪl ('Burr TAH-will') -> bˈɪɹ təwˈil ('Beer tuh-WEEL'; whisper hears 'Beer to Wheel'; tɑwˈil came out 'towel wheel')",
+    "Halaib": "misaki default hˈælAb ('HAL-abe') -> hˌɑlɑjˈib ('Hah-lah-yeeb'; whisper hears 'Hala'ib' / 'Halaib'; hˌɑlɑˈib was heard as 'Halloween')"
+  }
+}

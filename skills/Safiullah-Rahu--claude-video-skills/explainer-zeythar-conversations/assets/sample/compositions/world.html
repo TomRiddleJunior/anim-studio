@@ -1,0 +1,26 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #000; }
+    #gl, #ovl { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    @font-face { font-family: "MontserratGD"; src: url("assets/fonts/Montserrat_wght_.ttf") format("truetype"); font-weight: 100 900; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="gl" width="1080" height="1920" data-layout-allow-overflow></canvas>
+    <canvas id="ovl" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = window.FILM.dur;
+      const film = window.ZFILM.create(document.getElementById("gl"), document.getElementById("ovl"));
+      let ready = false, curT = 0, lastT = -1;
+      function draw(t) { curT = t; t = Math.round(t * 10000) / 10000; if (!ready || t === lastT) return; lastT = t; film.render(t); }
+      window.__hf = window.__hf || {}; window.__hf.buildReady = window.__hf.buildReady || {};
+      const fontP = document.fonts && document.fonts.load ? Promise.all([document.fonts.load('800 30px "MontserratGD"'), document.fonts.load('900 30px "MontserratGD"'), document.fonts.load('600 30px "MontserratGD"')]).catch(() => null) : Promise.resolve();
+      window.__hf.buildReady.world = Promise.all([film.ready, fontP]).then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true }); const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

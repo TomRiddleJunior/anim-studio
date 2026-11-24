@@ -1,0 +1,230 @@
+{
+ "duration": 18.61,
+ "voice": "am_onyx",
+ "words": 37,
+ "wpm_overall": 119.3,
+ "wpm_speech": 199.1,
+ "lines": [
+  {
+   "id": "k1",
+   "i": 0,
+   "text": "Imagine you've lived this same night four times.",
+   "start": 0.18,
+   "end": 3.03,
+   "words": [
+    {
+     "w": "Imagine",
+     "start": 0.18,
+     "end": 0.605
+    },
+    {
+     "w": "you've",
+     "start": 0.605,
+     "end": 0.805
+    },
+    {
+     "w": "lived",
+     "start": 0.805,
+     "end": 1.055
+    },
+    {
+     "w": "this",
+     "start": 1.055,
+     "end": 1.23
+    },
+    {
+     "w": "same",
+     "start": 1.23,
+     "end": 1.505
+    },
+    {
+     "w": "night",
+     "start": 1.505,
+     "end": 1.817
+    },
+    {
+     "w": "four",
+     "start": 1.817,
+     "end": 2.055
+    },
+    {
+     "w": "times.",
+     "start": 2.055,
+     "end": 3.03
+    }
+   ]
+  },
+  {
+   "id": "k2",
+   "i": 1,
+   "text": "Then a text arrives, from your own number.",
+   "start": 3.84,
+   "end": 6.365,
+   "words": [
+    {
+     "w": "Then",
+     "start": 3.84,
+     "end": 3.953
+    },
+    {
+     "w": "a",
+     "start": 3.953,
+     "end": 4.04
+    },
+    {
+     "w": "text",
+     "start": 4.04,
+     "end": 4.39
+    },
+    {
+     "w": "arrives,",
+     "start": 4.39,
+     "end": 4.94
+    },
+    {
+     "w": "from",
+     "start": 4.99,
+     "end": 5.153
+    },
+    {
+     "w": "your",
+     "start": 5.153,
+     "end": 5.29
+    },
+    {
+     "w": "own",
+     "start": 5.29,
+     "end": 5.54
+    },
+    {
+     "w": "number.",
+     "start": 5.54,
+     "end": 6.365
+    }
+   ]
+  },
+  {
+   "id": "k3",
+   "i": 2,
+   "text": "Rule one. When the lights die, don't move.",
+   "start": 7.175,
+   "end": 9.725,
+   "words": [
+    {
+     "w": "Rule",
+     "start": 7.175,
+     "end": 7.425
+    },
+    {
+     "w": "one.",
+     "start": 7.425,
+     "end": 7.7
+    },
+    {
+     "w": "When",
+     "start": 7.737,
+     "end": 7.862
+    },
+    {
+     "w": "the",
+     "start": 7.862,
+     "end": 7.95
+    },
+    {
+     "w": "lights",
+     "start": 7.95,
+     "end": 8.3
+    },
+    {
+     "w": "die,",
+     "start": 8.3,
+     "end": 8.6
+    },
+    {
+     "w": "don't",
+     "start": 8.638,
+     "end": 8.85
+    },
+    {
+     "w": "move.",
+     "start": 8.85,
+     "end": 9.725
+    }
+   ]
+  },
+  {
+   "id": "k4",
+   "i": 3,
+   "text": "What do you do? A, freeze. Or B, run. Comment A or B.",
+   "start": 10.635,
+   "end": 13.86,
+   "words": [
+    {
+     "w": "What",
+     "start": 10.635,
+     "end": 10.747
+    },
+    {
+     "w": "do",
+     "start": 10.747,
+     "end": 10.847
+    },
+    {
+     "w": "you",
+     "start": 10.847,
+     "end": 10.935
+    },
+    {
+     "w": "do?",
+     "start": 10.935,
+     "end": 11.085
+    },
+    {
+     "w": "A,",
+     "start": 11.135,
+     "end": 11.21
+    },
+    {
+     "w": "freeze.",
+     "start": 11.26,
+     "end": 11.585
+    },
+    {
+     "w": "Or",
+     "start": 11.622,
+     "end": 11.735
+    },
+    {
+     "w": "B,",
+     "start": 11.735,
+     "end": 11.935
+    },
+    {
+     "w": "run.",
+     "start": 11.985,
+     "end": 12.285
+    },
+    {
+     "w": "Comment",
+     "start": 12.36,
+     "end": 12.76
+    },
+    {
+     "w": "A",
+     "start": 12.76,
+     "end": 13.01
+    },
+    {
+     "w": "or",
+     "start": 13.01,
+     "end": 13.135
+    },
+    {
+     "w": "B.",
+     "start": 13.135,
+     "end": 13.86
+    }
+   ]
+  }
+ ]
+}

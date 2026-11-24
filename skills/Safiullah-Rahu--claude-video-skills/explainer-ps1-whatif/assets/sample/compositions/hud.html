@@ -1,0 +1,24 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    #hud-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; image-rendering: pixelated; }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
+    <canvas id="hud-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const V = window.MAKE_V();
+      const DUR = V.dur;
+      const ctx = document.getElementById("hud-canvas").getContext("2d");
+      let lastT = -1;
+      function draw(t) { t = Math.round(t * 10000) / 10000; if (t === lastT) return; lastT = t; window.HUD_DRAW(ctx, t, V); }
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["hud"] = tl;
+      draw(0);
+    })();
+  </script>
+</template>

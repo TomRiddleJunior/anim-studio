@@ -1,0 +1,84 @@
+{
+ "voice": "am_michael",
+ "speed": 1.12,
+ "lead": 0.12,
+ "tail": 1.4,
+ "gap": 0.24,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "In December twenty twenty-three, a computer closed Rotterdam's door to the sea, and no human gave the order.",
+   "gap": 0.0
+  },
+  {
+   "id": "storm",
+   "text": "Storm Pia was driving the North Sea at the Dutch coast,",
+   "gap": 0.42
+  },
+  {
+   "id": "channel",
+   "text": "and the shipping channel to Rotterdam opens straight onto that sea, three hundred and sixty metres wide.",
+   "gap": 0.16
+  },
+  {
+   "id": "parts",
+   "text": "You see, every storm flood has two parts.",
+   "gap": 0.36
+  },
+  {
+   "id": "tide",
+   "text": "The tide rises on schedule, twice a day.",
+   "gap": 0.26
+  },
+  {
+   "id": "surge",
+   "text": "Then the wind piles extra water on top: the surge.",
+   "gap": 0.26
+  },
+  {
+   "id": "agency",
+   "text": "So the Dutch water agency handed the decision to a computer called BOS.",
+   "gap": 0.36
+  },
+  {
+   "id": "rule",
+   "text": "If it forecasts three metres above sea level at Rotterdam, it closes the barrier itself.",
+   "gap": 0.24
+  },
+  {
+   "id": "evening",
+   "text": "That evening, the forecast crossed the line.",
+   "gap": 0.34
+  },
+  {
+   "id": "halt",
+   "text": "Ships were halted, and the dry docks flooded.",
+   "gap": 0.3
+  },
+  {
+   "id": "gates",
+   "text": "Two hollow gates, each two hundred and ten metres long, swung out on ball joints ten metres wide.",
+   "gap": 0.24
+  },
+  {
+   "id": "time",
+   "text": "The whole closing takes about two hours.",
+   "gap": 0.26
+  },
+  {
+   "id": "sink",
+   "text": "Then the gates filled with water and sank, sealing the channel.",
+   "gap": 0.26
+  },
+  {
+   "id": "six",
+   "text": "That night, all six of the country's big storm barriers were shut.",
+   "gap": 0.32
+  },
+  {
+   "id": "end",
+   "text": "About one and a half million people live behind this one, and not one of them had to press a button.",
+   "gap": 0.3
+  }
+ ]
+}

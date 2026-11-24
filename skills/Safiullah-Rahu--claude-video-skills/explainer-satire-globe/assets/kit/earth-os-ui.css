@@ -1,0 +1,64 @@
+/* Earth OS UI kit — the ticket-scene styles from the sample (paste inside a scene's <template><style>).
+ * Palette: ink #EAF6FF (var(--color-ink)), secondary #9FB8CC, panels rgba(7,24,37,.9) with a 1.5px
+ * rgba(234,246,255,.22) stroke, ONE accent var(--color-accent) = #FF6B1A on status chips only (plus the
+ * evidence box and the ticket counter). Type: var(--font-display) = Inter 900/700/400, var(--font-mono) =
+ * IBM Plex Mono 400/700. Nothing meant to be read under 28 px.
+ * Layout (1920x1080, hotspot framed at x 520 y 310 by the director's hold offset):
+ *   .loc    tag beside the ping (604, 286)
+ *   .ticket left column card (96, 388, w 808)  — id + SEV, title, lat/long meta, rows, STATUS chip (slot roll)
+ *   .line   release note, left column bottom (96, bottom 84, w 808) — the deadpan line, per-word blur-in
+ *   .ev     evidence card, right column (984, w 840, vertically centred) — header + cropped screenshot + key box
+ *   .quote  quote card over the lower evidence (1024, bottom 96, w 760)
+ */
+#root { position: absolute; inset: 0; overflow: hidden; }
+#root .loc { position: absolute; left: 604px; top: 286px; height: 48px; }
+#root .loc-in { display: inline-block; padding: 0 14px; height: 48px; line-height: 48px; border-radius: 6px;
+  background: rgba(7, 24, 37, 0.9); font: 700 28px/48px var(--font-mono), monospace; letter-spacing: 0.08em;
+  color: var(--color-ink); white-space: nowrap; }
+#root .ticket { position: absolute; left: 96px; top: 388px; width: 808px; }
+#root .tk-in { padding: 24px 32px 28px; background: rgba(7, 24, 37, 0.92); border: 1.5px solid rgba(234, 246, 255, 0.22);
+  border-radius: 10px; }
+#root .tk-row1 { display: flex; justify-content: space-between; align-items: center;
+  font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.04em; color: #9fb8cc; }
+#root .tk-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 36px;
+  color: var(--color-ink); }
+#root .tk-title { font: 900 60px/1.05 var(--font-display), sans-serif; letter-spacing: -0.02em; margin-top: 8px; }
+#root .tk-meta { font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.04em; color: #9fb8cc; margin-top: 6px; }
+#root .tk-row { font: 400 32px/1.25 var(--font-display), sans-serif; margin-top: 14px; }
+#root .tk-row b { font: 700 28px/1 var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; margin-right: 14px; }
+#root .tk-status { display: flex; align-items: center; gap: 16px; margin-top: 18px; }
+#root .tk-status > span:first-child { font: 400 28px/44px var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; }
+#root .chip { display: inline-block; height: 48px; overflow: hidden; border-radius: 6px; background: var(--color-accent);
+  color: #140700; padding: 0 16px; vertical-align: middle; }
+#root .chip-roll { display: flex; flex-direction: column; }
+#root .chip-roll > span { display: block; height: 48px; font: 700 30px/48px var(--font-mono), monospace;
+  letter-spacing: 0.04em; white-space: nowrap; }
+#root .chip-note { font: 400 28px/44px var(--font-mono), monospace; color: #9fb8cc; }
+#root .bar { margin-top: 16px; }
+#root .bar-top { display: flex; justify-content: space-between; font: 400 30px/40px var(--font-display), sans-serif; }
+#root .bar-top b { font: 700 32px/40px var(--font-mono), monospace; }
+#root .bar-track { position: relative; height: 16px; margin-top: 10px; border-radius: 8px; background: rgba(234, 246, 255, 0.16); overflow: hidden; }
+#root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; border-radius: 8px; background: var(--color-ink);
+  transform-origin: 0 50%; }
+#root .bar-src { font: 400 28px/40px var(--font-mono), monospace; color: #9fb8cc; margin-top: 8px; }
+#root .line { position: absolute; left: 96px; bottom: 84px; width: 808px; }
+#root .line-in { padding: 20px 32px 24px; background: rgba(7, 24, 37, 0.92); border-radius: 10px; }
+#root .line-k { font: 400 28px/40px var(--font-mono), monospace; letter-spacing: 0.06em; color: #9fb8cc; }
+#root .line-t { font: 700 48px/1.12 var(--font-display), sans-serif; letter-spacing: -0.01em; margin-top: 4px; }
+#root .line-t span { display: inline-block; }
+#root .line-s { font: 400 28px/38px var(--font-mono), monospace; color: #9fb8cc; margin-top: 10px; }
+#root .ev { position: absolute; left: 984px; width: 840px; }
+#root .ev-in { border-radius: 10px; overflow: hidden; background: #071825; border: 1.5px solid rgba(234, 246, 255, 0.22); }
+#root .ev-head { height: 60px; padding: 0 20px; display: flex; align-items: center; gap: 14px;
+  font: 400 28px/60px var(--font-mono), monospace; letter-spacing: 0.04em; color: var(--color-ink); white-space: nowrap; }
+#root .ev-head b { font-weight: 700; }
+#root .ev-frame { position: relative; overflow: hidden; }
+#root .ev-zoom { position: relative; width: 840px; }
+#root .ev-zoom img { display: block; width: 840px; height: auto; }
+#root .ev-box { position: absolute; border: 5px solid var(--color-accent); border-radius: 6px; }
+#root .ev-box.under { border: none; border-bottom: 7px solid var(--color-accent); border-radius: 0; }
+#root .quote { position: absolute; left: 1024px; width: 760px; bottom: 96px; }
+#root .quote-in { padding: 28px 34px 30px; background: rgba(7, 24, 37, 0.96); border: 1.5px solid rgba(234, 246, 255, 0.3);
+  border-radius: 10px; }
+#root .quote-t { font: 700 54px/1.12 var(--font-display), sans-serif; letter-spacing: -0.01em; }
+#root .quote-w { font: 400 28px/40px var(--font-mono), monospace; color: #9fb8cc; margin-top: 16px; }

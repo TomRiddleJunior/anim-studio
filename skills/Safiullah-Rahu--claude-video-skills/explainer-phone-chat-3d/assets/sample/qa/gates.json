@@ -1,0 +1,72 @@
+{
+ "streams": {
+  "full": {
+   "video": {
+    "duration": 51.0,
+    "frames": 1530,
+    "size": "1080x1920"
+   },
+   "audio": {
+    "duration": 51.0,
+    "frames": 2391,
+    "size": null
+   }
+  },
+  "nomusic": {
+   "video": {
+    "duration": 51.0,
+    "frames": 1530,
+    "size": "1080x1920"
+   },
+   "audio": {
+    "duration": 51.0,
+    "frames": 2391,
+    "size": null
+   }
+  },
+  "composition": {
+   "duration": 51.0,
+   "frames": 1530
+  },
+  "gate": "video frames = composition frames in both files; |video - audio| <= 0.05 s",
+  "pass": true
+ },
+ "loudness_full": {
+  "lufs": -14.0,
+  "true_peak_dbtp": -2.6,
+  "gate": "-14 +-1 LUFS, TP <= -1 dBTP",
+  "pass": true
+ },
+ "loudness_nomusic": {
+  "lufs": -26.6,
+  "true_peak_dbtp": -9.9,
+  "gate": "effects alone at the level they have in the full mix (quieter by design); TP <= -1 dBTP",
+  "pass": true
+ },
+ "edge_black_bands": {
+  "violations": 0,
+  "worst_px": 0,
+  "gate": "no band >= 24 px (the film has no planned black beats)",
+  "pass": true
+ },
+ "brightness": {
+  "min": 135.7,
+  "max": 175.4,
+  "largest_step": 2.5,
+  "at_s": 33.1,
+  "gate": "largest frame-to-frame step < 12 (no cuts, no flashes)",
+  "pass": true
+ },
+ "sync": {
+  "first_key_s": 0.36,
+  "first_click_onset_s": 0.3582,
+  "offset_ms": -1.8,
+  "gate": "|offset| <= 1 frame (33 ms)",
+  "pass": true
+ },
+ "sweeps": {
+  "tiles": 102,
+  "sheets": 3
+ },
+ "all_pass": true
+}

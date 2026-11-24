@@ -1,0 +1,28 @@
+{
+ "voice": "af_heart",
+ "speed": 1.27,
+ "lead": 0.12,
+ "tail": 1.0,
+ "gap": 0.02,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "Hashing 101."
+  },
+  {
+   "id": "l02",
+   "gap": 0.1,
+   "text": "A hash turns any input into a fixed-length fingerprint."
+  },
+  {
+   "id": "l03",
+   "gap": 0.1,
+   "text": "Simple."
+  },
+  {
+   "id": "l04",
+   "gap": 0.15,
+   "text": "Same input, same output, every time."
+  }
+ ]
+}

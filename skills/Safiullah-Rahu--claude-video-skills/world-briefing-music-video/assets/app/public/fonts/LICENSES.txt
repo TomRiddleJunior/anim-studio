@@ -1,0 +1,6 @@
+Newsreader: see fonts.google.com — https://fonts.google.com/specimen/Newsreader
+Inter Tight: see fonts.google.com — https://fonts.google.com/specimen/Inter+Tight
+IBM Plex Mono: see fonts.google.com — https://fonts.google.com/specimen/IBM+Plex+Mono
+Each .ttf folder (display/, mono/, text/) has a FONT-LICENSES.txt listing its files and licences (SIL OFL 1.1).
+stroke/EMS*.svg: SIL OFL 1.1, see OFL.txt (Sheldon B. Michaels; SVG conversion by Windell H. Oskay / Evil Mad Scientist).
+stroke/Hershey*.svg: Hershey fonts: originally by Dr. A. V. Hershey, U.S. National Bureau of Standards; distributed with the Hershey font use conditions (kept in each SVG's metadata); SVG conversion by Windell H. Oskay / Evil Mad Scientist.

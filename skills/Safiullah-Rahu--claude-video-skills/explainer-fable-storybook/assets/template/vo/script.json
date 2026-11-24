@@ -1,0 +1,12 @@
+{
+ "voice": "bm_george",
+ "speed": 1.2,
+ "lead": 0.12,
+ "tail": 1.4,
+ "gap": 0.4,
+ "lines": [
+  {"id": "hook", "text": "One evening, a fox knocked on the hen house door."},
+  {"id": "offer", "text": "It promised to ask for nothing at all.", "gap": 0.5},
+  {"id": "turn", "text": "It's a fable. But you know this pattern.", "gap": 0.6}
+ ]
+}

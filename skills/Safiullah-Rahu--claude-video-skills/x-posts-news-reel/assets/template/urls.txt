@@ -1,0 +1,2 @@
+# one X/Twitter post link per line, in any order (share suffixes like ?s=20 are ignored); lines starting with # are skipped
+https://x.com/<handle>/status/<id>

@@ -1,0 +1,83 @@
+{
+  "name": "Swiss poster",
+  "dark": false,
+  "description": "International Typographic Style on warm paper: flush-left grotesk, asymmetric grid, hairline rules, one red. Clean, architectural, confident.",
+  "mood": [
+    "indie",
+    "electronic",
+    "minimal",
+    "art-pop",
+    "post-rock",
+    "anything clean"
+  ],
+  "palette": {
+    "bg": "#F3F0E8",
+    "bg2": "#E7E2D7",
+    "dim": "#B9B2A5",
+    "mid": "#6F695F",
+    "fg": "#121212",
+    "accent": "#E1261C",
+    "hot": "#FF5A3C",
+    "deep": "#9E1A12",
+    "rare": "#1F5FD6"
+  },
+  "fonts": {
+    "display": {
+      "family": "Instrument Sans",
+      "widths": [
+        75,
+        87.5,
+        100
+      ],
+      "weights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "text": {
+      "family": "Instrument Serif",
+      "weights": [
+        400
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "weights": [
+        300,
+        400,
+        500,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.25,
+    "bloomThreshold": 1.2,
+    "bloomKnee": 0.2,
+    "halation": 0.04,
+    "ca": 0.35,
+    "grain": 0.035,
+    "vignette": 0.14
+  },
+  "type": {
+    "case": "none",
+    "tracking": -0.01
+  },
+  "motif": "dot",
+  "scenes": {
+    "lines": {
+      "grid": 0.55,
+      "weight": 700
+    },
+    "slam": {
+      "weight": 700
+    },
+    "interlude": {
+      "variant": "bars"
+    }
+  },
+  "idiom": "Grid first: every element sits on a 12-column grid with 96 px margins; type flush left, ragged right; big size contrasts; red used for one thing at a time. Motion is typographic: snaps, slides along the grid, rules drawing in. Think Mueller-Brockmann concert posters, Vignelli signage."
+}

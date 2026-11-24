@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #globe-ground { position: absolute; inset: 0; background: radial-gradient(circle at 62% 50%, #0d2639 0%, #08192a 40%, #050f19 78%); }
+    #globe-canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    #globe-vig { position: absolute; inset: 0; opacity: 0;
+      background: radial-gradient(ellipse 72% 70% at 50% 50%, rgba(3, 10, 16, 0) 52%, rgba(3, 10, 16, 0.62) 100%); }
+  </style>
+  <div id="root" data-composition-id="globe" data-width="1920" data-height="1080">
+    <div id="globe-ground"></div>
+    <canvas id="globe-canvas" width="1920" height="1080" data-layout-allow-overflow></canvas>
+    <div id="globe-vig"></div>
+  </div>
+  <script>
+    (function () {
+      const DUR = 145.84, SHUT = 0.555 / 30;
+      const canvas = document.getElementById("globe-canvas");
+      const vig = document.getElementById("globe-vig");
+      const g = window.EarthOSGlobe.create({
+        canvas, width: 1920, height: 1080,
+        earth: "assets/img/earth-bluemarble-5400.jpg",
+        dots: window.LAND_DOTS,
+        hotspots: [{"id": "hormuz", "lat": 26.6, "lon": 56.3, "patch": {"src": "assets/img/patch-hormuz.jpg", "lonMin": 49.25417, "lonMax": 68.26667, "latMax": 35.1, "latMin": 18.1}}, {"id": "alaska", "lat": 58.3, "lon": -134.42, "patch": {"src": "assets/img/patch-alaska.jpg", "lonMin": -146.40833, "lonMax": -114.05833, "latMax": 66.8, "latMin": 49.8}}, {"id": "israel", "lat": 31.78, "lon": 35.22, "patch": {"src": "assets/img/patch-israel.jpg", "lonMin": 27.80833, "lonMax": 47.80833, "latMax": 40.27917, "latMin": 23.27917}}, {"id": "brazil", "lat": -15.79, "lon": -47.88, "patch": {"src": "assets/img/patch-brazil.jpg", "lonMin": -54.425, "lonMax": -36.75833, "latMax": -7.29167, "latMin": -24.29167}}, {"id": "serbia", "lat": 44.82, "lon": 20.46, "patch": {"src": "assets/img/patch-serbia.jpg", "lonMin": 11.57917, "lonMax": 35.54583, "latMax": 53.32083, "latMin": 36.32083}}, {"id": "venezuela", "lat": 10.49, "lon": -66.88, "patch": {"src": "assets/img/patch-venezuela.jpg", "lonMin": -73.2875, "lonMax": -56.0, "latMax": 18.99167, "latMin": 1.99167}}],
+        arcs: [["hormuz", "alaska"], ["alaska", "israel"], ["israel", "brazil"], ["brazil", "serbia"], ["serbia", "venezuela"]],
+        colors: { dot: "#EAF6FF", core: "#0A1E2E", rim: "#96CDFF", accent: "#FF6B1A", arc: "#EAF6FF" },
+      });
+      let ready = false, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        const st = window.FILM.stateAt(t);
+        // motion blur: how far the image travels during a 200-degree shutter decides the sub-frame count
+        const a = window.FILM.stateAt(t - SHUT / 2), b = window.FILM.stateAt(t + SHUT / 2);
+        const pa = window.FILM.project(a, st.lat, st.lon), pb = window.FILM.project(b, st.lat, st.lon);
+        const m = Math.hypot(pa.x - pb.x, pa.y - pb.y) + 900 * Math.abs(Math.log(a.alt / b.alt)) + 900 * Math.abs((a.roll - b.roll) * Math.PI / 180);
+        const n = Math.max(1, Math.min(24, Math.round(m / 7)));
+        if (n < 2) g.render(st);
+        else {
+          const subs = [];
+          for (let k = 0; k < n; k++) subs.push(window.FILM.stateAt(t + (k / (n - 1) - 0.5) * SHUT));
+          g.renderBlur(subs);
+        }
+        vig.style.opacity = (st.patch ? 0.9 * st.patch.amt : 0).toFixed(3);
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.globe = g.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["globe"] = tl;
+    })();
+  </script>
+</template>

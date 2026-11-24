@@ -1,0 +1,104 @@
+{
+ "source": "",
+ "source_metrics": "",
+ "source_wpm_true": 107.2,
+ "note": "source / source_metrics: optional reference video and its metrics.json (or pass --ref / --ref-metrics to tools/qa.py). source_wpm_true = 172 words read off the reference's on-screen captions / 96.3 s; the analyzer's 94.7 comes from a Whisper SRT that misses the radio lines",
+ "planned_dips": [
+  9.16,
+  17.205,
+  20.665,
+  47.525,
+  49.463,
+  53.31,
+  58.555,
+  63.13,
+  65.29,
+  67.05,
+  74.06,
+  79.795,
+  87.155,
+  56.245
+ ],
+ "beats": [
+  [
+   0.5,
+   0.5,
+   "hook: the place under the moon"
+  ],
+  [
+   4.6,
+   5.5,
+   "the ride down leaves, speaker tag"
+  ],
+  [
+   11.2,
+   12.0,
+   "the predecessor's door"
+  ],
+  [
+   17.6,
+   18.5,
+   "the rules on the wall"
+  ],
+  [
+   30.0,
+   31.5,
+   "the rules, typed"
+  ],
+  [
+   42.2,
+   45.6,
+   "rule five scratched out"
+  ],
+  [
+   47.0,
+   50.2,
+   "the counted ritual + counter"
+  ],
+  [
+   48.5,
+   52.0,
+   "the step-number close-up"
+  ],
+  [
+   53.5,
+   56.7,
+   "light on: the HUD arrives"
+  ],
+  [
+   60.6,
+   61.5,
+   "the log card"
+  ],
+  [
+   62.0,
+   64.8,
+   "the clock turns the hour"
+  ],
+  [
+   66.0,
+   70.5,
+   "the call / the knock (tag)"
+  ],
+  [
+   71.5,
+   76.0,
+   "the impossibility (cutaway)"
+  ],
+  [
+   85.2,
+   85.5,
+   "the rule card"
+  ],
+  [
+   89.5,
+   89.0,
+   "the vote card"
+  ],
+  [
+   95.5,
+   95.2,
+   "the silent hold"
+  ]
+ ]
+}

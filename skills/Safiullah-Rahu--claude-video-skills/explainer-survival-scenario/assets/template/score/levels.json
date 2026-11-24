@@ -1,0 +1,9 @@
+{
+ "vo_rms_db_speech": -23.02,
+ "bed_re_vo_db": -20.0,
+ "bed_plus_sfx_re_vo_db": -9.62,
+ "sfx_gain_db": -12.05,
+ "final_lufs": -14.2,
+ "final_true_peak_dbtp": -1.5,
+ "loudnorm_input_lufs": "-20.33"
+}

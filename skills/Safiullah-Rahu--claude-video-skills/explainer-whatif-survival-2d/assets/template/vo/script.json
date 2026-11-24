@@ -1,0 +1,11 @@
+{
+ "voice": "am_michael",
+ "speed": 1.2,
+ "lead": 0.1,
+ "tail": 4.0,
+ "lines": [
+  {"id": "t1", "text": "Forty of the dead. One of you. So you run into the mine.", "gap": 0},
+  {"id": "t2", "text": "The dead can't see in the dark.", "gap": 0.6},
+  {"id": "t3", "text": "Do you call for help, or go up alone? Comment call, or alone.", "gap": 0.6}
+ ]
+}

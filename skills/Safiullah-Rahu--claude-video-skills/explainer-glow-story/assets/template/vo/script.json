@@ -1,0 +1,21 @@
+{
+ "voice": "af_heart",
+ "speed": 0.96,
+ "lead": 0.1,
+ "tail": 1.8,
+ "gap": 0.32,
+ "lines": [
+  {"id": "l01", "text": "I sort lost letters for a living."},
+  {"id": "l02", "gap": 0.45, "text": "Last week, one came back four hundred times."},
+  {"id": "m1", "who": "caller", "gap": 0.9, "voice": "bm_george", "speed": 0.86, "text": "Please. Keep this one."}
+ ],
+ "score": {
+  "piano": {"dyn": [["0", 0.85]], "final": "m1.end+0.2", "under_voice_db": -18.0},
+  "events": [
+   {"kind": "glass", "at": "l01:sort+0.02", "f": 1900, "gain": 0.8},
+   {"kind": "hiss", "at": "m1.start-0.35", "until": "m1.end+0.3"},
+   {"kind": "click", "at": "m1.start-0.35"},
+   {"kind": "breath", "at": "m1.start-0.7", "dur": 0.55}
+  ]
+ }
+}

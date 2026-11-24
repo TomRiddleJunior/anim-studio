@@ -1,0 +1,67 @@
+{
+  "name": "Amber scope",
+  "dark": true,
+  "description": "Phosphor instruments: an amber oscilloscope/radar/terminal glowing under glass with persistence trails. Warm, nocturnal, analog.",
+  "mood": [
+    "synthwave without the neon cliches",
+    "ambient",
+    "retro-futurist",
+    "night drive",
+    "space"
+  ],
+  "palette": {
+    "bg": "#0A0703",
+    "bg2": "#140E06",
+    "dim": "#5A4320",
+    "mid": "#A07A3A",
+    "fg": "#FFD9A0",
+    "accent": "#FFB02E",
+    "hot": "#FFE7B8",
+    "deep": "#B35C00",
+    "rare": "#FF4A3D"
+  },
+  "fonts": {
+    "display": {
+      "family": "Space Grotesk",
+      "weights": [
+        300,
+        500,
+        700
+      ]
+    },
+    "text": {
+      "family": "Newsreader",
+      "weights": [
+        400
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "bundled": true
+    }
+  },
+  "post": {
+    "bloom": 0.85,
+    "bloomThreshold": 0.8,
+    "bloomKnee": 0.35,
+    "halation": 0.45,
+    "ca": 1.4,
+    "grain": 0.05,
+    "vignette": 0.5
+  },
+  "type": {
+    "case": "upper",
+    "tracking": 0.03
+  },
+  "motif": "spark",
+  "scenes": {
+    "lines": {
+      "grid": 0.35
+    },
+    "interlude": {
+      "variant": "rings"
+    }
+  },
+  "idiom": "Every plate is an instrument face: scope traces, radar sweeps, VU needles, Lissajous figures, a teletype. Glow and persistence are allowed here (the only style where fg blooms). Words are drawn by the beam."
+}

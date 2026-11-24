@@ -1,0 +1,228 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.08,
+ "lead": 0.15,
+ "tail": 5.2,
+ "gap": 0.3,
+ "lines": [
+  {
+   "id": "o1",
+   "text": "You were gone for one year."
+  },
+  {
+   "id": "o2",
+   "text": "Earth was gone for seventy.",
+   "gap": 0.36
+  },
+  {
+   "id": "o3",
+   "text": "And around month seven, the robot flying with you started talking like your little sister.",
+   "gap": 0.48
+  },
+  {
+   "id": "o4",
+   "text": "She was eight when you left.",
+   "gap": 0.28
+  },
+  {
+   "id": "o5",
+   "text": "The docking light turns green. The robot turns to face you.",
+   "gap": 0.56
+  },
+  {
+   "id": "o6",
+   "text": "Someone's waiting at the gate, it says.",
+   "gap": 0.24
+  },
+  {
+   "id": "o7",
+   "text": "But let's go back.",
+   "gap": 0.36
+  },
+  {
+   "id": "n1",
+   "text": "In twenty thirty-one, a company was paying five million dollars for one year in space.",
+   "gap": 0.88
+  },
+  {
+   "id": "n2",
+   "text": "One pilot. One robot. One trip out into deep space, and back.",
+   "gap": 0.28
+  },
+  {
+   "id": "n3",
+   "text": "The catch was in the fine print.",
+   "gap": 0.36
+  },
+  {
+   "id": "n4",
+   "text": "Earth time: about seventy years.",
+   "gap": 0.2
+  },
+  {
+   "id": "p1",
+   "text": "That's not a trick. It's Einstein.",
+   "gap": 0.48
+  },
+  {
+   "id": "p2",
+   "text": "The faster you move, the slower your clock ticks.",
+   "gap": 0.24
+  },
+  {
+   "id": "p3",
+   "text": "GPS satellites have to correct for it every single day, or your map would drift by about ten kilometers.",
+   "gap": 0.36
+  },
+  {
+   "id": "p4",
+   "text": "NASA even measured it on twins. After almost a year in orbit, one came home younger than his brother, by less than a hundredth of a second.",
+   "gap": 0.36
+  },
+  {
+   "id": "p5",
+   "text": "The fastest thing we've ever built reached six hundredths of one percent of light speed.",
+   "gap": 0.36
+  },
+  {
+   "id": "p6",
+   "text": "Your ship does ninety-nine point nine nine percent.",
+   "gap": 0.24
+  },
+  {
+   "id": "p7",
+   "text": "At that speed, one year for you is about seventy for everyone else.",
+   "gap": 0.28
+  },
+  {
+   "id": "m1",
+   "text": "You took the job for your little sister, Mia.",
+   "gap": 0.56
+  },
+  {
+   "id": "m2",
+   "text": "Eight years old. The money would cover everything she'd ever need.",
+   "gap": 0.24
+  },
+  {
+   "id": "m3",
+   "text": "She made you promise to come back. One year, you told her.",
+   "gap": 0.28
+  },
+  {
+   "id": "m4",
+   "text": "She gave you a drawing for the trip. A robot, holding a flower.",
+   "gap": 0.28
+  },
+  {
+   "id": "r1",
+   "text": "Your only company is Otto, a maintenance robot with a screen for a face and zero sense of humor.",
+   "gap": 0.56
+  },
+  {
+   "id": "r2",
+   "text": "For six months, it says exactly three things.",
+   "gap": 0.24
+  },
+  {
+   "id": "r3",
+   "text": "And Earth goes quiet. You're racing away from your own messages at nearly the speed of light.",
+   "gap": 0.48
+  },
+  {
+   "id": "r4",
+   "text": "In six months, barely one day of news catches up with you.",
+   "gap": 0.28
+  },
+  {
+   "id": "u1",
+   "text": "Then you turn around.",
+   "gap": 0.48
+  },
+  {
+   "id": "u2",
+   "text": "And seventy years of Earth come at you in six months.",
+   "gap": 0.28
+  },
+  {
+   "id": "u3",
+   "text": "Every day on board, almost five months of her life arrive.",
+   "gap": 0.28
+  },
+  {
+   "id": "u4",
+   "text": "Mia at twelve, with braces. At eighteen, graduating. At twenty-five, with a company badge.",
+   "gap": 0.32
+  },
+  {
+   "id": "c1",
+   "text": "And Otto starts to change.",
+   "gap": 0.56
+  },
+  {
+   "id": "c2",
+   "text": "It hums the song you used to sing her.",
+   "gap": 0.28
+  },
+  {
+   "id": "c3",
+   "text": "It tells her terrible jokes.",
+   "gap": 0.24
+  },
+  {
+   "id": "c4",
+   "text": "It draws flowers on its own face.",
+   "gap": 0.24
+  },
+  {
+   "id": "c5",
+   "text": "You think deep space is frying its circuits.",
+   "gap": 0.28
+  },
+  {
+   "id": "x1",
+   "text": "Then you open its update log.",
+   "gap": 0.56
+  },
+  {
+   "id": "x2",
+   "text": "Four thousand patches, every one signed by the same engineer.",
+   "gap": 0.32
+  },
+  {
+   "id": "x3",
+   "text": "Mia joined the company at twenty-two. She couldn't fly out to you.",
+   "gap": 0.64
+  },
+  {
+   "id": "x4",
+   "text": "So for fifty years, she sent herself instead. One line of code at a time.",
+   "gap": 0.28
+  },
+  {
+   "id": "x5",
+   "text": "Every joke, every song, every flower was her.",
+   "gap": 0.4
+  },
+  {
+   "id": "e1",
+   "text": "Now the gate opens.",
+   "gap": 0.64
+  },
+  {
+   "id": "e2",
+   "text": "She's seventy-eight. And she's holding a flower.",
+   "gap": 0.36
+  },
+  {
+   "id": "e3",
+   "text": "You promised her one year. You kept it. So did she.",
+   "gap": 0.48
+  },
+  {
+   "id": "e4",
+   "text": "Would you take the job? Tell me in the comments.",
+   "gap": 0.8
+  }
+ ]
+}

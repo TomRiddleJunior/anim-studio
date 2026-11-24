@@ -1,0 +1,11 @@
+{
+ "voice": "am_fenrir,am_onyx",
+ "speed": 1.26,
+ "lead": 0.05,
+ "tail": 0.9,
+ "lines": [
+  {"id": "l01", "text": "Two places found the same resource."},
+  {"id": "l02", "text": "One saved it.", "gap": 0.4},
+  {"id": "l03", "text": "Here's how.", "gap": 0.7}
+ ]
+}

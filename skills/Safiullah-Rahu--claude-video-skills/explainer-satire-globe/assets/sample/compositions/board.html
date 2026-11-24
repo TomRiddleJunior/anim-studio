@@ -1,0 +1,85 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    
+    #root .fc { position: relative; display: inline-block; overflow: hidden; border-radius: 5px; text-align: center; color: #f4f1e8;
+      background: linear-gradient(#2a2d33 0 49%, #08090b 49% 51%, #1f2227 51% 100%); box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+    #root .fc b { display: block; font: 700 1em/1 "Roboto Mono", monospace; }
+    #root .fc i { position: absolute; left: 0; right: 0; top: 0; height: 50%; background: linear-gradient(#34373e, #23262b);
+      transform-origin: 50% 100%; transform: scaleY(0); border-bottom: 1px solid #000; }
+    #root .st .fc { color: #ffb020; }
+
+    #root .arv { position: absolute; left: 50px; top: 236px; width: 640px; height: 600px; border-radius: 12px;
+      background: radial-gradient(ellipse at 50% 20%, #1a1d22 0%, #0b0d10 80%); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55); }
+    #root .arv-h { position: absolute; left: 28px; right: 28px; top: 24px; display: flex; align-items: baseline; justify-content: space-between;
+      border-bottom: 2px solid #2c3036; padding-bottom: 12px; }
+    #root .arv-t { font: 900 46px/1 "Inter", sans-serif; letter-spacing: 0.06em; color: #f4f1e8; }
+    #root .arv-d { font: 500 28px/32px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #9fb8cc; }
+    #root .arv-row { position: absolute; left: 28px; height: 46px; }
+    #root .arv-row > span { position: absolute; top: 0; display: flex; gap: 3px; }
+    #root .arv-row .fc { width: 26px; height: 46px; }
+    #root .arv-row .fc b { font-size: 30px; line-height: 46px; }
+    #root .arv .c-n { left: 0; }
+    #root .arv .c-c { left: 76px; }
+    #root .arv .c-s { left: 362px; }
+    #root .mlab { position: absolute; left: 0; top: 0; font: 700 30px/34px "IBM Plex Mono", monospace; color: #eaf6ff; letter-spacing: 0.04em;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9); opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="board" data-width="1920" data-height="1080">
+    <div class="arv" id="arv" data-layout-allow-overflow>
+      <div class="arv-h"><div class="arv-t">ARRIVALS</div><div class="arv-d">28 OCT 2026</div></div>
+      <div class="arv-row" style="top:132px;"><span class="c-n"><span class="fc" id="an0-0"><b></b><i></i></span><span class="fc" id="an0-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac0-0"><b></b><i></i></span><span class="fc" id="ac0-1"><b></b><i></i></span><span class="fc" id="ac0-2"><b></b><i></i></span><span class="fc" id="ac0-3"><b></b><i></i></span><span class="fc" id="ac0-4"><b></b><i></i></span><span class="fc" id="ac0-5"><b></b><i></i></span><span class="fc" id="ac0-6"><b></b><i></i></span><span class="fc" id="ac0-7"><b></b><i></i></span><span class="fc" id="ac0-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as0-0"><b></b><i></i></span><span class="fc" id="as0-1"><b></b><i></i></span><span class="fc" id="as0-2"><b></b><i></i></span><span class="fc" id="as0-3"><b></b><i></i></span><span class="fc" id="as0-4"><b></b><i></i></span><span class="fc" id="as0-5"><b></b><i></i></span><span class="fc" id="as0-6"><b></b><i></i></span><span class="fc" id="as0-7"><b></b><i></i></span></span></div><div class="arv-row" style="top:204px;"><span class="c-n"><span class="fc" id="an1-0"><b></b><i></i></span><span class="fc" id="an1-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac1-0"><b></b><i></i></span><span class="fc" id="ac1-1"><b></b><i></i></span><span class="fc" id="ac1-2"><b></b><i></i></span><span class="fc" id="ac1-3"><b></b><i></i></span><span class="fc" id="ac1-4"><b></b><i></i></span><span class="fc" id="ac1-5"><b></b><i></i></span><span class="fc" id="ac1-6"><b></b><i></i></span><span class="fc" id="ac1-7"><b></b><i></i></span><span class="fc" id="ac1-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as1-0"><b></b><i></i></span><span class="fc" id="as1-1"><b></b><i></i></span><span class="fc" id="as1-2"><b></b><i></i></span><span class="fc" id="as1-3"><b></b><i></i></span><span class="fc" id="as1-4"><b></b><i></i></span><span class="fc" id="as1-5"><b></b><i></i></span><span class="fc" id="as1-6"><b></b><i></i></span><span class="fc" id="as1-7"><b></b><i></i></span></span></div><div class="arv-row" style="top:276px;"><span class="c-n"><span class="fc" id="an2-0"><b></b><i></i></span><span class="fc" id="an2-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac2-0"><b></b><i></i></span><span class="fc" id="ac2-1"><b></b><i></i></span><span class="fc" id="ac2-2"><b></b><i></i></span><span class="fc" id="ac2-3"><b></b><i></i></span><span class="fc" id="ac2-4"><b></b><i></i></span><span class="fc" id="ac2-5"><b></b><i></i></span><span class="fc" id="ac2-6"><b></b><i></i></span><span class="fc" id="ac2-7"><b></b><i></i></span><span class="fc" id="ac2-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as2-0"><b></b><i></i></span><span class="fc" id="as2-1"><b></b><i></i></span><span class="fc" id="as2-2"><b></b><i></i></span><span class="fc" id="as2-3"><b></b><i></i></span><span class="fc" id="as2-4"><b></b><i></i></span><span class="fc" id="as2-5"><b></b><i></i></span><span class="fc" id="as2-6"><b></b><i></i></span><span class="fc" id="as2-7"><b></b><i></i></span></span></div><div class="arv-row" style="top:348px;"><span class="c-n"><span class="fc" id="an3-0"><b></b><i></i></span><span class="fc" id="an3-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac3-0"><b></b><i></i></span><span class="fc" id="ac3-1"><b></b><i></i></span><span class="fc" id="ac3-2"><b></b><i></i></span><span class="fc" id="ac3-3"><b></b><i></i></span><span class="fc" id="ac3-4"><b></b><i></i></span><span class="fc" id="ac3-5"><b></b><i></i></span><span class="fc" id="ac3-6"><b></b><i></i></span><span class="fc" id="ac3-7"><b></b><i></i></span><span class="fc" id="ac3-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as3-0"><b></b><i></i></span><span class="fc" id="as3-1"><b></b><i></i></span><span class="fc" id="as3-2"><b></b><i></i></span><span class="fc" id="as3-3"><b></b><i></i></span><span class="fc" id="as3-4"><b></b><i></i></span><span class="fc" id="as3-5"><b></b><i></i></span><span class="fc" id="as3-6"><b></b><i></i></span><span class="fc" id="as3-7"><b></b><i></i></span></span></div><div class="arv-row" style="top:420px;"><span class="c-n"><span class="fc" id="an4-0"><b></b><i></i></span><span class="fc" id="an4-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac4-0"><b></b><i></i></span><span class="fc" id="ac4-1"><b></b><i></i></span><span class="fc" id="ac4-2"><b></b><i></i></span><span class="fc" id="ac4-3"><b></b><i></i></span><span class="fc" id="ac4-4"><b></b><i></i></span><span class="fc" id="ac4-5"><b></b><i></i></span><span class="fc" id="ac4-6"><b></b><i></i></span><span class="fc" id="ac4-7"><b></b><i></i></span><span class="fc" id="ac4-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as4-0"><b></b><i></i></span><span class="fc" id="as4-1"><b></b><i></i></span><span class="fc" id="as4-2"><b></b><i></i></span><span class="fc" id="as4-3"><b></b><i></i></span><span class="fc" id="as4-4"><b></b><i></i></span><span class="fc" id="as4-5"><b></b><i></i></span><span class="fc" id="as4-6"><b></b><i></i></span><span class="fc" id="as4-7"><b></b><i></i></span></span></div><div class="arv-row" style="top:492px;"><span class="c-n"><span class="fc" id="an5-0"><b></b><i></i></span><span class="fc" id="an5-1"><b></b><i></i></span></span><span class="c-c"><span class="fc" id="ac5-0"><b></b><i></i></span><span class="fc" id="ac5-1"><b></b><i></i></span><span class="fc" id="ac5-2"><b></b><i></i></span><span class="fc" id="ac5-3"><b></b><i></i></span><span class="fc" id="ac5-4"><b></b><i></i></span><span class="fc" id="ac5-5"><b></b><i></i></span><span class="fc" id="ac5-6"><b></b><i></i></span><span class="fc" id="ac5-7"><b></b><i></i></span><span class="fc" id="ac5-8"><b></b><i></i></span></span><span class="c-s st"><span class="fc" id="as5-0"><b></b><i></i></span><span class="fc" id="as5-1"><b></b><i></i></span><span class="fc" id="as5-2"><b></b><i></i></span><span class="fc" id="as5-3"><b></b><i></i></span><span class="fc" id="as5-4"><b></b><i></i></span><span class="fc" id="as5-5"><b></b><i></i></span><span class="fc" id="as5-6"><b></b><i></i></span><span class="fc" id="as5-7"><b></b><i></i></span></span></div>
+    </div>
+    <div class="mlab" id="ml-hormuz" data-lat="26.6" data-lon="56.3" data-ox="16" data-oy="6">01</div><div class="mlab" id="ml-alaska" data-lat="58.3" data-lon="-134.42" data-ox="-20" data-oy="-46">02</div><div class="mlab" id="ml-israel" data-lat="31.78" data-lon="35.22" data-ox="-62" data-oy="14">03</div><div class="mlab" id="ml-brazil" data-lat="-15.79" data-lon="-47.88" data-ox="16" data-oy="4">04</div><div class="mlab" id="ml-serbia" data-lat="44.82" data-lon="20.46" data-ox="-30" data-oy="-48">05</div><div class="mlab" id="ml-venezuela" data-lat="10.49" data-lon="-66.88" data-ox="-62" data-oy="-18">06</div>
+  </div>
+  <script>
+    (function () {
+      const START = 123.78, DUR = 11.88, FLAT1 = 125.73;
+      const FL = [["an0-0", "0", 0.75, 0, 0], ["an0-1", "1", 0.75, 0, 5], ["ac0-0", "H", 0.8, 4, 10], ["ac0-1", "O", 0.825, 3, 15], ["ac0-2", "R", 0.85, 6, 20], ["ac0-3", "M", 0.875, 5, 0], ["ac0-4", "U", 0.9, 4, 5], ["ac0-5", "Z", 0.925, 3, 10], ["ac0-6", " ", 0.95, 0, 15], ["ac0-7", " ", 0.975, 0, 20], ["ac0-8", " ", 1.0, 0, 0], ["as0-0", "C", 2.99, 5, 19], ["as0-1", "L", 3.015, 4, 24], ["as0-2", "O", 3.04, 7, 4], ["as0-3", "S", 3.065, 6, 9], ["as0-4", "E", 3.09, 5, 14], ["as0-5", "D", 3.115, 4, 19], ["as0-6", " ", 3.14, 0, 24], ["as0-7", " ", 3.165, 0, 4], ["an1-0", "0", 0.87, 0, 7], ["an1-1", "2", 0.87, 0, 12], ["ac1-0", "J", 0.92, 5, 17], ["ac1-1", "U", 0.945, 4, 22], ["ac1-2", "N", 0.97, 3, 2], ["ac1-3", "E", 0.995, 6, 7], ["ac1-4", "A", 1.02, 5, 12], ["ac1-5", "U", 1.045, 4, 17], ["ac1-6", " ", 1.07, 0, 22], ["ac1-7", " ", 1.095, 0, 2], ["ac1-8", " ", 1.12, 0, 7], ["as1-0", "I", 4.502, 6, 1], ["as1-1", "N", 4.527, 5, 6], ["as1-2", " ", 4.552, 0, 11], ["as1-3", "C", 4.577, 7, 16], ["as1-4", "O", 4.602, 6, 21], ["as1-5", "U", 4.627, 5, 1], ["as1-6", "R", 4.652, 4, 6], ["as1-7", "T", 4.677, 7, 11], ["an2-0", "0", 0.99, 0, 14], ["an2-1", "3", 0.99, 0, 19], ["ac2-0", "J", 1.04, 6, 24], ["ac2-1", "E", 1.065, 5, 4], ["ac2-2", "R", 1.09, 4, 9], ["ac2-3", "U", 1.115, 3, 14], ["ac2-4", "S", 1.14, 6, 19], ["ac2-5", "A", 1.165, 5, 24], ["ac2-6", "L", 1.19, 4, 4], ["ac2-7", "E", 1.215, 3, 9], ["ac2-8", "M", 1.24, 6, 14], ["as2-0", "D", 5.69, 7, 8], ["as2-1", "E", 5.715, 6, 13], ["as2-2", "L", 5.74, 5, 18], ["as2-3", "A", 5.765, 4, 23], ["as2-4", "Y", 5.79, 7, 3], ["as2-5", "E", 5.815, 6, 8], ["as2-6", "D", 5.84, 5, 13], ["as2-7", " ", 5.865, 0, 18], ["an3-0", "0", 1.11, 0, 21], ["an3-1", "4", 1.11, 0, 1], ["ac3-0", "B", 1.16, 3, 6], ["ac3-1", "R", 1.185, 6, 11], ["ac3-2", "A", 1.21, 5, 16], ["ac3-3", "S", 1.235, 4, 21], ["ac3-4", "Í", 1.26, 3, 1], ["ac3-5", "L", 1.285, 6, 6], ["ac3-6", "I", 1.31, 5, 11], ["ac3-7", "A", 1.335, 4, 16], ["ac3-8", " ", 1.36, 0, 21], ["as3-0", "D", 7.027, 4, 15], ["as3-1", "I", 7.052, 7, 20], ["as3-2", "S", 7.077, 6, 0], ["as3-3", "P", 7.102, 5, 5], ["as3-4", "U", 7.127, 4, 10], ["as3-5", "T", 7.152, 7, 15], ["as3-6", "E", 7.177, 6, 20], ["as3-7", "D", 7.202, 5, 0], ["an4-0", "0", 1.23, 0, 3], ["an4-1", "5", 1.23, 0, 8], ["ac4-0", "B", 1.28, 4, 13], ["ac4-1", "E", 1.305, 3, 18], ["ac4-2", "L", 1.33, 6, 23], ["ac4-3", "G", 1.355, 5, 3], ["ac4-4", "R", 1.38, 4, 8], ["ac4-5", "A", 1.405, 3, 13], ["ac4-6", "D", 1.43, 6, 18], ["ac4-7", "E", 1.455, 5, 23], ["ac4-8", " ", 1.48, 0, 3], ["as4-0", "C", 8.59, 5, 22], ["as4-1", "O", 8.615, 4, 2], ["as4-2", "N", 8.64, 7, 7], ["as4-3", "C", 8.665, 6, 12], ["as4-4", "E", 8.69, 5, 17], ["as4-5", "D", 8.715, 4, 22], ["as4-6", "E", 8.74, 7, 2], ["as4-7", "D", 8.765, 6, 7], ["an5-0", "0", 1.35, 0, 10], ["an5-1", "6", 1.35, 0, 15], ["ac5-0", "C", 1.4, 5, 20], ["ac5-1", "A", 1.425, 4, 0], ["ac5-2", "R", 1.45, 3, 5], ["ac5-3", "A", 1.475, 6, 10], ["ac5-4", "C", 1.5, 5, 15], ["ac5-5", "A", 1.525, 4, 20], ["ac5-6", "S", 1.55, 3, 0], ["ac5-7", " ", 1.575, 0, 5], ["ac5-8", " ", 1.6, 0, 10], ["as5-0", "A", 10.015, 6, 4], ["as5-1", "R", 10.04, 5, 9], ["as5-2", "R", 10.065, 4, 14], ["as5-3", "I", 10.09, 7, 19], ["as5-4", "V", 10.115, 6, 24], ["as5-5", "E", 10.14, 5, 4], ["as5-6", "D", 10.165, 4, 9], ["as5-7", " ", 10.19, 0, 14]];
+      
+      const GL = "ABCDEFGHIJKLMNOPRSTUVWXYZ", DT = 0.06;
+      const cells = {};
+      FL.forEach((f) => { const el = document.getElementById(f[0]); cells[f[0]] = { b: el.querySelector("b"), i: el.querySelector("i") }; });
+      function flaps(t) {
+        for (const [id, fin, st, n, sd] of FL) {
+          const c = cells[id];
+          let ch = " ", ph = -1;
+          if (t >= st) {
+            const u = (t - st) / DT, k = Math.floor(u);
+            if (k >= n) ch = fin;
+            else { ch = GL[(sd + k * 7) % GL.length]; ph = u - k; }
+          }
+          if (c.b.textContent !== ch) c.b.textContent = ch;
+          c.i.style.transform = ph >= 0 ? "scaleY(" + (1 - ph).toFixed(3) + ")" : "scaleY(0)";
+        }
+      }
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#arv", { x: -720, filter: "blur(14px)" }, { x: 0, filter: "blur(0px)", duration: 0.5, ease: "expo.out" }, 0.45);
+      tl.fromTo("#ml-hormuz", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 3.270);
+      tl.fromTo("#ml-alaska", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 4.782);
+      tl.fromTo("#ml-israel", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 5.970);
+      tl.fromTo("#ml-brazil", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 7.307);
+      tl.fromTo("#ml-serbia", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 8.870);
+      tl.fromTo("#ml-venezuela", { color: "#ffb020" }, { color: "#eaf6ff", duration: 0.8, ease: "power2.out", immediateRender: false }, 10.295);
+      tl.to("#arv", { x: -760, filter: "blur(14px)", duration: 0.34, ease: "power3.in" }, 11.430);
+      // map labels follow the flat-map pings (same plane the globe kit unwraps to: x = 1.003, y = lat, z = -lon)
+      const labs = [...document.querySelectorAll("#root .mlab")].filter((el) => el.closest('[data-composition-id="board"]'));
+      function place(t) {
+        const c = window.FILM.cameraAt(t);
+        const zc = c.alt - 0.003;
+        const vis = window.FILM.sstep(FLAT1 - 0.2, FLAT1 + 0.4, t);
+        labs.forEach((el) => {
+          const lat = +el.dataset.lat * Math.PI / 180, lon = +el.dataset.lon * Math.PI / 180;
+          const x = 960 + c.ox + window.FILM.PXS * lon / zc + (+el.dataset.ox);
+          const y = 540 + c.oy - window.FILM.PXS * lat / zc + (+el.dataset.oy);
+          el.style.transform = "translate(" + x.toFixed(1) + "px, " + y.toFixed(1) + "px)";
+          el.style.opacity = vis.toFixed(3);
+        });
+      }
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => { place(START + clock.t); flaps(clock.t); } }, 0);
+      flaps(0);
+      window.__timelines["board"] = tl;
+    })();
+  </script>
+</template>

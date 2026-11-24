@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="assets/lib/three.global.js"></script>
+    <script src="assets/data/land-dots.js"></script>
+    <script src="assets/lib/earth-os-globe.js"></script>
+    <script src="assets/lib/film-data.js"></script>
+    <script src="assets/lib/film.js"></script>
+    <script src="assets/lib/desk.js"></script>
+    <style>
+      @font-face { font-family: "Oswald"; src: url("assets/fonts/Oswald_wght_.ttf") format("truetype"); font-weight: 200 700; font-style: normal; font-display: block; }
+      @font-face { font-family: "Playfair Display"; src: url("assets/fonts/PlayfairDisplay_wght_.ttf") format("truetype"); font-weight: 400 900; font-style: normal; font-display: block; }
+      @font-face { font-family: "Roboto Mono"; src: url("assets/fonts/RobotoMono_wght_.ttf") format("truetype"); font-weight: 100 700; font-style: normal; font-display: block; }
+      @font-face { font-family: "Libre Baskerville"; src: url("assets/fonts/LibreBaskerville_wght_.ttf") format("truetype"); font-weight: 400 700; font-style: normal; font-display: block; }
+      @font-face { font-family: "Libre Baskerville"; src: url("assets/fonts/LibreBaskerville-Italic_wght_.ttf") format("truetype"); font-weight: 400 700; font-style: italic; font-display: block; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #050f19; }
+      /* Name every family in a font-family declaration outside any <template>: the compiler only embeds these. */
+      .font-inter { font-family: "Inter", sans-serif; }
+      .font-mono { font-family: "IBM Plex Mono", monospace; }
+      .font-oswald { font-family: "Oswald", sans-serif; }
+      .font-playfair { font-family: "Playfair Display", serif; }
+      .font-roboto-mono { font-family: "Roboto Mono", monospace; }
+      .font-baskerville { font-family: "Libre Baskerville", serif; }
+      #root { position: relative; width: 100%; height: 100%; font-family: "Inter", sans-serif; color: #eaf6ff; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="145.84" data-width="1920" data-height="1080">
+      <div id="globe" data-composition-id="globe" data-composition-src="compositions/globe.html" data-start="0" data-duration="145.84" data-track-index="0" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 1"></div>
+      <div id="credit" data-composition-id="credit" data-composition-src="compositions/credit.html" data-start="0" data-duration="145.84" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 9"></div>
+      <div id="opening" data-composition-id="opening" data-composition-src="compositions/opening.html" data-start="0" data-duration="15.43" data-track-index="2" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 7"></div>
+      <div id="hud" data-composition-id="hud" data-composition-src="compositions/hud.html" data-start="15.28" data-duration="108.2" data-track-index="3" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 6"></div>
+      <div id="stop-hormuz" data-composition-id="stop-hormuz" data-composition-src="compositions/stop-hormuz.html" data-start="15.28" data-duration="19.705" data-track-index="4" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="stop-alaska" data-composition-id="stop-alaska" data-composition-src="compositions/stop-alaska.html" data-start="34.935" data-duration="25.655" data-track-index="5" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="stop-israel" data-composition-id="stop-israel" data-composition-src="compositions/stop-israel.html" data-start="60.54" data-duration="16.57" data-track-index="6" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="stop-brazil" data-composition-id="stop-brazil" data-composition-src="compositions/stop-brazil.html" data-start="77.06" data-duration="14.46" data-track-index="7" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="stop-serbia" data-composition-id="stop-serbia" data-composition-src="compositions/stop-serbia.html" data-start="91.47" data-duration="19.535" data-track-index="8" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="stop-venezuela" data-composition-id="stop-venezuela" data-composition-src="compositions/stop-venezuela.html" data-start="110.955" data-duration="12.575" data-track-index="9" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="board" data-composition-id="board" data-composition-src="compositions/board.html" data-start="123.78" data-duration="11.88" data-track-index="10" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <div id="end" data-composition-id="end" data-composition-src="compositions/end.html" data-start="135.21" data-duration="10.63" data-track-index="11" data-track-kind="graphics" data-width="1920" data-height="1080" style="z-index: 5"></div>
+      <audio id="mix" class="clip" src="assets/audio/final.m4a" data-start="0" data-duration="145.84" data-track-index="20" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+ "duration": 59.6,
+ "preset": "playful-bounce",
+ "sfx_cues": 65,
+ "target_lufs": -14,
+ "music_gain_db": -12.0,
+ "sfx_gain_db": -7.6,
+ "input_lufs": "-20.12"
+}

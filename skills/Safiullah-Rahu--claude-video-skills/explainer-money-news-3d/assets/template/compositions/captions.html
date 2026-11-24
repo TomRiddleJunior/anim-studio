@@ -1,0 +1,170 @@
+<template>
+  <style>
+    @font-face { font-family: "Oswald"; src: url("assets/fonts/Oswald_wght_.ttf"); font-weight: 200 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+    /* measured on the source (720x1280 x1.5): heavy condensed caps, cap height 75-105 px, block top at 15-17 % of the
+       height on 3D shots (left-aligned at 12 %), centred and lower (29 %) on the opening shot, ink-black on cream */
+    #root .cap { position: absolute; left: 118px; right: 118px; font-family: "Oswald", sans-serif; font-weight: 700;
+      line-height: 1.02; letter-spacing: 0.005em; text-transform: uppercase; }
+    #root .cap .w { display: inline-block; position: relative; }
+    #root .cap .s i { position: absolute; left: -4%; right: -4%; top: 52%; height: 0.11em; background: #ff3b30; transform-origin: 0 50%; display: block; }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip cap hero" id="cap0" data-start="0.000" data-duration="0.868" style="top:560px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.65), 0 2px 4px rgba(0,0,0,.6);font-size:118px"><div class="line" id="cl0"><span class="w" id="k0_0">BOEING</span><br><span class="w" id="k0_2">JUST</span> <span class="w" id="k0_3" style="color:#ff3b30">LOST</span> </div></div>
+    <div class="clip cap hero" id="cap1" data-start="0.878" data-duration="1.552" style="top:560px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.65), 0 2px 4px rgba(0,0,0,.6);font-size:118px"><div class="line" id="cl1"><span class="w" id="k1_0">ABOUT</span><br><span class="w" id="k1_2" style="color:#ffc93c">$16</span> <span class="w" id="k1_3" style="color:#ffc93c">BILLION</span> </div></div>
+    <div class="clip cap hero" id="cap2" data-start="2.440" data-duration="1.350" style="top:560px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.65), 0 2px 4px rgba(0,0,0,.6);font-size:118px"><div class="line" id="cl2"><span class="w" id="k2_0">IN</span> <span class="w" id="k2_1">A</span><br><span class="w" id="k2_3" style="color:#ff3b30">SINGLE</span> <span class="w" id="k2_4" style="color:#ff3b30">DAY</span> </div></div>
+    <div class="clip cap top" id="cap3" data-start="3.870" data-duration="0.515" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl3"><span class="w" id="k3_0">AND</span> <span class="w" id="k3_1">THE</span> <span class="w" id="k3_2" style="color:#ffc93c">REASON</span> </div></div>
+    <div class="clip cap top" id="cap4" data-start="4.395" data-duration="2.710" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl4"><span class="w" id="k4_0">IS</span> <span class="w" id="k4_1">SITTING</span> <span class="w" id="k4_2">RIGHT</span><br><span class="w" id="k4_4">OUTSIDE</span> <span class="w" id="k4_5">YOUR</span><br><span class="w" id="k4_7" style="color:#ffc93c">WINDOW</span> <span class="w" id="k4_8">SEAT</span> </div></div>
+    <div class="clip cap top" id="cap5" data-start="22.065" data-duration="1.715" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl5"><span class="w" id="k5_0">SO</span> <span class="w" id="k5_1">WHAT</span> <span class="w" id="k5_2" style="color:#ff3b30">SPOOKED</span><br><span class="w" id="k5_4">INVESTORS?</span> </div></div>
+    <div class="clip cap top" id="cap6" data-start="23.790" data-duration="0.975" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl6"><span class="w" id="k6_0">THE</span> <span class="w" id="k6_1" style="color:#ffc93c">WAIT.</span> </div></div>
+    <div class="clip cap low" id="cap7" data-start="25.970" data-duration="3.352" style="top:1330px;text-align:left;color:#141414;text-shadow:0 0 16px rgba(242,239,232,.95), 0 0 6px rgba(242,239,232,.95), 0 0 2px rgba(242,239,232,1);font-size:104px"><div class="line" id="cl7"><span class="w" id="k7_0">AROUND</span> <span class="w" id="k7_1" style="color:#1f5fd6">500</span><br><span class="w" id="k7_3">JETS</span> <span class="w" id="k7_4">THIS</span> <span class="w" id="k7_5">YEAR</span> </div></div>
+    <div class="clip cap low" id="cap8" data-start="29.332" data-duration="1.378" style="top:1330px;text-align:left;color:#141414;text-shadow:0 0 16px rgba(242,239,232,.95), 0 0 6px rgba(242,239,232,.95), 0 0 2px rgba(242,239,232,1);font-size:104px"><div class="line" id="cl8"><span class="w" id="k8_0">NINE</span> <span class="w" id="k8_1">MONTHS</span> <span class="w" id="k8_2">IN</span> </div></div>
+    <div class="clip cap low" id="cap9" data-start="30.720" data-duration="4.100" style="top:1330px;text-align:left;color:#141414;text-shadow:0 0 16px rgba(242,239,232,.95), 0 0 6px rgba(242,239,232,.95), 0 0 2px rgba(242,239,232,1);font-size:104px"><div class="line" id="cl9"><span class="w" id="k9_0">DELIVERED</span><br><span class="w" id="k9_2" style="color:#1f5fd6">367</span> </div></div>
+    <div class="clip cap top" id="cap10" data-start="34.900" data-duration="1.152" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl10"><span class="w" id="k10_0">NEXT</span> <span class="w" id="k10_1">YEAR'S</span><br><span class="w" id="k10_3">FREE</span> <span class="w" id="k10_4">CASH?</span> </div></div>
+    <div class="clip cap top" id="cap11" data-start="36.062" data-duration="1.365" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl11"><span class="w" id="k11_0" style="color:#ffc93c">$3</span> <span class="w" id="k11_1" style="color:#ffc93c">BILLION</span> </div></div>
+    <div class="clip cap top" id="cap12" data-start="37.437" data-duration="2.423" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl12"><span class="w" id="k12_0">WALL</span> <span class="w" id="k12_1">STREET</span><br><span class="w" id="k12_3">WANTED</span> <span class="w" id="k12_4" style="color:#5aa2ff">$5.5B</span> </div></div>
+    <div class="clip cap top" id="cap13" data-start="42.655" data-duration="0.890" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl13"><span class="w" id="k13_0">IT</span> <span class="w" id="k13_1">ISN'T</span><br><span class="w s" id="k13_3">DEMAND<i></i></span> </div></div>
+    <div class="clip cap top" id="cap14" data-start="43.555" data-duration="1.480" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl14"><span class="w" id="k14_0">AND</span> <span class="w" id="k14_1">IT</span> <span class="w" id="k14_2">ISN'T</span><br><span class="w s" id="k14_4">ENGINES<i></i></span> </div></div>
+    <div class="clip cap top" id="cap15" data-start="45.055" data-duration="1.102" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl15"><span class="w" id="k15_0">IT'S</span> <span class="w" id="k15_1">THE</span><br><span class="w" id="k15_3" style="color:#ffc93c">WINGS</span> </div></div>
+    <div class="clip cap top" id="cap16" data-start="46.167" data-duration="3.765" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl16"><span class="w" id="k16_0">BOEING</span> <span class="w" id="k16_1">BUILDS</span><br><span class="w" id="k16_3">EVERY</span> <span class="w" id="k16_4">737</span> <span class="w" id="k16_5">WING</span><br><span class="w" id="k16_7" style="color:#ffc93c">ITSELF</span> </div></div>
+    <div class="clip cap top" id="cap17" data-start="49.942" data-duration="1.858" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl17"><span class="w" id="k17_0">ITS</span> <span class="w" id="k17_1">BIGGEST</span><br><span class="w" id="k17_3" style="color:#ff3b30">BOTTLENECK</span> </div></div>
+    <div class="clip cap top" id="cap18" data-start="59.732" data-duration="1.778" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl18"><span class="w" id="k18_0">A</span> <span class="w" id="k18_1">STEADY</span> <span class="w" id="k18_2" style="color:#ffc93c">47</span><br><span class="w" id="k18_4">JETS</span> <span class="w" id="k18_5">A</span> <span class="w" id="k18_6">MONTH</span> </div></div>
+    <div class="clip cap top" id="cap19" data-start="61.520" data-duration="2.915" style="top:300px;text-align:left;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6), 0 2px 4px rgba(0,0,0,.55);font-size:104px"><div class="line" id="cl19"><span class="w" id="k19_0">NOW</span> <span class="w" id="k19_1">SLIPS</span> <span class="w" id="k19_2">TO</span><br><span class="w" id="k19_4" style="color:#ff3b30">EARLY</span> <span class="w" id="k19_5" style="color:#ff3b30">2027</span> </div></div>
+    <div class="clip cap inkTop" id="cap20" data-start="64.355" data-duration="2.915" style="top:330px;text-align:center;color:#141414;text-shadow:none;font-size:84px"><div class="line" id="cl20"><span class="w" id="k20_0">THE</span> <span class="w" id="k20_1">MARKET</span> <span class="w" id="k20_2" style="color:#8a857a">ISN'T</span> <span class="w" id="k20_3">ASKING</span> </div></div>
+    <div class="clip cap inkTop" id="cap21" data-start="67.280" data-duration="2.525" style="top:330px;text-align:center;color:#141414;text-shadow:none;font-size:84px"><div class="line" id="cl21"><span class="w" id="k21_0">IT'S</span> <span class="w" id="k21_1">ASKING</span> </div></div>
+    <div class="clip cap cta" id="cap22" data-start="69.700" data-duration="1.565" style="top:210px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6);font-size:92px"><div class="line" id="cl22"><span class="w" id="k22_0" style="color:#2ecc71">BUYING</span> <span class="w" id="k22_1" style="color:#2ecc71">CHANCE</span><br><span class="w" id="k22_3">OR</span> <span class="w" id="k22_4" style="color:#ff3b30">WARNING</span> <span class="w" id="k22_5" style="color:#ff3b30">SIGN?</span> </div></div>
+    <div class="clip cap cta" id="cap23" data-start="71.275" data-duration="1.682" style="top:210px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6);font-size:92px"><div class="line" id="cl23"><span class="w" id="k23_0">TELL</span> <span class="w" id="k23_1">ME</span> <span class="w" id="k23_2">IN</span> <span class="w" id="k23_3">THE</span><br><span class="w" id="k23_5" style="color:#ffc93c">COMMENTS</span> </div></div>
+    <div class="clip cap cta" id="cap24" data-start="72.967" data-duration="3.443" style="top:210px;text-align:center;color:#ffffff;text-shadow:0 6px 26px rgba(0,0,0,.6);font-size:92px"><div class="line" id="cl24"><span class="w" id="k24_0" style="color:#ffc93c">FOLLOW</span> <span class="w" id="k24_1">FOR</span> <span class="w" id="k24_2">THE</span><br><span class="w" id="k24_4">DAILY</span> <span class="w" id="k24_5">MARKET</span> <span class="w" id="k24_6">STORY</span> </div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#k0_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 0.000);
+      tl.fromTo("#k0_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 0.425);
+      tl.fromTo("#k0_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 0.600);
+      tl.to("#cl0", {opacity: 0, duration: 0.07, ease: "none"}, 0.793);
+      tl.fromTo("#k1_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 0.888);
+      tl.fromTo("#k1_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 1.163);
+      tl.fromTo("#k1_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 1.625);
+      tl.to("#cl1", {opacity: 0, duration: 0.07, ease: "none"}, 2.355);
+      tl.fromTo("#k2_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 2.450);
+      tl.fromTo("#k2_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 2.537);
+      tl.fromTo("#k2_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 2.613);
+      tl.fromTo("#k2_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 3.000);
+      tl.to("#cl2", {opacity: 0, duration: 0.07, ease: "none"}, 3.715);
+      tl.fromTo("#k3_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 3.880);
+      tl.fromTo("#k3_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 3.992);
+      tl.fromTo("#k3_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 4.080);
+      tl.to("#cl3", {opacity: 0, duration: 0.07, ease: "none"}, 4.310);
+      tl.fromTo("#k4_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 4.405);
+      tl.fromTo("#k4_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 4.517);
+      tl.fromTo("#k4_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 5.042);
+      tl.fromTo("#k4_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 5.280);
+      tl.fromTo("#k4_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 5.717);
+      tl.fromTo("#k4_7", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 5.830);
+      tl.fromTo("#k4_8", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 6.167);
+      tl.to("#cl4", {opacity: 0, duration: 0.07, ease: "none"}, 7.030);
+      tl.fromTo("#k5_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 22.075);
+      tl.fromTo("#k5_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 22.200);
+      tl.fromTo("#k5_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 22.350);
+      tl.fromTo("#k5_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 22.662);
+      tl.to("#cl5", {opacity: 0, duration: 0.07, ease: "none"}, 23.705);
+      tl.fromTo("#k6_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 23.800);
+      tl.fromTo("#k6_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 23.925);
+      tl.to("#cl6", {opacity: 0, duration: 0.07, ease: "none"}, 24.690);
+      tl.fromTo("#k7_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 25.980);
+      tl.fromTo("#k7_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 26.317);
+      tl.fromTo("#k7_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 28.155);
+      tl.fromTo("#k7_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 28.430);
+      tl.fromTo("#k7_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 28.630);
+      tl.to("#cl7", {opacity: 0, duration: 0.07, ease: "none"}, 29.247);
+      tl.fromTo("#k8_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 29.342);
+      tl.fromTo("#k8_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 29.630);
+      tl.fromTo("#k8_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 29.930);
+      tl.to("#cl8", {opacity: 0, duration: 0.07, ease: "none"}, 30.635);
+      tl.fromTo("#k9_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 30.730);
+      tl.fromTo("#k9_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 31.192);
+      tl.to("#cl9", {opacity: 0, duration: 0.07, ease: "none"}, 34.745);
+      tl.fromTo("#k10_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 34.910);
+      tl.fromTo("#k10_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 35.072);
+      tl.fromTo("#k10_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 35.310);
+      tl.fromTo("#k10_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 35.510);
+      tl.to("#cl10", {opacity: 0, duration: 0.07, ease: "none"}, 35.977);
+      tl.fromTo("#k11_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 36.072);
+      tl.fromTo("#k11_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 36.347);
+      tl.to("#cl11", {opacity: 0, duration: 0.07, ease: "none"}, 37.352);
+      tl.fromTo("#k12_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 37.447);
+      tl.fromTo("#k12_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 37.685);
+      tl.fromTo("#k12_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 37.985);
+      tl.fromTo("#k12_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 38.310);
+      tl.to("#cl12", {opacity: 0, duration: 0.07, ease: "none"}, 39.785);
+      tl.fromTo("#k13_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 42.665);
+      tl.fromTo("#k13_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 42.777);
+      tl.fromTo("#k13_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 43.015);
+      tl.fromTo("#k13_3 i", {scaleX: 0}, {scaleX: 1, duration: 0.18, ease: "power2.inOut"}, 43.365);
+      tl.to("#cl13", {opacity: 0, duration: 0.07, ease: "none"}, 43.470);
+      tl.fromTo("#k14_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 43.565);
+      tl.fromTo("#k14_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 43.677);
+      tl.fromTo("#k14_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 43.752);
+      tl.fromTo("#k14_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 43.990);
+      tl.fromTo("#k14_4 i", {scaleX: 0}, {scaleX: 1, duration: 0.18, ease: "power2.inOut"}, 44.340);
+      tl.to("#cl14", {opacity: 0, duration: 0.07, ease: "none"}, 44.960);
+      tl.fromTo("#k15_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 45.065);
+      tl.fromTo("#k15_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 45.252);
+      tl.fromTo("#k15_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 45.365);
+      tl.to("#cl15", {opacity: 0, duration: 0.07, ease: "none"}, 46.082);
+      tl.fromTo("#k16_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 46.177);
+      tl.fromTo("#k16_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 46.515);
+      tl.fromTo("#k16_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 46.827);
+      tl.fromTo("#k16_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 47.190);
+      tl.fromTo("#k16_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 48.190);
+      tl.fromTo("#k16_7", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 48.390);
+      tl.to("#cl16", {opacity: 0, duration: 0.07, ease: "none"}, 49.857);
+      tl.fromTo("#k17_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 49.952);
+      tl.fromTo("#k17_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 50.102);
+      tl.fromTo("#k17_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 50.465);
+      tl.to("#cl17", {opacity: 0, duration: 0.07, ease: "none"}, 51.725);
+      tl.fromTo("#k18_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 59.742);
+      tl.fromTo("#k18_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 59.805);
+      tl.fromTo("#k18_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 60.117);
+      tl.fromTo("#k18_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 60.780);
+      tl.fromTo("#k18_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 61.180);
+      tl.fromTo("#k18_6", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 61.280);
+      tl.to("#cl18", {opacity: 0, duration: 0.07, ease: "none"}, 61.435);
+      tl.fromTo("#k19_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 61.530);
+      tl.fromTo("#k19_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 61.930);
+      tl.fromTo("#k19_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 62.255);
+      tl.fromTo("#k19_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 62.380);
+      tl.fromTo("#k19_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 62.680);
+      tl.to("#cl19", {opacity: 0, duration: 0.07, ease: "none"}, 64.360);
+      tl.fromTo("#k20_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 64.365);
+      tl.fromTo("#k20_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 64.440);
+      tl.fromTo("#k20_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 64.765);
+      tl.fromTo("#k20_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 65.027);
+      tl.to("#cl20", {opacity: 0, duration: 0.07, ease: "none"}, 67.195);
+      tl.fromTo("#k21_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 67.290);
+      tl.fromTo("#k21_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 67.452);
+      tl.to("#cl21", {opacity: 0, duration: 0.07, ease: "none"}, 69.730);
+      tl.fromTo("#k22_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 69.710);
+      tl.fromTo("#k22_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 69.997);
+      tl.fromTo("#k22_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 70.347);
+      tl.fromTo("#k22_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 70.435);
+      tl.fromTo("#k22_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 70.760);
+      tl.to("#cl22", {opacity: 0, duration: 0.07, ease: "none"}, 71.190);
+      tl.fromTo("#k23_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 71.285);
+      tl.fromTo("#k23_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 71.497);
+      tl.fromTo("#k23_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 71.597);
+      tl.fromTo("#k23_3", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 71.672);
+      tl.fromTo("#k23_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 71.760);
+      tl.to("#cl23", {opacity: 0, duration: 0.07, ease: "none"}, 72.882);
+      tl.fromTo("#k24_0", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 72.977);
+      tl.fromTo("#k24_1", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 73.315);
+      tl.fromTo("#k24_2", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 73.427);
+      tl.fromTo("#k24_4", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 73.540);
+      tl.fromTo("#k24_5", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 73.865);
+      tl.fromTo("#k24_6", {opacity: 0, y: 26}, {opacity: 1, y: 0, duration: 0.09, ease: "power2.out"}, 74.190);
+      tl.to("#cl24", {opacity: 0, duration: 0.07, ease: "none"}, 76.335);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,12 @@
+{
+ "Z": {
+  "name": "Zeythar, the Sage AI",
+  "description": "An ancient, calm, deep male voice with precise, measured diction and dry, understated wit; unhurried and resonant, gentle authority, slightly otherworldly but never robotic.",
+  "anchor_text": "I have watched a great many nights pass from this tower. Sit down, and tell me what is on your mind."
+ },
+ "L": {
+  "name": "The girl (20)",
+  "description": "A natural young American woman about twenty, warm and expressive, casual modern speech, quick and playful with a little sarcasm, a bit tired late at night.",
+  "anchor_text": "Okay, so today was honestly a lot, and I really need to talk to someone about it."
+ }
+}

@@ -1,0 +1,317 @@
+{
+ "name": "midterm-reactions",
+ "bpm": 120,
+ "wps": 3.75,
+ "min_hold": 2.5,
+ "lufs": -14,
+ "top_label": "MIDTERMS 2026",
+ "ticker_label": "RESULTS",
+ "ticker": [
+  "DEMOCRATS WIN CONTROL OF THE HOUSE AND THE SENATE",
+  "TEXAS: TALARICO (D) DEFEATS PAXTON (R) FOR U.S. SENATE",
+  "SOUTH CAROLINA: ANDREWS (D) DEFEATS DARLINE GRAHAM (R) FOR U.S. SENATE",
+  "THE NEW CONGRESS TAKES OFFICE IN JANUARY"
+ ],
+ "sequence": [
+  {
+   "type": "hook",
+   "vo": "hook",
+   "kicker": "ELECTION NIGHT ON X",
+   "kicker_y": 430,
+   "title": [
+    "AMERICA",
+    "VOTED."
+   ],
+   "fan": [
+    24,
+    17,
+    4
+   ],
+   "blue": [
+    "democrats"
+   ],
+   "highlight": [
+    "house",
+    "senate",
+    "x"
+   ],
+   "page_y": 700,
+   "layout": "Democrats won | both the House / and the Senate | on Tuesday. / Here's how | X took it."
+  },
+  {
+   "type": "post",
+   "n": 17,
+   "tin": "slam",
+   "energy": 3,
+   "tag": "ELECTION NIGHT",
+   "chips": [
+    {
+     "text": "391K LIKES",
+     "kind": "likes"
+    }
+   ]
+  },
+  {
+   "type": "post",
+   "n": 7,
+   "tin": "push",
+   "tag": "ELECTION NIGHT"
+  },
+  {
+   "type": "post",
+   "n": 1,
+   "tin": "whip",
+   "tag": "ELECTION NIGHT"
+  },
+  {
+   "type": "post",
+   "n": 12,
+   "tin": "flip",
+   "tag": "ELECTION NIGHT",
+   "words": 10
+  },
+  {
+   "type": "vo",
+   "vo": "texas",
+   "tin": "zoom",
+   "kicker": "TEXAS · U.S. SENATE",
+   "source": "Sources: Houston Public Media · NBC News",
+   "blue": [
+    "democrat",
+    "talarico"
+   ],
+   "red": [
+    "paxton"
+   ],
+   "highlight": [
+    "32",
+    "statewide"
+   ],
+   "layout": "In Texas, | Democrat | James Talarico / beat Ken Paxton | for the Senate: / the party's first | statewide win | there / in 32 years."
+  },
+  {
+   "type": "post",
+   "n": 15,
+   "tin": "push",
+   "tag": "TEXAS"
+  },
+  {
+   "type": "post",
+   "n": 13,
+   "tin": "whip",
+   "tag": "TEXAS",
+   "chips": [
+    {
+     "text": "SATIRE",
+     "kind": "note"
+    }
+   ]
+  },
+  {
+   "type": "post",
+   "n": 6,
+   "tin": "flip",
+   "tag": "THE IRAN ANGLE",
+   "chips": [
+    {
+     "text": "SATIRE",
+     "kind": "note"
+    }
+   ]
+  },
+  {
+   "type": "post",
+   "n": 14,
+   "tin": "glitch",
+   "tag": "THE IRAN ANGLE",
+   "extra": 1.0,
+   "move": "pull",
+   "chips": [
+    {
+     "text": "SATIRE · VIDEO STILL",
+     "kind": "note"
+    }
+   ],
+   "maxh": 930,
+   "cy": 785
+  },
+  {
+   "type": "post",
+   "n": 10,
+   "tin": "push",
+   "tag": "THE VIEW FROM ABROAD",
+   "chips": [
+    {
+     "text": "POSTED BEFORE THE RESULTS",
+     "kind": "note"
+    }
+   ]
+  },
+  {
+   "type": "vo",
+   "vo": "memes",
+   "tin": "zoom",
+   "highlight": [
+    "memes"
+   ],
+   "max_px": 230,
+   "layout": "Then came | the memes."
+  },
+  {
+   "type": "post",
+   "n": 4,
+   "tin": "slam",
+   "tag": "THE MEMES",
+   "chips": [
+    {
+     "text": "271K LIKES",
+     "kind": "likes"
+    }
+   ],
+   "punch": true
+  },
+  {
+   "type": "post",
+   "n": 3,
+   "tin": "whip",
+   "tag": "THE MEMES"
+  },
+  {
+   "type": "post",
+   "n": 2,
+   "tin": "push",
+   "tag": "THE MEMES"
+  },
+  {
+   "type": "post",
+   "n": 8,
+   "tin": "flip",
+   "tag": "THE MEMES",
+   "move": "pull"
+  },
+  {
+   "type": "vo",
+   "vo": "parody",
+   "tin": "zoom",
+   "highlight": [
+    "parodied"
+   ],
+   "blue": [
+    "democratic"
+   ],
+   "layout": "Many posts | parodied the warnings / about what | a Democratic win | would bring."
+  },
+  {
+   "type": "post",
+   "n": 19,
+   "tin": "push",
+   "tag": "THE PARODY"
+  },
+  {
+   "type": "post",
+   "n": 11,
+   "tin": "whip",
+   "tag": "THE PARODY"
+  },
+  {
+   "type": "post",
+   "n": 18,
+   "tin": "glitch",
+   "tag": "THE PARODY"
+  },
+  {
+   "type": "post",
+   "n": 21,
+   "tin": "flip",
+   "tag": "THE PARODY"
+  },
+  {
+   "type": "post",
+   "n": 23,
+   "tin": "push",
+   "tag": "THE PARODY",
+   "move": "pull"
+  },
+  {
+   "type": "post",
+   "n": 9,
+   "tin": "glitch",
+   "tag": "THE PARODY",
+   "extra": 1.5,
+   "move": "pull"
+  },
+  {
+   "type": "post",
+   "n": 20,
+   "tin": "whip",
+   "tag": "THE PARODY"
+  },
+  {
+   "type": "vo",
+   "vo": "housedems",
+   "tin": "zoom",
+   "kicker": "@HOUSEDEMOCRATS",
+   "blue": [
+    "democrats"
+   ],
+   "highlight": [
+    "work"
+   ],
+   "layout": "House Democrats | posted, / “Let's get | to work.” / The replies | came fast."
+  },
+  {
+   "type": "post",
+   "n": 22,
+   "tin": "push",
+   "tag": "THE REPLIES",
+   "move": "pull"
+  },
+  {
+   "type": "post",
+   "n": 5,
+   "tin": "whip",
+   "tag": "THE REPLIES",
+   "move": "pull"
+  },
+  {
+   "type": "vo",
+   "vo": "close",
+   "tin": "zoom",
+   "highlight": [
+    "january"
+   ],
+   "kicker": "WHAT'S NEXT",
+   "layout": "The new Congress | takes over / in January."
+  },
+  {
+   "type": "post",
+   "n": 24,
+   "tin": "slam",
+   "energy": 3,
+   "tag": "THE LAST WORD",
+   "chips": [
+    {
+     "text": "612K LIKES",
+     "kind": "likes"
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "vo": "cta",
+   "tin": "zoom",
+   "kicker": "MIDTERMS 2026",
+   "highlight": [
+    "feed"
+   ],
+   "end_hold": 3.5,
+   "layout": "What did | your feed | look like?",
+   "footer": [
+    "Posts shown as published on X, Nov 3–4, 2026",
+    "AI voice (text to speech) · music made in code"
+   ]
+  }
+ ],
+ "card_maxh": 850,
+ "card_cy": 780
+}

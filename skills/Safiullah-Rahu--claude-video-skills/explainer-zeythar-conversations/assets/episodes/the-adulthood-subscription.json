@@ -1,0 +1,26 @@
+{
+ "title": "The Adulthood Subscription",
+ "series": "Conversations Beyond Time",
+ "category": "COMEDY · DAILY LIFE",
+ "clock": {"from": "11:52", "to": "11:54"},
+ "end_card": {"rows": ["WHAT DID ADULTHOOD", "FORGET TO MENTION?"], "sub": "COMMENT BELOW"},
+ "cover_hook": ["NOBODY TOLD ME", "ADULTHOOD WOULD BE THIS EXPENSIVE."],
+ "accent_words": ["expensive.", "terms", "conditions.", "freedom.", "bills", "unsubscribe.", "eighteen."],
+ "lines": [
+  {"who": "L", "line": "Zeythar, nobody told me adulthood would be this expensive.",
+   "delivery": "Exasperated and a little dramatic, casual.", "acting": ["brows_up", "head_tilt@expensive."], "picture": "GIRL_OPEN"},
+  {"who": "Z", "line": "You were informed. You simply ignored the terms and conditions.",
+   "delivery": "Deadpan and dry, flat monotone, unhurried, no sing-song.", "acting": ["orb_bright", "hood_tilt@terms"], "picture": "HOOD_ORB_TAG",
+   "orb": {"morph": "document", "at": "terms"}},
+  {"who": "L", "line": "I thought adulthood meant freedom.",
+   "delivery": "Wistful and a bit whiny.", "acting": ["eyes_up", "half_smile@freedom."], "picture": "GIRL_CU"},
+  {"who": "Z", "line": "It does. You are now free to pay all your bills yourself.",
+   "delivery": "Dry deadpan, matter-of-fact, a tiny beat after 'It does'.", "acting": ["hand_turn@free"], "react": ["brows_together@bills"], "picture": "WIDE",
+   "orb": {"morph": "coin", "at": "bills"}, "pluck": "yourself."},
+  {"who": "L", "line": "I want to unsubscribe.",
+   "delivery": "Flat and fed up, half joking.", "acting": ["head_drop", "brow_one@unsubscribe."], "picture": "GIRL_MCU"},
+  {"who": "Z", "line": "Unfortunately, your free trial ended at eighteen.",
+   "delivery": "Completely deadpan and final, flat monotone, slow.", "acting": ["still"], "picture": "HOOD_ORB",
+   "orb": {"morph": "hourglass", "at": "trial"}, "pluck": "eighteen."}
+ ]
+}

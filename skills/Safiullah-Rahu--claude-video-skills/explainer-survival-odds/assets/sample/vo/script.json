@@ -1,0 +1,358 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.06,
+ "lead": 0.12,
+ "tail": 6.0,
+ "gap": 0.3,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "If the zombie apocalypse catches you on an oil rig in the middle of the sea… consider yourself lucky.",
+   "caps": [
+    [
+     "If the zombie apocalypse",
+     "r"
+    ],
+    [
+     "catches you|on an oil rig",
+     "w"
+    ],
+    [
+     "in the middle|of the sea...",
+     "w"
+    ],
+    [
+     "consider yourself lucky.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l02",
+   "gap": 0.4,
+   "text": "But only if you don't make one fatal mistake.",
+   "caps": [
+    [
+     "But only if you",
+     "w"
+    ],
+    [
+     "don't make one|fatal mistake.",
+     "r"
+    ]
+   ]
+  },
+  {
+   "id": "l03",
+   "gap": 0.55,
+   "text": "Meet Meera. She's thirty-three. She keeps a small gas platform running, a hundred and forty kilometres out at sea.",
+   "caps": [
+    [
+     "Meet Mira.",
+     "y"
+    ],
+    [
+     "She's thirty-three.",
+     "y"
+    ],
+    [
+     "She keeps a small|gas platform running,",
+     "w"
+    ],
+    [
+     "a hundred and forty|kilometres out at sea.",
+     "y"
+    ]
+   ]
+  },
+  {
+   "id": "l04",
+   "text": "Most nights, nobody lives here at all. Tonight, it's just Meera and the seagulls.",
+   "caps": [
+    [
+     "Most nights,",
+     "w"
+    ],
+    [
+     "nobody lives here at all.",
+     "w"
+    ],
+    [
+     "Tonight,",
+     "w"
+    ],
+    [
+     "it's just Mira|and the seagulls.",
+     "w"
+    ]
+   ]
+  },
+  {
+   "id": "l05",
+   "text": "Check the pressures. Log the weather. Dinner for one.",
+   "caps": [
+    [
+     "Check the pressures.",
+     "w"
+    ],
+    [
+     "Log the weather.",
+     "w"
+    ],
+    [
+     "Dinner for one.",
+     "w"
+    ]
+   ]
+  },
+  {
+   "id": "l06",
+   "gap": 0.35,
+   "text": "But tonight, her life changed forever.",
+   "caps": [
+    [
+     "But tonight,",
+     "w"
+    ],
+    [
+     "her life changed forever.",
+     "r"
+    ]
+   ]
+  },
+  {
+   "id": "l07",
+   "gap": 0.4,
+   "text": "At nine forty, the radio crackled. The shore base. Outbreak in Port Ness. All flights stop at midnight.",
+   "caps": [
+    [
+     "At nine forty,",
+     "y"
+    ],
+    [
+     "the radio crackled.",
+     "w"
+    ],
+    [
+     "The shore base.",
+     "w"
+    ],
+    [
+     "Outbreak in Port Ness.",
+     "r"
+    ],
+    [
+     "All flights stop|at midnight.",
+     "r"
+    ]
+   ]
+  },
+  {
+   "id": "l08",
+   "text": "Then the helicopter called. One seat left. Ten minutes.",
+   "caps": [
+    [
+     "Then the helicopter called.",
+     "w"
+    ],
+    [
+     "One seat left.",
+     "y"
+    ],
+    [
+     "Ten minutes.",
+     "y"
+    ]
+   ]
+  },
+  {
+   "id": "l09",
+   "gap": 0.35,
+   "text": "Meera looked at the heli-deck… and said no.",
+   "caps": [
+    [
+     "Mira looked|at the helideck...",
+     "w"
+    ],
+    [
+     "and said no.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l10",
+   "gap": 0.35,
+   "text": "What if the pilot was bitten? What if the heliport was already gone? A helicopter is just a very fast way to land in the middle of it.",
+   "caps": [
+    [
+     "What if the pilot|was bitten?",
+     "r"
+    ],
+    [
+     "What if the heliport|was already gone?",
+     "r"
+    ],
+    [
+     "A helicopter is just",
+     "w"
+    ],
+    [
+     "a very fast way",
+     "w"
+    ],
+    [
+     "to land in|the middle of it.",
+     "r"
+    ]
+   ]
+  },
+  {
+   "id": "l11",
+   "gap": 0.35,
+   "text": "So Meera decided to stay. The dead can't swim. They sink.",
+   "caps": [
+    [
+     "So Mira decided to stay.",
+     "g"
+    ],
+    [
+     "The dead can't swim.",
+     "g"
+    ],
+    [
+     "They sink.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l12",
+   "text": "A hundred and forty kilometres of cold, black water. Better than any wall.",
+   "caps": [
+    [
+     "A hundred and forty|kilometres",
+     "y"
+    ],
+    [
+     "of cold, black water.",
+     "w"
+    ],
+    [
+     "Better than any wall.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l13",
+   "text": "Emergency food for twelve people for a month. For one person, that's almost a year.",
+   "caps": [
+    [
+     "Emergency food",
+     "w"
+    ],
+    [
+     "for twelve people|for a month.",
+     "y"
+    ],
+    [
+     "For one person,",
+     "w"
+    ],
+    [
+     "that's almost a year.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l14",
+   "text": "A machine that turns seawater into drinking water. And power? The platform burns its own gas. Forever.",
+   "caps": [
+    [
+     "A machine that turns",
+     "w"
+    ],
+    [
+     "seawater into|drinking water.",
+     "w"
+    ],
+    [
+     "And power?",
+     "w"
+    ],
+    [
+     "The platform burns|its own gas.",
+     "w"
+    ],
+    [
+     "Forever.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l15",
+   "gap": 0.3,
+   "text": "She pulled up the boat ladder. She chained the gate to the heli-deck.",
+   "caps": [
+    [
+     "She pulled up|the boat ladder.",
+     "w"
+    ],
+    [
+     "She chained the gate|to the helideck.",
+     "w"
+    ]
+   ]
+  },
+  {
+   "id": "l16",
+   "gap": 0.35,
+   "text": "Food? Check. Water? Check. Power? Check.",
+   "caps": [
+    [
+     "Food? Check.",
+     "g"
+    ],
+    [
+     "Water? Check.",
+     "g"
+    ],
+    [
+     "Power? Check.",
+     "g"
+    ]
+   ]
+  },
+  {
+   "id": "l17",
+   "gap": 0.45,
+   "text": "Ninety-seven percent. On paper.",
+   "caps": [
+    [
+     "Ninety-seven percent.",
+     "y"
+    ],
+    [
+     "On paper...",
+     "w"
+    ]
+   ]
+  },
+  {
+   "id": "l18",
+   "gap": 0.6,
+   "speed": 0.95,
+   "text": "But Meera forgot one thing.",
+   "caps": [
+    [
+     "But Mira forgot one thing...",
+     "r"
+    ]
+   ]
+  }
+ ],
+ "note": "TTS-only respellings: 'Meera' (Kokoro read 'Mira' as MY-ra; Whisper heard 'Myra') and 'heli-deck' (heard 'heli-tick'). Captions keep Mira / helideck."
+}

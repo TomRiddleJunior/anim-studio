@@ -1,0 +1,42 @@
+{
+ "voice": "am_michael",
+ "speed": 1.15,
+ "lead": 0.3,
+ "tail": 0.6,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "Democrats won both the House and the Senate on Tuesday. Here's how X took it."
+  },
+  {
+   "id": "texas",
+   "text": "In Texas, Democrat James Talarico beat Ken Paxton for the Senate: the party's first statewide win there in 32 years.",
+   "gap": 0.6
+  },
+  {
+   "id": "memes",
+   "text": "Then came the memes.",
+   "gap": 0.6
+  },
+  {
+   "id": "parody",
+   "text": "Many posts parodied the warnings about what a Democratic win would bring.",
+   "gap": 0.6
+  },
+  {
+   "id": "housedems",
+   "text": "House Democrats posted, “Let's get to work.” The replies came fast.",
+   "gap": 0.6
+  },
+  {
+   "id": "close",
+   "text": "The new Congress takes over in January.",
+   "gap": 0.6
+  },
+  {
+   "id": "cta",
+   "text": "What did your feed look like?",
+   "gap": 0.6
+  }
+ ]
+}

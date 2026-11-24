@@ -1,0 +1,29 @@
+{
+"duration": 98.94,
+"sfx": [
+{
+"t": 16.545,
+"type": "whoosh",
+"gain": 0.45,
+"pitch": 0.8
+},
+{
+"t": 23.285,
+"type": "woosh_low",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 67.095,
+"type": "woosh_low",
+"gain": 0.25,
+"pitch": 1.0
+},
+{
+"t": 93.205,
+"type": "whoosh",
+"gain": 0.3,
+"pitch": 0.7
+}
+]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "guardian-episode",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.210 preview",
+    "render": "npx --yes hyperframes@0.8.210 render"
+  }
+}

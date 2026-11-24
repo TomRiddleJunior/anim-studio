@@ -1,0 +1,1222 @@
+{
+ "duration": 83.96,
+ "voice": "af_heart",
+ "words": 185,
+ "wpm_overall": 132.2,
+ "wpm_speech": 185.5,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "I erase people's voices for a living.",
+   "start": 0.16,
+   "end": 2.31,
+   "words": [
+    {
+     "w": "I",
+     "start": 0.16,
+     "end": 0.31
+    },
+    {
+     "w": "erase",
+     "start": 0.31,
+     "end": 0.635
+    },
+    {
+     "w": "people's",
+     "start": 0.635,
+     "end": 1.035
+    },
+    {
+     "w": "voices",
+     "start": 1.035,
+     "end": 1.485
+    },
+    {
+     "w": "for",
+     "start": 1.485,
+     "end": 1.598
+    },
+    {
+     "w": "a",
+     "start": 1.598,
+     "end": 1.66
+    },
+    {
+     "w": "living.",
+     "start": 1.66,
+     "end": 2.31
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "Voicemail, I mean.",
+   "start": 2.82,
+   "end": 3.92,
+   "words": [
+    {
+     "w": "Voicemail,",
+     "start": 2.82,
+     "end": 3.22
+    },
+    {
+     "w": "I",
+     "start": 3.257,
+     "end": 3.357
+    },
+    {
+     "w": "mean.",
+     "start": 3.357,
+     "end": 3.92
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "When a mailbox fills up, I wipe it.",
+   "start": 4.41,
+   "end": 6.51,
+   "words": [
+    {
+     "w": "When",
+     "start": 4.41,
+     "end": 4.523
+    },
+    {
+     "w": "a",
+     "start": 4.523,
+     "end": 4.585
+    },
+    {
+     "w": "mailbox",
+     "start": 4.585,
+     "end": 5.085
+    },
+    {
+     "w": "fills",
+     "start": 5.085,
+     "end": 5.348
+    },
+    {
+     "w": "up,",
+     "start": 5.348,
+     "end": 5.56
+    },
+    {
+     "w": "I",
+     "start": 5.635,
+     "end": 5.785
+    },
+    {
+     "w": "wipe",
+     "start": 5.785,
+     "end": 6.085
+    },
+    {
+     "w": "it.",
+     "start": 6.085,
+     "end": 6.51
+    }
+   ]
+  },
+  {
+   "id": "l04",
+   "i": 3,
+   "text": "Three hundred a day.",
+   "start": 7.0,
+   "end": 8.25,
+   "words": [
+    {
+     "w": "Three",
+     "start": 7.0,
+     "end": 7.25
+    },
+    {
+     "w": "hundred",
+     "start": 7.25,
+     "end": 7.588
+    },
+    {
+     "w": "a",
+     "start": 7.588,
+     "end": 7.65
+    },
+    {
+     "w": "day.",
+     "start": 7.65,
+     "end": 8.25
+    }
+   ]
+  },
+  {
+   "id": "l05",
+   "i": 4,
+   "text": "We're never allowed to listen.",
+   "start": 8.74,
+   "end": 10.465,
+   "words": [
+    {
+     "w": "We're",
+     "start": 8.74,
+     "end": 8.903
+    },
+    {
+     "w": "never",
+     "start": 8.903,
+     "end": 9.24
+    },
+    {
+     "w": "allowed",
+     "start": 9.24,
+     "end": 9.64
+    },
+    {
+     "w": "to",
+     "start": 9.64,
+     "end": 9.765
+    },
+    {
+     "w": "listen.",
+     "start": 9.765,
+     "end": 10.465
+    }
+   ]
+  },
+  {
+   "id": "l06",
+   "i": 5,
+   "text": "Last winter, one box wouldn't stop filling.",
+   "start": 11.125,
+   "end": 13.725,
+   "words": [
+    {
+     "w": "Last",
+     "start": 11.125,
+     "end": 11.425
+    },
+    {
+     "w": "winter,",
+     "start": 11.425,
+     "end": 11.875
+    },
+    {
+     "w": "one",
+     "start": 11.975,
+     "end": 12.2
+    },
+    {
+     "w": "box",
+     "start": 12.2,
+     "end": 12.55
+    },
+    {
+     "w": "wouldn't",
+     "start": 12.55,
+     "end": 12.763
+    },
+    {
+     "w": "stop",
+     "start": 12.763,
+     "end": 13.075
+    },
+    {
+     "w": "filling.",
+     "start": 13.075,
+     "end": 13.725
+    }
+   ]
+  },
+  {
+   "id": "l07",
+   "i": 6,
+   "text": "Four hundred and twelve messages.",
+   "start": 14.215,
+   "end": 16.315,
+   "words": [
+    {
+     "w": "Four",
+     "start": 14.215,
+     "end": 14.465
+    },
+    {
+     "w": "hundred",
+     "start": 14.465,
+     "end": 15.003
+    },
+    {
+     "w": "and",
+     "start": 15.003,
+     "end": 15.14
+    },
+    {
+     "w": "twelve",
+     "start": 15.14,
+     "end": 15.44
+    },
+    {
+     "w": "messages.",
+     "start": 15.44,
+     "end": 16.315
+    }
+   ]
+  },
+  {
+   "id": "l08",
+   "i": 7,
+   "text": "None of them heard.",
+   "start": 16.805,
+   "end": 17.905,
+   "words": [
+    {
+     "w": "None",
+     "start": 16.805,
+     "end": 16.968
+    },
+    {
+     "w": "of",
+     "start": 16.968,
+     "end": 17.043
+    },
+    {
+     "w": "them",
+     "start": 17.043,
+     "end": 17.23
+    },
+    {
+     "w": "heard.",
+     "start": 17.23,
+     "end": 17.905
+    }
+   ]
+  },
+  {
+   "id": "l09",
+   "i": 8,
+   "text": "All from one number.",
+   "start": 18.565,
+   "end": 19.815,
+   "words": [
+    {
+     "w": "All",
+     "start": 18.565,
+     "end": 18.79
+    },
+    {
+     "w": "from",
+     "start": 18.79,
+     "end": 18.99
+    },
+    {
+     "w": "one",
+     "start": 18.99,
+     "end": 19.215
+    },
+    {
+     "w": "number.",
+     "start": 19.215,
+     "end": 19.815
+    }
+   ]
+  },
+  {
+   "id": "l10",
+   "i": 9,
+   "text": "Every Sunday. Six p.m.",
+   "start": 20.305,
+   "end": 22.28,
+   "words": [
+    {
+     "w": "Every",
+     "start": 20.305,
+     "end": 20.618
+    },
+    {
+     "w": "Sunday.",
+     "start": 20.618,
+     "end": 21.18
+    },
+    {
+     "w": "Six",
+     "start": 21.318,
+     "end": 21.605
+    },
+    {
+     "w": "p.m.",
+     "start": 21.605,
+     "end": 22.28
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "i": 10,
+   "text": "Four hundred and twelve Sundays.",
+   "start": 22.77,
+   "end": 24.82,
+   "words": [
+    {
+     "w": "Four",
+     "start": 22.77,
+     "end": 23.02
+    },
+    {
+     "w": "hundred",
+     "start": 23.02,
+     "end": 23.532
+    },
+    {
+     "w": "and",
+     "start": 23.532,
+     "end": 23.67
+    },
+    {
+     "w": "twelve",
+     "start": 23.67,
+     "end": 23.995
+    },
+    {
+     "w": "Sundays.",
+     "start": 23.995,
+     "end": 24.82
+    }
+   ]
+  },
+  {
+   "id": "l13",
+   "i": 11,
+   "text": "The box belonged to a woman named June.",
+   "start": 25.43,
+   "end": 27.655,
+   "words": [
+    {
+     "w": "The",
+     "start": 25.43,
+     "end": 25.505
+    },
+    {
+     "w": "box",
+     "start": 25.505,
+     "end": 25.83
+    },
+    {
+     "w": "belonged",
+     "start": 25.83,
+     "end": 26.28
+    },
+    {
+     "w": "to",
+     "start": 26.28,
+     "end": 26.367
+    },
+    {
+     "w": "a",
+     "start": 26.367,
+     "end": 26.455
+    },
+    {
+     "w": "woman",
+     "start": 26.455,
+     "end": 26.755
+    },
+    {
+     "w": "named",
+     "start": 26.755,
+     "end": 27.017
+    },
+    {
+     "w": "June.",
+     "start": 27.017,
+     "end": 27.655
+    }
+   ]
+  },
+  {
+   "id": "l14",
+   "i": 12,
+   "text": "June died eight years ago.",
+   "start": 28.145,
+   "end": 29.72,
+   "words": [
+    {
+     "w": "June",
+     "start": 28.145,
+     "end": 28.42
+    },
+    {
+     "w": "died",
+     "start": 28.42,
+     "end": 28.732
+    },
+    {
+     "w": "eight",
+     "start": 28.732,
+     "end": 28.945
+    },
+    {
+     "w": "years",
+     "start": 28.945,
+     "end": 29.182
+    },
+    {
+     "w": "ago.",
+     "start": 29.182,
+     "end": 29.72
+    }
+   ]
+  },
+  {
+   "id": "l15",
+   "i": 13,
+   "text": "Someone still paid her bill.",
+   "start": 30.21,
+   "end": 31.71,
+   "words": [
+    {
+     "w": "Someone",
+     "start": 30.21,
+     "end": 30.51
+    },
+    {
+     "w": "still",
+     "start": 30.51,
+     "end": 30.785
+    },
+    {
+     "w": "paid",
+     "start": 30.785,
+     "end": 31.022
+    },
+    {
+     "w": "her",
+     "start": 31.022,
+     "end": 31.135
+    },
+    {
+     "w": "bill.",
+     "start": 31.135,
+     "end": 31.71
+    }
+   ]
+  },
+  {
+   "id": "l16",
+   "i": 14,
+   "text": "Every message was nine seconds long.",
+   "start": 32.27,
+   "end": 34.52,
+   "words": [
+    {
+     "w": "Every",
+     "start": 32.27,
+     "end": 32.545
+    },
+    {
+     "w": "message",
+     "start": 32.545,
+     "end": 32.995
+    },
+    {
+     "w": "was",
+     "start": 32.995,
+     "end": 33.17
+    },
+    {
+     "w": "nine",
+     "start": 33.17,
+     "end": 33.507
+    },
+    {
+     "w": "seconds",
+     "start": 33.507,
+     "end": 33.895
+    },
+    {
+     "w": "long.",
+     "start": 33.895,
+     "end": 34.52
+    }
+   ]
+  },
+  {
+   "id": "l17",
+   "i": 15,
+   "text": "Nobody says much in nine seconds.",
+   "start": 35.01,
+   "end": 36.985,
+   "words": [
+    {
+     "w": "Nobody",
+     "start": 35.01,
+     "end": 35.36
+    },
+    {
+     "w": "says",
+     "start": 35.36,
+     "end": 35.61
+    },
+    {
+     "w": "much",
+     "start": 35.61,
+     "end": 35.835
+    },
+    {
+     "w": "in",
+     "start": 35.835,
+     "end": 35.96
+    },
+    {
+     "w": "nine",
+     "start": 35.96,
+     "end": 36.26
+    },
+    {
+     "w": "seconds.",
+     "start": 36.26,
+     "end": 36.985
+    }
+   ]
+  },
+  {
+   "id": "l18",
+   "i": 16,
+   "text": "I was supposed to wipe it.",
+   "start": 37.595,
+   "end": 39.12,
+   "words": [
+    {
+     "w": "I",
+     "start": 37.595,
+     "end": 37.732
+    },
+    {
+     "w": "was",
+     "start": 37.732,
+     "end": 37.845
+    },
+    {
+     "w": "supposed",
+     "start": 37.845,
+     "end": 38.295
+    },
+    {
+     "w": "to",
+     "start": 38.295,
+     "end": 38.42
+    },
+    {
+     "w": "wipe",
+     "start": 38.42,
+     "end": 38.72
+    },
+    {
+     "w": "it.",
+     "start": 38.72,
+     "end": 39.12
+    }
+   ]
+  },
+  {
+   "id": "l19",
+   "i": 17,
+   "text": "A wipe erases her greeting, too.",
+   "start": 39.61,
+   "end": 41.51,
+   "words": [
+    {
+     "w": "A",
+     "start": 39.61,
+     "end": 39.697
+    },
+    {
+     "w": "wipe",
+     "start": 39.697,
+     "end": 40.01
+    },
+    {
+     "w": "erases",
+     "start": 40.01,
+     "end": 40.422
+    },
+    {
+     "w": "her",
+     "start": 40.422,
+     "end": 40.535
+    },
+    {
+     "w": "greeting,",
+     "start": 40.535,
+     "end": 40.885
+    },
+    {
+     "w": "too.",
+     "start": 40.947,
+     "end": 41.51
+    }
+   ]
+  },
+  {
+   "id": "l20",
+   "i": 18,
+   "text": "So I did something I'm not allowed to do.",
+   "start": 42.22,
+   "end": 44.37,
+   "words": [
+    {
+     "w": "So",
+     "start": 42.22,
+     "end": 42.395
+    },
+    {
+     "w": "I",
+     "start": 42.395,
+     "end": 42.507
+    },
+    {
+     "w": "did",
+     "start": 42.507,
+     "end": 42.67
+    },
+    {
+     "w": "something",
+     "start": 42.67,
+     "end": 43.02
+    },
+    {
+     "w": "I'm",
+     "start": 43.02,
+     "end": 43.195
+    },
+    {
+     "w": "not",
+     "start": 43.195,
+     "end": 43.42
+    },
+    {
+     "w": "allowed",
+     "start": 43.42,
+     "end": 43.72
+    },
+    {
+     "w": "to",
+     "start": 43.72,
+     "end": 43.845
+    },
+    {
+     "w": "do.",
+     "start": 43.845,
+     "end": 44.37
+    }
+   ]
+  },
+  {
+   "id": "l21",
+   "i": 19,
+   "text": "I pressed play.",
+   "start": 44.93,
+   "end": 46.08,
+   "words": [
+    {
+     "w": "I",
+     "start": 44.93,
+     "end": 45.08
+    },
+    {
+     "w": "pressed",
+     "start": 45.08,
+     "end": 45.405
+    },
+    {
+     "w": "play.",
+     "start": 45.405,
+     "end": 46.08
+    }
+   ]
+  },
+  {
+   "id": "m1",
+   "i": 20,
+   "text": "Hi, June. Just wanted to hear you.",
+   "start": 47.34,
+   "end": 50.19,
+   "words": [
+    {
+     "w": "Hi,",
+     "start": 47.34,
+     "end": 47.64
+    },
+    {
+     "w": "June.",
+     "start": 47.74,
+     "end": 48.365
+    },
+    {
+     "w": "Just",
+     "start": 48.477,
+     "end": 48.715
+    },
+    {
+     "w": "wanted",
+     "start": 48.715,
+     "end": 49.04
+    },
+    {
+     "w": "to",
+     "start": 49.04,
+     "end": 49.165
+    },
+    {
+     "w": "hear",
+     "start": 49.165,
+     "end": 49.49
+    },
+    {
+     "w": "you.",
+     "start": 49.49,
+     "end": 50.19
+    }
+   ]
+  },
+  {
+   "id": "l22",
+   "i": 21,
+   "text": "He wasn't calling to say anything.",
+   "start": 51.0,
+   "end": 52.9,
+   "words": [
+    {
+     "w": "He",
+     "start": 51.0,
+     "end": 51.125
+    },
+    {
+     "w": "wasn't",
+     "start": 51.125,
+     "end": 51.4
+    },
+    {
+     "w": "calling",
+     "start": 51.4,
+     "end": 51.775
+    },
+    {
+     "w": "to",
+     "start": 51.775,
+     "end": 51.9
+    },
+    {
+     "w": "say",
+     "start": 51.9,
+     "end": 52.125
+    },
+    {
+     "w": "anything.",
+     "start": 52.125,
+     "end": 52.9
+    }
+   ]
+  },
+  {
+   "id": "l23",
+   "i": 22,
+   "text": "He was calling to hear this.",
+   "start": 53.39,
+   "end": 54.865,
+   "words": [
+    {
+     "w": "He",
+     "start": 53.39,
+     "end": 53.477
+    },
+    {
+     "w": "was",
+     "start": 53.477,
+     "end": 53.64
+    },
+    {
+     "w": "calling",
+     "start": 53.64,
+     "end": 54.015
+    },
+    {
+     "w": "to",
+     "start": 54.015,
+     "end": 54.115
+    },
+    {
+     "w": "hear",
+     "start": 54.115,
+     "end": 54.34
+    },
+    {
+     "w": "this.",
+     "start": 54.34,
+     "end": 54.865
+    }
+   ]
+  },
+  {
+   "id": "g1",
+   "i": 23,
+   "text": "Hi, it's June. Leave me something nice.",
+   "start": 55.675,
+   "end": 58.325,
+   "words": [
+    {
+     "w": "Hi,",
+     "start": 55.675,
+     "end": 55.875
+    },
+    {
+     "w": "it's",
+     "start": 55.912,
+     "end": 56.112
+    },
+    {
+     "w": "June.",
+     "start": 56.112,
+     "end": 56.5
+    },
+    {
+     "w": "Leave",
+     "start": 56.587,
+     "end": 56.837
+    },
+    {
+     "w": "me",
+     "start": 56.837,
+     "end": 56.975
+    },
+    {
+     "w": "something",
+     "start": 56.975,
+     "end": 57.35
+    },
+    {
+     "w": "nice.",
+     "start": 57.35,
+     "end": 58.325
+    }
+   ]
+  },
+  {
+   "id": "l24",
+   "i": 24,
+   "text": "Every Sunday, he did.",
+   "start": 59.235,
+   "end": 60.76,
+   "words": [
+    {
+     "w": "Every",
+     "start": 59.235,
+     "end": 59.522
+    },
+    {
+     "w": "Sunday,",
+     "start": 59.522,
+     "end": 59.985
+    },
+    {
+     "w": "he",
+     "start": 60.035,
+     "end": 60.185
+    },
+    {
+     "w": "did.",
+     "start": 60.185,
+     "end": 60.76
+    }
+   ]
+  },
+  {
+   "id": "l25",
+   "i": 25,
+   "text": "Wipe it, and next Sunday he gets a stranger.",
+   "start": 61.47,
+   "end": 64.07,
+   "words": [
+    {
+     "w": "Wipe",
+     "start": 61.47,
+     "end": 61.757
+    },
+    {
+     "w": "it,",
+     "start": 61.757,
+     "end": 62.02
+    },
+    {
+     "w": "and",
+     "start": 62.095,
+     "end": 62.22
+    },
+    {
+     "w": "next",
+     "start": 62.22,
+     "end": 62.495
+    },
+    {
+     "w": "Sunday",
+     "start": 62.495,
+     "end": 62.895
+    },
+    {
+     "w": "he",
+     "start": 62.895,
+     "end": 62.995
+    },
+    {
+     "w": "gets",
+     "start": 62.995,
+     "end": 63.207
+    },
+    {
+     "w": "a",
+     "start": 63.207,
+     "end": 63.27
+    },
+    {
+     "w": "stranger.",
+     "start": 63.27,
+     "end": 64.07
+    }
+   ]
+  },
+  {
+   "id": "l26",
+   "i": 26,
+   "text": "You probably know a number like that.",
+   "start": 64.83,
+   "end": 66.73,
+   "words": [
+    {
+     "w": "You",
+     "start": 64.83,
+     "end": 64.955
+    },
+    {
+     "w": "probably",
+     "start": 64.955,
+     "end": 65.43
+    },
+    {
+     "w": "know",
+     "start": 65.43,
+     "end": 65.655
+    },
+    {
+     "w": "a",
+     "start": 65.655,
+     "end": 65.73
+    },
+    {
+     "w": "number",
+     "start": 65.73,
+     "end": 65.967
+    },
+    {
+     "w": "like",
+     "start": 65.967,
+     "end": 66.18
+    },
+    {
+     "w": "that.",
+     "start": 66.18,
+     "end": 66.73
+    }
+   ]
+  },
+  {
+   "id": "l27",
+   "i": 27,
+   "text": "One you'd call just to hear hello.",
+   "start": 67.22,
+   "end": 68.97,
+   "words": [
+    {
+     "w": "One",
+     "start": 67.22,
+     "end": 67.357
+    },
+    {
+     "w": "you'd",
+     "start": 67.357,
+     "end": 67.495
+    },
+    {
+     "w": "call",
+     "start": 67.495,
+     "end": 67.782
+    },
+    {
+     "w": "just",
+     "start": 67.782,
+     "end": 68.007
+    },
+    {
+     "w": "to",
+     "start": 68.007,
+     "end": 68.095
+    },
+    {
+     "w": "hear",
+     "start": 68.095,
+     "end": 68.32
+    },
+    {
+     "w": "hello.",
+     "start": 68.32,
+     "end": 68.97
+    }
+   ]
+  },
+  {
+   "id": "l28",
+   "i": 28,
+   "text": "So I cleared his messages.",
+   "start": 69.78,
+   "end": 71.38,
+   "words": [
+    {
+     "w": "So",
+     "start": 69.78,
+     "end": 69.867
+    },
+    {
+     "w": "I",
+     "start": 69.867,
+     "end": 70.017
+    },
+    {
+     "w": "cleared",
+     "start": 70.017,
+     "end": 70.342
+    },
+    {
+     "w": "his",
+     "start": 70.342,
+     "end": 70.505
+    },
+    {
+     "w": "messages.",
+     "start": 70.505,
+     "end": 71.38
+    }
+   ]
+  },
+  {
+   "id": "l29",
+   "i": 29,
+   "text": "And I kept her voice.",
+   "start": 72.04,
+   "end": 73.34,
+   "words": [
+    {
+     "w": "And",
+     "start": 72.04,
+     "end": 72.177
+    },
+    {
+     "w": "I",
+     "start": 72.177,
+     "end": 72.315
+    },
+    {
+     "w": "kept",
+     "start": 72.315,
+     "end": 72.577
+    },
+    {
+     "w": "her",
+     "start": 72.577,
+     "end": 72.69
+    },
+    {
+     "w": "voice.",
+     "start": 72.69,
+     "end": 73.34
+    }
+   ]
+  },
+  {
+   "id": "g2",
+   "i": 30,
+   "text": "Hi, it's June. Leave me something nice.",
+   "start": 75.55,
+   "end": 78.2,
+   "words": [
+    {
+     "w": "Hi,",
+     "start": 75.55,
+     "end": 75.75
+    },
+    {
+     "w": "it's",
+     "start": 75.787,
+     "end": 75.987
+    },
+    {
+     "w": "June.",
+     "start": 75.987,
+     "end": 76.375
+    },
+    {
+     "w": "Leave",
+     "start": 76.462,
+     "end": 76.712
+    },
+    {
+     "w": "me",
+     "start": 76.712,
+     "end": 76.85
+    },
+    {
+     "w": "something",
+     "start": 76.85,
+     "end": 77.225
+    },
+    {
+     "w": "nice.",
+     "start": 77.225,
+     "end": 78.2
+    }
+   ]
+  },
+  {
+   "id": "m2",
+   "i": 31,
+   "text": "Just wanted to hear you.",
+   "start": 79.41,
+   "end": 81.41,
+   "words": [
+    {
+     "w": "Just",
+     "start": 79.41,
+     "end": 79.685
+    },
+    {
+     "w": "wanted",
+     "start": 79.685,
+     "end": 80.172
+    },
+    {
+     "w": "to",
+     "start": 80.172,
+     "end": 80.347
+    },
+    {
+     "w": "hear",
+     "start": 80.347,
+     "end": 80.71
+    },
+    {
+     "w": "you.",
+     "start": 80.71,
+     "end": 81.41
+    }
+   ]
+  }
+ ]
+}

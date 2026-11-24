@@ -1,0 +1,196 @@
+{
+ "duration": 12.725,
+ "voice": "am_michael",
+ "words": 32,
+ "wpm_overall": 150.9,
+ "wpm_speech": 179.9,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "A jet built to break the sound barrier, without the big boom.",
+   "start": 0.18,
+   "end": 3.43,
+   "words": [
+    {
+     "w": "A",
+     "start": 0.18,
+     "end": 0.268
+    },
+    {
+     "w": "jet",
+     "start": 0.268,
+     "end": 0.53
+    },
+    {
+     "w": "built",
+     "start": 0.53,
+     "end": 0.78
+    },
+    {
+     "w": "to",
+     "start": 0.78,
+     "end": 0.88
+    },
+    {
+     "w": "break",
+     "start": 0.88,
+     "end": 1.117
+    },
+    {
+     "w": "the",
+     "start": 1.117,
+     "end": 1.205
+    },
+    {
+     "w": "sound",
+     "start": 1.205,
+     "end": 1.505
+    },
+    {
+     "w": "barrier,",
+     "start": 1.505,
+     "end": 2.055
+    },
+    {
+     "w": "without",
+     "start": 2.155,
+     "end": 2.48
+    },
+    {
+     "w": "the",
+     "start": 2.48,
+     "end": 2.58
+    },
+    {
+     "w": "big",
+     "start": 2.58,
+     "end": 2.83
+    },
+    {
+     "w": "boom.",
+     "start": 2.83,
+     "end": 3.43
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "It's NASA's X-59, built by Lockheed Martin for quiet supersonic flight.",
+   "start": 3.94,
+   "end": 8.765,
+   "words": [
+    {
+     "w": "It's",
+     "start": 3.94,
+     "end": 4.165
+    },
+    {
+     "w": "NASA's",
+     "start": 4.165,
+     "end": 4.603
+    },
+    {
+     "w": "X-59,",
+     "start": 4.603,
+     "end": 5.765
+    },
+    {
+     "w": "built",
+     "start": 5.865,
+     "end": 6.115
+    },
+    {
+     "w": "by",
+     "start": 6.115,
+     "end": 6.277
+    },
+    {
+     "w": "Lockheed",
+     "start": 6.277,
+     "end": 6.715
+    },
+    {
+     "w": "Martin",
+     "start": 6.715,
+     "end": 7.09
+    },
+    {
+     "w": "for",
+     "start": 7.09,
+     "end": 7.215
+    },
+    {
+     "w": "quiet",
+     "start": 7.215,
+     "end": 7.59
+    },
+    {
+     "w": "supersonic",
+     "start": 7.59,
+     "end": 8.165
+    },
+    {
+     "w": "flight.",
+     "start": 8.165,
+     "end": 8.765
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Stretched out like that, the shock waves don't merge.",
+   "start": 9.275,
+   "end": 11.875,
+   "words": [
+    {
+     "w": "Stretched",
+     "start": 9.275,
+     "end": 9.588
+    },
+    {
+     "w": "out",
+     "start": 9.588,
+     "end": 9.738
+    },
+    {
+     "w": "like",
+     "start": 9.738,
+     "end": 9.95
+    },
+    {
+     "w": "that,",
+     "start": 9.95,
+     "end": 10.225
+    },
+    {
+     "w": "the",
+     "start": 10.287,
+     "end": 10.387
+    },
+    {
+     "w": "shock",
+     "start": 10.387,
+     "end": 10.675
+    },
+    {
+     "w": "waves",
+     "start": 10.675,
+     "end": 11.05
+    },
+    {
+     "w": "don't",
+     "start": 11.05,
+     "end": 11.275
+    },
+    {
+     "w": "merge.",
+     "start": 11.275,
+     "end": 11.875
+    }
+   ]
+  }
+ ]
+}

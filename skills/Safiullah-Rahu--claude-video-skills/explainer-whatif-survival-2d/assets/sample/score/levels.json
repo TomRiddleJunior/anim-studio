@@ -1,0 +1,16 @@
+{
+ "full": [
+  -14.0,
+  -2.0,
+  9.7
+ ],
+ "nomusic": [
+  -14.0,
+  -2.0,
+  9.7
+ ],
+ "voice_over_rest_db_full": 15.9,
+ "voice_over_rest_db_nomusic": 18.2,
+ "voice_over_music_db": 19.6,
+ "bpm": 80.0
+}

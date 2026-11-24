@@ -1,0 +1,84 @@
+{
+ "voice": "bm_george",
+ "speed": 1.25,
+ "lead": 0.1,
+ "tail": 1.5,
+ "gap": 0.24,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "This is Hungary's prime minister, Peter Magyar.",
+   "gap": 0.0
+  },
+  {
+   "id": "open",
+   "text": "On November the fourth, his government opened the communist secret police files to anyone.",
+   "gap": 0.22
+  },
+  {
+   "id": "names",
+   "text": "About sixty thousand names are now public, Reuters and Euronews report.",
+   "gap": 0.3
+  },
+  {
+   "id": "card",
+   "text": "Each registration card lists a name, a job, and the grounds for recruitment.",
+   "gap": 0.26
+  },
+  {
+   "id": "archive",
+   "text": "The files sit in Budapest, at the state security archive.",
+   "gap": 0.26
+  },
+  {
+   "id": "network",
+   "text": "For four decades, the secret police recruited ordinary people to report on others.",
+   "gap": 0.3
+  },
+  {
+   "id": "tape",
+   "text": "The biggest list, about fifty-five thousand names, was kept on magnetic tape.",
+   "gap": 0.26
+  },
+  {
+   "id": "promise",
+   "text": "Magyar had promised this. Earlier governments kept putting it off.",
+   "gap": 0.3
+  },
+  {
+   "id": "register",
+   "text": "Plus a recruitment register, from nineteen fifty-seven to sixty-two.",
+   "gap": 0.24
+  },
+  {
+   "id": "proof",
+   "text": "But a name on a list is not proof that someone informed.",
+   "gap": 0.3
+  },
+  {
+   "id": "lost",
+   "text": "Many files were lost in nineteen fifty-six, and again as communism fell.",
+   "gap": 0.26
+  },
+  {
+   "id": "scale",
+   "text": "In all, it had about a hundred and fifty thousand agents. Only a third of the names are known.",
+   "gap": 0.3
+  },
+  {
+   "id": "quotes",
+   "text": "The archive's director warns the records are very incomplete. Magyar asked for dignity and humanity.",
+   "gap": 0.3
+  },
+  {
+   "id": "reports",
+   "text": "The informers' reports stay closed.",
+   "gap": 0.3
+  },
+  {
+   "id": "next",
+   "text": "Next: over nine thousand recruitment files, due by February twenty twenty-seven.",
+   "gap": 0.3
+  }
+ ]
+}

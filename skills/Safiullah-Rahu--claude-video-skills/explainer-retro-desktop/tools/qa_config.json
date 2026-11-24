@@ -1,0 +1,26 @@
+{
+ "source": "",
+ "source_note": "optional reference video for the compare sheet in tools/qa.py (or pass --ref); no default. source_metrics are the reference numbers the gates use",
+ "source_metrics": {"duration_s": 155.18, "cuts_per_min": 7.35, "scene_changes_per_min": 8.12, "wpm_overall": 204.2},
+ "narration": true,
+ "dip_note": "the outro zoom-out to the dark grid is planned",
+ "beats": [
+  [0.2, 0.2, "hook: the title window on frame 0"],
+  [1.0, 1.1, "a tool dragged onto the secret, scramble"],
+  [4.5, 4.6, "one window per term, cascading"],
+  [8.5, 8.6, "Tile: every term with a ?"],
+  [11.0, 12.9, "the concrete scenario"],
+  [16.5, 22.8, "the threat window (red title)"],
+  [17.6, 20.1, "presenter callout at left"],
+  [22.0, 38.9, "the transform window"],
+  [37.0, 48.7, "SIMPLE. centre stage"],
+  [43.0, 49.9, "PROBLEM. centre stage"],
+  [49.5, 65.6, "the generator window"],
+  [66.5, 85.5, "System Monitor pegged"],
+  [82.0, 99.0, "a setup-wizard step"],
+  [96.5, 114.9, "BUT WAIT... centre stage"],
+  [133.5, 135.7, "RECAP! with the minimised strip"],
+  [144.0, 143.0, "a recap card"],
+  [153.5, 153.5, "zoom-out: two monitors on the dark grid"]
+ ]
+}

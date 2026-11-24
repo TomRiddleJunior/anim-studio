@@ -1,0 +1,73 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #03050b; }
+    #world-canvas, #xf-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #xf-canvas { opacity: 0; pointer-events: none; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+    <canvas id="xf-canvas" width="1080" height="1920" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const VO = window.FILM_VO, DUR = VO.dur, FPS = 30;
+      const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+      // V.L(id) -> line {t0, t1, words}; V.w(id, word, k) -> start time of the k-th word starting with `word`
+      const V = {
+        L(id) { const l = VO.lines[id]; if (!l) throw new Error("no line " + id); return l; },
+        w(id, word, k) {
+          const hits = VO.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word)));
+          if (!hits.length) throw new Error("no word " + id + ":" + word);
+          return hits[Math.min(k || 0, hits.length - 1)][1];
+        },
+      };
+      const K = window.SURVIVAL.create(Object.assign({ canvas: document.getElementById("world-canvas"), width: 1080, height: 1920 }, window.FILM_CREATE || {}));
+      // a film can bring its own world (survival-vault.js, survival-ice.js): window.FILM_BUILD(K) -> X; default = the fire tower
+      const X = window.FILM_BUILD ? window.FILM_BUILD(K) : { Wd: K.world(), Tw: K.tower(), hz: K.hazel() };
+      X.DUR = DUR;
+      const film = window.FILM(K, V, X);
+      const SH = film.shots;
+      const easeIO = (u) => -(Math.cos(Math.PI * u) - 1) / 2;
+      const lerp3 = (a, b, u) => [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u, a[2] + (b[2] - a[2]) * u];
+      let ready = false, lastT = -1, curT = 0;
+      const glc = document.getElementById("world-canvas"), xfc = document.getElementById("xf-canvas"), xctx = xfc.getContext("2d");
+      const smooth = (x) => { x = Math.min(1, Math.max(0, x)); return x * x * (3 - 2 * x); };
+      // state of shot j at time t; past its end (a dissolve tail) the move continues at its final slope
+      function stateFor(j, t) {
+        const s = SH[j], t1 = j < SH.length - 1 ? SH[j + 1].t0 : DUR;
+        const ur = (t - s.t0) / (t1 - s.t0), u = Math.min(1, Math.max(0, ur));
+        const ease = s.ease || easeIO;
+        let e = ease(u);
+        if (ur > 1) e = 1 + ((ease(1) - ease(0.999)) / 0.001) * (ur - 1);
+        film.reset(t, s);
+        const st = Object.assign({}, film.base || {}, s.st || {}, { cam: lerp3(s.cam[0], s.cam[1], e), look: lerp3(s.look[0], s.look[1], e), fov: s.fov, t });
+        Object.assign(st, s.fn ? s.fn(t, u, e, st) || {} : {});
+        return st;
+      }
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        let i = 0;
+        while (i < SH.length - 1 && t >= SH[i + 1].t0) i++;
+        const xf = SH[i].xf || 0;
+        if (xf > 0 && i > 0 && t < SH[i].t0 + xf) {        // cross-dissolve: outgoing shot under an overlay that fades out
+          K.render(stateFor(i - 1, t));
+          xctx.clearRect(0, 0, 1080, 1920);
+          xctx.drawImage(glc, 0, 0);
+          xfc.style.opacity = String(1 - smooth((t - SH[i].t0) / xf));
+        } else xfc.style.opacity = "0";
+        K.render(stateFor(i, t));
+      }
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = K.ready.then(() => { ready = true; lastT = -1; draw(curT); });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

@@ -1,0 +1,13 @@
+{
+ "voice": "am_eric",
+ "speed": 1.12,
+ "lead": 0.15,
+ "tail": 1.2,
+ "gap": 0.3,
+ "lines": [
+  {"id": "r01", "text": "This man checks into Room 305 every Friday night."},
+  {"id": "r04", "gap": 0.4, "text": "Nadia, the night receptionist, sees his call light up, and it's driving her crazy."},
+  {"id": "r10", "gap": 0.35, "text": "Why? You have three seconds."},
+  {"id": "r11", "gap": 3.4, "text": "Time's up."}
+ ]
+}

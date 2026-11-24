@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>map film</title>
+<!-- map-films engine page: film.html?story=<slug>&fmt=16x9|9x16   (served from map-films/ by engine/tools/render.py) -->
+<style>
+  @font-face { font-family: "Oswald"; src: url("../_vendor/fonts/Oswald_wght_.ttf") format("truetype"); font-weight: 200 700; }
+  @font-face { font-family: "Cormorant Garamond"; src: url("../_vendor/fonts/CormorantGaramond_wght_.ttf") format("truetype"); font-weight: 300 700; }
+  @font-face { font-family: "Special Elite"; src: url("../_vendor/fonts/SpecialElite-Regular.ttf") format("truetype"); }
+  @font-face { font-family: "Permanent Marker"; src: url("../_vendor/fonts/PermanentMarker-Regular.ttf") format("truetype"); }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<canvas id="out"></canvas>
+<script src="../_vendor/node_modules/d3/dist/d3.min.js"></script>
+<script src="../_vendor/node_modules/topojson-client/dist/topojson-client.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/geo.js"></script>
+<script src="js/sat.js"></script>
+<script src="js/ink.js"></script>
+<script src="js/props.js"></script>
+<script src="js/film.js"></script>
+<script>
+  MF.boot().then(() => {
+    // ?t=12.5 freezes on a frame for a quick look in a browser
+    const q = new URLSearchParams(location.search);
+    if (window.__mf.state === 'ready' && q.get('t') != null && window.__mf.frame) window.__mf.frame(+q.get('t'));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #root .dwrap { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 960px 540px; }
+    #root .mbdef { position: absolute; left: 0; top: 0; }
+    #root .doc { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+    #root .doc-in { position: absolute; inset: 0; transform-origin: 50% 50%;
+      filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.45)) drop-shadow(0 22px 26px rgba(0, 0, 0, 0.42)); }
+    #root .paper { position: absolute; inset: 0; background-color: var(--pc); background-image: url(assets/img/paper-grain.jpg);
+      background-size: 720px; background-blend-mode: multiply; overflow: hidden; }
+    #root .pin { position: absolute; width: 26px; height: 26px; border-radius: 50%;
+      background: radial-gradient(circle at 38% 34%, #f08a7e 0 14%, #c4342a 34%, #7d1d16 100%);
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45); }
+    #root .tape { position: absolute; height: 44px; background: rgba(233, 222, 192, 0.78);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
+    #root .ev-head { position: absolute; left: 22px; top: 18px; right: 22px; height: 40px; border-bottom: 2px solid #23211e;
+      font: 600 25px/34px "Roboto Mono", monospace; letter-spacing: 0.06em; color: #23211e; white-space: nowrap; }
+    #root .ev-head b { font-weight: 800; }
+    #root .ev-img { position: absolute; left: 22px; top: 70px; }
+    #root .ev-img img { display: block; width: 100%; height: 100%; }
+    #root .ev-box { position: absolute; border: 6px solid #c14800; border-radius: 4px; }
+    #root .ev-box.under { border: none; border-bottom: 8px solid #c14800; border-radius: 0; }
+    #root .ev-note { position: absolute; padding: 6px 14px; background: #23211e; color: #f6f4ee;
+      font: 700 30px/40px "Roboto Mono", monospace; letter-spacing: 0.06em; white-space: nowrap; }
+    #root .stamp { position: absolute; transform-origin: 50% 50%; opacity: 0; mix-blend-mode: multiply; }
+    #root .stamp-in { position: relative; color: #c4342a; border: 8px solid #c4342a; border-radius: 12px; padding: 16px 30px 10px;
+      outline: 3px solid #c4342a; outline-offset: -18px; font-family: "Playfair Display", serif; font-weight: 900;
+      line-height: 0.98; letter-spacing: 0.06em; text-align: center; white-space: nowrap; display: flex; flex-direction: column; align-items: center;
+      -webkit-mask-image: url(assets/img/stamp-grunge.png); mask-image: url(assets/img/stamp-grunge.png);
+      -webkit-mask-size: 100% 100%; mask-size: 100% 100%; }
+    #root .stamp-in.ghost { position: absolute; left: 0; top: 0; opacity: 0; }
+    #root .st-s { font: 700 0.22em/1.5 "Roboto Mono", monospace; letter-spacing: 0.16em; }
+    #root .st-w { display: block; padding: 0.04em 0 0.02em; }
+    #root .idx-margin { position: absolute; left: 96px; top: 0; bottom: 0; width: 3px; background: rgba(193, 58, 45, 0.6); }
+    #root .idx { background-image: url(assets/img/paper-grain.jpg),
+      repeating-linear-gradient(to bottom, transparent 0 90px, rgba(70, 110, 160, 0.32) 90px 92px); background-size: 720px, 100% 92px;
+      background-position: 0 0, 0 60px; }
+    #root .idx-head { position: absolute; left: 124px; top: 34px; font: 700 32px/40px "Roboto Mono", monospace; letter-spacing: 0.03em; color: #23211e; }
+    #root .idx-sub { position: absolute; left: 124px; top: 82px; font: italic 400 28px/36px "Libre Baskerville", serif; color: #6b665e; }
+    #root .idx-line { position: absolute; left: 124px; font: 600 46px/60px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #23211e; white-space: pre; }
+    #root .slip-q { position: absolute; font: 600 38px/50px "Roboto Mono", monospace; color: #23211e; white-space: pre; }
+    #root .slip-q.big { font-size: 52px; line-height: 64px; }
+    #root .slip-q.big2 { font-size: 44px; line-height: 54px; }
+    #root .slip-k { position: absolute; font: 700 28px/36px "Roboto Mono", monospace; letter-spacing: 0.04em; color: #6b665e; white-space: pre; }
+    #root .slip-att { position: absolute; font: 500 26px/34px "Roboto Mono", monospace; letter-spacing: 0.02em; color: #6b665e; white-space: nowrap; }
+    #root .hl { position: absolute; height: 44px; background: rgba(255, 205, 60, 0.62); transform-origin: 0 50%; mix-blend-mode: multiply; }
+    #root .dcard { background-image: url(assets/img/paper-grain.jpg), linear-gradient(rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px),
+      linear-gradient(90deg, rgba(60, 40, 10, 0.05) 1.5px, transparent 1.5px); background-size: 720px, 64px 64px, 64px 64px; }
+    #root .dc-chrome { position: absolute; left: 44px; top: 40px; font: 600 24px/30px "Inter", sans-serif; letter-spacing: 0.3em; color: #76603a; }
+    #root .dc-tick { display: inline-block; width: 5px; height: 26px; margin-right: 16px; vertical-align: -5px; background: #c14800; }
+    #root .dc-chrome-r { position: absolute; right: 44px; top: 40px; font: 600 24px/30px "Roboto Mono", monospace; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-foot { position: absolute; left: 44px; right: 44px; bottom: 30px; font: 600 20px/26px "Inter", sans-serif; letter-spacing: 0.22em; color: #76603a; }
+    #root .dc-hair { position: relative; height: 2px; margin-top: 10px; background: #d6cab6; }
+    #root .dc-prog { position: absolute; left: 0; top: -1px; height: 4px; background: #c14800; }
+    #root .dc-label { position: absolute; font: 600 28px/34px "Inter", sans-serif; letter-spacing: 0.24em; color: #76603a; white-space: nowrap; }
+    #root .dc-rule { position: absolute; width: 7px; background: #c14800; }
+    #root .dc-mask { position: absolute; overflow: hidden; padding: 0 8px 4px 0; }
+    #root .dc-head { font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1.08; text-transform: uppercase; color: #111010;
+      -webkit-text-stroke: 2.6px #111010; letter-spacing: 0.01em; white-space: nowrap; }
+    #root .orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .dc-num { position: absolute; font-family: "Oswald", sans-serif; font-weight: 700; line-height: 1; color: #c14800;
+      -webkit-text-stroke: 5px #c14800; white-space: nowrap; text-shadow: 3px 3px 0 rgba(90, 34, 6, 0.35); }
+    #root .dc-pre { position: absolute; font: 700 34px/40px "Oswald", sans-serif; letter-spacing: 0.04em; color: #5b5143; }
+    #root .dc-unit { position: absolute; font: 700 56px/60px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .dc-lead { position: absolute; font: 500 36px/44px "Inter", sans-serif; color: #5b5143; white-space: nowrap; }
+    #root .dc-div { position: absolute; height: 3px; background: #c8bead; transform-origin: 0 50%; }
+    #root .dc-div.v { width: 3px; height: auto; }
+    #root .dc-cap { position: absolute; font: 400 28px/36px "Inter", sans-serif; color: #5b5143; }
+    #root .dc-cap.c { text-align: center; font-weight: 600; letter-spacing: 0.12em; color: #76603a; }
+    #root .dc-type { position: absolute; font: 700 38px/48px "Roboto Mono", monospace; color: #111010; white-space: pre; }
+    #root .barrow, #root .vbar { position: absolute; }
+    #root .bar-name { font: 700 40px/48px "Oswald", sans-serif; color: #111010; letter-spacing: 0.02em; }
+    #root .bar-val { position: absolute; right: 0; top: -6px; font: 700 54px/60px "Oswald", sans-serif; color: #c14800; }
+    #root .bar-val.grey, #root .bar-fill.grey { color: #948a7b; }
+    #root .bar-track { position: relative; height: 26px; margin-top: 12px; background: #dcd0bc; }
+    #root .bar-track.tall { height: 40px; }
+    #root .bar-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #c14800; transform-origin: 0 50%; }
+    #root .bar-fill.grey { background: #948a7b; }
+    #root .half { position: absolute; left: 50%; top: -10px; bottom: -10px; width: 3px; background: #111010; }
+    #root .half-l { position: absolute; left: 50%; top: 56px; transform: translateX(-50%); font: 600 22px/26px "Inter", sans-serif; letter-spacing: 0.2em; color: #5b5143; }
+    #root .age { position: absolute; font: 700 170px/1 "Oswald", sans-serif; color: #111010; -webkit-text-stroke: 4px #111010; }
+    #root .dc-mask .age { position: relative; }
+    #root .age.orange { color: #c14800; -webkit-text-stroke-color: #c14800; }
+    #root .strike { position: absolute; left: -8px; right: -8px; top: 50%; height: 12px; background: #c14800; transform-origin: 0 50%; }
+    #root .seat { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #d6cab6; }
+    #root .majority { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .majority line { stroke: #111010; stroke-width: 4; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .maj-l { position: absolute; font: 700 44px/50px "Oswald", sans-serif; color: #111010; }
+    #root .mrow { position: absolute; left: 0; right: 0; height: 60px; }
+    #root .mcell { position: absolute; top: 0; width: 82px; height: 60px; background: #d6cab6; }
+    #root .gtag .doc-in { filter: none; }
+    #root .tag-in { display: flex; flex-direction: column; justify-content: center; padding: 0 22px; background: rgba(7, 24, 37, 0.9);
+      border: 1.5px solid rgba(234, 246, 255, 0.28); border-radius: 8px; }
+    #root .tag-a { font: 700 36px/44px "IBM Plex Mono", monospace; letter-spacing: 0.06em; color: #eaf6ff; white-space: nowrap; }
+    #root .tag-b { font: 400 32px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .tag-dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #ff6b1a; margin-right: 14px; vertical-align: 2px; }
+    #root .thread { position: absolute; left: 0; top: 0; overflow: visible; }
+    #root .thread line { stroke: #c4342a; stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+    #root .arr { position: absolute; left: 0; top: 72px; width: 1920px; }
+    #root .arr-in { display: flex; align-items: center; gap: 22px; height: 64px; padding: 0 64px; background: rgba(5, 15, 25, 0.8);
+      border-bottom: 1.5px solid rgba(234, 246, 255, 0.14); font: 400 28px/40px "IBM Plex Mono", monospace; letter-spacing: 0.04em; color: #9fb8cc; white-space: nowrap; }
+    #root .arr-id { color: #9fb8cc; }
+    #root .arr-title { font: 800 34px/40px "Inter", sans-serif; letter-spacing: -0.01em; color: #eaf6ff; }
+    #root .arr-sev { border: 1.5px solid rgba(234, 246, 255, 0.5); border-radius: 6px; padding: 0 10px; line-height: 34px; color: #eaf6ff; }
+    #root .arr-status { margin-left: auto; display: flex; align-items: center; gap: 16px; letter-spacing: 0.06em; }
+    #root .chip { display: inline-block; height: 44px; overflow: hidden; border-radius: 6px; background: #ff6b1a; color: #140700; padding: 0 16px; }
+    #root .chip-roll { display: flex; flex-direction: column; }
+    #root .chip-roll > span { display: block; height: 44px; font: 700 30px/44px "IBM Plex Mono", monospace; letter-spacing: 0.04em; white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="stop-venezuela" data-width="1920" data-height="1080">
+    <svg class="mbdef" width="0" height="0"><filter id="ve-mb" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur id="ve-mbg" stdDeviation="0 0" /></filter></svg>
+    <div class="dwrap" id="ve-drot" data-layout-allow-overflow><div class="dwrap" id="ve-dblur" data-layout-allow-overflow><div class="dwrap" id="ve-desk" data-layout-allow-overflow data-layout-allow-overlap>
+    <div class="doc gtag" id="ve-tag" data-layout-allow-overflow style="width:640px; height:112px;"><div class="doc-in tag-in tag-r" id="ve-tag-in"><div class="tag-a"><span class="tag-dot"></span>CARACAS</div><div class="tag-b">10.5°N 66.9°W</div></div></div>
+    <div class="doc" id="ve-clip" data-layout-allow-overflow data-layout-allow-overlap style="width:904px; height:848px;"><div class="doc-in" id="ve-clip-in"><div class="paper clipdoc" style="--pc:#f6f4ee; clip-path: polygon(0.0px 0.0px, 26.6px 0.0px, 53.2px 0.0px, 79.8px 0.0px, 106.4px 0.0px, 132.9px 0.0px, 159.5px 0.0px, 186.1px 0.0px, 212.7px 0.0px, 239.3px 0.0px, 265.9px 0.0px, 292.5px 0.0px, 319.1px 0.0px, 345.6px 0.0px, 372.2px 0.0px, 398.8px 0.0px, 425.4px 0.0px, 452.0px 0.0px, 478.6px 0.0px, 505.2px 0.0px, 531.8px 0.0px, 558.4px 0.0px, 584.9px 0.0px, 611.5px 0.0px, 638.1px 0.0px, 664.7px 0.0px, 691.3px 0.0px, 717.9px 0.0px, 744.5px 0.0px, 771.1px 0.0px, 797.6px 0.0px, 824.2px 0.0px, 850.8px 0.0px, 877.4px 0.0px, 904.0px 0.0px, 904.0px 26.5px, 904.0px 53.0px, 904.0px 79.5px, 904.0px 106.0px, 904.0px 132.5px, 904.0px 159.0px, 904.0px 185.5px, 904.0px 212.0px, 904.0px 238.5px, 904.0px 265.0px, 904.0px 291.5px, 904.0px 318.0px, 904.0px 344.5px, 904.0px 371.0px, 904.0px 397.5px, 904.0px 424.0px, 904.0px 450.5px, 904.0px 477.0px, 904.0px 503.5px, 904.0px 530.0px, 904.0px 556.5px, 904.0px 583.0px, 904.0px 609.5px, 904.0px 636.0px, 904.0px 662.5px, 904.0px 689.0px, 904.0px 715.5px, 904.0px 742.0px, 904.0px 768.5px, 904.0px 795.0px, 904.0px 821.5px, 904.0px 848.0px, 877.4px 845.2px, 850.8px 846.0px, 824.2px 849.2px, 797.6px 843.0px, 771.1px 843.0px, 744.5px 847.7px, 717.9px 845.1px, 691.3px 843.5px, 664.7px 844.1px, 638.1px 843.2px, 611.5px 841.1px, 584.9px 847.0px, 558.4px 850.3px, 531.8px 847.7px, 505.2px 847.0px, 478.6px 843.3px, 452.0px 844.5px, 425.4px 840.8px, 398.8px 848.2px, 372.2px 842.7px, 345.6px 842.7px, 319.1px 851.4px, 292.5px 843.3px, 265.9px 851.3px, 239.3px 846.8px, 212.7px 848.6px, 186.1px 846.9px, 159.5px 841.3px, 132.9px 848.0px, 106.4px 842.3px, 79.8px 844.1px, 53.2px 840.6px, 26.6px 839.7px, 0.0px 848.0px, 0.0px 821.5px, 0.0px 795.0px, 0.0px 768.5px, 0.0px 742.0px, 0.0px 715.5px, 0.0px 689.0px, 0.0px 662.5px, 0.0px 636.0px, 0.0px 609.5px, 0.0px 583.0px, 0.0px 556.5px, 0.0px 530.0px, 0.0px 503.5px, 0.0px 477.0px, 0.0px 450.5px, 0.0px 424.0px, 0.0px 397.5px, 0.0px 371.0px, 0.0px 344.5px, 0.0px 318.0px, 0.0px 291.5px, 0.0px 265.0px, 0.0px 238.5px, 0.0px 212.0px, 0.0px 185.5px, 0.0px 159.0px, 0.0px 132.5px, 0.0px 106.0px, 0.0px 79.5px, 0.0px 53.0px, 0.0px 26.5px);"><div class="ev-head"><span>EVIDENCE</span> · <b>NPR · WGCU</b> · <span>25 OCT 2026</span></div><div class="ev-img" style="width:860px; height:744px;"><img src="assets/evidence/venezuela.png" alt="NPR story via WGCU, 25 Oct 2026" /><div class="ev-box" id="ve-box" style="left:21.84%; top:16.90%; width:66.57%; height:9.49%;"></div></div></div><div class="pin" style="left:439.0px; top:9px;"></div><div class="tape" style="left:-28px; top:525.76px; width:130px; transform: rotate(-62deg);"></div></div></div>
+    <div class="doc" id="ve-data" data-layout-allow-overflow data-layout-allow-overlap style="width:1150px; height:770px;"><div class="doc-in" id="ve-data-in"><div class="paper dcard" style="--pc:#ebe2d3; clip-path: polygon(0.0px 0.0px, 26.1px 0.0px, 52.3px 0.0px, 78.4px 0.0px, 104.5px 0.0px, 130.7px 0.0px, 156.8px 0.0px, 183.0px 0.0px, 209.1px 0.0px, 235.2px 0.0px, 261.4px 0.0px, 287.5px 0.0px, 313.6px 0.0px, 339.8px 0.0px, 365.9px 0.0px, 392.0px 0.0px, 418.2px 0.0px, 444.3px 0.0px, 470.5px 0.0px, 496.6px 0.0px, 522.7px 0.0px, 548.9px 0.0px, 575.0px 0.0px, 601.1px 0.0px, 627.3px 0.0px, 653.4px 0.0px, 679.5px 0.0px, 705.7px 0.0px, 731.8px 0.0px, 758.0px 0.0px, 784.1px 0.0px, 810.2px 0.0px, 836.4px 0.0px, 862.5px 0.0px, 888.6px 0.0px, 914.8px 0.0px, 940.9px 0.0px, 967.0px 0.0px, 993.2px 0.0px, 1019.3px 0.0px, 1045.5px 0.0px, 1071.6px 0.0px, 1097.7px 0.0px, 1123.9px 0.0px, 1150.0px 0.0px, 1150.0px 26.6px, 1150.0px 53.1px, 1150.0px 79.7px, 1150.0px 106.2px, 1150.0px 132.8px, 1150.0px 159.3px, 1150.0px 185.9px, 1150.0px 212.4px, 1150.0px 239.0px, 1150.0px 265.5px, 1150.0px 292.1px, 1150.0px 318.6px, 1150.0px 345.2px, 1150.0px 371.7px, 1150.0px 398.3px, 1150.0px 424.8px, 1150.0px 451.4px, 1150.0px 477.9px, 1150.0px 504.5px, 1150.0px 531.0px, 1150.0px 557.6px, 1150.0px 584.1px, 1150.0px 610.7px, 1150.0px 637.2px, 1150.0px 663.8px, 1150.0px 690.3px, 1150.0px 716.9px, 1150.0px 743.4px, 1150.0px 770.0px, 1123.9px 770.0px, 1097.7px 770.0px, 1071.6px 770.0px, 1045.5px 770.0px, 1019.3px 770.0px, 993.2px 770.0px, 967.0px 770.0px, 940.9px 770.0px, 914.8px 770.0px, 888.6px 770.0px, 862.5px 770.0px, 836.4px 770.0px, 810.2px 770.0px, 784.1px 770.0px, 758.0px 770.0px, 731.8px 770.0px, 705.7px 770.0px, 679.5px 770.0px, 653.4px 770.0px, 627.3px 770.0px, 601.1px 770.0px, 575.0px 770.0px, 548.9px 770.0px, 522.7px 770.0px, 496.6px 770.0px, 470.5px 770.0px, 444.3px 770.0px, 418.2px 770.0px, 392.0px 770.0px, 365.9px 770.0px, 339.8px 770.0px, 313.6px 770.0px, 287.5px 770.0px, 261.4px 770.0px, 235.2px 770.0px, 209.1px 770.0px, 183.0px 770.0px, 156.8px 770.0px, 130.7px 770.0px, 104.5px 770.0px, 78.4px 770.0px, 52.3px 770.0px, 26.1px 770.0px, 0.0px 770.0px, 0.0px 743.4px, 0.0px 716.9px, 0.0px 690.3px, 0.0px 663.8px, 0.0px 637.2px, 0.0px 610.7px, 0.0px 584.1px, 0.0px 557.6px, 0.0px 531.0px, 0.0px 504.5px, 0.0px 477.9px, 0.0px 451.4px, 0.0px 424.8px, 0.0px 398.3px, 0.0px 371.7px, 0.0px 345.2px, 0.0px 318.6px, 0.0px 292.1px, 0.0px 265.5px, 0.0px 239.0px, 0.0px 212.4px, 0.0px 185.9px, 0.0px 159.3px, 0.0px 132.8px, 0.0px 106.2px, 0.0px 79.7px, 0.0px 53.1px, 0.0px 26.6px);"><div class="dc-chrome"><span class="dc-tick"></span>IN-FLIGHT BRIEFING</div><div class="dc-chrome-r">STOP 06 / 06</div><div class="dc-foot" data-layout-ignore><span>SOURCE / NPR VIA WGCU · 25 OCT 2026</span><div class="dc-hair"><div class="dc-prog" style="width:100.0%"></div></div></div><div class="dc-label" style="left:64px; top:112px;">MARÍA CORINA MACHADO · RETURNED 25 OCT</div><div class="dc-mask" style="left:64px; top:150px;"><div class="dc-head" id="ve-h1" style="font-size:84px;">TIME AWAY</div></div><div class="dc-pre" id="ve-pre" style="left:70px; top:262px;">ABOUT</div><div class="dc-num" id="ve-num" style="left:62px; top:292px; font-size:200px;">0</div><div class="dc-unit" id="ve-unit" style="left:330px; top:380px;">MONTHS ABROAD</div><div class="mrow" id="ve-cells" style="top:510px;"><div class="mcell" style="left:70px;"></div><div class="mcell" style="left:166px;"></div><div class="mcell" style="left:262px;"></div><div class="mcell" style="left:358px;"></div><div class="mcell" style="left:454px;"></div><div class="mcell" style="left:550px;"></div><div class="mcell" style="left:646px;"></div><div class="mcell" style="left:742px;"></div><div class="mcell" style="left:838px;"></div><div class="mcell" style="left:934px;"></div></div><div class="dc-type" id="ve-next" data-n="31" style="left:70px; top:610px;">NEXT REQUEST: AN ELECTION DATE.</div><div class="stamp" id="ve-stamp" style="left:600px; top:168px;"><div class="stamp-in" style="font-size:84px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>ENTRY · 25 OCT 2026</span><span class="st-w">ARRIVED</span><span class="st-s" data-layout-ignore>CARACAS</span></div><div class="stamp-in ghost" style="font-size:84px; transform: rotate(-8deg);"><span class="st-s" data-layout-ignore>ENTRY · 25 OCT 2026</span><span class="st-w">ARRIVED</span><span class="st-s" data-layout-ignore>CARACAS</span></div></div></div><div class="pin" style="left:562.0px; top:7px;"></div></div></div>
+    <svg class="thread" id="ve-thread" width="1920" height="1080" viewBox="0 0 1920 1080" data-layout-allow-overflow><line x1="0" y1="0" x2="0" y2="0" pathLength="1" /></svg>
+    </div></div></div>
+    <div class="arr" id="ve-arr"><div class="arr-in" id="ve-arr-in"><span class="arr-id">STOP 06</span><span class="arr-title">Venezuela</span><span class="arr-meta">10.5°N 66.9°W · Caracas</span><span class="arr-status"><span>STATUS</span><span class="chip" id="ve-chip" data-layout-allow-overflow><span class="chip-roll" id="ve-roll"><span>EN ROUTE</span><span>ARRIVED</span></span></span></span></div></div>
+  </div>
+  <script>
+    (function () {
+      const D = window.DESK.mount({"comp": "ve", "start": 110.955, "dur": 12.575, "hot": {"lat": 10.49, "lon": -66.88}, "docs": [{"id": "ve-tag", "lat": 10.49, "lon": -65.104006, "w": 640, "h": 112, "rot": 0}, {"id": "ve-clip", "lat": 12.624381, "lon": -69.642657, "w": 904, "h": 848, "rot": 1.2}, {"id": "ve-data", "lat": 7.676498, "lon": -65.301339, "w": 1150, "h": 770, "rot": -1.4}], "thread": {"doc": "ve-clip", "x": 452.0, "y": 22}});
+      const tl = D.tl;
+      // the red thread from the ping to the first document's pin
+      tl.fromTo("#ve-thread line", { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.out" }, D.L(113.555));
+      // arrival strip (screen space): blur in on landing, out at the pull-out
+      tl.fromTo("#ve-arr-in", { opacity: 0, filter: "blur(8px)", y: -16 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: 0.3, ease: "expo.out" }, D.L(112.605));
+      tl.to("#ve-arr-in", { opacity: 0, filter: "blur(8px)", duration: 0.22, ease: "power2.in" }, D.L(123.080));
+      tl.to("#ve-thread line", { strokeDashoffset: -1, duration: 0.3, ease: "power2.in" }, D.L(122.630));
+      D.drop("ve-tag-in", 112.905, {from: 1.0, spin: 0});
+      D.drop("ve-clip-in", 113.175);
+      D.drop("ve-data-in", 113.315);
+      D.box("ve-box", 115.945, 0.45);
+      D.rise("ve-h1", 116.745);
+      D.fade("ve-pre", 116.845); D.fade("ve-num", 116.845); D.fade("ve-unit", 117.445);
+      D.count("ve-num", 117.382, 0, 10, 1.0);
+      D.dots("#ve-cells .mcell", 116.845, 0.95, "#c14800");
+      D.stamp("ve-stamp", 119.675);
+      D.chip("ve-chip", "ve-roll", 119.755, 1);
+      D.type("ve-next", 120.355, 32);
+      window.__timelines["stop-venezuela"] = tl;
+    })();
+  </script>
+</template>

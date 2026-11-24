@@ -1,0 +1,1 @@
+lutyuv=y='16+(val-16)*0.92':enable='between(t,51.38,53.02)'

@@ -1,0 +1,24 @@
+{
+ "voice": "bm_george",
+ "speed": 1.25,
+ "lead": 0.1,
+ "tail": 1.5,
+ "gap": 0.24,
+ "lines": [
+  {
+   "id": "hook",
+   "text": "This is the minister who opened the archive.",
+   "gap": 0.0
+  },
+  {
+   "id": "card",
+   "text": "Each registration card lists a name, a job, and the grounds for recruitment.",
+   "gap": 0.3
+  },
+  {
+   "id": "next",
+   "text": "Next: over nine thousand recruitment files, due by February twenty twenty-seven.",
+   "gap": 0.3
+  }
+ ]
+}

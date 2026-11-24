@@ -1,0 +1,583 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf") format("truetype"); font-weight: 100 900; }
+    @font-face { font-family: "Space Grotesk"; src: url("assets/fonts/SpaceGrotesk_wght_.ttf") format("truetype"); font-weight: 300 700; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b1119; }
+    #wc { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #tags { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; pointer-events: none; }
+    .tag { position: absolute; left: 0; top: 0; opacity: 0; white-space: nowrap; font-family: "Space Grotesk", "Inter", sans-serif;
+      font-weight: 700; font-size: 27px; letter-spacing: 0.07em; color: #eef3f7; text-transform: uppercase;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85); display: flex; align-items: center; gap: 12px; }
+    .tag .mk { width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid #ff4d5e; flex: none; }
+    .tag .mk.fill { background: #ff4d5e; border-color: #ff4d5e; box-shadow: 0 0 12px rgba(255, 77, 94, 0.8); }
+    .tag .mk.cy { border-color: #39d7ff; }
+    .tag .mk.cy.fill { background: #39d7ff; box-shadow: 0 0 12px rgba(57, 215, 255, 0.9); }
+    .tag.red { color: #ff6a78; }
+    .tag.amb { color: #ffb23f; font-size: 44px; letter-spacing: 0.02em; }
+    .brk { position: absolute; left: 0; top: 0; opacity: 0; transform-origin: 0 0; }
+    .brk .ln { position: absolute; left: 0; top: 0; height: 2.5px; background: rgba(238, 243, 247, 0.9); transform-origin: 0 50%; }
+    .brk .tk { position: absolute; width: 2.5px; height: 22px; background: rgba(238, 243, 247, 0.9); }
+    .brk .lab { position: absolute; left: 0; top: 0; text-align: center; white-space: nowrap; transform: translate(-50%, 0);
+      font-family: "Space Grotesk", sans-serif; color: #f4f7fa; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9); }
+    .brk .big { font-size: 58px; font-weight: 700; letter-spacing: 0.01em; line-height: 1; }
+    .brk .sm { font-size: 26px; font-weight: 700; letter-spacing: 0.16em; color: #c9d2db; margin-top: 8px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="wc" width="1080" height="1920" data-layout-allow-overflow></canvas>
+    <div id="tags" data-layout-allow-overflow data-layout-allow-overlap>
+      <div class="brk" id="b360"><div class="ln"></div><div class="tk t0"></div><div class="tk t1"></div><div class="lab"><div class="big">360 m</div><div class="sm">CHANNEL WIDTH</div></div></div>
+      <div class="brk" id="b210"><div class="ln"></div><div class="tk t0"></div><div class="tk t1"></div><div class="lab"><div class="big">210 m</div><div class="sm">EACH GATE · 22 m HIGH</div></div></div>
+      <div class="tag" id="tTide"><div class="mk cy"></div><span>TIDE · ON SCHEDULE</span></div>
+      <div class="tag" id="tSurge"><div class="mk fill"></div><span>SURGE · WIND-DRIVEN</span></div>
+      <div class="tag" id="tBos"><div class="mk cy fill"></div><span>BOS · DECISION COMPUTER</span></div>
+      <div class="tag" id="tNap"><div class="mk fill"></div><span>+3.0 m NAP · CLOSE</span></div>
+      <div class="tag" id="tJoint"><div class="mk cy"></div><span>BALL JOINT · Ø 10 m · 680 t</span></div>
+      <div class="tag red" id="tHalt"><div class="mk fill"></div><span>SHIPPING HALTED</span></div>
+      <div class="tag" id="tRdam"><div class="mk cy fill"></div><span>ROTTERDAM</span></div>
+      <div class="tag" id="tHoek"><div class="mk cy"></div><span>BARRIER</span></div>
+      <div class="tag red" id="tPia"><div class="mk fill"></div><span>STORM PIA</span></div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      const F = window.FILM, G = window.GEO;
+      const { lin, mix, clamp, E, W, T, SH } = F;
+      let ready = false, lastT = -1, curT = 0, render3 = null;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!ready || t === lastT) return;
+        lastT = t;
+        render3(t);
+      }
+      let seed = 11;
+      const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = Promise.all([window.t3Ready, document.fonts.ready]).then(async ([T3]) => {
+        const X = T3.THREE;
+        await Promise.all([document.fonts.load("700 30px 'Space Grotesk'"), document.fonts.load("800 50px Inter")]);
+        const canvas = document.getElementById("wc");
+        const renderer = new X.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
+        renderer.setPixelRatio(1); renderer.setSize(1080, 1920, false);
+        renderer.outputColorSpace = X.SRGBColorSpace;
+        renderer.toneMapping = X.NeutralToneMapping; renderer.toneMappingExposure = 1.0;
+        const scene = new X.Scene();
+        const BG = new X.Color("#0b1119");
+        scene.background = BG;
+        scene.fog = new X.Fog("#0b1119", 60, 260);
+        const cam = new X.PerspectiveCamera(32, 1080 / 1920, 0.1, 4000);
+
+        // ---------- lights (soft night: sky fill + a cool key from the north-west)
+        const hemi = new X.HemisphereLight("#b9cce4", "#0a0f16", 1.9); scene.add(hemi);
+        const key = new X.DirectionalLight("#c4d6ea", 1.25); key.position.set(-40, 80, 30); scene.add(key);
+        const rim = new X.DirectionalLight("#2f5a7a", 0.6); rim.position.set(60, 30, -50); scene.add(rim);
+
+        // ---------- materials
+        const M = (c, o = {}) => new X.MeshStandardMaterial(Object.assign({ color: c, roughness: 0.92, metalness: 0.02, flatShading: true }, o));
+        const mLand = M("#222a36"), mLandSide = M("#121821"), mBlock = M("#1e2531"), mBlockTop = M("#27303d");
+        const mWater = M("#0e2435", { roughness: 0.6, metalness: 0.05, flatShading: false });
+        const mConc = M("#2c333d"), mDockFloor = M("#1a1f27");
+        const mGate = M("#d6dbe1", { roughness: 0.55 }), mTruss = M("#c4cad1", { roughness: 0.6 });
+        const mJoint = M("#b9c3cd", { roughness: 0.35, metalness: 0.3, flatShading: false });
+        const glow = (r, g, b) => new X.MeshBasicMaterial({ color: new X.Color(r, g, b), toneMapped: false });
+        const mCyan = glow(0.32, 1.75, 2.3), mRed = glow(2.6, 0.22, 0.32), mAmber = glow(2.4, 1.3, 0.35);
+        const halo = (c, o) => new X.MeshBasicMaterial({ color: c, transparent: true, opacity: o, blending: X.AdditiveBlending, depthWrite: false, toneMapped: false });
+        const spriteTex = (() => { const c = document.createElement("canvas"); c.width = c.height = 128; const x = c.getContext("2d");
+          const g = x.createRadialGradient(64, 64, 0, 64, 64, 64); g.addColorStop(0, "rgba(255,255,255,1)"); g.addColorStop(0.25, "rgba(255,255,255,0.55)"); g.addColorStop(1, "rgba(255,255,255,0)");
+          x.fillStyle = g; x.fillRect(0, 0, 128, 128); const t = new X.CanvasTexture(c); return t; })();
+        const dotTex = (() => { const c = document.createElement("canvas"); c.width = c.height = 32; const x = c.getContext("2d");
+          x.fillStyle = "#fff"; x.beginPath(); x.arc(16, 16, 13, 0, Math.PI * 2); x.fill(); return new X.CanvasTexture(c); })();
+        function glowSprite(col, s, op = 1) {
+          const sp = new X.Sprite(new X.SpriteMaterial({ map: spriteTex, color: col, transparent: true, opacity: op, blending: X.AdditiveBlending, depthWrite: false, toneMapped: false }));
+          sp.scale.set(s, s, 1); return sp;
+        }
+        function beam(a, b, r, mat) {
+          const L = a.distanceTo(b);
+          const m = new X.Mesh(new X.BoxGeometry(r, r, L), mat);
+          m.position.copy(a).add(b).multiplyScalar(0.5); m.lookAt(b); return m;
+        }
+        function tube(pts, r, mat, seg = 64) {
+          const cv = new X.CatmullRomCurve3(pts, false, "centripetal");
+          return new X.Mesh(new X.TubeGeometry(cv, seg, r, 6, false), mat);
+        }
+        const V3 = (x, y, z) => new X.Vector3(x, y, z);
+        // shape helper: points in (x, z) world plan -> extruded upward from y0 to y1
+        function slab(pts, y0, y1, mat, holes) {
+          const sh = new X.Shape(pts.map(([x, z]) => new X.Vector2(x, -z)));
+          (holes || []).forEach((h) => sh.holes.push(new X.Path(h.map(([x, z]) => new X.Vector2(x, -z)))));
+          const g = new X.ExtrudeGeometry(sh, { depth: y1 - y0, bevelEnabled: false, curveSegments: 4 });
+          g.rotateX(-Math.PI / 2); g.translate(0, y0, 0);
+          return new X.Mesh(g, mat);
+        }
+        function flat(pts, y, mat) {
+          const sh = new X.Shape(pts.map(([x, z]) => new X.Vector2(x, -z)));
+          const g = new X.ShapeGeometry(sh, 6); g.rotateX(-Math.PI / 2); g.translate(0, y, 0);
+          return new X.Mesh(g, mat);
+        }
+
+        // =====================================================================================
+        // SET 1: the barrier (1 unit = 10 m). Channel along x (sea at -x), 360 m wide (z -18..18).
+        // =====================================================================================
+        const SB = new X.Group(); scene.add(SB);
+        const R = 23.7, JX = 12, JZ = 19, COAST = -40, LX = 170, LZ = 170;
+        const BETA0 = 0.034, BETA1 = 0.92;
+        // water: channel strip + sea
+        const water = new X.Group(); SB.add(water);
+        water.add(flat([[COAST - 400, -LZ - 200], [LX + 50, -LZ - 200], [LX + 50, LZ + 200], [COAST - 400, LZ + 200]], 0, mWater));
+        // water grid (faint)
+        {
+          const pos = [];
+          for (let x = COAST - 300; x <= LX; x += 8) pos.push(x, 0.03, -LZ - 150, x, 0.03, LZ + 150);
+          for (let z = -LZ - 150; z <= LZ + 150; z += 8) pos.push(COAST - 300, 0.03, z, LX, 0.03, z);
+          const g = new X.BufferGeometry(); g.setAttribute("position", new X.Float32BufferAttribute(pos, 3));
+          water.add(new X.LineSegments(g, new X.LineBasicMaterial({ color: "#1d3a50", transparent: true, opacity: 0.45 })));
+        }
+        // banks with a pie-shaped dock notch at each joint
+        function bankPts(side) { // side -1 north (z<0), +1 south
+          const s = side, pts = [];
+          const outR = R + 1.6;
+          pts.push([COAST, s * 18]);
+          pts.push([JX - outR, s * 18]);
+          for (let k = 0; k <= 16; k++) { const b = -1.02 * k / 16; pts.push([JX - outR * Math.cos(b), s * (JZ - outR * Math.sin(b))]); }
+          pts.push([JX + 1.8, s * (JZ + 1.6)]);
+          pts.push([JX + 1.8, s * 18]);
+          pts.push([LX, s * 18]); pts.push([LX, s * LZ]); pts.push([COAST, s * LZ]);
+          // a gentle coastline wobble
+          return s < 0 ? pts : pts;
+        }
+        const bankN = slab(bankPts(-1), -2.2, 0.55, [mLandSide, mLand]); SB.add(bankN);
+        const bankS = slab(bankPts(1), -2.2, 0.55, [mLandSide, mLand]); SB.add(bankS);
+        bankN.material = [mLand, mLandSide]; bankS.material = [mLand, mLandSide];
+        // dock floors (dry) and dock water (rises when flooded)
+        function piePts(side, r0, r1, b0, b1) {
+          const pts = [];
+          for (let k = 0; k <= 16; k++) { const b = mix(b0, b1, k / 16); pts.push([JX - r1 * Math.cos(b), side * (JZ - r1 * Math.sin(b))]); }
+          for (let k = 16; k >= 0; k--) { const b = mix(b0, b1, k / 16); pts.push([JX - r0 * Math.cos(b), side * (JZ - r0 * Math.sin(b))]); }
+          return pts;
+        }
+        const dockWaterM = [];
+        for (const s of [-1, 1]) {
+          SB.add(flat(piePts(s, 0.8, R + 1.6, 0.05, -1.02), -1.75, mDockFloor));
+          const dw = flat(piePts(s, 0.8, R + 1.6, 0.05, -1.02), -1.7, mWater); SB.add(dw); dockWaterM.push(dw);
+        }
+        // city blocks (instanced, stepped)
+        {
+          const base = [], top = [];
+          for (let x = COAST + 6; x < LX - 4; x += 3.3) for (let z = 24; z < LZ - 4; z += 3.3) for (const s of [-1, 1]) {
+            const zz = s * z + (rnd() - 0.5) * 0.6, xx = x + (rnd() - 0.5) * 0.6;
+            const dj = Math.hypot(xx - JX, zz - s * JZ);
+            if (dj < R + 5.5 && xx < JX + 4) continue;           // dock area
+            if (Math.abs(xx + 30) < 6 && s < 0 && Math.abs(zz + 34) < 6) continue; // BOS building lot
+            if (rnd() < 0.18) continue;
+            const w = 1.4 + rnd() * 1.4, d = 1.2 + rnd() * 1.4, h = 0.18 + rnd() * rnd() * 1.1;
+            base.push([xx, zz, w, d, h]);
+            if (rnd() < 0.45) top.push([xx + (rnd() - 0.5) * 0.4, zz + (rnd() - 0.5) * 0.4, w * 0.6, d * 0.6, h + 0.2 + rnd() * 0.5]);
+          }
+          const bg = new X.BoxGeometry(1, 1, 1); bg.translate(0, 0.5, 0);
+          for (const [arr, mat] of [[base, mBlock], [top, mBlockTop]]) {
+            const im = new X.InstancedMesh(bg, mat, arr.length); const o = new X.Object3D();
+            arr.forEach(([x, z, w, d, h], i) => { o.position.set(x, 0.55, z); o.scale.set(w, h, d); o.updateMatrix(); im.setMatrixAt(i, o.matrix); });
+            SB.add(im);
+          }
+        }
+        // quay edges along the channel (thin light lines)
+        for (const s of [-1, 1]) {
+          SB.add(beam(V3(COAST, 0.57, s * 18.05), V3(JX - R - 1.6, 0.57, s * 18.05), 0.12, M("#3a4452")));
+          SB.add(beam(V3(JX + 1.8, 0.57, s * 18.05), V3(LX, 0.57, s * 18.05), 0.12, M("#3a4452")));
+        }
+        // ---------- the two arms (gate wall + truss + ball joint)
+        function arm(side) {
+          const g = new X.Group(), s = side; // local: joint at origin; closed arc p(b) = R(-cos b, 0, -s*sin b)
+          const P = (r, b, y) => V3(-r * Math.cos(b), y, -s * r * Math.sin(b));
+          // gate wall: annular sector, 22 m high (y -1.6..0.6 in its dock), 0.75 deep
+          const sh = [];
+          for (let k = 0; k <= 24; k++) { const b = mix(BETA0, BETA1, k / 24); sh.push([-R * Math.cos(b), -s * R * Math.sin(b)]); }
+          for (let k = 24; k >= 0; k--) { const b = mix(BETA0, BETA1, k / 24); sh.push([-(R - 0.75) * Math.cos(b), -s * (R - 0.75) * Math.sin(b)]); }
+          const wall = slab(sh, -1.6, 0.6, mGate); g.add(wall);
+          // gate face bands (darker lines)
+          for (const yy of [-1.0, -0.45, 0.12]) {
+            const pts = []; for (let k = 0; k <= 20; k++) { const b = mix(BETA0, BETA1, k / 20); pts.push(P(R + 0.02, b, yy)); }
+            g.add(tube(pts, 0.035, M("#8d969f"), 40));
+          }
+          // truss: two levels converging at the joint
+          const N = 10, yT = 0.95, yB = -0.95, yJ = 0.9;
+          const J = V3(0, yJ, 0);
+          const top = [], bot = [];
+          for (let k = 0; k <= N; k++) { const b = mix(BETA0, BETA1, k / N); top.push(P(R - 0.8, b, yT)); bot.push(P(R - 0.8, b, yB)); }
+          for (let k = 0; k <= N; k++) {
+            if (k === 0 || k === N || k % 2 === 0) { g.add(beam(J, top[k], 0.16, mTruss)); g.add(beam(J, bot[k], 0.16, mTruss)); }
+            g.add(beam(top[k], bot[k], 0.12, mTruss));
+            if (k < N) { g.add(beam(top[k], top[k + 1], 0.14, mTruss)); g.add(beam(bot[k], bot[k + 1], 0.14, mTruss)); g.add(beam(top[k], bot[k + 1], 0.09, mTruss)); }
+          }
+          // inner lattice ring at 55 % radius
+          for (let k = 0; k < N; k += 2) {
+            const a = J.clone().lerp(top[k], 0.55), b = J.clone().lerp(top[k + 2], 0.55);
+            const c = J.clone().lerp(bot[k], 0.55), d = J.clone().lerp(bot[k + 2], 0.55);
+            g.add(beam(a, b, 0.1, mTruss)); g.add(beam(c, d, 0.1, mTruss)); g.add(beam(a, d, 0.08, mTruss));
+          }
+          // ball joint + housing
+          const ball = new X.Mesh(new X.SphereGeometry(0.5, 40, 24), mJoint); ball.position.copy(J); g.add(ball);
+          const ring = new X.Mesh(new X.TorusGeometry(0.56, 0.08, 10, 40), M("#5d6772", { metalness: 0.4, roughness: 0.4, flatShading: false }));
+          ring.position.copy(J); ring.rotation.x = Math.PI / 2; g.add(ring);
+          // little amber work lights on the gate top
+          const lights = [];
+          for (let k = 1; k < 6; k++) { const b = mix(BETA0, BETA1, k / 6); const l = new X.Mesh(new X.SphereGeometry(0.11, 10, 8), mAmber); l.position.copy(P(R - 0.35, b, 0.68)); g.add(l); lights.push(l); }
+          return { g, ball, lights };
+        }
+        const AN = arm(-1), AS = arm(1);
+        const armN = new X.Group(), armS = new X.Group();
+        armN.position.set(JX, 0, -JZ); armS.position.set(JX, 0, JZ);
+        armN.add(AN.g); armS.add(AS.g); SB.add(armN, armS);
+        // joint foundations
+        for (const s of [-1, 1]) { const f = new X.Mesh(new X.CylinderGeometry(1.5, 1.8, 2.6, 24), mConc); f.position.set(JX, -1.1, s * JZ); SB.add(f); }
+        // gate tip position (world) for anchors
+        const gateEnd = (side, b, y) => { const g = side < 0 ? AN.g : AS.g; const p = V3(-R * Math.cos(b), y, -side * R * Math.sin(b)); return g.localToWorld(p.clone()); };
+
+        // ---------- shipping lane (cyan) and its halo
+        const laneMesh = tube([V3(COAST - 220, 0.08, 0), V3(-20, 0.08, 0), V3(60, 0.08, 0), V3(LX, 0.08, 0)], 0.24, mCyan.clone(), 32);
+        const laneHalo = tube([V3(COAST - 220, 0.06, 0), V3(-20, 0.06, 0), V3(60, 0.06, 0), V3(LX, 0.06, 0)], 0.95, halo(new X.Color(0.2, 0.9, 1.4), 0.16), 32);
+        SB.add(laneMesh, laneHalo);
+        // ---------- surge: a red front in the sea + a front inside the channel (+ faint trails)
+        const seaFront = new X.Group(); SB.add(seaFront);
+        {
+          const mk = (off, r, mat) => { const pts = []; for (let z = -200; z <= 200; z += 10) pts.push(V3(off + 0.0016 * z * z, 0.1, z)); return tube(pts, r, mat, 60); };
+          seaFront.add(mk(0, 0.24, mRed)); seaFront.add(mk(0, 0.9, halo(new X.Color(1.6, 0.1, 0.15), 0.16)));
+          seaFront.add(mk(-9, 0.12, halo(new X.Color(1.8, 0.2, 0.25), 0.55))); seaFront.add(mk(-17, 0.08, halo(new X.Color(1.8, 0.2, 0.25), 0.35)));
+        }
+        const chanFront = new X.Group(); SB.add(chanFront);
+        chanFront.add(beam(V3(0, 0.12, -17.6), V3(0, 0.12, 17.6), 0.18, mRed));
+        chanFront.add(beam(V3(0, 0.1, -17.6), V3(0, 0.1, 17.6), 0.8, halo(new X.Color(1.6, 0.1, 0.15), 0.16)));
+        chanFront.add(beam(V3(-5, 0.1, -17.6), V3(-5, 0.1, 17.6), 0.12, halo(new X.Color(1.8, 0.2, 0.25), 0.5)));
+        // ---------- BOS building, node, gauges, dotted arcs
+        const BOSP = V3(-30, 0.55, -34);
+        { const b = new X.Mesh(new X.BoxGeometry(6, 1.8, 4), M("#262e39")); b.position.set(BOSP.x, 0.55 + 0.9, BOSP.z); SB.add(b);
+          const b2 = new X.Mesh(new X.BoxGeometry(2.4, 1.0, 2.4), M("#2c3542")); b2.position.set(BOSP.x + 1.2, 0.55 + 2.3, BOSP.z); SB.add(b2);
+          SB.add(beam(V3(BOSP.x + 1.2, 2.8, BOSP.z), V3(BOSP.x + 1.2, 4.6, BOSP.z), 0.1, M("#5a6573"))); }
+        const nodeP = V3(BOSP.x + 1.2, 4.75, BOSP.z);
+        const node = new X.Mesh(new X.SphereGeometry(0.32, 16, 12), mCyan); node.position.copy(nodeP); SB.add(node);
+        const nodeHalo = glowSprite(new X.Color(0.3, 1.3, 1.9), 4.5, 0.9); nodeHalo.position.copy(nodeP); SB.add(nodeHalo);
+        const nodeRing = new X.Mesh(new X.RingGeometry(1.6, 1.75, 64), halo(new X.Color(0.3, 1.2, 1.7), 0.6)); nodeRing.rotation.x = -Math.PI / 2; nodeRing.position.set(nodeP.x, 0.6, nodeP.z); SB.add(nodeRing);
+        const GAUGES = [[COAST + 1, -24], [COAST + 1, -50], [COAST + 1, 26], [COAST + 1, 52], [-25, -18.6], [-25, 18.6], [25, -18.6], [50, 18.6], [75, -18.6]];
+        const gaugeObj = GAUGES.map(([x, z]) => {
+          const g = new X.Group(); g.position.set(x, 0, z);
+          g.add(beam(V3(0, 0, 0), V3(0, 2.4, 0), 0.12, M("#4d5866")));
+          const h = new X.Mesh(new X.SphereGeometry(0.2, 12, 10), mCyan); h.position.y = 2.5; g.add(h);
+          const sp = glowSprite(new X.Color(0.3, 1.3, 1.9), 2.2, 0.8); sp.position.y = 2.5; g.add(sp);
+          SB.add(g); return { g, top: V3(x, 2.5, z) };
+        });
+        function dotted(a, b, lift, n) { // quadratic arc of dots a -> b
+          const pos = new Float32Array(n * 3);
+          const c = a.clone().add(b).multiplyScalar(0.5); c.y += lift;
+          for (let k = 0; k < n; k++) { const u = k / (n - 1); const p = a.clone().multiplyScalar((1 - u) * (1 - u)).add(c.clone().multiplyScalar(2 * u * (1 - u))).add(b.clone().multiplyScalar(u * u)); pos.set([p.x, p.y, p.z], k * 3); }
+          const g = new X.BufferGeometry(); g.setAttribute("position", new X.BufferAttribute(pos, 3)); g.setDrawRange(0, 0);
+          const m = new X.PointsMaterial({ map: dotTex, color: new X.Color(0.35, 1.5, 2.0), size: 9, sizeAttenuation: false, transparent: true, alphaTest: 0.2, toneMapped: false });
+          const p = new X.Points(g, m); SB.add(p); return { p, n };
+        }
+        const arcGate = dotted(nodeP, V3(-9, 1.2, -27), 6, 46);
+        const arcG = gaugeObj.map((o) => dotted(o.top, nodeP, 5 + Math.hypot(o.top.x - nodeP.x, o.top.z - nodeP.z) * 0.06, 60));
+        // ---------- a container ship (generic, no markings)
+        const ship = new X.Group(); SB.add(ship);
+        {
+          const hull = slab([[-8, -1.2], [6, -1.2], [8.2, 0], [6, 1.2], [-8, 1.2]], -0.4, 0.75, M("#2a323d"));
+          ship.add(hull);
+          ship.add(slab([[-8, -1.21], [6, -1.21], [8.21, 0], [6, 1.21], [-8, 1.21]], -0.05, 0.08, M("#6b3b3b")));
+          const cols = ["#3d4a5b", "#4b3f3f", "#34504f", "#55524a", "#3a4150", "#4e5560"];
+          const bx = new X.BoxGeometry(1.15, 0.42, 0.5);
+          for (let i = 0; i < 9; i++) for (let j = 0; j < 4; j++) for (let l = 0; l < 2 + ((i * 7 + j) % 3 === 0 ? 1 : 0); l++) {
+            const c = new X.Mesh(bx, M(cols[(i * 3 + j * 5 + l) % cols.length])); c.position.set(-4.4 + i * 1.22, 0.96 + l * 0.43, -0.78 + j * 0.52); ship.add(c);
+          }
+          const br = new X.Mesh(new X.BoxGeometry(1.2, 1.5, 2.2), M("#cfd5db", { roughness: 0.6 })); br.position.set(-6.6, 1.5, 0); ship.add(br);
+          const wl = new X.Mesh(new X.BoxGeometry(1.22, 0.16, 2.0), mAmber); wl.position.set(-6.6, 1.9, 0); ship.add(wl);
+          for (const [x, z, m] of [[8.0, 0, mAmber], [-6.6, 1.15, mCyan], [-6.6, -1.15, mRed]]) { const l = new X.Mesh(new X.SphereGeometry(0.13, 8, 6), m); l.position.set(x, 1.2, z); ship.add(l); }
+        }
+
+        // =====================================================================================
+        // SET 2: the map (1 unit = 1 km), far away at x = 5000
+        // =====================================================================================
+        const SM = new X.Group(); SM.position.set(5000, 0, 0); scene.add(SM);
+        const mMapLand = M("#3c4859"), mMapSide = M("#1a212b");
+        SM.add(flat([[-600, -600], [600, -600], [600, 600], [-600, 600]], -0.5, M("#0a1620", { flatShading: false })));
+        {
+          const pos = [];
+          for (let x = -600; x <= 600; x += 10) pos.push(x, -0.4, -600, x, -0.4, 600);
+          for (let z = -600; z <= 600; z += 10) pos.push(-600, -0.4, z, 600, -0.4, z);
+          const g = new X.BufferGeometry(); g.setAttribute("position", new X.Float32BufferAttribute(pos, 3));
+          SM.add(new X.LineSegments(g, new X.LineBasicMaterial({ color: "#1c3549", transparent: true, opacity: 0.5 })));
+        }
+        for (const r of G.rings) {
+          const pts = []; for (let k = 0; k < r.p.length; k += 2) pts.push([r.p[k], r.p[k + 1]]);
+          const m = slab(pts, -0.5, 1.2, [mMapLand, mMapSide]); SM.add(m);
+          const lp = pts.map(([x, z]) => V3(x, 1.25, z)); const lg = new X.BufferGeometry().setFromPoints(lp);
+          SM.add(new X.LineLoop(lg, new X.LineBasicMaterial({ color: "#7d93ad", transparent: true, opacity: 0.9 })));
+        }
+        const chanPts = []; for (let k = 0; k < G.chan.length; k += 2) chanPts.push(V3(G.chan[k], 1.6, G.chan[k + 1]));
+        const mapChan = tube(chanPts, 1.5, mCyan, 40); SM.add(mapChan);
+        SM.add(tube(chanPts, 4.5, halo(new X.Color(0.2, 0.9, 1.4), 0.28), 40));
+        const stormC = G.places.storm;
+        const mapRings = [];
+        for (let k = 0; k < 4; k++) {
+          const m = new X.Mesh(new X.RingGeometry(0.97, 1.0, 128), new X.MeshBasicMaterial({ color: new X.Color(2.4, 0.2, 0.3), transparent: true, opacity: 1, toneMapped: false, depthWrite: false }));
+          m.rotation.x = -Math.PI / 2; m.position.set(stormC[0], 1.5, stormC[1]); SM.add(m); mapRings.push(m);
+        }
+        const stormDot = new X.Mesh(new X.SphereGeometry(3.2, 16, 12), mRed); stormDot.position.set(stormC[0], 1.6, stormC[1]); SM.add(stormDot);
+        const rdamDot = new X.Mesh(new X.SphereGeometry(2.6, 16, 12), mCyan); rdamDot.position.set(G.places.rotterdam[0], 1.8, G.places.rotterdam[1]); SM.add(rdamDot);
+
+        // =====================================================================================
+        // SET 3: the cross-section (tide + surge), far away at x = -5000 (1 unit ~ 1 m, stylised)
+        // =====================================================================================
+        const SX = new X.Group(); SX.position.set(-5000, 0, 0); scene.add(SX);
+        const XW = 60, XD = 16, NX = 90;
+        const bedY = (x) => (x > 14 ? 3.2 : x > 6 ? mix(-4, 3.2, (x - 6) / 8) : mix(-9, -4, (x + 30) / 36));
+        // seabed + dike block (front-faced profile extruded in z)
+        {
+          const prof = []; for (let k = 0; k <= NX; k++) { const x = -30 + XW * k / NX; prof.push([x, bedY(x)]); }
+          const sh = new X.Shape(); sh.moveTo(-30, -13); prof.forEach(([x, y]) => sh.lineTo(x, y)); sh.lineTo(30, -13); sh.lineTo(-30, -13);
+          const g = new X.ExtrudeGeometry(sh, { depth: XD, bevelEnabled: false }); g.translate(0, 0, -XD / 2);
+          SX.add(new X.Mesh(g, [M("#222a35"), M("#171d26")]));
+          // dike crest blocks (town behind)
+          for (let k = 0; k < 14; k++) { const b = new X.Mesh(new X.BoxGeometry(1.4 + (k % 3) * 0.5, 0.8 + ((k * 7) % 5) * 0.35, 1.6), mBlock); b.position.set(18 + (k % 5) * 2.4, 3.6 + b.geometry.parameters.height / 2, -6 + Math.floor(k / 5) * 4.2); SX.add(b); }
+        }
+        // water body: surface grid + front face, updated per frame
+        const wsGeo = new X.PlaneGeometry(1, XD, NX, 8); wsGeo.rotateX(-Math.PI / 2);
+        const wsCol = new Float32Array(wsGeo.attributes.position.count * 3); wsGeo.setAttribute("color", new X.BufferAttribute(wsCol, 3));
+        const wsMesh = new X.Mesh(wsGeo, new X.MeshStandardMaterial({ vertexColors: true, roughness: 0.4, metalness: 0.1, transparent: true, opacity: 0.94 })); SX.add(wsMesh);
+        const ffGeo = new X.BufferGeometry(); const ffPos = new Float32Array((NX + 1) * 2 * 3); ffGeo.setAttribute("position", new X.BufferAttribute(ffPos, 3));
+        const ffCol = new Float32Array((NX + 1) * 2 * 3); ffGeo.setAttribute("color", new X.BufferAttribute(ffCol, 3));
+        { const idx = []; for (let k = 0; k < NX; k++) { const a = k * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); } ffGeo.setIndex(idx); }
+        const ffMesh = new X.Mesh(ffGeo, new X.MeshBasicMaterial({ vertexColors: true, side: X.DoubleSide, transparent: true, opacity: 0.92 })); SX.add(ffMesh);
+        const surfLine = new X.Line(new X.BufferGeometry().setAttribute("position", new X.BufferAttribute(new Float32Array((NX + 1) * 3), 3)), new X.LineBasicMaterial({ color: "#6fdcff" }));
+        SX.add(surfLine);
+        // reference lines on the front face: mean level (dashed) and the tide trace
+        const dashMat = new X.LineDashedMaterial({ color: "#c9d6e2", dashSize: 0.6, gapSize: 0.45, transparent: true, opacity: 0.7 });
+        const meanLine = new X.Line(new X.BufferGeometry().setFromPoints([V3(-30, 0, XD / 2 + 0.05), V3(9, 0, XD / 2 + 0.05)]), dashMat); meanLine.computeLineDistances(); SX.add(meanLine);
+        // wind chevrons (instanced arrows above the water)
+        const chevGeo = new X.BufferGeometry().setFromPoints([V3(-0.5, 0.45, 0), V3(0.35, 0, 0), V3(-0.5, -0.45, 0)]);
+        const chevs = []; for (let k = 0; k < 14; k++) { const l = new X.Line(chevGeo, new X.LineBasicMaterial({ color: new X.Color(2.2, 2.2, 2.4), transparent: true, opacity: 0, toneMapped: false })); l.scale.setScalar(1.3); SX.add(l); chevs.push({ l, x0: -30 + (k * 37) % 40, y: 3 + (k % 4) * 1.4, z: -5 + (k * 5) % 11 }); }
+
+        // =====================================================================================
+        // SET 4: the trigger gauge (1 unit = 1 m), far away at z = 5000
+        // =====================================================================================
+        const SG = new X.Group(); SG.position.set(0, 0, 5000); scene.add(SG);
+
+        // a quay and a skyline far behind (lit windows as tiny emissive boxes)
+        SG.add(slab([[-120, -70], [120, -70], [120, -200], [-120, -200]], -1, 4.2, [mLand, mLandSide]));
+        {
+          const tw = [];
+          for (let k = 0; k < 46; k++) { const x = -110 + k * 4.9 + (rnd() - 0.5) * 2, h = 6 + rnd() * rnd() * 34, w = 2.5 + rnd() * 3; tw.push([x, -80 - rnd() * 30, w, h]); }
+          const bg = new X.BoxGeometry(1, 1, 1); bg.translate(0, 0.5, 0);
+          const im = new X.InstancedMesh(bg, mBlock, tw.length); const o = new X.Object3D();
+          tw.forEach(([x, z, w, h], i) => { o.position.set(x, 4.2, z); o.scale.set(w, h, w); o.updateMatrix(); im.setMatrixAt(i, o.matrix); }); SG.add(im);
+          const wins = []; tw.forEach(([x, z, w, h]) => { for (let k = 0; k < h / 1.6; k++) if (rnd() < 0.35) wins.push([x + (rnd() - 0.5) * w * 0.8, 4.8 + k * 1.6, z + w / 2 + 0.05]); });
+          const wg = new X.BoxGeometry(0.5, 0.35, 0.05); const wm = new X.InstancedMesh(wg, glow(1.6, 1.15, 0.6), wins.length);
+          wins.forEach(([x, y, z], i) => { o.position.set(x, y, z); o.scale.set(1, 1, 1); o.updateMatrix(); wm.setMatrixAt(i, o.matrix); }); SG.add(wm);
+        }
+        // the gauge: a post with a graduated board (canvas texture), threshold ring at +3.0 m, sensor head
+        const boardTex = (() => { const c = document.createElement("canvas"); c.width = 256; c.height = 1536; const x = c.getContext("2d");
+          x.fillStyle = "#e9edf1"; x.fillRect(0, 0, 256, 1536);
+          // 6 m board from -1 to +5 m: 256 px per metre
+          for (let k = 0; k <= 60; k++) { const y = 1536 - k * 25.6; x.fillStyle = "#1a2230"; const w = k % 10 === 0 ? 150 : k % 5 === 0 ? 100 : 60; x.fillRect(0, y - 3, w, 6); }
+          x.font = "700 92px 'Space Grotesk'"; x.fillStyle = "#1a2230"; x.textAlign = "right";
+          for (let m = -1; m <= 5; m++) { const y = 1536 - (m + 1) * 256; if (m > -1 && m < 5) x.fillText((m > 0 ? "+" : "") + m, 246, y + 32); }
+          x.fillStyle = "#e0303f"; x.fillRect(0, 1536 - 4 * 256 - 8, 256, 16);
+          const t = new X.CanvasTexture(c); t.colorSpace = X.SRGBColorSpace; t.anisotropy = 8; return t; })();
+        const board = new X.Mesh(new X.BoxGeometry(0.9, 6, 0.12), [M("#c9ced4"), M("#c9ced4"), M("#c9ced4"), M("#c9ced4"), new X.MeshStandardMaterial({ map: boardTex, roughness: 0.7 }), M("#c9ced4")]);
+        board.position.set(0, 2, 0); SG.add(board);
+        SG.add(beam(V3(0.0, -2, -0.4), V3(0.0, 5.3, -0.4), 0.28, M("#46505d")));
+        const head = new X.Mesh(new X.SphereGeometry(0.3, 20, 14), mCyan); head.position.set(0, 5.5, -0.4); SG.add(head);
+        const headHalo = glowSprite(new X.Color(0.3, 1.3, 1.9), 1.6, 0.8); headHalo.position.copy(head.position); SG.add(headHalo);
+        const headRing = new X.Mesh(new X.RingGeometry(1.0, 1.07, 96), halo(new X.Color(0.3, 1.3, 1.9), 0.7)); headRing.rotation.x = -Math.PI / 2; SG.add(headRing);
+        const thrRing = new X.Mesh(new X.TorusGeometry(0.78, 0.04, 8, 80), mRed); thrRing.rotation.x = Math.PI / 2; thrRing.position.set(0, 3.0, -0.2); SG.add(thrRing);
+        const thrHalo = new X.Mesh(new X.TorusGeometry(0.78, 0.1, 8, 80), halo(new X.Color(1.6, 0.1, 0.15), 0.1)); thrHalo.rotation.x = Math.PI / 2; thrHalo.position.copy(thrRing.position); SG.add(thrHalo);
+        const gLevel = flat([[-120, -70], [120, -70], [120, 60], [-120, 60]], 0, new X.MeshStandardMaterial({ color: "#0f2636", roughness: 0.35, metalness: 0.2, transparent: true, opacity: 0.88 })); SG.add(gLevel);
+        { const pos = []; for (let x = -120; x <= 120; x += 4) pos.push(x, 0.02, -70, x, 0.02, 60); for (let z = -68; z <= 60; z += 4) pos.push(-120, 0.02, z, 120, 0.02, z);
+          const g = new X.BufferGeometry(); g.setAttribute("position", new X.Float32BufferAttribute(pos, 3)); gLevel.add(new X.LineSegments(g, new X.LineBasicMaterial({ color: "#1d3a50", transparent: true, opacity: 0.45 }))); }
+
+        // ---------- post: bloom
+        const rt = new X.WebGLRenderTarget(1080, 1920, { type: X.HalfFloatType, samples: 4 });
+        const composer = new T3.EffectComposer(renderer, rt);
+        composer.setPixelRatio(1); composer.setSize(1080, 1920);
+        composer.addPass(new T3.RenderPass(scene, cam));
+        const bloom = new T3.UnrealBloomPass(new X.Vector2(540, 960), 0.5, 0.45, 0.95);
+        composer.addPass(bloom);
+        composer.addPass(new T3.OutputPass());
+
+        // ---------- DOM anchors
+        const tags = {}; ["tTide", "tSurge", "tBos", "tNap", "tJoint", "tHalt", "tRdam", "tHoek", "tPia"].forEach((id) => (tags[id] = document.getElementById(id)));
+        const brk = { b360: document.getElementById("b360"), b210: document.getElementById("b210") };
+        const tmp = new X.Vector3();
+        const proj = (v) => { tmp.copy(v).project(cam); return [(tmp.x + 1) * 540, (1 - tmp.y) * 960, tmp.z]; };
+        function showTag(id, wp, op, dx = 18, dy = -18) {
+          const el = tags[id]; if (op <= 0.001) { el.style.opacity = "0"; return; }
+          const [x, y] = proj(wp); el.style.opacity = String(op);
+          el.style.transform = `translate(${(x + dx).toFixed(1)}px, ${(y + dy).toFixed(1)}px) scale(${(0.92 + 0.08 * op).toFixed(3)})`;
+        }
+        function showBracket(id, a, b, op, drop = 0) {
+          const el = brk[id]; if (op <= 0.001) { el.style.opacity = "0"; return; }
+          const [x0, y0] = proj(a), [x1, y1] = proj(b);
+          const L = Math.hypot(x1 - x0, y1 - y0), ang = Math.atan2(y1 - y0, x1 - x0);
+          el.style.opacity = String(op);
+          el.style.transform = `translate(${x0.toFixed(1)}px, ${y0.toFixed(1)}px)`;
+          const ln = el.querySelector(".ln"); ln.style.width = (L * E.out(clamp(op * 1.3))).toFixed(1) + "px"; ln.style.transform = `rotate(${ang}rad)`;
+          const t0 = el.querySelector(".t0"), t1 = el.querySelector(".t1");
+          t0.style.transform = `translate(-1px, -11px) rotate(${ang}rad)`;
+          t1.style.transform = `translate(${(x1 - x0 - 1).toFixed(1)}px, ${(y1 - y0 - 11).toFixed(1)}px) rotate(${ang}rad)`;
+          const lab = el.querySelector(".lab"); lab.style.left = ((x1 - x0) / 2).toFixed(1) + "px"; lab.style.top = ((y1 - y0) / 2 + 22 + drop).toFixed(1) + "px";
+        }
+        const hideAll = () => { for (const k in tags) tags[k].style.opacity = "0"; for (const k in brk) brk[k].style.opacity = "0"; };
+
+        // ---------- camera keys per shot: [pos0, pos1, tgt0, tgt1, fov]
+        // camera keys per shot. Barrier shots: {p: start position, t: target, f: fov, z: zoom by the end, r: orbit degrees}
+        // (framed with a fit tool so the key points land on chosen screen spots); other sets: [pos0, pos1, tgt0, tgt1, fov]
+        const CAM = {
+          hook: { p: [49.5, 110.4, -3.2], t: [-13.9, 0, -19.7], f: 40, z: 0.86, r: -4 },
+          map: { p: [-26.9, 608.2, 235.8], t: [-38.8, 0, -9.0], f: 41.7, z: 0.84, r: 7 },
+          channel: { p: [-109.1, 63.3, -1.5], t: [-14.9, 0, 0.9], f: 43.7, z: 0.9, r: 5 },
+          section: { p: [-13.7, 25.8, 155.0], t: [-1.4, -7.6, 4.2], f: 40.1, z: 0.9, r: -8 },
+          agency: { p: [11.8, 123.9, -2.7], t: [-23.4, 0, -2.8], f: 38.8, z: 0.93, r: 6 },
+          bos: { p: [5.5, 133.7, 54.5], t: [-24.8, 0, -25.9], f: 43.5, z: 0.88, r: -4 },
+          gauge: [[5.2, 3.6, 12.5], [3.4, 4.6, 9.4], [0, 2.6, 0], [0, 3.4, 0], 36],
+          evening: { p: [118.2, 98.5, 34.4], t: [5.8, 0, 7.0], f: 43.4, z: 0.88, r: 4 },
+          docks: { p: [26.3, 49.8, 9.7], t: [-5.7, -0.4, -27.5], f: 42, z: 0.86, r: -5 },
+          joint: [[JX + 3.0, 2.2, -JZ + 3.4], [JX + 3.7, 1.8, -JZ + 2.3], [JX - 0.3, 1.2, -JZ], [JX - 0.5, 1.2, -JZ], 38],
+          panel: { p: [44.1, 112.9, 28.3], t: [-13.9, 0, -8.8], f: 42.2, z: 0.92, r: 4 },
+          sink: { p: [-4.6, 72.7, 144.3], t: [2.8, 0, 3.3], f: 43.4, z: 0.88, r: -5 },
+          six: { p: [41.7, 113.0, 10.0], t: [-14.3, 0, -5.7], f: 38.1, z: 0.9, r: 10 },
+        };
+        const OFF = { map: [5000, 0, 0], section: [-5000, 0, 0], gauge: [0, 0, 5000] };
+
+        render3 = (t) => {
+          const sh = F.shotAt(t);
+          const u = clamp((t - sh.t0) / (sh.t1 - sh.t0));
+          const ue = E.sine(u);
+          const c = CAM[sh.id];
+          const off = OFF[sh.id] || [0, 0, 0];
+          if (Array.isArray(c)) {
+            cam.position.set(mix(c[0][0], c[1][0], ue) + off[0], mix(c[0][1], c[1][1], ue) + off[1], mix(c[0][2], c[1][2], ue) + off[2]);
+            cam.fov = c[4]; cam.updateProjectionMatrix();
+            cam.lookAt(mix(c[2][0], c[3][0], ue) + off[0], mix(c[2][1], c[3][1], ue) + off[1], mix(c[2][2], c[3][2], ue) + off[2]);
+          } else {
+            const a = (c.r * ue) * Math.PI / 180, k = mix(1, c.z, ue);
+            const dx = c.p[0] - c.t[0], dy = c.p[1] - c.t[1], dz = c.p[2] - c.t[2];
+            cam.position.set(c.t[0] + (dx * Math.cos(a) - dz * Math.sin(a)) * k + off[0], c.t[1] + dy * k + off[1], c.t[2] + (dx * Math.sin(a) + dz * Math.cos(a)) * k + off[2]);
+            cam.fov = c.f; cam.updateProjectionMatrix();
+            cam.lookAt(c.t[0] + off[0], c.t[1] + off[1], c.t[2] + off[2]);
+          }
+          cam.updateMatrixWorld();
+          SB.visible = sh.set === "barrier"; SM.visible = sh.id === "map"; SX.visible = sh.id === "section"; SG.visible = sh.id === "gauge";
+          scene.fog.near = sh.id === "map" ? 2000 : sh.id === "gauge" ? 40 : sh.id === "joint" ? 40 : 170;
+          scene.fog.far = sh.id === "map" ? 4000 : sh.id === "gauge" ? 190 : sh.id === "joint" ? 200 : 460;
+          hideAll();
+
+          // ----- barrier set state
+          const ph = F.phi(t), gy = F.gateY(t), dw = F.dockWater(t);
+          armN.rotation.y = ph; armS.rotation.y = -ph;
+          AN.g.position.y = gy + 1.6; AS.g.position.y = gy + 1.6;
+          dockWaterM.forEach((m) => (m.position.y = mix(-0.1, 1.65, dw)));
+          SB.updateMatrixWorld(true);
+          const ln = F.lane(t);
+          laneMesh.material.color.setRGB(mix(0.16, 0.32, ln), mix(0.2, 1.75, ln), mix(0.25, 2.3, ln));
+          laneHalo.material.opacity = 0.16 * ln;
+          // surge fronts
+          let sx = -150, cx = -200, cVis = false;
+          if (sh.id === "hook") { sx = mix(-82, -60, u); }
+          else if (sh.id === "evening") { sx = mix(-96, -58, u); }
+          else if (sh.id === "agency" || sh.id === "bos") { sx = mix(-120, -105, u); }
+          else if (sh.id === "panel") { sx = -56; cVis = true; cx = mix(-40, -28, u); }
+          else if (sh.id === "sink") { sx = -54; cVis = true; cx = mix(-28, -13.6, E.out(lin(t, sh.t0, F.tSeal + 0.4))); }
+          else if (sh.id === "six") { sx = -54; cVis = true; cx = -13.6; }
+          seaFront.position.x = sx; chanFront.visible = cVis; chanFront.position.x = cx;
+          // ship: passes in the channel shot; waits east of the barrier later
+          ship.visible = true;
+          if (sh.id === "channel") { ship.position.set(mix(30, -6, u), 0, -5.5); ship.rotation.y = Math.PI; }
+          else if (t < SH[2].t0) { ship.position.set(48, 0, 5.5); ship.rotation.y = 0; }
+          else { ship.position.set(52, 0, 6); ship.rotation.y = Math.PI; }
+          // BOS + gauges + arcs
+          const pulse = (tt, w = 0.5) => Math.exp(-Math.pow((t - tt) / w, 2));
+          const nodeK = 0.75 + 0.6 * pulse(W.agency[12] + 0.15, 0.35) + 0.25 * Math.sin(t * 5);
+          nodeHalo.material.opacity = clamp(0.6 * nodeK); nodeHalo.scale.setScalar(4 + 3 * pulse(W.agency[12] + 0.15, 0.4));
+          const rr = sh.id === "bos" ? (t - W.agency[12]) : -1;
+          nodeRing.visible = rr > 0 && rr < 1.4; if (nodeRing.visible) { nodeRing.scale.setScalar(1 + rr * 4); nodeRing.material.opacity = 0.7 * (1 - rr / 1.4); }
+          arcGate.p.geometry.setDrawRange(0, sh.id === "hook" ? Math.round(arcGate.n * E.out(lin(t, 0.4, 2.6))) : 0);
+          arcG.forEach((a, k) => a.p.geometry.setDrawRange(0, sh.id === "bos" ? Math.round(a.n * E.out(lin(t, sh.t0 + 0.15 + k * 0.17, sh.t0 + 0.95 + k * 0.17))) : 0));
+          AN.lights.concat(AS.lights).forEach((l) => (l.visible = t > W.halt[5] || (sh.id === "hook" && t > 1.4)));
+
+          // ----- map
+          if (sh.id === "map") {
+            mapRings.forEach((m, k) => {
+              const ph2 = ((t - sh.t0) * 0.42 + k / mapRings.length) % 1;
+              const r = 8 + ph2 * 95; m.scale.setScalar(r); m.material.opacity = (1 - ph2) * 0.95 * clamp((t - sh.t0) / 0.6);
+            });
+            const sp = 1 + 0.5 * Math.sin(t * 6); stormDot.scale.setScalar(sp);
+            mapChan.material.color.setRGB(0.32, 1.75, 2.3);
+            showTag("tPia", V3(5000 + stormC[0], 2, stormC[1]), lin(t, sh.t0 + 0.3, sh.t0 + 0.7), 24, -46);
+            showTag("tRdam", V3(5000 + G.places.rotterdam[0], 2, G.places.rotterdam[1]), lin(t, W.channel[5], W.channel[5] + 0.3), 20, -18);
+            showTag("tHoek", V3(5000 + G.places.barrier[0], 2, G.places.barrier[1]), lin(t, W.channel[5] + 0.25, W.channel[5] + 0.55), -230, 20);
+          }
+          // ----- section
+          if (sh.id === "section") {
+            const tide = mix(-1.6, 1.4, E.io(lin(t, W.tide[1], W.tide[7] + 0.3)));
+            const surgeK = E.io(lin(t, W.surge[3], W.surge[9] + 0.3));
+            const p = wsGeo.attributes.position, nCol = p.count;
+            const sy = (x) => tide + surgeK * 3.0 * Math.pow(clamp((x + 30) / 38), 1.6) + 0.12 * Math.sin(x * 0.9 + t * 3);
+            for (let i = 0; i < nCol; i++) {
+              const xx = -30 + (i % (NX + 1)) / NX * 44;
+              p.setXYZ(i, xx, sy(xx), p.getZ(i));
+              const red = surgeK * clamp((xx + 10) / 20);
+              wsCol.set([mix(0.06, 0.55, red), mix(0.16, 0.08, red), mix(0.24, 0.12, red)], i * 3);
+            }
+            p.needsUpdate = true; wsGeo.attributes.color.needsUpdate = true; wsGeo.computeVertexNormals();
+            const sl = surfLine.geometry.attributes.position;
+            for (let k = 0; k <= NX; k++) {
+              const xx = -30 + k / NX * 44, y = sy(xx), yb = Math.max(bedY(xx), -13);
+              ffPos.set([xx, y, XD / 2 + 0.02, xx, Math.min(yb, y), XD / 2 + 0.02], k * 6);
+              const red = surgeK * clamp((xx + 10) / 20) * clamp((y - tide) / 1.5);
+              ffCol.set([mix(0.07, 0.5, red), mix(0.2, 0.06, red), mix(0.32, 0.1, red), 0.025, 0.07, 0.12], k * 6);
+              sl.setXYZ(k, xx, y + 0.03, XD / 2 + 0.05);
+            }
+            ffGeo.attributes.position.needsUpdate = true; ffGeo.attributes.color.needsUpdate = true; sl.needsUpdate = true;
+            surfLine.material.color.setRGB(mix(0.45, 1.0, surgeK), mix(0.86, 0.3, surgeK), mix(1.0, 0.35, surgeK));
+            chevs.forEach((cv, k) => {
+              const ph2 = ((t * 0.55 + k * 0.13) % 1);
+              cv.l.position.set(-5000 + 0, 0, 0); cv.l.position.set(-30 + ph2 * 40, cv.y + sy(-30 + ph2 * 40) + 1.5, cv.z);
+              cv.l.material.opacity = surgeK * Math.sin(Math.PI * ph2) * 0.9;
+            });
+            showTag("tTide", V3(-5000 - 20, tide + 0.6, XD / 2), lin(t, W.tide[1], W.tide[1] + 0.3), 14, -50);
+            showTag("tSurge", V3(-5000 + 4, sy(4) + 0.4, XD / 2), lin(t, W.surge[9] - 0.25, W.surge[9] + 0.1), -340, -66);
+          }
+          // ----- gauge
+          if (sh.id === "gauge") {
+            const lvl = mix(1.2, 2.88, E.io(lin(t, sh.t0, W.rule[13] + 0.2)));
+            gLevel.position.y = lvl;
+            const hit = pulse(W.rule[13] + 0.1, 0.45), rp = t - (W.rule[13] + 0.05);
+            headHalo.scale.setScalar(1.6 + 4.5 * clamp(rp / 0.4) * (rp > 0 ? 1 : 0) * Math.exp(-Math.max(0, rp - 0.4) * 0.8));
+            headHalo.material.opacity = 0.75;
+            headRing.visible = rp > 0 && rp < 1.6; if (headRing.visible) { headRing.position.set(0, lvl + 0.02, 0); headRing.scale.setScalar(0.4 + rp * 2.2); headRing.material.opacity = 0.75 * (1 - rp / 1.6); }
+            thrHalo.material.opacity = 0.1 + 0.25 * hit + 0.1 * clamp((lvl - 2.4) / 0.5);
+            showTag("tNap", V3(-0.6, 3.0, 5000 - 0.2), lin(t, W.rule[3], W.rule[3] + 0.3), -330, -60);
+          }
+          // ----- barrier-shot overlays
+          if (sh.id === "channel") showBracket("b360", V3(-22, 0.6, -18), V3(-22, 0.6, 18), lin(t, W.channel[11] - 0.05, W.channel[11] + 0.4), -130);
+          if (sh.id === "bos") showTag("tBos", nodeP, lin(t, W.agency[12] - 0.15, W.agency[12] + 0.2), 26, -24);
+          if (sh.id === "evening") showTag("tHalt", V3(ship.position.x, 1.8, ship.position.z), lin(t, W.halt[2] - 0.2, W.halt[2] + 0.15), -330, -60);
+          if (sh.id === "docks") {
+            const a = gateEnd(-1, BETA0, 1.3), b = gateEnd(-1, BETA1, 1.3);
+            showBracket("b210", a, b, lin(t, W.gates[4] - 0.1, W.gates[4] + 0.35), 10);
+          }
+          if (sh.id === "joint") {
+            showTag("tJoint", V3(JX, 0.9 + gy + 1.6, -JZ), lin(t, W.gates[9] - 0.1, W.gates[9] + 0.25), -200, 90);
+          }
+          composer.render();
+          window.__anchorShot = sh.id;
+        };
+        ready = true; lastT = -1; draw(curT);
+      }).catch((e) => { window.__error = "world: " + (e && e.message ? e.message : e); throw e; });
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: F.DUR, duration: F.DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

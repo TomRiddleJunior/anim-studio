@@ -1,0 +1,1064 @@
+{
+ "duration": 69.525,
+ "voice": "am_michael",
+ "words": 184,
+ "wpm_overall": 158.8,
+ "wpm_speech": 181.7,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "In December twenty twenty-three, a computer closed Rotterdam's door to the sea, and no human gave the order.",
+   "start": 0.18,
+   "end": 6.805,
+   "words": [
+    {
+     "w": "In",
+     "start": 0.18,
+     "end": 0.28
+    },
+    {
+     "w": "December",
+     "start": 0.28,
+     "end": 0.78
+    },
+    {
+     "w": "twenty",
+     "start": 0.78,
+     "end": 1.08
+    },
+    {
+     "w": "twenty-three,",
+     "start": 1.08,
+     "end": 1.905
+    },
+    {
+     "w": "a",
+     "start": 2.03,
+     "end": 2.105
+    },
+    {
+     "w": "computer",
+     "start": 2.105,
+     "end": 2.667
+    },
+    {
+     "w": "closed",
+     "start": 2.667,
+     "end": 3.13
+    },
+    {
+     "w": "Rotterdam's",
+     "start": 3.13,
+     "end": 3.73
+    },
+    {
+     "w": "door",
+     "start": 3.73,
+     "end": 3.98
+    },
+    {
+     "w": "to",
+     "start": 3.98,
+     "end": 4.067
+    },
+    {
+     "w": "the",
+     "start": 4.067,
+     "end": 4.205
+    },
+    {
+     "w": "sea,",
+     "start": 4.205,
+     "end": 4.78
+    },
+    {
+     "w": "and",
+     "start": 4.918,
+     "end": 5.055
+    },
+    {
+     "w": "no",
+     "start": 5.055,
+     "end": 5.317
+    },
+    {
+     "w": "human",
+     "start": 5.317,
+     "end": 5.705
+    },
+    {
+     "w": "gave",
+     "start": 5.705,
+     "end": 5.942
+    },
+    {
+     "w": "the",
+     "start": 5.942,
+     "end": 6.093
+    },
+    {
+     "w": "order.",
+     "start": 6.093,
+     "end": 6.805
+    }
+   ]
+  },
+  {
+   "id": "storm",
+   "i": 1,
+   "text": "Storm Pia was driving the North Sea at the Dutch coast,",
+   "start": 7.435,
+   "end": 10.435,
+   "words": [
+    {
+     "w": "Storm",
+     "start": 7.435,
+     "end": 7.785
+    },
+    {
+     "w": "Pia",
+     "start": 7.785,
+     "end": 8.11
+    },
+    {
+     "w": "was",
+     "start": 8.11,
+     "end": 8.26
+    },
+    {
+     "w": "driving",
+     "start": 8.26,
+     "end": 8.648
+    },
+    {
+     "w": "the",
+     "start": 8.648,
+     "end": 8.735
+    },
+    {
+     "w": "North",
+     "start": 8.735,
+     "end": 9.023
+    },
+    {
+     "w": "Sea",
+     "start": 9.023,
+     "end": 9.285
+    },
+    {
+     "w": "at",
+     "start": 9.285,
+     "end": 9.373
+    },
+    {
+     "w": "the",
+     "start": 9.373,
+     "end": 9.485
+    },
+    {
+     "w": "Dutch",
+     "start": 9.485,
+     "end": 9.773
+    },
+    {
+     "w": "coast,",
+     "start": 9.773,
+     "end": 10.435
+    }
+   ]
+  },
+  {
+   "id": "channel",
+   "i": 2,
+   "text": "and the shipping channel to Rotterdam opens straight onto that sea, three hundred and sixty metres wide.",
+   "start": 10.805,
+   "end": 16.805,
+   "words": [
+    {
+     "w": "and",
+     "start": 10.805,
+     "end": 10.893
+    },
+    {
+     "w": "the",
+     "start": 10.893,
+     "end": 10.993
+    },
+    {
+     "w": "shipping",
+     "start": 10.993,
+     "end": 11.368
+    },
+    {
+     "w": "channel",
+     "start": 11.368,
+     "end": 11.755
+    },
+    {
+     "w": "to",
+     "start": 11.755,
+     "end": 11.88
+    },
+    {
+     "w": "Rotterdam",
+     "start": 11.88,
+     "end": 12.543
+    },
+    {
+     "w": "opens",
+     "start": 12.543,
+     "end": 12.968
+    },
+    {
+     "w": "straight",
+     "start": 12.968,
+     "end": 13.28
+    },
+    {
+     "w": "onto",
+     "start": 13.28,
+     "end": 13.555
+    },
+    {
+     "w": "that",
+     "start": 13.555,
+     "end": 13.843
+    },
+    {
+     "w": "sea,",
+     "start": 13.843,
+     "end": 14.38
+    },
+    {
+     "w": "three",
+     "start": 14.543,
+     "end": 14.83
+    },
+    {
+     "w": "hundred",
+     "start": 14.83,
+     "end": 15.218
+    },
+    {
+     "w": "and",
+     "start": 15.218,
+     "end": 15.343
+    },
+    {
+     "w": "sixty",
+     "start": 15.343,
+     "end": 15.705
+    },
+    {
+     "w": "metres",
+     "start": 15.705,
+     "end": 16.093
+    },
+    {
+     "w": "wide.",
+     "start": 16.093,
+     "end": 16.805
+    }
+   ]
+  },
+  {
+   "id": "parts",
+   "i": 3,
+   "text": "You see, every storm flood has two parts.",
+   "start": 17.375,
+   "end": 19.95,
+   "words": [
+    {
+     "w": "You",
+     "start": 17.375,
+     "end": 17.513
+    },
+    {
+     "w": "see,",
+     "start": 17.513,
+     "end": 17.75
+    },
+    {
+     "w": "every",
+     "start": 17.825,
+     "end": 18.125
+    },
+    {
+     "w": "storm",
+     "start": 18.125,
+     "end": 18.513
+    },
+    {
+     "w": "flood",
+     "start": 18.513,
+     "end": 18.775
+    },
+    {
+     "w": "has",
+     "start": 18.775,
+     "end": 18.988
+    },
+    {
+     "w": "two",
+     "start": 18.988,
+     "end": 19.213
+    },
+    {
+     "w": "parts.",
+     "start": 19.213,
+     "end": 19.95
+    }
+   ]
+  },
+  {
+   "id": "tide",
+   "i": 4,
+   "text": "The tide rises on schedule, twice a day.",
+   "start": 20.42,
+   "end": 22.995,
+   "words": [
+    {
+     "w": "The",
+     "start": 20.42,
+     "end": 20.495
+    },
+    {
+     "w": "tide",
+     "start": 20.495,
+     "end": 20.845
+    },
+    {
+     "w": "rises",
+     "start": 20.845,
+     "end": 21.208
+    },
+    {
+     "w": "on",
+     "start": 21.208,
+     "end": 21.37
+    },
+    {
+     "w": "schedule,",
+     "start": 21.37,
+     "end": 21.895
+    },
+    {
+     "w": "twice",
+     "start": 21.97,
+     "end": 22.308
+    },
+    {
+     "w": "a",
+     "start": 22.308,
+     "end": 22.395
+    },
+    {
+     "w": "day.",
+     "start": 22.395,
+     "end": 22.995
+    }
+   ]
+  },
+  {
+   "id": "surge",
+   "i": 5,
+   "text": "Then the wind piles extra water on top: the surge.",
+   "start": 23.465,
+   "end": 26.765,
+   "words": [
+    {
+     "w": "Then",
+     "start": 23.465,
+     "end": 23.578
+    },
+    {
+     "w": "the",
+     "start": 23.578,
+     "end": 23.69
+    },
+    {
+     "w": "wind",
+     "start": 23.69,
+     "end": 23.965
+    },
+    {
+     "w": "piles",
+     "start": 23.965,
+     "end": 24.34
+    },
+    {
+     "w": "extra",
+     "start": 24.34,
+     "end": 24.74
+    },
+    {
+     "w": "water",
+     "start": 24.74,
+     "end": 25.053
+    },
+    {
+     "w": "on",
+     "start": 25.053,
+     "end": 25.24
+    },
+    {
+     "w": "top:",
+     "start": 25.24,
+     "end": 25.74
+    },
+    {
+     "w": "the",
+     "start": 25.865,
+     "end": 26.015
+    },
+    {
+     "w": "surge.",
+     "start": 26.015,
+     "end": 26.765
+    }
+   ]
+  },
+  {
+   "id": "agency",
+   "i": 6,
+   "text": "So the Dutch water agency handed the decision to a computer called BOS.",
+   "start": 27.335,
+   "end": 32.385,
+   "words": [
+    {
+     "w": "So",
+     "start": 27.335,
+     "end": 27.51
+    },
+    {
+     "w": "the",
+     "start": 27.51,
+     "end": 27.648
+    },
+    {
+     "w": "Dutch",
+     "start": 27.648,
+     "end": 28.06
+    },
+    {
+     "w": "water",
+     "start": 28.06,
+     "end": 28.46
+    },
+    {
+     "w": "agency",
+     "start": 28.46,
+     "end": 29.31
+    },
+    {
+     "w": "handed",
+     "start": 29.31,
+     "end": 29.698
+    },
+    {
+     "w": "the",
+     "start": 29.698,
+     "end": 29.785
+    },
+    {
+     "w": "decision",
+     "start": 29.785,
+     "end": 30.31
+    },
+    {
+     "w": "to",
+     "start": 30.31,
+     "end": 30.398
+    },
+    {
+     "w": "a",
+     "start": 30.398,
+     "end": 30.46
+    },
+    {
+     "w": "computer",
+     "start": 30.46,
+     "end": 31.035
+    },
+    {
+     "w": "called",
+     "start": 31.035,
+     "end": 31.348
+    },
+    {
+     "w": "BOS.",
+     "start": 31.348,
+     "end": 32.385
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "i": 7,
+   "text": "If it forecasts three metres above sea level at Rotterdam, it closes the barrier itself.",
+   "start": 32.835,
+   "end": 38.31,
+   "words": [
+    {
+     "w": "If",
+     "start": 32.835,
+     "end": 32.973
+    },
+    {
+     "w": "it",
+     "start": 32.973,
+     "end": 33.098
+    },
+    {
+     "w": "forecasts",
+     "start": 33.098,
+     "end": 33.748
+    },
+    {
+     "w": "three",
+     "start": 33.748,
+     "end": 34.035
+    },
+    {
+     "w": "metres",
+     "start": 34.035,
+     "end": 34.41
+    },
+    {
+     "w": "above",
+     "start": 34.41,
+     "end": 34.723
+    },
+    {
+     "w": "sea",
+     "start": 34.723,
+     "end": 34.935
+    },
+    {
+     "w": "level",
+     "start": 34.935,
+     "end": 35.26
+    },
+    {
+     "w": "at",
+     "start": 35.26,
+     "end": 35.385
+    },
+    {
+     "w": "Rotterdam,",
+     "start": 35.385,
+     "end": 36.26
+    },
+    {
+     "w": "it",
+     "start": 36.373,
+     "end": 36.523
+    },
+    {
+     "w": "closes",
+     "start": 36.523,
+     "end": 36.985
+    },
+    {
+     "w": "the",
+     "start": 36.985,
+     "end": 37.085
+    },
+    {
+     "w": "barrier",
+     "start": 37.085,
+     "end": 37.485
+    },
+    {
+     "w": "itself.",
+     "start": 37.485,
+     "end": 38.31
+    }
+   ]
+  },
+  {
+   "id": "evening",
+   "i": 8,
+   "text": "That evening, the forecast crossed the line.",
+   "start": 38.86,
+   "end": 41.16,
+   "words": [
+    {
+     "w": "That",
+     "start": 38.86,
+     "end": 39.06
+    },
+    {
+     "w": "evening,",
+     "start": 39.06,
+     "end": 39.385
+    },
+    {
+     "w": "the",
+     "start": 39.423,
+     "end": 39.523
+    },
+    {
+     "w": "forecast",
+     "start": 39.523,
+     "end": 40.06
+    },
+    {
+     "w": "crossed",
+     "start": 40.06,
+     "end": 40.398
+    },
+    {
+     "w": "the",
+     "start": 40.398,
+     "end": 40.51
+    },
+    {
+     "w": "line.",
+     "start": 40.51,
+     "end": 41.16
+    }
+   ]
+  },
+  {
+   "id": "halt",
+   "i": 9,
+   "text": "Ships were halted, and the dry docks flooded.",
+   "start": 41.67,
+   "end": 44.345,
+   "words": [
+    {
+     "w": "Ships",
+     "start": 41.67,
+     "end": 41.933
+    },
+    {
+     "w": "were",
+     "start": 41.933,
+     "end": 42.045
+    },
+    {
+     "w": "halted,",
+     "start": 42.045,
+     "end": 42.67
+    },
+    {
+     "w": "and",
+     "start": 42.77,
+     "end": 42.883
+    },
+    {
+     "w": "the",
+     "start": 42.883,
+     "end": 42.97
+    },
+    {
+     "w": "dry",
+     "start": 42.97,
+     "end": 43.295
+    },
+    {
+     "w": "docks",
+     "start": 43.295,
+     "end": 43.658
+    },
+    {
+     "w": "flooded.",
+     "start": 43.658,
+     "end": 44.345
+    }
+   ]
+  },
+  {
+   "id": "gates",
+   "i": 10,
+   "text": "Two hollow gates, each two hundred and ten metres long, swung out on ball joints ten metres wide.",
+   "start": 44.795,
+   "end": 51.045,
+   "words": [
+    {
+     "w": "Two",
+     "start": 44.795,
+     "end": 44.995
+    },
+    {
+     "w": "hollow",
+     "start": 44.995,
+     "end": 45.37
+    },
+    {
+     "w": "gates,",
+     "start": 45.37,
+     "end": 45.995
+    },
+    {
+     "w": "each",
+     "start": 46.095,
+     "end": 46.358
+    },
+    {
+     "w": "two",
+     "start": 46.358,
+     "end": 46.57
+    },
+    {
+     "w": "hundred",
+     "start": 46.57,
+     "end": 46.958
+    },
+    {
+     "w": "and",
+     "start": 46.958,
+     "end": 47.07
+    },
+    {
+     "w": "ten",
+     "start": 47.07,
+     "end": 47.32
+    },
+    {
+     "w": "metres",
+     "start": 47.32,
+     "end": 47.645
+    },
+    {
+     "w": "long,",
+     "start": 47.645,
+     "end": 48.17
+    },
+    {
+     "w": "swung",
+     "start": 48.308,
+     "end": 48.645
+    },
+    {
+     "w": "out",
+     "start": 48.645,
+     "end": 48.833
+    },
+    {
+     "w": "on",
+     "start": 48.833,
+     "end": 49.02
+    },
+    {
+     "w": "ball",
+     "start": 49.02,
+     "end": 49.333
+    },
+    {
+     "w": "joints",
+     "start": 49.333,
+     "end": 49.683
+    },
+    {
+     "w": "ten",
+     "start": 49.683,
+     "end": 49.945
+    },
+    {
+     "w": "metres",
+     "start": 49.945,
+     "end": 50.333
+    },
+    {
+     "w": "wide.",
+     "start": 50.333,
+     "end": 51.045
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "i": 11,
+   "text": "The whole closing takes about two hours.",
+   "start": 51.515,
+   "end": 53.84,
+   "words": [
+    {
+     "w": "The",
+     "start": 51.515,
+     "end": 51.59
+    },
+    {
+     "w": "whole",
+     "start": 51.59,
+     "end": 51.84
+    },
+    {
+     "w": "closing",
+     "start": 51.84,
+     "end": 52.29
+    },
+    {
+     "w": "takes",
+     "start": 52.29,
+     "end": 52.603
+    },
+    {
+     "w": "about",
+     "start": 52.603,
+     "end": 52.878
+    },
+    {
+     "w": "two",
+     "start": 52.878,
+     "end": 53.103
+    },
+    {
+     "w": "hours.",
+     "start": 53.103,
+     "end": 53.84
+    }
+   ]
+  },
+  {
+   "id": "sink",
+   "i": 12,
+   "text": "Then the gates filled with water and sank, sealing the channel.",
+   "start": 54.31,
+   "end": 57.66,
+   "words": [
+    {
+     "w": "Then",
+     "start": 54.31,
+     "end": 54.448
+    },
+    {
+     "w": "the",
+     "start": 54.448,
+     "end": 54.535
+    },
+    {
+     "w": "gates",
+     "start": 54.535,
+     "end": 54.873
+    },
+    {
+     "w": "filled",
+     "start": 54.873,
+     "end": 55.148
+    },
+    {
+     "w": "with",
+     "start": 55.148,
+     "end": 55.323
+    },
+    {
+     "w": "water",
+     "start": 55.323,
+     "end": 55.673
+    },
+    {
+     "w": "and",
+     "start": 55.673,
+     "end": 55.81
+    },
+    {
+     "w": "sank,",
+     "start": 55.81,
+     "end": 56.335
+    },
+    {
+     "w": "sealing",
+     "start": 56.448,
+     "end": 56.823
+    },
+    {
+     "w": "the",
+     "start": 56.823,
+     "end": 56.923
+    },
+    {
+     "w": "channel.",
+     "start": 56.923,
+     "end": 57.66
+    }
+   ]
+  },
+  {
+   "id": "six",
+   "i": 13,
+   "text": "That night, all six of the country's big storm barriers were shut.",
+   "start": 58.19,
+   "end": 62.015,
+   "words": [
+    {
+     "w": "That",
+     "start": 58.19,
+     "end": 58.415
+    },
+    {
+     "w": "night,",
+     "start": 58.415,
+     "end": 58.69
+    },
+    {
+     "w": "all",
+     "start": 58.765,
+     "end": 58.99
+    },
+    {
+     "w": "six",
+     "start": 58.99,
+     "end": 59.253
+    },
+    {
+     "w": "of",
+     "start": 59.253,
+     "end": 59.328
+    },
+    {
+     "w": "the",
+     "start": 59.328,
+     "end": 59.415
+    },
+    {
+     "w": "country's",
+     "start": 59.415,
+     "end": 60.128
+    },
+    {
+     "w": "big",
+     "start": 60.128,
+     "end": 60.365
+    },
+    {
+     "w": "storm",
+     "start": 60.365,
+     "end": 60.74
+    },
+    {
+     "w": "barriers",
+     "start": 60.74,
+     "end": 61.253
+    },
+    {
+     "w": "were",
+     "start": 61.253,
+     "end": 61.415
+    },
+    {
+     "w": "shut.",
+     "start": 61.415,
+     "end": 62.015
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "i": 14,
+   "text": "About one and a half million people live behind this one, and not one of them had to press a button.",
+   "start": 62.525,
+   "end": 67.975,
+   "words": [
+    {
+     "w": "About",
+     "start": 62.525,
+     "end": 62.838
+    },
+    {
+     "w": "one",
+     "start": 62.838,
+     "end": 63.038
+    },
+    {
+     "w": "and",
+     "start": 63.038,
+     "end": 63.138
+    },
+    {
+     "w": "a",
+     "start": 63.138,
+     "end": 63.213
+    },
+    {
+     "w": "half",
+     "start": 63.213,
+     "end": 63.588
+    },
+    {
+     "w": "million",
+     "start": 63.588,
+     "end": 63.975
+    },
+    {
+     "w": "people",
+     "start": 63.975,
+     "end": 64.388
+    },
+    {
+     "w": "live",
+     "start": 64.388,
+     "end": 64.625
+    },
+    {
+     "w": "behind",
+     "start": 64.625,
+     "end": 65.05
+    },
+    {
+     "w": "this",
+     "start": 65.05,
+     "end": 65.25
+    },
+    {
+     "w": "one,",
+     "start": 65.25,
+     "end": 65.725
+    },
+    {
+     "w": "and",
+     "start": 65.825,
+     "end": 65.95
+    },
+    {
+     "w": "not",
+     "start": 65.95,
+     "end": 66.2
+    },
+    {
+     "w": "one",
+     "start": 66.2,
+     "end": 66.338
+    },
+    {
+     "w": "of",
+     "start": 66.338,
+     "end": 66.425
+    },
+    {
+     "w": "them",
+     "start": 66.425,
+     "end": 66.65
+    },
+    {
+     "w": "had",
+     "start": 66.65,
+     "end": 66.838
+    },
+    {
+     "w": "to",
+     "start": 66.838,
+     "end": 66.925
+    },
+    {
+     "w": "press",
+     "start": 66.925,
+     "end": 67.2
+    },
+    {
+     "w": "a",
+     "start": 67.2,
+     "end": 67.313
+    },
+    {
+     "w": "button.",
+     "start": 67.313,
+     "end": 67.975
+    }
+   ]
+  }
+ ]
+}

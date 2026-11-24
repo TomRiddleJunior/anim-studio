@@ -1,0 +1,40 @@
+{
+ "voice": "am_michael",
+ "speed": 0.76,
+ "lead": 0.15,
+ "tail": 1.2,
+ "lines": [
+  {
+   "id": "l1",
+   "at": 0.18,
+   "text": "There is a calm in the second cup."
+  },
+  {
+   "id": "l2",
+   "at": 3.6,
+   "text": "There is a calm in drifting."
+  },
+  {
+   "id": "l3",
+   "at": 7.03,
+   "text": "There is a calm in switching off."
+  },
+  {
+   "id": "l4",
+   "at": 10.45,
+   "text": "There is a calm in standing still, while everyone rushes by.",
+   "speed": 0.86,
+   "split": "still,"
+  },
+  {
+   "id": "l5",
+   "at": 15.6,
+   "text": "There is a calm in an early night."
+  },
+  {
+   "id": "l6",
+   "at": 19.03,
+   "text": "There is a calm in being here."
+  }
+ ]
+}

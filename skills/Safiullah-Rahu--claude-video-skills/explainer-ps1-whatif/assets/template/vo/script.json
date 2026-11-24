@@ -1,0 +1,13 @@
+{
+ "voice": "am_michael",
+ "speed": 1.03,
+ "lead": 0.12,
+ "tail": 3.0,
+ "gap": 0.3,
+ "lines": [
+  {"id": "h1", "text": "What if you could rewind ten seconds?"},
+  {"id": "h2", "text": "You trip on the stairs, in front of everyone.", "gap": 0.36},
+  {"id": "h3", "text": "Rewind.", "gap": 0.28},
+  {"id": "h4", "text": "This time, you step right over it.", "gap": 0.64}
+ ]
+}

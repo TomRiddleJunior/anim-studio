@@ -1,0 +1,1395 @@
+{
+ "duration": 64.23,
+ "voice": "am_michael",
+ "words": 243,
+ "wpm_overall": 227.0,
+ "wpm_speech": 253.8,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "Port Fennick is getting every pothole fixed at once, and Mayor Bunbury picked the week himself: right before his election.",
+   "start": 0.31,
+   "end": 5.56,
+   "words": [
+    {
+     "w": "Port",
+     "start": 0.31,
+     "end": 0.46
+    },
+    {
+     "w": "Fennick",
+     "start": 0.46,
+     "end": 0.698
+    },
+    {
+     "w": "is",
+     "start": 0.698,
+     "end": 0.785
+    },
+    {
+     "w": "getting",
+     "start": 0.785,
+     "end": 1.047
+    },
+    {
+     "w": "every",
+     "start": 1.047,
+     "end": 1.26
+    },
+    {
+     "w": "pothole",
+     "start": 1.26,
+     "end": 1.647
+    },
+    {
+     "w": "fixed",
+     "start": 1.647,
+     "end": 1.848
+    },
+    {
+     "w": "at",
+     "start": 1.848,
+     "end": 1.935
+    },
+    {
+     "w": "once,",
+     "start": 1.935,
+     "end": 2.41
+    },
+    {
+     "w": "and",
+     "start": 2.485,
+     "end": 2.61
+    },
+    {
+     "w": "Mayor",
+     "start": 2.61,
+     "end": 2.86
+    },
+    {
+     "w": "Bunbury",
+     "start": 2.86,
+     "end": 3.26
+    },
+    {
+     "w": "picked",
+     "start": 3.26,
+     "end": 3.422
+    },
+    {
+     "w": "the",
+     "start": 3.422,
+     "end": 3.51
+    },
+    {
+     "w": "week",
+     "start": 3.51,
+     "end": 3.672
+    },
+    {
+     "w": "himself:",
+     "start": 3.672,
+     "end": 4.335
+    },
+    {
+     "w": "right",
+     "start": 4.448,
+     "end": 4.647
+    },
+    {
+     "w": "before",
+     "start": 4.647,
+     "end": 4.897
+    },
+    {
+     "w": "his",
+     "start": 4.897,
+     "end": 4.998
+    },
+    {
+     "w": "election.",
+     "start": 4.998,
+     "end": 5.56
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "i": 1,
+   "text": "Meet the town's only steamroller.",
+   "start": 5.89,
+   "end": 7.265,
+   "words": [
+    {
+     "w": "Meet",
+     "start": 5.89,
+     "end": 6.002
+    },
+    {
+     "w": "the",
+     "start": 6.002,
+     "end": 6.09
+    },
+    {
+     "w": "town's",
+     "start": 6.09,
+     "end": 6.377
+    },
+    {
+     "w": "only",
+     "start": 6.377,
+     "end": 6.54
+    },
+    {
+     "w": "steamroller.",
+     "start": 6.54,
+     "end": 7.265
+    }
+   ]
+  },
+  {
+   "id": "big",
+   "i": 2,
+   "text": "It sleeps under a tarp eleven months a year, then spends two frantic weeks paving anything that holds still.",
+   "start": 7.525,
+   "end": 11.875,
+   "words": [
+    {
+     "w": "It",
+     "start": 7.525,
+     "end": 7.625
+    },
+    {
+     "w": "sleeps",
+     "start": 7.625,
+     "end": 7.862
+    },
+    {
+     "w": "under",
+     "start": 7.862,
+     "end": 8.038
+    },
+    {
+     "w": "a",
+     "start": 8.038,
+     "end": 8.1
+    },
+    {
+     "w": "tarp",
+     "start": 8.1,
+     "end": 8.338
+    },
+    {
+     "w": "eleven",
+     "start": 8.338,
+     "end": 8.562
+    },
+    {
+     "w": "months",
+     "start": 8.562,
+     "end": 8.738
+    },
+    {
+     "w": "a",
+     "start": 8.738,
+     "end": 8.8
+    },
+    {
+     "w": "year,",
+     "start": 8.8,
+     "end": 9.25
+    },
+    {
+     "w": "then",
+     "start": 9.312,
+     "end": 9.438
+    },
+    {
+     "w": "spends",
+     "start": 9.438,
+     "end": 9.738
+    },
+    {
+     "w": "two",
+     "start": 9.738,
+     "end": 9.963
+    },
+    {
+     "w": "frantic",
+     "start": 9.963,
+     "end": 10.25
+    },
+    {
+     "w": "weeks",
+     "start": 10.25,
+     "end": 10.475
+    },
+    {
+     "w": "paving",
+     "start": 10.475,
+     "end": 10.7
+    },
+    {
+     "w": "anything",
+     "start": 10.7,
+     "end": 11.013
+    },
+    {
+     "w": "that",
+     "start": 11.013,
+     "end": 11.113
+    },
+    {
+     "w": "holds",
+     "start": 11.113,
+     "end": 11.35
+    },
+    {
+     "w": "still.",
+     "start": 11.35,
+     "end": 11.875
+    }
+   ]
+  },
+  {
+   "id": "words",
+   "i": 3,
+   "text": "He's even dusted off his speech: same as last time, new date.",
+   "start": 12.205,
+   "end": 14.905,
+   "words": [
+    {
+     "w": "He's",
+     "start": 12.205,
+     "end": 12.317
+    },
+    {
+     "w": "even",
+     "start": 12.317,
+     "end": 12.48
+    },
+    {
+     "w": "dusted",
+     "start": 12.48,
+     "end": 12.717
+    },
+    {
+     "w": "off",
+     "start": 12.717,
+     "end": 12.842
+    },
+    {
+     "w": "his",
+     "start": 12.842,
+     "end": 12.955
+    },
+    {
+     "w": "speech:",
+     "start": 12.955,
+     "end": 13.455
+    },
+    {
+     "w": "same",
+     "start": 13.567,
+     "end": 13.767
+    },
+    {
+     "w": "as",
+     "start": 13.767,
+     "end": 13.855
+    },
+    {
+     "w": "last",
+     "start": 13.855,
+     "end": 14.092
+    },
+    {
+     "w": "time,",
+     "start": 14.092,
+     "end": 14.305
+    },
+    {
+     "w": "new",
+     "start": 14.342,
+     "end": 14.455
+    },
+    {
+     "w": "date.",
+     "start": 14.455,
+     "end": 14.905
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "i": 4,
+   "text": "So why around his election?",
+   "start": 15.195,
+   "end": 16.37,
+   "words": [
+    {
+     "w": "So",
+     "start": 15.195,
+     "end": 15.32
+    },
+    {
+     "w": "why",
+     "start": 15.32,
+     "end": 15.482
+    },
+    {
+     "w": "around",
+     "start": 15.482,
+     "end": 15.732
+    },
+    {
+     "w": "his",
+     "start": 15.732,
+     "end": 15.832
+    },
+    {
+     "w": "election?",
+     "start": 15.832,
+     "end": 16.37
+    }
+   ]
+  },
+  {
+   "id": "vote",
+   "i": 5,
+   "text": "Well, potholes don't vote, but the people who hit them do.",
+   "start": 16.78,
+   "end": 19.13,
+   "words": [
+    {
+     "w": "Well,",
+     "start": 16.78,
+     "end": 16.93
+    },
+    {
+     "w": "potholes",
+     "start": 16.98,
+     "end": 17.367
+    },
+    {
+     "w": "don't",
+     "start": 17.367,
+     "end": 17.53
+    },
+    {
+     "w": "vote,",
+     "start": 17.53,
+     "end": 17.905
+    },
+    {
+     "w": "but",
+     "start": 17.967,
+     "end": 18.092
+    },
+    {
+     "w": "the",
+     "start": 18.092,
+     "end": 18.167
+    },
+    {
+     "w": "people",
+     "start": 18.167,
+     "end": 18.367
+    },
+    {
+     "w": "who",
+     "start": 18.367,
+     "end": 18.467
+    },
+    {
+     "w": "hit",
+     "start": 18.467,
+     "end": 18.592
+    },
+    {
+     "w": "them",
+     "start": 18.592,
+     "end": 18.717
+    },
+    {
+     "w": "do.",
+     "start": 18.717,
+     "end": 19.13
+    }
+   ]
+  },
+  {
+   "id": "memory",
+   "i": 6,
+   "text": "Fix a road in March, and nobody remembers by November. Fix it the week they vote, and he's a local hero.",
+   "start": 19.44,
+   "end": 24.04,
+   "words": [
+    {
+     "w": "Fix",
+     "start": 19.44,
+     "end": 19.578
+    },
+    {
+     "w": "a",
+     "start": 19.578,
+     "end": 19.64
+    },
+    {
+     "w": "road",
+     "start": 19.64,
+     "end": 19.878
+    },
+    {
+     "w": "in",
+     "start": 19.878,
+     "end": 19.965
+    },
+    {
+     "w": "March,",
+     "start": 19.965,
+     "end": 20.365
+    },
+    {
+     "w": "and",
+     "start": 20.44,
+     "end": 20.565
+    },
+    {
+     "w": "nobody",
+     "start": 20.565,
+     "end": 20.902
+    },
+    {
+     "w": "remembers",
+     "start": 20.902,
+     "end": 21.203
+    },
+    {
+     "w": "by",
+     "start": 21.203,
+     "end": 21.328
+    },
+    {
+     "w": "November.",
+     "start": 21.328,
+     "end": 21.915
+    },
+    {
+     "w": "Fix",
+     "start": 22.027,
+     "end": 22.203
+    },
+    {
+     "w": "it",
+     "start": 22.203,
+     "end": 22.277
+    },
+    {
+     "w": "the",
+     "start": 22.277,
+     "end": 22.365
+    },
+    {
+     "w": "week",
+     "start": 22.365,
+     "end": 22.552
+    },
+    {
+     "w": "they",
+     "start": 22.552,
+     "end": 22.69
+    },
+    {
+     "w": "vote,",
+     "start": 22.69,
+     "end": 22.94
+    },
+    {
+     "w": "and",
+     "start": 22.977,
+     "end": 23.078
+    },
+    {
+     "w": "he's",
+     "start": 23.078,
+     "end": 23.203
+    },
+    {
+     "w": "a",
+     "start": 23.203,
+     "end": 23.252
+    },
+    {
+     "w": "local",
+     "start": 23.252,
+     "end": 23.515
+    },
+    {
+     "w": "hero.",
+     "start": 23.515,
+     "end": 24.04
+    }
+   ]
+  },
+  {
+   "id": "econ",
+   "i": 7,
+   "text": "Economists even have a name for it: the political budget cycle.",
+   "start": 24.33,
+   "end": 27.03,
+   "words": [
+    {
+     "w": "Economists",
+     "start": 24.33,
+     "end": 24.805
+    },
+    {
+     "w": "even",
+     "start": 24.805,
+     "end": 24.992
+    },
+    {
+     "w": "have",
+     "start": 24.992,
+     "end": 25.117
+    },
+    {
+     "w": "a",
+     "start": 25.117,
+     "end": 25.167
+    },
+    {
+     "w": "name",
+     "start": 25.167,
+     "end": 25.38
+    },
+    {
+     "w": "for",
+     "start": 25.38,
+     "end": 25.517
+    },
+    {
+     "w": "it:",
+     "start": 25.517,
+     "end": 25.78
+    },
+    {
+     "w": "the",
+     "start": 25.855,
+     "end": 25.955
+    },
+    {
+     "w": "political",
+     "start": 25.955,
+     "end": 26.28
+    },
+    {
+     "w": "budget",
+     "start": 26.28,
+     "end": 26.505
+    },
+    {
+     "w": "cycle.",
+     "start": 26.505,
+     "end": 27.03
+    }
+   ]
+  },
+  {
+   "id": "date",
+   "i": 8,
+   "text": "Election day in Port Fennick: November fifth.",
+   "start": 27.29,
+   "end": 29.24,
+   "words": [
+    {
+     "w": "Election",
+     "start": 27.29,
+     "end": 27.577
+    },
+    {
+     "w": "day",
+     "start": 27.577,
+     "end": 27.752
+    },
+    {
+     "w": "in",
+     "start": 27.752,
+     "end": 27.827
+    },
+    {
+     "w": "Port",
+     "start": 27.827,
+     "end": 27.99
+    },
+    {
+     "w": "Fennick:",
+     "start": 27.99,
+     "end": 28.365
+    },
+    {
+     "w": "November",
+     "start": 28.44,
+     "end": 28.752
+    },
+    {
+     "w": "fifth.",
+     "start": 28.752,
+     "end": 29.24
+    }
+   ]
+  },
+  {
+   "id": "gus",
+   "i": 9,
+   "text": "One meeting with Gus at Smoothly Paving, and every crew is booked for late October. His only question: overtime?",
+   "start": 29.5,
+   "end": 34.6,
+   "words": [
+    {
+     "w": "One",
+     "start": 29.5,
+     "end": 29.612
+    },
+    {
+     "w": "meeting",
+     "start": 29.612,
+     "end": 29.837
+    },
+    {
+     "w": "with",
+     "start": 29.837,
+     "end": 29.95
+    },
+    {
+     "w": "Gus",
+     "start": 29.95,
+     "end": 30.175
+    },
+    {
+     "w": "at",
+     "start": 30.175,
+     "end": 30.275
+    },
+    {
+     "w": "Smoothly",
+     "start": 30.275,
+     "end": 30.6
+    },
+    {
+     "w": "Paving,",
+     "start": 30.6,
+     "end": 30.95
+    },
+    {
+     "w": "and",
+     "start": 30.987,
+     "end": 31.1
+    },
+    {
+     "w": "every",
+     "start": 31.1,
+     "end": 31.337
+    },
+    {
+     "w": "crew",
+     "start": 31.337,
+     "end": 31.587
+    },
+    {
+     "w": "is",
+     "start": 31.587,
+     "end": 31.675
+    },
+    {
+     "w": "booked",
+     "start": 31.675,
+     "end": 31.837
+    },
+    {
+     "w": "for",
+     "start": 31.837,
+     "end": 31.95
+    },
+    {
+     "w": "late",
+     "start": 31.95,
+     "end": 32.125
+    },
+    {
+     "w": "October.",
+     "start": 32.125,
+     "end": 32.8
+    },
+    {
+     "w": "His",
+     "start": 32.9,
+     "end": 33.05
+    },
+    {
+     "w": "only",
+     "start": 33.05,
+     "end": 33.25
+    },
+    {
+     "w": "question:",
+     "start": 33.25,
+     "end": 33.775
+    },
+    {
+     "w": "overtime?",
+     "start": 33.875,
+     "end": 34.6
+    }
+   ]
+  },
+  {
+   "id": "threat",
+   "i": 10,
+   "text": "And his campaign slogan practically writes itself: re-elect me, or keep the potholes.",
+   "start": 34.83,
+   "end": 38.655,
+   "words": [
+    {
+     "w": "And",
+     "start": 34.83,
+     "end": 34.943
+    },
+    {
+     "w": "his",
+     "start": 34.943,
+     "end": 35.055
+    },
+    {
+     "w": "campaign",
+     "start": 35.055,
+     "end": 35.48
+    },
+    {
+     "w": "slogan",
+     "start": 35.48,
+     "end": 35.805
+    },
+    {
+     "w": "practically",
+     "start": 35.805,
+     "end": 36.143
+    },
+    {
+     "w": "writes",
+     "start": 36.143,
+     "end": 36.318
+    },
+    {
+     "w": "itself:",
+     "start": 36.318,
+     "end": 36.88
+    },
+    {
+     "w": "re-elect",
+     "start": 36.98,
+     "end": 37.268
+    },
+    {
+     "w": "me,",
+     "start": 37.268,
+     "end": 37.505
+    },
+    {
+     "w": "or",
+     "start": 37.58,
+     "end": 37.68
+    },
+    {
+     "w": "keep",
+     "start": 37.68,
+     "end": 37.818
+    },
+    {
+     "w": "the",
+     "start": 37.818,
+     "end": 37.905
+    },
+    {
+     "w": "potholes.",
+     "start": 37.905,
+     "end": 38.655
+    }
+   ]
+  },
+  {
+   "id": "you",
+   "i": 11,
+   "text": "And you? You get the other eleven months.",
+   "start": 38.945,
+   "end": 40.495,
+   "words": [
+    {
+     "w": "And",
+     "start": 38.945,
+     "end": 39.095
+    },
+    {
+     "w": "you?",
+     "start": 39.095,
+     "end": 39.32
+    },
+    {
+     "w": "You",
+     "start": 39.383,
+     "end": 39.483
+    },
+    {
+     "w": "get",
+     "start": 39.483,
+     "end": 39.583
+    },
+    {
+     "w": "the",
+     "start": 39.583,
+     "end": 39.658
+    },
+    {
+     "w": "other",
+     "start": 39.658,
+     "end": 39.808
+    },
+    {
+     "w": "eleven",
+     "start": 39.808,
+     "end": 40.033
+    },
+    {
+     "w": "months.",
+     "start": 40.033,
+     "end": 40.495
+    }
+   ]
+  },
+  {
+   "id": "week",
+   "i": 12,
+   "text": "Your bike finds one on Monday, your car finds two on Tuesday, and by Friday the big one has its own mailbox.",
+   "start": 40.725,
+   "end": 45.75,
+   "words": [
+    {
+     "w": "Your",
+     "start": 40.725,
+     "end": 40.838
+    },
+    {
+     "w": "bike",
+     "start": 40.838,
+     "end": 41.025
+    },
+    {
+     "w": "finds",
+     "start": 41.025,
+     "end": 41.263
+    },
+    {
+     "w": "one",
+     "start": 41.263,
+     "end": 41.388
+    },
+    {
+     "w": "on",
+     "start": 41.388,
+     "end": 41.488
+    },
+    {
+     "w": "Monday,",
+     "start": 41.488,
+     "end": 42.0
+    },
+    {
+     "w": "your",
+     "start": 42.1,
+     "end": 42.225
+    },
+    {
+     "w": "car",
+     "start": 42.225,
+     "end": 42.45
+    },
+    {
+     "w": "finds",
+     "start": 42.45,
+     "end": 42.7
+    },
+    {
+     "w": "two",
+     "start": 42.7,
+     "end": 42.863
+    },
+    {
+     "w": "on",
+     "start": 42.863,
+     "end": 42.975
+    },
+    {
+     "w": "Tuesday,",
+     "start": 42.975,
+     "end": 43.575
+    },
+    {
+     "w": "and",
+     "start": 43.675,
+     "end": 43.788
+    },
+    {
+     "w": "by",
+     "start": 43.788,
+     "end": 43.938
+    },
+    {
+     "w": "Friday",
+     "start": 43.938,
+     "end": 44.238
+    },
+    {
+     "w": "the",
+     "start": 44.238,
+     "end": 44.325
+    },
+    {
+     "w": "big",
+     "start": 44.325,
+     "end": 44.463
+    },
+    {
+     "w": "one",
+     "start": 44.463,
+     "end": 44.588
+    },
+    {
+     "w": "has",
+     "start": 44.588,
+     "end": 44.738
+    },
+    {
+     "w": "its",
+     "start": 44.738,
+     "end": 44.85
+    },
+    {
+     "w": "own",
+     "start": 44.85,
+     "end": 45.063
+    },
+    {
+     "w": "mailbox.",
+     "start": 45.063,
+     "end": 45.75
+    }
+   ]
+  },
+  {
+   "id": "tarp",
+   "i": 13,
+   "text": "Then, two weeks before the vote, the tarp comes off,",
+   "start": 46.06,
+   "end": 48.06,
+   "words": [
+    {
+     "w": "Then,",
+     "start": 46.06,
+     "end": 46.16
+    },
+    {
+     "w": "two",
+     "start": 46.21,
+     "end": 46.323
+    },
+    {
+     "w": "weeks",
+     "start": 46.323,
+     "end": 46.498
+    },
+    {
+     "w": "before",
+     "start": 46.498,
+     "end": 46.698
+    },
+    {
+     "w": "the",
+     "start": 46.698,
+     "end": 46.785
+    },
+    {
+     "w": "vote,",
+     "start": 46.785,
+     "end": 47.11
+    },
+    {
+     "w": "the",
+     "start": 47.173,
+     "end": 47.248
+    },
+    {
+     "w": "tarp",
+     "start": 47.248,
+     "end": 47.398
+    },
+    {
+     "w": "comes",
+     "start": 47.398,
+     "end": 47.585
+    },
+    {
+     "w": "off,",
+     "start": 47.585,
+     "end": 48.06
+    }
+   ]
+  },
+  {
+   "id": "fixed",
+   "i": 14,
+   "text": "and weekly repairs leap from zero to four hundred, just in time for the ballot box.",
+   "start": 48.27,
+   "end": 51.87,
+   "words": [
+    {
+     "w": "and",
+     "start": 48.27,
+     "end": 48.37
+    },
+    {
+     "w": "weekly",
+     "start": 48.37,
+     "end": 48.608
+    },
+    {
+     "w": "repairs",
+     "start": 48.608,
+     "end": 49.02
+    },
+    {
+     "w": "leap",
+     "start": 49.02,
+     "end": 49.208
+    },
+    {
+     "w": "from",
+     "start": 49.208,
+     "end": 49.345
+    },
+    {
+     "w": "zero",
+     "start": 49.345,
+     "end": 49.633
+    },
+    {
+     "w": "to",
+     "start": 49.633,
+     "end": 49.72
+    },
+    {
+     "w": "four",
+     "start": 49.72,
+     "end": 49.883
+    },
+    {
+     "w": "hundred,",
+     "start": 49.883,
+     "end": 50.345
+    },
+    {
+     "w": "just",
+     "start": 50.445,
+     "end": 50.608
+    },
+    {
+     "w": "in",
+     "start": 50.608,
+     "end": 50.695
+    },
+    {
+     "w": "time",
+     "start": 50.695,
+     "end": 50.958
+    },
+    {
+     "w": "for",
+     "start": 50.958,
+     "end": 51.058
+    },
+    {
+     "w": "the",
+     "start": 51.058,
+     "end": 51.133
+    },
+    {
+     "w": "ballot",
+     "start": 51.133,
+     "end": 51.358
+    },
+    {
+     "w": "box.",
+     "start": 51.358,
+     "end": 51.87
+    }
+   ]
+  },
+  {
+   "id": "wins",
+   "i": 15,
+   "text": "Bunbury cruises to a fifth term.",
+   "start": 52.1,
+   "end": 53.475,
+   "words": [
+    {
+     "w": "Bunbury",
+     "start": 52.1,
+     "end": 52.375
+    },
+    {
+     "w": "cruises",
+     "start": 52.375,
+     "end": 52.688
+    },
+    {
+     "w": "to",
+     "start": 52.688,
+     "end": 52.763
+    },
+    {
+     "w": "a",
+     "start": 52.763,
+     "end": 52.825
+    },
+    {
+     "w": "fifth",
+     "start": 52.825,
+     "end": 53.0
+    },
+    {
+     "w": "term.",
+     "start": 53.0,
+     "end": 53.475
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "i": 16,
+   "text": "Ask what comes next, and he swears the roads are in safe hands.",
+   "start": 53.705,
+   "end": 56.48,
+   "words": [
+    {
+     "w": "Ask",
+     "start": 53.705,
+     "end": 53.893
+    },
+    {
+     "w": "what",
+     "start": 53.893,
+     "end": 54.018
+    },
+    {
+     "w": "comes",
+     "start": 54.018,
+     "end": 54.205
+    },
+    {
+     "w": "next,",
+     "start": 54.205,
+     "end": 54.655
+    },
+    {
+     "w": "and",
+     "start": 54.718,
+     "end": 54.818
+    },
+    {
+     "w": "he",
+     "start": 54.818,
+     "end": 54.905
+    },
+    {
+     "w": "swears",
+     "start": 54.905,
+     "end": 55.193
+    },
+    {
+     "w": "the",
+     "start": 55.193,
+     "end": 55.28
+    },
+    {
+     "w": "roads",
+     "start": 55.28,
+     "end": 55.543
+    },
+    {
+     "w": "are",
+     "start": 55.543,
+     "end": 55.618
+    },
+    {
+     "w": "in",
+     "start": 55.618,
+     "end": 55.705
+    },
+    {
+     "w": "safe",
+     "start": 55.705,
+     "end": 55.893
+    },
+    {
+     "w": "hands.",
+     "start": 55.893,
+     "end": 56.48
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "i": 17,
+   "text": "Then the tarp goes back on, and the crews go back on holiday.",
+   "start": 56.77,
+   "end": 59.445,
+   "words": [
+    {
+     "w": "Then",
+     "start": 56.77,
+     "end": 56.883
+    },
+    {
+     "w": "the",
+     "start": 56.883,
+     "end": 56.97
+    },
+    {
+     "w": "tarp",
+     "start": 56.97,
+     "end": 57.158
+    },
+    {
+     "w": "goes",
+     "start": 57.158,
+     "end": 57.333
+    },
+    {
+     "w": "back",
+     "start": 57.333,
+     "end": 57.508
+    },
+    {
+     "w": "on,",
+     "start": 57.508,
+     "end": 57.895
+    },
+    {
+     "w": "and",
+     "start": 57.958,
+     "end": 58.058
+    },
+    {
+     "w": "the",
+     "start": 58.058,
+     "end": 58.145
+    },
+    {
+     "w": "crews",
+     "start": 58.145,
+     "end": 58.433
+    },
+    {
+     "w": "go",
+     "start": 58.433,
+     "end": 58.533
+    },
+    {
+     "w": "back",
+     "start": 58.533,
+     "end": 58.683
+    },
+    {
+     "w": "on",
+     "start": 58.683,
+     "end": 58.795
+    },
+    {
+     "w": "holiday.",
+     "start": 58.795,
+     "end": 59.445
+    }
+   ]
+  },
+  {
+   "id": "punch",
+   "i": 18,
+   "text": "As for the pothole outside your door? Re-elected, for four more years.",
+   "start": 59.705,
+   "end": 62.78,
+   "words": [
+    {
+     "w": "As",
+     "start": 59.705,
+     "end": 59.818
+    },
+    {
+     "w": "for",
+     "start": 59.818,
+     "end": 59.918
+    },
+    {
+     "w": "the",
+     "start": 59.918,
+     "end": 60.005
+    },
+    {
+     "w": "pothole",
+     "start": 60.005,
+     "end": 60.343
+    },
+    {
+     "w": "outside",
+     "start": 60.343,
+     "end": 60.643
+    },
+    {
+     "w": "your",
+     "start": 60.643,
+     "end": 60.755
+    },
+    {
+     "w": "door?",
+     "start": 60.755,
+     "end": 61.18
+    },
+    {
+     "w": "Re-elected,",
+     "start": 61.305,
+     "end": 61.705
+    },
+    {
+     "w": "for",
+     "start": 61.743,
+     "end": 61.868
+    },
+    {
+     "w": "four",
+     "start": 61.868,
+     "end": 62.068
+    },
+    {
+     "w": "more",
+     "start": 62.068,
+     "end": 62.23
+    },
+    {
+     "w": "years.",
+     "start": 62.23,
+     "end": 62.78
+    }
+   ]
+  }
+ ]
+}

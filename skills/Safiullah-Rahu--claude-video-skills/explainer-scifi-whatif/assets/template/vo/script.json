@@ -1,0 +1,11 @@
+{
+ "voice": "am_onyx,am_michael",
+ "speed": 1.08,
+ "lead": 0.15,
+ "tail": 3.0,
+ "gap": 0.3,
+ "lines": [
+  {"id": "d1", "text": "What if a robot was your only company for a whole year?"},
+  {"id": "d2", "text": "A company is paying five million dollars to find out.", "gap": 0.6}
+ ]
+}

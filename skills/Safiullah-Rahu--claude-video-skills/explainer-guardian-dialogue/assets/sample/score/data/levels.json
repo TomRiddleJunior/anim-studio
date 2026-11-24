@@ -1,0 +1,11 @@
+{
+ "integrated_lufs": -14.1,
+ "true_peak_dbtp": -1.5,
+ "voice_over_bed_db_while_speaking": 20.2,
+ "loudnorm": {
+  "output_i": "-14.17",
+  "output_tp": "-1.50",
+  "output_lra": "4.20",
+  "normalization_type": "dynamic"
+ }
+}

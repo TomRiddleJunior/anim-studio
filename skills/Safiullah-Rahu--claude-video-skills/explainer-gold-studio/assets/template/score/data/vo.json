@@ -1,0 +1,91 @@
+{
+ "duration": 6.205,
+ "voice": "am_fenrir,am_onyx",
+ "words": 11,
+ "wpm_overall": 106.4,
+ "wpm_speech": 187.2,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "Two places found the same resource.",
+   "start": 0.11,
+   "end": 1.985,
+   "words": [
+    {
+     "w": "Two",
+     "start": 0.11,
+     "end": 0.285
+    },
+    {
+     "w": "places",
+     "start": 0.285,
+     "end": 0.66
+    },
+    {
+     "w": "found",
+     "start": 0.66,
+     "end": 0.898
+    },
+    {
+     "w": "the",
+     "start": 0.898,
+     "end": 0.985
+    },
+    {
+     "w": "same",
+     "start": 0.985,
+     "end": 1.235
+    },
+    {
+     "w": "resource.",
+     "start": 1.235,
+     "end": 1.985
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "One saved it.",
+   "start": 2.595,
+   "end": 3.57,
+   "words": [
+    {
+     "w": "One",
+     "start": 2.595,
+     "end": 2.832
+    },
+    {
+     "w": "saved",
+     "start": 2.832,
+     "end": 3.22
+    },
+    {
+     "w": "it.",
+     "start": 3.22,
+     "end": 3.57
+    }
+   ]
+  },
+  {
+   "id": "l03",
+   "i": 2,
+   "text": "Here's how.",
+   "start": 4.48,
+   "end": 5.155,
+   "words": [
+    {
+     "w": "Here's",
+     "start": 4.48,
+     "end": 4.78
+    },
+    {
+     "w": "how.",
+     "start": 4.78,
+     "end": 5.155
+    }
+   ]
+  }
+ ]
+}

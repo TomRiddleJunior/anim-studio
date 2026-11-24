@@ -1,0 +1,10 @@
+{
+ "pre_lufs": -18.3,
+ "gain_db": 4.3,
+ "full_lufs": -14.1,
+ "full_tp_dbtp": -2.0,
+ "nomusic_lufs": -14.0,
+ "nomusic_tp_dbtp": -2.0,
+ "final_gain_db": 4.7,
+ "voice_over_bed_db": 14.88
+}

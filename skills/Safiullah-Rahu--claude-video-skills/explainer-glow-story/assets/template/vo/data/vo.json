@@ -1,0 +1,131 @@
+{
+ "duration": 10.38,
+ "voice": "af_heart",
+ "words": 19,
+ "wpm_overall": 109.8,
+ "wpm_speech": 175.4,
+ "lines": [
+  {
+   "id": "l01",
+   "i": 0,
+   "text": "I sort lost letters for a living.",
+   "start": 0.16,
+   "end": 2.085,
+   "words": [
+    {
+     "w": "I",
+     "start": 0.16,
+     "end": 0.285
+    },
+    {
+     "w": "sort",
+     "start": 0.285,
+     "end": 0.56
+    },
+    {
+     "w": "lost",
+     "start": 0.56,
+     "end": 0.885
+    },
+    {
+     "w": "letters",
+     "start": 0.885,
+     "end": 1.26
+    },
+    {
+     "w": "for",
+     "start": 1.26,
+     "end": 1.373
+    },
+    {
+     "w": "a",
+     "start": 1.373,
+     "end": 1.435
+    },
+    {
+     "w": "living.",
+     "start": 1.435,
+     "end": 2.085
+    }
+   ]
+  },
+  {
+   "id": "l02",
+   "i": 1,
+   "text": "Last week, one came back four hundred times.",
+   "start": 2.745,
+   "end": 5.37,
+   "words": [
+    {
+     "w": "Last",
+     "start": 2.745,
+     "end": 3.032
+    },
+    {
+     "w": "week,",
+     "start": 3.032,
+     "end": 3.345
+    },
+    {
+     "w": "one",
+     "start": 3.395,
+     "end": 3.595
+    },
+    {
+     "w": "came",
+     "start": 3.595,
+     "end": 3.82
+    },
+    {
+     "w": "back",
+     "start": 3.82,
+     "end": 4.133
+    },
+    {
+     "w": "four",
+     "start": 4.133,
+     "end": 4.332
+    },
+    {
+     "w": "hundred",
+     "start": 4.332,
+     "end": 4.62
+    },
+    {
+     "w": "times.",
+     "start": 4.62,
+     "end": 5.37
+    }
+   ]
+  },
+  {
+   "id": "m1",
+   "i": 2,
+   "text": "Please. Keep this one.",
+   "start": 6.48,
+   "end": 8.43,
+   "words": [
+    {
+     "w": "Please.",
+     "start": 6.48,
+     "end": 7.08
+    },
+    {
+     "w": "Keep",
+     "start": 7.168,
+     "end": 7.455
+    },
+    {
+     "w": "this",
+     "start": 7.455,
+     "end": 7.73
+    },
+    {
+     "w": "one.",
+     "start": 7.73,
+     "end": 8.43
+    }
+   ]
+  }
+ ]
+}

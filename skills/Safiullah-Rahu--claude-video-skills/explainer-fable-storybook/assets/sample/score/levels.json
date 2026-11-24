@@ -1,0 +1,16 @@
+{
+ "full": {
+  "lufs": -14.2,
+  "tp_dbtp": -2.0,
+  "gain_db": 5.1
+ },
+ "nomusic": {
+  "lufs": -14.1,
+  "tp_dbtp": -2.0,
+  "gain_db": 4.6
+ },
+ "voice_over_rest_db": 14.6,
+ "voice_over_music_db": 15.7,
+ "bpm": 80,
+ "key": "F major (ends on C, loops to F)"
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<!-- tools/dbg.html: lock-free drawing iterations, analyzer emulation and shot-time export. Serve the samples folder with tools/devserve.py; usage in the header comment of the script below. -->
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "SMCond"; src: url("../assets/fonts/Oswald_wght_.ttf"); font-weight: 200 700; }
+@font-face { font-family: "SMMono"; src: url("../assets/fonts/RobotoMono_wght_.ttf"); font-weight: 100 700; }
+@font-face { font-family: "SMUI"; src: url("../assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+body { margin: 0; background: #222; color: #ddd; font: 12px sans-serif; }
+#grid { display: block; }
+</style>
+<script src="../assets/lib/sm-kit.js"></script>
+<script src="../assets/lib/vo-data.js"></script>
+<script src="../assets/lib/film.js"></script>
+</head><body>
+<canvas id="grid"></canvas>
+<script>
+// usage: dbg.html#t=1,5,9&cols=6&w=180   (times) or #shots=1&cols=8 (one still per shot, mid-shot)
+const VOD = window.SM_VO;
+const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+const V = { duration: VOD.duration, L(id) { return VOD.lines[id]; },
+  w(id, word, k) { const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word))); if (!hits.length) throw new Error("no word " + id + ":" + word); return hits[Math.min(k || 0, hits.length - 1)][1]; },
+  we(id, word, k) { const hits = VOD.lines[id].words.filter((x) => norm(x[0]).startsWith(norm(word))); return hits[Math.min(k || 0, hits.length - 1)][2]; } };
+const off = document.createElement("canvas"); off.width = 1080; off.height = 1920;
+const K = window.SM.create({ canvas: off });
+const film = window.SM_FILM(K, V);
+function params() { const o = {}; location.hash.slice(1).split("&").forEach((kv) => { const [k, v] = kv.split("="); if (k) o[k] = v; }); return o; }
+
+// ---- analyzer emulation (lock-free): ffmpeg scene score at every shot boundary + the engine's 1 s histogram scene changes
+function yuvOf(c) { const d = c.getContext("2d").getImageData(0, 0, c.width, c.height).data; const n = c.width * c.height;
+  const Y = new Float32Array(n), U = new Float32Array(n / 4), V = new Float32Array(n / 4);
+  for (let i = 0; i < n; i++) { const r = d[i * 4], g = d[i * 4 + 1], b = d[i * 4 + 2]; Y[i] = 16 + 0.257 * r + 0.504 * g + 0.098 * b; }
+  const w = c.width; for (let y = 0; y < c.height; y += 2) for (let x = 0; x < w; x += 2) { const i = (y * w + x) * 4; const r = d[i], g = d[i + 1], b = d[i + 2]; const k = (y / 2) * (w / 2) + x / 2; U[k] = 128 - 0.148 * r - 0.291 * g + 0.439 * b; V[k] = 128 + 0.439 * r - 0.368 * g - 0.071 * b; }
+  return [Y, U, V]; }
+function mafd(a, b) { let s = 0, n = 0; for (let p = 0; p < 3; p++) { const A = a[p], B = b[p]; for (let i = 0; i < A.length; i++) s += Math.abs(A[i] - B[i]); n += A.length; } return s / n; }
+async function analyze(p) {
+  const sm = document.createElement("canvas"); sm.width = 270; sm.height = 480; const sc = sm.getContext("2d");
+  // full-resolution frames: a downscaled frame averages fine detail away and under-reports ffmpeg's scene score
+  const grab = (t) => { film.draw(t); return yuvOf(off); };
+  const S = window.SM_SHOTS, dur = V.duration, extra = (p.extra || "").split(",").filter(Boolean).map(Number);
+  const marks = S.slice(1).map((s) => s.t0).concat(extra);
+  const cuts = [];
+  for (const t0 of marks) { let prev = grab(Math.max(0, t0 - 0.2)), pm = 0, best = 0, bt = t0;
+    for (let t = t0 - 0.2 + 1 / 30; t < t0 + 0.55; t += 1 / 30) { const cur = grab(t); const m = mafd(prev, cur); const sco = Math.min(m, Math.abs(m - pm)) / 100; if (sco > best) { best = sco; bt = t; } pm = m; prev = cur; }
+    cuts.push([+t0.toFixed(2), +best.toFixed(3), +bt.toFixed(2)]); }
+  // histogram scene changes at 6 fps (64 bins, 4 levels/channel), frames 1 s apart, peaks >= 0.28, >= 1.5 s apart
+  const hs = []; const hc = document.createElement("canvas"); hc.width = 160; hc.height = 90; const hx = hc.getContext("2d");
+  for (let t = 0; t < dur; t += 1 / 6) { film.draw(t); hx.drawImage(off, 0, 0, 160, 90); const d = hx.getImageData(0, 0, 160, 90).data; const h = new Float32Array(64);
+    for (let i = 0; i < d.length; i += 4) h[(d[i] >> 6) * 16 + (d[i + 1] >> 6) * 4 + (d[i + 2] >> 6)] += 1; for (let k = 0; k < 64; k++) h[k] /= 14400; hs.push(h); }
+  const dd = []; for (let i = 0; i + 6 < hs.length; i++) { let s = 0; for (let k = 0; k < 64; k++) s += Math.abs(hs[i + 6][k] - hs[i][k]); dd.push(0.5 * s); }
+  const scenes = []; let last = -9; for (let i = 1; i < dd.length - 1; i++) { const t = (i + 3) / 6; if (dd[i] >= 0.28 && dd[i] >= dd[i - 1] && dd[i] >= dd[i + 1] && t - last >= 1.5) { scenes.push([+t.toFixed(2), +dd[i].toFixed(3)]); last = t; } }
+  const nc = cuts.filter((c) => c[1] > 0.33).length;
+  const res = { dur, cuts_over_033: nc, cuts_per_min: +(nc / dur * 60).toFixed(2), scenes: scenes.length, scenes_per_min: +(scenes.length / dur * 60).toFixed(2), cuts, scene_list: scenes };
+  await fetch("/save?path=" + encodeURIComponent(p.analyze), { method: "POST", body: "data:application/json;base64," + btoa(JSON.stringify(res)) });
+  return res;
+}
+async function go() {
+  await K.ready;
+  const p = params(); if (p.analyze) { await analyze(p); document.title = "analyzed " + Date.now(); return; }
+  const cols = +(p.cols || 6), tw = +(p.w || 180), th = Math.round(tw * 16 / 9);
+  let ts = [];
+  if (p.shots) { const S = window.SM_SHOTS; ts = S.map((s) => +(s.t0 + (s.t1 - s.t0) * (+(p.at || 0.6))).toFixed(2)); }
+  else ts = (p.t || "0").split(",").map(Number);
+  const rows = Math.ceil(ts.length / cols);
+  const g = document.getElementById("grid"); g.width = cols * (tw + 4); g.height = rows * (th + 16);
+  const gc = g.getContext("2d"); gc.fillStyle = "#222"; gc.fillRect(0, 0, g.width, g.height);
+  ts.forEach((t, i) => {
+    film.draw(t);
+    const x = (i % cols) * (tw + 4), y = Math.floor(i / cols) * (th + 16);
+    gc.drawImage(off, x, y + 14, tw, th);
+    if (p.band) { gc.strokeStyle = "rgba(0,255,255,0.7)"; gc.strokeRect(x, y + 14 + th * 1200 / 1920, tw, th * 120 / 1920); }
+    gc.fillStyle = "#ffd050"; gc.fillText(t.toFixed(2) + "s", x + 2, y + 11);
+  });
+  if (p.times) { const j = JSON.stringify({ T: window.SM_TIMES, shots: window.SM_SHOTS }); await fetch("/save?path=" + encodeURIComponent(p.times), { method: "POST", body: "data:application/json;base64," + btoa(j) }); }
+  if (p.save) { await fetch("/save?path=" + encodeURIComponent(p.save), { method: "POST", body: g.toDataURL("image/jpeg", 0.88) }); }
+  document.title = "done " + Date.now();
+}
+window.addEventListener("hashchange", go); go();
+</script></body></html>

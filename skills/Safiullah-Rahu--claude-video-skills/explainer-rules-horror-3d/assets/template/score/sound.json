@@ -1,0 +1,19 @@
+{
+ "preset": "none",
+ "music_file": "audio/bed.wav",
+ "duck_db": 0,
+ "music_under_voice_db": -15.5,
+ "sfx_db": -13,
+ "lufs": -14.0,
+ "reverb": 0.0,
+ "levels_re_voice_db": {
+  "room": -30,
+  "buzz": -34,
+  "drone": -22,
+  "heart": -22,
+  "final": -6,
+  "fx": -5,
+  "close": -8
+ },
+ "bed_under_speech_db": -15.5
+}

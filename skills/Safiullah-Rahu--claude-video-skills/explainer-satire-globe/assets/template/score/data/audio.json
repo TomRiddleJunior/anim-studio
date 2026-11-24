@@ -1,0 +1,9 @@
+{
+ "duration": 14.3,
+ "preset": "tech-glow",
+ "sfx_cues": 10,
+ "target_lufs": -14,
+ "music_gain_db": -3.1,
+ "sfx_gain_db": -1.1,
+ "input_lufs": "-15.49"
+}

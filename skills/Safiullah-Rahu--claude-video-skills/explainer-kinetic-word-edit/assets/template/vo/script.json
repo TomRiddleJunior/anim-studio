@@ -1,0 +1,68 @@
+{
+  "voice": "af_heart",
+  "speed": 0.82,
+  "lead": 0.45,
+  "tail": 6.0,
+  "lines": [
+    {
+      "id": "l1a",
+      "text": "Some nights,",
+      "at": 0.5
+    },
+    {
+      "id": "l1b",
+      "text": "I go under.",
+      "at": 1.8
+    },
+    {
+      "id": "l2a",
+      "text": "Every wave",
+      "at": 3.62
+    },
+    {
+      "id": "l2b",
+      "text": "says your name,",
+      "at": 4.83
+    },
+    {
+      "id": "l3a",
+      "text": "and I sink",
+      "at": 7.25
+    },
+    {
+      "id": "l3b",
+      "text": "so slow.",
+      "at": 8.46
+    },
+    {
+      "id": "l4",
+      "text": "I kept what I never said.",
+      "at": 12.71
+    },
+    {
+      "id": "l5a",
+      "text": "Still",
+      "at": 16.95
+    },
+    {
+      "id": "l5b",
+      "text": "on fire,",
+      "at": 17.56
+    },
+    {
+      "id": "l5c",
+      "text": "underwater.",
+      "at": 18.16
+    },
+    {
+      "id": "l6",
+      "text": "Come up for air.",
+      "at": 22.4
+    },
+    {
+      "id": "l7",
+      "text": "Did I ever let go?",
+      "at": 27.25
+    }
+  ]
+}

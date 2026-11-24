@@ -1,0 +1,41 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #05060d; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1080" data-height="1920">
+    <canvas id="world-canvas" width="2160" height="3840" data-layout-allow-overflow></canvas>
+  </div>
+  <script>
+    (function () {
+      const DUR = window.CHAT_TIMING.dur;
+      let film = null, lastT = -1, curT = 0;
+      function draw(t) {
+        curT = t;
+        t = Math.round(t * 10000) / 10000;
+        if (!film || t === lastT) return;
+        lastT = t;
+        film.render(t);
+      }
+      // the screen is canvas text: the font has to be in before the first frame is drawn
+      const inter = new FontFace("Inter", "url(assets/fonts/Inter_opsz-wght_.ttf)", { weight: "100 900" });
+      const ready = inter.load().then((f) => {
+        document.fonts.add(f);
+        return Promise.all([document.fonts.load('400 40px "Inter"'), document.fonts.load('680 40px "Inter"'), document.fonts.load('40px "Segoe UI Emoji"', "\u{1F62D}")]);
+      }).then(() => {
+        const ui = document.createElement("canvas");
+        window.CHATUI.init(ui);
+        film = window.CHATFILM.create(document.getElementById("world-canvas"), ui);
+        lastT = -1; draw(curT);
+      });
+      window.__hf = window.__hf || {};
+      window.__hf.buildReady = window.__hf.buildReady || {};
+      window.__hf.buildReady.world = ready;
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: DUR, duration: DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["world"] = tl;
+    })();
+  </script>
+</template>

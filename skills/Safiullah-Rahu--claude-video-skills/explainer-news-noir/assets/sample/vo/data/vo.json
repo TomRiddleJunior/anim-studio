@@ -1,0 +1,1009 @@
+{
+ "duration": 71.575,
+ "voice": "bm_george",
+ "words": 173,
+ "wpm_overall": 145.0,
+ "wpm_speech": 165.0,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "This is Hungary's prime minister, Peter Magyar.",
+   "start": 0.16,
+   "end": 2.935,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.16,
+     "end": 0.335
+    },
+    {
+     "w": "is",
+     "start": 0.335,
+     "end": 0.485
+    },
+    {
+     "w": "Hungary's",
+     "start": 0.485,
+     "end": 0.985
+    },
+    {
+     "w": "prime",
+     "start": 0.985,
+     "end": 1.285
+    },
+    {
+     "w": "minister,",
+     "start": 1.285,
+     "end": 1.785
+    },
+    {
+     "w": "Peter",
+     "start": 1.885,
+     "end": 2.21
+    },
+    {
+     "w": "Magyar.",
+     "start": 2.21,
+     "end": 2.935
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "i": 1,
+   "text": "On November the fourth, his government opened the communist secret police files to anyone.",
+   "start": 3.365,
+   "end": 8.44,
+   "words": [
+    {
+     "w": "On",
+     "start": 3.365,
+     "end": 3.478
+    },
+    {
+     "w": "November",
+     "start": 3.478,
+     "end": 3.94
+    },
+    {
+     "w": "the",
+     "start": 3.94,
+     "end": 4.077
+    },
+    {
+     "w": "fourth,",
+     "start": 4.077,
+     "end": 4.615
+    },
+    {
+     "w": "his",
+     "start": 4.69,
+     "end": 4.89
+    },
+    {
+     "w": "government",
+     "start": 4.89,
+     "end": 5.34
+    },
+    {
+     "w": "opened",
+     "start": 5.34,
+     "end": 5.652
+    },
+    {
+     "w": "the",
+     "start": 5.652,
+     "end": 5.74
+    },
+    {
+     "w": "communist",
+     "start": 5.74,
+     "end": 6.277
+    },
+    {
+     "w": "secret",
+     "start": 6.277,
+     "end": 6.69
+    },
+    {
+     "w": "police",
+     "start": 6.69,
+     "end": 7.178
+    },
+    {
+     "w": "files",
+     "start": 7.178,
+     "end": 7.615
+    },
+    {
+     "w": "to",
+     "start": 7.615,
+     "end": 7.765
+    },
+    {
+     "w": "anyone.",
+     "start": 7.765,
+     "end": 8.44
+    }
+   ]
+  },
+  {
+   "id": "names",
+   "i": 2,
+   "text": "About sixty thousand names are now public, Reuters and Euronews report.",
+   "start": 8.95,
+   "end": 13.375,
+   "words": [
+    {
+     "w": "About",
+     "start": 8.95,
+     "end": 9.238
+    },
+    {
+     "w": "sixty",
+     "start": 9.238,
+     "end": 9.6
+    },
+    {
+     "w": "thousand",
+     "start": 9.6,
+     "end": 9.975
+    },
+    {
+     "w": "names",
+     "start": 9.975,
+     "end": 10.537
+    },
+    {
+     "w": "are",
+     "start": 10.537,
+     "end": 10.65
+    },
+    {
+     "w": "now",
+     "start": 10.65,
+     "end": 10.825
+    },
+    {
+     "w": "public,",
+     "start": 10.825,
+     "end": 11.35
+    },
+    {
+     "w": "Reuters",
+     "start": 11.45,
+     "end": 12.013
+    },
+    {
+     "w": "and",
+     "start": 12.013,
+     "end": 12.15
+    },
+    {
+     "w": "Euronews",
+     "start": 12.15,
+     "end": 12.65
+    },
+    {
+     "w": "report.",
+     "start": 12.65,
+     "end": 13.375
+    }
+   ]
+  },
+  {
+   "id": "card",
+   "i": 3,
+   "text": "Each registration card lists a name, a job, and the grounds for recruitment.",
+   "start": 13.845,
+   "end": 18.32,
+   "words": [
+    {
+     "w": "Each",
+     "start": 13.845,
+     "end": 14.07
+    },
+    {
+     "w": "registration",
+     "start": 14.07,
+     "end": 14.72
+    },
+    {
+     "w": "card",
+     "start": 14.72,
+     "end": 15.045
+    },
+    {
+     "w": "lists",
+     "start": 15.045,
+     "end": 15.307
+    },
+    {
+     "w": "a",
+     "start": 15.307,
+     "end": 15.395
+    },
+    {
+     "w": "name,",
+     "start": 15.395,
+     "end": 15.895
+    },
+    {
+     "w": "a",
+     "start": 15.995,
+     "end": 16.108
+    },
+    {
+     "w": "job,",
+     "start": 16.108,
+     "end": 16.62
+    },
+    {
+     "w": "and",
+     "start": 16.72,
+     "end": 16.833
+    },
+    {
+     "w": "the",
+     "start": 16.833,
+     "end": 16.92
+    },
+    {
+     "w": "grounds",
+     "start": 16.92,
+     "end": 17.37
+    },
+    {
+     "w": "for",
+     "start": 17.37,
+     "end": 17.495
+    },
+    {
+     "w": "recruitment.",
+     "start": 17.495,
+     "end": 18.32
+    }
+   ]
+  },
+  {
+   "id": "archive",
+   "i": 4,
+   "text": "The files sit in Budapest, at the state security archive.",
+   "start": 18.79,
+   "end": 22.365,
+   "words": [
+    {
+     "w": "The",
+     "start": 18.79,
+     "end": 18.89
+    },
+    {
+     "w": "files",
+     "start": 18.89,
+     "end": 19.278
+    },
+    {
+     "w": "sit",
+     "start": 19.278,
+     "end": 19.628
+    },
+    {
+     "w": "in",
+     "start": 19.628,
+     "end": 19.79
+    },
+    {
+     "w": "Budapest,",
+     "start": 19.79,
+     "end": 20.59
+    },
+    {
+     "w": "at",
+     "start": 20.69,
+     "end": 20.778
+    },
+    {
+     "w": "the",
+     "start": 20.778,
+     "end": 20.865
+    },
+    {
+     "w": "state",
+     "start": 20.865,
+     "end": 21.165
+    },
+    {
+     "w": "security",
+     "start": 21.165,
+     "end": 21.715
+    },
+    {
+     "w": "archive.",
+     "start": 21.715,
+     "end": 22.365
+    }
+   ]
+  },
+  {
+   "id": "network",
+   "i": 5,
+   "text": "For four decades, the secret police recruited ordinary people to report on others.",
+   "start": 22.875,
+   "end": 27.725,
+   "words": [
+    {
+     "w": "For",
+     "start": 22.875,
+     "end": 23.013
+    },
+    {
+     "w": "four",
+     "start": 23.013,
+     "end": 23.25
+    },
+    {
+     "w": "decades,",
+     "start": 23.25,
+     "end": 23.875
+    },
+    {
+     "w": "the",
+     "start": 23.95,
+     "end": 24.088
+    },
+    {
+     "w": "secret",
+     "start": 24.088,
+     "end": 24.475
+    },
+    {
+     "w": "police",
+     "start": 24.475,
+     "end": 24.975
+    },
+    {
+     "w": "recruited",
+     "start": 24.975,
+     "end": 25.463
+    },
+    {
+     "w": "ordinary",
+     "start": 25.463,
+     "end": 25.95
+    },
+    {
+     "w": "people",
+     "start": 25.95,
+     "end": 26.45
+    },
+    {
+     "w": "to",
+     "start": 26.45,
+     "end": 26.55
+    },
+    {
+     "w": "report",
+     "start": 26.55,
+     "end": 26.938
+    },
+    {
+     "w": "on",
+     "start": 26.938,
+     "end": 27.075
+    },
+    {
+     "w": "others.",
+     "start": 27.075,
+     "end": 27.725
+    }
+   ]
+  },
+  {
+   "id": "tape",
+   "i": 6,
+   "text": "The biggest list, about fifty-five thousand names, was kept on magnetic tape.",
+   "start": 28.195,
+   "end": 32.745,
+   "words": [
+    {
+     "w": "The",
+     "start": 28.195,
+     "end": 28.295
+    },
+    {
+     "w": "biggest",
+     "start": 28.295,
+     "end": 28.62
+    },
+    {
+     "w": "list,",
+     "start": 28.62,
+     "end": 29.02
+    },
+    {
+     "w": "about",
+     "start": 29.095,
+     "end": 29.395
+    },
+    {
+     "w": "fifty-five",
+     "start": 29.395,
+     "end": 29.97
+    },
+    {
+     "w": "thousand",
+     "start": 29.97,
+     "end": 30.345
+    },
+    {
+     "w": "names,",
+     "start": 30.345,
+     "end": 30.945
+    },
+    {
+     "w": "was",
+     "start": 31.02,
+     "end": 31.195
+    },
+    {
+     "w": "kept",
+     "start": 31.195,
+     "end": 31.458
+    },
+    {
+     "w": "on",
+     "start": 31.458,
+     "end": 31.645
+    },
+    {
+     "w": "magnetic",
+     "start": 31.645,
+     "end": 32.17
+    },
+    {
+     "w": "tape.",
+     "start": 32.17,
+     "end": 32.745
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "i": 7,
+   "text": "Magyar had promised this. Earlier governments kept putting it off.",
+   "start": 33.255,
+   "end": 36.73,
+   "words": [
+    {
+     "w": "Magyar",
+     "start": 33.255,
+     "end": 33.655
+    },
+    {
+     "w": "had",
+     "start": 33.655,
+     "end": 33.83
+    },
+    {
+     "w": "promised",
+     "start": 33.83,
+     "end": 34.23
+    },
+    {
+     "w": "this.",
+     "start": 34.23,
+     "end": 34.655
+    },
+    {
+     "w": "Earlier",
+     "start": 34.755,
+     "end": 35.105
+    },
+    {
+     "w": "governments",
+     "start": 35.105,
+     "end": 35.58
+    },
+    {
+     "w": "kept",
+     "start": 35.58,
+     "end": 35.855
+    },
+    {
+     "w": "putting",
+     "start": 35.855,
+     "end": 36.13
+    },
+    {
+     "w": "it",
+     "start": 36.13,
+     "end": 36.255
+    },
+    {
+     "w": "off.",
+     "start": 36.255,
+     "end": 36.73
+    }
+   ]
+  },
+  {
+   "id": "register",
+   "i": 8,
+   "text": "Plus a recruitment register, from nineteen fifty-seven to sixty-two.",
+   "start": 37.18,
+   "end": 41.155,
+   "words": [
+    {
+     "w": "Plus",
+     "start": 37.18,
+     "end": 37.418
+    },
+    {
+     "w": "a",
+     "start": 37.418,
+     "end": 37.48
+    },
+    {
+     "w": "recruitment",
+     "start": 37.48,
+     "end": 37.98
+    },
+    {
+     "w": "register,",
+     "start": 37.98,
+     "end": 38.58
+    },
+    {
+     "w": "from",
+     "start": 38.68,
+     "end": 38.855
+    },
+    {
+     "w": "nineteen",
+     "start": 38.855,
+     "end": 39.305
+    },
+    {
+     "w": "fifty-seven",
+     "start": 39.305,
+     "end": 40.093
+    },
+    {
+     "w": "to",
+     "start": 40.093,
+     "end": 40.267
+    },
+    {
+     "w": "sixty-two.",
+     "start": 40.267,
+     "end": 41.155
+    }
+   ]
+  },
+  {
+   "id": "proof",
+   "i": 9,
+   "text": "But a name on a list is not proof that someone informed.",
+   "start": 41.665,
+   "end": 44.99,
+   "words": [
+    {
+     "w": "But",
+     "start": 41.665,
+     "end": 41.778
+    },
+    {
+     "w": "a",
+     "start": 41.778,
+     "end": 41.84
+    },
+    {
+     "w": "name",
+     "start": 41.84,
+     "end": 42.078
+    },
+    {
+     "w": "on",
+     "start": 42.078,
+     "end": 42.178
+    },
+    {
+     "w": "a",
+     "start": 42.178,
+     "end": 42.24
+    },
+    {
+     "w": "list",
+     "start": 42.24,
+     "end": 42.678
+    },
+    {
+     "w": "is",
+     "start": 42.678,
+     "end": 42.84
+    },
+    {
+     "w": "not",
+     "start": 42.84,
+     "end": 43.065
+    },
+    {
+     "w": "proof",
+     "start": 43.065,
+     "end": 43.627
+    },
+    {
+     "w": "that",
+     "start": 43.627,
+     "end": 43.79
+    },
+    {
+     "w": "someone",
+     "start": 43.79,
+     "end": 44.165
+    },
+    {
+     "w": "informed.",
+     "start": 44.165,
+     "end": 44.99
+    }
+   ]
+  },
+  {
+   "id": "lost",
+   "i": 10,
+   "text": "Many files were lost in nineteen fifty-six, and again as communism fell.",
+   "start": 45.46,
+   "end": 49.885,
+   "words": [
+    {
+     "w": "Many",
+     "start": 45.46,
+     "end": 45.672
+    },
+    {
+     "w": "files",
+     "start": 45.672,
+     "end": 46.072
+    },
+    {
+     "w": "were",
+     "start": 46.072,
+     "end": 46.185
+    },
+    {
+     "w": "lost",
+     "start": 46.185,
+     "end": 46.46
+    },
+    {
+     "w": "in",
+     "start": 46.46,
+     "end": 46.585
+    },
+    {
+     "w": "nineteen",
+     "start": 46.585,
+     "end": 47.06
+    },
+    {
+     "w": "fifty-six,",
+     "start": 47.06,
+     "end": 47.835
+    },
+    {
+     "w": "and",
+     "start": 47.91,
+     "end": 48.022
+    },
+    {
+     "w": "again",
+     "start": 48.022,
+     "end": 48.585
+    },
+    {
+     "w": "as",
+     "start": 48.585,
+     "end": 48.76
+    },
+    {
+     "w": "communism",
+     "start": 48.76,
+     "end": 49.322
+    },
+    {
+     "w": "fell.",
+     "start": 49.322,
+     "end": 49.885
+    }
+   ]
+  },
+  {
+   "id": "scale",
+   "i": 11,
+   "text": "In all, it had about a hundred and fifty thousand agents. Only a third of the names are known.",
+   "start": 50.395,
+   "end": 55.495,
+   "words": [
+    {
+     "w": "In",
+     "start": 50.395,
+     "end": 50.495
+    },
+    {
+     "w": "all,",
+     "start": 50.495,
+     "end": 50.77
+    },
+    {
+     "w": "it",
+     "start": 50.807,
+     "end": 50.895
+    },
+    {
+     "w": "had",
+     "start": 50.895,
+     "end": 51.057
+    },
+    {
+     "w": "about",
+     "start": 51.057,
+     "end": 51.307
+    },
+    {
+     "w": "a",
+     "start": 51.307,
+     "end": 51.37
+    },
+    {
+     "w": "hundred",
+     "start": 51.37,
+     "end": 51.932
+    },
+    {
+     "w": "and",
+     "start": 51.932,
+     "end": 52.082
+    },
+    {
+     "w": "fifty",
+     "start": 52.082,
+     "end": 52.395
+    },
+    {
+     "w": "thousand",
+     "start": 52.395,
+     "end": 52.795
+    },
+    {
+     "w": "agents.",
+     "start": 52.795,
+     "end": 53.47
+    },
+    {
+     "w": "Only",
+     "start": 53.57,
+     "end": 53.87
+    },
+    {
+     "w": "a",
+     "start": 53.87,
+     "end": 53.982
+    },
+    {
+     "w": "third",
+     "start": 53.982,
+     "end": 54.257
+    },
+    {
+     "w": "of",
+     "start": 54.257,
+     "end": 54.332
+    },
+    {
+     "w": "the",
+     "start": 54.332,
+     "end": 54.42
+    },
+    {
+     "w": "names",
+     "start": 54.42,
+     "end": 54.795
+    },
+    {
+     "w": "are",
+     "start": 54.795,
+     "end": 54.895
+    },
+    {
+     "w": "known.",
+     "start": 54.895,
+     "end": 55.495
+    }
+   ]
+  },
+  {
+   "id": "quotes",
+   "i": 12,
+   "text": "The archive's director warns the records are very incomplete. Magyar asked for dignity and humanity.",
+   "start": 56.005,
+   "end": 62.155,
+   "words": [
+    {
+     "w": "The",
+     "start": 56.005,
+     "end": 56.13
+    },
+    {
+     "w": "archive's",
+     "start": 56.13,
+     "end": 56.58
+    },
+    {
+     "w": "director",
+     "start": 56.58,
+     "end": 57.167
+    },
+    {
+     "w": "warns",
+     "start": 57.167,
+     "end": 57.48
+    },
+    {
+     "w": "the",
+     "start": 57.48,
+     "end": 57.58
+    },
+    {
+     "w": "records",
+     "start": 57.58,
+     "end": 58.192
+    },
+    {
+     "w": "are",
+     "start": 58.192,
+     "end": 58.305
+    },
+    {
+     "w": "very",
+     "start": 58.305,
+     "end": 58.605
+    },
+    {
+     "w": "incomplete.",
+     "start": 58.605,
+     "end": 59.505
+    },
+    {
+     "w": "Magyar",
+     "start": 59.605,
+     "end": 60.092
+    },
+    {
+     "w": "asked",
+     "start": 60.092,
+     "end": 60.455
+    },
+    {
+     "w": "for",
+     "start": 60.455,
+     "end": 60.58
+    },
+    {
+     "w": "dignity",
+     "start": 60.58,
+     "end": 61.192
+    },
+    {
+     "w": "and",
+     "start": 61.192,
+     "end": 61.33
+    },
+    {
+     "w": "humanity.",
+     "start": 61.33,
+     "end": 62.155
+    }
+   ]
+  },
+  {
+   "id": "reports",
+   "i": 13,
+   "text": "The informers' reports stay closed.",
+   "start": 62.665,
+   "end": 64.965,
+   "words": [
+    {
+     "w": "The",
+     "start": 62.665,
+     "end": 62.79
+    },
+    {
+     "w": "informers'",
+     "start": 62.79,
+     "end": 63.502
+    },
+    {
+     "w": "reports",
+     "start": 63.502,
+     "end": 63.94
+    },
+    {
+     "w": "stay",
+     "start": 63.94,
+     "end": 64.265
+    },
+    {
+     "w": "closed.",
+     "start": 64.265,
+     "end": 64.965
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "i": 14,
+   "text": "Next: over nine thousand recruitment files, due by February twenty twenty-seven.",
+   "start": 65.475,
+   "end": 69.925,
+   "words": [
+    {
+     "w": "Next:",
+     "start": 65.475,
+     "end": 65.825
+    },
+    {
+     "w": "over",
+     "start": 65.875,
+     "end": 66.125
+    },
+    {
+     "w": "nine",
+     "start": 66.125,
+     "end": 66.425
+    },
+    {
+     "w": "thousand",
+     "start": 66.425,
+     "end": 66.8
+    },
+    {
+     "w": "recruitment",
+     "start": 66.8,
+     "end": 67.3
+    },
+    {
+     "w": "files,",
+     "start": 67.3,
+     "end": 67.9
+    },
+    {
+     "w": "due",
+     "start": 68.0,
+     "end": 68.175
+    },
+    {
+     "w": "by",
+     "start": 68.175,
+     "end": 68.362
+    },
+    {
+     "w": "February",
+     "start": 68.362,
+     "end": 68.75
+    },
+    {
+     "w": "twenty",
+     "start": 68.75,
+     "end": 69.05
+    },
+    {
+     "w": "twenty-seven.",
+     "start": 69.05,
+     "end": 69.925
+    }
+   ]
+  }
+ ]
+}

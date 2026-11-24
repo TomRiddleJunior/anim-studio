@@ -1,0 +1,28 @@
+{
+  "slug": "point-roberts",
+  "title": "Point Roberts: Four Borders to School",
+  "status": "approved by the user 2026-10-31 (\"Approve all three\"), no edits",
+  "voice": "am_michael",
+  "speed": 1.18,
+  "lead": 0.9,
+  "hold": 1.5,
+  "maxPause": 0.28,
+  "pauseTo": 0.2,
+  "respell": {},
+  "lines": [
+    {"id": "hook", "text": "From this town, you can't reach the rest of your country without leaving it."},
+    {"id": "name", "text": "This is Point Roberts, Washington."},
+    {"id": "canada", "text": "Water on three sides. Canada on the fourth."},
+    {"id": "drive", "text": "The drive to the rest of America: forty kilometres, through Canada."},
+    {"id": "zoom", "text": "Zoom out, and you'll see what did it."},
+    {"id": "treaty", "text": "In 1846, a treaty split the West along the forty-ninth parallel."},
+    {"id": "below", "text": "Point Roberts hangs just below it."},
+    {"id": "school", "text": "Its school stops at third grade."},
+    {"id": "ride", "text": "After that, kids ride forty minutes through Canada to Blaine."},
+    {"id": "crossings", "text": "Four border crossings, every school day."},
+    {"id": "gated", "text": "Locals call it the best gated community in America."},
+    {"id": "water", "text": "Since 1987, even its tap water comes across the border."},
+    {"id": "bought", "text": "Bought from Vancouver."},
+    {"id": "end", "text": "Forty minutes to school. Four borders a day."}
+  ]
+}

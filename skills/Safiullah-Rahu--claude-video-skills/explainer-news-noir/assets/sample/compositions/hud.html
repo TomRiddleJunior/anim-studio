@@ -1,0 +1,52 @@
+<template>
+  <style>
+    @font-face { font-family: "Inter"; src: url("assets/fonts/Inter_opsz-wght_.ttf") format("truetype"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #grain { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; opacity: 0.085; mix-blend-mode: screen; }
+    #cap { position: absolute; left: 540px; top: 1270px; transform: translate(-50%, -50%); white-space: nowrap; opacity: 0;
+      font: 500 40px "Inter"; letter-spacing: -0.005em; color: #f4f4f3; padding: 3px 12px 5px; border-radius: 3px;
+      text-shadow: 0 1px 10px rgba(0, 0, 0, 0.75); }
+    #cap.box { background: rgba(120, 120, 120, 0.62); text-shadow: none; }
+  </style>
+  <div id="root" data-composition-id="hud" data-width="1080" data-height="1920">
+    <div id="cap"></div>
+    <canvas id="grain" width="540" height="960"></canvas>
+  </div>
+  <script>
+    (function () {
+      const F = window.FILM, V = F.V;
+      const { lin, E } = F;
+      const cap = document.getElementById("cap");
+      const gc = document.getElementById("grain"), gx = gc.getContext("2d");
+      // four seeded noise tiles; one per frame (deterministic)
+      let seed = 99; const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
+      const tiles = [];
+      for (let k = 0; k < 4; k++) {
+        const id = gx.createImageData(540, 960);
+        for (let i = 0; i < id.data.length; i += 4) { const v = Math.floor(rnd() * 255); id.data[i] = id.data[i + 1] = id.data[i + 2] = v; id.data[i + 3] = 255; }
+        tiles.push(id);
+      }
+      gc.style.width = "1080px"; gc.style.height = "1920px";
+      let lastTile = -1, capKey = "";
+      function draw(t) {
+        const fr = Math.floor(t * 30) % 4;
+        if (fr !== lastTile) { gx.putImageData(tiles[fr], 0, 0); lastTile = fr; }
+        const sh = F.shotAt(t);
+        let p = null;
+        for (const q of V.phrases) if (t >= q.on && t < q.off) { p = q; break; }
+        if (!p) { cap.style.opacity = "0"; capKey = ""; return; }
+        const key = p.on + (sh.box ? "b" : "");
+        if (key !== capKey) { cap.textContent = p.w.map((w) => w[0]).join(" "); cap.className = sh.box ? "box" : ""; capKey = key; }
+        const a = E.out(lin(t, p.on, p.on + 0.1)) * (1 - lin(t, p.off - 0.05, p.off));
+        cap.style.opacity = String(a);
+        cap.style.color = sh.light && !sh.box ? "#111" : "#f4f4f3";
+      }
+      const tl = gsap.timeline({ paused: true });
+      const clock = { t: 0 };
+      tl.to(clock, { t: F.DUR, duration: F.DUR, ease: "none", onUpdate: () => draw(clock.t) }, 0);
+      window.__timelines["hud"] = tl;
+      window.addEventListener("hf-seek", (e) => draw(e.detail.time));
+      draw(0);
+    })();
+  </script>
+</template>

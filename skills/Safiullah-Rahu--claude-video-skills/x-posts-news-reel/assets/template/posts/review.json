@@ -1,0 +1,6 @@
+{
+ "1": {"tier": "ok", "use": true,  "note": ""},
+ "2": {"tier": "C",  "use": true,  "note": "profanity, shown unblurred (agreed with the user)"},
+ "3": {"tier": "A",  "use": false, "note": "slur / joke about a death / sexual content about a real person: never in the reel"},
+ "4": {"tier": "B",  "use": false, "note": "religion / terror / violence meme: the user decides"}
+}

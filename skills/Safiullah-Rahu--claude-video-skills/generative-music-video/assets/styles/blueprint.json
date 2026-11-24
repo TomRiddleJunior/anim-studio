@@ -1,0 +1,78 @@
+{
+  "name": "Blueprint",
+  "dark": true,
+  "description": "Technical drawing on Prussian blue: white hairlines, dimension callouts, construction grids, one safety-yellow. Precise, engineered.",
+  "mood": [
+    "math rock",
+    "techno",
+    "prog",
+    "ambient electronic",
+    "songs about building, systems, machines"
+  ],
+  "palette": {
+    "bg": "#0F2B4C",
+    "bg2": "#143459",
+    "dim": "#4F6F93",
+    "mid": "#8FA8C4",
+    "fg": "#EAF1F8",
+    "accent": "#FFC93C",
+    "hot": "#FFE08A",
+    "deep": "#D9960B",
+    "rare": "#FF5A36"
+  },
+  "fonts": {
+    "display": {
+      "family": "Saira",
+      "widths": [
+        62.5,
+        75,
+        100,
+        125
+      ],
+      "weights": [
+        300,
+        500,
+        700,
+        900
+      ]
+    },
+    "text": {
+      "family": "Newsreader",
+      "weights": [
+        400,
+        600
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "bundled": true
+    }
+  },
+  "post": {
+    "bloom": 0.45,
+    "bloomThreshold": 1.0,
+    "bloomKnee": 0.25,
+    "halation": 0.12,
+    "ca": 0.8,
+    "grain": 0.04,
+    "vignette": 0.3
+  },
+  "type": {
+    "case": "upper",
+    "tracking": 0.02
+  },
+  "motif": "spark",
+  "scenes": {
+    "lines": {
+      "grid": 0.8
+    },
+    "interlude": {
+      "variant": "rings"
+    },
+    "tunnel": {
+      "frames": 18
+    }
+  },
+  "idiom": "Everything is drafted: dimension lines with arrowheads, section cuts, callout leaders, revision stamps. Words are labelled parts. The camera moves like a plotter head; yellow marks what changed."
+}

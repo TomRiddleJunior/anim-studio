@@ -1,0 +1,395 @@
+{
+"duration": 59.3,
+"sfx": [
+{
+"t": 0.26,
+"type": "coin",
+"gain": 0.3,
+"pitch": 1.1
+},
+{
+"t": 1.623,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 2.41,
+"type": "horn",
+"gain": 0.32,
+"pitch": 1.0
+},
+{
+"t": 2.76,
+"type": "horn",
+"gain": 0.26,
+"pitch": 0.94
+},
+{
+"t": 3.655,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 5.53,
+"type": "paper",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 7.343,
+"type": "horn",
+"gain": 0.28,
+"pitch": 1.0
+},
+{
+"t": 7.663,
+"type": "horn",
+"gain": 0.24000000000000002,
+"pitch": 1.05
+},
+{
+"t": 7.843,
+"type": "horn",
+"gain": 0.2,
+"pitch": 1.1
+},
+{
+"t": 7.905,
+"type": "whistle",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 8.44,
+"type": "coin",
+"gain": 0.25,
+"pitch": 1.2
+},
+{
+"t": 11.065,
+"type": "thud",
+"gain": 0.35,
+"pitch": 1.2
+},
+{
+"t": 12.25,
+"type": "stamp",
+"gain": 0.4,
+"pitch": 1.0
+},
+{
+"t": 13.725,
+"type": "boing",
+"gain": 0.18,
+"pitch": 0.6
+},
+{
+"t": 14.125,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 14.863,
+"type": "thud",
+"gain": 0.38,
+"pitch": 0.9
+},
+{
+"t": 15.133,
+"type": "thud",
+"gain": 0.38,
+"pitch": 0.98
+},
+{
+"t": 15.403,
+"type": "thud",
+"gain": 0.38,
+"pitch": 0.9
+},
+{
+"t": 15.673,
+"type": "thud",
+"gain": 0.38,
+"pitch": 0.98
+},
+{
+"t": 15.943,
+"type": "thud",
+"gain": 0.38,
+"pitch": 0.9
+},
+{
+"t": 16.837,
+"type": "scribble",
+"gain": 0.35,
+"pitch": 1.0
+},
+{
+"t": 17.062,
+"type": "stamp",
+"gain": 0.4,
+"pitch": 0.9
+},
+{
+"t": 18.21,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 20.435,
+"type": "pop",
+"gain": 0.3,
+"pitch": 1.1
+},
+{
+"t": 21.57,
+"type": "sparkle",
+"gain": 0.32,
+"pitch": 1.0
+},
+{
+"t": 22.058,
+"type": "ding",
+"gain": 0.35,
+"pitch": 1.1
+},
+{
+"t": 23.305,
+"type": "drop",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 24.293,
+"type": "type",
+"gain": 0.5,
+"pitch": 1.0
+},
+{
+"t": 25.805,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 25.98,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.05
+},
+{
+"t": 26.2,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.08
+},
+{
+"t": 26.42,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.11
+},
+{
+"t": 26.64,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.1400000000000001
+},
+{
+"t": 26.86,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.17
+},
+{
+"t": 27.08,
+"type": "paper",
+"gain": 0.22,
+"pitch": 1.2
+},
+{
+"t": 29.055,
+"type": "horn",
+"gain": 0.22,
+"pitch": 0.97
+},
+{
+"t": 30.115,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 30.665,
+"type": "whoosh",
+"gain": 0.32,
+"pitch": 1.0
+},
+{
+"t": 32.915,
+"type": "thud",
+"gain": 0.4,
+"pitch": 1.0
+},
+{
+"t": 35.9,
+"type": "scribble",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 36.375,
+"type": "scribble",
+"gain": 0.3,
+"pitch": 0.9
+},
+{
+"t": 37.625,
+"type": "success",
+"gain": 0.32,
+"pitch": 1.0
+},
+{
+"t": 38.61,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 39.985,
+"type": "coin",
+"gain": 0.3,
+"pitch": 1.1
+},
+{
+"t": 40.798,
+"type": "pop",
+"gain": 0.24,
+"pitch": 0.9
+},
+{
+"t": 40.958,
+"type": "pop",
+"gain": 0.24,
+"pitch": 0.98
+},
+{
+"t": 41.118,
+"type": "pop",
+"gain": 0.24,
+"pitch": 1.06
+},
+{
+"t": 41.278,
+"type": "pop",
+"gain": 0.24,
+"pitch": 1.1400000000000001
+},
+{
+"t": 41.438,
+"type": "pop",
+"gain": 0.24,
+"pitch": 1.22
+},
+{
+"t": 41.598,
+"type": "pop",
+"gain": 0.24,
+"pitch": 1.3
+},
+{
+"t": 42.635,
+"type": "paper",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 46.91,
+"type": "boing",
+"gain": 0.22,
+"pitch": 0.85
+},
+{
+"t": 48.02,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 48.82,
+"type": "error",
+"gain": 0.18,
+"pitch": 1.0
+},
+{
+"t": 50.395,
+"type": "stamp",
+"gain": 0.45,
+"pitch": 1.0
+},
+{
+"t": 51.32,
+"type": "ding",
+"gain": 0.32,
+"pitch": 1.2
+},
+{
+"t": 52.18,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 52.505,
+"type": "chime",
+"gain": 0.25,
+"pitch": 1.0
+},
+{
+"t": 54.105,
+"type": "coin",
+"gain": 0.28,
+"pitch": 1.15
+},
+{
+"t": 55.38,
+"type": "swoosh",
+"gain": 0.3,
+"pitch": 1.0
+},
+{
+"t": 56.53,
+"type": "horn",
+"gain": 0.3,
+"pitch": 0.95
+},
+{
+"t": 56.83,
+"type": "horn",
+"gain": 0.27,
+"pitch": 1.01
+},
+{
+"t": 57.08,
+"type": "horn",
+"gain": 0.24,
+"pitch": 0.95
+},
+{
+"t": 57.43,
+"type": "horn",
+"gain": 0.21,
+"pitch": 1.01
+},
+{
+"t": 57.73,
+"type": "whistle",
+"gain": 0.3,
+"pitch": 1.0
+}
+]
+}

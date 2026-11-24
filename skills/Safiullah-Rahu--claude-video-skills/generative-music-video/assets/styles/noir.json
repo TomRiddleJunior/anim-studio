@@ -1,0 +1,76 @@
+{
+  "name": "Noir",
+  "dark": true,
+  "description": "High-contrast black and white, deep shadows, film grain, one blood red. Condensed caps, italic serif for the whispered register.",
+  "mood": [
+    "dark",
+    "cinematic",
+    "trip-hop",
+    "rock",
+    "crime",
+    "heartbreak",
+    "slow burn"
+  ],
+  "palette": {
+    "bg": "#060606",
+    "bg2": "#111111",
+    "dim": "#474747",
+    "mid": "#8C8C8C",
+    "fg": "#F2F2F2",
+    "accent": "#E10600",
+    "hot": "#FF5533",
+    "deep": "#7A0000",
+    "rare": "#CFE3FF"
+  },
+  "fonts": {
+    "display": {
+      "family": "Oswald",
+      "weights": [
+        300,
+        500,
+        700
+      ]
+    },
+    "text": {
+      "family": "Playfair Display",
+      "weights": [
+        400,
+        700
+      ],
+      "italic": true
+    },
+    "mono": {
+      "family": "Courier Prime",
+      "weights": [
+        400,
+        700
+      ]
+    }
+  },
+  "post": {
+    "bloom": 0.5,
+    "bloomThreshold": 1.0,
+    "bloomKnee": 0.3,
+    "halation": 0.35,
+    "ca": 0.6,
+    "grain": 0.09,
+    "vignette": 0.55
+  },
+  "type": {
+    "case": "upper",
+    "tracking": 0.04
+  },
+  "motif": "spark",
+  "scenes": {
+    "lines": {
+      "weight": 700
+    },
+    "slam": {
+      "weight": 700
+    },
+    "interlude": {
+      "variant": "flow"
+    }
+  },
+  "idiom": "Light is the subject: venetian-blind bars, a single lamp, headlights sweeping, smoke. Type is set like title cards and newspaper headlines. Red appears only for blood, a neon sign, a stop light: once per scene at most."
+}

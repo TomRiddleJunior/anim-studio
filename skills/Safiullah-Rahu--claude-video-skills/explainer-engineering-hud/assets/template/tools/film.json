@@ -1,0 +1,44 @@
+{
+ "key": "enghud-template",
+ "max_words": 4,
+ "max_chars": 24,
+ "lead": 0.08,
+ "hold": 0.6,
+ "extra_tail": 0.0,
+ "subs": [
+  [
+   "twenty twenty-three",
+   "2023"
+  ],
+  [
+   "three hundred and sixty metres",
+   "360 metres"
+  ],
+  [
+   "two hundred and ten metres",
+   "210 metres"
+  ],
+  [
+   "ten metres",
+   "10 metres"
+  ],
+  [
+   "three metres",
+   "3 metres"
+  ],
+  [
+   "two hours",
+   "2 hours"
+  ],
+  [
+   "one and a half million",
+   "1.5 million"
+  ]
+ ],
+ "cover_t": 3.0,
+ "planned_dips": [],
+ "hand_cuts_per_min": null,
+ "whisper_alias": {
+  "bos": "boss"
+ }
+}

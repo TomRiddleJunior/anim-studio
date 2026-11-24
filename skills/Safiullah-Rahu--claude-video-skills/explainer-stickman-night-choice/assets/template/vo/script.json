@@ -1,0 +1,13 @@
+{
+ "voice": "am_onyx",
+ "speed": 1.08,
+ "lead": 0.12,
+ "tail": 4.6,
+ "no_caption_lines": ["k4"],
+ "lines": [
+  {"id": "k1", "text": "Imagine you've lived this same night four times.", "gap": 0, "kw": {"four": 1}},
+  {"id": "k2", "text": "Then a text arrives, from your own number.", "gap": 0.6, "kw": {"own": 1}},
+  {"id": "k3", "text": "Rule one. When the lights die, don't move.", "gap": 0.6, "kw": {"one.": 1, "die,": 1}},
+  {"id": "k4", "text": "What do you do? A, freeze. Or B, run. Comment A or B.", "gap": 0.7, "kw": {}}
+ ]
+}

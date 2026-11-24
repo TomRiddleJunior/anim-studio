@@ -1,0 +1,196 @@
+{
+ "duration": 14.205,
+ "voice": "bm_george",
+ "words": 32,
+ "wpm_overall": 135.2,
+ "wpm_speech": 168.8,
+ "lines": [
+  {
+   "id": "hook",
+   "i": 0,
+   "text": "This is the minister who opened the archive.",
+   "start": 0.16,
+   "end": 2.61,
+   "words": [
+    {
+     "w": "This",
+     "start": 0.16,
+     "end": 0.422
+    },
+    {
+     "w": "is",
+     "start": 0.422,
+     "end": 0.585
+    },
+    {
+     "w": "the",
+     "start": 0.585,
+     "end": 0.685
+    },
+    {
+     "w": "minister",
+     "start": 0.685,
+     "end": 1.298
+    },
+    {
+     "w": "who",
+     "start": 1.298,
+     "end": 1.485
+    },
+    {
+     "w": "opened",
+     "start": 1.485,
+     "end": 1.773
+    },
+    {
+     "w": "the",
+     "start": 1.773,
+     "end": 1.91
+    },
+    {
+     "w": "archive.",
+     "start": 1.91,
+     "end": 2.61
+    }
+   ]
+  },
+  {
+   "id": "card",
+   "i": 1,
+   "text": "Each registration card lists a name, a job, and the grounds for recruitment.",
+   "start": 3.12,
+   "end": 7.595,
+   "words": [
+    {
+     "w": "Each",
+     "start": 3.12,
+     "end": 3.345
+    },
+    {
+     "w": "registration",
+     "start": 3.345,
+     "end": 3.995
+    },
+    {
+     "w": "card",
+     "start": 3.995,
+     "end": 4.32
+    },
+    {
+     "w": "lists",
+     "start": 4.32,
+     "end": 4.582
+    },
+    {
+     "w": "a",
+     "start": 4.582,
+     "end": 4.67
+    },
+    {
+     "w": "name,",
+     "start": 4.67,
+     "end": 5.17
+    },
+    {
+     "w": "a",
+     "start": 5.27,
+     "end": 5.383
+    },
+    {
+     "w": "job,",
+     "start": 5.383,
+     "end": 5.895
+    },
+    {
+     "w": "and",
+     "start": 5.995,
+     "end": 6.107
+    },
+    {
+     "w": "the",
+     "start": 6.107,
+     "end": 6.195
+    },
+    {
+     "w": "grounds",
+     "start": 6.195,
+     "end": 6.645
+    },
+    {
+     "w": "for",
+     "start": 6.645,
+     "end": 6.77
+    },
+    {
+     "w": "recruitment.",
+     "start": 6.77,
+     "end": 7.595
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "i": 2,
+   "text": "Next: over nine thousand recruitment files, due by February twenty twenty-seven.",
+   "start": 8.105,
+   "end": 12.555,
+   "words": [
+    {
+     "w": "Next:",
+     "start": 8.105,
+     "end": 8.455
+    },
+    {
+     "w": "over",
+     "start": 8.505,
+     "end": 8.755
+    },
+    {
+     "w": "nine",
+     "start": 8.755,
+     "end": 9.055
+    },
+    {
+     "w": "thousand",
+     "start": 9.055,
+     "end": 9.43
+    },
+    {
+     "w": "recruitment",
+     "start": 9.43,
+     "end": 9.93
+    },
+    {
+     "w": "files,",
+     "start": 9.93,
+     "end": 10.53
+    },
+    {
+     "w": "due",
+     "start": 10.63,
+     "end": 10.805
+    },
+    {
+     "w": "by",
+     "start": 10.805,
+     "end": 10.992
+    },
+    {
+     "w": "February",
+     "start": 10.992,
+     "end": 11.38
+    },
+    {
+     "w": "twenty",
+     "start": 11.38,
+     "end": 11.68
+    },
+    {
+     "w": "twenty-seven.",
+     "start": 11.68,
+     "end": 12.555
+    }
+   ]
+  }
+ ]
+}

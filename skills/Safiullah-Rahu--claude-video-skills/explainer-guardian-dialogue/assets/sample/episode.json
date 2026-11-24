@@ -1,0 +1,238 @@
+{
+ "title": "Ten Rules for Ten Years",
+ "lines": [
+  {
+   "who": "L",
+   "role": "question",
+   "text": "What's your advice… for the next ten years?",
+   "delivery": "Curious and wide-eyed, a small pause after 'advice'.",
+   "shot": "GIRL_Q",
+   "gap": 0.0
+  },
+  {
+   "who": "G",
+   "role": "intro",
+   "text": "I've watched ten thousand decades pass through this clock.",
+   "delivery": "Ancient, calm and slow.",
+   "shot": "CLOCK_MED",
+   "gap": 0.5
+  },
+  {
+   "who": "G",
+   "role": "intro",
+   "text": "Most people lose theirs the same way.",
+   "delivery": "Quieter, a little sad.",
+   "shot": "HOOD",
+   "gap": 0.4
+  },
+  {
+   "who": "G",
+   "role": "openloop",
+   "text": "So… ten rules. And the last one? Almost nobody follows it.",
+   "delivery": "Leaning in, with a hint of a smile in the voice.",
+   "counter_at": "ten",
+   "shot": "WIDE",
+   "gap": 0.42,
+   "cut_at": "And"
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Ten. Learn one hard thing every year. In ten years, you'll be ten new people.",
+   "delivery": "Steady and warm.",
+   "n": 10,
+   "card": {
+    "title": "Learn one hard thing a year",
+    "icon": "steps"
+   },
+   "shot": "HANDS",
+   "gap": 0.5
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Nine. Stay close to the people who make you braver.",
+   "delivery": "Warm.",
+   "n": 9,
+   "card": {
+    "title": "Stay close to who makes you braver",
+    "icon": "flames"
+   },
+   "shot": "WIDE_LOW",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Eight. When you're angry, wait one night before you speak.",
+   "delivery": "Slower and grave.",
+   "n": 8,
+   "card": {
+    "title": "Angry? Wait one night",
+    "icon": "moon_bubble"
+   },
+   "shot": "CARD_HERO",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Seven. Ask why until it gets uncomfortable. The answer lives just past that.",
+   "delivery": "Curious and a little playful.",
+   "n": 7,
+   "card": {
+    "title": "Ask why until it's uncomfortable",
+    "icon": "question_door"
+   },
+   "shot": "CARD_GAP",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Six. Do the scary thing while your hands still shake. They never stop first.",
+   "delivery": "Firm and encouraging.",
+   "n": 6,
+   "card": {
+    "title": "Do the scary thing shaking",
+    "icon": "heartbeat_path"
+   },
+   "shot": "OTS_GIRL",
+   "gap": 0.42
+  },
+  {
+   "who": "L",
+   "role": "rehook",
+   "text": "Is number one the secret?",
+   "delivery": "A soft, impatient whisper.",
+   "shot": "GIRL_MCU",
+   "gap": 0.4
+  },
+  {
+   "who": "G",
+   "role": "aside",
+   "text": "Patience. You'll want to hear it.",
+   "delivery": "Amused and gentle.",
+   "wink_at": "Patience.",
+   "shot": "HOOD",
+   "gap": 0.36
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Five. Be the first to say sorry. It costs nothing, and buys almost everything.",
+   "delivery": "Soft and sincere.",
+   "n": 5,
+   "card": {
+    "title": "Be the first to say sorry",
+    "icon": "ring_mend"
+   },
+   "shot": "WIDE",
+   "gap": 0.5
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Four. Finish small things. One finished thing beats a perfect dream.",
+   "delivery": "Brisk and practical.",
+   "n": 4,
+   "card": {
+    "title": "Finish small things",
+    "icon": "progress_ring"
+   },
+   "shot": "HANDS",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Three. Stay a beginner at something. Pride ages you faster than time.",
+   "delivery": "Wry.",
+   "n": 3,
+   "card": {
+    "title": "Stay a beginner at something",
+    "icon": "seed"
+   },
+   "shot": "CLOCK_CARD",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "Two. Who you are when no one is watching… is who you're becoming.",
+   "delivery": "Slower and weighty.",
+   "n": 2,
+   "card": {
+    "title": "Who you are when no one watches",
+    "icon": "mirror"
+   },
+   "widen_at": "is",
+   "tempo": 1.0,
+   "shot": "CARD_GAP",
+   "gap": 0.42
+  },
+  {
+   "who": "G",
+   "role": "rule",
+   "text": "One. Stop waiting for the right time. I've watched every clock in the world. The right time has never arrived.",
+   "delivery": "Quiet at first, rising to conviction.",
+   "n": 1,
+   "card": {
+    "title": "Stop waiting for the right time",
+    "icon": "clock_stop"
+   },
+   "break_before": true,
+   "shot": "CLOCK_FROZEN",
+   "gap": 1.5,
+   "cut_at": "I've"
+  },
+  {
+   "who": "G",
+   "role": "payoff",
+   "text": "It only ever comes as… now.",
+   "delivery": "Soft and final.",
+   "now_at": "now.",
+   "shot": "WIDE",
+   "gap": 0.55
+  },
+  {
+   "who": "L",
+   "role": "echo",
+   "text": "Now?",
+   "delivery": "Small and wondering.",
+   "shot": "GIRL_MCU",
+   "gap": 0.5
+  },
+  {
+   "who": "G",
+   "role": "final",
+   "text": "Now.",
+   "delivery": "Warm and certain.",
+   "shot": "WIDE",
+   "gap": 0.6
+  }
+ ],
+ "end_card": {
+  "rows": [
+   "WHICH RULE ARE YOU",
+   "STARTING TODAY?"
+  ],
+  "sub": "COMMENT THE NUMBER"
+ },
+ "question_rows": [
+  [
+   0,
+   1,
+   2
+  ],
+  [
+   3,
+   4,
+   5
+  ],
+  [
+   6,
+   7
+  ]
+ ]
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "diomede",
+  "title": "Diomede: See Tomorrow",
+  "status": "approved by the user 2026-10-31 (\"Approve all three\"), no edits",
+  "voice": "am_michael",
+  "speed": 1.18,
+  "lead": 0.6,
+  "hold": 1.5,
+  "maxPause": 0.28,
+  "pauseTo": 0.2,
+  "respell": {
+    "Diomede": "[Diomede](/dˈIəmˌid/)",
+    "Gorbachev": "[Gorbachev](/ɡˈɔɹbəʧˌɔf/)"
+  },
+  "lines": [
+    {
+      "id": "hook",
+      "text": "From this island, you can see tomorrow."
+    },
+    {
+      "id": "little",
+      "text": "This is Little Diomede. Alaska. Seventy-seven people."
+    },
+    {
+      "id": "big",
+      "text": "And that's Big Diomede. Russia. Nobody lives there."
+    },
+    {
+      "id": "gap",
+      "text": "The gap between them? Three point eight kilometres."
+    },
+    {
+      "id": "pull",
+      "text": "Pull back, and the reason is a line."
+    },
+    {
+      "id": "dateline",
+      "text": "The border runs right down the middle. And so does the International Date Line."
+    },
+    {
+      "id": "clock",
+      "text": "Monday lunchtime here is Tuesday morning there."
+    },
+    {
+      "id": "apart",
+      "text": "Twenty-one hours apart."
+    },
+    {
+      "id": "curtain",
+      "text": "In the Cold War, this gap had a name. The Ice Curtain."
+    },
+    {
+      "id": "swim",
+      "text": "Then, in 1987, a swimmer named Lynne Cox got in."
+    },
+    {
+      "id": "water",
+      "text": "Six-degree water. Two hours, six minutes."
+    },
+    {
+      "id": "cross",
+      "text": "She swam across the line. Into tomorrow."
+    },
+    {
+      "id": "praise",
+      "text": "Reagan and Gorbachev both praised her."
+    },
+    {
+      "id": "end",
+      "text": "Two islands. Three point eight kilometres. Twenty-one hours."
+    }
+  ],
+  "respellNotes": {
+    "Diomede": "misaki default dɪˈOmd ('de-owned' to whisper) -> dˈIəmˌid ('Diameed')",
+    "Gorbachev": "misaki default ɡˈɔɹbəʃˌɛv ('-shev') -> ɡˈɔɹbəʧˌɔf",
+    "Lynne Cox": "misaki default lˈɪn kˈɑks is right"
+  }
+}

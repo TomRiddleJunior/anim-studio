@@ -1,0 +1,93 @@
+{
+ "slug": "quote-collage-endure",
+ "title": "Endure",
+ "dur": 14.0,
+ "bpm": 103.4,
+ "beat0": 0.0,
+ "source": "",
+ "source_metrics": "",
+ "source_note": "optional reference video + its metrics.json for tools/qa.py and tools/gates_md.py (or pass --ref / --ref-metrics); no default",
+ "voice": false,
+ "planned_dips": [
+  [
+   2.3,
+   2.4
+  ],
+  [
+   8.1,
+   8.17
+  ],
+  [
+   10.4,
+   10.5
+  ],
+  [
+   13.0,
+   14.0
+  ]
+ ],
+ "compare": [
+  [
+   0.3,
+   0.3,
+   "word build, white card"
+  ],
+  [
+   1.6,
+   1.6,
+   "word added"
+  ],
+  [
+   2.45,
+   2.42,
+   "pink flash card"
+  ],
+  [
+   4.2,
+   4.2,
+   "push-in, drop shadow"
+  ],
+  [
+   4.83,
+   4.68,
+   "pillow pop-in"
+  ],
+  [
+   5.8,
+   5.6,
+   "highlighter + ladder"
+  ],
+  [
+   6.65,
+   6.4,
+   "vertical whip"
+  ],
+  [
+   7.5,
+   7.3,
+   "engraving + spotlight quote"
+  ],
+  [
+   9.5,
+   9.0,
+   "Titan card"
+  ],
+  [
+   10.75,
+   10.5,
+   "pillow into concrete"
+  ],
+  [
+   12.5,
+   12.4,
+   "stencil words"
+  ],
+  [
+   13.9,
+   13.85,
+   "white-line sketch"
+  ]
+ ],
+ "compare_src_blur": 3,
+ "planned_note": "designed cuts: the pink flash card (b4), the hard cut to the white plate (b14), the pillow into the concrete wall (b18), the black sketch card (b22.5)"
+}

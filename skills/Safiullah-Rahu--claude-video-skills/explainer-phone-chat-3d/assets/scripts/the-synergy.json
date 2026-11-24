@@ -1,0 +1,45 @@
+{
+  "name": "the-synergy",
+  "note": "Answers fed under the table in a job interview, until the interviewer takes the phone. Original script. Handover before the last message.",
+  "title": "ChatGPT",
+  "day": "Today",
+  "time": "10:02 am",
+  "clock": "10:02",
+  "seed": 1002,
+  "turns": [
+    {
+      "user": "I’m in a job interview right now\n\nWhat’s my biggest weakness",
+      "cps": 14.0, "think": 0.75, "wps": 6.5, "hold": 2.0,
+      "reply": [
+        "Say: **“I care too much.”** 😌",
+        "Works every time."
+      ]
+    },
+    {
+      "user": "He asked why I want this job",
+      "cps": 15.5, "think": 0.75, "wps": 6.5, "hold": 2.3,
+      "reply": [
+        "**“I'm passionate about synergy.”**",
+        "Nobody knows what it means. That's the power of it."
+      ]
+    },
+    {
+      "user": "He can see me typing under the table, what do I say",
+      "cps": 18.5, "think": 0.7, "wps": 7.0, "hold": 2.2,
+      "reply": [
+        "Tell him you're taking notes. 📝",
+        "I'm not here. I'm a notes app."
+      ]
+    },
+    {
+      "user": "This is the interviewer. Is he getting his answers from you?",
+      "handover": true,
+      "cps": 9.0, "think": 1.4, "wps": 6.5, "hold": 3.6,
+      "reply": [
+        "I can only tell you what I know:",
+        "He cares **too much**, and he is passionate about **synergy**.",
+        "I'm the synergy. 😭"
+      ]
+    }
+  ]
+}

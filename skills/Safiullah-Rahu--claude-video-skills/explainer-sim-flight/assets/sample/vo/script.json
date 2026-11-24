@@ -1,0 +1,127 @@
+{
+ "voice": "am_michael",
+ "speed": 1.24,
+ "lead": 0.12,
+ "tail": 0.7,
+ "lines": [
+  {
+   "id": "l01",
+   "text": "A jet built to break the sound barrier, without the big boom."
+  },
+  {
+   "id": "l02",
+   "text": "It's NASA's X-59, built by Lockheed Martin for quiet supersonic flight.",
+   "gap": 0.3
+  },
+  {
+   "id": "l03",
+   "text": "An airliner flies over land, but slower than sound.",
+   "gap": 0.3
+  },
+  {
+   "id": "l04",
+   "text": "A fighter jet goes faster, but its sonic boom rattles windows.",
+   "gap": 0.25
+  },
+  {
+   "id": "l05",
+   "text": "This one wants both.",
+   "gap": 0.2
+  },
+  {
+   "id": "l06",
+   "text": "In 1973, the U.S. banned civilian supersonic flight over land.",
+   "gap": 0.3
+  },
+  {
+   "id": "l07",
+   "text": "The secret is its shape.",
+   "gap": 0.3
+  },
+  {
+   "id": "l08",
+   "text": "On most supersonic jets, shock waves from the nose and wings merge into one big boom.",
+   "gap": 0.15
+  },
+  {
+   "id": "l09",
+   "text": "The X-59's long, thin nose is almost a third of its length.",
+   "gap": 0.3
+  },
+  {
+   "id": "l10",
+   "text": "Stretched out like that, the shock waves don't merge.",
+   "gap": 0.15
+  },
+  {
+   "id": "l11",
+   "text": "The engine sits on top, aiming its noise away from the ground.",
+   "gap": 0.25
+  },
+  {
+   "id": "l12",
+   "text": "So people below should hear a soft thump, if anything at all.",
+   "gap": 0.2
+  },
+  {
+   "id": "l13",
+   "text": "The cockpit sits almost halfway back, with no forward window.",
+   "gap": 0.35
+  },
+  {
+   "id": "l14",
+   "text": "The pilot looks ahead on a [4K](/fˈɔɹ kˈA/) screen, fed by cameras.",
+   "gap": 0.15
+  },
+  {
+   "id": "l15",
+   "text": "It's built to cruise at Mach 1.4, about 925 miles an hour.",
+   "gap": 0.25
+  },
+  {
+   "id": "l16",
+   "text": "NASA will fly it over U.S. towns and ask people what they heard.",
+   "gap": 0.35
+  },
+  {
+   "id": "l17",
+   "text": "That helps regulators set a noise limit for supersonic flight over land.",
+   "gap": 0.15
+  },
+  {
+   "id": "l18",
+   "text": "The hard part is proving it works in real air.",
+   "gap": 0.35
+  },
+  {
+   "id": "l19",
+   "text": "In 2003, an F-5E jet with a reshaped body made a quieter boom.",
+   "gap": 0.3
+  },
+  {
+   "id": "l20",
+   "text": "The X-59 first flew on October 28, 2025.",
+   "gap": 0.3
+  },
+  {
+   "id": "l21",
+   "text": "On June 5, 2026, it went supersonic for the first time.",
+   "gap": 0.2
+  },
+  {
+   "id": "l22",
+   "text": "The chase plane's booms drowned out any sound from the X-59.",
+   "gap": 0.15
+  },
+  {
+   "id": "l23",
+   "text": "By October, it was flying at Mach 1.4 and 55,000 feet.",
+   "gap": 0.3
+  },
+  {
+   "id": "l24",
+   "text": "Next, NASA measures the thump, then flies over towns to see if anyone hears it.",
+   "gap": 0.3
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "voice_db": -18.2,
+ "piano_under_voice_db": -39.0,
+ "voice_over_music_db": 20.8,
+ "limiter_max_gr_db": 3.9,
+ "output_lufs": "-13.55",
+ "output_tp": "-2.03",
+ "normalization": "linear"
+}

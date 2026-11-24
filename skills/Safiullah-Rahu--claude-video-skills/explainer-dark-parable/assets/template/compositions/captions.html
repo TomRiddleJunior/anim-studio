@@ -1,0 +1,47 @@
+<template>
+  <style>
+    @font-face { font-family: "DPInter"; src: url("assets/fonts/Inter_opsz-wght_.ttf"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    /* measured on the source (720x1280 -> x1.5): one word, centred, at 46 % of the height, bold grotesk ~29 px,
+       white with a soft dark shadow; each word fades in from grey and is held until the next */
+    #root .cap { position: absolute; left: 0; right: 0; top: 885px; height: 0; display: flex; justify-content: center; align-items: center; }
+    #root .wd { display: inline-block; white-space: nowrap; font: 700 44px/1.2 "DPInter", Arial, sans-serif; letter-spacing: -0.3px; color: #f3f1ec;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.85), 0 0 2px rgba(0,0,0,0.9); }
+  </style>
+  <div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+    <div class="clip cap" id="c0" data-start="0.150" data-duration="0.075"><div class="wd" id="w0">A</div></div>
+    <div class="clip cap" id="c1" data-start="0.225" data-duration="0.425"><div class="wd" id="w1">trainer</div></div>
+    <div class="clip cap" id="c2" data-start="0.650" data-duration="0.275"><div class="wd" id="w2">once</div></div>
+    <div class="clip cap" id="c3" data-start="0.925" data-duration="0.238"><div class="wd" id="w3">tied</div></div>
+    <div class="clip cap" id="c4" data-start="1.163" data-duration="0.074"><div class="wd" id="w4">a</div></div>
+    <div class="clip cap" id="c5" data-start="1.237" data-duration="0.413"><div class="wd" id="w5">baby</div></div>
+    <div class="clip cap" id="c6" data-start="1.650" data-duration="0.450"><div class="wd" id="w6">elephant</div></div>
+    <div class="clip cap" id="c7" data-start="2.100" data-duration="0.088"><div class="wd" id="w7">to</div></div>
+    <div class="clip cap" id="c8" data-start="2.188" data-duration="0.100"><div class="wd" id="w8">a</div></div>
+    <div class="clip cap" id="c9" data-start="2.288" data-duration="0.575"><div class="wd" id="w9">stake</div></div>
+    <div class="clip cap" id="c10" data-start="2.863" data-duration="0.150"><div class="wd" id="w10">with</div></div>
+    <div class="clip cap" id="c11" data-start="3.013" data-duration="0.112"><div class="wd" id="w11">a</div></div>
+    <div class="clip cap" id="c12" data-start="3.125" data-duration="0.325"><div class="wd" id="w12">thin</div></div>
+    <div class="clip cap" id="c13" data-start="3.450" data-duration="1.385"><div class="wd" id="w13">rope.</div></div>
+    <div class="clip cap" id="c14" data-start="4.835" data-duration="0.138"><div class="wd" id="w14">She</div></div>
+    <div class="clip cap" id="c15" data-start="4.973" data-duration="0.300"><div class="wd" id="w15">pulled</div></div>
+    <div class="clip cap" id="c16" data-start="5.273" data-duration="0.387"><div class="wd" id="w16">until,</div></div>
+    <div class="clip cap" id="c17" data-start="5.660" data-duration="0.225"><div class="wd" id="w17">one</div></div>
+    <div class="clip cap" id="c18" data-start="5.885" data-duration="0.425"><div class="wd" id="w18">morning,</div></div>
+    <div class="clip cap" id="c19" data-start="6.310" data-duration="0.163"><div class="wd" id="w19">she</div></div>
+    <div class="clip cap" id="c20" data-start="6.473" data-duration="1.647"><div class="wd" id="w20">stopped.</div></div>
+    <div class="clip cap" id="c21" data-start="8.120" data-duration="0.737"><div class="wd" id="w21">Psychologists</div></div>
+    <div class="clip cap" id="c22" data-start="8.857" data-duration="0.313"><div class="wd" id="w22">call</div></div>
+    <div class="clip cap" id="c23" data-start="9.170" data-duration="0.150"><div class="wd" id="w23">it</div></div>
+    <div class="clip cap" id="c24" data-start="9.320" data-duration="0.300"><div class="wd" id="w24">learned</div></div>
+    <div class="clip cap" id="c25" data-start="9.620" data-duration="2.555"><div class="wd" id="w25">helplessness.</div></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      
+tl.fromTo("#w0", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 0.150);      tl.fromTo("#w1", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 0.225);      tl.fromTo("#w2", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 0.650);      tl.fromTo("#w3", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 0.925);      tl.fromTo("#w4", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 1.163);      tl.fromTo("#w5", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 1.237);      tl.fromTo("#w6", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 1.650);      tl.fromTo("#w7", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 2.100);      tl.fromTo("#w8", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 2.188);      tl.fromTo("#w9", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 2.288);      tl.fromTo("#w10", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 2.863);      tl.fromTo("#w11", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 3.013);      tl.fromTo("#w12", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 3.125);      tl.fromTo("#w13", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 3.450);      tl.fromTo("#w14", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 4.835);      tl.fromTo("#w15", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 4.973);      tl.fromTo("#w16", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 5.273);      tl.fromTo("#w17", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 5.660);      tl.fromTo("#w18", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 5.885);      tl.fromTo("#w19", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 6.310);      tl.fromTo("#w20", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 6.473);      tl.fromTo("#w21", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 8.120);      tl.fromTo("#w22", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 8.857);      tl.fromTo("#w23", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 9.170);      tl.fromTo("#w24", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 9.320);      tl.fromTo("#w25", { opacity: 0.32 }, { opacity: 1, duration: 0.16, ease: "power1.out" }, 9.620);
+      window.__timelines["captions"] = tl;
+    })();
+  </script>
+</template>

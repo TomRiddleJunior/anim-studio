@@ -1,0 +1,6 @@
+{"voice": "af_heart", "speed": 1.2, "lead": 0.5, "tail": 0.6,
+ "lines": [
+  {"id": "hook",  "text": "Your brain is about two percent of your body weight."},
+  {"id": "point", "text": "Yet it burns roughly a fifth of your energy at rest.", "gap": 1.3},
+  {"id": "close", "text": "That's the price of thinking.", "gap": 0.35}
+ ]}

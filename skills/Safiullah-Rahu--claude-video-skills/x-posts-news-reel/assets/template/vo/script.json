@@ -1,0 +1,7 @@
+{"voice": "am_michael", "speed": 1.15, "lead": 0.3, "tail": 0.6,
+ "lines": [
+  {"id": "hook",    "text": "One sentence that states the news. Here's how X took it."},
+  {"id": "context", "text": "One checked fact that the next posts need.", "gap": 0.6},
+  {"id": "close",   "text": "What happens next, if it is known.", "gap": 0.6},
+  {"id": "cta",     "text": "A neutral question for the comments?", "gap": 0.6}
+ ]}

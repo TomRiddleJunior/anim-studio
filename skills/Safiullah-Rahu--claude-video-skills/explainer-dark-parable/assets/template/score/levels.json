@@ -1,0 +1,17 @@
+{
+ "vo_rms_db_speech": -20.98,
+ "bed_re_vo_db": -22.0,
+ "bed_plus_sfx_re_vo_db": -12.73,
+ "sfx_re_vo_db": -13.28,
+ "sfx_gain_db": -10.37,
+ "final": {
+  "lufs": -14.3,
+  "true_peak_dbtp": -1.9,
+  "input_lufs": "-18.63"
+ },
+ "nomusic": {
+  "lufs": -14.3,
+  "true_peak_dbtp": -2.0,
+  "input_lufs": "-18.51"
+ }
+}

@@ -1,0 +1,2770 @@
+{
+ "fps": 30,
+ "dur": 51.0,
+ "frames": 1530,
+ "meta": {
+  "title": "ChatGPT",
+  "day": "Today",
+  "time": "6:41 pm",
+  "clock": "6:41"
+ },
+ "turns": [
+  {
+   "user": "I’m planning a surprise party for my wife on Saturday\n\nShe can NOT find out",
+   "reply": [
+    [
+     [
+      [
+       "Your",
+       0
+      ]
+     ],
+     [
+      [
+       "secret",
+       0
+      ]
+     ],
+     [
+      [
+       "is",
+       0
+      ]
+     ],
+     [
+      [
+       "safe",
+       0
+      ]
+     ],
+     [
+      [
+       "with",
+       0
+      ]
+     ],
+     [
+      [
+       "me.",
+       0
+      ]
+     ],
+     [
+      [
+       "🔒",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "What",
+       0
+      ]
+     ],
+     [
+      [
+       "party?",
+       0
+      ]
+     ],
+     [
+      [
+       "I've",
+       0
+      ]
+     ],
+     [
+      [
+       "never",
+       0
+      ]
+     ],
+     [
+      [
+       "heard",
+       0
+      ]
+     ],
+     [
+      [
+       "of",
+       0
+      ]
+     ],
+     [
+      [
+       "a",
+       0
+      ]
+     ],
+     [
+      [
+       "party.",
+       0
+      ]
+     ]
+    ]
+   ],
+   "sh0": true,
+   "kbUp": -1.0,
+   "typeStart": 0.36,
+   "keys": [
+    {
+     "t": 0.36,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 1,
+     "sh": false,
+     "c": "I"
+    },
+    {
+     "t": 0.4832,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 1,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 0.5787,
+     "k": "'",
+     "lay": "123",
+     "la": "abc",
+     "kind": "char",
+     "n": 2,
+     "sh": false,
+     "c": "’"
+    },
+    {
+     "t": 0.692,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 3,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 0.765,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 4,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 0.821,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 5,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 0.9056,
+     "k": "l",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 6,
+     "sh": false,
+     "c": "l"
+    },
+    {
+     "t": 0.9617,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 7,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 1.0656,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 8,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 1.1222,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 9,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 1.1981,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 10,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 1.285,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 11,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 1.3846,
+     "k": "g",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 12,
+     "sh": false,
+     "c": "g"
+    },
+    {
+     "t": 1.4624,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 13,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 1.5624,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 14,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 1.6375,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 15,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 1.7252,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 16,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 1.8261,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 17,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 1.9188,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 18,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 2.0064,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 19,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 2.0627,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 20,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 2.133,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 21,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 2.2004,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 22,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 2.2819,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 23,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 2.3708,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 24,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 2.4402,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 25,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 2.5477,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 26,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 2.6319,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 27,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 2.7235,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 28,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 2.7934,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 29,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 2.8563,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 30,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 2.9702,
+     "k": "f",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 31,
+     "sh": false,
+     "c": "f"
+    },
+    {
+     "t": 3.0585,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 32,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 3.1141,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 33,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 3.1984,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 34,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 3.2801,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 35,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 3.349,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 36,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 3.4506,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 37,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 3.5358,
+     "k": "w",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 38,
+     "sh": false,
+     "c": "w"
+    },
+    {
+     "t": 3.6436,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 39,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 3.7006,
+     "k": "f",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 40,
+     "sh": false,
+     "c": "f"
+    },
+    {
+     "t": 3.7701,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 41,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 3.8723,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 42,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 3.9903,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 43,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 4.044,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 44,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 4.1136,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 45,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 4.1999,
+     "k": "shift",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "mode",
+     "n": 45,
+     "sh": true,
+     "c": ""
+    },
+    {
+     "t": 4.2688,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 46,
+     "sh": false,
+     "c": "S"
+    },
+    {
+     "t": 4.3487,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 47,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 4.4432,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 48,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 4.5374,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 49,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 4.6444,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 50,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 4.7102,
+     "k": "d",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 51,
+     "sh": false,
+     "c": "d"
+    },
+    {
+     "t": 4.7941,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 52,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 4.8947,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 53,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 4.9767,
+     "k": "return",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "return",
+     "n": 54,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 5.0848,
+     "k": "return",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "return",
+     "n": 55,
+     "sh": true,
+     "c": ""
+    },
+    {
+     "t": 5.198,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 56,
+     "sh": false,
+     "c": "S"
+    },
+    {
+     "t": 5.2519,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 57,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 5.365,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 58,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 5.4442,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 59,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 5.5549,
+     "k": "c",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 60,
+     "sh": false,
+     "c": "c"
+    },
+    {
+     "t": 5.6542,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 61,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 5.769,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 62,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 5.8306,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 63,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 5.9033,
+     "k": "shift",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "mode",
+     "n": 63,
+     "sh": true,
+     "c": ""
+    },
+    {
+     "t": 5.9938,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 64,
+     "sh": true,
+     "c": "N"
+    },
+    {
+     "t": 6.0822,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 65,
+     "sh": true,
+     "c": "O"
+    },
+    {
+     "t": 6.1499,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 66,
+     "sh": false,
+     "c": "T"
+    },
+    {
+     "t": 6.2633,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 67,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 6.3924,
+     "k": "f",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 68,
+     "sh": false,
+     "c": "f"
+    },
+    {
+     "t": 6.4971,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 69,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 6.6065,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 70,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 6.7014,
+     "k": "d",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 71,
+     "sh": false,
+     "c": "d"
+    },
+    {
+     "t": 6.763,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 72,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 6.8815,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 73,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 6.9781,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 74,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 7.0776,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 75,
+     "sh": false,
+     "c": "t"
+    }
+   ],
+   "typeEnd": 7.0776,
+   "send": 7.4976,
+   "kbDown": 7.5476,
+   "think": 8.1176,
+   "stream": 8.9176,
+   "words": [
+    8.9176,
+    9.0747,
+    9.1874,
+    9.3679,
+    9.5249,
+    9.7185,
+    9.8846,
+    10.2831,
+    10.4802,
+    10.6273,
+    10.7997,
+    10.9505,
+    11.0794,
+    11.2216,
+    11.386
+   ],
+   "done": 11.646,
+   "end": 13.646
+  },
+  {
+   "user": "She just saw me typing and now she’s suspicious",
+   "reply": [
+    [
+     [
+      [
+       "Stay",
+       0
+      ]
+     ],
+     [
+      [
+       "calm.",
+       0
+      ]
+     ],
+     [
+      [
+       "Tell",
+       0
+      ]
+     ],
+     [
+      [
+       "her",
+       0
+      ]
+     ],
+     [
+      [
+       "you're",
+       0
+      ]
+     ],
+     [
+      [
+       "comparing",
+       0
+      ]
+     ],
+     [
+      [
+       "car",
+       0
+      ]
+     ],
+     [
+      [
+       "insurance.",
+       0
+      ]
+     ],
+     [
+      [
+       "😌",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "Nobody",
+       0
+      ]
+     ],
+     [
+      [
+       "asks",
+       0
+      ]
+     ],
+     [
+      [
+       "follow-up",
+       0
+      ]
+     ],
+     [
+      [
+       "questions",
+       0
+      ]
+     ],
+     [
+      [
+       "about",
+       0
+      ]
+     ],
+     [
+      [
+       "car",
+       0
+      ]
+     ],
+     [
+      [
+       "insurance.",
+       0
+      ]
+     ]
+    ]
+   ],
+   "sh0": true,
+   "kbUp": 13.646,
+   "typeStart": 14.166,
+   "keys": [
+    {
+     "t": 14.166,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 1,
+     "sh": false,
+     "c": "S"
+    },
+    {
+     "t": 14.2479,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 2,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 14.3238,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 3,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 14.4231,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 4,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 14.4934,
+     "k": "j",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 5,
+     "sh": false,
+     "c": "j"
+    },
+    {
+     "t": 14.5387,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 6,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 14.6013,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 7,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 14.6946,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 8,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 14.7784,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 9,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 14.8521,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 10,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 14.9443,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 11,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 14.9946,
+     "k": "w",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 12,
+     "sh": false,
+     "c": "w"
+    },
+    {
+     "t": 15.0929,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 13,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 15.1431,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 14,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 15.2071,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 15,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 15.2653,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 16,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 15.3293,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 17,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 15.3964,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 18,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 15.4688,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 19,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 15.5329,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 20,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 15.598,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 21,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 15.683,
+     "k": "g",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 22,
+     "sh": false,
+     "c": "g"
+    },
+    {
+     "t": 15.7656,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 23,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 15.8726,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 24,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 15.9199,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 25,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 16.0005,
+     "k": "d",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 26,
+     "sh": false,
+     "c": "d"
+    },
+    {
+     "t": 16.0874,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 27,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 16.1385,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 28,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 16.1887,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 29,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 16.2839,
+     "k": "w",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 30,
+     "sh": false,
+     "c": "w"
+    },
+    {
+     "t": 16.328,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 31,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 16.4324,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 32,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 16.494,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 33,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 16.5469,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 34,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 16.6736,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 34,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 16.7275,
+     "k": "'",
+     "lay": "123",
+     "la": "abc",
+     "kind": "char",
+     "n": 35,
+     "sh": false,
+     "c": "’"
+    },
+    {
+     "t": 16.7792,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 36,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 16.8321,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 37,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 16.8809,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 38,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 16.951,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 39,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 17.0096,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 40,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 17.0708,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 41,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 17.1246,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 42,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 17.1718,
+     "k": "c",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 43,
+     "sh": false,
+     "c": "c"
+    },
+    {
+     "t": 17.2398,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 44,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 17.2886,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 45,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 17.361,
+     "k": "u",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 46,
+     "sh": false,
+     "c": "u"
+    },
+    {
+     "t": 17.4079,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 47,
+     "sh": false,
+     "c": "s"
+    }
+   ],
+   "typeEnd": 17.4079,
+   "send": 17.8279,
+   "kbDown": 17.8779,
+   "think": 18.4479,
+   "stream": 19.1979,
+   "words": [
+    19.1979,
+    19.3243,
+    19.4883,
+    19.6169,
+    19.7955,
+    19.9027,
+    20.0414,
+    20.2117,
+    20.3204,
+    20.6609,
+    20.802,
+    20.9228,
+    21.1038,
+    21.2275,
+    21.358,
+    21.5418
+   ],
+   "done": 21.8018,
+   "end": 24.1018
+  },
+  {
+   "user": "She’s taking my phone, don’t say anything",
+   "reply": [
+    [
+     [
+      [
+       "🤐",
+       0
+      ]
+     ],
+     [
+      [
+       "Not",
+       0
+      ]
+     ],
+     [
+      [
+       "a",
+       0
+      ]
+     ],
+     [
+      [
+       "word.",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "I'm",
+       0
+      ]
+     ],
+     [
+      [
+       "a",
+       0
+      ]
+     ],
+     [
+      [
+       "vault.",
+       0
+      ]
+     ]
+    ]
+   ],
+   "sh0": true,
+   "kbUp": 24.1018,
+   "typeStart": 24.6218,
+   "keys": [
+    {
+     "t": 24.6218,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 1,
+     "sh": false,
+     "c": "S"
+    },
+    {
+     "t": 24.6903,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 2,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 24.7681,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 3,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 24.8735,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 3,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 24.92,
+     "k": "'",
+     "lay": "123",
+     "la": "abc",
+     "kind": "char",
+     "n": 4,
+     "sh": false,
+     "c": "’"
+    },
+    {
+     "t": 24.956,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 5,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 25.0208,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 6,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 25.0876,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 7,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 25.1653,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 8,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 25.2332,
+     "k": "k",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 9,
+     "sh": false,
+     "c": "k"
+    },
+    {
+     "t": 25.2817,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 10,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 25.3202,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 11,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 25.3794,
+     "k": "g",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 12,
+     "sh": false,
+     "c": "g"
+    },
+    {
+     "t": 25.4531,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 13,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 25.5092,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 14,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 25.5735,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 15,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 25.6531,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 16,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 25.7431,
+     "k": "p",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 17,
+     "sh": false,
+     "c": "p"
+    },
+    {
+     "t": 25.8191,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 18,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 25.8807,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 19,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 25.9448,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 20,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 25.9877,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 21,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 26.0934,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 21,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 26.1461,
+     "k": ",",
+     "lay": "123",
+     "la": "123",
+     "kind": "char",
+     "n": 22,
+     "sh": false,
+     "c": ","
+    },
+    {
+     "t": 26.2178,
+     "k": "space",
+     "lay": "123",
+     "la": "abc",
+     "kind": "space",
+     "n": 23,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 26.2731,
+     "k": "d",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 24,
+     "sh": false,
+     "c": "d"
+    },
+    {
+     "t": 26.3097,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 25,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 26.3642,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 26,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 26.4767,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 26,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 26.5563,
+     "k": "'",
+     "lay": "123",
+     "la": "abc",
+     "kind": "char",
+     "n": 27,
+     "sh": false,
+     "c": "’"
+    },
+    {
+     "t": 26.6335,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 28,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 26.6991,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 29,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 26.7503,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 30,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 26.8159,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 31,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 26.8704,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 32,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 26.9122,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 33,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 26.9844,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 34,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 27.0629,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 35,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 27.1019,
+     "k": "y",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 36,
+     "sh": false,
+     "c": "y"
+    },
+    {
+     "t": 27.1458,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 37,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 27.2083,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 38,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 27.2603,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 39,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 27.3257,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 40,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 27.3799,
+     "k": "g",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 41,
+     "sh": false,
+     "c": "g"
+    }
+   ],
+   "typeEnd": 27.3799,
+   "send": 27.7999,
+   "kbDown": 27.8499,
+   "think": 28.4199,
+   "stream": 29.1199,
+   "words": [
+    29.1199,
+    29.2644,
+    29.3747,
+    29.5152,
+    29.8911,
+    30.0158,
+    30.1836
+   ],
+   "done": 30.4436,
+   "end": 32.3436
+  },
+  {
+   "user": "Hi, this is his wife. What is he hiding from me?",
+   "reply": [
+    [
+     [
+      [
+       "Nothing",
+       0
+      ]
+     ],
+     [
+      [
+       "at",
+       0
+      ]
+     ],
+     [
+      [
+       "all.",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "There",
+       0
+      ]
+     ],
+     [
+      [
+       "is",
+       0
+      ]
+     ],
+     [
+      [
+       "absolutely",
+       0
+      ]
+     ],
+     [
+      [
+       "no",
+       1
+      ]
+     ],
+     [
+      [
+       "party",
+       1
+      ]
+     ],
+     [
+      [
+       "on",
+       0
+      ]
+     ],
+     [
+      [
+       "Saturday",
+       1
+      ]
+     ],
+     [
+      [
+       "at",
+       1
+      ]
+     ],
+     [
+      [
+       "7",
+       1
+      ],
+      [
+       ".",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "Also,",
+       0
+      ]
+     ],
+     [
+      [
+       "please",
+       0
+      ]
+     ],
+     [
+      [
+       "don't",
+       0
+      ]
+     ],
+     [
+      [
+       "look",
+       0
+      ]
+     ],
+     [
+      [
+       "in",
+       0
+      ]
+     ],
+     [
+      [
+       "the",
+       0
+      ]
+     ],
+     [
+      [
+       "garage.",
+       0
+      ]
+     ],
+     [
+      [
+       "🎈",
+       0
+      ]
+     ]
+    ],
+    [
+     [
+      [
+       "…I've",
+       0
+      ]
+     ],
+     [
+      [
+       "said",
+       0
+      ]
+     ],
+     [
+      [
+       "too",
+       0
+      ]
+     ],
+     [
+      [
+       "much.",
+       0
+      ]
+     ],
+     [
+      [
+       "💀",
+       0
+      ]
+     ]
+    ]
+   ],
+   "sh0": true,
+   "kbUp": 33.2936,
+   "typeStart": 33.8136,
+   "keys": [
+    {
+     "t": 33.8136,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 1,
+     "sh": false,
+     "c": "H"
+    },
+    {
+     "t": 33.9389,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 2,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 34.116,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 2,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 34.221,
+     "k": ",",
+     "lay": "123",
+     "la": "123",
+     "kind": "char",
+     "n": 3,
+     "sh": false,
+     "c": ","
+    },
+    {
+     "t": 34.3767,
+     "k": "space",
+     "lay": "123",
+     "la": "abc",
+     "kind": "space",
+     "n": 4,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 34.4901,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 5,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 34.5856,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 6,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 34.7358,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 7,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 34.8852,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 8,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 35.0103,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 9,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 35.1378,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 10,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 35.2587,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 11,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 35.4004,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 12,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 35.5014,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 13,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 35.625,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 14,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 35.7735,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 15,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 35.8897,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 16,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 35.9711,
+     "k": "w",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 17,
+     "sh": false,
+     "c": "w"
+    },
+    {
+     "t": 36.1226,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 18,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 36.1975,
+     "k": "f",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 19,
+     "sh": false,
+     "c": "f"
+    },
+    {
+     "t": 36.3279,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 20,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 36.4895,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 20,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 36.6313,
+     "k": ".",
+     "lay": "123",
+     "la": "123",
+     "kind": "char",
+     "n": 21,
+     "sh": false,
+     "c": "."
+    },
+    {
+     "t": 36.7872,
+     "k": "space",
+     "lay": "123",
+     "la": "abc",
+     "kind": "space",
+     "n": 22,
+     "sh": true,
+     "c": ""
+    },
+    {
+     "t": 36.8916,
+     "k": "w",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 23,
+     "sh": false,
+     "c": "W"
+    },
+    {
+     "t": 36.9894,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 24,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 37.1043,
+     "k": "a",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 25,
+     "sh": false,
+     "c": "a"
+    },
+    {
+     "t": 37.2146,
+     "k": "t",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 26,
+     "sh": false,
+     "c": "t"
+    },
+    {
+     "t": 37.349,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 27,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 37.4766,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 28,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 37.542,
+     "k": "s",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 29,
+     "sh": false,
+     "c": "s"
+    },
+    {
+     "t": 37.6502,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 30,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 37.7593,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 31,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 37.8606,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 32,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 38.0042,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 33,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 38.115,
+     "k": "h",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 34,
+     "sh": false,
+     "c": "h"
+    },
+    {
+     "t": 38.2218,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 35,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 38.2946,
+     "k": "d",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 36,
+     "sh": false,
+     "c": "d"
+    },
+    {
+     "t": 38.3976,
+     "k": "i",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 37,
+     "sh": false,
+     "c": "i"
+    },
+    {
+     "t": 38.5285,
+     "k": "n",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 38,
+     "sh": false,
+     "c": "n"
+    },
+    {
+     "t": 38.6475,
+     "k": "g",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 39,
+     "sh": false,
+     "c": "g"
+    },
+    {
+     "t": 38.7942,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 40,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 38.9433,
+     "k": "f",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 41,
+     "sh": false,
+     "c": "f"
+    },
+    {
+     "t": 39.0391,
+     "k": "r",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 42,
+     "sh": false,
+     "c": "r"
+    },
+    {
+     "t": 39.1732,
+     "k": "o",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 43,
+     "sh": false,
+     "c": "o"
+    },
+    {
+     "t": 39.3005,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 44,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 39.3816,
+     "k": "space",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "space",
+     "n": 45,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 39.4956,
+     "k": "m",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 46,
+     "sh": false,
+     "c": "m"
+    },
+    {
+     "t": 39.6037,
+     "k": "e",
+     "lay": "abc",
+     "la": "abc",
+     "kind": "char",
+     "n": 47,
+     "sh": false,
+     "c": "e"
+    },
+    {
+     "t": 39.7527,
+     "k": "123",
+     "lay": "abc",
+     "la": "123",
+     "kind": "mode",
+     "n": 47,
+     "sh": false,
+     "c": ""
+    },
+    {
+     "t": 39.8967,
+     "k": "?",
+     "lay": "123",
+     "la": "123",
+     "kind": "char",
+     "n": 48,
+     "sh": false,
+     "c": "?"
+    }
+   ],
+   "typeEnd": 39.8967,
+   "send": 40.3167,
+   "kbDown": 40.3667,
+   "think": 40.9367,
+   "stream": 42.3367,
+   "words": [
+    42.3367,
+    42.5037,
+    42.6767,
+    43.0199,
+    43.1526,
+    43.2845,
+    43.4012,
+    43.5376,
+    43.6896,
+    43.8813,
+    44.0574,
+    44.2425,
+    44.6136,
+    44.7775,
+    44.9313,
+    45.1287,
+    45.3175,
+    45.4279,
+    45.5519,
+    45.7392,
+    46.099,
+    46.2245,
+    46.3418,
+    46.5186,
+    46.6338
+   ],
+   "done": 46.8938,
+   "end": 50.4938
+  }
+ ],
+ "handovers": [
+  {
+   "t0": 32.3936,
+   "dur": 1.2
+  }
+ ]
+}

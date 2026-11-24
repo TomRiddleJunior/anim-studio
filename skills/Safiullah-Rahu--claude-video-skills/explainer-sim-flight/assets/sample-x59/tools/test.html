@@ -1,0 +1,113 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#111;color:#ddd;font:12px sans-serif}#c{width:270px;height:480px;display:block;position:absolute;left:-9999px}#sheet{display:block}</style>
+<script src="../assets/lib/three.global.js"></script>
+<script>
+  const VV = Date.now();
+  for (const f of ["sim-kit.js", "sim-craft.js", "sim-envs.js", "sim-vo.js", "sim-shots.js"]) document.write(`<script src="../assets/lib/${f}?v=${VV}"><\/script>`);
+</script>
+</head><body>
+<canvas id="c" width="540" height="960"></canvas>
+<canvas id="sheet" width="10" height="10"></canvas>
+<script>
+  window.onerror = (m, s, l, c, e) => { (window.ERRS = window.ERRS || []).push(m + " @" + l + ":" + c); };
+  const qs = new URLSearchParams(location.search);
+  const K = SIM.create({ canvas: document.getElementById("c"), width: 540, height: 960, scale: 1, msaa: +(qs.get("msaa") ?? 4), maxEnvs: 2 });
+  SIM_ENVS(K);
+  const C = SIM_CRAFT(K);
+  const norm = (s) => s.toLowerCase().replace(/[^a-z0-9']/g, "");
+  const V = {
+    w(line, word, k) { const hits = SIM_VO.lines[line].filter((x) => norm(x[0]).startsWith(norm(word))); if (!hits.length) throw new Error("no word " + line + ":" + word); return hits[Math.min(k || 0, hits.length - 1)][1]; },
+    l(line) { return SIM_VO.starts[line]; },
+  };
+  const FILM = SIM_FILM(K, C, V);
+  window.K = K; window.C = C; window.FILM = FILM;
+  window.at = (t) => { const t0 = performance.now(); const n = FILM.render(t); return n + " " + Math.round(performance.now() - t0) + "ms"; };
+  // contact sheet of times -> visible canvas (labels on top)
+  window.sheet = (times, cols, tw) => {
+    cols = cols || 9; tw = tw || 176; const th = Math.round(tw * 16 / 9);
+    const sh = document.getElementById("sheet"), rows = Math.ceil(times.length / cols);
+    sh.width = cols * tw; sh.height = rows * (th + 14);
+    const g = sh.getContext("2d"); g.fillStyle = "#000"; g.fillRect(0, 0, sh.width, sh.height);
+    const log = [];
+    times.forEach((t, i) => {
+      const t0 = performance.now(); const n = FILM.render(t); const ms = Math.round(performance.now() - t0);
+      const x = (i % cols) * tw, y = Math.floor(i / cols) * (th + 14);
+      g.drawImage(document.getElementById("c"), x, y + 14, tw, th);
+      g.fillStyle = "#ff0"; g.fillText(t.toFixed(2) + " " + n, x + 2, y + 11);
+      log.push(n + ":" + ms);
+    });
+    return log.join(" ");
+  };
+  // side by side: source frames (scratch/src/cmp_<t>.jpg) left, ours right
+  window.cmp = async (pairs, tw) => {
+    tw = tw || 250; const th = Math.round(tw * 16 / 9);
+    const sh = document.getElementById("sheet"); sh.width = pairs.length * (tw * 2 + 8); sh.height = th + 14;
+    const g = sh.getContext("2d"); g.fillStyle = "#000"; g.fillRect(0, 0, sh.width, sh.height);
+    for (let i = 0; i < pairs.length; i++) {
+      const [ts, to] = pairs[i];
+      const im = new Image(); im.src = "src/cmp_" + ts.toFixed(1) + ".jpg?v=" + Date.now();
+      await new Promise((r) => { im.onload = r; im.onerror = r; });
+      const x = i * (tw * 2 + 8);
+      g.drawImage(im, x, 14, tw, th);
+      FILM.render(to);
+      g.drawImage(document.getElementById("c"), x + tw, 14, tw, th);
+      g.fillStyle = "#ff0"; g.fillText("src " + ts + "  /  ours " + to, x + 2, 11);
+    }
+    return "ok";
+  };
+  window.save = async (name) => { const sh = document.getElementById("sheet"); const b = await new Promise((r) => sh.toBlob(r, "image/jpeg", 0.9)); await fetch("/scratch/shots/" + name + ".jpg", { method: "PUT", body: b }); return name; };
+  window.bsheet = (times, cols, tw, name) => { // background: yields between frames, saves to scratch/shots/<name>.jpg
+    window.BS = "running";
+    (async () => {
+      cols = cols || 9; tw = tw || 240; const th = Math.round(tw * 16 / 9);
+      const sh = document.getElementById("sheet"), rows = Math.ceil(times.length / cols);
+      sh.width = cols * tw; sh.height = rows * (th + 14);
+      const g = sh.getContext("2d"); g.fillStyle = "#000"; g.fillRect(0, 0, sh.width, sh.height);
+      for (let i = 0; i < times.length; i++) {
+        await new Promise((r) => setTimeout(r, 5));
+        const t = times[i]; const n = FILM.render(t);
+        const x = (i % cols) * tw, y = Math.floor(i / cols) * (th + 14);
+        g.drawImage(document.getElementById("c"), x, y + 14, tw, th);
+        g.fillStyle = "#ff0"; g.fillText(t.toFixed(2) + " " + n, x + 2, y + 11);
+      }
+      await save(name || "all");
+      window.BS = "done";
+    })().catch((e) => { window.BS = "ERR " + e + " " + e.stack; });
+    return "started";
+  };
+  window.exportFrames = (fps, t0, t1) => { // draft frames for metric estimates -> scratch/shots/frames/f_00001.jpg
+    window.EX = "running"; let n = 0;
+    (async () => {
+      const c = document.getElementById("c");
+      for (let t = t0 || 0; t < (t1 || SIM_VO.dur); t += 1 / fps) {
+        FILM.render(t);
+        const b = await new Promise((r) => c.toBlob(r, "image/jpeg", 0.85));
+        n++;
+        await fetch("/scratch/shots/frames/f_" + String(n).padStart(5, "0") + ".jpg", { method: "PUT", body: b });
+        window.EX = "frame " + n;
+      }
+      window.EX = "done " + n;
+    })().catch((e) => { window.EX = "ERR " + e; });
+    return "started";
+  };
+  // per-shot audit at 5 sample times: worst margin, min size, min camera AGL, max blocked rays
+  window.auditAll = (samples) => {
+    samples = samples || [0.04, 0.3, 0.55, 0.8, 0.97];
+    const S = FILM.shots, rows = [];
+    for (let i = 0; i < S.length; i++) {
+      const t1 = i < S.length - 1 ? S[i + 1].t0 : SIM_VO.dur;
+      let worst = { margin: 9, size: 9, agl: 1e9, blocked: 0, inFrame: 1 };
+      for (const u of samples) {
+        const t = S[i].t0 + (t1 - S[i].t0) * u;
+        FILM.h.hideAll(); const st = S[i].fn(t); const a = K.audit(st);
+        worst.agl = Math.min(worst.agl, a.camAGL);
+        if (a.box) { worst.margin = Math.min(worst.margin, a.margin); worst.size = Math.min(worst.size, a.size); worst.blocked = Math.max(worst.blocked, a.blocked); worst.inFrame = Math.min(worst.inFrame, a.inFrame); }
+      }
+      rows.push(`${S[i].t0.toFixed(2).padStart(6)} ${S[i].name.padEnd(18)} dur ${(t1 - S[i].t0).toFixed(2)} margin ${worst.margin === 9 ? "-" : worst.margin.toFixed(3)} size ${worst.size === 9 ? "-" : worst.size.toFixed(2)} inFrame ${worst.inFrame.toFixed(2)} agl ${worst.agl.toFixed(1)} blocked ${worst.blocked}`);
+    }
+    return rows.join(String.fromCharCode(10));
+  };
+  window.mids = () => FILM.shots.map((s, i) => { const t1 = i < FILM.shots.length - 1 ? FILM.shots[i + 1].t0 : SIM_VO.dur; return +(s.t0 + (t1 - s.t0) * 0.5).toFixed(2); });
+</script>
+</body></html>
